@@ -1,0 +1,428 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">   
+ <head>  
+  <title> 2023 </title>  
+  <meta charset='utf-8'>
+  <link rel="stylesheet" href="../../css/table.css" />
+  <link rel="stylesheet" href="../../css/buttons.css" />
+  <style>
+  	*{
+  		/*background-image: url();*/
+  		background-color: #000;
+  		color: #FFF; 
+  	}
+  	tbody td{
+  		text-align: center;
+  	}
+  </style>
+ </head>  
+  
+ <body>  
+ 	<h1 style="text-align: center;">林芝市2023年事业单位</h1>
+ 	<a href="../../2023_shiye_.html" style="font-size: 20px;">回到主页</a>
+    <table id="example" class="display" role="grid" aria-describedby="example_info">
+ 		<thead>
+            <tr>
+                <th>序号</th>
+                <th>招聘地市</th>
+                <th>单位</th>
+                <th>岗位</th>
+                <th>职位性质</th>
+                <th>招聘人数</th>
+                <th>岗位代码</th>
+                <th>毕业时间</th>
+                <th>学历要求</th>
+                <th>大专专业</th>
+                <th>本科专业</th>
+                <th>研究生专业</th>
+                <th>政治面貌</th>
+                <th>笔试科目</th>
+                <th>是否面试</th>
+                <th>备注</th>
+                <th>咨询</th>
+                
+
+            </tr>
+        </thead>
+        <tbody>
+            
+        </tbody>
+
+        
+     
+ 	</table>
+ 	
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/jquery.datatables.min.js"/>
+	<script src="../../js/buttons.print.min.js"></script>
+
+ <script> 
+
+$(document).ready(function(){ 
+
+    var xx = [{'id': 3.0, 'unit': '林芝市', 'Post': '林芝市工商业联合会', 'Nature_position': '光彩事业中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230402001', 'College_majors': '2023年毕业生', 'Undergraduate_majors': '本科及以上', 'Graduate_majors': '', 'political_landscape': '会计学、财务管理', 'Job_code': '会计学', 'Examination': '不限', 'interview': '社会科学专技类（B类）', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 4.0, 'unit': '林芝市', 'Post': '林芝市应急管理局', 'Nature_position': '航空应急救援中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230403001', 'College_majors': '不限', 'Undergraduate_majors': '大专及以上', 'Graduate_majors': '不限', 'political_landscape': '不限', 'Job_code': '不限', 'Examination': '不限', 'interview': '综合管理类(A类)', 'remark': '否', 'mess': '1.需从事高空救援作业，限男性报考。2.仅限服务两年及以上考核合格西部计划西藏专项志愿者、退役大学生士兵、服务期满三年且考核合格乡村振兴专干报考。', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 5.0, 'unit': '林芝市', 'Post': '林芝市消防救援服务中心', 'Nature_position': '林芝市消防救援服务中心', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': '230404001', 'College_majors': '不限', 'Undergraduate_majors': '本科及以上', 'Graduate_majors': '', 'political_landscape': '公安学类、法学类、马克思主义理论类、中国语言文学类、管理科学与工程类、工商管理类、公共管理类、图书情报与档案管理类、旅游管理类、政治学类、社会学类', 'Job_code': '公安学、法学、马克思主义理论、中国语言文学、管理科学与工程、工商管理、公共管理、图书情报与档案管理、政治学、社会学', 'Examination': '不限', 'interview': '综合管理类(A类)', 'remark': '是', 'mess': '在笔试成绩达到最低合格分数线的基础上，按照1：4的比例参加西藏自治区消防救援总队组织的心理素质测试、体能测评。（0891-6878015）', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 6.0, 'unit': '林芝市', 'Post': '林芝市消防救援服务中心', 'Nature_position': '林芝市消防救援服务中心', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': '230404002', 'College_majors': '不限', 'Undergraduate_majors': '本科及以上', 'Graduate_majors': '', 'political_landscape': '新闻传播学类、历史学类、经济学类、金融学类、教育学类、体育学类、统计学类、心理学类', 'Job_code': '新闻传播学、中国史、应用经济学、理论经济学、教育学、体育学、心理学、统计学', 'Examination': '不限', 'interview': '社会科学专技类（B类）', 'remark': '是', 'mess': '在笔试成绩达到最低合格分数线的基础上，按照1：4的比例参加西藏自治区消防救援总队组织的心理素质测试、体能测评。（0891-6878015）', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 7.0, 'unit': '林芝市', 'Post': '林芝市消防救援服务中心', 'Nature_position': '林芝市消防救援服务中心', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': '230404003', 'College_majors': '不限', 'Undergraduate_majors': '本科及以上', 'Graduate_majors': '', 'political_landscape': '化学类、化工与制药类、土木类、水利类、建筑类、机械类、电气类、电子信息类、自动化类、计算机类、测绘类、矿业类、核工程类、环境科学与工程类、安全科学与工程类、公安技术类、大气科学类、地球物理学类、地质学类、交通运输类、航空航天类、材料类、数学类、农学（学科门类）', 'Job_code': '化学、化学工程与技术、土木工程、水利工程、建筑学、机械工程、电气工程、电子科学与技术、计算机科学与技术、测绘科学与技术、矿业工程、核科学与技术、环境科学与工程、安全科学与工程、公安技术、大气科学、地球物理学、地质学、交通运输工程、航空宇航科学与技术、材料科学与工程、数学', 'Examination': '不限', 'interview': '自然科学专技类（C类）', 'remark': '是', 'mess': '1.根据消防救援工作特点，需24小时执勤战备，参与应急救援工作，限男性。2.在笔试成绩达到最低合格分数线的基础上，按照1：4的比例参加西藏自治区消防救援总队组织的心理素质测试、体能测评。（0891-6878015）', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 8.0, 'unit': '林芝市', 'Post': '林芝市教育局', 'Nature_position': '教育考试中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230405001', 'College_majors': '2023年毕业生', 'Undergraduate_majors': '本科及以上', 'Graduate_majors': '', 'political_landscape': '中国语言文学类', 'Job_code': '中国语言文学', 'Examination': '不限', 'interview': '综合管理类(A类)', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 9.0, 'unit': '林芝市', 'Post': '林芝市纪委监委', 'Nature_position': '信息中心', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': '230406001', 'College_majors': '2023年毕业生', 'Undergraduate_majors': '本科及以上', 'Graduate_majors': '', 'political_landscape': '计算机类', 'Job_code': '计算机科学与技术', 'Examination': '不限', 'interview': '自然科学专技类（C类）', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 10.0, 'unit': '林芝市', 'Post': '林芝市文化广播电视局', 'Nature_position': '文物保护与考古研究所', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230407001', 'College_majors': '不限', 'Undergraduate_majors': '本科及以上', 'Graduate_majors': '', 'political_landscape': '考古学、文物与博物馆学、文物保护技术、文化遗产', 'Job_code': '考古学、文物与博物馆', 'Examination': '不限', 'interview': '社会科学专技类（B类）', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 11.0, 'unit': '林芝市', 'Post': '林芝市农业农村局', 'Nature_position': '农产品质量安全检验检测中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230408001', 'College_majors': '不限', 'Undergraduate_majors': '本科及以上', 'Graduate_majors': '', 'political_landscape': '食品科学与工程类', 'Job_code': '食品科学与工程', 'Examination': '不限', 'interview': '自然科学专技类（C类）', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 12.0, 'unit': '林芝市', 'Post': '林芝市农业农村局', 'Nature_position': '畜牧兽医站（动物疫病预防控制中心）', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230408002', 'College_majors': '不限', 'Undergraduate_majors': '本科及以上', 'Graduate_majors': '', 'political_landscape': '动植物检疫', 'Job_code': '兽医学', 'Examination': '不限', 'interview': '自然科学专技类（C类）', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 13.0, 'unit': '林芝市', 'Post': '林芝市农业农村局', 'Nature_position': '畜牧兽医站（动物疫病预防控制中心）', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230408003', 'College_majors': '2023年毕业生', 'Undergraduate_majors': '本科及以上', 'Graduate_majors': '', 'political_landscape': '动物医学类', 'Job_code': '兽医学', 'Examination': '不限', 'interview': '自然科学专技类（C类）', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 14.0, 'unit': '林芝市', 'Post': '林芝市医疗保障局', 'Nature_position': '医疗保障服务中心', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': '230409001', 'College_majors': '2023年毕业生', 'Undergraduate_majors': '本科及以上', 'Graduate_majors': '', 'political_landscape': '会计学', 'Job_code': '会计学', 'Examination': '不限', 'interview': '社会科学专技类（B类）', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 15.0, 'unit': '林芝市', 'Post': '鲁朗景区管理委员会', 'Nature_position': '鲁朗镇农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230410001', 'College_majors': '2023年毕业生', 'Undergraduate_majors': '大专及以上', 'Graduate_majors': '农林牧渔大类', 'political_landscape': '农学（学科门类）', 'Job_code': '农学', 'Examination': '不限', 'interview': '自然科学专技类（C类）', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 16.0, 'unit': '林芝市', 'Post': '鲁朗景区管理委员会', 'Nature_position': '鲁朗镇文化旅游综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230410002', 'College_majors': '2023年毕业生', 'Undergraduate_majors': '大专及以上', 'Graduate_majors': '新闻传播大类', 'political_landscape': '新闻传播学类', 'Job_code': '新闻传播学', 'Examination': '不限', 'interview': '社会科学专技类（B类）', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 17.0, 'unit': '林芝市', 'Post': '朗县', 'Nature_position': '朗县商务局招商服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230411001', 'College_majors': '2023年毕业生', 'Undergraduate_majors': '本科及以上', 'Graduate_majors': '', 'political_landscape': '不限', 'Job_code': '不限', 'Examination': '不限', 'interview': '综合管理类(A类)', 'remark': '否', 'mess': '仅限服务期满考核合格“三支一扶”人员报考', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 18.0, 'unit': '林芝市', 'Post': '朗县', 'Nature_position': '朗县乡村振兴局信息采集监测中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230411002', 'College_majors': '2023年毕业生', 'Undergraduate_majors': '仅限本科', 'Graduate_majors': '', 'political_landscape': '汉语言文学（专业）', 'Job_code': '', 'Examination': '不限', 'interview': '综合管理类（A类）', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 19.0, 'unit': '林芝市', 'Post': '朗县', 'Nature_position': '朗县乡村振兴局信息采集监测中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230411003', 'College_majors': '不限', 'Undergraduate_majors': '仅限本科', 'Graduate_majors': '', 'political_landscape': '工程管理', 'Job_code': '', 'Examination': '不限', 'interview': '自然科学专技类（C类）', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 20.0, 'unit': '林芝市', 'Post': '朗县', 'Nature_position': '中共朗县委员会党校', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230411004', 'College_majors': '2023年毕业生', 'Undergraduate_majors': '本科及以上', 'Graduate_majors': '', 'political_landscape': '政治学类、马克思主义理论类、哲学类、经济学类', 'Job_code': '政治学、马克思主义理论、哲学、经济学', 'Examination': '不限', 'interview': '综合管理类（A类）', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 21.0, 'unit': '林芝市', 'Post': '朗县', 'Nature_position': '朗县教育局教研室（电教馆）', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230411005', 'College_majors': '2023年毕业生', 'Undergraduate_majors': '本科及以上', 'Graduate_majors': '', 'political_landscape': '建筑类', 'Job_code': '建筑学', 'Examination': '不限', 'interview': '自然科学专技类（C类）', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 22.0, 'unit': '林芝市', 'Post': '朗县', 'Nature_position': '朗县洞嘎镇便民服务中心（退役军人站、综治中心）', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230411006', 'College_majors': '不限', 'Undergraduate_majors': '本科及以上', 'Graduate_majors': '', 'political_landscape': '不限', 'Job_code': '不限', 'Examination': '不限', 'interview': '综合管理类(A类)', 'remark': '否', 'mess': '仅限服务两年及以上考核合格西部计划西藏专项志愿者、退役大学生士兵、服务期满三年且考核合格乡村振兴专干报考', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 23.0, 'unit': '林芝市', 'Post': '朗县', 'Nature_position': '朗县拉多乡便民服务中心（退役军人站、综治中心）', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230411007', 'College_majors': '2023年毕业生', 'Undergraduate_majors': '本科及以上', 'Graduate_majors': '', 'political_landscape': '不限', 'Job_code': '不限', 'Examination': '不限', 'interview': '综合管理类(A类)', 'remark': '否', 'mess': '仅限林芝市学籍或林芝市户籍高校毕业生报考', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 24.0, 'unit': '林芝市', 'Post': '朗县', 'Nature_position': '朗县仲达镇文化旅游综合服务中心', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': '230411008', 'College_majors': '2023年毕业生', 'Undergraduate_majors': '大专及以上', 'Graduate_majors': '不限', 'political_landscape': '不限', 'Job_code': '不限', 'Examination': '不限', 'interview': '综合管理类(A类)', 'remark': '否', 'mess': '仅限林芝市学籍或林芝市户籍高校毕业生报考', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 25.0, 'unit': '林芝市', 'Post': '朗县', 'Nature_position': '朗县仲达镇卫生院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230411009', 'College_majors': '不限', 'Undergraduate_majors': '大专及以上', 'Graduate_majors': '医学检验技术（专业）', 'political_landscape': '医学检验技术', 'Job_code': '医学技术', 'Examination': '不限', 'interview': '医疗卫生类（E类）-医学技术', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 26.0, 'unit': '林芝市', 'Post': '朗县', 'Nature_position': '朗县登木乡卫生院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230411010', 'College_majors': '不限', 'Undergraduate_majors': '本科及以上', 'Graduate_majors': '', 'political_landscape': '医学检验技术', 'Job_code': '医学技术', 'Examination': '不限', 'interview': '医疗卫生类（E类）-医学技术', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 27.0, 'unit': '林芝市', 'Post': '朗县', 'Nature_position': '朗县朗镇农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230411011', 'College_majors': '2023年毕业生', 'Undergraduate_majors': '大专及以上', 'Graduate_majors': '财务会计类', 'political_landscape': '会计学', 'Job_code': '会计学', 'Examination': '不限', 'interview': '社会科学专技类（B类）', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 28.0, 'unit': '林芝市', 'Post': '朗县', 'Nature_position': '朗县金东乡卫生院', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': '230411012', 'College_majors': '不限', 'Undergraduate_majors': '大专及以上', 'Graduate_majors': '护理类', 'political_landscape': '护理学类', 'Job_code': '护理学', 'Examination': '不限', 'interview': '医疗卫生类（E类）-护理', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 29.0, 'unit': '林芝市', 'Post': '朗县', 'Nature_position': '朗县金东乡卫生院', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': '230411013', 'College_majors': '不限', 'Undergraduate_majors': '大专及以上', 'Graduate_majors': '公共卫生管理', 'political_landscape': '公共卫生与预防医学类', 'Job_code': '公共卫生与预防医学', 'Examination': '不限', 'interview': '医疗卫生类（E类）-公共卫生管理', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 30.0, 'unit': '林芝市', 'Post': '朗县', 'Nature_position': '朗县金东乡文化旅游综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230411014', 'College_majors': '2023年毕业生', 'Undergraduate_majors': '大专及以上', 'Graduate_majors': '艺术设计', 'political_landscape': '艺术设计学', 'Job_code': '艺术（专业）', 'Examination': '不限', 'interview': '社会科学专技类（B类）', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 31.0, 'unit': '林芝市', 'Post': '朗县', 'Nature_position': '朗县金东乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230411015', 'College_majors': '2023年毕业生', 'Undergraduate_majors': '大专及以上', 'Graduate_majors': '不限', 'political_landscape': '不限', 'Job_code': '不限', 'Examination': '不限', 'interview': '综合管理类(A类)', 'remark': '否', 'mess': '仅限朗县学籍或朗县户籍高校毕业生报考', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 32.0, 'unit': '林芝市', 'Post': '朗县', 'Nature_position': '朗县文化和旅游局文化活动中心（民间艺术团、新华书店）', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230411016', 'College_majors': '2023年毕业生', 'Undergraduate_majors': '本科及以上', 'Graduate_majors': '', 'political_landscape': '文物保护技术', 'Job_code': '文物与博物馆', 'Examination': '不限', 'interview': '社会科学专技类（B类）', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 33.0, 'unit': '林芝市', 'Post': '朗县', 'Nature_position': '朗县文化和旅游局文化活动中心（民间艺术团、新华书店）', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230411017', 'College_majors': '2023年毕业生', 'Undergraduate_majors': '本科及以上', 'Graduate_majors': '', 'political_landscape': '文物保护与修复', 'Job_code': '文物与博物馆', 'Examination': '不限', 'interview': '社会科学专技类（B类）', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 34.0, 'unit': '林芝市', 'Post': '朗县', 'Nature_position': '朗县疾病预防控制中心', 'Number': '事业单位', 'Graduation_time': 3.0, 'Academic_requirements': '230411018', 'College_majors': '2023年毕业生', 'Undergraduate_majors': '本科及以上', 'Graduate_majors': '', 'political_landscape': '预防医学', 'Job_code': '公共卫生与预防医学', 'Examination': '不限', 'interview': '医疗卫生类（E类）-公共卫生管理', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 35.0, 'unit': '林芝市', 'Post': '米林市', 'Nature_position': '中共米林市委办公室档案馆', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230412001', 'College_majors': '不限', 'Undergraduate_majors': '本科及以上', 'Graduate_majors': '', 'political_landscape': '图书情报与档案管理类', 'Job_code': '图书情报与档案管理', 'Examination': '不限', 'interview': '综合管理类（A类）', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 36.0, 'unit': '林芝市', 'Post': '米林市', 'Nature_position': '中共米林市委办公室档案馆', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230412002', 'College_majors': '2023年毕业生', 'Undergraduate_majors': '本科及以上', 'Graduate_majors': '', 'political_landscape': '计算机类、中国语言文学类', 'Job_code': '计算机科学与技术、中国语言文学', 'Examination': '不限', 'interview': '自然科学专技类（C类）', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 37.0, 'unit': '林芝市', 'Post': '米林市', 'Nature_position': '米林市商务局招商服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230412003', 'College_majors': '2023年毕业生', 'Undergraduate_majors': '本科及以上', 'Graduate_majors': '', 'political_landscape': '工商管理类、经济学类（非门类）', 'Job_code': '工商管理', 'Examination': '不限', 'interview': '综合管理类(A类)', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 38.0, 'unit': '林芝市', 'Post': '米林市', 'Nature_position': '米林市商务局招商服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230412004', 'College_majors': '2023年毕业生', 'Undergraduate_majors': '本科及以上', 'Graduate_majors': '', 'political_landscape': '不限', 'Job_code': '不限', 'Examination': '不限', 'interview': '综合管理类(A类)', 'remark': '否', 'mess': '仅限米林市学籍或米林市户籍高校毕业生报考', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 39.0, 'unit': '林芝市', 'Post': '米林市', 'Nature_position': '中共米林市委组织部党员电化教育中心（远程教育办公室）', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230412005', 'College_majors': '2023年毕业生', 'Undergraduate_majors': '本科及以上', 'Graduate_majors': '', 'political_landscape': '计算机类', 'Job_code': '计算机科学与技术', 'Examination': '不限', 'interview': '自然科学专技类（C类）', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 40.0, 'unit': '林芝市', 'Post': '米林市', 'Nature_position': '中共米林市委宣传部融媒体中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230412006', 'College_majors': '2023年毕业生', 'Undergraduate_majors': '本科及以上', 'Graduate_majors': '', 'political_landscape': '新闻传播学类', 'Job_code': '新闻传播学', 'Examination': '不限', 'interview': '社会科学专技类（B类）', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 41.0, 'unit': '林芝市', 'Post': '米林市', 'Nature_position': '米林市商务局招商服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230412007', 'College_majors': '2023年毕业生', 'Undergraduate_majors': '本科及以上', 'Graduate_majors': '', 'political_landscape': '电子商务类', 'Job_code': '工商管理', 'Examination': '不限', 'interview': '社会科学专技类（B类）', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 42.0, 'unit': '林芝市', 'Post': '米林市', 'Nature_position': '米林市疾病预防控制中心', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': '230412008', 'College_majors': '2023年毕业生', 'Undergraduate_majors': '本科及以上', 'Graduate_majors': '', 'political_landscape': '医学技术类', 'Job_code': '医学技术', 'Examination': '不限', 'interview': '医疗卫生类（E类）-医学技术', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 43.0, 'unit': '林芝市', 'Post': '米林市', 'Nature_position': '米林市疾病预防控制中心', 'Number': '事业单位', 'Graduation_time': 6.0, 'Academic_requirements': '230412009', 'College_majors': '2023年毕业生', 'Undergraduate_majors': '本科及以上', 'Graduate_majors': '', 'political_landscape': '公共卫生与预防医学类', 'Job_code': '公共卫生与预防医学', 'Examination': '不限', 'interview': '医疗卫生类（E类）-公共卫生管理', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 44.0, 'unit': '林芝市', 'Post': '米林市', 'Nature_position': '米林市丹娘乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230412010', 'College_majors': '2023年毕业生', 'Undergraduate_majors': '本科及以上', 'Graduate_majors': '', 'political_landscape': '植物生产类', 'Job_code': '农学', 'Examination': '不限', 'interview': '自然科学专技类（C类）', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 45.0, 'unit': '林芝市', 'Post': '米林市', 'Nature_position': '米林市丹娘乡卫生院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230412011', 'College_majors': '不限', 'Undergraduate_majors': '本科及以上', 'Graduate_majors': '', 'political_landscape': '临床医学类（西医）', 'Job_code': '临床医学（西医）', 'Examination': '不限', 'interview': '医疗卫生类（E类）-西医临床', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 46.0, 'unit': '林芝市', 'Post': '米林市', 'Nature_position': '米林市扎西绕登乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230412012', 'College_majors': '2023年毕业生', 'Undergraduate_majors': '本科及以上', 'Graduate_majors': '', 'political_landscape': '植物生产类', 'Job_code': '农学', 'Examination': '不限', 'interview': '自然科学专技类（C类）', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 47.0, 'unit': '林芝市', 'Post': '米林市', 'Nature_position': '米林市扎西绕登乡便民服务中心（退役军人服务站、综治中心）', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': '230412013', 'College_majors': '2023年毕业生', 'Undergraduate_majors': '本科及以上', 'Graduate_majors': '', 'political_landscape': '公共管理类', 'Job_code': '公共管理', 'Examination': '不限', 'interview': '综合管理类（A类）', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 48.0, 'unit': '林芝市', 'Post': '米林市', 'Nature_position': '米林市派镇文化旅游综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230412014', 'College_majors': '2023年毕业生', 'Undergraduate_majors': '本科及以上', 'Graduate_majors': '', 'political_landscape': '旅游管理类', 'Job_code': '旅游管理', 'Examination': '不限', 'interview': '综合管理类（A类）', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 49.0, 'unit': '林芝市', 'Post': '米林市', 'Nature_position': '米林市卧龙镇农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230412015', 'College_majors': '2023年毕业生', 'Undergraduate_majors': '本科及以上', 'Graduate_majors': '', 'political_landscape': '动物医学类', 'Job_code': '农学', 'Examination': '不限', 'interview': '自然科学专技类（C类）', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 50.0, 'unit': '林芝市', 'Post': '米林市', 'Nature_position': '米林市卧龙镇文化旅游综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230412016', 'College_majors': '2023年毕业生', 'Undergraduate_majors': '本科及以上', 'Graduate_majors': '', 'political_landscape': '中国少数民族语言文学、汉语言文学', 'Job_code': '中国语言文学', 'Examination': '不限', 'interview': '综合管理类（A类）', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 51.0, 'unit': '林芝市', 'Post': '米林市', 'Nature_position': '米林市卧龙镇便民服务中心（退役军人服务站、综治中心）', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': '230412017', 'College_majors': '2023年毕业生', 'Undergraduate_majors': '本科及以上', 'Graduate_majors': '', 'political_landscape': '公共管理类', 'Job_code': '公共管理', 'Examination': '不限', 'interview': '综合管理类（A类）', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 52.0, 'unit': '林芝市', 'Post': '米林市', 'Nature_position': '米林市文化和旅游局文化活动中心（民间艺术团）', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230412018', 'College_majors': '不限', 'Undergraduate_majors': '本科及以上', 'Graduate_majors': '', 'political_landscape': '文物保护与修复', 'Job_code': '历史学类', 'Examination': '不限', 'interview': '社会科学专技类（B类）', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 53.0, 'unit': '林芝市', 'Post': '工布江达县', 'Nature_position': '工布江达县疾病预防控制中心', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': '230413001', 'College_majors': '不限', 'Undergraduate_majors': '仅限本科', 'Graduate_majors': '', 'political_landscape': '卫生检验与检疫', 'Job_code': '', 'Examination': '不限', 'interview': '医疗卫生类（E类）-医学技术', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 54.0, 'unit': '林芝市', 'Post': '工布江达县', 'Nature_position': '工布江达县疾病预防控制中心', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': '230413002', 'College_majors': '不限', 'Undergraduate_majors': '仅限本科', 'Graduate_majors': '', 'political_landscape': '预防医学', 'Job_code': '', 'Examination': '不限', 'interview': '医疗卫生类（E类）-公共卫生管理', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 55.0, 'unit': '林芝市', 'Post': '工布江达县', 'Nature_position': '工布江达县文化和旅游局文化活动中心（民间艺术团）', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230413003', 'College_majors': '不限', 'Undergraduate_majors': '仅限本科', 'Graduate_majors': '', 'political_landscape': '考古学', 'Job_code': '', 'Examination': '不限', 'interview': '社会科学专技类（B类）', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 56.0, 'unit': '林芝市', 'Post': '工布江达县', 'Nature_position': '工布江达县文化和旅游局文化活动中心（民间艺术团）', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230413004', 'College_majors': '不限', 'Undergraduate_majors': '仅限本科', 'Graduate_majors': '', 'political_landscape': '历史建筑保护工程', 'Job_code': '', 'Examination': '不限', 'interview': '自然科学专技类（C类）', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 57.0, 'unit': '林芝市', 'Post': '工布江达县', 'Nature_position': '工布江达县文化和旅游局文化活动中心（民间艺术团）', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230413005', 'College_majors': '不限', 'Undergraduate_majors': '仅限本科', 'Graduate_majors': '', 'political_landscape': '文物保护与修复', 'Job_code': '', 'Examination': '不限', 'interview': '社会科学专技类（B类）', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 58.0, 'unit': '林芝市', 'Post': '工布江达县', 'Nature_position': '工布江达县水利局水利工程质量安全监督站', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230413006', 'College_majors': '2023年毕业生', 'Undergraduate_majors': '仅限本科', 'Graduate_majors': '', 'political_landscape': '水利类', 'Job_code': '', 'Examination': '不限', 'interview': '自然科学专技类（C类）', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 59.0, 'unit': '林芝市', 'Post': '工布江达县', 'Nature_position': '工布江达县教育局教研室', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230413007', 'College_majors': '2023年毕业生', 'Undergraduate_majors': '仅限本科', 'Graduate_majors': '', 'political_landscape': '教育学（学科门类）', 'Job_code': '', 'Examination': '不限', 'interview': '社会科学专技类（B类）', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 60.0, 'unit': '林芝市', 'Post': '工布江达县', 'Nature_position': '工布江达县商务局招商服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230413008', 'College_majors': '2023年毕业生', 'Undergraduate_majors': '仅限本科', 'Graduate_majors': '', 'political_landscape': '市场营销', 'Job_code': '', 'Examination': '不限', 'interview': '综合管理类（A类）', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 61.0, 'unit': '林芝市', 'Post': '工布江达县', 'Nature_position': '工布江达县错高乡便民服务中心（退役军人服务站）', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230413009', 'College_majors': '2023年毕业生', 'Undergraduate_majors': '仅限本科', 'Graduate_majors': '', 'political_landscape': '法学（专业）、劳动与社会保障', 'Job_code': '', 'Examination': '不限', 'interview': '综合管理类（A类）', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 62.0, 'unit': '林芝市', 'Post': '工布江达县', 'Nature_position': '工布江达县巴河镇便民服务中心（退役军人服务站）', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230413010', 'College_majors': '2023年毕业生', 'Undergraduate_majors': '仅限本科', 'Graduate_majors': '', 'political_landscape': '会计学', 'Job_code': '', 'Examination': '不限', 'interview': '社会科学专技类（B类）', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 63.0, 'unit': '林芝市', 'Post': '工布江达县', 'Nature_position': '工布江达县工布江达镇农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230413011', 'College_majors': '2023年毕业生', 'Undergraduate_majors': '仅限本科', 'Graduate_majors': '', 'political_landscape': '统计学', 'Job_code': '', 'Examination': '不限', 'interview': '自然科学专技类（C类）', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 64.0, 'unit': '林芝市', 'Post': '工布江达县', 'Nature_position': '工布江达县仲莎乡便民服务中心（退役军人服务站）', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230413012', 'College_majors': '2023年毕业生', 'Undergraduate_majors': '仅限本科', 'Graduate_majors': '', 'political_landscape': '会计学', 'Job_code': '', 'Examination': '不限', 'interview': '社会科学专技类（B类）', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 65.0, 'unit': '林芝市', 'Post': '工布江达县', 'Nature_position': '工布江达县金达镇农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230413013', 'College_majors': '2023年毕业生', 'Undergraduate_majors': '本科及以上', 'Graduate_majors': '', 'political_landscape': '动物医学类', 'Job_code': '兽医学', 'Examination': '不限', 'interview': '自然科学专技类（C类）', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 66.0, 'unit': '林芝市', 'Post': '工布江达县', 'Nature_position': '工布江达县加兴乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230413014', 'College_majors': '2023年毕业生', 'Undergraduate_majors': '仅限本科', 'Graduate_majors': '', 'political_landscape': '会计学', 'Job_code': '', 'Examination': '不限', 'interview': '社会科学专技类（B类）', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 67.0, 'unit': '林芝市', 'Post': '工布江达县', 'Nature_position': '工布江达县娘蒲乡卫生院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230413015', 'College_majors': '不限', 'Undergraduate_majors': '仅限本科', 'Graduate_majors': '', 'political_landscape': '医学检验技术', 'Job_code': '', 'Examination': '不限', 'interview': '医疗卫生类（E类）-医学技术', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 68.0, 'unit': '林芝市', 'Post': '工布江达县', 'Nature_position': '工布江达县工布江达镇卫生院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230413016', 'College_majors': '不限', 'Undergraduate_majors': '仅限本科', 'Graduate_majors': '', 'political_landscape': '藏医学（专业）', 'Job_code': '', 'Examination': '不限', 'interview': '藏医药护理类（Z类）-藏医', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 69.0, 'unit': '林芝市', 'Post': '工布江达县', 'Nature_position': '工布江达县朱拉乡卫生院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230413017', 'College_majors': '不限', 'Undergraduate_majors': '仅限本科', 'Graduate_majors': '', 'political_landscape': '医学检验技术', 'Job_code': '', 'Examination': '不限', 'interview': '医疗卫生类（E类）-医学技术', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 70.0, 'unit': '林芝市', 'Post': '工布江达县', 'Nature_position': '工布江达县加兴乡文化旅游综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230413018', 'College_majors': '2023年毕业生', 'Undergraduate_majors': '本科及以上', 'Graduate_majors': '', 'political_landscape': '经济学（学科门类）', 'Job_code': '经济学（学科门类）', 'Examination': '不限', 'interview': '社会科学专技类（B类）', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 71.0, 'unit': '林芝市', 'Post': '工布江达县', 'Nature_position': '工布江达县加兴乡便民服务站', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230413019', 'College_majors': '2023年毕业生', 'Undergraduate_majors': '本科及以上', 'Graduate_majors': '', 'political_landscape': '民族学类', 'Job_code': '民族学', 'Examination': '不限', 'interview': '综合管理类（A类）', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 72.0, 'unit': '林芝市', 'Post': '工布江达县', 'Nature_position': '工布江达县加兴乡便民服务站', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230413020', 'College_majors': '2023年毕业生', 'Undergraduate_majors': '本科及以上', 'Graduate_majors': '', 'political_landscape': '会计学', 'Job_code': '会计学', 'Examination': '不限', 'interview': '社会科学专技类（B类）', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 73.0, 'unit': '林芝市', 'Post': '工布江达县', 'Nature_position': '工布江达县巴河镇文化旅游综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230413021', 'College_majors': '2023年毕业生', 'Undergraduate_majors': '大专及以上', 'Graduate_majors': '旅游管理', 'political_landscape': '旅游管理', 'Job_code': '旅游管理', 'Examination': '不限', 'interview': '综合管理类（A类）', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 74.0, 'unit': '林芝市', 'Post': '察隅县', 'Nature_position': '察隅县疾病预防控制中心', 'Number': '事业单位', 'Graduation_time': 3.0, 'Academic_requirements': '230414001', 'College_majors': '不限', 'Undergraduate_majors': '大专及以上', 'Graduate_majors': '公共卫生与卫生管理类', 'political_landscape': '公共卫生与预防医学类', 'Job_code': '公共卫生与预防医学', 'Examination': '不限', 'interview': '医疗卫生类（E类）-公共卫生管理', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 75.0, 'unit': '林芝市', 'Post': '察隅县', 'Nature_position': '察隅县疾病预防控制中心', 'Number': '事业单位', 'Graduation_time': 3.0, 'Academic_requirements': '230414002', 'College_majors': '2023年毕业生', 'Undergraduate_majors': '大专及以上', 'Graduate_majors': '公共卫生与卫生管理类', 'political_landscape': '公共卫生与预防医学类', 'Job_code': '公共卫生与预防医学', 'Examination': '不限', 'interview': '医疗卫生类（E类）-公共卫生管理', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 76.0, 'unit': '林芝市', 'Post': '察隅县', 'Nature_position': '察隅县乡村振兴局信息中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230414003', 'College_majors': '2023年毕业生', 'Undergraduate_majors': '本科及以上', 'Graduate_majors': '', 'political_landscape': '中国语言文学类', 'Job_code': '中国语言文学', 'Examination': '不限', 'interview': '综合管理类（A类）', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 77.0, 'unit': '林芝市', 'Post': '察隅县', 'Nature_position': '察隅县乡村振兴局信息中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230414004', 'College_majors': '2023年毕业生', 'Undergraduate_majors': '本科及以上', 'Graduate_majors': '', 'political_landscape': '管理科学与工程类', 'Job_code': '管理科学与工程', 'Examination': '不限', 'interview': '综合管理类（A类）', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 78.0, 'unit': '林芝市', 'Post': '察隅县', 'Nature_position': '察隅县人力资源和社会保障局劳动人事争议仲裁院', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': '230414005', 'College_majors': '2023年毕业生', 'Undergraduate_majors': '本科及以上', 'Graduate_majors': '', 'political_landscape': '法学类', 'Job_code': '法学（非学科门类）', 'Examination': '不限', 'interview': '综合管理类（A类）', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 79.0, 'unit': '林芝市', 'Post': '察隅县', 'Nature_position': '察隅县退役军人事务局退役军人服务中心', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': '230414006', 'College_majors': '2023年毕业生', 'Undergraduate_majors': '本科及以上', 'Graduate_majors': '', 'political_landscape': '中国语言文学类', 'Job_code': '中国语言文学', 'Examination': '不限', 'interview': '综合管理类（A类）', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 80.0, 'unit': '林芝市', 'Post': '察隅县', 'Nature_position': '察隅县民政局社会福利院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230414007', 'College_majors': '2023年毕业生', 'Undergraduate_majors': '本科及以上', 'Graduate_majors': '', 'political_landscape': '中国语言文学类', 'Job_code': '中国语言文学', 'Examination': '不限', 'interview': '综合管理类（A类）', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 81.0, 'unit': '林芝市', 'Post': '察隅县', 'Nature_position': '察隅县自然资源局不动产登记中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230414008', 'College_majors': '2023年毕业生', 'Undergraduate_majors': '本科及以上', 'Graduate_majors': '', 'political_landscape': '法学类', 'Job_code': '法学（非学科门类）', 'Examination': '不限', 'interview': '综合管理类（A类）', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 82.0, 'unit': '林芝市', 'Post': '察隅县', 'Nature_position': '察隅县行政便民审批服务局政务服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230414009', 'College_majors': '2023年毕业生', 'Undergraduate_majors': '本科及以上', 'Graduate_majors': '', 'political_landscape': '计算机类、数据计算及应用（专业）', 'Job_code': '计算机科学与技术', 'Examination': '不限', 'interview': '自然科学专技类（C类）', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 83.0, 'unit': '林芝市', 'Post': '察隅县', 'Nature_position': '察隅县竹瓦根镇卫生院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230414010', 'College_majors': '2023年毕业生', 'Undergraduate_majors': '本科及以上', 'Graduate_majors': '', 'political_landscape': '公共卫生与预防医学类', 'Job_code': '公共卫生与预防医学', 'Examination': '不限', 'interview': '医疗卫生类（E类）-公共卫生管理', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 84.0, 'unit': '林芝市', 'Post': '察隅县', 'Nature_position': '察隅县下察隅镇农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230414011', 'College_majors': '2023年毕业生', 'Undergraduate_majors': '本科及以上', 'Graduate_majors': '', 'political_landscape': '植物生产类、自然保护与环境生态类', 'Job_code': '植物保护、园艺学、农业资源与环境', 'Examination': '不限', 'interview': '自然科学专技类（C类）', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 85.0, 'unit': '林芝市', 'Post': '察隅县', 'Nature_position': '察隅县下察隅镇农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230414012', 'College_majors': '2023年毕业生', 'Undergraduate_majors': '大专及以上', 'Graduate_majors': '农业类、林业类、畜牧业类', 'political_landscape': '植物生产类、林学类、动物医学类', 'Job_code': '作物学、园艺学、植物保护、畜牧学、兽医学、林学', 'Examination': '不限', 'interview': '自然科学专技类（C类）', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 86.0, 'unit': '林芝市', 'Post': '察隅县', 'Nature_position': '察隅县下察隅镇文化旅游综合服务中心', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': '230414013', 'College_majors': '2023年毕业生', 'Undergraduate_majors': '大专及以上', 'Graduate_majors': '旅游类、文化服务类', 'political_landscape': '旅游管理类', 'Job_code': '旅游管理', 'Examination': '不限', 'interview': '综合管理类（A类）', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 87.0, 'unit': '林芝市', 'Post': '察隅县', 'Nature_position': '察隅县下察隅镇文化旅游综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230414014', 'College_majors': '2023年毕业生', 'Undergraduate_majors': '本科及以上', 'Graduate_majors': '', 'political_landscape': '历史学类、文物保护与修复', 'Job_code': '世界史、文物保护与修复', 'Examination': '不限', 'interview': '社会科学专技类（B类）', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 88.0, 'unit': '林芝市', 'Post': '察隅县', 'Nature_position': '察隅县下察隅镇卫生院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230414015', 'College_majors': '2023年毕业生', 'Undergraduate_majors': '本科及以上', 'Graduate_majors': '', 'political_landscape': '公共卫生与预防医学类', 'Job_code': '公共卫生与预防医学', 'Examination': '不限', 'interview': '医疗卫生类（E类）-公共卫生管理', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 89.0, 'unit': '林芝市', 'Post': '察隅县', 'Nature_position': '察隅县上察隅镇文化旅游综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230414016', 'College_majors': '2023年毕业生', 'Undergraduate_majors': '大专及以上', 'Graduate_majors': '旅游类、文化服务类', 'political_landscape': '旅游管理类', 'Job_code': '旅游管理', 'Examination': '不限', 'interview': '综合管理类（A类）', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 90.0, 'unit': '林芝市', 'Post': '察隅县', 'Nature_position': '察隅县上察隅镇文化旅游综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230414017', 'College_majors': '2023年毕业生', 'Undergraduate_majors': '本科及以上', 'Graduate_majors': '', 'political_landscape': '历史学类、文物保护与修复', 'Job_code': '世界史、文物保护与修复', 'Examination': '不限', 'interview': '社会科学专技类（B类）', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 91.0, 'unit': '林芝市', 'Post': '察隅县', 'Nature_position': '察隅县上察隅镇卫生院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230414018', 'College_majors': '2023年毕业生', 'Undergraduate_majors': '本科及以上', 'Graduate_majors': '', 'political_landscape': '公共卫生与预防医学类', 'Job_code': '公共卫生与预防医学', 'Examination': '不限', 'interview': '医疗卫生类（E类）-公共卫生管理', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 92.0, 'unit': '林芝市', 'Post': '察隅县', 'Nature_position': '察隅县察瓦龙乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230414019', 'College_majors': '2023年毕业生', 'Undergraduate_majors': '大专及以上', 'Graduate_majors': '农业类、林业类、畜牧业类', 'political_landscape': '植物生产类、林学类、动物医学类', 'Job_code': '作物学、园艺学、植物保护、畜牧学、兽医学、林学', 'Examination': '不限', 'interview': '自然科学专技类（C类）', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 93.0, 'unit': '林芝市', 'Post': '察隅县', 'Nature_position': '察隅县察瓦龙乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230414020', 'College_majors': '2023年毕业生', 'Undergraduate_majors': '本科及以上', 'Graduate_majors': '', 'political_landscape': '植物生产类', 'Job_code': '作物学、园艺学', 'Examination': '不限', 'interview': '自然科学专技类（C类）', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 94.0, 'unit': '林芝市', 'Post': '察隅县', 'Nature_position': '察隅县察瓦龙乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230414021', 'College_majors': '2023年毕业生', 'Undergraduate_majors': '本科及以上', 'Graduate_majors': '', 'political_landscape': '农学（学科门类）', 'Job_code': '农学', 'Examination': '不限', 'interview': '自然科学专技类（C类）', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 95.0, 'unit': '林芝市', 'Post': '察隅县', 'Nature_position': '察隅县察瓦龙乡文化旅游综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230414022', 'College_majors': '2023年毕业生', 'Undergraduate_majors': '大专及以上', 'Graduate_majors': '旅游类、文化服务类', 'political_landscape': '旅游管理类', 'Job_code': '旅游管理', 'Examination': '不限', 'interview': '综合管理类（A类）', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 96.0, 'unit': '林芝市', 'Post': '察隅县', 'Nature_position': '察隅县察瓦龙乡文化旅游综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230414023', 'College_majors': '2023年毕业生', 'Undergraduate_majors': '本科及以上', 'Graduate_majors': '', 'political_landscape': '历史学类、文物保护与修复', 'Job_code': '世界史、文物保护与修复', 'Examination': '不限', 'interview': '社会科学专技类（B类）', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 97.0, 'unit': '林芝市', 'Post': '察隅县', 'Nature_position': '察隅县察瓦龙乡卫生院', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': '230414024', 'College_majors': '2023年毕业生', 'Undergraduate_majors': '本科及以上', 'Graduate_majors': '', 'political_landscape': '医学技术类、临床医学类（西医）', 'Job_code': '医学技术、临床医学（西医）', 'Examination': '不限', 'interview': '医疗卫生类（E类）', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 98.0, 'unit': '林芝市', 'Post': '察隅县', 'Nature_position': '察隅县察瓦龙乡卫生院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230414025', 'College_majors': '2023年毕业生', 'Undergraduate_majors': '本科及以上', 'Graduate_majors': '', 'political_landscape': '公共卫生与预防医学类', 'Job_code': '公共卫生与预防医学', 'Examination': '不限', 'interview': '医疗卫生类（E类）-公共卫生管理', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 99.0, 'unit': '林芝市', 'Post': '察隅县', 'Nature_position': '察隅县古玉乡便民服务中心（退役军人服务站）', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230414026', 'College_majors': '2023年毕业生', 'Undergraduate_majors': '大专及以上', 'Graduate_majors': '文秘类', 'political_landscape': '中国语言文学类', 'Job_code': '中国语言文学', 'Examination': '不限', 'interview': '综合管理类（A类）', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 100.0, 'unit': '林芝市', 'Post': '察隅县', 'Nature_position': '察隅县古玉乡便民服务中心（退役军人服务站）', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230414027', 'College_majors': '2023年毕业生', 'Undergraduate_majors': '本科及以上', 'Graduate_majors': '', 'political_landscape': '不限', 'Job_code': '不限', 'Examination': '不限', 'interview': '综合管理类（A类）', 'remark': '否', 'mess': '仅限察隅县学籍或察隅县户籍高校毕业生报考', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 101.0, 'unit': '林芝市', 'Post': '察隅县', 'Nature_position': '察隅县古玉乡便民服务中心（退役军人服务站）', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230414028', 'College_majors': '2023年毕业生', 'Undergraduate_majors': '大专及以上', 'Graduate_majors': '财务会计类', 'political_landscape': '工商管理类', 'Job_code': '工商管理', 'Examination': '不限', 'interview': '综合管理类（A类）', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 102.0, 'unit': '林芝市', 'Post': '察隅县', 'Nature_position': '察隅县古拉乡便民服务中心（退役军人服务站）', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230414029', 'College_majors': '2023年毕业生', 'Undergraduate_majors': '大专及以上', 'Graduate_majors': '文秘类、财务会计类', 'political_landscape': '中国语言文学类', 'Job_code': '中国语言文学', 'Examination': '不限', 'interview': '综合管理类（A类）', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 103.0, 'unit': '林芝市', 'Post': '察隅县', 'Nature_position': '察隅县古拉乡卫生院', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': '230414030', 'College_majors': '2023年毕业生', 'Undergraduate_majors': '本科及以上', 'Graduate_majors': '', 'political_landscape': '医学技术类、临床医学类（西医）', 'Job_code': '医学技术、临床医学（西医）', 'Examination': '不限', 'interview': '医疗卫生类（E类）', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 104.0, 'unit': '林芝市', 'Post': '波密县', 'Nature_position': '波密县文化和旅游局文物保护与研究中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230415001', 'College_majors': '2023年毕业生', 'Undergraduate_majors': '大专及以上', 'Graduate_majors': '文物修复与保护、考古探掘技术', 'political_landscape': '文物与博物馆学、文物保护技术', 'Job_code': '考古学、文物与博物馆', 'Examination': '不限', 'interview': '社会科学专技类（B类）', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 105.0, 'unit': '林芝市', 'Post': '波密县', 'Nature_position': '波密县文化旅游局文物保护与研究中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230415002', 'College_majors': '2023年毕业生', 'Undergraduate_majors': '大专及以上', 'Graduate_majors': '文物博物馆服务与管理、文物修复与保护', 'political_landscape': '文物与博物馆学、文物保护技术、文物保护与修复', 'Job_code': '考古学', 'Examination': '不限', 'interview': '社会科学专技类（B类）', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 106.0, 'unit': '林芝市', 'Post': '波密县', 'Nature_position': '波密县文化旅游局文物保护与研究中心', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': '230415003', 'College_majors': '不限', 'Undergraduate_majors': '大专及以上', 'Graduate_majors': '文物博物馆服务与管理、文物修复与保护', 'political_landscape': '考古学', 'Job_code': '文物与博物馆学、文物保护技术、文物保护与修复', 'Examination': '不限', 'interview': '社会科学专技类（B类）', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 107.0, 'unit': '林芝市', 'Post': '波密县', 'Nature_position': '波密县人民医院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230415004', 'College_majors': '不限', 'Undergraduate_majors': '本科及以上', 'Graduate_majors': '', 'political_landscape': '儿科学', 'Job_code': '儿科学', 'Examination': '不限', 'interview': '医疗卫生类（E类）-西医临床', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 108.0, 'unit': '林芝市', 'Post': '波密县', 'Nature_position': '中共波密县委员会宣传部新华书店', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230415005', 'College_majors': '2023年毕业生', 'Undergraduate_majors': '本科及以上', 'Graduate_majors': '', 'political_landscape': '不限', 'Job_code': '不限', 'Examination': '不限', 'interview': '综合管理类（A类）', 'remark': '否', 'mess': '仅限服务期满考核合格“三支一扶”人员报考', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 109.0, 'unit': '林芝市', 'Post': '波密县', 'Nature_position': '中共波密县委员会巡察办巡察数据应用中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230415006', 'College_majors': '2023年毕业生', 'Undergraduate_majors': '大专及以上', 'Graduate_majors': '新闻传播大类', 'political_landscape': '新闻传播学类', 'Job_code': '新闻传播学', 'Examination': '中共党员或共青团员', 'interview': '社会科学专技类（B类）', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 110.0, 'unit': '林芝市', 'Post': '波密县', 'Nature_position': '波密县疾病预防控制中心', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': '230415007', 'College_majors': '不限', 'Undergraduate_majors': '大专及以上', 'Graduate_majors': '公共卫生与卫生管理类', 'political_landscape': '公共卫生与预防医学类', 'Job_code': '公共卫生与预防医学', 'Examination': '不限', 'interview': '医疗卫生类（E类）-公共卫生管理', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 111.0, 'unit': '林芝市', 'Post': '波密县', 'Nature_position': '波密县疾病预防控制中心', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': '230415008', 'College_majors': '不限', 'Undergraduate_majors': '大专及以上', 'Graduate_majors': '预防医学', 'political_landscape': '预防医学', 'Job_code': '公共卫生与预防医学', 'Examination': '不限', 'interview': '医疗卫生类（E类）-公共卫生管理', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 112.0, 'unit': '林芝市', 'Post': '波密县', 'Nature_position': '波密县多吉乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': '230415009', 'College_majors': '2023年毕业生', 'Undergraduate_majors': '大专及以上', 'Graduate_majors': '不限', 'political_landscape': '不限', 'Job_code': '不限', 'Examination': '不限', 'interview': '综合管理类（A类）', 'remark': '否', 'mess': '仅限服务期满考核合格“三支一扶”人员报考', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 113.0, 'unit': '林芝市', 'Post': '波密县', 'Nature_position': '波密县玉普乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230415010', 'College_majors': '2023年毕业生', 'Undergraduate_majors': '大专及以上', 'Graduate_majors': '畜牧兽医', 'political_landscape': '动物医学类', 'Job_code': '兽医学', 'Examination': '不限', 'interview': '自然科学专技类（C类）', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 114.0, 'unit': '林芝市', 'Post': '波密县', 'Nature_position': '波密县玉普乡便民服务中心（退役军人服务站）', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230415011', 'College_majors': '2023年毕业生', 'Undergraduate_majors': '本科及以上', 'Graduate_majors': '', 'political_landscape': '新闻传播学类', 'Job_code': '新闻传播学', 'Examination': '中共党员', 'interview': '社会科学专技类（B类）', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 115.0, 'unit': '林芝市', 'Post': '波密县', 'Nature_position': '波密县玉许乡卫生院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230415012', 'College_majors': '不限', 'Undergraduate_majors': '本科及以上', 'Graduate_majors': '', 'political_landscape': '公共卫生与预防医学类', 'Job_code': '公共卫生与预防医学', 'Examination': '不限', 'interview': '医疗卫生类（E类）-公共卫生管理', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 116.0, 'unit': '林芝市', 'Post': '波密县', 'Nature_position': '波密县松宗镇便民服务中心（退役军人服务站）', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230415013', 'College_majors': '2023年毕业生', 'Undergraduate_majors': '大专及以上', 'Graduate_majors': '不限', 'political_landscape': '不限', 'Job_code': '不限', 'Examination': '不限', 'interview': '综合管理类（A类）', 'remark': '否', 'mess': '仅限林芝市学籍或林芝市户籍高校毕业生报考', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 117.0, 'unit': '林芝市', 'Post': '波密县', 'Nature_position': '波密县松宗镇农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230415014', 'College_majors': '2023年毕业生', 'Undergraduate_majors': '大专及以上', 'Graduate_majors': '不限', 'political_landscape': '不限', 'Job_code': '不限', 'Examination': '不限', 'interview': '综合管理类（A类）', 'remark': '否', 'mess': '仅限林芝市学籍或林芝市户籍高校毕业生报考', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 118.0, 'unit': '林芝市', 'Post': '波密县', 'Nature_position': '波密县倾多镇便民服务中心（退役军人服务站）', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230415015', 'College_majors': '2023年毕业生', 'Undergraduate_majors': '本科及以上', 'Graduate_majors': '', 'political_landscape': '不限', 'Job_code': '不限', 'Examination': '不限', 'interview': '综合管理类（A类）', 'remark': '否', 'mess': '仅限林芝市学籍或林芝市户籍高校毕业生报考', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 119.0, 'unit': '林芝市', 'Post': '波密县', 'Nature_position': '波密县倾多镇文化旅游综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230415016', 'College_majors': '2023年毕业生', 'Undergraduate_majors': '本科及以上', 'Graduate_majors': '', 'political_landscape': '新闻传播学类', 'Job_code': '新闻传播学', 'Examination': '不限', 'interview': '社会科学专技类（B类）', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 120.0, 'unit': '林芝市', 'Post': '波密县', 'Nature_position': '波密县倾多镇卫生院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230415017', 'College_majors': '不限', 'Undergraduate_majors': '大专及以上', 'Graduate_majors': '预防医学', 'political_landscape': '预防医学', 'Job_code': '公共卫生与预防医学', 'Examination': '不限', 'interview': '医疗卫生类（E类）-公共卫生管理', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 121.0, 'unit': '林芝市', 'Post': '波密县', 'Nature_position': '波密县易贡乡便民服务中心（退役军人服务站）', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230415018', 'College_majors': '2023年毕业生', 'Undergraduate_majors': '大专及以上', 'Graduate_majors': '不限', 'political_landscape': '不限', 'Job_code': '不限', 'Examination': '不限', 'interview': '综合管理类（A类）', 'remark': '否', 'mess': '仅限林芝市学籍或林芝市户籍高校毕业生报考', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 122.0, 'unit': '林芝市', 'Post': '波密县', 'Nature_position': '波密县易贡乡茶场卫生所', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230415019', 'College_majors': '不限', 'Undergraduate_majors': '仅限大专或本科', 'Graduate_majors': '护理', 'political_landscape': '护理学', 'Job_code': '', 'Examination': '不限', 'interview': '医疗卫生类（E类）-护理', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 123.0, 'unit': '林芝市', 'Post': '波密县', 'Nature_position': '波密县古乡便民服务中心（退役军人服务站）', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230415020', 'College_majors': '2023年毕业生', 'Undergraduate_majors': '本科及以上', 'Graduate_majors': '', 'political_landscape': '不限', 'Job_code': '不限', 'Examination': '不限', 'interview': '综合管理类（A类）', 'remark': '否', 'mess': '仅限林芝市学籍或林芝市户籍高校毕业生报考', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 124.0, 'unit': '林芝市', 'Post': '波密县', 'Nature_position': '波密县古乡便民服务中心（退役军人服务站）', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230415021', 'College_majors': '2023年毕业生', 'Undergraduate_majors': '大专及以上', 'Graduate_majors': '不限', 'political_landscape': '不限', 'Job_code': '不限', 'Examination': '不限', 'interview': '综合管理类（A类）', 'remark': '否', 'mess': '仅限林芝市学籍或林芝市户籍高校毕业生报考', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 125.0, 'unit': '林芝市', 'Post': '波密县', 'Nature_position': '波密县康玉乡卫生院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230415022', 'College_majors': '不限', 'Undergraduate_majors': '仅限大专或本科', 'Graduate_majors': '护理类', 'political_landscape': '护理学类', 'Job_code': '', 'Examination': '不限', 'interview': '医疗卫生类（E类）-护理', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 126.0, 'unit': '林芝市', 'Post': '波密县', 'Nature_position': '波密县康玉乡便民服务中心（退役军人服务站）', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230415023', 'College_majors': '2023年毕业生', 'Undergraduate_majors': '仅限大专或本科', 'Graduate_majors': '文秘类、新闻出版类', 'political_landscape': '中国语言文学类、新闻传播学类', 'Job_code': '', 'Examination': '不限', 'interview': '综合管理类（A类）', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 127.0, 'unit': '林芝市', 'Post': '波密县', 'Nature_position': '波密县康玉乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230415024', 'College_majors': '2023年毕业生', 'Undergraduate_majors': '仅限大专或本科', 'Graduate_majors': '园林技术', 'political_landscape': '园林（专业）', 'Job_code': '', 'Examination': '不限', 'interview': '自然科学专技类（C类）', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 128.0, 'unit': '林芝市', 'Post': '波密县', 'Nature_position': '波密县八盖乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230415025', 'College_majors': '2023年毕业生', 'Undergraduate_majors': '仅限大专或本科', 'Graduate_majors': '畜牧兽医', 'political_landscape': '动物医学类', 'Job_code': '', 'Examination': '不限', 'interview': '自然科学专技类（C类）', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 129.0, 'unit': '林芝市', 'Post': '波密县', 'Nature_position': '波密县八盖乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230415026', 'College_majors': '2023年毕业生', 'Undergraduate_majors': '仅限大专或本科', 'Graduate_majors': '农业类、林业类、畜牧业类', 'political_landscape': '植物生产类、动物生产类', 'Job_code': '', 'Examination': '不限', 'interview': '自然科学专技类（C类）', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 130.0, 'unit': '林芝市', 'Post': '波密县', 'Nature_position': '波密县八盖乡卫生院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230415027', 'College_majors': '不限', 'Undergraduate_majors': '大专及以上', 'Graduate_majors': '预防医学', 'political_landscape': '预防医学', 'Job_code': '公共卫生与预防医学', 'Examination': '不限', 'interview': '医疗卫生类（E类）-公共卫生管理', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 131.0, 'unit': '林芝市', 'Post': '波密县', 'Nature_position': '波密县扎木镇便民服务中心（退役军人服务站）', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230415028', 'College_majors': '2023年毕业生', 'Undergraduate_majors': '本科及以上', 'Graduate_majors': '', 'political_landscape': '法学类（非学科门类）', 'Job_code': '法学', 'Examination': '不限', 'interview': '综合管理类（A类）', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 132.0, 'unit': '林芝市', 'Post': '墨脱县', 'Nature_position': '墨脱县发展和改革委员会招商服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230416001', 'College_majors': '2023年毕业生', 'Undergraduate_majors': '仅限本科', 'Graduate_majors': '', 'political_landscape': '自动化类', 'Job_code': '', 'Examination': '不限', 'interview': '自然科学专技类（C类）', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 133.0, 'unit': '林芝市', 'Post': '墨脱县', 'Nature_position': '墨脱县发展和改革委员会招商服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230416002', 'College_majors': '2023年毕业生', 'Undergraduate_majors': '仅限本科', 'Graduate_majors': '', 'political_landscape': '政治学类', 'Job_code': '', 'Examination': '不限', 'interview': '综合管理类（A类）', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 134.0, 'unit': '林芝市', 'Post': '墨脱县', 'Nature_position': '墨脱县发展和改革委员会招商服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230416003', 'College_majors': '2023年毕业生', 'Undergraduate_majors': '仅限本科', 'Graduate_majors': '', 'political_landscape': '行政管理', 'Job_code': '', 'Examination': '不限', 'interview': '综合管理类（A类）', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 135.0, 'unit': '林芝市', 'Post': '墨脱县', 'Nature_position': '墨脱县疾病预防控制中心', 'Number': '事业单位', 'Graduation_time': 3.0, 'Academic_requirements': '230416004', 'College_majors': '不限', 'Undergraduate_majors': '本科及以上', 'Graduate_majors': '', 'political_landscape': '卫生检验与检疫', 'Job_code': '医学技术', 'Examination': '不限', 'interview': '医疗卫生类（E类）-医学技术', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 136.0, 'unit': '林芝市', 'Post': '墨脱县', 'Nature_position': '墨脱县疾病预防控制中心', 'Number': '事业单位', 'Graduation_time': 4.0, 'Academic_requirements': '230416005', 'College_majors': '不限', 'Undergraduate_majors': '本科及以上', 'Graduate_majors': '', 'political_landscape': '公共卫生与预防医学类', 'Job_code': '公共卫生与预防医学', 'Examination': '不限', 'interview': '医疗卫生类（E类）-公共卫生管理', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 137.0, 'unit': '林芝市', 'Post': '墨脱县', 'Nature_position': '墨脱县墨脱镇卫生院 ', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230416006', 'College_majors': '不限', 'Undergraduate_majors': '本科及以上', 'Graduate_majors': '', 'political_landscape': '临床医学（西医）、护理学、公共卫生与预防医学类', 'Job_code': '临床医学学科、护理学学科、公共卫生与预防医学', 'Examination': '不限', 'interview': '医疗卫生类（E类）', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 138.0, 'unit': '林芝市', 'Post': '墨脱县', 'Nature_position': '墨脱县德兴乡卫生院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230416007', 'College_majors': '不限', 'Undergraduate_majors': '本科及以上', 'Graduate_majors': '', 'political_landscape': '临床医学（西医）、护理学、公共卫生与预防医学类', 'Job_code': '临床医学学科、护理学学科、公共卫生与预防医学', 'Examination': '不限', 'interview': '医疗卫生类（E类）', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 139.0, 'unit': '林芝市', 'Post': '墨脱县', 'Nature_position': '墨脱县背崩乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': '230416008', 'College_majors': '2023年毕业生', 'Undergraduate_majors': '大专及以上', 'Graduate_majors': '农业类', 'political_landscape': '植物生产类', 'Job_code': '作物学', 'Examination': '不限', 'interview': '自然科学专技类（C类）', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 140.0, 'unit': '林芝市', 'Post': '墨脱县', 'Nature_position': '墨脱县背崩乡卫生院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230416009', 'College_majors': '不限', 'Undergraduate_majors': '本科及以上', 'Graduate_majors': '', 'political_landscape': '临床医学（西医）、护理学、公共卫生与预防医学类', 'Job_code': '临床医学学科、护理学学科、公共卫生与预防医学', 'Examination': '不限', 'interview': '医疗卫生类（E类）', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 141.0, 'unit': '林芝市', 'Post': '墨脱县', 'Nature_position': '墨脱县达木珞巴民族乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': '230416010', 'College_majors': '2023年毕业生', 'Undergraduate_majors': '大专及以上', 'Graduate_majors': '林业类', 'political_landscape': '林学类', 'Job_code': '林学', 'Examination': '不限', 'interview': '自然科学专技类（C类）', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 142.0, 'unit': '林芝市', 'Post': '墨脱县', 'Nature_position': '墨脱县达木珞巴民族乡文化服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230416011', 'College_majors': '2023年毕业生', 'Undergraduate_majors': '大专及以上', 'Graduate_majors': '文化艺术大类', 'political_landscape': '艺术学（学科门类）', 'Job_code': '艺术学', 'Examination': '不限', 'interview': '社会科学专技类（B类）', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 143.0, 'unit': '林芝市', 'Post': '墨脱县', 'Nature_position': '墨脱县达木珞巴民族乡卫生院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230416012', 'College_majors': '不限', 'Undergraduate_majors': '本科及以上', 'Graduate_majors': '', 'political_landscape': '临床医学（西医）、护理学、公共卫生与预防医学类', 'Job_code': '临床医学学科、护理学学科、公共卫生与预防医学', 'Examination': '不限', 'interview': '医疗卫生类（E类）', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 144.0, 'unit': '林芝市', 'Post': '墨脱县', 'Nature_position': '墨脱县格当乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230416013', 'College_majors': '2023年毕业生', 'Undergraduate_majors': '大专及以上', 'Graduate_majors': '农业类', 'political_landscape': '植物生产类', 'Job_code': '作物学', 'Examination': '不限', 'interview': '自然科学专技类（C类）', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 145.0, 'unit': '林芝市', 'Post': '墨脱县', 'Nature_position': '墨脱县格当乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230416014', 'College_majors': '2023年毕业生', 'Undergraduate_majors': '仅限本科', 'Graduate_majors': '', 'political_landscape': '自然保护与环境生态类', 'Job_code': '', 'Examination': '不限', 'interview': '自然科学专技类（C类）', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 146.0, 'unit': '林芝市', 'Post': '墨脱县', 'Nature_position': '墨脱县格当乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230416015', 'College_majors': '不限', 'Undergraduate_majors': '大专及以上', 'Graduate_majors': '畜牧业类', 'political_landscape': '动物医学类、动物生产类', 'Job_code': '兽医学、畜牧学', 'Examination': '不限', 'interview': '自然科学专技类（C类）', 'remark': '否', 'mess': '仅限墨脱县学籍或墨脱县户籍高校毕业生报考', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 147.0, 'unit': '林芝市', 'Post': '墨脱县', 'Nature_position': '墨脱县格当乡文化服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230416016', 'College_majors': '2023年毕业生', 'Undergraduate_majors': '大专及以上', 'Graduate_majors': '文化艺术大类', 'political_landscape': '艺术学（学科门类）', 'Job_code': '艺术学', 'Examination': '不限', 'interview': '社会科学专技类（B类）', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 148.0, 'unit': '林芝市', 'Post': '墨脱县', 'Nature_position': '墨脱县格当乡文化服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230416017', 'College_majors': '2023年毕业生', 'Undergraduate_majors': '大专及以上', 'Graduate_majors': '文化艺术大类', 'political_landscape': '艺术学（学科门类）', 'Job_code': '艺术学', 'Examination': '不限', 'interview': '社会科学专技类（B类）', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 149.0, 'unit': '林芝市', 'Post': '墨脱县', 'Nature_position': '墨脱县格当乡卫生院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230416018', 'College_majors': '不限', 'Undergraduate_majors': '本科及以上', 'Graduate_majors': '', 'political_landscape': '临床医学（西医）、护理学、公共卫生与预防医学类', 'Job_code': '临床医学学科、护理学学科、公共卫生与预防医学', 'Examination': '不限', 'interview': '医疗卫生类（E类）', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 150.0, 'unit': '林芝市', 'Post': '墨脱县', 'Nature_position': '墨脱县帮辛乡文化服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230416019', 'College_majors': '2023年毕业生', 'Undergraduate_majors': '大专及以上', 'Graduate_majors': '文化艺术大类', 'political_landscape': '艺术学（学科门类）', 'Job_code': '艺术学', 'Examination': '不限', 'interview': '社会科学专技类（B类）', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 151.0, 'unit': '林芝市', 'Post': '墨脱县', 'Nature_position': '墨脱县加热萨乡文化服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230416020', 'College_majors': '2023年毕业生', 'Undergraduate_majors': '大专及以上', 'Graduate_majors': '文化艺术大类', 'political_landscape': '艺术学（学科门类）', 'Job_code': '艺术学', 'Examination': '不限', 'interview': '社会科学专技类（B类）', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 152.0, 'unit': '林芝市', 'Post': '墨脱县', 'Nature_position': '墨脱县加热萨乡卫生院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230416021', 'College_majors': '不限', 'Undergraduate_majors': '本科及以上', 'Graduate_majors': '', 'political_landscape': '临床医学类（西医）', 'Job_code': '临床医学（西医）', 'Examination': '不限', 'interview': '医疗卫生类（E类）-西医临床', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 153.0, 'unit': '林芝市', 'Post': '墨脱县', 'Nature_position': '墨脱县加热萨乡卫生院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230416022', 'College_majors': '不限', 'Undergraduate_majors': '本科及以上', 'Graduate_majors': '', 'political_landscape': '临床医学（西医）、护理学、公共卫生与预防医学类', 'Job_code': '临床医学学科、护理学学科、公共卫生与预防医学', 'Examination': '不限', 'interview': '医疗卫生类（E类）', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 154.0, 'unit': '林芝市', 'Post': '墨脱县', 'Nature_position': '墨脱县甘登乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230416023', 'College_majors': '2023年毕业生', 'Undergraduate_majors': '大专及以上', 'Graduate_majors': '农业类', 'political_landscape': '植物生产类', 'Job_code': '作物学', 'Examination': '不限', 'interview': '自然科学专技类（C类）', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 155.0, 'unit': '林芝市', 'Post': '墨脱县', 'Nature_position': '墨脱县甘登乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230416024', 'College_majors': '2023年毕业生', 'Undergraduate_majors': '大专及以上', 'Graduate_majors': '农业类', 'political_landscape': '植物生产类', 'Job_code': '作物学', 'Examination': '不限', 'interview': '自然科学专技类（C类）', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'},
+
+ {'id': 156.0, 'unit': '林芝市', 'Post': '墨脱县', 'Nature_position': '墨脱县甘登乡卫生院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '230416025', 'College_majors': '不限', 'Undergraduate_majors': '本科及以上', 'Graduate_majors': '', 'political_landscape': '临床医学（西医）、护理学、公共卫生与预防医学类', 'Job_code': '临床医学学科、护理学学科、公共卫生与预防医学', 'Examination': '不限', 'interview': '医疗卫生类（E类）', 'remark': '否', 'mess': '', 'consultation': '0894-58889700894-5828926'}]
+
+
+
+	    
+	    
+	    for(i=0;i<xx.length;i++){
+	    	var html="<tr><td>"+
+	    	xx[i].id+"</td><td>"+
+            xx[i].unit+"</td><td>"+
+            xx[i].Post+"</td><td>"+
+            xx[i].Nature_position+"</td><td>"+
+            xx[i].Number+"</td><td>"+
+            xx[i].Graduation_time+"</td><td>"+
+            xx[i].Academic_requirements+"</td><td>"+
+            xx[i].College_majors+"</td><td>"+
+            xx[i].Undergraduate_majors+"</td><td>"+
+            xx[i].Graduate_majors+"</td><td>"+
+            xx[i].political_landscape+"</td><td>"+
+            xx[i].Job_code+"</td><td>"+
+            xx[i].Examination+"</td><td>"+
+            xx[i].interview+"</td><td>"+
+            xx[i].remark+"</td><td>"+
+            xx[i].mess+"</td><td>"+
+            xx[i].consultation+"</td></tr>";
+
+	    	$("#example tbody").append(html);
+	    	
+	    }
+	    
+	    $('#example').DataTable( {
+	        dom: 'Bfrtip',
+	        language: {  
+                emptyTable: '没有数据',  
+                loadingRecords: '加载中...',  
+                processing: '查询中...',  
+                search: '搜索【专业、地区等】:',  
+                lengthMenu: '每页 _MENU_ 件',  
+                zeroRecords: '没有数据',  
+                paginate: {  
+                    'first':      '第一页',  
+                    'last':       '最后一页',  
+                    'next':       '下一页',  
+                    'previous':   '上一页'  
+            	},  
+	            info: '第 _PAGE_ 页 / 总 _PAGES_ 页',  
+	            infoEmpty: '没有数据',  
+	            infoFiltered: '(过滤总件数 _MAX_ 条)',
+	        },
+	        
+
+	    } );
+
+
+	    
+
+
+	});
+  </script>  
+ </body>  
+</html>  

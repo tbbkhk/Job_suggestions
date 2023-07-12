@@ -1,0 +1,278 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">   
+ <head>  
+  <title> 2023 </title>  
+  <meta charset='utf-8'>
+  <link rel="stylesheet" href="../../css/table.css" />
+  <link rel="stylesheet" href="../../css/buttons.css" />
+  <style>
+  	*{
+  		/*background-image: url();*/
+  		background-color: #000;
+  		color: #FFF; 
+  	}
+  	tbody td{
+  		text-align: center;
+  	}
+  </style>
+ </head>  
+  
+ <body>  
+ 	<h1 style="text-align: center;">拉萨市2023年事业单位公开招聘</h1>
+    <a href="../../2023_shiye_.html" style="font-size: 20px;">回到主页</a>
+ 	<table id="example" class="display" role="grid" aria-describedby="example_info">
+ 		<thead>
+            <tr>
+                <th>序号</th>
+                <th>招聘地市</th>
+                <th>单位</th>
+                <th>岗位</th>
+                <th>职位性质</th>
+                <th>人数</th>
+                <th>毕业时间</th>
+                <th>学历要求</th>
+                <th>大专专业</th>
+                <th>本科专业</th>
+                <th>研究生专业</th>
+                <th>政治面貌</th>
+                <th>岗位代码</th>
+                <th>笔试科目</th>
+                <th>是否面试</th>
+                <th>备注</th>
+                
+                
+
+            </tr>
+        </thead>
+        <tbody>
+            
+        </tbody>
+
+        
+     
+ 	</table>
+ 	
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/jquery.datatables.min.js"/>
+	<script src="../../js/buttons.print.min.js"></script>
+
+ <script> 
+
+$(document).ready(function(){ 
+
+    var xx = [{'id': 1.0, 'unit': '拉萨市', 'Post': '拉萨市纪律检查委员会', 'Nature_position': '达孜管理中心', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': '2023年毕业', 'College_majors': '仅限本科', 'Undergraduate_majors': '', 'Graduate_majors': '计算机类', 'political_landscape': '', 'Job_code': '中共党员', 'Examination': 230100001.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'consultation': ''},
+
+ {'id': 2.0, 'unit': '拉萨市', 'Post': '拉萨市纪律检查委员会', 'Nature_position': '达孜管理中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业', 'College_majors': '仅限本科', 'Undergraduate_majors': '', 'Graduate_majors': '法学类', 'political_landscape': '', 'Job_code': '中共党员', 'Examination': 230100002.0, 'interview': '综合管理类（A类）', 'remark': '否', 'consultation': ''},
+
+ {'id': 3.0, 'unit': '拉萨市', 'Post': '拉萨市委网信办（市大数据发展管理局）', 'Nature_position': '大数据中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '计算机科学与技术、网络工程 、信息安全      \n、数据科学与大数据技术、网络空间安全', 'political_landscape': '计算机科学与技术、网络空间安全、信息与通信工程', 'Job_code': '不限', 'Examination': 230100003.0, 'interview': '自然科学专技类（C类）', 'remark': '是', 'consultation': '仅限拉萨户籍或学籍'},
+
+ {'id': 4.0, 'unit': '拉萨市', 'Post': '拉萨市委网信办（市大数据发展管理局）', 'Nature_position': '网络安全应急指挥中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '计算机科学与技术、信息安全、网络空间安全', 'political_landscape': '计算机科学与技术、网络空间安全、信息与通信工程', 'Job_code': '不限', 'Examination': 230100004.0, 'interview': '自然科学专技类（C类）', 'remark': '是', 'consultation': ''},
+
+ {'id': 5.0, 'unit': '拉萨市', 'Post': '中共拉萨市委党校（市行政学院）', 'Nature_position': '马克思主义教研室', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业', 'College_majors': '硕士研究生及以上', 'Undergraduate_majors': '', 'Graduate_majors': '', 'political_landscape': '马克思主义哲学', 'Job_code': '中共党员', 'Examination': 230100005.0, 'interview': '————', 'remark': '是', 'consultation': ''},
+
+ {'id': 6.0, 'unit': '拉萨市', 'Post': '中共拉萨市委党校（市行政学院）', 'Nature_position': '马克思主义教研室', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业', 'College_majors': '硕士研究生及以上', 'Undergraduate_majors': '', 'Graduate_majors': '', 'political_landscape': '马克思主义中国化研究', 'Job_code': '中共党员', 'Examination': 230100006.0, 'interview': '————', 'remark': '是', 'consultation': ''},
+
+ {'id': 7.0, 'unit': '拉萨市', 'Post': '中共拉萨市委党校（市行政学院）', 'Nature_position': '政治学和法学教研室', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业', 'College_majors': '硕士研究生及以上', 'Undergraduate_majors': '', 'Graduate_majors': '', 'political_landscape': '国际政治', 'Job_code': '中共党员', 'Examination': 230100007.0, 'interview': '————', 'remark': '是', 'consultation': ''},
+
+ {'id': 8.0, 'unit': '拉萨市', 'Post': '中共拉萨市委党校（市行政学院）', 'Nature_position': '民族与宗教教研室', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业', 'College_majors': '硕士研究生及以上', 'Undergraduate_majors': '', 'Graduate_majors': '', 'political_landscape': '宗教学', 'Job_code': '中共党员', 'Examination': 230100008.0, 'interview': '————', 'remark': '是', 'consultation': ''},
+
+ {'id': 9.0, 'unit': '拉萨市', 'Post': '中共拉萨市委党校（市行政学院）', 'Nature_position': '经济学教研室', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业', 'College_majors': '硕士研究生及以上', 'Undergraduate_majors': '', 'Graduate_majors': '', 'political_landscape': '区域经济学', 'Job_code': '中共党员', 'Examination': 230100009.0, 'interview': '————', 'remark': '是', 'consultation': ''},
+
+ {'id': 10.0, 'unit': '拉萨市', 'Post': '中共拉萨市委党校（市行政学院）', 'Nature_position': '公共管理教研室', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业', 'College_majors': '硕士研究生及以上', 'Undergraduate_majors': '', 'Graduate_majors': '', 'political_landscape': '社会学', 'Job_code': '中共党员', 'Examination': 230100010.0, 'interview': '————', 'remark': '是', 'consultation': ''},
+
+ {'id': 11.0, 'unit': '拉萨市', 'Post': '拉萨市人力资源和社会保障局', 'Nature_position': '考试中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '会计学', 'political_landscape': '会计学', 'Job_code': '不限', 'Examination': 230100011.0, 'interview': '社会科学专技类（B类）', 'remark': '是', 'consultation': '仅限拉萨户籍或学籍'},
+
+ {'id': 12.0, 'unit': '拉萨市', 'Post': '拉萨市商务局', 'Nature_position': '拉萨市供销合作社', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '经济学类、金融学类、经济与贸易类、', 'political_landscape': '应用经济学', 'Job_code': '中共党员或共青团员', 'Examination': 230100012.0, 'interview': '社会科学专技类（B类）', 'remark': '是', 'consultation': ''},
+
+ {'id': 13.0, 'unit': '拉萨市', 'Post': '拉萨市商务局', 'Nature_position': '拉萨市供销合作社', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '植物生产类、自然保护与环境生态类、动物生产类、动物医学类、林学类、草学类', 'political_landscape': '作物学、园艺学、农业资源与环境、植物保护、畜牧学、兽医学、林学、草学', 'Job_code': '中共党员或共青团员', 'Examination': 230100013.0, 'interview': '自然科学专技类（C类）', 'remark': '是', 'consultation': ''},
+
+ {'id': 14.0, 'unit': '拉萨市', 'Post': '拉萨市应急管理局', 'Nature_position': '拉萨市消防救援服务中心', 'Number': '事业単位', 'Graduation_time': 2.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '公安学类、法学类、马克思主义理论类、中国语言文学类、管理科学与工程类、工商管理类、公共管理类、图书情报与档案管理类、旅游管理类、政治学类、社会学类', 'political_landscape': '公安学、法学、马克思主义理论、 中国语言文学、管理科学与工程、工商管理、公共管理、图书情报与档案管理、政治学、社会学', 'Job_code': '不限', 'Examination': 230100014.0, 'interview': '综合管理类（A类）', 'remark': '是', 'consultation': '在笔试成绩达到最低合格分数线的基础上，按照1:4的比例参加西藏自治区消防救援总队组织的心理素质测试、体能测评。'},
+
+ {'id': 15.0, 'unit': '拉萨市', 'Post': '拉萨市应急管理局', 'Nature_position': '拉萨市消防救援服务中心', 'Number': '事业単位', 'Graduation_time': 2.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '新闻传播学类、历史学类、经济学类、金融学类、教育学类、体育学类、统计学类、心理学类', 'political_landscape': '新闻传播学、中国史、应用经济学、理论经济学、教育学、体育学、统计学、心理学', 'Job_code': '不限', 'Examination': 230100015.0, 'interview': '社会科学专技类（B类）', 'remark': '是', 'consultation': '在笔试成绩达到最低合格分数线的基础上，按照1:4的比例参加西藏自治区消防救援总队组织的心理素质测试、体能测评。'},
+
+ {'id': 16.0, 'unit': '拉萨市', 'Post': '拉萨市应急管理局', 'Nature_position': '拉萨市消防救援服务中心', 'Number': '事业単位', 'Graduation_time': 3.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '化学类、化工与制药类、土木类、水利类、建筑类、机械类、电气类、电子信息类、自动化类、计算机类、测绘类 、矿业类、核工程类、环境科学与工程类、安全科学与工程类、公安技术类、大气科学类、地球物理学类、地质学类、交通运输类、航空航天类、材料类、数学类', 'political_landscape': '化学、化学工程与技术、土木工程、水利工程、建筑学、机械工程、电气工程、电子科学与技术、计算机科学与技术、測绘科学与技术、矿业工程、核科学与技术、环境科学与工程、安全科学与工程、公安技术、大气科学、地球物理学、地质学、交通运输工程、航空宇航科学与技术、材料科学与工程、数学', 'Job_code': '不限', 'Examination': 230100016.0, 'interview': '自然科学专技类（C类）', 'remark': '是', 'consultation': '根据消防救援工作特点，需24小时执勤战备，参与应急救援工作，限男性；在笔试成绩达到最低合格分数线的基础上，按照1:4的比例参加西藏自治区消防救援总队组织的心理素质测试、体能测评。'},
+
+ {'id': 17.0, 'unit': '拉萨市', 'Post': '拉萨市人民医院', 'Nature_position': '儿科', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': '不限', 'College_majors': '硕士研究生及以上', 'Undergraduate_majors': '', 'Graduate_majors': '', 'political_landscape': '儿科学', 'Job_code': '不限', 'Examination': 230100017.0, 'interview': '————', 'remark': '是', 'consultation': '试持有医师执业资格证、规培证者优先考虑'},
+
+ {'id': 18.0, 'unit': '拉萨市', 'Post': '拉萨市人民医院', 'Nature_position': '妇产科', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': '不限', 'College_majors': '硕士研究生及以上', 'Undergraduate_majors': '', 'Graduate_majors': '', 'political_landscape': '妇产科学', 'Job_code': '不限', 'Examination': 230100018.0, 'interview': '————', 'remark': '是', 'consultation': '试持有医师执业资格证、规培证者优先考虑'},
+
+ {'id': 19.0, 'unit': '拉萨市', 'Post': '拉萨市人民医院', 'Nature_position': '重症医学科', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '不限', 'College_majors': '硕士研究生及以上', 'Undergraduate_majors': '', 'Graduate_majors': '', 'political_landscape': '重症医学', 'Job_code': '不限', 'Examination': 230100019.0, 'interview': '————', 'remark': '是', 'consultation': '试持有医师执业资格证、规培证者优先考虑'},
+
+ {'id': 20.0, 'unit': '拉萨市', 'Post': '拉萨市人民医院', 'Nature_position': '急症科', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '不限', 'College_majors': '硕士研究生及以上', 'Undergraduate_majors': '', 'Graduate_majors': '', 'political_landscape': '急诊医学', 'Job_code': '不限', 'Examination': 230100020.0, 'interview': '————', 'remark': '是', 'consultation': '试持有医师执业资格证、规培证者优先考虑'},
+
+ {'id': 21.0, 'unit': '拉萨市', 'Post': '拉萨市人民医院', 'Nature_position': '儿科', 'Number': '事业单位', 'Graduation_time': 8.0, 'Academic_requirements': '2023年毕业', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '临床医学、儿科学', 'political_landscape': '儿科学', 'Job_code': '不限', 'Examination': 230100021.0, 'interview': '医疗卫生类（E类）-西医临床', 'remark': '是', 'consultation': ''},
+
+ {'id': 22.0, 'unit': '拉萨市', 'Post': '拉萨市人民医院', 'Nature_position': '妇产科', 'Number': '事业单位', 'Graduation_time': 8.0, 'Academic_requirements': '2023年毕业', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '临床医学', 'political_landscape': '妇产科学', 'Job_code': '不限', 'Examination': 230100022.0, 'interview': '医疗卫生类（E类）-西医临床', 'remark': '是', 'consultation': ''},
+
+ {'id': 23.0, 'unit': '拉萨市', 'Post': '拉萨市人民医院', 'Nature_position': '重症医学科', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '临床医学', 'political_landscape': '重症医学', 'Job_code': '不限', 'Examination': 230100023.0, 'interview': '医疗卫生类（E类）-西医临床', 'remark': '是', 'consultation': ''},
+
+ {'id': 24.0, 'unit': '拉萨市', 'Post': '拉萨市人民医院', 'Nature_position': '检验科', 'Number': '事业单位', 'Graduation_time': 3.0, 'Academic_requirements': '2023年毕业', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '医学检验技术', 'political_landscape': '临床检验诊断学', 'Job_code': '不限', 'Examination': 230100024.0, 'interview': '医疗卫生类（E类）-医学技术', 'remark': '是', 'consultation': '仅限拉萨户籍或学籍'},
+
+ {'id': 25.0, 'unit': '拉萨市', 'Post': '拉萨市人民医院', 'Nature_position': '中医科', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '中医学', 'political_landscape': '中医内科学', 'Job_code': '不限', 'Examination': 230100025.0, 'interview': '医疗卫生类（E类）-中医临床', 'remark': '是', 'consultation': ''},
+
+ {'id': 26.0, 'unit': '拉萨市', 'Post': '拉萨市人民医院（城东分院）', 'Nature_position': '信息科', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '软件工程', 'political_landscape': '软件工程', 'Job_code': '不限', 'Examination': 230100026.0, 'interview': '自然科学专技类（C类）', 'remark': '是', 'consultation': ''},
+
+ {'id': 27.0, 'unit': '拉萨市', 'Post': '拉萨市人民医院（城东分院）', 'Nature_position': '信息科', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '信息安全', 'political_landscape': '通信与信息系统、信号与信息处理', 'Job_code': '不限', 'Examination': 230100027.0, 'interview': '自然科学专技类（C类）', 'remark': '是', 'consultation': '仅限拉萨户籍或学籍'},
+
+ {'id': 28.0, 'unit': '拉萨市', 'Post': '拉萨市人民医院（城东分院）', 'Nature_position': '医学工程部', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '临床工程技术、生物医学工程', 'political_landscape': '生物医学工程', 'Job_code': '不限', 'Examination': 230100028.0, 'interview': '自然科学专技类（C类）', 'remark': '是', 'consultation': '仅限拉萨户籍或学籍'},
+
+ {'id': 29.0, 'unit': '拉萨市', 'Post': '城关区', 'Nature_position': '区委党校', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业', 'College_majors': '仅限本科', 'Undergraduate_majors': '', 'Graduate_majors': '政治学与行政学', 'political_landscape': '', 'Job_code': '中共党员', 'Examination': 230100029.0, 'interview': '综合管理类（A类）', 'remark': '是', 'consultation': ''},
+
+ {'id': 30.0, 'unit': '拉萨市', 'Post': '城关区', 'Nature_position': '区委党校', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业', 'College_majors': '仅限本科', 'Undergraduate_majors': '', 'Graduate_majors': '中国共产党历史', 'political_landscape': '', 'Job_code': '中共党员', 'Examination': 230100030.0, 'interview': '综合管理类（A类）', 'remark': '是', 'consultation': ''},
+
+ {'id': 31.0, 'unit': '拉萨市', 'Post': '城关区', 'Nature_position': '清政府驻藏大臣衙门旧址陈列馆', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '汉语言文学', 'political_landscape': '中国语言文学', 'Job_code': '不限', 'Examination': 230100031.0, 'interview': '综合管理类（A类）', 'remark': '是', 'consultation': '仅限拉萨户籍或学籍'},
+
+ {'id': 32.0, 'unit': '拉萨市', 'Post': '城关区', 'Nature_position': '清政府驻藏大臣衙门旧址陈列馆', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '文物与博物馆学、文物保护技术', 'political_landscape': '考古学', 'Job_code': '不限', 'Examination': 230100032.0, 'interview': '社会科学专技类（B类）', 'remark': '是', 'consultation': '仅限拉萨户籍或学籍'},
+
+ {'id': 33.0, 'unit': '拉萨市', 'Post': '城关区', 'Nature_position': '组织编制信息中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业', 'College_majors': '仅限本科', 'Undergraduate_majors': '', 'Graduate_majors': '电子信息科学与技术、计算机科学与技术', 'political_landscape': '', 'Job_code': '中共党员', 'Examination': 230100033.0, 'interview': '自然科学专技类（C类）', 'remark': '是', 'consultation': ''},
+
+ {'id': 34.0, 'unit': '拉萨市', 'Post': '城关区', 'Nature_position': '房产管理局', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '不限', 'College_majors': '大专及以上', 'Undergraduate_majors': '会计', 'Graduate_majors': '审计学、会计学、财务管理', 'political_landscape': '工商管理', 'Job_code': '不限', 'Examination': 230100034.0, 'interview': '社会科学专技类（B类）', 'remark': '是', 'consultation': '仅限拉萨户籍或学籍'},
+
+ {'id': 35.0, 'unit': '拉萨市', 'Post': '城关区', 'Nature_position': '文旅局文化室', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业', 'College_majors': '大专及以上', 'Undergraduate_majors': '不限', 'Graduate_majors': '不限', 'political_landscape': '不限', 'Job_code': '不限', 'Examination': 230100035.0, 'interview': '综合管理类（A类）', 'remark': '是', 'consultation': '仅限服务期满且考核合格“三支一扶”人员报考'},
+
+ {'id': 36.0, 'unit': '拉萨市', 'Post': '城关区', 'Nature_position': '统计局统计信息服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业', 'College_majors': '仅限本科', 'Undergraduate_majors': '', 'Graduate_majors': '经济统计学、统计学', 'political_landscape': '', 'Job_code': '不限', 'Examination': 230100036.0, 'interview': '社会科学专技类（B类）', 'remark': '是', 'consultation': ''},
+
+ {'id': 37.0, 'unit': '拉萨市', 'Post': '城关区', 'Nature_position': '统计局统计信息服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业', 'College_majors': '仅限本科', 'Undergraduate_majors': '', 'Graduate_majors': '软件工程', 'political_landscape': '', 'Job_code': '不限', 'Examination': 230100037.0, 'interview': '自然科学专技类（C类）', 'remark': '是', 'consultation': ''},
+
+ {'id': 38.0, 'unit': '拉萨市', 'Post': '城关区', 'Nature_position': '融媒体中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业', 'College_majors': '仅限本科', 'Undergraduate_majors': '', 'Graduate_majors': '播音与主持艺术', 'political_landscape': '', 'Job_code': '不限', 'Examination': 230100038.0, 'interview': '社会科学专技类（B类）', 'remark': '是', 'consultation': ''},
+
+ {'id': 39.0, 'unit': '拉萨市', 'Post': '城关区', 'Nature_position': '融媒体中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '新闻学', 'political_landscape': '新闻传播学', 'Job_code': '不限', 'Examination': 230100039.0, 'interview': '社会科学专技类（B类）', 'remark': '是', 'consultation': '仅限拉萨户籍或学籍'},
+
+ {'id': 40.0, 'unit': '拉萨市', 'Post': '城关区', 'Nature_position': '融媒体中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '不限', 'College_majors': '仅限本科', 'Undergraduate_majors': '', 'Graduate_majors': '新媒体艺术、动画、数字媒体技术', 'political_landscape': '', 'Job_code': '不限', 'Examination': 230100040.0, 'interview': '社会科学专技类（B类）', 'remark': '是', 'consultation': ''},
+
+ {'id': 41.0, 'unit': '拉萨市', 'Post': '林周县', 'Nature_position': '发展和改革委员会工程股', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业', 'College_majors': '仅限本科', 'Undergraduate_majors': '', 'Graduate_majors': '数字经济', 'political_landscape': '', 'Job_code': '不限', 'Examination': 230100041.0, 'interview': '社会科学专技类（B类）', 'remark': '是', 'consultation': '仅限拉萨户籍或学籍'},
+
+ {'id': 42.0, 'unit': '拉萨市', 'Post': '林周县', 'Nature_position': '住房和城乡建设局城管大队', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业', 'College_majors': '仅限本科', 'Undergraduate_majors': '', 'Graduate_majors': '数据计算及应用、系统科学与工程', 'political_landscape': '', 'Job_code': '不限', 'Examination': 230100042.0, 'interview': '自然科学专技类（C类）', 'remark': '是', 'consultation': '仅限拉萨户籍或学籍'},
+
+ {'id': 43.0, 'unit': '拉萨市', 'Post': '林周县', 'Nature_position': '住房和城乡建设局水厂', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业', 'College_majors': '仅限本科', 'Undergraduate_majors': '', 'Graduate_majors': '土木工程、给排水科学与工程、化学工程与工业生物工程', 'political_landscape': '', 'Job_code': '不限', 'Examination': 230100043.0, 'interview': '自然科学专技类（C类）', 'remark': '是', 'consultation': ''},
+
+ {'id': 44.0, 'unit': '拉萨市', 'Post': '林周县', 'Nature_position': '统计局社会经济调查队', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业', 'College_majors': '仅限本科', 'Undergraduate_majors': '', 'Graduate_majors': '经济统计学', 'political_landscape': '', 'Job_code': '不限', 'Examination': 230100044.0, 'interview': '社会科学专技类（B类）', 'remark': '是', 'consultation': '仅限拉萨户籍或学籍'},
+
+ {'id': 45.0, 'unit': '拉萨市', 'Post': '林周县', 'Nature_position': '乡村振兴局乡村振兴信息采集监测中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业', 'College_majors': '仅限本科', 'Undergraduate_majors': '', 'Graduate_majors': '信息与计算科学', 'political_landscape': '', 'Job_code': '不限', 'Examination': 230100045.0, 'interview': '自然科学专技类（C类）', 'remark': '是', 'consultation': ''},
+
+ {'id': 46.0, 'unit': '拉萨市', 'Post': '林周县', 'Nature_position': '甘旦曲果镇人民政府党群服务中心（便民服务中心）', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业', 'College_majors': '大专及以上', 'Undergraduate_majors': '不限', 'Graduate_majors': '不限', 'political_landscape': '不限', 'Job_code': '不限', 'Examination': 230100046.0, 'interview': '综合管理类（A类）', 'remark': '是', 'consultation': '仅限服务期满且考核合格“三支一扶”人员报考'},
+
+ {'id': 47.0, 'unit': '拉萨市', 'Post': '林周县', 'Nature_position': '旁多乡人民政府网格化服务管理中心（综治中心）', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业', 'College_majors': '仅限本科', 'Undergraduate_majors': '', 'Graduate_majors': '经济学、财政学', 'political_landscape': '', 'Job_code': '不限', 'Examination': 230100047.0, 'interview': '社会科学专技类（B类）', 'remark': '是', 'consultation': ''},
+
+ {'id': 48.0, 'unit': '拉萨市', 'Post': '林周县', 'Nature_position': '强嘎乡人民政府党群服务中心（便民服务中心）', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业', 'College_majors': '仅限本科', 'Undergraduate_majors': '', 'Graduate_majors': '经济学、财政学', 'political_landscape': '', 'Job_code': '不限', 'Examination': 230100048.0, 'interview': '社会科学专技类（B类）', 'remark': '是', 'consultation': ''},
+
+ {'id': 49.0, 'unit': '拉萨市', 'Post': '林周县', 'Nature_position': '边交林乡人民政府网格化服务管理中心（综治中心）', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '不限', 'College_majors': '大专及以上', 'Undergraduate_majors': '不限', 'Graduate_majors': '不限', 'political_landscape': '不限', 'Job_code': '不限', 'Examination': 230100049.0, 'interview': '综合管理类（A类）', 'remark': '是', 'consultation': '仅限服务两年及以上考核合格西部计划西藏专项志愿者、退役大学生士兵、服务满三年且考核合格乡村振兴专干报考'},
+
+ {'id': 50.0, 'unit': '拉萨市', 'Post': '达孜区', 'Nature_position': '民政局居民家庭经济状况核对中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业', 'College_majors': '仅限本科', 'Undergraduate_majors': '', 'Graduate_majors': '审计学、会计学、财务管理', 'political_landscape': '工商管理', 'Job_code': '不限', 'Examination': 230100050.0, 'interview': '社会科学专技类（B类）', 'remark': '是', 'consultation': ''},
+
+ {'id': 51.0, 'unit': '拉萨市', 'Post': '达孜区', 'Nature_position': '人力资源和社会保障局劳动就业保障中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业', 'College_majors': '大专及以上', 'Undergraduate_majors': '不限', 'Graduate_majors': '不限', 'political_landscape': '不限', 'Job_code': '不限', 'Examination': 230100051.0, 'interview': '综合管理类（A类）', 'remark': '是', 'consultation': '仅限服务期满且考核合格“三支一扶”人员报考'},
+
+ {'id': 52.0, 'unit': '拉萨市', 'Post': '达孜区', 'Nature_position': '农业农村局畜牧兽医站', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业', 'College_majors': '仅限本科', 'Undergraduate_majors': '', 'Graduate_majors': '动植物检疫', 'political_landscape': '', 'Job_code': '不限', 'Examination': 230100052.0, 'interview': '自然科学专技类（C类）', 'remark': '是', 'consultation': ''},
+
+ {'id': 53.0, 'unit': '拉萨市', 'Post': '达孜区', 'Nature_position': '乡村振兴局乡村振兴信息采集监测中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业', 'College_majors': '仅限本科', 'Undergraduate_majors': '', 'Graduate_majors': '审计学、会计学、财务管理', 'political_landscape': '工商管理', 'Job_code': '不限', 'Examination': 230100053.0, 'interview': '社会科学专技类（B类）', 'remark': '是', 'consultation': '仅限拉萨户籍或学籍'},
+
+ {'id': 54.0, 'unit': '拉萨市', 'Post': '曲水县', 'Nature_position': '乡村振兴局信息采集检测中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '审计学、会计学、财务管理', 'political_landscape': '工商管理', 'Job_code': '不限', 'Examination': 230100054.0, 'interview': '社会科学专技类（B类）', 'remark': '否', 'consultation': ''},
+
+ {'id': 55.0, 'unit': '拉萨市', 'Post': '曲水县', 'Nature_position': '乡村振兴局信息采集检测中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '土木工程', 'political_landscape': '土木工程', 'Job_code': '不限', 'Examination': 230100055.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'consultation': ''},
+
+ {'id': 56.0, 'unit': '拉萨市', 'Post': '曲水县', 'Nature_position': '教育局教研室', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '汉语言文学', 'political_landscape': '汉语言文学', 'Job_code': '不限', 'Examination': 230100056.0, 'interview': '综合管理类（A类）', 'remark': '是', 'consultation': '仅限拉萨户籍或学籍'},
+
+ {'id': 57.0, 'unit': '拉萨市', 'Post': '曲水县', 'Nature_position': '才纳乡党群服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '工商管理类', 'political_landscape': '工商管理', 'Job_code': '不限', 'Examination': 230100057.0, 'interview': '综合管理类（A类）', 'remark': '是', 'consultation': ''},
+
+ {'id': 58.0, 'unit': '拉萨市', 'Post': '曲水县', 'Nature_position': '达嘎镇党群服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '不限', 'College_majors': '大专及以上', 'Undergraduate_majors': '不限', 'Graduate_majors': '不限', 'political_landscape': '不限', 'Job_code': '不限', 'Examination': 230100058.0, 'interview': '综合管理类（A类）', 'remark': '是', 'consultation': '仅限服务两年及以上考核合格西部计划西藏专项志愿者、退役大学生士兵、服务满三年且考核合格乡村振兴专干报考'},
+
+ {'id': 59.0, 'unit': '拉萨市', 'Post': '曲水县', 'Nature_position': '曲水镇卫生院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '不限', 'College_majors': '大专及以上', 'Undergraduate_majors': '临床医学', 'Graduate_majors': '临床医学', 'political_landscape': '临床医学', 'Job_code': '不限', 'Examination': 230100059.0, 'interview': '医疗卫生类（E类）-西医临床', 'remark': '否', 'consultation': ''},
+
+ {'id': 60.0, 'unit': '拉萨市', 'Post': '曲水县', 'Nature_position': '曲水镇网络化服务管理中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '公共事业管理', 'political_landscape': '公共事业管理', 'Job_code': '不限', 'Examination': 230100060.0, 'interview': '综合管理类（A类）', 'remark': '是', 'consultation': '仅限拉萨户籍或学籍'},
+
+ {'id': 61.0, 'unit': '拉萨市', 'Post': '曲水县', 'Nature_position': '曲水镇党群服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '新闻学', 'political_landscape': '新闻学', 'Job_code': '不限', 'Examination': 230100061.0, 'interview': '社会科学专技类（B类）', 'remark': '是', 'consultation': ''},
+
+ {'id': 62.0, 'unit': '拉萨市', 'Post': '曲水县', 'Nature_position': '茶巴拉乡党群服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '农村区域发展', 'political_landscape': '农村区域发展', 'Job_code': '不限', 'Examination': 230100062.0, 'interview': '综合管理类（A类）', 'remark': '是', 'consultation': ''},
+
+ {'id': 63.0, 'unit': '拉萨市', 'Post': '墨竹工卡县', 'Nature_position': '扎西岗乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '水利水电工程', 'political_landscape': '水利工程', 'Job_code': '不限', 'Examination': 230100063.0, 'interview': '自然科学专技类（C类）', 'remark': '是', 'consultation': ''},
+
+ {'id': 64.0, 'unit': '拉萨市', 'Post': '墨竹工卡县', 'Nature_position': '扎雪乡党群服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '不限', 'College_majors': '大专及以上', 'Undergraduate_majors': '不限', 'Graduate_majors': '不限', 'political_landscape': '不限', 'Job_code': '不限', 'Examination': 230100064.0, 'interview': '综合管理类（A类）', 'remark': '是', 'consultation': '仅限服务两年及以上考核合格西部计划西藏专项志愿者、退役大学生士兵、服务满三年且考核合格乡村振兴专干报考'},
+
+ {'id': 65.0, 'unit': '拉萨市', 'Post': '墨竹工卡县', 'Nature_position': '工卡镇网格化服务管理中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '数据科学与大数据技术', 'political_landscape': '计算机科学与技术', 'Job_code': '不限', 'Examination': 230100065.0, 'interview': '自然科学专技类（C类）', 'remark': '是', 'consultation': ''},
+
+ {'id': 66.0, 'unit': '拉萨市', 'Post': '堆龙德庆区', 'Nature_position': '党校', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业', 'College_majors': '硕士研究生及以上', 'Undergraduate_majors': '', 'Graduate_majors': '', 'political_landscape': '哲学、马克思主义理论', 'Job_code': '中共党员', 'Examination': 230100066.0, 'interview': '————', 'remark': '是', 'consultation': ''},
+
+ {'id': 67.0, 'unit': '拉萨市', 'Post': '堆龙德庆区', 'Nature_position': '疾控预防控制中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '预防医学', 'political_landscape': '公共卫生与预防医学', 'Job_code': '不限', 'Examination': 230100067.0, 'interview': '医疗卫生类（E类）—公共卫生管理', 'remark': '是', 'consultation': ''},
+
+ {'id': 68.0, 'unit': '拉萨市', 'Post': '堆龙德庆区', 'Nature_position': '马镇卫生院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '临床医学类', 'political_landscape': '临床医学', 'Job_code': '不限', 'Examination': 230100068.0, 'interview': '医疗卫生类（E类）-西医临床', 'remark': '是', 'consultation': ''},
+
+ {'id': 69.0, 'unit': '拉萨市', 'Post': '堆龙德庆区', 'Nature_position': '古荣镇党群服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业', 'College_majors': '大专及以上', 'Undergraduate_majors': '不限', 'Graduate_majors': '不限', 'political_landscape': '不限', 'Job_code': '不限', 'Examination': 230100069.0, 'interview': '综合管理类（A类）', 'remark': '是', 'consultation': '仅限服务期满且考核合格“三支一扶”人员报考'},
+
+ {'id': 70.0, 'unit': '拉萨市', 'Post': '堆龙德庆区', 'Nature_position': '马镇党群服务中心（便民服务中心）', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': '2023年毕业', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '社会学类', 'political_landscape': '社会学', 'Job_code': '不限', 'Examination': 230100070.0, 'interview': '综合管理类（A类）', 'remark': '是', 'consultation': '仅限拉萨户籍或学籍'},
+
+ {'id': 71.0, 'unit': '拉萨市', 'Post': '当雄县', 'Nature_position': '文化和旅游局文化馆', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '汉语言文学', 'political_landscape': '汉语言文学', 'Job_code': '不限', 'Examination': 230100071.0, 'interview': '综合管理类（A类）', 'remark': '是', 'consultation': ''},
+
+ {'id': 72.0, 'unit': '拉萨市', 'Post': '当雄县', 'Nature_position': '自然资源局草原站', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '草业科学', 'political_landscape': '草学', 'Job_code': '不限', 'Examination': 230100072.0, 'interview': '自然科学专技类（C类）', 'remark': '是', 'consultation': ''},
+
+ {'id': 73.0, 'unit': '拉萨市', 'Post': '尼木县', 'Nature_position': '县人社局就业创业和社会保障公共服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '人力资源管理', 'political_landscape': '工商管理', 'Job_code': '不限', 'Examination': 230100073.0, 'interview': '综合管理类（A类）', 'remark': '是', 'consultation': ''},
+
+ {'id': 74.0, 'unit': '拉萨市', 'Post': '尼木县', 'Nature_position': '县审计局经济责任中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '审计学、会计学、财务管理', 'political_landscape': '会计学', 'Job_code': '不限', 'Examination': 230100074.0, 'interview': '社会科学专技类（B类）', 'remark': '是', 'consultation': ''},
+
+ {'id': 75.0, 'unit': '拉萨市', 'Post': '尼木县', 'Nature_position': '县发改委项目评审中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '土木工程、建筑学', 'political_landscape': '土木工程、建筑学', 'Job_code': '不限', 'Examination': 230100075.0, 'interview': '自然科学专技类（C类）', 'remark': '是', 'consultation': ''},
+
+ {'id': 76.0, 'unit': '拉萨市', 'Post': '尼木县', 'Nature_position': '县医保局医疗保障服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '会计学', 'political_landscape': '会计学', 'Job_code': '不限', 'Examination': 230100076.0, 'interview': '社会科学专技类（B类）', 'remark': '是', 'consultation': '仅限拉萨户籍或学籍'},
+
+ {'id': 77.0, 'unit': '拉萨市', 'Post': '尼木县', 'Nature_position': '吞巴镇农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '不限', 'College_majors': '大专及以上', 'Undergraduate_majors': '现代农业技术', 'Graduate_majors': '农学、农药化肥、植物科学与技术', 'political_landscape': '作物学类、农业资源与环境类', 'Job_code': '不限', 'Examination': 230100077.0, 'interview': '自然科学专技类（C类）', 'remark': '是', 'consultation': ''},
+
+ {'id': 78.0, 'unit': '拉萨市', 'Post': '尼木县', 'Nature_position': '普松乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '农学、食品科学与工程', 'political_landscape': '农业工程类、作物学类、农业资源与环境类、食品科学与工程', 'Job_code': '不限', 'Examination': 230100078.0, 'interview': '自然科学专技类（C类）', 'remark': '是', 'consultation': ''},
+
+ {'id': 79.0, 'unit': '拉萨市', 'Post': '尼木县', 'Nature_position': '普松乡网格化服务管理中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '法学', 'political_landscape': '法学', 'Job_code': '不限', 'Examination': 230100079.0, 'interview': '综合管理类（A类）', 'remark': '是', 'consultation': ''}]
+
+
+
+
+
+    
+	    
+	    
+	    for(i=0;i<xx.length;i++){
+	    	var html="<tr><td>"+
+	    	xx[i].id+"</td><td>"+
+            xx[i].unit+"</td><td>"+
+            xx[i].Post+"</td><td>"+
+            xx[i].Nature_position+"</td><td>"+
+            xx[i].Number+"</td><td>"+
+            xx[i].Graduation_time+"</td><td>"+
+            xx[i].Academic_requirements+"</td><td>"+
+            xx[i].College_majors+"</td><td>"+
+            xx[i].Undergraduate_majors+"</td><td>"+
+            xx[i].Graduate_majors+"</td><td>"+
+            xx[i].political_landscape+"</td><td>"+
+            xx[i].Job_code+"</td><td>"+
+            xx[i].Examination+"</td><td>"+
+            xx[i].interview+"</td><td>"+
+            xx[i].remark+"</td><td>"+
+            xx[i].consultation+"</td></tr>";
+
+	    	$("#example tbody").append(html);
+	    	
+	    }
+	    
+	    $('#example').DataTable( {
+	        dom: 'Bfrtip',
+	        language: {  
+                emptyTable: '没有数据',  
+                loadingRecords: '加载中...',  
+                processing: '查询中...',  
+                search: '搜索【专业、地区等】:',  
+                lengthMenu: '每页 _MENU_ 件',  
+                zeroRecords: '没有数据',  
+                paginate: {  
+                    'first':      '第一页',  
+                    'last':       '最后一页',  
+                    'next':       '下一页',  
+                    'previous':   '上一页'  
+            	},  
+	            info: '第 _PAGE_ 页 / 总 _PAGES_ 页',  
+	            infoEmpty: '没有数据',  
+	            infoFiltered: '(过滤总件数 _MAX_ 条)',
+	        },
+	        
+
+	    } );
+	    
+
+
+	});
+  </script>  
+ </body>  
+</html>  

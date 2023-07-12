@@ -1,0 +1,1213 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">   
+ <head>  
+  <title> 2023 </title>  
+  <meta charset='utf-8'>
+  <link rel="stylesheet" href="../css/table.css" />
+  <link rel="stylesheet" href="../css/buttons.css" />
+  <style>
+  	*{
+  		/*background-image: url();*/
+  		background-color: #000;
+  		color: #FFF; 
+  	}
+  	tbody td{
+  		text-align: center;
+  	}
+  </style>
+ </head>  
+  
+ <body>  
+ 	<h1 style="text-align: center;">2023公务员招聘岗位</h1>
+    <a href="../index.html" style="font-size: 20px;">回到主页</a>
+ 	<table id="example" class="display" role="grid" aria-describedby="example_info">
+ 		<thead>
+            <tr>
+                <th>序号</th>
+                <th>部门</th>
+                <th>招考职位</th>
+                <th>职位代码</th>
+                <th>职位简介</th>
+                <th>人数</th>
+                <th>职位性质</th>
+                <th>职位类别</th>
+                <th>专业要求</th>
+                <th>学历要求</th>
+                <th>性别要求</th>
+                <th>其他要求</th>
+                <th>考试科目</th>
+                <th>咨询电话</th>
+                
+
+            </tr>
+        </thead>
+        <tbody>
+            
+        </tbody>
+
+        
+     
+ 	</table>
+ 	
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/jquery.datatables.min.js"/>
+	<script src="../js/buttons.print.min.js"></script>
+
+ <script> 
+
+$(document).ready(function(){ 
+
+    var xx = [
+
+{id: '1', Department: '区纪委监委', Natposition: '委机关', posts_code: 20230001.0, posts_des: '从事监督检查、审查调查工作', p_Number: 4.0, Nature_position: '公务员', Job_category: '自治区级', Professional: '法学、会计、审计等相关专业', Degree: '硕士研究生及以上', Gender: '不限', other_demand: '中共党员（预备党员）；毕业时须取得与最高学历对应的学历学位证书；考虑到纪检监察工作的特殊性，建议男性报考', Exam_subjects: '行政职业能力测验、申论（一）', consultation: '0891-6322239 6337067'},
+
+
+
+ {id: '2', Department: '区党委政研室', Natposition: '区党委政策研究室党建研究处', posts_code: 20230002.0, posts_des: '主要从事党的建设领域工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '自治区级', Professional: '马克思主义哲学、中国哲学', Degree: '硕士研究生及以上', Gender: '不限', other_demand: '无', Exam_subjects: '行政职业能力测验、申论（一）', consultation: '0891-6364685'},
+
+
+
+ {id: '3', Department: '区党委网信办', Natposition: '网络应急指挥中心', posts_code: 20230003.0, posts_des: '网络安全和信息化重大突发事件与相关应急工作', p_Number: 5.0, Nature_position: '参公人员', Job_category: '自治区级', Professional: '网络空间安全、计算机网络技术、大数据、软件工程、通信工程、电子信息工程、信息安全、网络工程专业', Degree: '硕士研究生及以上', Gender: '不限', other_demand: '中共党员；学历学位双证齐全；身体条件适应24小时值班工作，建议男性报考', Exam_subjects: '行政职业能力测验、申论（一）', consultation: '0891-6591003'},
+
+
+
+ {id: '4', Department: '区教育厅', Natposition: '教育厅区高校毕业生就业指导服务中心', posts_code: 20230004.0, posts_des: '统计高校毕业生信息，管理就业统计平台，处理就业中心日常工作等', p_Number: 1.0, Nature_position: '参公人员', Job_category: '自治区级', Professional: '计算机、统计相关专业', Degree: '硕士研究生及以上', Gender: '不限', other_demand: '无', Exam_subjects: '行政职业能力测验、申论（一）', consultation: '0891-6599809'},
+
+
+
+ {id: '5', Department: '区科技厅', Natposition: '规划与监督处', posts_code: 20230005.0, posts_des: '从事发展规划、专项计划等编制以及执行和监督', p_Number: 1.0, Nature_position: '公务员', Job_category: '自治区级', Professional: '管理科学与工程类', Degree: '硕士研究生及以上', Gender: '不限', other_demand: '无', Exam_subjects: '行政职业能力测验、申论（一）', consultation: '0891-6830045'},
+
+
+
+ {id: '6', Department: '区经济和信息化厅', Natposition: '信息化推进处', posts_code: 20230006.0, posts_des: '从事信息化、大数据相关工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '自治区级', Professional: '大数据、计算机类专业', Degree: '硕士研究生及以上', Gender: '不限', other_demand: '无', Exam_subjects: '行政职业能力测验、申论（一）', consultation: '0891-6198890'},
+
+
+
+ {id: '7', Department: '区经济和信息化厅', Natposition: '自治区大数据发展管理局', posts_code: 20230007.0, posts_des: '从事信息化、大数据相关工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '自治区级', Professional: '大数据、计算机类专业', Degree: '硕士研究生及以上', Gender: '不限', other_demand: '无', Exam_subjects: '行政职业能力测验、申论（一）', consultation: ''},
+
+
+
+ {id: '8', Department: '区经济和信息化厅', Natposition: '自治区无线电监测站', posts_code: 20230008.0, posts_des: '从事无线电监测、检测、干扰查处等相关工作', p_Number: 1.0, Nature_position: '参公人员', Job_category: '自治区级', Professional: '通信、信息化类专业', Degree: '硕士研究生及以上', Gender: '不限', other_demand: '无', Exam_subjects: '行政职业能力测验、申论（一）', consultation: ''},
+
+
+
+ {id: '9', Department: '区经济和信息化厅', Natposition: '昌都市无线电管理局（无线电监测站）', posts_code: 20230009.0, posts_des: '从事无线电监测、检测、干扰查处等相关工作', p_Number: 1.0, Nature_position: '参公人员', Job_category: '地市级', Professional: '通信、信息化类专业', Degree: '本科及以上', Gender: '不限', other_demand: '无', Exam_subjects: '行政职业能力测验、申论（一）', consultation: ''},
+
+
+
+ {id: '10', Department: '区民委', Natposition: '政策法规处', posts_code: 20230010.0, posts_des: '民族工作政策研究，材料撰写等', p_Number: 1.0, Nature_position: '公务员', Job_category: '自治区级', Professional: '社会学（民族学类）', Degree: '硕士研究生及以上', Gender: '不限', other_demand: '无', Exam_subjects: '行政职业能力测验、申论（一）', consultation: '0891-6384581 13908918906'},
+
+
+
+ {id: '11', Department: '区财政厅', Natposition: '自治区财政厅阿里地区财政监督分局', posts_code: 20230011.0, posts_des: '主要负责监督检查地（市）财政部门财税法规、政策的执行情况', p_Number: 1.0, Nature_position: '参公人员', Job_category: '自治区级', Professional: '经济学相关专业、管理学相关专业、法学相关专业', Degree: '硕士研究生及以上', Gender: '不限', other_demand: '无', Exam_subjects: '行政职业能力测验、申论（一）', consultation: 13989045526.0},
+
+
+
+ {id: '12', Department: '区卫生健康委', Natposition: '自治区生育健康药具管理中心', posts_code: 20230012.0, posts_des: '从事生育药具管理与生育健康培训等工作', p_Number: 2.0, Nature_position: '参公人员', Job_category: '自治区级', Professional: '公共卫生与预防医学', Degree: '硕士研究生及以上', Gender: '不限', other_demand: '无', Exam_subjects: '行政职业能力测验、申论（一）', consultation: '0891-6836020 13618903337'},
+
+
+
+ {id: '13', Department: '区外办', Natposition: '办机关', posts_code: 20230013.0, posts_des: '承担机关相关文字材料工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '自治区级', Professional: '汉语言、汉语言文学、秘书学', Degree: '硕士研究生及以上', Gender: '不限', other_demand: '需进行专业测试；需经常性赴争议地区实地调研踏勘，情况复杂，条件艰苦，危险性高，建议男性报考', Exam_subjects: '行政职业能力测验、申论（一）', consultation: '0891-6360875'},
+
+
+
+ {id: '14', Department: '区外办', Natposition: '办机关', posts_code: 20230014.0, posts_des: '承担边防设施建设项目概算等相关工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '自治区级', Professional: '土木工程及相关专业', Degree: '硕士研究生及以上', Gender: '不限', other_demand: '需进行专业测试；需经常性赴争议地区实地调研踏勘，情况复杂，条件艰苦，危险性高，建议男性报考', Exam_subjects: '行政职业能力测验、申论（一）', consultation: ''},
+
+
+
+ {id: '15', Department: '区外办', Natposition: '办机关', posts_code: 20230015.0, posts_des: '承担机关信息化等相关工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '自治区级', Professional: '信息工程及相关专业', Degree: '硕士研究生及以上', Gender: '不限', other_demand: '需进行专业测试；需经常性赴争议地区实地调研踏勘，情况复杂，条件艰苦，危险性高，建议男性报考', Exam_subjects: '行政职业能力测验、申论（一）', consultation: ''},
+
+
+
+ {id: '16', Department: '区体育局', Natposition: '政工人事处（机关党委）工作人员', posts_code: 20230016.0, posts_des: '从事党建、纪检、人事工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '自治区级', Professional: '政治学、法学或公共管理相关专业', Degree: '硕士研究生及以上', Gender: '不限', other_demand: '中共党员；要求具有较强文字功底；工作强度大，需经常加班、下乡', Exam_subjects: '行政职业能力测验、申论（一）', consultation: '0891-6322997 6342283'},
+
+
+
+ {id: '17', Department: '区统计局', Natposition: '综合统计处', posts_code: 20230017.0, posts_des: '从事综合统计相关工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '自治区级', Professional: '统计学或经济学专业', Degree: '硕士研究生及以上', Gender: '不限', other_demand: '无', Exam_subjects: '行政职业能力测验、申论（一）', consultation: '0891-6825425 18108990560'},
+
+
+
+ {id: '18', Department: '区国防动员办公室（人防办）', Natposition: '综合处（机关党委、政工人事处）', posts_code: 20230018.0, posts_des: '从事机关日常事务工作，服从组织安排，承办组织交办的其他任务', p_Number: 2.0, Nature_position: '公务员', Job_category: '自治区级', Professional: '专业不限', Degree: '硕士研究生及以上', Gender: '不限', other_demand: '学历学位双证齐全；文字功底强者优先考虑；需服从组织分配', Exam_subjects: '行政职业能力测验、申论（一）', consultation: '0891-6360672'},
+
+
+
+ {id: '19', Department: '区政协办公厅', Natposition: '厅机关', posts_code: 20230019.0, posts_des: '文稿起草、新闻宣传、档案管理、财务等工作', p_Number: 2.0, Nature_position: '公务员', Job_category: '自治区级', Professional: '汉语言文学、马克思主义哲学、新闻学、法学、财务等相关专业', Degree: '硕士研究生及以上', Gender: '不限', other_demand: '无', Exam_subjects: '行政职业能力测验、申论（一）', consultation: '0891-6844698'},
+
+
+
+ {id: '20', Department: '区检察院', Natposition: '机关第一至第十一检察部', posts_code: 20230020.0, posts_des: '协助检察官履行检察工作职责', p_Number: 6.0, Nature_position: '公务员', Job_category: '自治区级', Professional: '法学', Degree: '硕士研究生及以上', Gender: '不限', other_demand: '无', Exam_subjects: '行政职业能力测验、申论（一）', consultation: '0891-6249107'},
+
+
+
+ {id: '21', Department: '区人民政府驻格尔木办事处（自治区藏青工业园区管理委员会）', Natposition: '格办（管委会）社会保障事业管理局', posts_code: 20230021.0, posts_des: '主要从事党务、纪律检查等工作', p_Number: 1.0, Nature_position: '参公人员', Job_category: '自治区级', Professional: '法律相关专业', Degree: '硕士研究生及以上', Gender: '不限', other_demand: '无', Exam_subjects: '行政职业能力测验、申论（一）', consultation: '0979-8482842 13897655102'},
+
+
+
+ {id: '22', Department: '区藏语委办（编译局）', Natposition: '编译处', posts_code: 20230022.0, posts_des: '汉藏翻译', p_Number: 1.0, Nature_position: '参公人员', Job_category: '自治区级', Professional: '藏语言文学及相关专业', Degree: '硕士研究生及以上', Gender: '不限', other_demand: '无', Exam_subjects: '行政职业能力测验、申论（一）', consultation: '0891-6608020'},
+
+
+
+ {id: '23', Department: '', Natposition: '科研处', posts_code: 20230023.0, posts_des: '网站管理、维护等', p_Number: 1.0, Nature_position: '参公人员', Job_category: '自治区级', Professional: '计算机专业', Degree: '硕士研究生及以上', Gender: '不限', other_demand: '懂汉藏双语', Exam_subjects: '行政职业能力测验、申论（一）', consultation: ''},
+
+
+
+ {id: '24', Department: '区地勘局', Natposition: '区地勘局计划财务审计处', posts_code: 20230024.0, posts_des: '财政预算一体化相关业务操作、处理相关会计业务等', p_Number: 1.0, Nature_position: '参公人员', Job_category: '自治区级', Professional: '财务管理，会计硕士专业，会计学，审计学', Degree: '硕士研究生及以上', Gender: '不限', other_demand: '无', Exam_subjects: '行政职业能力测验、申论（一）', consultation: '0891-6341822'},
+
+
+
+ {id: '25', Department: '区地勘局', Natposition: '区地勘局地质勘查科技处', posts_code: 20230025.0, posts_des: '技术管理', p_Number: 1.0, Nature_position: '参公人员', Job_category: '自治区级', Professional: '矿产普查与勘探', Degree: '硕士研究生及以上', Gender: '不限', other_demand: '无', Exam_subjects: '行政职业能力测验、申论（一）', consultation: ''},
+
+
+
+ {id: '26', Department: '区地勘局', Natposition: '区地勘局经营开发管理处', posts_code: 20230026.0, posts_des: '经营管理、公文起草', p_Number: 1.0, Nature_position: '参公人员', Job_category: '自治区级', Professional: '产业经济学', Degree: '硕士研究生及以上', Gender: '不限', other_demand: '无', Exam_subjects: '行政职业能力测验、申论（一）', consultation: ''},
+
+
+
+ {id: '27', Department: '区高法', Natposition: '技术处', posts_code: 20230027.0, posts_des: '从事计算机相关工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '自治区级', Professional: '计算机应用技术', Degree: '硕士研究生及以上', Gender: '不限', other_demand: '无', Exam_subjects: '行政职业能力测验、申论（一）', consultation: '0891-6288808'},
+
+
+
+ {id: '28', Department: '区高法', Natposition: '法官学院西藏分院', posts_code: 20230028.0, posts_des: '从事教育管理工作', p_Number: 1.0, Nature_position: '参公人员', Job_category: '自治区级', Professional: '教育学', Degree: '硕士研究生及以上', Gender: '不限', other_demand: '无', Exam_subjects: '行政职业能力测验、申论（一）', consultation: ''},
+
+
+
+ {id: '29', Department: '区高法', Natposition: '司法行政装备管理处', posts_code: 20230029.0, posts_des: '从事财务会计工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '自治区级', Professional: '会计学', Degree: '硕士研究生及以上', Gender: '不限', other_demand: '具有会计类资格证书', Exam_subjects: '行政职业能力测验、申论（一）', consultation: ''},
+
+
+
+ {id: '30', Department: '区高法', Natposition: '政治部', posts_code: 20230030.0, posts_des: '从事与职位相关的司法行政工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '自治区级', Professional: '汉语言文学', Degree: '硕士研究生及以上', Gender: '不限', other_demand: '无', Exam_subjects: '行政职业能力测验、申论（一）', consultation: ''},
+
+
+
+ {id: '31', Department: '拉萨市', Natposition: '市中级人民法院法官助理', posts_code: 20230031.0, posts_des: '从事司法辅助工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '地市级', Professional: '法学（030101）', Degree: '本科及以上', Gender: '不限', other_demand: '具有法律执业资格证书C证及以上', Exam_subjects: '行政职业能力测验、申论（一）', consultation: '0891-6288808'},
+
+
+
+ {id: '32', Department: '拉萨市', Natposition: '市中级人民法院司法行政人员', posts_code: 20230032.0, posts_des: '从事与职位相关的司法行政工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '地市级', Professional: '计算机科学与技术（080901）', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生', Exam_subjects: '行政职业能力测验、申论（一）', consultation: '0891-6288808'},
+
+
+
+ {id: '33', Department: '拉萨市', Natposition: '当雄县人民法院', posts_code: 20230033.0, posts_des: '从事财会工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '县区级', Professional: '会计学（120303）', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0891-6288808'},
+
+
+
+ {id: '34', Department: '拉萨市', Natposition: '当雄县龙仁乡派出人民法庭法官助理', posts_code: 20230034.0, posts_des: '从事司法辅助工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '县区级', Professional: '法学（030101）', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0891-6288808'},
+
+
+
+ {id: '35', Department: '拉萨市', Natposition: '当雄县纳木湖乡派出人民法庭法官助理', posts_code: 20230035.0, posts_des: '从事司法辅助工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '县区级', Professional: '法学（030101）', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0891-6288808'},
+
+
+
+ {id: '36', Department: '日喀则市', Natposition: '桑珠孜区人民法院法官助理', posts_code: 20230036.0, posts_des: '从事司法辅助工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '县区级', Professional: '专业不限', Degree: '本科及以上', Gender: '不限', other_demand: '面向工作年限满3年的在职聘用制书记员', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0891-6288808'},
+
+
+
+ {id: '37', Department: '日喀则市', Natposition: '谢通门县人民法院达木夏乡人民法庭法官助理', posts_code: 20230037.0, posts_des: '从事司法辅助工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '县区级', Professional: '法学（030101）', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0891-6288808'},
+
+
+
+ {id: '38', Department: '日喀则市', Natposition: '定日县人民法院法官助理', posts_code: 20230038.0, posts_des: '从事司法辅助工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '县区级', Professional: '法学（030101）', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0891-6288808'},
+
+
+
+ {id: '39', Department: '日喀则市', Natposition: '定日县人民法院', posts_code: 20230039.0, posts_des: '从事财会工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '县区级', Professional: '会计学（120303）', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0891-6288808'},
+
+
+
+ {id: '40', Department: '日喀则市', Natposition: '吉隆县人民法院吉隆镇人民法庭法官助理', posts_code: 20230040.0, posts_des: '从事司法辅助工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '县区级', Professional: '法学（030101）', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0891-6288808'},
+
+
+
+ {id: '41', Department: '日喀则市', Natposition: '吉隆县人民法院吉隆镇人民法庭', posts_code: 20230041.0, posts_des: '从事财会工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '县区级', Professional: '会计学（120303）', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0891-6288808'},
+
+
+
+ {id: '42', Department: '日喀则市', Natposition: '市人民检察院第三检察部', posts_code: 20230042.0, posts_des: '检察官助理', p_Number: 1.0, Nature_position: '公务员', Job_category: '地市级', Professional: '法学', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生，须具备与最高学历相对应的学位', Exam_subjects: '行政职业能力测验、申论（一）', consultation: '0892-8820476\n8820426'},
+
+
+
+ {id: '43', Department: '日喀则市', Natposition: '市委党校办公室', posts_code: 20230043.0, posts_des: '公文写作、综合管理', p_Number: 1.0, Nature_position: '参公人员', Job_category: '地市级', Professional: '中国语言文学、汉语言文学', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生，须具备与最高学历相对应的学位', Exam_subjects: '行政职业能力测验、申论（一）', consultation: '0892-8820476\n8820426'},
+
+
+
+ {id: '44', Department: '日喀则市', Natposition: '市委党校总务科', posts_code: 20230044.0, posts_des: '财务管理工作', p_Number: 1.0, Nature_position: '参公人员', Job_category: '地市级', Professional: '会计学、财务管理、财政学', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生，须具备与最高学历相对应的学位', Exam_subjects: '行政职业能力测验、申论（一）', consultation: '0892-8820476\n8820426'},
+
+
+
+ {id: '45', Department: '日喀则市', Natposition: '桑珠孜区城南街道办事处', posts_code: 20230045.0, posts_des: '财务管理工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '乡镇级', Professional: '会计学、财务管理、财政学', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生，须具备与最高学历相对应的学位', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0892-8820476\n8820426'},
+
+
+
+ {id: '46', Department: '日喀则市', Natposition: '桑珠孜区联乡人民政府', posts_code: 20230046.0, posts_des: '政府日常工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '乡镇级', Professional: '中国语言文学、汉语言文学', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生，须具备与最高学历相对应的学位', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0892-8820476\n8820426'},
+
+
+
+ {id: '47', Department: '日喀则市', Natposition: '江孜县委政法委', posts_code: 20230047.0, posts_des: '政法工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '县区级', Professional: '法学、计算机类', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生，须具备与最高学历相对应的学位', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0892-8820476\n8820426'},
+
+
+
+ {id: '48', Department: '日喀则市', Natposition: '江孜县藏改乡人民政府', posts_code: 20230048.0, posts_des: '文字写作、综合管理', p_Number: 1.0, Nature_position: '公务员', Job_category: '乡镇级', Professional: '中国语言文学、汉语言文学', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生，须具备与最高学历相对应的学位', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0892-8820476\n8820426'},
+
+
+
+ {id: '49', Department: '日喀则市', Natposition: '江孜县卡麦乡人民政府', posts_code: 20230049.0, posts_des: '政府日常工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '乡镇级', Professional: '食品科学与工程、法学、建筑类、土木类', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生，须具备与最高学历相对应的学位', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0892-8820476\n8820426'},
+
+
+
+ {id: '50', Department: '日喀则市', Natposition: '江孜县重孜乡人民政府', posts_code: 20230050.0, posts_des: '财务管理工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '乡镇级', Professional: '会计学、财务管理、财政学', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生，须具备与最高学历相对应的学位', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0892-8820476 8820426'},
+
+
+
+ {id: '51', Department: '日喀则市', Natposition: '江孜县康卓乡人民政府', posts_code: 20230051.0, posts_des: '公文写作、综合管理', p_Number: 1.0, Nature_position: '公务员', Job_category: '乡镇级', Professional: '中国语言文学、汉语言文学、行政管理', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生，须具备与最高学历相对应的学位', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0892-8820476\n8820426'},
+
+
+
+ {id: '52', Department: '日喀则市', Natposition: '白朗县洛江镇人民政府', posts_code: 20230052.0, posts_des: '政府日常工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '乡镇级', Professional: '会计学、中国语言文学', Degree: '大专及以上', Gender: '不限', other_demand: '仅限期满服务基层项目人员报考；须具备与最高学历相对应的学位', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0892-8820476\n8820426'},
+
+
+
+ {id: '53', Department: '日喀则市', Natposition: '白朗县纪委监委', posts_code: 20230053.0, posts_des: '纪检监察工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '县区级', Professional: '法学', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生，须具备与最高学历相对应的学位', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0892-8820476\n8820426'},
+
+
+
+ {id: '54', Department: '日喀则市', Natposition: '白朗县司法局', posts_code: 20230054.0, posts_des: '安置帮教、人民调解、普法等工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '县区级', Professional: '法学', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生，须具备与最高学历相对应的学位', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0892-8820476\n8820426'},
+
+
+
+ {id: '55', Department: '日喀则市', Natposition: '定结县人民检察院', posts_code: 20230055.0, posts_des: '财务管理工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '县区级', Professional: '会计学、财务管理、财政学', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生，须具备与最高学历相对应的学位', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0892-8820476\n8820426'},
+
+
+
+ {id: '56', Department: '日喀则市', Natposition: '定结县外事办', posts_code: 20230056.0, posts_des: '办公室日常工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '县区级', Professional: '英语', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生，须具备与最高学历相对应的学位', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0892-8820476\n8820426'},
+
+
+
+ {id: '57', Department: '日喀则市', Natposition: '吉隆县司法局', posts_code: 20230057.0, posts_des: '法律服务', p_Number: 1.0, Nature_position: '公务员', Job_category: '县区级', Professional: '法学', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生，须具备与最高学历相对应的学位', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0892-8820476\n8820426'},
+
+
+
+ {id: '58', Department: '日喀则市', Natposition: '吉隆县委政法委', posts_code: 20230058.0, posts_des: '政法工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '县区级', Professional: '法学', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生，须具备与最高学历相对应的学位', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0892-8820476\n8820426'},
+
+
+
+ {id: '59', Department: '日喀则市', Natposition: '吉隆县档案馆', posts_code: 20230059.0, posts_des: '档案管理', p_Number: 1.0, Nature_position: '参公人员', Job_category: '县区级', Professional: '图书情报与档案管理类', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生，须具备与最高学历相对应的学位', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0892-8820476\n8820426'},
+
+
+
+ {id: '60', Department: '日喀则市', Natposition: '康马县社会保障中心', posts_code: 20230060.0, posts_des: '城乡居民养老保险、工伤保险、失业保险', p_Number: 1.0, Nature_position: '参公人员', Job_category: '县区级', Professional: '工商管理类', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生，须具备与最高学历相对应的学位', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0892-8820476\n8820426'},
+
+
+
+ {id: '61', Department: '日喀则市', Natposition: '康马县委国家安全委员会办公室', posts_code: 20230061.0, posts_des: '办公室日常工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '县区级', Professional: '行政管理、公共事业管理、法学、文秘类', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生，须具备与最高学历相对应的学位', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0892-8820476\n8820426'},
+
+
+
+ {id: '62', Department: '日喀则市', Natposition: '拉孜县拉孜镇人民政府', posts_code: 20230062.0, posts_des: '政府日常工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '乡镇级', Professional: '农学相关专业', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生，须具备与最高学历相对应的学位', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0892-8820476\n8820426'},
+
+
+
+ {id: '63', Department: '日喀则市', Natposition: '拉孜县扎西岗乡人民政府', posts_code: 20230063.0, posts_des: '政府日常工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '乡镇级', Professional: '工商管理类', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生，须具备与最高学历相对应的学位', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0892-8820476\n8820426'},
+
+
+
+ {id: '64', Department: '日喀则市', Natposition: '拉孜县曲玛乡人民政府', posts_code: 20230064.0, posts_des: '政府日常工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '乡镇级', Professional: '会计学、中国语言文学', Degree: '大专及以上', Gender: '不限', other_demand: '须具备与最高学历相对应的学位', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0892-8820476\n8820426'},
+
+
+
+ {id: '65', Department: '日喀则市', Natposition: '南木林县县司法局', posts_code: 20230065.0, posts_des: '法律服务', p_Number: 1.0, Nature_position: '公务员', Job_category: '县区级', Professional: '法学', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生，须具备与最高学历相对应的学位', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0892-8820476\n8820426'},
+
+
+
+ {id: '66', Department: '日喀则市', Natposition: '南木林县秋木乡人民政府', posts_code: 20230066.0, posts_des: '财务管理工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '乡镇级', Professional: '会计学、财务管理、财政学', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生，须具备与最高学历相对应的学位', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0892-8820476\n8820426'},
+
+
+
+ {id: '67', Department: '日喀则市', Natposition: '南木林县索金乡人民政府', posts_code: 20230067.0, posts_des: '财务管理工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '乡镇级', Professional: '会计学、财务管理、财政学', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生，须具备与最高学历相对应的学位', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0892-8820476\n8820426'},
+
+
+
+ {id: '68', Department: '日喀则市', Natposition: '南木林县芒热乡人民政府', posts_code: 20230068.0, posts_des: '政府日常工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '乡镇级', Professional: '中国语言文学、汉语言文学、会计学、财务管理', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生，须具备与最高学历相对应的学位', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0892-8820476\n8820426'},
+
+
+
+ {id: '69', Department: '日喀则市', Natposition: '南木林县热拉佣仲林寺管理委员会', posts_code: 20230069.0, posts_des: '财务管理工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '县区级', Professional: '会计学、财务管理、财政学', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生，须具备与最高学历相对应的学位', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0892-8820476\n8820426'},
+
+
+
+ {id: '70', Department: '日喀则市', Natposition: '南木林县达那寺管理委员会', posts_code: 20230070.0, posts_des: '办公室日常工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '县区级', Professional: '公共管理类', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生，须具备与最高学历相对应的学位', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0892-8820476\n8820426'},
+
+
+
+ {id: '71', Department: '日喀则市', Natposition: '仁布县德吉林镇人民政府', posts_code: 20230071.0, posts_des: '办公文秘', p_Number: 1.0, Nature_position: '公务员', Job_category: '乡镇级', Professional: '中国语言文学、汉语言文学', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生，须具备与最高学历相对应的学位', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0892-8820476\n8820426'},
+
+
+
+ {id: '72', Department: '日喀则市', Natposition: '仁布县仁布乡人民政府', posts_code: 20230072.0, posts_des: '政府日常工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '乡镇级', Professional: '法学、会计学', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生，须具备与最高学历相对应的学位', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0892-8820476\n8820426'},
+
+
+
+ {id: '73', Department: '日喀则市', Natposition: '萨迦县纪委监委', posts_code: 20230073.0, posts_des: '纪检监察工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '县区级', Professional: '法学', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生，须具备与最高学历相对应的学位', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0892-8820476\n8820426'},
+
+
+
+ {id: '74', Department: '日喀则市', Natposition: '谢通门县达那普乡人民政府', posts_code: 20230074.0, posts_des: '政府日常工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '乡镇级', Professional: '经济学类、中国语言文学类、公共管理学类、工商管理类', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生，须具备与最高学历相对应的学位', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0892-8820476\n8820426'},
+
+
+
+ {id: '75', Department: '日喀则市', Natposition: '谢通门县南木切乡人民政府', posts_code: 20230075.0, posts_des: '政府日常工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '乡镇级', Professional: '工商管理类、中国语言文学类', Degree: '大专及以上', Gender: '不限', other_demand: '仅限期满服务基层项目人员报考；须具备与最高学历相对应的学位', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0892-8820476\n8820426'},
+
+
+
+ {id: '76', Department: '日喀则市', Natposition: '谢通门县春哲乡人民政府', posts_code: 20230076.0, posts_des: '政府日常工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '乡镇级', Professional: '农学相关专业', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生，须具备与最高学历相对应的学位', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0892-8820476\n8820426'},
+
+
+
+ {id: '77', Department: '日喀则市', Natposition: '谢通门县孜许乡人民政府', posts_code: 20230077.0, posts_des: '政府日常工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '乡镇级', Professional: '公共管理类、计算机类', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生，须具备与最高学历相对应的学位', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0892-8820476\n8820426'},
+
+
+
+ {id: '78', Department: '日喀则市', Natposition: '谢通门县青都乡人民政府', posts_code: 20230078.0, posts_des: '政府日常工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '乡镇级', Professional: '经济学类、中国语言文学类、公共管理学类、工商管理类', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生，须具备与最高学历相对应的学位', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0892-8820476\n8820426'},
+
+
+
+ {id: '79', Department: '日喀则市', Natposition: '谢通门县列巴乡人民政府', posts_code: 20230079.0, posts_des: '政府日常工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '乡镇级', Professional: '农学相关专业', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生，须具备与最高学历相对应的学位', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0892-8820476\n8820426'},
+
+
+
+ {id: '80', Department: '日喀则市', Natposition: '谢通门县美巴切勤乡人民政府', posts_code: 20230080.0, posts_des: '政府日常工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '乡镇级', Professional: '中国语言文学、汉语言文学、会计学', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生，须具备与最高学历相对应的学位', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0892-8820476\n8820426'},
+
+
+
+ {id: '81', Department: '日喀则市', Natposition: '亚东县下司马镇人民政府', posts_code: 20230081.0, posts_des: '财务管理工作', p_Number: 2.0, Nature_position: '公务员', Job_category: '乡镇级', Professional: '会计学、财务管理、财政学', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生，须具备与最高学历相对应的学位', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0892-8820476\n8820426'},
+
+
+
+ {id: '82', Department: '日喀则市', Natposition: '亚东县帕里镇人民政府', posts_code: 20230082.0, posts_des: '政府日常工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '乡镇级', Professional: '公共管理类、计算机类', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生，须具备与最高学历相对应的学位', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0892-8820476\n8820426'},
+
+
+
+ {id: '83', Department: '日喀则市', Natposition: '亚东县帕里镇人民政府', posts_code: 20230083.0, posts_des: '财务管理工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '乡镇级', Professional: '会计学、财务管理、财政学', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生，须具备与最高学历相对应的学位', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0892-8820476\n8820426'},
+
+
+
+ {id: '84', Department: '日喀则市', Natposition: '亚东县下亚东乡人民政府', posts_code: 20230084.0, posts_des: '政府日常工作', p_Number: 2.0, Nature_position: '公务员', Job_category: '乡镇级', Professional: '汉语言文学、秘书学、会计学和财务管理专业', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生，须具备与最高学历相对应的学位', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0892-8820476\n8820426'},
+
+
+
+ {id: '85', Department: '日喀则市', Natposition: '亚东县下亚东乡人民政府', posts_code: 20230085.0, posts_des: '财务管理工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '乡镇级', Professional: '会计学、财务管理、财政学', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生，须具备与最高学历相对应的学位', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0892-8820476\n8820426'},
+
+
+
+ {id: '86', Department: '日喀则市', Natposition: '亚东县上亚东乡人民政府', posts_code: 20230086.0, posts_des: '政府日常工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '乡镇级', Professional: '法学类、中国语言文学类、财政学类', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生，须具备与最高学历相对应的学位', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0892-8820476\n8820426'},
+
+
+
+ {id: '87', Department: '日喀则市', Natposition: '亚东县上亚东乡人民政府', posts_code: 20230087.0, posts_des: '财务管理工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '乡镇级', Professional: '会计学、财务管理、财政学', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生，须具备与最高学历相对应的学位', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0892-8820476\n8820426'},
+
+
+
+ {id: '88', Department: '日喀则市', Natposition: '亚东县康布乡人民政府', posts_code: 20230088.0, posts_des: '政府日常工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '乡镇级', Professional: '农学相关专业', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生，须具备与最高学历相对应的学位', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0892-8820476\n8820426'},
+
+
+
+ {id: '89', Department: '日喀则市', Natposition: '亚东县康布乡人民政府', posts_code: 20230089.0, posts_des: '政府日常工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '乡镇级', Professional: '会计学', Degree: '本科及以上', Gender: '不限', other_demand: '须具备与最高学历相对应的学位', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0892-8820476\n8820426'},
+
+
+
+ {id: '90', Department: '日喀则市', Natposition: '亚东县康布乡人民政府', posts_code: 20230090.0, posts_des: '财务管理工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '乡镇级', Professional: '会计学、财务管理、财政学', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生，须具备与最高学历相对应的学位', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0892-8820476\n8820426'},
+
+
+
+ {id: '91', Department: '日喀则市', Natposition: '亚东县吉汝乡人民政府', posts_code: 20230091.0, posts_des: '财务管理工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '乡镇级', Professional: '会计学、财务管理、财政学', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生，须具备与最高学历相对应的学位', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0892-8820476\n8820426'},
+
+
+
+ {id: '92', Department: '日喀则市', Natposition: '亚东县委政法委', posts_code: 20230092.0, posts_des: '政法工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '县区级', Professional: '法学相关专业', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生，须具备与最高学历相对应的学位。', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0892-8820476\n8820426'},
+
+
+
+ {id: '93', Department: '日喀则市', Natposition: '亚东县人民检察院', posts_code: 20230093.0, posts_des: '财务管理工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '县区级', Professional: '会计学、财务管理、财政学', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生，须具备与最高学历相对应的学位', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0892-8820476\n8820426'},
+
+
+
+ {id: '94', Department: '日喀则市', Natposition: '亚东县人民检察院', posts_code: 20230094.0, posts_des: '检察官助理', p_Number: 1.0, Nature_position: '公务员', Job_category: '县区级', Professional: '法学', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生，须具备与最高学历相对应的学位', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0892-8820476\n8820426'},
+
+
+
+ {id: '95', Department: '日喀则市', Natposition: '亚东县社会保障中心', posts_code: 20230095.0, posts_des: '财务管理工作', p_Number: 1.0, Nature_position: '参公人员', Job_category: '县区级', Professional: '会计学、财务管理、财政学', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生，须具备与最高学历相对应的学位', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0892-8820476\n8820426'},
+
+
+
+ {id: '96', Department: '日喀则市', Natposition: '仲巴县人民检察院', posts_code: 20230096.0, posts_des: '检察官助理', p_Number: 1.0, Nature_position: '公务员', Job_category: '县区级', Professional: '法学类', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生，须具备与最高学历相对应的学位', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0892-8820476\n8820426'},
+
+
+
+ {id: '97', Department: '日喀则市', Natposition: '仲巴县司法局', posts_code: 20230097.0, posts_des: '法律服务', p_Number: 1.0, Nature_position: '公务员', Job_category: '县区级', Professional: '法学类', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生，须具备与最高学历相对应的学位', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0892-8820476\n8820426'},
+
+
+
+ {id: '98', Department: '日喀则市', Natposition: '仲巴县委政法委', posts_code: 20230098.0, posts_des: '文字写作、综合管理', p_Number: 1.0, Nature_position: '公务员', Job_category: '县区级', Professional: '中国语言文学、汉语言文学', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生，须具备与最高学历相对应的学位', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0892-8820476\n8820426'},
+
+
+
+ {id: '99', Department: '日喀则市', Natposition: '仲巴县霍尔巴乡人民政府', posts_code: 20230099.0, posts_des: '财务管理工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '乡镇级', Professional: '会计学、财务管理、财政学', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生，须具备与最高学历相对应的学位', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0892-8820476\n8820426'},
+
+
+
+ {id: '100', Department: '日喀则市', Natposition: '定日县扎西宗乡人民政府', posts_code: 20230100.0, posts_des: '财务管理工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '乡镇级', Professional: '会计学、财务管理、财政学', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生，须具备与最高学历相对应的学位', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0892-8820476\n8820426'},
+
+
+
+ {id: '101', Department: '日喀则市', Natposition: '定日县扎西宗乡人民政府', posts_code: 20230101.0, posts_des: '政府日常工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '乡镇级', Professional: '专业不限', Degree: '大专及以上', Gender: '不限', other_demand: '仅限日喀则市生源报考', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0892-8820476\n8820426'},
+
+
+
+ {id: '102', Department: '日喀则市', Natposition: '定日县扎西宗乡人民政府', posts_code: 20230102.0, posts_des: '政府日常工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '乡镇级', Professional: '汉语言、汉语言文学、秘书学', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生，须具备与最高学历相对应的学位。', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0892-8820476\n8820426'},
+
+
+
+ {id: '103', Department: '日喀则市', Natposition: '聂拉木县委政法委', posts_code: 20230103.0, posts_des: '政法工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '县区级', Professional: '法学', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生，须具备与最高学历相对应的学位', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0892-8820476\n8820426'},
+
+
+
+ {id: '104', Department: '日喀则市', Natposition: '聂拉木县外事办公室', posts_code: 20230104.0, posts_des: '办公室日常工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '县区级', Professional: '英语、中国语言文学、汉语言文学', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生，须具备与最高学历相对应的学位', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0892-8820476\n8820426'},
+
+
+
+ {id: '105', Department: '日喀则市', Natposition: '聂拉木县林业和草原局', posts_code: 20230105.0, posts_des: '森林保护工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '县区级', Professional: '自然保护与环境生态类', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生，须具备与最高学历相对应的学位', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0892-8820476\n8820426'},
+
+
+
+ {id: '106', Department: '日喀则市', Natposition: '聂拉木县聂拉木口岸管理委员会', posts_code: 20230106.0, posts_des: '口岸贸易日常工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '县区级', Professional: '经济与贸易类、法学', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生，须具备与最高学历相对应的学位', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0892-8820476\n8820426'},
+
+
+
+ {id: '107', Department: '日喀则市', Natposition: '聂拉木县来新寺管理委员会', posts_code: 20230107.0, posts_des: '寺管会日常管理', p_Number: 1.0, Nature_position: '公务员', Job_category: '县区级', Professional: '宗教学、民族学', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生，须具备与最高学历相对应的学位', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0892-8820476\n8820426'},
+
+
+
+ {id: '108', Department: '日喀则市', Natposition: '聂拉木县查嘎寺管理委员会', posts_code: 20230108.0, posts_des: '寺管会日常管理', p_Number: 1.0, Nature_position: '公务员', Job_category: '县区级', Professional: '宗教学、民族学', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生，须具备与最高学历相对应的学位', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0892-8820476\n8820426'},
+
+
+
+ {id: '109', Department: '日喀则市', Natposition: '聂拉木县人民检察院', posts_code: 20230109.0, posts_des: '财务管理工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '县区级', Professional: '会计学、财务管理、财政学', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生，须具备与最高学历相对应的学位', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0892-8820476\n8820426'},
+
+
+
+ {id: '110', Department: '日喀则市', Natposition: '聂拉木县人民检察院', posts_code: 20230110.0, posts_des: '检察官助理', p_Number: 1.0, Nature_position: '公务员', Job_category: '县区级', Professional: '法学', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生，须具备与最高学历相对应的学位', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0892-8820476\n8820426'},
+
+
+
+ {id: '111', Department: '日喀则市', Natposition: '萨嘎县人民检察院', posts_code: 20230111.0, posts_des: '办公室日常工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '县区级', Professional: '法学', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生，须具备与最高学历相对应的学位', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0892-8820476\n8820426'},
+
+
+
+ {id: '112', Department: '日喀则市', Natposition: '岗巴县人民检察院', posts_code: 20230112.0, posts_des: '法制宣传、纠纷化解、案件处理', p_Number: 1.0, Nature_position: '公务员', Job_category: '县区级', Professional: '法学', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生，须具备与最高学历相对应的学位', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0892-8820476\n8820426'},
+
+
+
+ {id: '113', Department: '日喀则市', Natposition: '昂仁县多白乡人民政府', posts_code: 20230113.0, posts_des: '政府日常工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '乡镇级', Professional: '会计学、财务管理、财政学', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生，须具备与最高学历相对应的学位', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0892-8820476\n8820426'},
+
+
+
+ {id: '114', Department: '山南市', Natposition: '市中级人民法院法官助理', posts_code: 20230114.0, posts_des: '从事司法辅助工作', p_Number: 2.0, Nature_position: '公务员', Job_category: '地市级', Professional: '法学（030101）', Degree: '本科及以上', Gender: '不限', other_demand: '具有法律执业资格证书C证及以上', Exam_subjects: '行政职业能力测验、申论（一）', consultation: '0891-6288808'},
+
+
+
+ {id: '115', Department: '山南市', Natposition: '乃东区亚堆乡人民政府', posts_code: 20230115.0, posts_des: '从事基层党建工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '乡镇级', Professional: '法学类、中国语言文学类、财政学类', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0893-7835983'},
+
+
+
+ {id: '116', Department: '山南市', Natposition: '琼结县加麻乡人民政府', posts_code: 20230116.0, posts_des: '从事农牧相关工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '乡镇级', Professional: '农学相关专业', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0893-7835983'},
+
+
+
+ {id: '117', Department: '山南市', Natposition: '扎囊县吉汝乡人民政府', posts_code: 20230117.0, posts_des: '从事农村发展、乡村振兴、集体经济发展等工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '乡镇级', Professional: '农学相关专业', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生；有吃苦耐劳精神品质、能适应经常加班', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0893-7835983'},
+
+
+
+ {id: '118', Department: '山南市', Natposition: '贡嘎县东拉乡人民政府', posts_code: 20230118.0, posts_des: '从事乡镇综合性工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '乡镇级', Professional: '法学类、中国语言文学类、财政学类', Degree: '本科及以上', Gender: '不限', other_demand: '无', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0893-7835983'},
+
+
+
+ {id: '119', Department: '山南市', Natposition: '浪卡子县普玛江塘乡人民政府', posts_code: 20230119.0, posts_des: '从事乡镇综合性工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '乡镇级', Professional: '专业不限', Degree: '大专及以上', Gender: '不限', other_demand: '仅限山南市生源考生报考', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0893-7835983'},
+
+
+
+ {id: '120', Department: '山南市', Natposition: '浪卡子县多却乡人民政府', posts_code: 20230120.0, posts_des: '从事乡镇综合性工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '乡镇级', Professional: '工商管理类、中国语言文学类', Degree: '本科及以上', Gender: '不限', other_demand: '无', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0893-7835983'},
+
+
+
+ {id: '121', Department: '山南市', Natposition: '洛扎县生格乡人民政府', posts_code: 20230121.0, posts_des: '从事乡镇综合性工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '乡镇级', Professional: '经济学类、中国语言文学类、公共管理学类、工商管理类', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0893-7835983'},
+
+
+
+ {id: '122', Department: '山南市', Natposition: '措美县乃西乡人民政府', posts_code: 20230122.0, posts_des: '从事财务相关工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '乡镇级', Professional: '会计学、财务管理', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0893-7835983'},
+
+
+
+ {id: '123', Department: '山南市', Natposition: '错那县曲卓木乡人民政府', posts_code: 20230123.0, posts_des: '从事文秘及财会工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '乡镇级', Professional: '工商管理类、汉语言文学类、新闻传播学类、法学类、工学门类', Degree: '大专及以上', Gender: '不限', other_demand: '仅限期满服务基层项目人员报考', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0893-7835983'},
+
+
+
+ {id: '124', Department: '山南市', Natposition: '错那县卡达乡人民政府', posts_code: 20230124.0, posts_des: '从事党群服务工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '乡镇级', Professional: '中国语言文学类', Degree: '本科及以上', Gender: '不限', other_demand: '无', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0893-7835983'},
+
+
+
+ {id: '125', Department: '山南市', Natposition: '隆子县日当镇人民政府', posts_code: 20230125.0, posts_des: '从事财务会计相关工作', p_Number: 1.0, Nature_position: '公务员 ', Job_category: '乡镇级', Professional: '经济学相关专业', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生，须取得与最高学历对应的学历学位证书', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0893-7835983'},
+
+
+
+ {id: '126', Department: '山南市', Natposition: '隆子县扎日乡人民政府', posts_code: 20230126.0, posts_des: '从事乡镇人民政府党群、政府、人大等综合办公和服务群众工作', p_Number: 1.0, Nature_position: '公务员 ', Job_category: '乡镇级', Professional: '中国语言文学类', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生，须取得与最高学历对应的学历学位证书', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0893-7835983'},
+
+
+
+ {id: '127', Department: '山南市', Natposition: '曲松县纪委监委审查调查室', posts_code: 20230127.0, posts_des: '从事监督执纪问责工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '县区级', Professional: '法学相关专业', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0893-7835983'},
+
+
+
+ {id: '128', Department: '山南市', Natposition: '加查县加查镇人民政府', posts_code: 20230128.0, posts_des: '从事党政办公室文件管理、材料起草、日常事务协调等综合性工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '乡镇级', Professional: '中国语言文学类', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0893-7835983'},
+
+
+
+ {id: '129', Department: '山南市', Natposition: '桑日县增期乡人民政府', posts_code: 20230129.0, posts_des: '从事政务综合办公室（财政资产管理所）日常工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '乡镇级', Professional: '会计学、财务管理', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0893-7835983'},
+
+
+
+ {id: '130', Department: '林芝市', Natposition: '市中级人民法院', posts_code: 20230130.0, posts_des: '从事财务会计工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '地市级', Professional: '会计学（120303）', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生', Exam_subjects: '行政职业能力测验、申论（一）', consultation: '0891-6288808'},
+
+
+
+ {id: '131', Department: '林芝市', Natposition: '市中级人民法院司法行政人员', posts_code: 20230131.0, posts_des: '从事与职位相关的司法行政工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '地市级', Professional: '法学（030101）', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生', Exam_subjects: '行政职业能力测验、申论（一）', consultation: '0891-6288808'},
+
+
+
+ {id: '132', Department: '林芝市', Natposition: '巴宜区人民法院八一镇人民法庭法官助理', posts_code: 20230132.0, posts_des: '从事司法辅助工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '县区级', Professional: '专业不限', Degree: '本科及以上', Gender: '不限', other_demand: '面向工作年限满3年的在职聘用制书记员', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0891-6288808'},
+
+
+
+ {id: '133', Department: '林芝市', Natposition: '巴宜区人民法院百八镇人民法庭', posts_code: 20230133.0, posts_des: '从事财务会计工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '县区级', Professional: '会计学（120303）', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0891-6288808'},
+
+
+
+ {id: '134', Department: '林芝市', Natposition: '察隅县人民法院法官助理', posts_code: 20230134.0, posts_des: '从事司法辅助工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '县区级', Professional: '专业不限', Degree: '本科及以上', Gender: '不限', other_demand: '面向工作年限满3年的在职聘用制书记员', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0891-6288808'},
+
+
+
+ {id: '135', Department: '林芝市', Natposition: '米林县人民法院', posts_code: 20230135.0, posts_des: '从事财务会计工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '县区级', Professional: '会计学（120303）', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0891-6288808'},
+
+
+
+ {id: '136', Department: '林芝市', Natposition: '墨脱县人民法院格当乡人民法庭法官助理', posts_code: 20230136.0, posts_des: '从事司法辅助工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '乡镇级', Professional: '法学（030101）', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0891-6288808'},
+
+
+
+ {id: '137', Department: '林芝市', Natposition: '巴宜区自然资源执法大队', posts_code: 20230137.0, posts_des: '土地管理、自然资源监管等', p_Number: 1.0, Nature_position: '参公人员', Job_category: '县区级', Professional: '建筑类、法学类专业（非门类）', Degree: '本科及以上', Gender: '不限', other_demand: '无', Exam_subjects: '行政职业能力测验、申论（三）', consultation: '0894-5886955'},
+
+
+
+ {id: '138', Department: '林芝市', Natposition: '巴宜区住建局公积金管理中心', posts_code: 20230138.0, posts_des: '公积金核算、上缴、管理等', p_Number: 1.0, Nature_position: '参公人员', Job_category: '县区级', Professional: '计算机类、财政学类、金融学类、财务管理、会计、会计学专业', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0894-5886955'},
+
+
+
+ {id: '139', Department: '林芝市', Natposition: '米林县卧龙镇人民政府', posts_code: 20230139.0, posts_des: '财务、会计等', p_Number: 1.0, Nature_position: '公务员', Job_category: '乡镇级', Professional: '中国语言文学类、财政学类、金融学类、财务管理、会计、会计学、审计学专业', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0894-5886955'},
+
+
+
+ {id: '140', Department: '林芝市', Natposition: '工布江达县人民检察院', posts_code: 20230140.0, posts_des: '财务、会计', p_Number: 1.0, Nature_position: '公务员', Job_category: '县区级', Professional: '财政学类、金融学类、财务管理、会计、会计学、审计学专业', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0894-5886955'},
+
+
+
+ {id: '141', Department: '林芝市', Natposition: '工布江达县金达镇寺庙管理委员会', posts_code: 20230141.0, posts_des: '文物保护、修缮等', p_Number: 1.0, Nature_position: '公务员', Job_category: '县区级', Professional: '中国语言文学类、历史学类、民族学类专业', Degree: '本科及以上', Gender: '不限', other_demand: '无', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0894-5886955'},
+
+
+
+ {id: '142', Department: '林芝市', Natposition: '工布江达县财政局会计核算中心', posts_code: 20230142.0, posts_des: '财务、会计等', p_Number: 1.0, Nature_position: '参公人员', Job_category: '县区级', Professional: '计算机类、财政学类、金融学类、财务管理、会计、会计学、审计学专业', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0894-5886955'},
+
+
+
+ {id: '143', Department: '林芝市', Natposition: '工布江达县水利服务站', posts_code: 20230143.0, posts_des: '水利设施管理、水资源保护、水政执法等', p_Number: 1.0, Nature_position: '参公人员', Job_category: '县区级', Professional: '水利类、法学类专业（非门类）', Degree: '本科及以上', Gender: '不限', other_demand: '无', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0894-5886955'},
+
+
+
+ {id: '144', Department: '林芝市', Natposition: '朗县林草局森林生态效益补偿办公室', posts_code: 20230144.0, posts_des: '办公室日常工作', p_Number: 1.0, Nature_position: '参公人员', Job_category: '县区级', Professional: '林学类、草学类、计算机类、中国语言文学类专业', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0894-5886955'},
+
+
+
+ {id: '145', Department: '林芝市', Natposition: '朗县仲达镇寺庙管理委员会', posts_code: 20230145.0, posts_des: '寺管会日常工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '县区级', Professional: '中国语言文学类、行政管理、宗教学、社会学专业', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0894-5886955'},
+
+
+
+ {id: '146', Department: '林芝市', Natposition: '朗县登木乡寺庙管理委员会', posts_code: 20230146.0, posts_des: '财务、会计', p_Number: 1.0, Nature_position: '公务员', Job_category: '县区级', Professional: '财政学类、金融学类、财务管理、会计、会计学、审计学专业', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0894-5886955'},
+
+
+
+ {id: '147', Department: '林芝市', Natposition: '朗县洞嘎镇人民政府', posts_code: 20230147.0, posts_des: '政府日常工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '乡镇级', Professional: '中国语言文学类、新闻传播学类、法学类（非门类）专业', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0894-5886955'},
+
+
+
+ {id: '148', Department: '林芝市', Natposition: '朗县登木乡人民政府', posts_code: 20230148.0, posts_des: '政府日常工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '乡镇级', Professional: '中国语言文学类、新闻传播学类、法学类（非门类）专业', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0894-5886955'},
+
+
+
+ {id: '149', Department: '林芝市', Natposition: '', posts_code: 20230149.0, posts_des: '财务、会计', p_Number: 1.0, Nature_position: '公务员', Job_category: '乡镇级', Professional: '财政学类、金融学类、财务管理、会计、会计学、审计学专业', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0894-5886955'},
+
+
+
+ {id: '150', Department: '林芝市', Natposition: '朗县金东乡人民政府', posts_code: 20230150.0, posts_des: '财务、会计', p_Number: 1.0, Nature_position: '公务员', Job_category: '乡镇级', Professional: '财政学类、金融学类、财务管理、会计、会计学、审计学专业', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0894-5886955'},
+
+
+
+ {id: '151', Department: '林芝市', Natposition: '波密县纪委监委', posts_code: 20230151.0, posts_des: '案件审查工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '县区级', Professional: '法学类（非门类）、建筑类、工程管理、工程造价专业', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0894-5886955'},
+
+
+
+ {id: '152', Department: '林芝市', Natposition: '波密县发改委项目评审中心', posts_code: 20230152.0, posts_des: '审核项目工程造价和工程结构等', p_Number: 1.0, Nature_position: '参公人员', Job_category: '县区级', Professional: '土木类、建筑类、工程管理、工程造价专业', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0894-5886955'},
+
+
+
+ {id: '153', Department: '林芝市', Natposition: '波密县自然资源执法大队', posts_code: 20230153.0, posts_des: '土地管理、自然资源监管等', p_Number: 1.0, Nature_position: '参公人员', Job_category: '县区级', Professional: '法学类（非门类）、环境科学与工程类、自然保护与环境生态类、土地资源管理专业', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生', Exam_subjects: '行政职业能力测验、申论（三）', consultation: '0894-5886955'},
+
+
+
+ {id: '154', Department: '林芝市', Natposition: '波密县城市管理和综合执法局', posts_code: 20230154.0, posts_des: '城市市容环境卫生行政管理、行业管理、执法工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '县区级', Professional: '法学类（非门类）、建筑类、土木类专业', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生', Exam_subjects: '行政职业能力测验、申论（三）', consultation: '0894-5886955'},
+
+
+
+ {id: '155', Department: '林芝市', Natposition: '波密县扎木镇寺庙管理委员会', posts_code: 20230155.0, posts_des: '寺管会日常工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '县区级', Professional: '法学类（非门类）、公共管理类、财政学类、金融学类、财务管理、会计、会计学、审计学专业', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0894-5886955'},
+
+
+
+ {id: '156', Department: '林芝市', Natposition: '波密县倾多镇寺庙管理委员会', posts_code: 20230156.0, posts_des: '寺管会日常工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '县区级', Professional: '法学类（非门类）、公共管理类、财政学类、金融学类、财务管理、会计、会计学、审计学专业', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0894-5886955'},
+
+
+
+ {id: '157', Department: '林芝市', Natposition: '波密县八盖乡人民政府', posts_code: 20230157.0, posts_des: '政府日常工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '乡镇级', Professional: '会计学、中国语言文学', Degree: '本科及以上', Gender: '不限', other_demand: '仅限期满服务基层项目人员报考', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0894-5886955'},
+
+
+
+ {id: '158', Department: '林芝市', Natposition: '波密县康玉乡人民政府', posts_code: 20230158.0, posts_des: '项目建设管理', p_Number: 1.0, Nature_position: '公务员', Job_category: '乡镇级', Professional: '土木类、建筑类、工程管理、工程造价专业', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0894-5886955'},
+
+
+
+ {id: '159', Department: '林芝市', Natposition: '', posts_code: 20230159.0, posts_des: '财务、会计', p_Number: 1.0, Nature_position: '公务员', Job_category: '乡镇级', Professional: '财政学类、金融学类、财务管理、会计、会计学、审计学专业', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0894-5886955'},
+
+
+
+ {id: '160', Department: '林芝市', Natposition: '波密县玉许乡人民政府', posts_code: 20230160.0, posts_des: '项目建设管理', p_Number: 1.0, Nature_position: '公务员', Job_category: '乡镇级', Professional: '土木类、建筑类、工程管理、工程造价专业', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0894-5886955'},
+
+
+
+ {id: '161', Department: '林芝市', Natposition: '察隅县古拉乡人民政府', posts_code: 20230161.0, posts_des: '财务、会计', p_Number: 1.0, Nature_position: '公务员', Job_category: '乡镇级', Professional: '财政学类、金融学类、财务管理、会计、会计学、审计学专业', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0894-5886955'},
+
+
+
+ {id: '162', Department: '林芝市', Natposition: '', posts_code: 20230162.0, posts_des: '政府日常工作', p_Number: 2.0, Nature_position: '公务员', Job_category: '乡镇级', Professional: '建筑类、测绘类、法学类（非门类）、新闻传播学类专业', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0894-5886955'},
+
+
+
+ {id: '163', Department: '林芝市', Natposition: '察隅县日东寺特派员', posts_code: 20230163.0, posts_des: '寺管会日常工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '县区级', Professional: '法学类（非门类）、政治学类、经济学类、财政学类、金融学类专业', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0894-5886955'},
+
+
+
+ {id: '164', Department: '林芝市', Natposition: '察隅县江色寺特派员', posts_code: 20230164.0, posts_des: '寺管会日常工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '县区级', Professional: '法学类（非门类）、政治学类、经济学类、财政学类、金融学类专业', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0894-5886955'},
+
+
+
+ {id: '165', Department: '林芝市', Natposition: '墨脱县背崩乡人民政府', posts_code: 20230165.0, posts_des: '政府日常工作', p_Number: 2.0, Nature_position: '公务员', Job_category: '乡镇级', Professional: '中国语言文学类、工商管理类、经济学类专业', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0894-5886955'},
+
+
+
+ {id: '166', Department: '林芝市', Natposition: '墨脱县格当乡人民政府', posts_code: 20230166.0, posts_des: '政府日常工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '乡镇级', Professional: '中国语言文学类、工商管理类、法学类（非门类）、经济学类专业', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0894-5886955'},
+
+
+
+ {id: '167', Department: '林芝市', Natposition: '墨脱县帮辛乡人民政府', posts_code: 20230167.0, posts_des: '政府日常工作', p_Number: 3.0, Nature_position: '公务员', Job_category: '乡镇级', Professional: '中国语言文学类、新闻传播学类、经济学类、法学类（非门类）、社会学类专业', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0894-5886955'},
+
+
+
+ {id: '168', Department: '林芝市', Natposition: '墨脱县甘登乡人民政府', posts_code: 20230168.0, posts_des: '政府日常工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '乡镇级', Professional: '专业不限', Degree: '大专及以上', Gender: '不限', other_demand: '仅限林芝市生源报考', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0894-5886955'},
+
+
+
+ {id: '169', Department: '林芝市', Natposition: '墨脱县人民政府驻八一办事处', posts_code: 20230169.0, posts_des: '财务、会计等', p_Number: 1.0, Nature_position: '公务员', Job_category: '县区级', Professional: '计算机类、财政学类、金融学类、财务管理、会计、会计学、审计学专业', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0894-5886955'},
+
+
+
+ {id: '170', Department: '林芝市', Natposition: '鲁朗景区管委会规划发展改革科', posts_code: 20230170.0, posts_des: '负责小镇规划工作、项目工作', p_Number: 1.0, Nature_position: '参公人员', Job_category: '地市级', Professional: '管理科学与工程类、人文地理与城乡规划、城乡规划专业', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生', Exam_subjects: '行政职业能力测验、申论（一）', consultation: '0894-5886955'},
+
+
+
+ {id: '171', Department: '林芝市', Natposition: '鲁朗景区管委会生态资源管理科', posts_code: 20230171.0, posts_des: '负责旅游生态环境保护工作', p_Number: 1.0, Nature_position: '参公人员', Job_category: '地市级', Professional: '自然保护与环境生态类、环境科学与工程类专业', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生', Exam_subjects: '行政职业能力测验、申论（一）', consultation: '0894-5886955'},
+
+
+
+ {id: '172', Department: '林芝市', Natposition: '市人民检察院办公室', posts_code: 20230172.0, posts_des: '办公室日常工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '地市级', Professional: '中国语言文学类、新闻传播学类专业', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生', Exam_subjects: '行政职业能力测验、申论（一）', consultation: '0894-5886955'},
+
+
+
+ {id: '173', Department: '林芝市', Natposition: '市人民检察院检务保障部', posts_code: 20230173.0, posts_des: '网络安全、技术维护、数据管理及信息化项目建设等工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '地市级', Professional: '电子信息类、计算机类专业', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生', Exam_subjects: '行政职业能力测验、申论（一）', consultation: '0894-5886955'},
+
+
+
+ {id: '174', Department: '昌都市', Natposition: '八宿县人民法院法官助理', posts_code: 20230174.0, posts_des: '从事司法辅助工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '县区级', Professional: '法学（030101）', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0891-6288808'},
+
+
+
+ {id: '175', Department: '昌都市', Natposition: '贡觉县人民法院', posts_code: 20230175.0, posts_des: '从事财务会计工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '县区级', Professional: '会计学（120303）', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0891-6288808'},
+
+
+
+ {id: '176', Department: '昌都市', Natposition: '丁青县人民法院法官助理', posts_code: 20230176.0, posts_des: '从事司法辅助工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '县区级', Professional: '法学（030101）', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0891-6288808'},
+
+
+
+ {id: '177', Department: '昌都市', Natposition: '丁青县人民法院', posts_code: 20230177.0, posts_des: '从事财务会计工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '县区级', Professional: '会计学（120303）', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0891-6288808'},
+
+
+
+ {id: '178', Department: '昌都市', Natposition: '卡若区人民法院', posts_code: 20230178.0, posts_des: '从事财务会计工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '县区级', Professional: '会计学（120303）', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0891-6288808'},
+
+
+
+ {id: '179', Department: '昌都市', Natposition: '市委巡察二组', posts_code: 20230179.0, posts_des: '从事监督落实全面从严治党主体责任和监督责任等工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '地市级', Professional: '法学类', Degree: '本科及以上', Gender: '不限', other_demand: '中共党员', Exam_subjects: '行政职业能力测验、申论（一）', consultation: '0895-4821582'},
+
+
+
+ {id: '180', Department: '昌都市', Natposition: '市委党校（市行政学院）教务科', posts_code: 20230180.0, posts_des: '从事教学培训管理工作', p_Number: 1.0, Nature_position: '参公人员', Job_category: '地市级', Professional: '教育学类', Degree: '硕士研究生及以上', Gender: '不限', other_demand: '无', Exam_subjects: '行政职业能力测验、申论（一）', consultation: '0895-4821582'},
+
+
+
+ {id: '181', Department: '昌都市', Natposition: '市城乡规划编审中心', posts_code: 20230181.0, posts_des: '从事财务会计工作', p_Number: 1.0, Nature_position: '参公人员', Job_category: '地市级', Professional: '会计学、财务管理、审计学专业', Degree: '本科及以上', Gender: '不限', other_demand: '持有初级会计资格证', Exam_subjects: '行政职业能力测验、申论（一）', consultation: '0895-4821582'},
+
+
+
+ {id: '182', Department: '昌都市', Natposition: '市住房公积金管理中心', posts_code: 20230182.0, posts_des: '从事全市住房公积金统计审核等相关工作', p_Number: 1.0, Nature_position: '参公人员', Job_category: '地市级', Professional: '统计学类', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生', Exam_subjects: '行政职业能力测验、申论（一）', consultation: '0895-4821582'},
+
+
+
+ {id: '183', Department: '昌都市', Natposition: '市交通运输综合行政执法队', posts_code: 20230183.0, posts_des: '从事国省道公路路政管理、安全生产监督执法工作', p_Number: 1.0, Nature_position: '参公人员', Job_category: '地市级', Professional: '法学专业', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生', Exam_subjects: '行政职业能力测验、申论（三）', consultation: '0895-4821582'},
+
+
+
+ {id: '184', Department: '昌都市', Natposition: '市水土保持站', posts_code: 20230184.0, posts_des: '从事水土保持生态环境建设规划、管理等相关工作', p_Number: 1.0, Nature_position: '参公人员', Job_category: '地市级', Professional: '水土保持与荒漠化防治、环境生态工程、水利科学与工程专业', Degree: '本科及以上', Gender: '不限', other_demand: '须取得与最高学历相对应的学位', Exam_subjects: '行政职业能力测验、申论（一）', consultation: '0895-4821582'},
+
+
+
+ {id: '185', Department: '昌都市', Natposition: '市水利工程建设质量与安全监督站', posts_code: 20230185.0, posts_des: '从事水利工程建设质量与监督等相关工作', p_Number: 1.0, Nature_position: '参公人员', Job_category: '地市级', Professional: '水利水电工程专业、水利工程专业', Degree: '大专及以上', Gender: '不限', other_demand: '无', Exam_subjects: '行政职业能力测验、申论（一）', consultation: '0895-4821582'},
+
+
+
+ {id: '186', Department: '昌都市', Natposition: '江达县江达镇人民政府', posts_code: 20230186.0, posts_des: '从事乡镇日常公文写作、管理等工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '乡镇级', Professional: '中国语言文学类、公共管理类', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生，须具备与最高学历相对应的学位', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0895-4821582'},
+
+
+
+ {id: '187', Department: '昌都市', Natposition: '江达县生达乡人民政府', posts_code: 20230187.0, posts_des: '从事乡镇日常公文写作、管理等工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '乡镇级', Professional: '中国语言文学类、公共管理类', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生，须具备与最高学历相对应的学位', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0895-4821582'},
+
+
+
+ {id: '188', Department: '昌都市', Natposition: '江达县同普乡人民政府', posts_code: 20230188.0, posts_des: '从事乡镇日常公文写作、管理等工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '乡镇级', Professional: '中国语言文学类、公共管理类', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生，须具备与最高学历相对应的学位', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0895-4821582'},
+
+
+
+ {id: '189', Department: '昌都市', Natposition: '江达县岩比乡人民政府', posts_code: 20230189.0, posts_des: '从事乡镇日常公文写作、管理等工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '乡镇级', Professional: '中国语言文学类、公共管理类', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生，须具备与最高学历相对应的学位', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0895-4821582'},
+
+
+
+ {id: '190', Department: '昌都市', Natposition: '江达县青泥洞乡人民政府', posts_code: 20230190.0, posts_des: '从事乡镇日常公文写作、管理等工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '乡镇级', Professional: '中国语言文学类、公共管理类', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生，须具备与最高学历相对应的学位', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0895-4821582'},
+
+
+
+ {id: '191', Department: '昌都市', Natposition: '江达县德登乡人民政府', posts_code: 20230191.0, posts_des: '从事乡镇日常公文写作、管理等工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '乡镇级', Professional: '中国语言文学类、公共管理类', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生，须具备与最高学历相对应的学位', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0895-4821582'},
+
+
+
+ {id: '192', Department: '昌都市', Natposition: '江达县邓柯乡人民政府', posts_code: 20230192.0, posts_des: '从事乡镇日常公文写作、管理等工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '乡镇级', Professional: '中国语言文学类、公共管理类', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生，须具备与最高学历相对应的学位', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0895-4821582'},
+
+
+
+ {id: '193', Department: '昌都市', Natposition: '贡觉县纪委监委', posts_code: 20230193.0, posts_des: '从事监督执纪工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '县区级', Professional: '法学类', Degree: '本科及以上', Gender: '不限', other_demand: '中共预备党员或中共党员', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0895-4821582'},
+
+
+
+ {id: '194', Department: '昌都市', Natposition: '贡觉县长江上游天然林资源保护工程办公室', posts_code: 20230194.0, posts_des: '从事天然林资源保护、管理等工作', p_Number: 1.0, Nature_position: '参公人员', Job_category: '县区级', Professional: '林学类', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0895-4821582'},
+
+
+
+ {id: '195', Department: '昌都市', Natposition: '贡觉县林业管理站', posts_code: 20230195.0, posts_des: '从事木材运输检查监督、政策法规宣传等相关工作', p_Number: 1.0, Nature_position: '参公人员', Job_category: '县区级', Professional: '林学类', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0895-4821582'},
+
+
+
+ {id: '196', Department: '昌都市', Natposition: '贡觉县交通运输综合行政执法队', posts_code: 20230196.0, posts_des: '从事交通行政执法工作', p_Number: 1.0, Nature_position: '参公人员', Job_category: '县区级', Professional: '交通运输专业', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生', Exam_subjects: '行政职业能力测验、申论（三）', consultation: '0895-4821582'},
+
+
+
+ {id: '197', Department: '昌都市', Natposition: '贡觉县市场监督综合行政执法队', posts_code: 20230197.0, posts_des: '从事食品安全违法案件查处、监管等工作', p_Number: 1.0, Nature_position: '参公人员', Job_category: '县区级', Professional: '食品科学与工程类', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生', Exam_subjects: '行政职业能力测验、申论（三）', consultation: '0895-4821582'},
+
+
+
+ {id: '198', Department: '昌都市', Natposition: '贡觉县文化旅游市场综合行政执法队', posts_code: 20230198.0, posts_des: '从事文化、旅游经营活动中违法行为查处工作', p_Number: 1.0, Nature_position: '参公人员', Job_category: '县区级', Professional: '法学类', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生', Exam_subjects: '行政职业能力测验、申论（三）', consultation: '0895-4821582'},
+
+
+
+ {id: '199', Department: '昌都市', Natposition: '贡觉县城市管理执法大队', posts_code: 20230199.0, posts_des: '从事市政设施等专业性行政执法等工作', p_Number: 1.0, Nature_position: '参公人员', Job_category: '县区级', Professional: '法学类', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生', Exam_subjects: '行政职业能力测验、申论（三）', consultation: '0895-4821582'},
+
+
+
+ {id: '200', Department: '昌都市', Natposition: '贡觉县申请救助居民家庭经济状况核定中心', posts_code: 20230200.0, posts_des: '从事文件收发、日常材料撰写等工作', p_Number: 1.0, Nature_position: '参公人员', Job_category: '县区级', Professional: '汉语言文学专业、汉语言专业', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0895-4821582'},
+
+
+
+ {id: '201', Department: '昌都市', Natposition: '察雅县委巡察办', posts_code: 20230201.0, posts_des: '开展巡查监督工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '县区级', Professional: '法律实务类专业、法律文秘专业、法学专业', Degree: '本科及以上', Gender: '不限', other_demand: '无', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0895-4821582'},
+
+
+
+ {id: '202', Department: '昌都市', Natposition: '芒康县委巡察办', posts_code: 20230202.0, posts_des: '从事监督检查、审查调查等相关工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '县区级', Professional: '法学、经济学门类；工商管理、农业经济管理类', Degree: '本科及以上', Gender: '不限', other_demand: '无', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0895-4821582'},
+
+
+
+ {id: '203', Department: '昌都市', Natposition: '芒康县人大常委会办公室', posts_code: 20230203.0, posts_des: '从事机关党建、文秘、文书档案等日常工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '县区级', Professional: '法学专业', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0895-4821582'},
+
+
+
+ {id: '204', Department: '昌都市', Natposition: '芒康县措瓦乡日寺片区管理委员会', posts_code: 20230204.0, posts_des: '从事机关党建及民族宗教事务', p_Number: 1.0, Nature_position: '公务员', Job_category: '县区级', Professional: '马克思主义理论、民族学类', Degree: '本科及以上', Gender: '不限', other_demand: '中共预备党员或中共党员', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0895-4821582'},
+
+
+
+ {id: '205', Department: '昌都市', Natposition: '芒康县宗西乡色登寺片区管理委员会', posts_code: 20230205.0, posts_des: '从事机关党建及民族宗教事务', p_Number: 1.0, Nature_position: '公务员', Job_category: '县区级', Professional: '马克思主义理论、民族学类', Degree: '本科及以上', Gender: '不限', other_demand: '中共预备党员或中共党员', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0895-4821582'},
+
+
+
+ {id: '206', Department: '昌都市', Natposition: '芒康县宗西乡扎堆寺片区管理委员会', posts_code: 20230206.0, posts_des: '从事机关党建及民族宗教事务', p_Number: 1.0, Nature_position: '公务员', Job_category: '县区级', Professional: '马克思主义理论、民族学类', Degree: '本科及以上', Gender: '不限', other_demand: '中共预备党员或中共党员', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0895-4821582'},
+
+
+
+ {id: '207', Department: '昌都市', Natposition: '芒康县昂多乡人民政府', posts_code: 20230207.0, posts_des: '从事机关党建、文秘、文书档案等日常工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '乡镇级', Professional: '会计学、财务管理、汉语言文学、秘书学专业', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0895-4821582'},
+
+
+
+ {id: '208', Department: '昌都市', Natposition: '芒康县帮达乡人民政府', posts_code: 20230208.0, posts_des: '从事机关党建、文秘、文书档案等日常工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '乡镇级', Professional: '会计学、财务管理、法学专业', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0895-4821582'},
+
+
+
+ {id: '209', Department: '昌都市', Natposition: '芒康县措瓦乡人民政府', posts_code: 20230209.0, posts_des: '从事机关党建、文秘、文书档案等日常工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '乡镇级', Professional: '会计学、财务管理、汉语言文学、秘书学专业', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0895-4821582'},
+
+
+
+ {id: '210', Department: '昌都市', Natposition: '芒康县洛尼乡人民政府', posts_code: 20230210.0, posts_des: '从事机关党建、文秘、文书档案等日常工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '乡镇级', Professional: '会计学、财务管理、汉语言文学、秘书学专业', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0895-4821582'},
+
+
+
+ {id: '211', Department: '昌都市', Natposition: '芒康县曲登乡人民政府', posts_code: 20230211.0, posts_des: '从事机关党建、文秘、文书档案等日常工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '乡镇级', Professional: '会计学、财务管理、法学专业', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0895-4821582'},
+
+
+
+ {id: '212', Department: '昌都市', Natposition: '芒康县索多西乡人民政府', posts_code: 20230212.0, posts_des: '从事机关党建、文秘、文书档案等日常工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '乡镇级', Professional: '会计学、财务管理、汉语言文学、秘书学专业', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0895-4821582'},
+
+
+
+ {id: '213', Department: '昌都市', Natposition: '芒康县徐中乡人民政府', posts_code: 20230213.0, posts_des: '从事机关党建、文秘、文书档案等日常工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '乡镇级', Professional: '会计学、财务管理、汉语言文学、秘书学专业', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0895-4821582'},
+
+
+
+ {id: '214', Department: '昌都市', Natposition: '芒康县宗西乡人民政府', posts_code: 20230214.0, posts_des: '从事机关党建、文秘、文书档案等日常工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '乡镇级', Professional: '会计学、财务管理、法学专业', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0895-4821582'},
+
+
+
+ {id: '215', Department: '昌都市', Natposition: '芒康县莽岭乡人民政府', posts_code: 20230215.0, posts_des: '从事机关党建、文秘、文书档案等日常工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '乡镇级', Professional: '会计学、财务管理、汉语言文学、秘书学专业', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0895-4821582'},
+
+
+
+ {id: '216', Department: '昌都市', Natposition: '芒康县竹巴龙乡人民政府', posts_code: 20230216.0, posts_des: '从事机关党建、文秘、文书档案等日常工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '乡镇级', Professional: '会计学、财务管理、汉语言文学、秘书学专业', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0895-4821582'},
+
+
+
+ {id: '217', Department: '昌都市', Natposition: '芒康县嘎托镇人民政府', posts_code: 20230217.0, posts_des: '从事机关党建、文秘、文书档案等日常工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '乡镇级', Professional: '会计学、财务管理专业', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0895-4821582'},
+
+
+
+ {id: '218', Department: '昌都市', Natposition: '左贡县文化市场综合行政执法队', posts_code: 20230218.0, posts_des: '从事文化旅游项目运营与维护、文物修缮和保护及考古发掘工作', p_Number: 1.0, Nature_position: '参公人员', Job_category: '县区级', Professional: '文物保护与修复、文物保护技术、考古学、旅游管理专业', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生', Exam_subjects: '行政职业能力测验、申论（三）', consultation: '0895-4821582'},
+
+
+
+ {id: '219', Department: '昌都市', Natposition: '八宿县产业园区管理委员会', posts_code: 20230219.0, posts_des: '从事财政收支审计工作', p_Number: 1.0, Nature_position: '参公人员', Job_category: '县区级', Professional: '会计学专业、财务管理专业、审计学专业', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0895-4821582'},
+
+
+
+ {id: '220', Department: '昌都市', Natposition: '八宿县医疗保障服务中心', posts_code: 20230220.0, posts_des: '从事文字综合工作', p_Number: 1.0, Nature_position: '参公人员', Job_category: '县区级', Professional: '中国语言文学类', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0895-4821582'},
+
+
+
+ {id: '221', Department: '昌都市', Natposition: '', posts_code: 20230221.0, posts_des: '从事财政收支审计工作', p_Number: 1.0, Nature_position: '参公人员', Job_category: '县区级', Professional: '会计学专业、财务管理专业、审计学专业', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0895-4821582'},
+
+
+
+ {id: '222', Department: '昌都市', Natposition: '洛隆县水利工程移民服务中心', posts_code: 20230222.0, posts_des: '从事水利水电工程移民安居监督工作', p_Number: 1.0, Nature_position: '参公人员', Job_category: '县区级', Professional: '水利水电工程专业、水利科学与工程专业、秘书学专业', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0895-4821582'},
+
+
+
+ {id: '223', Department: '昌都市', Natposition: '洛隆县城市管理执法大队', posts_code: 20230223.0, posts_des: '从事城市管理执法等工作', p_Number: 1.0, Nature_position: '参公人员', Job_category: '县区级', Professional: '城市管理专业、财务管理专业', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生', Exam_subjects: '行政职业能力测验、申论（三）', consultation: '0895-4821582'},
+
+
+
+ {id: '224', Department: '昌都市', Natposition: '边坝县交通运输综合行政执法队', posts_code: 20230224.0, posts_des: '从事交通运输执法工作', p_Number: 1.0, Nature_position: '参公人员', Job_category: '县区级', Professional: '交通运输、交通工程、交通设备与控制工程专业', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生', Exam_subjects: '行政职业能力测验、申论（三）', consultation: '0895-4821582'},
+
+
+
+ {id: '225', Department: '昌都市', Natposition: '边坝县水利工程移民服务中心', posts_code: 20230225.0, posts_des: '从事水利工程资源开发、移民安置等日常工作', p_Number: 1.0, Nature_position: '参公人员', Job_category: '县区级', Professional: '水利水电工程、水利科学与工程、水文与水资源工程专业', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0895-4821582'},
+
+
+
+ {id: '226', Department: '昌都市', Natposition: '边坝县农业综合行政执法队', posts_code: 20230226.0, posts_des: '从事文字材料撰写工作', p_Number: 1.0, Nature_position: '参公人员', Job_category: '县区级', Professional: '汉语言文学、秘书学', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生', Exam_subjects: '行政职业能力测验、申论（三）', consultation: '0895-4821582'},
+
+
+
+ {id: '227', Department: '昌都市', Natposition: '边坝县乡村振兴局', posts_code: 20230227.0, posts_des: '从事乡村产业振兴等相关工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '县区级', Professional: '工程管理、土木工程专业、管理科学与工程类', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0895-4821582'},
+
+
+
+ {id: '228', Department: '昌都市', Natposition: '边坝县马武乡人民政府', posts_code: 20230228.0, posts_des: '从事文字材料撰写等办公室日常工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '乡镇级', Professional: '汉语言文学、秘书学、会计学和财务管理专业', Degree: '本科及以上', Gender: '不限', other_demand: '仅限期满服务基层项目人员报考', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0895-4821582'},
+
+
+
+ {id: '229', Department: '昌都市', Natposition: '丁青县城市管理执法大队', posts_code: 20230229.0, posts_des: '从事市政公用设施管理行政执法等工作', p_Number: 1.0, Nature_position: '参公人员', Job_category: '县区级', Professional: '法学、民商法学专业', Degree: '本科及以上', Gender: '不限', other_demand: '须取得与最高学历相对应的学位', Exam_subjects: '行政职业能力测验、申论（三）', consultation: '0895-4821582'},
+
+
+
+ {id: '230', Department: '昌都市', Natposition: '丁青县人民检察院', posts_code: 20230230.0, posts_des: '从事财务装备管理、各类资金支付和会计核算工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '县区级', Professional: '会计学、财政学、财务管理、财务会计教育专业', Degree: '本科及以上', Gender: '不限', other_demand: '须取得与最高学历相对应的学位', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0895-4821582'},
+
+
+
+ {id: '231', Department: '昌都市', Natposition: '丁青县布塔乡人民政府', posts_code: 20230231.0, posts_des: '负责乡镇财政资金管理、承办各项惠农补助资金兑现工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '乡镇级', Professional: '会计学、财政学、财务管理、财务会计教育专业', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生，须具备与最高学历相对应的学位', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0895-4821582'},
+
+
+
+ {id: '232', Department: '昌都市', Natposition: '丁青县巴达乡人民政府', posts_code: 20230232.0, posts_des: '负责乡镇财政资金管理、承办各项惠农补助资金兑现工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '乡镇级', Professional: '会计学、财政学、财务管理、财务会计教育专业', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生，须具备与最高学历相对应的学位', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0895-4821582'},
+
+
+
+ {id: '233', Department: '昌都市', Natposition: '丁青县嘎塔乡人民政府', posts_code: 20230233.0, posts_des: '负责乡镇财政资金管理、承办各项惠农补助资金兑现工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '乡镇级', Professional: '会计学、财政学、财务管理、财务会计教育专业', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生，须具备与最高学历相对应的学位', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0895-4821582'},
+
+
+
+ {id: '234', Department: '昌都市', Natposition: '丁青县色扎乡人民政府', posts_code: 20230234.0, posts_des: '负责乡镇财政资金管理、承办各项惠农补助资金兑现工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '乡镇级', Professional: '会计学、财政学、财务管理、财务会计教育专业', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生，须具备与最高学历相对应的学位', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0895-4821582'},
+
+
+
+ {id: '235', Department: '那曲市', Natposition: '聂荣县人民法院查当乡人民法庭法官助理', posts_code: 20230235.0, posts_des: '从事司法辅助工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '县区级', Professional: '法学（030101）', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0891-6288808'},
+
+
+
+ {id: '236', Department: '那曲市', Natposition: '安多县人民法院', posts_code: 20230236.0, posts_des: '从事财务会计工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '县区级', Professional: '会计学（120303）', Degree: '本科及以上', Gender: '不限', other_demand: '无', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0891-6288808'},
+
+
+
+ {id: '237', Department: '那曲市', Natposition: '巴青县人民法院法官助理', posts_code: 20230237.0, posts_des: '从事司法辅助工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '县区级', Professional: '法学（030101）', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0891-6288808'},
+
+
+
+ {id: '238', Department: '那曲市', Natposition: '色尼区人民法院法官助理', posts_code: 20230238.0, posts_des: '从事司法辅助工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '县区级', Professional: '专业不限', Degree: '本科及以上', Gender: '不限', other_demand: '面向工作年限满3年的聘用制书记员', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0891-6288808'},
+
+
+
+ {id: '239', Department: '那曲市', Natposition: '色尼区人民法院', posts_code: 20230239.0, posts_des: '从事财务会计工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '县区级', Professional: '会计学（120303）', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0891-6288808'},
+
+
+
+ {id: '240', Department: '那曲市', Natposition: '市应急管理局灾害防御科', posts_code: 20230240.0, posts_des: '科室日常工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '地市级', Professional: '地球物理学类、地质学', Degree: '本科及以上', Gender: '不限', other_demand: '无', Exam_subjects: '行政职业能力测验、申论（一）', consultation: '0896-3827650'},
+
+
+
+ {id: '241', Department: '那曲市', Natposition: '市发展和改革委员会粮食和物资储备科（政策和应急保障科）', posts_code: 20230241.0, posts_des: '科室日常工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '地市级', Professional: '食品科学与工程类、公共管理类', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生', Exam_subjects: '行政职业能力测验、申论（一）', consultation: '0896-3827650'},
+
+
+
+ {id: '242', Department: '那曲市', Natposition: '市发展和改革委员会军地协调科（军粮供应管理科）', posts_code: 20230242.0, posts_des: '科室日常工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '地市级', Professional: '食品科学与工程类、公共管理类', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生', Exam_subjects: '行政职业能力测验、申论（一）', consultation: '0896-3827650'},
+
+
+
+ {id: '243', Department: '那曲市', Natposition: '市自然资源局不动产登记中心', posts_code: 20230243.0, posts_des: '不动产登记中心日常工作', p_Number: 1.0, Nature_position: '参公人员', Job_category: '地市级', Professional: '经济学、工商管理类', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生', Exam_subjects: '行政职业能力测验、申论（一）', consultation: '0896-3827650'},
+
+
+
+ {id: '244', Department: '那曲市', Natposition: '市政府办公室市政府总值班室', posts_code: 20230244.0, posts_des: '办公室日常工作', p_Number: 1.0, Nature_position: '参公人员', Job_category: '地市级', Professional: '中国语言文学类', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生', Exam_subjects: '行政职业能力测验、申论（一）', consultation: '0896-3827650'},
+
+
+
+ {id: '245', Department: '那曲市', Natposition: '市政府办公室外事服务中心', posts_code: 20230245.0, posts_des: '办公室日常工作', p_Number: 1.0, Nature_position: '参公人员', Job_category: '地市级', Professional: '英语', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生；英语四级；英语六级以上优先', Exam_subjects: '行政职业能力测验、申论（一）', consultation: '0896-3827650'},
+
+
+
+ {id: '246', Department: '那曲市', Natposition: '市乡村振兴局规划计划科', posts_code: 20230246.0, posts_des: '科室日常工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '地市级', Professional: '土木类', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生', Exam_subjects: '行政职业能力测验、申论（一）', consultation: '0896-3827650'},
+
+
+
+ {id: '247', Department: '那曲市', Natposition: '市水利局水土保持监测站', posts_code: 20230247.0, posts_des: '水土保持监测站工作', p_Number: 1.0, Nature_position: '参公人员', Job_category: '地市级', Professional: '水利类', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生', Exam_subjects: '行政职业能力测验、申论（一）', consultation: '0896-3827650'},
+
+
+
+ {id: '248', Department: '那曲市', Natposition: '市林业和草原局野生动植物保护中心', posts_code: 20230248.0, posts_des: '野生动植物保护相关工作', p_Number: 1.0, Nature_position: '参公人员', Job_category: '地市级', Professional: '林学类、草学类、自然保护与生态环境类', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生', Exam_subjects: '行政职业能力测验、申论（一）', consultation: '0896-3827650'},
+
+
+
+ {id: '249', Department: '那曲市', Natposition: '市医疗保障局医疗保险管理中心', posts_code: 20230249.0, posts_des: '办公室日常工作', p_Number: 1.0, Nature_position: '参公人员', Job_category: '地市级', Professional: '中国语言文学类', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生', Exam_subjects: '行政职业能力测验、申论（一）', consultation: '0896-3827650'},
+
+
+
+ {id: '250', Department: '那曲市', Natposition: '市经济和信息化局原材料与消费品工业中心', posts_code: 20230250.0, posts_des: '原材料与消费品工业中心业务工作', p_Number: 1.0, Nature_position: '参公人员', Job_category: '地市级', Professional: '经济学、工商管理类', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生', Exam_subjects: '行政职业能力测验、申论（一）', consultation: '0896-3827650'},
+
+
+
+ {id: '251', Department: '那曲市', Natposition: '申扎县藏语文工作委员会办公室（编译局）', posts_code: 20230251.0, posts_des: '财务管理', p_Number: 1.0, Nature_position: '参公人员', Job_category: '县区级', Professional: '会计学、财务管理', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0896-3827650'},
+
+
+
+ {id: '252', Department: '那曲市', Natposition: '尼玛县荣玛乡人民政府', posts_code: 20230252.0, posts_des: '办公室日常工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '乡镇级', Professional: '中国语言文学类、行政管理', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0896-3827650'},
+
+
+
+ {id: '253', Department: '那曲市', Natposition: '班戈县县委巡察一组', posts_code: 20230253.0, posts_des: '巡察', p_Number: 1.0, Nature_position: '公务员', Job_category: '县区级', Professional: '法学类、经济学、行政管理', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生；中共党员优先', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0896-3827650'},
+
+
+
+ {id: '254', Department: '那曲市', Natposition: '巴青县县委巡察一组', posts_code: 20230254.0, posts_des: '巡察', p_Number: 1.0, Nature_position: '公务员', Job_category: '县区级', Professional: '会计学、财务管理', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0896-3827650'},
+
+
+
+ {id: '255', Department: '那曲市', Natposition: '比如县县委巡察一组', posts_code: 20230255.0, posts_des: '巡察', p_Number: 1.0, Nature_position: '公务员', Job_category: '县区级', Professional: '财务管理、会计学', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0896-3827650'},
+
+
+
+ {id: '256', Department: '那曲市', Natposition: '聂荣县色庆乡人民政府', posts_code: 20230256.0, posts_des: '党政综合工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '乡镇级', Professional: '中国语言文学类', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0896-3827650'},
+
+
+
+ {id: '257', Department: '那曲市', Natposition: '索县嘎木乡人民政府', posts_code: 20230257.0, posts_des: '办公室日常工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '乡镇级', Professional: '公共管理类、计算机类', Degree: '大专及以上', Gender: '不限', other_demand: '仅限期满服务基层项目人员报考', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0896-3827650'},
+
+
+
+ {id: '258', Department: '那曲市', Natposition: '索县赤多乡人民政府', posts_code: 20230258.0, posts_des: '办公室日常工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '乡镇级', Professional: '公共管理类、计算机类', Degree: '本科及以上', Gender: '不限', other_demand: '无', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0896-3827650'},
+
+
+
+ {id: '259', Department: '那曲市', Natposition: '巴青县人民检察院雅安镇检察室', posts_code: 20230259.0, posts_des: '检察业务工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '乡镇级', Professional: '中国少数民族语言文学专业（藏语言文学）', Degree: '本科及以上', Gender: '不限', other_demand: '无', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0896-3827650'},
+
+
+
+ {id: '260', Department: '那曲市', Natposition: '巴青县人民检察院杂色镇检察室', posts_code: 20230260.0, posts_des: '检察业务工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '乡镇级', Professional: '计算机类', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0896-3827650'},
+
+
+
+ {id: '261', Department: '那曲市', Natposition: '聂荣县尼玛乡检察室', posts_code: 20230261.0, posts_des: '检察业务工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '乡镇级', Professional: '法学类', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0896-3827650'},
+
+
+
+ {id: '262', Department: '阿里地区', Natposition: '地区中级人民法院法官助理', posts_code: 20230262.0, posts_des: '从事司法辅助工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '地市级', Professional: '法学（030101）', Degree: '本科及以上', Gender: '不限', other_demand: '具有法律职业资格C证及以上', Exam_subjects: '行政职业能力测验、申论（一）', consultation: '0891-6288808'},
+
+
+
+ {id: '263', Department: '阿里地区', Natposition: '地区中级人民法院', posts_code: 20230263.0, posts_des: '从事财务会计工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '地市级', Professional: '会计学（120303）', Degree: '本科及以上', Gender: '不限', other_demand: '同等条件下有会计类资格证书优先', Exam_subjects: '行政职业能力测验、申论（一）', consultation: '0891-6288808'},
+
+
+
+ {id: '264', Department: '阿里地区', Natposition: '改则县人民法院', posts_code: 20230264.0, posts_des: '从事财务会计工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '县区级', Professional: '会计学（120303）', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0891-6288808'},
+
+
+
+ {id: '265', Department: '阿里地区', Natposition: '普兰县人民法院法官助理  ', posts_code: 20230265.0, posts_des: '从事司法辅助工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '县区级', Professional: '法学（030101）', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0891-6288808'},
+
+
+
+ {id: '266', Department: '阿里地区', Natposition: '普兰县人民法院', posts_code: 20230266.0, posts_des: '从事财务会计工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '县区级', Professional: '会计学（120303）', Degree: '本科及以上', Gender: '不限', other_demand: '同等条件下有会计类资格证书优先', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0891-6288808'},
+
+
+
+ {id: '267', Department: '阿里地区', Natposition: '日土县人民法院', posts_code: 20230267.0, posts_des: '从事财务会计工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '县区级', Professional: '会计学（120303）', Degree: '本科及以上', Gender: '不限', other_demand: '无', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0891-6288808'},
+
+
+
+ {id: '268', Department: '阿里地区', Natposition: '噶尔县人民法院法官助理', posts_code: 20230268.0, posts_des: '从事司法辅助工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '县区级', Professional: '法学（030101）', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0891-6288808'},
+
+
+
+ {id: '269', Department: '阿里地区', Natposition: '噶尔县人民法院', posts_code: 20230269.0, posts_des: '从事财务会计工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '县区级', Professional: '会计学（120303）', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0891-6288808'},
+
+
+
+ {id: '270', Department: '阿里地区', Natposition: '普兰县委巡察办', posts_code: 20230270.0, posts_des: '巡察', p_Number: 1.0, Nature_position: '公务员', Job_category: '县区级', Professional: '秘书学、汉语言文学', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0897-2669016\n0897-2831189'},
+
+
+
+ {id: '271', Department: '阿里地区', Natposition: '札达县纪委监委', posts_code: 20230271.0, posts_des: '纪检监察', p_Number: 1.0, Nature_position: '公务员', Job_category: '县区级', Professional: '财政学、会计学、法学大类', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0897-2669016\n0897-2831189'},
+
+
+
+ {id: '272', Department: '阿里地区', Natposition: '日土县纪委监委', posts_code: 20230272.0, posts_des: '纪检监察', p_Number: 1.0, Nature_position: '公务员', Job_category: '县区级', Professional: '法学相关专业', Degree: '本科及以上', Gender: '不限', other_demand: '仅限期满服务基层项目人员报考', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0897-2669016\n0897-2831189'},
+
+
+
+ {id: '273', Department: '阿里地区', Natposition: '革吉县委办公室', posts_code: 20230273.0, posts_des: '财务管理', p_Number: 1.0, Nature_position: '公务员', Job_category: '县区级', Professional: '财政学、会计学', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0897-2669016\n0897-2831189'},
+
+
+
+ {id: '274', Department: '阿里地区', Natposition: '革吉县象鲁康片区管理委员会', posts_code: 20230274.0, posts_des: '日常业务工作', p_Number: 1.0, Nature_position: '公务员', Job_category: '县区级', Professional: '专业不限', Degree: '大专及以上', Gender: '不限', other_demand: '仅限阿里地区生源报考', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0897-2669016\n0897-2831189'},
+
+
+
+ {id: '275', Department: '阿里地区', Natposition: '改则县司法局', posts_code: 20230275.0, posts_des: '普法宣传，法律援助，财务管理', p_Number: 1.0, Nature_position: '公务员', Job_category: '县区级', Professional: '法学相关专业、财政学、会计学', Degree: '本科及以上', Gender: '不限', other_demand: '2023年应届高校毕业生', Exam_subjects: '行政职业能力测验、申论（二）', consultation: '0897-2669016\n0897-2831189'}]
+
+
+
+    
+	    
+	    
+	    for(i=0;i<xx.length;i++){
+	    	var html="<tr><td>"+
+	    	    xx[i].id+"</td><td>"+
+            xx[i].Department+"</td><td>"+
+            xx[i].Natposition+"</td><td>"+
+            xx[i].posts_code+"</td><td>"+
+            xx[i].posts_des+"</td><td>"+
+            xx[i].p_Number+"</td><td>"+
+            xx[i].Nature_position+"</td><td>"+
+            xx[i].Job_category+"</td><td>"+
+            xx[i].Professional +"</td><td>"+
+            xx[i].Degree +"</td><td>"+
+            xx[i].Gender+"</td><td>"+
+            xx[i].other_demand+"</td><td>"+
+            xx[i].Exam_subjects+"</td><td>"+
+            xx[i].consultation+"</td></tr>";
+
+	    	$("#example tbody").append(html);
+	    	
+	    }
+	    
+	    $('#example').DataTable( {
+	        dom: 'Bfrtip',
+	        language: {  
+                emptyTable: '没有数据',  
+                loadingRecords: '加载中...',  
+                processing: '查询中...',  
+                search: '搜索【专业、地区等】:',  
+                lengthMenu: '每页 _MENU_ 件',  
+                zeroRecords: '没有数据',  
+                paginate: {  
+                    'first':      '第一页',  
+                    'last':       '最后一页',  
+                    'next':       '下一页',  
+                    'previous':   '上一页'  
+            	},  
+	            info: '第 _PAGE_ 页 / 总 _PAGES_ 页',  
+	            infoEmpty: '没有数据',  
+	            infoFiltered: '(过滤总件数 _MAX_ 条)',
+	        },
+	        
+
+	    } );
+	    
+
+
+	});
+  </script>  
+ </body>  
+</html>  

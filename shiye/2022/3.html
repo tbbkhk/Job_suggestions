@@ -1,0 +1,618 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">   
+ <head>  
+  <title> 2022 </title>  
+  <meta charset='utf-8'>
+  <link rel="stylesheet" href="../../css/table.css" />
+  <link rel="stylesheet" href="../../css/buttons.css" />
+  <style>
+  	*{
+  		/*background-image: url();*/
+  		background-color: #000;
+  		color: #FFF; 
+  	}
+  	tbody td{
+  		text-align: center;
+  	}
+  </style>
+ </head>  
+  
+ <body>  
+ 	<h1 style="text-align: center;">拉萨市2022年事业单位公开招聘</h1>
+    <a href="../../2022_shiye_.html" style="font-size: 20px;">回到主页</a>
+ 	<table id="example" class="display" role="grid" aria-describedby="example_info">
+ 		<thead>
+            <tr>
+                <th>序号</th>
+                <th>招聘地市</th>
+                <th>单位</th>
+                <th>岗位</th>
+                <th>职位性质</th>
+                <th>人数</th>
+                <th>岗位代码</th>
+                <th>专业要求</th>              
+                <th>政治面貌</th>
+                <th>学历要求</th>
+                <th>毕业时间</th>     
+                <th>笔试科目</th>
+                <th>是否体检</th>
+                <th>是否面试</th>
+                <th>备注</th>
+                <th>咨询</th>
+                
+                
+
+            </tr>
+        </thead>
+        <tbody>
+            
+        </tbody>
+
+        
+     
+ 	</table>
+ 	
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/jquery.datatables.min.js"/>
+	<script src="../../js/buttons.print.min.js"></script>
+
+ <script> 
+
+$(document).ready(function(){ 
+
+    var xx = [{'id': 1.0, 'unit': '拉萨市', 'Post': '市委组织部（编办）', 'Nature_position': '组织编制信息管理中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221840.0, 'College_majors': '软件工程、网络工程、信息管理与信息系统', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '是', 'remark': '中共党员优先', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 2.0, 'unit': '拉萨市', 'Post': '市委组织部（编办）', 'Nature_position': '人才研究中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221841.0, 'College_majors': '经济学、财政学、金融学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '是', 'remark': '中共党员优先', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 3.0, 'unit': '拉萨市', 'Post': '市委宣传部', 'Nature_position': '拉萨市融媒体中心（电视台）', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221842.0, 'College_majors': '新媒体', 'Undergraduate_majors': '中共党员', 'Graduate_majors': '硕士研究生及以上', 'political_landscape': '2022年毕业生', 'Job_code': '——', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 4.0, 'unit': '拉萨市', 'Post': '市委网信办', 'Nature_position': '大数据中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221843.0, 'College_majors': '网络工程、数据科学与大数据技术、大数据管理与应用', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 5.0, 'unit': '拉萨市', 'Post': '市委网信办', 'Nature_position': '网络安全应急指挥中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221844.0, 'College_majors': '计算机网络技术', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 6.0, 'unit': '拉萨市', 'Post': '市委网信办', 'Nature_position': '网络安全应急指挥中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221845.0, 'College_majors': '汉语言文学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 7.0, 'unit': '拉萨市', 'Post': '市委党校', 'Nature_position': '党员干部廉政警示教育中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221846.0, 'College_majors': '播音与主持艺术', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 8.0, 'unit': '拉萨市', 'Post': '市政府办公厅', 'Nature_position': '市政府驻北京办事处经济联络中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221847.0, 'College_majors': '人力资源管理、公共事业管理、文秘（学）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 9.0, 'unit': '拉萨市', 'Post': '市政府办公厅', 'Nature_position': '市政府驻北京办事处经济联络中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221848.0, 'College_majors': '计算机科学与技术、软件工程、计算机与信息管理', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 10.0, 'unit': '拉萨市', 'Post': '市政府办公厅', 'Nature_position': '拉萨市江苏援藏工作联络服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221849.0, 'College_majors': '人力资源管理、公共事业管理、文秘（学）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 11.0, 'unit': '拉萨市', 'Post': '市政府办公厅', 'Nature_position': '拉萨市江苏援藏工作联络服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221850.0, 'College_majors': '计算机科学与技术、软件工程、计算机与信息管理', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 12.0, 'unit': '拉萨市', 'Post': '市政府研究室', 'Nature_position': '发展研究中心', 'Number': '事业单位', 'Graduation_time': 4.0, 'Academic_requirements': 202221851.0, 'College_majors': '专业不限', 'Undergraduate_majors': '不限', 'Graduate_majors': '硕士研究生及以上', 'political_landscape': '不限', 'Job_code': '——', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 13.0, 'unit': '拉萨市', 'Post': '教育局', 'Nature_position': '考试中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221852.0, 'College_majors': '计算机科学与技术', 'Undergraduate_majors': '中共党员', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 14.0, 'unit': '拉萨市', 'Post': '生态环境局', 'Nature_position': '县域生态环境监测一站', 'Number': '事业单位', 'Graduation_time': 4.0, 'Academic_requirements': 202221853.0, 'College_majors': '化学、环境工程、环境科学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '是', 'remark': '具体办公地点达孜区', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 15.0, 'unit': '拉萨市', 'Post': '生态环境局', 'Nature_position': '县域生态环境监测一站', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221854.0, 'College_majors': '会计学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '是', 'remark': '具体办公地点达孜区', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 16.0, 'unit': '拉萨市', 'Post': '生态环境局', 'Nature_position': '县域生态环境监测二站', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221855.0, 'College_majors': '会计学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '是', 'remark': '具体办公地点曲水县', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 17.0, 'unit': '拉萨市', 'Post': '生态环境局', 'Nature_position': '县域生态环境监测二站', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221856.0, 'College_majors': '环境科学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '是', 'remark': '具体办公地点曲水县', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 18.0, 'unit': '拉萨市', 'Post': '生态环境局', 'Nature_position': '县域生态环境监测二站', 'Number': '事业单位', 'Graduation_time': 4.0, 'Academic_requirements': 202221857.0, 'College_majors': '化学、环境工程、环境科学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '是', 'remark': '具体办公地点曲水县', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 19.0, 'unit': '拉萨市', 'Post': '生态环境局', 'Nature_position': '县域生态环境监测二站', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221858.0, 'College_majors': '辐射防护与核安全', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '是', 'remark': '具体办公地点曲水县', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 20.0, 'unit': '拉萨市', 'Post': '司法局', 'Nature_position': '阳光公证处', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221859.0, 'College_majors': '法律', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '是', 'remark': '通过法律职业资格考试', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 21.0, 'unit': '拉萨市', 'Post': '住房和城乡建设局', 'Nature_position': '建筑工程质量监督站', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221860.0, 'College_majors': '建筑工程', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 22.0, 'unit': '拉萨市', 'Post': '住房和城乡建设局', 'Nature_position': '建筑工程质量监督站', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221861.0, 'College_majors': '土木工程', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 23.0, 'unit': '拉萨市', 'Post': '住房和城乡建设局', 'Nature_position': '人防指挥信息保障中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221862.0, 'College_majors': '计算机通信', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '是', 'remark': '拉萨户籍', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 24.0, 'unit': '拉萨市', 'Post': '市卫健委妇幼保健院', 'Nature_position': '妇幼保健医院放射科', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221863.0, 'College_majors': '放射医学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '是', 'remark': '男性，具有放射医师及以上资格', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 25.0, 'unit': '拉萨市', 'Post': '市卫健委妇幼保健院', 'Nature_position': '妇幼保健医院口腔科', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221864.0, 'College_majors': '口腔医学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '是', 'remark': '具有口腔医师及以上资格', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 26.0, 'unit': '拉萨市', 'Post': '市卫健委妇幼保健院', 'Nature_position': '妇幼保健医院妇产科', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221865.0, 'College_majors': '临床医学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '是', 'remark': '具有妇产科医师及以上资格', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 27.0, 'unit': '拉萨市', 'Post': '市卫健委妇幼保健院', 'Nature_position': '妇幼保健医院财务科', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221866.0, 'College_majors': '会计（学）、经济学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '是', 'remark': '具有会计初级及以上资格', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 28.0, 'unit': '拉萨市', 'Post': '市卫健委妇幼保健院', 'Nature_position': '妇幼保健医院综合办公室', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221867.0, 'College_majors': '文秘（学）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 29.0, 'unit': '拉萨市', 'Post': '水利局', 'Nature_position': '拉萨河闸站管理所', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221868.0, 'College_majors': '水文与水资源工程', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 30.0, 'unit': '拉萨市', 'Post': '水利局', 'Nature_position': '拉萨河闸站管理所', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221869.0, 'College_majors': '会计学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 31.0, 'unit': '拉萨市', 'Post': '水利局', 'Nature_position': '拉萨河闸站管理所', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221870.0, 'College_majors': '水利水电工程', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 32.0, 'unit': '拉萨市', 'Post': '水利局', 'Nature_position': '水利工程质量检测中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221871.0, 'College_majors': '电气工程及其自动化', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 33.0, 'unit': '拉萨市', 'Post': '农业农村局', 'Nature_position': '农业技术研究推广站', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221872.0, 'College_majors': '蔬菜学', 'Undergraduate_majors': '不限', 'Graduate_majors': '硕士研究生及以上', 'political_landscape': '2022年毕业生', 'Job_code': '——', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 34.0, 'unit': '拉萨市', 'Post': '农业农村局', 'Nature_position': '农业技术研究推广站', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221873.0, 'College_majors': '作物遗传育种', 'Undergraduate_majors': '不限', 'Graduate_majors': '硕士研究生及以上', 'political_landscape': '2022年毕业生', 'Job_code': '——', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 35.0, 'unit': '拉萨市', 'Post': '文化局', 'Nature_position': '图书馆', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221874.0, 'College_majors': '藏语言文学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 36.0, 'unit': '拉萨市', 'Post': '文化局', 'Nature_position': '图书馆', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221875.0, 'College_majors': '公共事业管理、行政管理', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 37.0, 'unit': '拉萨市', 'Post': '文化局', 'Nature_position': '图书馆', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221876.0, 'College_majors': '图书馆学、档案（学）、信息资源管理', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 38.0, 'unit': '拉萨市', 'Post': '文化局', 'Nature_position': '图书馆', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221877.0, 'College_majors': '计算机科学与技术、软件工程、计算机与信息管理', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 39.0, 'unit': '拉萨市', 'Post': '文化局', 'Nature_position': '西藏牦牛博物馆', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221878.0, 'College_majors': '历史学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 40.0, 'unit': '拉萨市', 'Post': '统计局', 'Nature_position': '普查中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221879.0, 'College_majors': '汉语言文学（秘书学）、文秘学、秘书学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 41.0, 'unit': '拉萨市', 'Post': '统计局', 'Nature_position': '普查中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221880.0, 'College_majors': '统计学、经济学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 42.0, 'unit': '拉萨市', 'Post': '市场监督管理局', 'Nature_position': '食品药品检验中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221881.0, 'College_majors': '药品质量监测技术、生物制药', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 43.0, 'unit': '拉萨市', 'Post': '林业和草原局', 'Nature_position': '湿地保护管理中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221882.0, 'College_majors': '野生动物与自然保护区管理', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '是', 'remark': '需开展各项外业工作限男性', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 44.0, 'unit': '拉萨市', 'Post': '林业和草原局', 'Nature_position': '湿地保护管理中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221883.0, 'College_majors': '草业科学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '是', 'remark': '需开展各项外业工作限男性', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 45.0, 'unit': '拉萨市', 'Post': '西藏空港新区管委会办公室', 'Nature_position': '空港新区管理委员会事业发展中心', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221884.0, 'College_majors': '经济学,财政学', 'Undergraduate_majors': '中共党员', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 46.0, 'unit': '拉萨市', 'Post': '经开区', 'Nature_position': '综合保税区产业服务中心', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221885.0, 'College_majors': '国际经济与贸易，经济学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 47.0, 'unit': '拉萨市', 'Post': '人民医院', 'Nature_position': '儿科（本院）', 'Number': '事业单位', 'Graduation_time': 5.0, 'Academic_requirements': 202221886.0, 'College_majors': '儿科学', 'Undergraduate_majors': '不限', 'Graduate_majors': '硕士研究生及以上', 'political_landscape': '不限', 'Job_code': '——', 'Examination': '是', 'interview': '是', 'remark': '有规培证', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 48.0, 'unit': '拉萨市', 'Post': '人民医院', 'Nature_position': '妇产科（本院）', 'Number': '事业单位', 'Graduation_time': 5.0, 'Academic_requirements': 202221887.0, 'College_majors': '妇产科学', 'Undergraduate_majors': '不限', 'Graduate_majors': '硕士研究生及以上', 'political_landscape': '不限', 'Job_code': '——', 'Examination': '是', 'interview': '是', 'remark': '有规培证', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 49.0, 'unit': '拉萨市', 'Post': '人民医院', 'Nature_position': '临床各科室（本院）', 'Number': '事业单位', 'Graduation_time': 10.0, 'Academic_requirements': 202221888.0, 'College_majors': '护理学', 'Undergraduate_majors': '不限', 'Graduate_majors': '硕士研究生及以上', 'political_landscape': '不限', 'Job_code': '——', 'Examination': '是', 'interview': '是', 'remark': '西医护理', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 50.0, 'unit': '拉萨市', 'Post': '拉萨市人民医院', 'Nature_position': '呼吸内科', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221889.0, 'College_majors': '内科学（呼吸专业方向）', 'Undergraduate_majors': '不限', 'Graduate_majors': '硕士研究生及以上', 'political_landscape': '不限', 'Job_code': '——', 'Examination': '是', 'interview': '是', 'remark': '有规培证', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 51.0, 'unit': '拉萨市', 'Post': '拉萨市人民医院', 'Nature_position': '重症医学科', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221890.0, 'College_majors': '重症医学', 'Undergraduate_majors': '不限', 'Graduate_majors': '硕士研究生及以上', 'political_landscape': '不限', 'Job_code': '——', 'Examination': '是', 'interview': '是', 'remark': '有规培证', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 52.0, 'unit': '拉萨市', 'Post': '拉萨市人民医院', 'Nature_position': '小儿外科', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221891.0, 'College_majors': '儿外科学', 'Undergraduate_majors': '不限', 'Graduate_majors': '硕士研究生及以上', 'political_landscape': '不限', 'Job_code': '——', 'Examination': '是', 'interview': '是', 'remark': '有规培证', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 53.0, 'unit': '拉萨市', 'Post': '拉萨市人民医院', 'Nature_position': '临床各科室', 'Number': '事业单位', 'Graduation_time': 23.0, 'Academic_requirements': 202221892.0, 'College_majors': '护理学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—护理', 'Examination': '是', 'interview': '是', 'remark': '西医护理，有资格证，硕士研究生优先考虑', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 54.0, 'unit': '拉萨市', 'Post': '拉萨市人民医院', 'Nature_position': '信息科', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221893.0, 'College_majors': '软件工程', 'Undergraduate_majors': '不限', 'Graduate_majors': '硕士研究生及以上', 'political_landscape': '2022年毕业生', 'Job_code': '——', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 55.0, 'unit': '拉萨市', 'Post': '拉萨市人民医院', 'Nature_position': '感染控制科（城东分院）', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221894.0, 'College_majors': '流行病与卫生统计学', 'Undergraduate_majors': '不限', 'Graduate_majors': '硕士研究生及以上', 'political_landscape': '不限', 'Job_code': '——', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 56.0, 'unit': '拉萨市', 'Post': '中心医院', 'Nature_position': '绩效办（城东分院）', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221895.0, 'College_majors': '会计学', 'Undergraduate_majors': '不限', 'Graduate_majors': '硕士研究生及以上', 'political_landscape': '不限', 'Job_code': '——', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 57.0, 'unit': '拉萨市', 'Post': '中心医院', 'Nature_position': '人事科（城东分院）', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221896.0, 'College_majors': '人力资源管理', 'Undergraduate_majors': '不限', 'Graduate_majors': '硕士研究生及以上', 'political_landscape': '不限', 'Job_code': '——', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 58.0, 'unit': '拉萨市', 'Post': '中心医院', 'Nature_position': '病案统计科（城东分院）', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221897.0, 'College_majors': '统计学、公共卫生', 'Undergraduate_majors': '不限', 'Graduate_majors': '硕士研究生及以上', 'political_landscape': '不限', 'Job_code': '——', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 59.0, 'unit': '拉萨市', 'Post': '中心医院', 'Nature_position': '感染控制科（城东分院）', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221898.0, 'College_majors': '流行病与卫生统计学', 'Undergraduate_majors': '不限', 'Graduate_majors': '硕士研究生及以上', 'political_landscape': '不限', 'Job_code': '——', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 60.0, 'unit': '拉萨市', 'Post': '中心医院', 'Nature_position': '医学工程部（城东分院）', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221899.0, 'College_majors': '生物医学工程', 'Undergraduate_majors': '不限', 'Graduate_majors': '硕士研究生及以上', 'political_landscape': '不限', 'Job_code': '——', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 61.0, 'unit': '拉萨市', 'Post': '中心医院', 'Nature_position': '信息科（城东分院）', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221900.0, 'College_majors': '计算机与信息管理', 'Undergraduate_majors': '不限', 'Graduate_majors': '硕士研究生及以上', 'political_landscape': '不限', 'Job_code': '——', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 62.0, 'unit': '拉萨市', 'Post': '城关区', 'Nature_position': '区委党校', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221901.0, 'College_majors': '行政管理', 'Undergraduate_majors': '中共党员', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 63.0, 'unit': '拉萨市', 'Post': '城关区', 'Nature_position': '区委党校', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221902.0, 'College_majors': '社会学、社会工作', 'Undergraduate_majors': '中共党员', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 64.0, 'unit': '拉萨市', 'Post': '城关区', 'Nature_position': '住建局房产管理局', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221903.0, 'College_majors': '土木工程', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 65.0, 'unit': '拉萨市', 'Post': '城关区', 'Nature_position': '住建局房产管理局', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221904.0, 'College_majors': '土木工程', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 66.0, 'unit': '拉萨市', 'Post': '城关区', 'Nature_position': '区卫健委加荣社区卫生服务站', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221905.0, 'College_majors': '临床医学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '否', 'remark': '西医临床', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 67.0, 'unit': '拉萨市', 'Post': '城关区', 'Nature_position': '市场监督管理局大数据平台指挥中心', 'Number': '事业单位', 'Graduation_time': 4.0, 'Academic_requirements': 202221906.0, 'College_majors': '计算机科学与技术、软件工程、计算机网络', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '是', 'remark': '中共党员优先', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 68.0, 'unit': '拉萨市', 'Post': '城关区', 'Nature_position': '城市管理和综合执法局环境卫生局', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221907.0, 'College_majors': '环境工程、环境科学、环境科学与工程', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 69.0, 'unit': '拉萨市', 'Post': '城关区', 'Nature_position': '城市管理和综合执法局环境卫生局', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221908.0, 'College_majors': '计算机科学与技术', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 70.0, 'unit': '拉萨市', 'Post': '城关区', 'Nature_position': '城市管理综合执法局环境卫生保护局', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221909.0, 'College_majors': '文秘', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 71.0, 'unit': '拉萨市', 'Post': '城关区', 'Nature_position': '城市管理综合执法局环境卫生保护局', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221910.0, 'College_majors': '计算机科学与技术、软件工程、计算机网络', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 72.0, 'unit': '拉萨市', 'Post': '城关区', 'Nature_position': '区政府清政府驻藏大臣衙门旧址陈列馆', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221911.0, 'College_majors': '播音与主持艺术', 'Undergraduate_majors': '中共党员', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 73.0, 'unit': '拉萨市', 'Post': '城关区', 'Nature_position': '两岛街道办事处社区服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221912.0, 'College_majors': '公共事业管理', 'Undergraduate_majors': '中共党员', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 74.0, 'unit': '拉萨市', 'Post': '城关区', 'Nature_position': '两岛街道办事处社区服务中心', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221913.0, 'College_majors': '专业不限', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '仅限服务两年及以上考核合格西部计划西藏专项志愿者、退役大学生士兵报考', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 75.0, 'unit': '拉萨市', 'Post': '城关区', 'Nature_position': '两岛街道办事处文化服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221914.0, 'College_majors': '专业不限', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '仅限服务期满考核合格“三支一扶”人员报考', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 76.0, 'unit': '拉萨市', 'Post': '城关区', 'Nature_position': '嘎玛贡桑街道办事处社区服务中心', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221915.0, 'College_majors': '计算机科学与技术、计算机应用技术', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 77.0, 'unit': '拉萨市', 'Post': '城关区', 'Nature_position': '嘎玛贡桑街道办事处文化服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221916.0, 'College_majors': '文化产业管理，工商管理', 'Undergraduate_majors': '中共党员', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 78.0, 'unit': '拉萨市', 'Post': '城关区', 'Nature_position': '公德林街道办事处社区服务中心', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221917.0, 'College_majors': '公共管理、公共事业管理', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 79.0, 'unit': '拉萨市', 'Post': '城关区', 'Nature_position': '公德林街道办事处社区服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221918.0, 'College_majors': '计算机科学与技术、软件工程、计算机网络', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 80.0, 'unit': '拉萨市', 'Post': '城关区', 'Nature_position': '扎细街道办事处社区服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221919.0, 'College_majors': '专业不限', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '仅限服务期满考核合格“三支一扶”人员报考', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 81.0, 'unit': '拉萨市', 'Post': '城关区', 'Nature_position': '扎细街道办事处文化服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221920.0, 'College_majors': '专业不限', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '仅限服务期满考核合格“三支一扶”人员报考', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 82.0, 'unit': '拉萨市', 'Post': '城关区', 'Nature_position': '八廓街道办事处社区服务中心', 'Number': '事业单位', 'Graduation_time': 4.0, 'Academic_requirements': 202221921.0, 'College_majors': '文秘（学）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 83.0, 'unit': '拉萨市', 'Post': '城关区', 'Nature_position': '吉日街道办事处社区服务中心', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221922.0, 'College_majors': '文秘（学）', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 84.0, 'unit': '拉萨市', 'Post': '城关区', 'Nature_position': '吉崩岗街道办事处社区服务中心', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221923.0, 'College_majors': '专业不限', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 85.0, 'unit': '拉萨市', 'Post': '城关区', 'Nature_position': '纳金乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221924.0, 'College_majors': '文秘（学）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 86.0, 'unit': '拉萨市', 'Post': '城关区', 'Nature_position': '蔡公堂乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221925.0, 'College_majors': '农学、农业经济管理、畜牧', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 87.0, 'unit': '拉萨市', 'Post': '城关区', 'Nature_position': '蔡公堂乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221926.0, 'College_majors': '畜牧兽医', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 88.0, 'unit': '拉萨市', 'Post': '城关区', 'Nature_position': '夺底乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221927.0, 'College_majors': '农学、畜牧、水利水电工程', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 89.0, 'unit': '拉萨市', 'Post': '城关区', 'Nature_position': '娘热乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221928.0, 'College_majors': '专业不限', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '仅限服务期满考核合格“三支一扶”人员报考', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 90.0, 'unit': '拉萨市', 'Post': '城关区', 'Nature_position': '娘热乡卫生院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221929.0, 'College_majors': '临床医学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '否', 'remark': '西医临床', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 91.0, 'unit': '拉萨市', 'Post': '达孜区', 'Nature_position': '市场监督管理局质量检验检测中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221930.0, 'College_majors': '药学、药剂学、医疗器械工程', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 92.0, 'unit': '拉萨市', 'Post': '达孜区', 'Nature_position': '乡村振兴局乡村振兴信息采集监测中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221931.0, 'College_majors': '专业不限', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '是', 'remark': '仅限服务期满考核合格“三支一扶”人员报考', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 93.0, 'unit': '拉萨市', 'Post': '达孜区', 'Nature_position': '邦堆乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221932.0, 'College_majors': '法学、法律', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 94.0, 'unit': '拉萨市', 'Post': '达孜区', 'Nature_position': '塔杰乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221933.0, 'College_majors': '法学、法律', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 95.0, 'unit': '拉萨市', 'Post': '达孜区', 'Nature_position': '塔杰乡文化服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221934.0, 'College_majors': '行政管理、文秘（学）、秘书（学）、汉语言文学、档案管理', 'Undergraduate_majors': '中共党员', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 96.0, 'unit': '拉萨市', 'Post': '达孜区', 'Nature_position': '雪乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221935.0, 'College_majors': '畜牧兽医', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 97.0, 'unit': '拉萨市', 'Post': '达孜区', 'Nature_position': '雪乡文化服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221936.0, 'College_majors': '法学、法律', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 98.0, 'unit': '拉萨市', 'Post': '达孜区', 'Nature_position': '唐嘎乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221937.0, 'College_majors': '新闻学、传播学', 'Undergraduate_majors': '中共党员', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 99.0, 'unit': '拉萨市', 'Post': '达孜区', 'Nature_position': '唐嘎乡文化服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221938.0, 'College_majors': '专业不限', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 100.0, 'unit': '拉萨市', 'Post': '达孜区', 'Nature_position': '章多乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221939.0, 'College_majors': '历史学', 'Undergraduate_majors': '中共党员', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 101.0, 'unit': '拉萨市', 'Post': '达孜区', 'Nature_position': '德庆镇农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221940.0, 'College_majors': '哲学', 'Undergraduate_majors': '中共党员', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 102.0, 'unit': '拉萨市', 'Post': '达孜区', 'Nature_position': '德庆镇卫生院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221941.0, 'College_majors': '公共卫生管理、公共事业管理（卫生管理）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—公共卫生管理', 'Examination': '是', 'interview': '是', 'remark': '拉萨户籍', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 103.0, 'unit': '拉萨市', 'Post': '堆龙德庆区', 'Nature_position': '宣传部电影管理站', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221942.0, 'College_majors': '新闻学、传播学、网络与新媒体、广播电视学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '拉萨户籍', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 104.0, 'unit': '拉萨市', 'Post': '堆龙德庆区', 'Nature_position': '区委党校', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221943.0, 'College_majors': '马克思主义理论与思想政治教育、哲学类', 'Undergraduate_majors': '中共党员', 'Graduate_majors': '硕士研究生及以上', 'political_landscape': '不限', 'Job_code': '——', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 105.0, 'unit': '拉萨市', 'Post': '堆龙德庆区', 'Nature_position': '经信局招商引资服务中心', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221944.0, 'College_majors': '法律、工商管理、财务管理、电子商务', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 106.0, 'unit': '拉萨市', 'Post': '堆龙德庆区', 'Nature_position': '城管局市容环境卫生服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221945.0, 'College_majors': '法学（会计学）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 107.0, 'unit': '拉萨市', 'Post': '堆龙德庆区', 'Nature_position': '乡村振兴局信息采集检测中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221946.0, 'College_majors': '经济学、统计学、金融学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 108.0, 'unit': '拉萨市', 'Post': '堆龙德庆区', 'Nature_position': '医保局医疗保障服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221947.0, 'College_majors': '会计学，经济学，财政学，财务管理', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 109.0, 'unit': '拉萨市', 'Post': '堆龙德庆区', 'Nature_position': '象雄美朵生态旅游文化产业园区管委会综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221948.0, 'College_majors': '经济与贸易类、旅游管理、文化产业管理', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 110.0, 'unit': '拉萨市', 'Post': '堆龙德庆区', 'Nature_position': '东嘎街道卫生院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221949.0, 'College_majors': '临床医学、中西医临床医学基础医学、放射医学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 111.0, 'unit': '拉萨市', 'Post': '堆龙德庆区', 'Nature_position': '东嘎街道卫生院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221950.0, 'College_majors': '藏医学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '藏医药护理类(Z类)—藏医', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 112.0, 'unit': '拉萨市', 'Post': '堆龙德庆区', 'Nature_position': '乃琼街道农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221951.0, 'College_majors': '环境生态工程、土地资源管理、城市规划', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 113.0, 'unit': '拉萨市', 'Post': '堆龙德庆区', 'Nature_position': '乃琼街道卫生院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221952.0, 'College_majors': '临床医学、基础医学、放射医学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 114.0, 'unit': '拉萨市', 'Post': '堆龙德庆区', 'Nature_position': '德庆镇农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221953.0, 'College_majors': '农业资源与环境', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 115.0, 'unit': '拉萨市', 'Post': '堆龙德庆区', 'Nature_position': '马镇卫生院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221954.0, 'College_majors': '临床医学、基础医学、放射医学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 116.0, 'unit': '拉萨市', 'Post': '堆龙德庆区', 'Nature_position': '古荣镇卫生院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221955.0, 'College_majors': '临床医学、基础医学、放射医学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 117.0, 'unit': '拉萨市', 'Post': '曲水县', 'Nature_position': '中共曲水县委党校', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221956.0, 'College_majors': '思想政治教育、中国共产党历史', 'Undergraduate_majors': '中共党员', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 118.0, 'unit': '拉萨市', 'Post': '曲水县', 'Nature_position': '文化和旅游局文化馆', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221957.0, 'College_majors': '艺术学、播音与主持艺术、广播电视编导、音乐表演、中国语言文学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 119.0, 'unit': '拉萨市', 'Post': '曲水县', 'Nature_position': '乡村振兴局乡村振兴信息采集监测中心', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221958.0, 'College_majors': '大数据管理与应用、计算机科学与技术', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 120.0, 'unit': '拉萨市', 'Post': '曲水县', 'Nature_position': '医疗保障局医保中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221959.0, 'College_majors': '药事管理、医疗产品管理', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '医疗卫生类(E类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 121.0, 'unit': '拉萨市', 'Post': '曲水县', 'Nature_position': '医疗保障局医保中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221960.0, 'College_majors': '劳动和社会保障、人力资源管理', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 122.0, 'unit': '拉萨市', 'Post': '曲水县', 'Nature_position': '医疗保障局医保中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221961.0, 'College_majors': '信息管理与信息系统、大数据管理与应用', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 123.0, 'unit': '拉萨市', 'Post': '曲水县', 'Nature_position': '茶巴拉乡文化服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221962.0, 'College_majors': '艺术学、播音与主持艺术、广播电视编导、中国语言文学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 124.0, 'unit': '拉萨市', 'Post': '曲水县', 'Nature_position': '茶巴拉乡卫生院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221963.0, 'College_majors': '临床医学、预防医学、儿科学、妇幼保健医学、护理学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)', 'Examination': '是', 'interview': '是', 'remark': '拉萨户籍', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 125.0, 'unit': '拉萨市', 'Post': '林周县', 'Nature_position': '县委组织部人才综合管理服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221964.0, 'College_majors': '人力资源管理', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 126.0, 'unit': '拉萨市', 'Post': '林周县', 'Nature_position': '人力资源和社会保障局劳动和就业服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221965.0, 'College_majors': '人力资源管理', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 127.0, 'unit': '拉萨市', 'Post': '林周县', 'Nature_position': '经信局产业园区服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221966.0, 'College_majors': '经济学、项目管理', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 128.0, 'unit': '拉萨市', 'Post': '林周县', 'Nature_position': '农业农村局畜牧兽医站', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221967.0, 'College_majors': '动物营养与饲料加工', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 129.0, 'unit': '拉萨市', 'Post': '林周县', 'Nature_position': '乡村振兴局乡村振兴信息采集监测中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221968.0, 'College_majors': '农业工程', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 130.0, 'unit': '拉萨市', 'Post': '林周县', 'Nature_position': '乡村振兴局乡村振兴信息采集监测中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221969.0, 'College_majors': '农业工程', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 131.0, 'unit': '拉萨市', 'Post': '林周县', 'Nature_position': '乡村振兴局乡村振兴信息采集监测中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221970.0, 'College_majors': '统计学、文秘（学）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 132.0, 'unit': '拉萨市', 'Post': '林周县', 'Nature_position': '县委宣传部融媒体中心（电视台）', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221971.0, 'College_majors': '传播学、广播电视学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 133.0, 'unit': '拉萨市', 'Post': '林周县', 'Nature_position': '县委宣传部融媒体中心（电视台）', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221972.0, 'College_majors': '新闻传播学、网络与新媒体、广播电视语言传播、播音与主持、数字媒体技术', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 134.0, 'unit': '拉萨市', 'Post': '林周县', 'Nature_position': '边交林乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221973.0, 'College_majors': '文化产业管理、旅游管理', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 135.0, 'unit': '拉萨市', 'Post': '林周县', 'Nature_position': '边交林乡卫生院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221974.0, 'College_majors': '临床医学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 136.0, 'unit': '拉萨市', 'Post': '林周县', 'Nature_position': '阿朗乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221975.0, 'College_majors': '农学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 137.0, 'unit': '拉萨市', 'Post': '林周县', 'Nature_position': '卡孜乡卫生院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221976.0, 'College_majors': '临床医学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 138.0, 'unit': '拉萨市', 'Post': '林周县', 'Nature_position': '旁多乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221977.0, 'College_majors': '动物科学、草业科学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '是', 'remark': '拉萨户籍', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 139.0, 'unit': '拉萨市', 'Post': '墨竹工卡县', 'Nature_position': '县委党校', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221978.0, 'College_majors': '法律、民族宗教类、经济', 'Undergraduate_majors': '中共党员', 'Graduate_majors': '硕士研究生及以上', 'political_landscape': '2022年毕业生', 'Job_code': '——', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 140.0, 'unit': '拉萨市', 'Post': '墨竹工卡县', 'Nature_position': '县人民医院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221979.0, 'College_majors': '西医临床', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 141.0, 'unit': '拉萨市', 'Post': '尼木县', 'Nature_position': '中共尼木县委党校', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221980.0, 'College_majors': '教育学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '是', 'remark': '中共党员优先', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 142.0, 'unit': '拉萨市', 'Post': '尼木县', 'Nature_position': '中共尼木县委党校', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221981.0, 'College_majors': '经济学、科学社会主义或中国共产党历史', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '是', 'remark': '中共党员优先', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 143.0, 'unit': '拉萨市', 'Post': '尼木县', 'Nature_position': '文化旅游局综合文化活动中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221982.0, 'College_majors': '计算机科学与技术', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 144.0, 'unit': '拉萨市', 'Post': '尼木县', 'Nature_position': '乡村振兴局信息采集监测中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221983.0, 'College_majors': '汉语言文学、汉语言文学（秘书学）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 145.0, 'unit': '拉萨市', 'Post': '尼木县', 'Nature_position': '乡村振兴局信息采集监测中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221984.0, 'College_majors': '计算机科学与技术', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 146.0, 'unit': '拉萨市', 'Post': '尼木县', 'Nature_position': '乡村振兴局信息采集监测中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221985.0, 'College_majors': '土木工程', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 147.0, 'unit': '拉萨市', 'Post': '尼木县', 'Nature_position': '乡村振兴局信息采集监测中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221986.0, 'College_majors': '市场营销、会计学、财务管理', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 148.0, 'unit': '拉萨市', 'Post': '尼木县', 'Nature_position': '县自然资源局林管站', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221987.0, 'College_majors': '林学、园林', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 149.0, 'unit': '拉萨市', 'Post': '尼木县', 'Nature_position': '塔荣镇农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221988.0, 'College_majors': '市场营销', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '是', 'remark': '中共党员优先', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 150.0, 'unit': '拉萨市', 'Post': '尼木县', 'Nature_position': '尼木乡文化服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221989.0, 'College_majors': '财政学、会计学、财会', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '是', 'remark': '拉萨户籍', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 151.0, 'unit': '拉萨市', 'Post': '当雄县', 'Nature_position': '中共当雄县委党校', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221990.0, 'College_majors': '财务管理、会计', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 152.0, 'unit': '拉萨市', 'Post': '当雄县', 'Nature_position': '发展和改革委员会发展和改革综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221991.0, 'College_majors': '经济学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 153.0, 'unit': '拉萨市', 'Post': '当雄县', 'Nature_position': '发展和改革委员会发展和改革综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221992.0, 'College_majors': '工程管理、工程造价', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 154.0, 'unit': '拉萨市', 'Post': '当雄县', 'Nature_position': '人力资源和社会保障局人才服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221993.0, 'College_majors': '会计学，财政学，财务管理', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 155.0, 'unit': '拉萨市', 'Post': '当雄县', 'Nature_position': '住房和城乡建设局建筑工程质量服务站', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221994.0, 'College_majors': '建筑工程、土木工程', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 156.0, 'unit': '拉萨市', 'Post': '当雄县', 'Nature_position': '自然资源局羊八井国家地质公园管理服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221995.0, 'College_majors': '计算机科学与技术类', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 157.0, 'unit': '拉萨市', 'Post': '当雄县', 'Nature_position': '文化和旅游局多功能文化馆', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221996.0, 'College_majors': '统计学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 158.0, 'unit': '拉萨市', 'Post': '当雄县', 'Nature_position': '水利局水土保持工作站', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221997.0, 'College_majors': '水土保持、水土保持与荒漠化防治', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 159.0, 'unit': '拉萨市', 'Post': '当雄县', 'Nature_position': '乡村振兴局信息采集检测中心', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221998.0, 'College_majors': '计算机科学与技术、软件工程', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 160.0, 'unit': '拉萨市', 'Post': '当雄县', 'Nature_position': '乡村振兴局信息采集检测中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221999.0, 'College_majors': '统计（学）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 161.0, 'unit': '拉萨市', 'Post': '当雄县', 'Nature_position': '公塘乡卫生院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202222000.0, 'College_majors': '护理学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '医疗卫生类(E类)—护理', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 162.0, 'unit': '拉萨市', 'Post': '当雄县', 'Nature_position': '宁中乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202222001.0, 'College_majors': '农学、农业经济管理', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 163.0, 'unit': '拉萨市', 'Post': '当雄县', 'Nature_position': '宁中乡卫生院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202222002.0, 'College_majors': '临床医学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '是', 'remark': '拉萨户籍', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 164.0, 'unit': '拉萨市', 'Post': '当雄县', 'Nature_position': '纳木湖乡文化服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202222003.0, 'College_majors': '专业不限', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 165.0, 'unit': '拉萨市', 'Post': '当雄县', 'Nature_position': '格达乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202222004.0, 'College_majors': '农学、农业经济管理', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6337525、0891-6861374'},
+
+
+ {'id': 166.0, 'unit': '拉萨市', 'Post': '当雄县', 'Nature_position': '龙仁乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202222005.0, 'College_majors': '农学、农业经济管理', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '是', 'remark': '拉萨户籍', 'consultation': '0891-6337525、0891-6861374'}]
+
+
+
+
+
+
+    
+	    
+	    
+	    for(i=0;i<xx.length;i++){
+	    	var html="<tr><td>"+
+	    	xx[i].id+"</td><td>"+
+            xx[i].unit+"</td><td>"+
+            xx[i].Post+"</td><td>"+
+            xx[i].Nature_position+"</td><td>"+
+            xx[i].Number+"</td><td>"+
+            xx[i].Graduation_time+"</td><td>"+
+            xx[i].Academic_requirements+"</td><td>"+
+            xx[i].College_majors+"</td><td>"+
+            xx[i].Undergraduate_majors+"</td><td>"+
+            xx[i].Graduate_majors+"</td><td>"+
+            xx[i].political_landscape+"</td><td>"+
+            xx[i].Job_code+"</td><td>"+
+            xx[i].Examination+"</td><td>"+
+            xx[i].interview+"</td><td>"+
+            xx[i].remark+"</td><td>"+
+            xx[i].consultation+"</td></tr>";
+
+	    	$("#example tbody").append(html);
+	    	
+	    }
+	    
+	    $('#example').DataTable( {
+	        dom: 'Bfrtip',
+	        language: {  
+                emptyTable: '没有数据',  
+                loadingRecords: '加载中...',  
+                processing: '查询中...',  
+                search: '搜索【专业、地区等】:',  
+                lengthMenu: '每页 _MENU_ 件',  
+                zeroRecords: '没有数据',  
+                paginate: {  
+                    'first':      '第一页',  
+                    'last':       '最后一页',  
+                    'next':       '下一页',  
+                    'previous':   '上一页'  
+            	},  
+	            info: '第 _PAGE_ 页 / 总 _PAGES_ 页',  
+	            infoEmpty: '没有数据',  
+	            infoFiltered: '(过滤总件数 _MAX_ 条)',
+	        },
+	        
+
+	    } );
+	    
+
+
+	});
+  </script>  
+ </body>  
+</html>  

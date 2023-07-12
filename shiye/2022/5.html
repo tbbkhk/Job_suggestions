@@ -1,0 +1,367 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">   
+ <head>  
+  <title> 2022 </title>  
+  <meta charset='utf-8'>
+  <link rel="stylesheet" href="../../css/table.css" />
+  <link rel="stylesheet" href="../../css/buttons.css" />
+  <style>
+  	*{
+  		/*background-image: url();*/
+  		background-color: #000;
+  		color: #FFF; 
+  	}
+  	tbody td{
+  		text-align: center;
+  	}
+  </style>
+ </head>  
+  
+ <body>  
+ 	<h1 style="text-align: center;">山南2022区事业单位</h1>
+ 	<a href="../../2022_shiye_.html" style="font-size: 20px;">回到主页</a>
+    <table id="example" class="display" role="grid" aria-describedby="example_info">
+ 		<thead>
+            <tr>
+                <th>序号</th>
+                <th>招聘地市</th>
+                <th>单位</th>
+                <th>岗位</th>
+                <th>职位性质</th>
+                <th>人数</th>
+                <th>岗位代码</th>
+                <th>专业要求</th>              
+                <th>政治面貌</th>
+                <th>学历要求</th>
+                <th>毕业时间</th>     
+                <th>笔试科目</th>
+                <th>是否体检</th>
+                <th>是否面试</th>
+                <th>备注</th>
+                <th>咨询</th>
+                
+
+            </tr>
+        </thead>
+        <tbody>
+            
+        </tbody>
+
+        
+     
+ 	</table>
+ 	
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/jquery.datatables.min.js"/>
+	<script src="../../js/buttons.print.min.js"></script>
+
+ <script> 
+
+$(document).ready(function(){ 
+
+    var xx = [{'id': 1.0, 'unit': '山南市', 'Post': '山南市民政局', 'Nature_position': '社会福利院', 'Number': '事业\n单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221314.0, 'College_majors': '专业不限', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '无', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 2.0, 'unit': '山南市', 'Post': '山南市行政便民和服务局', 'Nature_position': '政务服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221315.0, 'College_majors': '专业不限', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 3.0, 'unit': '山南市', 'Post': '山南市行政便民和服务局', 'Nature_position': '公共资源交易中心', 'Number': '事业\n单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221316.0, 'College_majors': '专业不限', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 4.0, 'unit': '山南市', 'Post': '山南市农业农村局', 'Nature_position': '畜禽良种繁育中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221317.0, 'College_majors': '财务会计类', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 5.0, 'unit': '山南市', 'Post': '山南市交通运输局', 'Nature_position': '洛扎养护段', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221318.0, 'College_majors': '财务会计类', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 6.0, 'unit': '山南市', 'Post': '山南市交通运输局', 'Nature_position': '洛扎养护段', 'Number': '事业\n单位', 'Graduation_time': 3.0, 'Academic_requirements': 202221319.0, 'College_majors': '土木工程、土木、水利与交通工程、道路桥梁与渡河工程', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '经常高海拔野外工作，限男性', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 7.0, 'unit': '山南市', 'Post': '山南市交通运输局', 'Nature_position': '日当养护段', 'Number': '事业\n单位', 'Graduation_time': 3.0, 'Academic_requirements': 202221320.0, 'College_majors': '土木工程、土木、水利与交通工程、道路桥梁与渡河工程', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '经常高海拔野外工作，限男性', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 8.0, 'unit': '山南市', 'Post': '山南市交通运输局', 'Nature_position': '扎囊养护段', 'Number': '事业\n单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221321.0, 'College_majors': '安全工程、应急技术与管理', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '经常高海拔野外工作，限男性', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 9.0, 'unit': '山南市', 'Post': '山南市交通运输局', 'Nature_position': '扎囊养护段', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221322.0, 'College_majors': '土木工程、土木、水利与交通工程、道路桥梁与渡河工程', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '经常高海拔野外工作，限男性', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 10.0, 'unit': '山南市', 'Post': '山南市交通运输局', 'Nature_position': '曲松养护段', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221323.0, 'College_majors': '交通运输类', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '经常高海拔野外工作，限男性', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 11.0, 'unit': '山南市', 'Post': '山南市交通运输局', 'Nature_position': '曲松养护段', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221324.0, 'College_majors': '财务会计类', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 12.0, 'unit': '山南市', 'Post': '山南市交通运输局', 'Nature_position': '曲松养护段', 'Number': '事业\n单位', 'Graduation_time': 3.0, 'Academic_requirements': 202221325.0, 'College_majors': '统计学、应用统计学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 13.0, 'unit': '山南市', 'Post': '乃东区', 'Nature_position': '昌珠镇文化旅游综合\n服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221326.0, 'College_majors': '专业不限', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 14.0, 'unit': '山南市', 'Post': '乃东区', 'Nature_position': '昌珠镇便民服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221327.0, 'College_majors': '专业不限', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 15.0, 'unit': '山南市', 'Post': '乃东区', 'Nature_position': '颇章乡农牧综合服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221328.0, 'College_majors': '农、林、牧类', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 16.0, 'unit': '山南市', 'Post': '乃东区', 'Nature_position': '颇章乡文化旅游综合\n服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221329.0, 'College_majors': '文化服务类 ', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 17.0, 'unit': '山南市', 'Post': '乃东区', 'Nature_position': '结巴乡农牧综合服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221330.0, 'College_majors': '农、林、牧类', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 18.0, 'unit': '山南市', 'Post': '乃东区', 'Nature_position': '多颇章乡文化旅游综合服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221331.0, 'College_majors': '文化服务类 ', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 19.0, 'unit': '山南市', 'Post': '乃东区', 'Nature_position': '多颇章乡便民服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221332.0, 'College_majors': '专业不限', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 20.0, 'unit': '山南市', 'Post': '乃东区', 'Nature_position': '退役军人服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221333.0, 'College_majors': '专业不限', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 21.0, 'unit': '山南市', 'Post': '乃东区', 'Nature_position': '普查中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221334.0, 'College_majors': '统计学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 22.0, 'unit': '山南市', 'Post': '琼结县', 'Nature_position': '商务局供销合作社', 'Number': '事业\n单位', 'Graduation_time': 3.0, 'Academic_requirements': 202221335.0, 'College_majors': '财经商贸类 ', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 23.0, 'unit': '山南市', 'Post': '琼结县', 'Nature_position': '琼结镇便民服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221336.0, 'College_majors': '专业不限', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 24.0, 'unit': '山南市', 'Post': '琼结县', 'Nature_position': '下水乡便民服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221337.0, 'College_majors': '专业不限', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '仅限服务期满考核合格“三支一扶”人员报考', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 25.0, 'unit': '山南市', 'Post': '琼结县', 'Nature_position': '拉玉乡便民服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221338.0, 'College_majors': '专业不限', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 26.0, 'unit': '山南市', 'Post': '扎囊县', 'Nature_position': '县医疗保障服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221339.0, 'College_majors': '专业不限', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 27.0, 'unit': '山南市', 'Post': '扎囊县', 'Nature_position': '县商务局供销合作社', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221340.0, 'College_majors': '财经商贸类 ', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 28.0, 'unit': '山南市', 'Post': '贡嘎县', 'Nature_position': '行政审批和便民服务局政务服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221341.0, 'College_majors': '专业不限', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 29.0, 'unit': '山南市', 'Post': '贡嘎县', 'Nature_position': '财政局财政投资评审中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221342.0, 'College_majors': '财务会计类', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 30.0, 'unit': '山南市', 'Post': '贡嘎县', 'Nature_position': '乡村振兴局乡村振兴信息中心', 'Number': '事业\n单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221343.0, 'College_majors': '文秘类', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 31.0, 'unit': '山南市', 'Post': '贡嘎县', 'Nature_position': '克西乡便民服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221344.0, 'College_majors': '专业不限', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 32.0, 'unit': '山南市', 'Post': '贡嘎县', 'Nature_position': '东拉乡便民服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221345.0, 'College_majors': '专业不限', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 33.0, 'unit': '山南市', 'Post': '浪卡子县', 'Nature_position': '普玛江塘乡文化综合\n服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221346.0, 'College_majors': '文化服务类 ', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 34.0, 'unit': '山南市', 'Post': '浪卡子县', 'Nature_position': '商务局供销合作社', 'Number': '事业\n单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221347.0, 'College_majors': '专业不限', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 35.0, 'unit': '山南市', 'Post': '浪卡子县', 'Nature_position': '普查中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221348.0, 'College_majors': '专业不限', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 36.0, 'unit': '山南市', 'Post': '浪卡子县', 'Nature_position': '医疗保障服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221349.0, 'College_majors': '专业不限', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 37.0, 'unit': '山南市', 'Post': '浪卡子县', 'Nature_position': '多却乡农牧综合服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221350.0, 'College_majors': '专业不限', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 38.0, 'unit': '山南市', 'Post': '浪卡子县', 'Nature_position': '卡龙乡便民服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221351.0, 'College_majors': '专业不限', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '仅限服务两年及以上考核合格西部计划西藏专项志愿者、退役大学生士兵报考', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 39.0, 'unit': '山南市', 'Post': '浪卡子县', 'Nature_position': '普玛江塘乡卫生院', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221352.0, 'College_majors': '公共卫生', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—公共卫生管理', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 40.0, 'unit': '山南市', 'Post': '浪卡子县', 'Nature_position': '张达乡卫生院', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221353.0, 'College_majors': '临床医学（西医）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 41.0, 'unit': '山南市', 'Post': '浪卡子县', 'Nature_position': '张达乡卫生院', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221354.0, 'College_majors': '公共卫生', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '医疗卫生类(E类)—公共卫生管理', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 42.0, 'unit': '山南市', 'Post': '浪卡子县', 'Nature_position': '打隆镇卫生院', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221355.0, 'College_majors': '护理学（西医）', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '医疗卫生类(E类)—护理', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 43.0, 'unit': '山南市', 'Post': '浪卡子县', 'Nature_position': '阿扎乡卫生院', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221356.0, 'College_majors': '公共卫生', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—公共卫生管理', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 44.0, 'unit': '山南市', 'Post': '浪卡子县', 'Nature_position': '白地乡卫生院', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221357.0, 'College_majors': '公共卫生', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—公共卫生管理', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 45.0, 'unit': '山南市', 'Post': '浪卡子县', 'Nature_position': '多却乡卫生院', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221358.0, 'College_majors': '护理学（西医）', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—护理', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 46.0, 'unit': '山南市', 'Post': '浪卡子县', 'Nature_position': '卡龙乡卫生院', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221359.0, 'College_majors': '临床医学（西医）', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 47.0, 'unit': '山南市', 'Post': '浪卡子县', 'Nature_position': '卡龙乡卫生院', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221360.0, 'College_majors': '公共卫生', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '医疗卫生类(E类)—公共卫生管理', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 48.0, 'unit': '山南市', 'Post': '浪卡子县', 'Nature_position': '卡热乡卫生院', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221361.0, 'College_majors': '临床医学（西医）', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 49.0, 'unit': '山南市', 'Post': '浪卡子县', 'Nature_position': '伦布雪乡卫生院', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221362.0, 'College_majors': '口腔医学', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 50.0, 'unit': '山南市', 'Post': '洛扎县', 'Nature_position': '县委党校', 'Number': '事业\n单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221363.0, 'College_majors': '马克思主义理论类', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 51.0, 'unit': '山南市', 'Post': '洛扎县', 'Nature_position': '商务局供销合作社', 'Number': '事业\n单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221364.0, 'College_majors': '财经商贸类 ', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 52.0, 'unit': '山南市', 'Post': '洛扎县', 'Nature_position': '色乡便民服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221365.0, 'College_majors': '专业不限', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '仅限服务期满考核合格“三支一扶”人员报考', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 53.0, 'unit': '山南市', 'Post': '洛扎县', 'Nature_position': '县统计局普查中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221366.0, 'College_majors': '统计学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 54.0, 'unit': '山南市', 'Post': '洛扎县', 'Nature_position': '洛扎镇便民服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221367.0, 'College_majors': '专业不限', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 55.0, 'unit': '山南市', 'Post': '洛扎县', 'Nature_position': '边巴乡农牧综合服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221368.0, 'College_majors': '农、林、牧类', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 56.0, 'unit': '山南市', 'Post': '洛扎县', 'Nature_position': '生格乡卫生院', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221369.0, 'College_majors': '藏医临床医学（藏药学）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '藏医药护理类(Z类)—藏医', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 57.0, 'unit': '山南市', 'Post': '洛扎县', 'Nature_position': '色乡卫生院', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221370.0, 'College_majors': '预防医学、临床医学（西医）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 58.0, 'unit': '山南市', 'Post': '洛扎县', 'Nature_position': '边巴乡卫生院', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221371.0, 'College_majors': '预防医学、临床医学（西医）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 59.0, 'unit': '山南市', 'Post': '洛扎县', 'Nature_position': '拉郊乡卫生院', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221372.0, 'College_majors': '护理学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—护理', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 60.0, 'unit': '山南市', 'Post': '措美县', 'Nature_position': '商务局供销合作社', 'Number': '事业\n单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221373.0, 'College_majors': '财经商贸类 ', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 61.0, 'unit': '山南市', 'Post': '措美县', 'Nature_position': '乃西乡便民服务中心', 'Number': '事业\n单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221374.0, 'College_majors': '专业不限', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 62.0, 'unit': '山南市', 'Post': '措美县', 'Nature_position': '县委党校', 'Number': '事业\n单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221375.0, 'College_majors': '马克思主义理论类', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 63.0, 'unit': '山南市', 'Post': '措美县', 'Nature_position': '措美镇便民服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221376.0, 'College_majors': '专业不限', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 64.0, 'unit': '山南市', 'Post': '措美县', 'Nature_position': '哲古镇文化旅游综合服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221377.0, 'College_majors': '文化服务类 ', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 65.0, 'unit': '山南市', 'Post': '措美县', 'Nature_position': '哲古镇便民服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221378.0, 'College_majors': '专业不限', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '仅限服务期满考核合格“三支一扶”人员报考', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 66.0, 'unit': '山南市', 'Post': '错那县', 'Nature_position': '浪坡乡便民服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221379.0, 'College_majors': '文秘类', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 67.0, 'unit': '山南市', 'Post': '错那县', 'Nature_position': '觉拉乡便民服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221380.0, 'College_majors': '财务会计类', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 68.0, 'unit': '山南市', 'Post': '错那县', 'Nature_position': '卡达乡便民服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221381.0, 'College_majors': '财务会计类', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 69.0, 'unit': '山南市', 'Post': '错那县', 'Nature_position': '卡达乡便民服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221382.0, 'College_majors': '文秘类', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 70.0, 'unit': '山南市', 'Post': '错那县', 'Nature_position': '吉巴门巴民族乡便民\n服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221383.0, 'College_majors': '专业不限', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 71.0, 'unit': '山南市', 'Post': '错那县', 'Nature_position': '医疗保障服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221384.0, 'College_majors': '专业不限', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 72.0, 'unit': '山南市', 'Post': '错那县', 'Nature_position': '贡日门巴民族乡便民\n服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221385.0, 'College_majors': '专业不限', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 73.0, 'unit': '山南市', 'Post': '错那县', 'Nature_position': '觉拉乡文化旅游综合\n服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221386.0, 'College_majors': '文化服务类 ', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 74.0, 'unit': '山南市', 'Post': '错那县', 'Nature_position': '卡达乡农牧综合服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221387.0, 'College_majors': '农、林、牧类', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 75.0, 'unit': '山南市', 'Post': '错那县', 'Nature_position': '库局乡农牧综合服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221388.0, 'College_majors': '农、林、牧类', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 76.0, 'unit': '山南市', 'Post': '错那县', 'Nature_position': '库局乡便民服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221389.0, 'College_majors': '专业不限', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 77.0, 'unit': '山南市', 'Post': '错那县', 'Nature_position': '麻麻门巴民族乡便民\n服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221390.0, 'College_majors': '专业不限', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 78.0, 'unit': '山南市', 'Post': '错那县', 'Nature_position': '错那县错那镇农牧综合服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221391.0, 'College_majors': '农、林、牧类', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 79.0, 'unit': '山南市', 'Post': '错那县', 'Nature_position': '错那县浪坡乡卫生院', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221392.0, 'College_majors': '临床医学（西医）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 80.0, 'unit': '山南市', 'Post': '错那县', 'Nature_position': '麻麻门巴民族乡卫生院', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221393.0, 'College_majors': '临床医学（藏医）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '藏医药护理类(Z类)—藏医', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 81.0, 'unit': '山南市', 'Post': '错那县', 'Nature_position': '卡达乡卫生院', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221394.0, 'College_majors': '临床医学（西医）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 82.0, 'unit': '山南市', 'Post': '错那县', 'Nature_position': '勒门巴民族乡卫生院', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221395.0, 'College_majors': '临床医学（西医）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 83.0, 'unit': '山南市', 'Post': '错那县', 'Nature_position': '曲卓木乡卫生院', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221396.0, 'College_majors': '医学影像', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—医学技术', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 84.0, 'unit': '山南市', 'Post': '隆子县', 'Nature_position': '加玉乡文化综合服务中心', 'Number': '事业\n单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221397.0, 'College_majors': '专业不限', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 85.0, 'unit': '山南市', 'Post': '隆子县', 'Nature_position': '列麦乡文化综合服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221398.0, 'College_majors': '专业不限', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '仅限服务期满考核合格“三支一扶”人员报考', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 86.0, 'unit': '山南市', 'Post': '隆子县', 'Nature_position': '三安曲林乡文化综合服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221399.0, 'College_majors': '文化服务类 ', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 87.0, 'unit': '山南市', 'Post': '隆子县', 'Nature_position': '玉麦乡农牧综合服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221400.0, 'College_majors': '农、林、牧类', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 88.0, 'unit': '山南市', 'Post': '隆子县', 'Nature_position': '扎日乡农牧综合服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221401.0, 'College_majors': '农、林、牧类', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 89.0, 'unit': '山南市', 'Post': '隆子县', 'Nature_position': '扎日乡便民服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221402.0, 'College_majors': '专业不限', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 90.0, 'unit': '山南市', 'Post': '隆子县', 'Nature_position': '准巴乡便民服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221403.0, 'College_majors': '专业不限', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '仅限服务期满考核合格“三支一扶”人员报考', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 91.0, 'unit': '山南市', 'Post': '隆子县', 'Nature_position': '斗玉珞巴民族乡便民服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221404.0, 'College_majors': '专业不限', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 92.0, 'unit': '山南市', 'Post': '隆子县', 'Nature_position': '雪沙乡农牧综合服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221405.0, 'College_majors': '农、林、牧类', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 93.0, 'unit': '山南市', 'Post': '隆子县', 'Nature_position': '雪沙乡文化综合服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221406.0, 'College_majors': '专业不限', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 94.0, 'unit': '山南市', 'Post': '隆子县', 'Nature_position': '热荣乡卫生院', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221407.0, 'College_majors': '医学影像', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '医疗卫生类(E类)—医学技术', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 95.0, 'unit': '山南市', 'Post': '隆子县', 'Nature_position': '三安曲林乡卫生院', 'Number': '事业\n单位', 'Graduation_time': 3.0, 'Academic_requirements': 202221408.0, 'College_majors': '预防医学、康复医学、医学检验', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 96.0, 'unit': '山南市', 'Post': '隆子县', 'Nature_position': '玉麦乡卫生院', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221409.0, 'College_majors': '预防医学', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '医疗卫生类(E类)—公共卫生管理', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 97.0, 'unit': '山南市', 'Post': '隆子县', 'Nature_position': '扎日乡卫生院', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221410.0, 'College_majors': '药学（西医）', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—药剂', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 98.0, 'unit': '山南市', 'Post': '隆子县', 'Nature_position': '雪沙乡卫生院', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221411.0, 'College_majors': '医学影像', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '医疗卫生类(E类)—医学技术', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 99.0, 'unit': '山南市', 'Post': '曲松县', 'Nature_position': '县委党校', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221412.0, 'College_majors': '马克思主义理论类', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 100.0, 'unit': '山南市', 'Post': '曲松县', 'Nature_position': '医疗保障服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221413.0, 'College_majors': '专业不限', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '仅限服务期满考核合格“三支一扶”人员报考', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 101.0, 'unit': '山南市', 'Post': '曲松县', 'Nature_position': '下江乡便民服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221414.0, 'College_majors': '财务会计类', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 102.0, 'unit': '山南市', 'Post': '曲松县', 'Nature_position': '罗布沙镇便民服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221415.0, 'College_majors': '专业不限', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 103.0, 'unit': '山南市', 'Post': '曲松县', 'Nature_position': '邱多江乡卫生院', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221416.0, 'College_majors': '临床医学（西医）', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 104.0, 'unit': '山南市', 'Post': '曲松县', 'Nature_position': '曲松统计局普查中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221417.0, 'College_majors': '统计学、应用统计学', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 105.0, 'unit': '山南市', 'Post': '曲松县', 'Nature_position': '邱多江乡农牧综合服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221418.0, 'College_majors': '农、林、牧类', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 106.0, 'unit': '山南市', 'Post': '曲松县', 'Nature_position': '堆随乡农牧综合服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221419.0, 'College_majors': '农、林、牧类', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 107.0, 'unit': '山南市', 'Post': '曲松县', 'Nature_position': '堆随乡卫生院', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221420.0, 'College_majors': '临床医学（西医）', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 108.0, 'unit': '山南市', 'Post': '曲松县', 'Nature_position': '曲松镇卫生院', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221421.0, 'College_majors': '公共卫生', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '医疗卫生类(E类)—公共卫生管理', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 109.0, 'unit': '山南市', 'Post': '曲松县', 'Nature_position': '下江乡卫生院', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221422.0, 'College_majors': '药学（西药）', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '医疗卫生类(E类)—药剂', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 110.0, 'unit': '山南市', 'Post': '加查县', 'Nature_position': '县教育局教研室', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221423.0, 'College_majors': '专业不限', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 111.0, 'unit': '山南市', 'Post': '加查县', 'Nature_position': '发改委投资项目评审中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221424.0, 'College_majors': '专业不限', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 112.0, 'unit': '山南市', 'Post': '加查县', 'Nature_position': '统计局普查中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221425.0, 'College_majors': '统计学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 113.0, 'unit': '山南市', 'Post': '加查县', 'Nature_position': '商务局供销合作社', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221426.0, 'College_majors': '财经商贸类 ', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 114.0, 'unit': '山南市', 'Post': '加查县', 'Nature_position': '崔久乡便民服务中心', 'Number': '事业\n单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221427.0, 'College_majors': '专业不限', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 115.0, 'unit': '山南市', 'Post': '加查县', 'Nature_position': '坝乡便民服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221428.0, 'College_majors': '专业不限', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '仅限服务期满考核合格“三支一扶”人员报考', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 116.0, 'unit': '山南市', 'Post': '加查县', 'Nature_position': '坝乡旅游综合服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221429.0, 'College_majors': '文化服务类 ', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 117.0, 'unit': '山南市', 'Post': '桑日县', 'Nature_position': '县委党校', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221430.0, 'College_majors': '马克思主义理论类', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 118.0, 'unit': '山南市', 'Post': '桑日县', 'Nature_position': '劳动和就业服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221431.0, 'College_majors': '专业不限', 'Undergraduate_majors': '中共党员', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '仅限服务期满考核合格“三支一扶”人员报考', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 119.0, 'unit': '山南市', 'Post': '桑日县', 'Nature_position': '商务局供销合作社', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221432.0, 'College_majors': '财经商贸类 ', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 120.0, 'unit': '山南市', 'Post': '桑日县', 'Nature_position': '白堆乡便民服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221433.0, 'College_majors': '专业不限', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 121.0, 'unit': '山南市', 'Post': '桑日县', 'Nature_position': '绒乡便民服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221434.0, 'College_majors': '专业不限', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0893-7821900、0893-7820399'},
+
+ {'id': 122.0, 'unit': '山南市', 'Post': '桑日县', 'Nature_position': '桑日镇便民服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221435.0, 'College_majors': '专业不限', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0893-7821900、0893-7820399'}]
+
+
+
+
+
+
+    
+	    
+	    
+	    for(i=0;i<xx.length;i++){
+	    	var html="<tr><td>"+
+	    	xx[i].id+"</td><td>"+
+            xx[i].unit+"</td><td>"+
+            xx[i].Post+"</td><td>"+
+            xx[i].Nature_position+"</td><td>"+
+            xx[i].Number+"</td><td>"+
+            xx[i].Graduation_time+"</td><td>"+
+            xx[i].Academic_requirements+"</td><td>"+
+            xx[i].College_majors+"</td><td>"+
+            xx[i].Undergraduate_majors+"</td><td>"+
+            xx[i].Graduate_majors+"</td><td>"+
+            xx[i].political_landscape+"</td><td>"+
+            xx[i].Job_code+"</td><td>"+
+            xx[i].Examination+"</td><td>"+
+            xx[i].interview+"</td><td>"+
+            xx[i].remark+"</td><td>"+
+            xx[i].mess+"</td><td>"+
+            xx[i].consultation+"</td></tr>";
+
+	    	$("#example tbody").append(html);
+	    	
+	    }
+	    
+	    $('#example').DataTable( {
+	        dom: 'Bfrtip',
+	        language: {  
+                emptyTable: '没有数据',  
+                loadingRecords: '加载中...',  
+                processing: '查询中...',  
+                search: '搜索【专业、地区等】:',  
+                lengthMenu: '每页 _MENU_ 件',  
+                zeroRecords: '没有数据',  
+                paginate: {  
+                    'first':      '第一页',  
+                    'last':       '最后一页',  
+                    'next':       '下一页',  
+                    'previous':   '上一页'  
+            	},  
+	            info: '第 _PAGE_ 页 / 总 _PAGES_ 页',  
+	            infoEmpty: '没有数据',  
+	            infoFiltered: '(过滤总件数 _MAX_ 条)',
+	        },
+	        
+
+	    } );
+
+
+	    
+
+
+	});
+  </script>  
+ </body>  
+</html>  

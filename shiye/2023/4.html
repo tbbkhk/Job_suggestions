@@ -1,0 +1,1281 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">   
+ <head>  
+  <title> 2023 </title>  
+  <meta charset='utf-8'>
+  <link rel="stylesheet" href="../../css/table.css" />
+  <link rel="stylesheet" href="../../css/buttons.css" />
+  <style>
+  	*{
+  		/*background-image: url();*/
+  		background-color: #000;
+  		color: #FFF; 
+  	}
+  	tbody td{
+  		text-align: center;
+  	}
+  </style>
+ </head>  
+  
+ <body>  
+ 	<h1 style="text-align: center;">2023日喀则事业单位</h1>
+ 	<a href="../../2023_shiye_.html" style="font-size: 20px;">回到主页</a>
+    <table id="example" class="display" role="grid" aria-describedby="example_info">
+ 		<thead>
+            <tr>
+                <th>序号</th>
+                <th>招聘地市</th>
+                <th>单位</th>
+                <th>岗位</th>
+                <th>职位性质</th>
+                <th>岗位代码</th>
+                <th>毕业时间</th>
+                <th>学历要求</th>
+                <th>大专专业</th>
+                <th>本科专业</th>
+                <th>研究生专业</th>
+                <th>政治面貌</th>
+                 <th>招聘人数</th>
+                <th>笔试科目</th>
+                <th>是否面试</th>
+                <th>备注</th>
+                
+
+            </tr>
+        </thead>
+        <tbody>
+            
+        </tbody>
+
+        
+     
+ 	</table>
+ 	
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/jquery.datatables.min.js"/>
+	<script src="../../js/buttons.print.min.js"></script>
+
+ <script> 
+
+$(document).ready(function(){ 
+
+    var xx = [{'id': 1.0, 'unit': '日喀则市', 'Post': '市纪委', 'Nature_position': '卡热管理中心', 'Number': '事业单位', 'Graduation_time': 230201001.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '无', 'Graduate_majors': '纪检监察、法学', 'political_landscape': '无', 'Job_code': '无', 'Examination': 1.0, 'interview': '综合管理类（A类）', 'remark': '否', 'consultation': '无'},
+
+
+ {'id': 2.0, 'unit': '日喀则市', 'Post': '市人力资源和社会保障局', 'Nature_position': '市技工学校', 'Number': '事业单位', 'Graduation_time': 230201002.0, 'Academic_requirements': '应届生', 'College_majors': '硕士研究生', 'Undergraduate_majors': '', 'Graduate_majors': '', 'political_landscape': '职业技术教育学', 'Job_code': '中共党员\n（含预备党员）', 'Examination': 1.0, 'interview': '———', 'remark': '是', 'consultation': ''},
+
+
+ {'id': 3.0, 'unit': '日喀则市', 'Post': '市中级人民法院', 'Nature_position': '法官培训中心', 'Number': '事业单位', 'Graduation_time': 230201003.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '不限', 'political_landscape': '', 'Job_code': '', 'Examination': 2.0, 'interview': '综合管理类（A类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 4.0, 'unit': '日喀则市', 'Post': '市发展和改革委员会', 'Nature_position': '日喀则国家粮食储备库', 'Number': '事业单位', 'Graduation_time': 230201004.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '中国语言文学', 'political_landscape': '', 'Job_code': '', 'Examination': 2.0, 'interview': '综合管理类（A类）', 'remark': '否', 'consultation': '仅限服务两年及以上考核合格西部计划西藏专项志愿者、退役大学生士兵、服务满3年且考核合格乡村振兴专干报考'},
+
+
+ {'id': 5.0, 'unit': '日喀则市', 'Post': '市发展和改革委员会', 'Nature_position': '', 'Number': '事业单位', 'Graduation_time': 230201005.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '食品质量与安全、食品安全与检测、粮食工程', 'political_landscape': '', 'Job_code': '', 'Examination': 3.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 6.0, 'unit': '日喀则市', 'Post': '市发展和改革委员会', 'Nature_position': '江孜国家粮食储备库', 'Number': '事业单位', 'Graduation_time': 230201006.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '汉语言文学、秘书学', 'political_landscape': '', 'Job_code': '', 'Examination': 2.0, 'interview': '综合管理类（A类）', 'remark': '否', 'consultation': '仅限日喀则户籍或日喀则学籍考生报考'},
+
+
+ {'id': 7.0, 'unit': '日喀则市', 'Post': '市发展和改革委员会', 'Nature_position': '', 'Number': '事业单位', 'Graduation_time': 230201007.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '食品质量与安全、食品安全与检测、粮食工程', 'political_landscape': '', 'Job_code': '', 'Examination': 6.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 8.0, 'unit': '日喀则市', 'Post': '市发展和改革委员会', 'Nature_position': '拉孜地方粮食储备库', 'Number': '事业单位', 'Graduation_time': 230201008.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '食品质量与安全、食品安全与检测、粮食工程', 'political_landscape': '', 'Job_code': '', 'Examination': 5.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 9.0, 'unit': '日喀则市', 'Post': '市委党校', 'Nature_position': '管理教研室', 'Number': '事业单位', 'Graduation_time': 230201009.0, 'Academic_requirements': '不限', 'College_majors': '硕士研究生', 'Undergraduate_majors': '', 'Graduate_majors': '', 'political_landscape': '心理学', 'Job_code': '中共党员\n（含预备党员）', 'Examination': 1.0, 'interview': '———', 'remark': '是', 'consultation': ''},
+
+
+ {'id': 10.0, 'unit': '日喀则市', 'Post': '市委党校', 'Nature_position': '', 'Number': '事业单位', 'Graduation_time': 230201010.0, 'Academic_requirements': '不限', 'College_majors': '硕士研究生', 'Undergraduate_majors': '', 'Graduate_majors': '', 'political_landscape': '理论经济学', 'Job_code': '中共党员\n（含预备党员）', 'Examination': 2.0, 'interview': '———', 'remark': '是', 'consultation': ''},
+
+
+ {'id': 11.0, 'unit': '日喀则市', 'Post': '市委党校', 'Nature_position': '马义教研室', 'Number': '事业单位', 'Graduation_time': 230201011.0, 'Academic_requirements': '应届生', 'College_majors': '硕士研究生', 'Undergraduate_majors': '', 'Graduate_majors': '', 'political_landscape': '哲学', 'Job_code': '中共党员\n（含预备党员）', 'Examination': 1.0, 'interview': '———', 'remark': '是', 'consultation': ''},
+
+
+ {'id': 12.0, 'unit': '日喀则市', 'Post': '市委党校', 'Nature_position': '', 'Number': '事业单位', 'Graduation_time': 230201012.0, 'Academic_requirements': '不限', 'College_majors': '硕士研究生', 'Undergraduate_majors': '', 'Graduate_majors': '', 'political_landscape': '马克思主义理论', 'Job_code': '中共党员\n（含预备党员）', 'Examination': 1.0, 'interview': '———', 'remark': '是', 'consultation': ''},
+
+
+ {'id': 13.0, 'unit': '日喀则市', 'Post': '市委党校', 'Nature_position': '党史党建教研室', 'Number': '事业单位', 'Graduation_time': 230201013.0, 'Academic_requirements': '应届生', 'College_majors': '硕士研究生', 'Undergraduate_majors': '', 'Graduate_majors': '', 'political_landscape': '历史学', 'Job_code': '中共党员\n（含预备党员）', 'Examination': 1.0, 'interview': '———', 'remark': '是', 'consultation': ''},
+
+
+ {'id': 14.0, 'unit': '日喀则市', 'Post': '市委党校', 'Nature_position': '', 'Number': '事业单位', 'Graduation_time': 230201014.0, 'Academic_requirements': '不限', 'College_majors': '硕士研究生', 'Undergraduate_majors': '', 'Graduate_majors': '', 'political_landscape': '法学', 'Job_code': '中共党员\n（含预备党员）', 'Examination': 1.0, 'interview': '———', 'remark': '是', 'consultation': ''},
+
+
+ {'id': 15.0, 'unit': '日喀则市', 'Post': '市文化局', 'Nature_position': '民族艺术团', 'Number': '事业单位', 'Graduation_time': 230201015.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '舞蹈表演', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '社会科学专技类（B类）', 'remark': '是', 'consultation': ''},
+
+
+ {'id': 16.0, 'unit': '日喀则市', 'Post': '市文化局', 'Nature_position': '', 'Number': '事业单位', 'Graduation_time': 230201016.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '音乐表演', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '社会科学专技类（B类）', 'remark': '是', 'consultation': ''},
+
+
+ {'id': 17.0, 'unit': '日喀则市', 'Post': '市文化局', 'Nature_position': '', 'Number': '事业单位', 'Graduation_time': 230201017.0, 'Academic_requirements': '不限', 'College_majors': '硕士研究生', 'Undergraduate_majors': '', 'Graduate_majors': '', 'political_landscape': '中国少数民族语言文学', 'Job_code': '', 'Examination': 1.0, 'interview': '———', 'remark': '是', 'consultation': ''},
+
+
+ {'id': 18.0, 'unit': '日喀则市', 'Post': '市水利局', 'Nature_position': '水土保持监测中心  ', 'Number': '事业单位', 'Graduation_time': 230201018.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '水土保持与荒漠化防治', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 19.0, 'unit': '日喀则市', 'Post': '市水利局', 'Nature_position': '', 'Number': '事业单位', 'Graduation_time': 230201019.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '会计学、财务管理', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '社会科学专技类（B类）', 'remark': '否', 'consultation': '仅限日喀则户籍或日喀则学籍考生报考'},
+
+
+ {'id': 20.0, 'unit': '日喀则市', 'Post': '市应急管理局', 'Nature_position': '市消防救援服务中心', 'Number': '事业单位', 'Graduation_time': 230201020.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '公安学类、法学类、马克思主义理论类、中国语言文学类、管理科学与工程类、工商管理类、公共管理类、图书情报与档案管理类、旅游管理类、政治学类、社会学类', 'political_landscape': '公安学、法学、马克思主义理论、中国语言文学、管理科学与工程、工商管理、公共管理、图书情报与档案管理、政治学、社会学', 'Job_code': '', 'Examination': 2.0, 'interview': '综合管理类（A类）', 'remark': '是', 'consultation': '在笔试成绩达到最低合格分数线的基础上，按照1:4的比例参加西藏自治区消防救援总队组织的心理素质测试、体能测评'},
+
+
+ {'id': 21.0, 'unit': '日喀则市', 'Post': '市应急管理局', 'Nature_position': '', 'Number': '事业单位', 'Graduation_time': 230201021.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '新闻传播学类、历史学类、经济学类、金融学类、教育学类、体育学类、统计学类、心理学类', 'political_landscape': '新闻传播学、中国史、应用经济学、理论经济学、教育学、体育学、心理学、统计学', 'Job_code': '', 'Examination': 2.0, 'interview': '社会科学专技类（B类）', 'remark': '是', 'consultation': '在笔试成绩达到最低合格分数线的基础上，按照1:4的比例参加西藏自治区消防救援总队组织的心理素质测试、体能测评'},
+
+
+ {'id': 22.0, 'unit': '日喀则市', 'Post': '市应急管理局', 'Nature_position': '', 'Number': '事业单位', 'Graduation_time': 230201022.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '化学类、化工与制药类、土木类、水利类、建筑类、机械类、电气类、电子信息类、自动化类、计算机类、测绘类、矿业类、核工程类、环境科学与工程类、安全科学与工程类、公安技术类、大气科学类、地球物理学类、地质学类、交通运输类、航空航天类、材料类、数学类', 'political_landscape': '化学、化学工程与技术、土木工程、水利工程、建筑学、机械工程、电气工程、电子科学与技术、计算机科学与技术、测绘科学与技术、矿业工程、核科学与技术、环境科学与工程、安全科学与工程、公安技术、大气科学、地球物理学、地质学、交通运输工程、航空宇航科学与技术、材料科学与工程、数学', 'Job_code': '', 'Examination': 3.0, 'interview': '自然科学专技类（C类）', 'remark': '是', 'consultation': '根据消防救援工作特点，需24小时执勤战备，参与应急救援工作，限男性。在笔试成绩达到最低合格分数线的基础上，按照1:4的比例参加西藏自治区消防救援总队组织的心理素质测试、体能测评'},
+
+
+ {'id': 23.0, 'unit': '日喀则市', 'Post': '市文学艺术界联合会', 'Nature_position': '组织联络中心', 'Number': '事业单位', 'Graduation_time': 230201023.0, 'Academic_requirements': '不限', 'College_majors': '硕士研究生', 'Undergraduate_majors': '', 'Graduate_majors': '', 'political_landscape': '艺术学', 'Job_code': '', 'Examination': 1.0, 'interview': '———', 'remark': '是', 'consultation': ''},
+
+
+ {'id': 24.0, 'unit': '日喀则市', 'Post': '市人民医院', 'Nature_position': '市人民医院', 'Number': '事业单位', 'Graduation_time': 230201024.0, 'Academic_requirements': '应届生', 'College_majors': '硕士研究生', 'Undergraduate_majors': '', 'Graduate_majors': '', 'political_landscape': '临床医学', 'Job_code': '', 'Examination': 8.0, 'interview': '———', 'remark': '是', 'consultation': ''},
+
+
+ {'id': 25.0, 'unit': '日喀则市', 'Post': '市人民医院', 'Nature_position': '', 'Number': '事业单位', 'Graduation_time': 230201025.0, 'Academic_requirements': '应届生', 'College_majors': '硕士研究生', 'Undergraduate_majors': '', 'Graduate_majors': '', 'political_landscape': '护理学', 'Job_code': '', 'Examination': 5.0, 'interview': '———', 'remark': '是', 'consultation': ''},
+
+
+ {'id': 26.0, 'unit': '日喀则市', 'Post': '市人民医院', 'Nature_position': '', 'Number': '事业单位', 'Graduation_time': 230201026.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '临床医学（西医）', 'political_landscape': '', 'Job_code': '', 'Examination': 8.0, 'interview': '医疗卫生类（E类）-西医临床', 'remark': '否', 'consultation': '仅限日喀则户籍或日喀则学籍考生报考'},
+
+
+ {'id': 27.0, 'unit': '日喀则市', 'Post': '市人民医院', 'Nature_position': '', 'Number': '事业单位', 'Graduation_time': 230201027.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '临床医学（西医）', 'political_landscape': '', 'Job_code': '', 'Examination': 2.0, 'interview': '医疗卫生类（E类）-西医临床', 'remark': '否', 'consultation': '仅限服务期满且考核合格“三支一扶”人员报考'},
+
+
+ {'id': 28.0, 'unit': '日喀则市', 'Post': '市人民医院', 'Nature_position': '', 'Number': '事业单位', 'Graduation_time': 230201028.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '护理学类', 'political_landscape': '', 'Job_code': '', 'Examination': 10.0, 'interview': '医疗卫生类（E类）-护理', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 29.0, 'unit': '日喀则市', 'Post': '市人民医院', 'Nature_position': '', 'Number': '事业单位', 'Graduation_time': 230201029.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '临床医学、麻醉学', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '医疗卫生类（E类）-西医临床', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 30.0, 'unit': '日喀则市', 'Post': '市人民医院', 'Nature_position': '', 'Number': '事业单位', 'Graduation_time': 230201030.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '临床医学、儿科学', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '医疗卫生类（E类）-西医临床', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 31.0, 'unit': '日喀则市', 'Post': '市卫健委', 'Nature_position': '市第二人民医院', 'Number': '事业单位', 'Graduation_time': 230201031.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '护理学类', 'political_landscape': '', 'Job_code': '', 'Examination': 2.0, 'interview': '医疗卫生类（E类）-护理', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 32.0, 'unit': '日喀则市', 'Post': '市卫健委', 'Nature_position': '', 'Number': '事业单位', 'Graduation_time': 230201032.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '临床医学（西医）', 'political_landscape': '', 'Job_code': '', 'Examination': 2.0, 'interview': '医疗卫生类（E类）-西医临床', 'remark': '否', 'consultation': '仅限日喀则户籍或日喀则学籍考生报考'},
+
+
+ {'id': 33.0, 'unit': '日喀则市', 'Post': '市卫健委', 'Nature_position': '市妇幼保健医院', 'Number': '事业单位', 'Graduation_time': 230201033.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '临床医学（西医）', 'political_landscape': '', 'Job_code': '', 'Examination': 2.0, 'interview': '医疗卫生类（E类）-西医临床', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 34.0, 'unit': '日喀则市', 'Post': '昂仁县', 'Nature_position': '县卫生服务中心', 'Number': '事业单位', 'Graduation_time': 230202001.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '临床医学（西医）、医学影像学', 'political_landscape': '', 'Job_code': '', 'Examination': 2.0, 'interview': '医疗卫生类（E类）-西医临床', 'remark': '否', 'consultation': '仅限日喀则户籍或日喀则学籍考生报考'},
+
+
+ {'id': 35.0, 'unit': '日喀则市', 'Post': '昂仁县', 'Nature_position': '', 'Number': '事业单位', 'Graduation_time': 230202002.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '临床医学（西医）', 'political_landscape': '', 'Job_code': '', 'Examination': 3.0, 'interview': '医疗卫生类（E类）-西医临床', 'remark': '否', 'consultation': '仅限日喀则户籍或日喀则学籍考生报考'},
+
+
+ {'id': 36.0, 'unit': '日喀则市', 'Post': '昂仁县', 'Nature_position': '阿木雄乡卫生院', 'Number': '事业单位', 'Graduation_time': 230202003.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '临床医学（西医）', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '医疗卫生类（E类）-西医临床', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 37.0, 'unit': '日喀则市', 'Post': '昂仁县', 'Nature_position': '查孜乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 230202004.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '不限', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '综合管理类（A类）', 'remark': '否', 'consultation': '仅限日喀则户籍或日喀则学籍考生报考'},
+
+
+ {'id': 38.0, 'unit': '日喀则市', 'Post': '昂仁县', 'Nature_position': '查孜乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 230202005.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '动物医学', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 39.0, 'unit': '日喀则市', 'Post': '昂仁县', 'Nature_position': '查孜乡卫生院', 'Number': '事业单位', 'Graduation_time': 230202006.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '预防医学', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '医疗卫生类（E类）-公共卫生管理', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 40.0, 'unit': '日喀则市', 'Post': '昂仁县', 'Nature_position': '措迈乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 230202007.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '草学类', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'consultation': '仅限服务两年及以上考核合格西部计划西藏专项志愿者、退役大学生士兵、服务满3年且考核合格乡村振兴专干报考'},
+
+
+ {'id': 41.0, 'unit': '日喀则市', 'Post': '昂仁县', 'Nature_position': '措迈乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 230202008.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '法学', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '综合管理类（A类）', 'remark': '否', 'consultation': '仅限日喀则户籍或日喀则学籍考生报考'},
+
+
+ {'id': 42.0, 'unit': '日喀则市', 'Post': '昂仁县', 'Nature_position': '达局乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 230202009.0, 'Academic_requirements': '应届生', 'College_majors': '大专及以上', 'Undergraduate_majors': '不限', 'Graduate_majors': '不限', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '综合管理类（A类）', 'remark': '否', 'consultation': '仅限服务期满且考核合格“三支一扶”人员报考'},
+
+
+ {'id': 43.0, 'unit': '日喀则市', 'Post': '昂仁县', 'Nature_position': '达若乡卫生院', 'Number': '事业单位', 'Graduation_time': 230202010.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '护理学类', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '医疗卫生类（E类）-护理', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 44.0, 'unit': '日喀则市', 'Post': '昂仁县', 'Nature_position': '多白乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 230202011.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '农学', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'consultation': '仅限服务期满且考核合格“三支一扶”人员报考'},
+
+
+ {'id': 45.0, 'unit': '日喀则市', 'Post': '昂仁县', 'Nature_position': '多白乡文化服务中心', 'Number': '事业单位', 'Graduation_time': 230202012.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '广告学', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '社会科学专技类（B类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 46.0, 'unit': '日喀则市', 'Post': '昂仁县', 'Nature_position': '贡久布乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 230202013.0, 'Academic_requirements': '应届生', 'College_majors': '大专及以上', 'Undergraduate_majors': '不限', 'Graduate_majors': '不限', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '综合管理类（A类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 47.0, 'unit': '日喀则市', 'Post': '昂仁县', 'Nature_position': '贡久布乡卫生院', 'Number': '事业单位', 'Graduation_time': 230202014.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '预防医学', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '医疗卫生类（E类）-公共卫生管理', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 48.0, 'unit': '日喀则市', 'Post': '昂仁县', 'Nature_position': '', 'Number': '事业单位', 'Graduation_time': 230202015.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '临床医学（西医）', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '医疗卫生类（E类）-西医临床', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 49.0, 'unit': '日喀则市', 'Post': '昂仁县', 'Nature_position': '孔隆乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 230202016.0, 'Academic_requirements': '不限', 'College_majors': '大专及以上', 'Undergraduate_majors': '不限', 'Graduate_majors': '不限', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '综合管理类（A类）', 'remark': '否', 'consultation': '仅限日喀则户籍或日喀则学籍考生报考'},
+
+
+ {'id': 50.0, 'unit': '日喀则市', 'Post': '昂仁县', 'Nature_position': '孔隆乡卫生院', 'Number': '事业单位', 'Graduation_time': 230202017.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '临床医学（西医）', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '医疗卫生类（E类）-西医临床', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 51.0, 'unit': '日喀则市', 'Post': '昂仁县', 'Nature_position': '', 'Number': '事业单位', 'Graduation_time': 230202018.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '藏医学', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '藏医药护理类（Z类）-藏医', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 52.0, 'unit': '日喀则市', 'Post': '昂仁县', 'Nature_position': '切热乡卫生院', 'Number': '事业单位', 'Graduation_time': 230202019.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '护理学类', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '医疗卫生类（E类）-护理', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 53.0, 'unit': '日喀则市', 'Post': '昂仁县', 'Nature_position': '秋窝乡卫生院', 'Number': '事业单位', 'Graduation_time': 230202020.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '护理学类', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '医疗卫生类（E类）-护理', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 54.0, 'unit': '日喀则市', 'Post': '昂仁县', 'Nature_position': '日吾其乡文化服务中心', 'Number': '事业单位', 'Graduation_time': 230202021.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '新闻传播学类', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '社会科学专技类（B类）', 'remark': '否', 'consultation': '仅限日喀则户籍或日喀则学籍考生报考'},
+
+
+ {'id': 55.0, 'unit': '日喀则市', 'Post': '昂仁县', 'Nature_position': '如萨乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 230202022.0, 'Academic_requirements': '应届生', 'College_majors': '大专及以上', 'Undergraduate_majors': '现代文秘', 'Graduate_majors': '汉语言文学、秘书学', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '综合管理类（A类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 56.0, 'unit': '日喀则市', 'Post': '昂仁县', 'Nature_position': '如萨乡卫生院', 'Number': '事业单位', 'Graduation_time': 230202023.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '护理学类', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '医疗卫生类（E类）-护理', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 57.0, 'unit': '日喀则市', 'Post': '昂仁县', 'Nature_position': '', 'Number': '事业单位', 'Graduation_time': 230202024.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '护理学类', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '医疗卫生类（E类）-护理', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 58.0, 'unit': '日喀则市', 'Post': '昂仁县', 'Nature_position': '', 'Number': '事业单位', 'Graduation_time': 230202025.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '临床医学（西医）、儿科学', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '医疗卫生类（E类）-西医临床', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 59.0, 'unit': '日喀则市', 'Post': '昂仁县', 'Nature_position': '宁果乡卫生院', 'Number': '事业单位', 'Graduation_time': 230202026.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '藏医学', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '藏医药护理类（Z类）-藏医', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 60.0, 'unit': '日喀则市', 'Post': '昂仁县', 'Nature_position': '', 'Number': '事业单位', 'Graduation_time': 230202027.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '临床医学（西医）、医学影像学', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '医疗卫生类（E类）-西医临床', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 61.0, 'unit': '日喀则市', 'Post': '昂仁县', 'Nature_position': '卡嘎镇农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 230202028.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '农学', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 62.0, 'unit': '日喀则市', 'Post': '昂仁县', 'Nature_position': '', 'Number': '事业单位', 'Graduation_time': 230202029.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '动物医学', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 63.0, 'unit': '日喀则市', 'Post': '白朗县', 'Nature_position': '教育教学研究室', 'Number': '事业单位', 'Graduation_time': 230203001.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '汉语言文学、秘书学', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '综合管理类（A类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 64.0, 'unit': '日喀则市', 'Post': '白朗县', 'Nature_position': '县卫生服务中心', 'Number': '事业单位', 'Graduation_time': 230203002.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '临床医学（西医）、麻醉学', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '医疗卫生类（E类）-西医临床', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 65.0, 'unit': '日喀则市', 'Post': '白朗县', 'Nature_position': '', 'Number': '事业单位', 'Graduation_time': 230203003.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '口腔医学', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '医疗卫生类（E类）-西医临床', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 66.0, 'unit': '日喀则市', 'Post': '白朗县', 'Nature_position': '嘎东镇农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 230203004.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '会计学、财务管理', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '社会科学专技类（B类）', 'remark': '否', 'consultation': '仅限日喀则户籍或日喀则学籍考生报考'},
+
+
+ {'id': 67.0, 'unit': '日喀则市', 'Post': '白朗县', 'Nature_position': '嘎东镇卫生院', 'Number': '事业单位', 'Graduation_time': 230203005.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '护理学类', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '医疗卫生类（E类）-护理', 'remark': '否', 'consultation': '仅限日喀则户籍或日喀则学籍考生报考'},
+
+
+ {'id': 68.0, 'unit': '日喀则市', 'Post': '白朗县', 'Nature_position': '洛江镇便民服务中心', 'Number': '事业单位', 'Graduation_time': 230203006.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '中国语言文学', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '综合管理类（A类）', 'remark': '否', 'consultation': '仅限日喀则户籍或日喀则学籍考生报考'},
+
+
+ {'id': 69.0, 'unit': '日喀则市', 'Post': '仁布县', 'Nature_position': '信访接待中心', 'Number': '事业单位', 'Graduation_time': 230204001.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '汉语言文学、秘书学', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '综合管理类（A类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 70.0, 'unit': '日喀则市', 'Post': '仁布县', 'Nature_position': '供销合作联合社', 'Number': '事业单位', 'Graduation_time': 230204002.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '电子商务类', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '社会科学专技类（B类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 71.0, 'unit': '日喀则市', 'Post': '仁布县', 'Nature_position': '县卫生服务中心', 'Number': '事业单位', 'Graduation_time': 230204003.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '临床医学（西医）、麻醉学', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '医疗卫生类（E类）-西医临床', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 72.0, 'unit': '日喀则市', 'Post': '仁布县', 'Nature_position': '', 'Number': '事业单位', 'Graduation_time': 230204004.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '药学', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '医疗卫生类（E类）-药剂', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 73.0, 'unit': '日喀则市', 'Post': '仁布县', 'Nature_position': '切洼乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 230204005.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '计算机类', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'consultation': '仅限服务期满且考核合格“三支一扶”人员报考'},
+
+
+ {'id': 74.0, 'unit': '日喀则市', 'Post': '仁布县', 'Nature_position': '', 'Number': '事业单位', 'Graduation_time': 230204006.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '不限', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '综合管理类（A类）', 'remark': '否', 'consultation': '仅限日喀则户籍或日喀则学籍考生报考'},
+
+
+ {'id': 75.0, 'unit': '日喀则市', 'Post': '仁布县', 'Nature_position': '切洼乡卫生院', 'Number': '事业单位', 'Graduation_time': 230204007.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '临床医学（西医）、医学影像学', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '医疗卫生类（E类）-西医临床', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 76.0, 'unit': '日喀则市', 'Post': '仁布县', 'Nature_position': '康雄乡卫生院', 'Number': '事业单位', 'Graduation_time': 230204008.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '护理学类', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '医疗卫生类（E类）-护理', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 77.0, 'unit': '日喀则市', 'Post': '仁布县', 'Nature_position': '帕当乡卫生院', 'Number': '事业单位', 'Graduation_time': 230204009.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '临床医学（西医）', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '医疗卫生类（E类）-西医临床', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 78.0, 'unit': '日喀则市', 'Post': '仁布县', 'Nature_position': '普松乡卫生院', 'Number': '事业单位', 'Graduation_time': 230204010.0, 'Academic_requirements': '应届生', 'College_majors': '大专及以上', 'Undergraduate_majors': '医学检验技术', 'Graduate_majors': '医学检验技术', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '医疗卫生类（E类）-医学技术', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 79.0, 'unit': '日喀则市', 'Post': '仁布县', 'Nature_position': '姆乡卫生院', 'Number': '事业单位', 'Graduation_time': 230204011.0, 'Academic_requirements': '不限', 'College_majors': '大专及以上', 'Undergraduate_majors': '藏医学', 'Graduate_majors': '藏医学', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '藏医药护理类（Z类）-藏医', 'remark': '否', 'consultation': '仅限日喀则户籍或日喀则学籍考生报考'},
+
+
+ {'id': 80.0, 'unit': '日喀则市', 'Post': '仁布县', 'Nature_position': '仁布乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 230204012.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '不限', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '综合管理类（A类）', 'remark': '否', 'consultation': '仅限日喀则户籍或日喀则学籍考生报考'},
+
+
+ {'id': 81.0, 'unit': '日喀则市', 'Post': '仁布县', 'Nature_position': '仁布乡卫生院', 'Number': '事业单位', 'Graduation_time': 230204013.0, 'Academic_requirements': '不限', 'College_majors': '大专及以上', 'Undergraduate_majors': '藏医学', 'Graduate_majors': '藏医学', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '藏医药护理类（Z类）-藏医', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 82.0, 'unit': '日喀则市', 'Post': '仁布县', 'Nature_position': '姆乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 230204014.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '会计学、财务管理', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '社会科学专技类（B类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 83.0, 'unit': '日喀则市', 'Post': '仁布县', 'Nature_position': '', 'Number': '事业单位', 'Graduation_time': 230204015.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '不限', 'political_landscape': '', 'Job_code': '', 'Examination': 2.0, 'interview': '综合管理类（A类）', 'remark': '否', 'consultation': '仅限日喀则户籍或日喀则学籍考生报考'},
+
+
+ {'id': 84.0, 'unit': '日喀则市', 'Post': '仁布县', 'Nature_position': '然巴乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 230204016.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '汉语言文学、秘书学', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '综合管理类（A类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 85.0, 'unit': '日喀则市', 'Post': '仁布县', 'Nature_position': '', 'Number': '事业单位', 'Graduation_time': 230204017.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '不限', 'political_landscape': '', 'Job_code': '', 'Examination': 3.0, 'interview': '综合管理类（A类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 86.0, 'unit': '日喀则市', 'Post': '仁布县', 'Nature_position': '康雄乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 230204018.0, 'Academic_requirements': '不限', 'College_majors': '大专及以上', 'Undergraduate_majors': '人力资源管理', 'Graduate_majors': '人力资源管理', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '综合管理类（A类）', 'remark': '否', 'consultation': '仅限日喀则户籍或日喀则学籍考生报考'},
+
+
+ {'id': 87.0, 'unit': '日喀则市', 'Post': '仁布县', 'Nature_position': '', 'Number': '事业单位', 'Graduation_time': 230204019.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '不限', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '综合管理类（A类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 88.0, 'unit': '日喀则市', 'Post': '仁布县', 'Nature_position': '普松乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 230204020.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '汉语言文学、秘书学', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '综合管理类（A类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 89.0, 'unit': '日喀则市', 'Post': '仁布县', 'Nature_position': '帕当乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 230204021.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '汉语言文学、秘书学', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '综合管理类（A类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 90.0, 'unit': '日喀则市', 'Post': '仁布县', 'Nature_position': '', 'Number': '事业单位', 'Graduation_time': 230204022.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '不限', 'political_landscape': '', 'Job_code': '', 'Examination': 2.0, 'interview': '综合管理类（A类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 91.0, 'unit': '日喀则市', 'Post': '仁布县', 'Nature_position': '查巴乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 230204023.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '电子信息类', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 92.0, 'unit': '日喀则市', 'Post': '仁布县', 'Nature_position': '德吉林镇便民服务中心', 'Number': '事业单位', 'Graduation_time': 230204024.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '不限', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '综合管理类（A类）', 'remark': '否', 'consultation': '仅限日喀则户籍或日喀则学籍考生报考'},
+
+
+ {'id': 93.0, 'unit': '日喀则市', 'Post': '萨嘎县', 'Nature_position': '县卫生服务中心', 'Number': '事业单位', 'Graduation_time': 230205001.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '临床医学（西医）', 'political_landscape': '', 'Job_code': '', 'Examination': 3.0, 'interview': '医疗卫生类（E类）-西医临床', 'remark': '否', 'consultation': '仅限日喀则市边境户籍考生报考'},
+
+
+ {'id': 94.0, 'unit': '日喀则市', 'Post': '萨嘎县', 'Nature_position': '达吉岭乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 230205002.0, 'Academic_requirements': '不限 ', 'College_majors': '大专及以上', 'Undergraduate_majors': '不限', 'Graduate_majors': '不限', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '综合管理类（A类）', 'remark': '否', 'consultation': '仅限日喀则户籍或日喀则学籍考生报考'},
+
+
+ {'id': 95.0, 'unit': '日喀则市', 'Post': '萨嘎县', 'Nature_position': '拉藏乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 230205003.0, 'Academic_requirements': '不限 ', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '财政学', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '社会科学专技类（B类）', 'remark': '否', 'consultation': '仅限日喀则户籍或日喀则学籍考生报考'},
+
+
+ {'id': 96.0, 'unit': '日喀则市', 'Post': '萨嘎县', 'Nature_position': '旦嘎乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 230205004.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '不限', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '综合管理类（A类）', 'remark': '否', 'consultation': '仅限日喀则户籍或日喀则学籍考生报考'},
+
+
+ {'id': 97.0, 'unit': '日喀则市', 'Post': '萨嘎县', 'Nature_position': '旦嘎乡文化服务中心', 'Number': '事业单位', 'Graduation_time': 230205005.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '文化遗产、非物质文化遗产保护', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '社会科学专技类（B类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 98.0, 'unit': '日喀则市', 'Post': '萨嘎县', 'Nature_position': '昌果乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 230205006.0, 'Academic_requirements': '不限 ', 'College_majors': '大专及以上', 'Undergraduate_majors': '不限', 'Graduate_majors': '不限', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '综合管理类（A类）', 'remark': '否', 'consultation': '仅限日喀则户籍或日喀则学籍考生报考'},
+
+
+ {'id': 99.0, 'unit': '日喀则市', 'Post': '谢通门县', 'Nature_position': '文化广播影视服务站', 'Number': '事业单位', 'Graduation_time': 230206001.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '文化遗产、非物质文化遗产保护', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '社会科学专技类（B类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 100.0, 'unit': '日喀则市', 'Post': '谢通门县', 'Nature_position': '机构编制委员会办公室电子政务中心', 'Number': '事业单位', 'Graduation_time': 230206002.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '计算机类', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 101.0, 'unit': '日喀则市', 'Post': '谢通门县', 'Nature_position': '切琼乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 230206003.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '会计学、财务管理', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '社会科学专技类（B类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 102.0, 'unit': '日喀则市', 'Post': '谢通门县', 'Nature_position': '切琼乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 230206004.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '动物医学类', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 103.0, 'unit': '日喀则市', 'Post': '谢通门县', 'Nature_position': '', 'Number': '事业单位', 'Graduation_time': 230206005.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '农业工程类', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 104.0, 'unit': '日喀则市', 'Post': '谢通门县', 'Nature_position': '切琼乡卫生院', 'Number': '事业单位', 'Graduation_time': 230206006.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '临床医学类', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '医疗卫生类（E类）-西医临床', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 105.0, 'unit': '日喀则市', 'Post': '谢通门县', 'Nature_position': '达木夏乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 230206007.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '公共管理类', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '综合管理类（A类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 106.0, 'unit': '日喀则市', 'Post': '谢通门县', 'Nature_position': '达木夏乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 230206008.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '动物医学类', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 107.0, 'unit': '日喀则市', 'Post': '谢通门县', 'Nature_position': '', 'Number': '事业单位', 'Graduation_time': 230206009.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '农业工程类', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 108.0, 'unit': '日喀则市', 'Post': '谢通门县', 'Nature_position': '达木夏乡文化服务中心', 'Number': '事业单位', 'Graduation_time': 230206010.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '播音与主持艺术、戏剧影视导演、广播电视编导', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '社会科学专技类（B类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 109.0, 'unit': '日喀则市', 'Post': '谢通门县', 'Nature_position': '列巴乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 230206011.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '动物医学类', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'consultation': '仅限日喀则户籍或日喀则学籍考生报考'},
+
+
+ {'id': 110.0, 'unit': '日喀则市', 'Post': '谢通门县', 'Nature_position': '列巴乡卫生院', 'Number': '事业单位', 'Graduation_time': 230206012.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '临床医学（西医）', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '医疗卫生类（E类）-西医临床', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 111.0, 'unit': '日喀则市', 'Post': '谢通门县', 'Nature_position': '南木切乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 230206013.0, 'Academic_requirements': '不限', 'College_majors': '大专及以上', 'Undergraduate_majors': '不限', 'Graduate_majors': '不限', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '综合管理类（A类）', 'remark': '否', 'consultation': '仅限日喀则户籍或日喀则学籍残疾人考生报考'},
+
+
+ {'id': 112.0, 'unit': '日喀则市', 'Post': '谢通门县', 'Nature_position': '南木切乡文化服务中心', 'Number': '事业单位', 'Graduation_time': 230206014.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '新闻传播学类', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '社会科学专技类（B类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 113.0, 'unit': '日喀则市', 'Post': '谢通门县', 'Nature_position': '南木切乡卫生院', 'Number': '事业单位', 'Graduation_time': 230206015.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '临床医学（西医）', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '医疗卫生类（E类）-西医临床', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 114.0, 'unit': '日喀则市', 'Post': '谢通门县', 'Nature_position': '纳当乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 230206016.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '中国语言文学', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '综合管理类（A类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 115.0, 'unit': '日喀则市', 'Post': '谢通门县', 'Nature_position': '纳当乡文化服务中心', 'Number': '事业单位', 'Graduation_time': 230206017.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '不限', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '综合管理类（A类）', 'remark': '否', 'consultation': '仅限日喀则户籍或日喀则学籍考生报考'},
+
+
+ {'id': 116.0, 'unit': '日喀则市', 'Post': '谢通门县', 'Nature_position': '美巴切勤乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 230206018.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '法学类、社会学类', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '综合管理类（A类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 117.0, 'unit': '日喀则市', 'Post': '谢通门县', 'Nature_position': '美巴切勤乡文化服务中心', 'Number': '事业单位', 'Graduation_time': 230206019.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '新闻传播学类', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '社会科学专技类（B类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 118.0, 'unit': '日喀则市', 'Post': '谢通门县', 'Nature_position': '美巴切勤乡卫生院', 'Number': '事业单位', 'Graduation_time': 230206020.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '临床医学（西医）', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '医疗卫生类（E类）-西医临床', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 119.0, 'unit': '日喀则市', 'Post': '谢通门县', 'Nature_position': '孜许乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 230206021.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '法学类、社会学类', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '综合管理类（A类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 120.0, 'unit': '日喀则市', 'Post': '谢通门县', 'Nature_position': '孜许乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 230206022.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '动物医学类', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 121.0, 'unit': '日喀则市', 'Post': '谢通门县', 'Nature_position': '孜许乡卫生院', 'Number': '事业单位', 'Graduation_time': 230206023.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '临床医学（西医）', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '医疗卫生类（E类）-西医临床', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 122.0, 'unit': '日喀则市', 'Post': '谢通门县', 'Nature_position': '春哲乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 230206024.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '工商管理类、公共管理类', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '综合管理类（A类）', 'remark': '否', 'consultation': '仅限日喀则户籍或日喀则学籍考生报考'},
+
+
+ {'id': 123.0, 'unit': '日喀则市', 'Post': '谢通门县', 'Nature_position': '春哲乡文化服务中心', 'Number': '事业单位', 'Graduation_time': 230206025.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '新闻传播学类', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '社会科学专技类（B类）', 'remark': '否', 'consultation': '仅限日喀则户籍或日喀则学籍考生报考'},
+
+
+ {'id': 124.0, 'unit': '日喀则市', 'Post': '谢通门县', 'Nature_position': '措布西乡文化服务中心', 'Number': '事业单位', 'Graduation_time': 230206026.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '中国语言文学', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '综合管理类（A类）', 'remark': '否', 'consultation': '仅限日喀则户籍或日喀则学籍考生报考'},
+
+
+ {'id': 125.0, 'unit': '日喀则市', 'Post': '谢通门县', 'Nature_position': '青都乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 230206027.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '动物医学类', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 126.0, 'unit': '日喀则市', 'Post': '谢通门县', 'Nature_position': '青都乡文化服务中心', 'Number': '事业单位', 'Graduation_time': 230206028.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '文物保护技术', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '社会科学专技类（B类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 127.0, 'unit': '日喀则市', 'Post': '谢通门县', 'Nature_position': '措布西乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 230206029.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '农业工程类', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 128.0, 'unit': '日喀则市', 'Post': '谢通门县', 'Nature_position': '措布西乡卫生院', 'Number': '事业单位', 'Graduation_time': 230206030.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '临床医学类', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '医疗卫生类（E类）-西医临床', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 129.0, 'unit': '日喀则市', 'Post': '谢通门县', 'Nature_position': '达那普乡文化服务中心', 'Number': '事业单位', 'Graduation_time': 230206031.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '不限', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '综合管理类（A类）', 'remark': '否', 'consultation': '仅限日喀则户籍或日喀则学籍考生报考'},
+
+
+ {'id': 130.0, 'unit': '日喀则市', 'Post': '谢通门县', 'Nature_position': '达那普乡卫生院', 'Number': '事业单位', 'Graduation_time': 230206032.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '临床医学（西医）', 'political_landscape': '', 'Job_code': '', 'Examination': 2.0, 'interview': '医疗卫生类（E类）-西医临床', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 131.0, 'unit': '日喀则市', 'Post': '谢通门县', 'Nature_position': '娘热乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 230206033.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '公共管理类', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '综合管理类（A类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 132.0, 'unit': '日喀则市', 'Post': '谢通门县', 'Nature_position': '娘热乡卫生院', 'Number': '事业单位', 'Graduation_time': 230206034.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '临床医学（西医）', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '医疗卫生类（E类）-西医临床', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 133.0, 'unit': '日喀则市', 'Post': '谢通门县', 'Nature_position': '荣玛乡卫生院', 'Number': '事业单位', 'Graduation_time': 230206035.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '临床医学（西医）', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '医疗卫生类（E类）-西医临床', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 134.0, 'unit': '日喀则市', 'Post': '江孜县', 'Nature_position': '县卫生服务中心', 'Number': '事业单位', 'Graduation_time': 230207001.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '医学检验技术', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '医疗卫生类（E类）-医学技术', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 135.0, 'unit': '日喀则市', 'Post': '江孜县', 'Nature_position': '', 'Number': '事业单位', 'Graduation_time': 230207001.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '药学', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '医疗卫生类（E类）-药剂', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 136.0, 'unit': '日喀则市', 'Post': '江孜县', 'Nature_position': '', 'Number': '事业单位', 'Graduation_time': 230207001.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '临床医学（西医）、放射医学', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '医疗卫生类（E类）-西医临床', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 137.0, 'unit': '日喀则市', 'Post': '江孜县', 'Nature_position': '', 'Number': '事业单位', 'Graduation_time': 230207001.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '临床医学（西医）、麻醉学', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '医疗卫生类（E类）-西医临床', 'remark': '否', 'consultation': '仅限日喀则户籍或日喀则学籍考生报考'},
+
+
+ {'id': 138.0, 'unit': '日喀则市', 'Post': '江孜县', 'Nature_position': '', 'Number': '事业单位', 'Graduation_time': 230207001.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '临床医学（西医）', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '医疗卫生类（E类）-西医临床', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 139.0, 'unit': '日喀则市', 'Post': '江孜县', 'Nature_position': '卡堆乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 230207001.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '农学', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'consultation': '仅限日喀则户籍或日喀则学籍考生报考'},
+
+
+ {'id': 140.0, 'unit': '日喀则市', 'Post': '江孜县', 'Nature_position': '', 'Number': '事业单位', 'Graduation_time': 230207001.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '园艺、园艺教育', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 141.0, 'unit': '日喀则市', 'Post': '江孜县', 'Nature_position': '藏改乡文化服务中心', 'Number': '事业单位', 'Graduation_time': 230207001.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '汉语言文学、秘书学', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '综合管理类（A类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 142.0, 'unit': '日喀则市', 'Post': '江孜县', 'Nature_position': '', 'Number': '事业单位', 'Graduation_time': 230207001.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '文化产业管理', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '综合管理类（A类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 143.0, 'unit': '日喀则市', 'Post': '江孜县', 'Nature_position': '藏改乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 230207001.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '动物医学', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 144.0, 'unit': '日喀则市', 'Post': '江孜县', 'Nature_position': '龙马乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 230207001.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '农学', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'consultation': '仅限日喀则户籍或日喀则学籍考生报考'},
+
+
+ {'id': 145.0, 'unit': '日喀则市', 'Post': '江孜县', 'Nature_position': '', 'Number': '事业单位', 'Graduation_time': 230207001.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '经济统计学', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '社会科学专技类（B类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 146.0, 'unit': '日喀则市', 'Post': '江孜县', 'Nature_position': '紫金乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 230207001.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '动物医学', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'consultation': '仅限日喀则户籍或日喀则学籍考生报考'},
+
+
+ {'id': 147.0, 'unit': '日喀则市', 'Post': '江孜县', 'Nature_position': '', 'Number': '事业单位', 'Graduation_time': 230207001.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '农业机械化及其自动化', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 148.0, 'unit': '日喀则市', 'Post': '江孜县', 'Nature_position': '年堆乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 230207001.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '农药化肥', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 149.0, 'unit': '日喀则市', 'Post': '江孜县', 'Nature_position': '', 'Number': '事业单位', 'Graduation_time': 230207001.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '动物医学', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 150.0, 'unit': '日喀则市', 'Post': '江孜县', 'Nature_position': '', 'Number': '事业单位', 'Graduation_time': 230207001.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '农村区域发展', 'political_landscape': '', 'Job_code': '', 'Examination': 2.0, 'interview': '综合管理类（A类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 151.0, 'unit': '日喀则市', 'Post': '江孜县', 'Nature_position': '纳如乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 230207001.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '农业资源与环境', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 152.0, 'unit': '日喀则市', 'Post': '江孜县', 'Nature_position': '', 'Number': '事业单位', 'Graduation_time': 230207001.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '动物生产类', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 153.0, 'unit': '日喀则市', 'Post': '江孜县', 'Nature_position': '金嘎乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 230207001.0, 'Academic_requirements': '不限', 'College_majors': '大专及以上', 'Undergraduate_majors': '不限', 'Graduate_majors': '不限', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '综合管理类（A类）', 'remark': '否', 'consultation': '仅限日喀则户籍或日喀则学籍考生报考'},
+
+
+ {'id': 154.0, 'unit': '日喀则市', 'Post': '江孜县', 'Nature_position': '加克西乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 230207001.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '中国语言文学', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '综合管理类（A类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 155.0, 'unit': '日喀则市', 'Post': '江孜县', 'Nature_position': '车仁乡卫生院', 'Number': '事业单位', 'Graduation_time': 230207001.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '临床医学（西医）', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '医疗卫生类（E类）-西医临床', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 156.0, 'unit': '日喀则市', 'Post': '江孜县', 'Nature_position': '日朗乡卫生院', 'Number': '事业单位', 'Graduation_time': 230207001.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '临床医学（西医）', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '医疗卫生类（E类）-西医临床', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 157.0, 'unit': '日喀则市', 'Post': '江孜县', 'Nature_position': '热龙乡卫生院', 'Number': '事业单位', 'Graduation_time': 230207001.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '临床医学（西医）', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '医疗卫生类（E类）-西医临床', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 158.0, 'unit': '日喀则市', 'Post': '江孜县', 'Nature_position': '卡麦乡卫生院', 'Number': '事业单位', 'Graduation_time': 230207001.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '临床医学（西医）', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '医疗卫生类（E类）-西医临床', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 159.0, 'unit': '日喀则市', 'Post': '江孜县', 'Nature_position': '卡堆乡卫生院', 'Number': '事业单位', 'Graduation_time': 230207001.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '临床医学（西医）、放射医学', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '医疗卫生类（E类）-西医临床', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 160.0, 'unit': '日喀则市', 'Post': '江孜县', 'Nature_position': '加克西乡卫生院', 'Number': '事业单位', 'Graduation_time': 230207001.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '临床医学（西医）', 'political_landscape': '', 'Job_code': '', 'Examination': 2.0, 'interview': '医疗卫生类（E类）-西医临床', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 161.0, 'unit': '日喀则市', 'Post': '江孜县', 'Nature_position': '纳如乡卫生院', 'Number': '事业单位', 'Graduation_time': 230207001.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '临床医学（西医）', 'political_landscape': '', 'Job_code': '', 'Examination': 2.0, 'interview': '医疗卫生类（E类）-西医临床', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 162.0, 'unit': '日喀则市', 'Post': '江孜县', 'Nature_position': '藏改乡卫生院', 'Number': '事业单位', 'Graduation_time': 230207001.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '临床医学（西医）', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '医疗卫生类（E类）-西医临床', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 163.0, 'unit': '日喀则市', 'Post': '仲巴县', 'Nature_position': '机构编制委员会办公室电子政务中心', 'Number': '事业单位', 'Graduation_time': 230208001.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '计算机类', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 164.0, 'unit': '日喀则市', 'Post': '仲巴县', 'Nature_position': '县委党校', 'Number': '事业单位', 'Graduation_time': 230208002.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '马克思主义理论', 'political_landscape': '', 'Job_code': '中共党员\n（含预备党员）', 'Examination': 1.0, 'interview': '综合管理类（A类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 165.0, 'unit': '日喀则市', 'Post': '仲巴县', 'Nature_position': '', 'Number': '事业单位', 'Graduation_time': 230208003.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '经济学', 'political_landscape': '', 'Job_code': '中共党员\n（含预备党员）', 'Examination': 1.0, 'interview': '社会科学专技类（B类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 166.0, 'unit': '日喀则市', 'Post': '仲巴县', 'Nature_position': '里孜口岸管理委员会企业服务和信息中心', 'Number': '事业单位', 'Graduation_time': 230208004.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '国际事务与国际关系', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '综合管理类（A类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 167.0, 'unit': '日喀则市', 'Post': '仲巴县', 'Nature_position': '', 'Number': '事业单位', 'Graduation_time': 230208005.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '尼泊尔语', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '综合管理类（A类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 168.0, 'unit': '日喀则市', 'Post': '仲巴县', 'Nature_position': '', 'Number': '事业单位', 'Graduation_time': 230208006.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '工商管理', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '综合管理类（A类）', 'remark': '否', 'consultation': '仅限日喀则户籍或日喀则学籍考生报考'},
+
+
+ {'id': 169.0, 'unit': '日喀则市', 'Post': '仲巴县', 'Nature_position': '', 'Number': '事业单位', 'Graduation_time': 230208007.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '工商管理', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '综合管理类（A类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 170.0, 'unit': '日喀则市', 'Post': '仲巴县', 'Nature_position': '县卫生服务中心', 'Number': '事业单位', 'Graduation_time': 230208008.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '预防医学', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '医疗卫生类（E类）-公共卫生管理', 'remark': '否', 'consultation': '仅限日喀则市边境户籍考生报考'},
+
+
+ {'id': 171.0, 'unit': '日喀则市', 'Post': '仲巴县', 'Nature_position': '', 'Number': '事业单位', 'Graduation_time': 230208009.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '临床医学（西医）、医学影像学', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '医疗卫生类（E类）-西医临床', 'remark': '否', 'consultation': '仅限日喀则市边境户籍考生报考'},
+
+
+ {'id': 172.0, 'unit': '日喀则市', 'Post': '仲巴县', 'Nature_position': '应急救援中心', 'Number': '事业单位', 'Graduation_time': 230208010.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '防灾减灾科学与工程', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 173.0, 'unit': '日喀则市', 'Post': '仲巴县', 'Nature_position': '文化广播影视服务站', 'Number': '事业单位', 'Graduation_time': 230208011.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '舞蹈编导、舞蹈教育', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '社会科学专技类（B类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 174.0, 'unit': '日喀则市', 'Post': '仲巴县', 'Nature_position': '', 'Number': '事业单位', 'Graduation_time': 230208012.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '文化遗产、非物质文化遗产保护', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '社会科学专技类（B类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 175.0, 'unit': '日喀则市', 'Post': '仲巴县', 'Nature_position': '偏吉乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 230208013.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '会计学、财务管理', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '社会科学专技类（B类）', 'remark': '否', 'consultation': '仅限日喀则户籍或日喀则学籍考生报考'},
+
+
+ {'id': 176.0, 'unit': '日喀则市', 'Post': '仲巴县', 'Nature_position': '纳久乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 230208014.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '会计学、财务管理', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '社会科学专技类（B类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 177.0, 'unit': '日喀则市', 'Post': '仲巴县', 'Nature_position': '吉拉乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 230208015.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '汉语言文学、秘书学', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '综合管理类（A类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 178.0, 'unit': '日喀则市', 'Post': '仲巴县', 'Nature_position': '吉拉乡卫生院', 'Number': '事业单位', 'Graduation_time': 230208016.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '临床医学（西医）、放射医学', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '医疗卫生类（E类）-西医临床', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 179.0, 'unit': '日喀则市', 'Post': '仲巴县', 'Nature_position': '', 'Number': '事业单位', 'Graduation_time': 230208017.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '医学检验技术', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '医疗卫生类（E类）-医学技术', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 180.0, 'unit': '日喀则市', 'Post': '仲巴县', 'Nature_position': '帕羊镇便民服务中心', 'Number': '事业单位', 'Graduation_time': 230208018.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '汉语言文学、秘书学', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '综合管理类（A类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 181.0, 'unit': '日喀则市', 'Post': '仲巴县', 'Nature_position': '霍尔巴乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 230208019.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '汉语言文学、秘书学', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '综合管理类（A类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 182.0, 'unit': '日喀则市', 'Post': '仲巴县', 'Nature_position': '拉让乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 230208020.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '汉语言文学、秘书学', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '综合管理类（A类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 183.0, 'unit': '日喀则市', 'Post': '仲巴县', 'Nature_position': '拉让乡卫生院', 'Number': '事业单位', 'Graduation_time': 230208021.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '预防医学', 'political_landscape': '', 'Job_code': '', 'Examination': 2.0, 'interview': '医疗卫生类（E类）-公共卫生管理', 'remark': '否', 'consultation': '仅限日喀则户籍或日喀则学籍考生报考'},
+
+
+ {'id': 184.0, 'unit': '日喀则市', 'Post': '仲巴县', 'Nature_position': '琼果乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 230208022.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '汉语言文学、秘书学', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '综合管理类（A类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 185.0, 'unit': '日喀则市', 'Post': '仲巴县', 'Nature_position': '布多乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 230208023.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '会计学、财务管理', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '社会科学专技类（B类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 186.0, 'unit': '日喀则市', 'Post': '仲巴县', 'Nature_position': '隆嘎尔乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 230208024.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '农学', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'consultation': '仅限日喀则户籍或日喀则学籍考生报考'},
+
+
+ {'id': 187.0, 'unit': '日喀则市', 'Post': '仲巴县', 'Nature_position': '吉玛乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 230208025.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '会计学、财务管理', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '社会科学专技类（B类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 188.0, 'unit': '日喀则市', 'Post': '仲巴县', 'Nature_position': '帕江乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 230208026.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '汉语言文学、秘书学', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '综合管理类（A类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 189.0, 'unit': '日喀则市', 'Post': '仲巴县', 'Nature_position': '仁多乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 230208027.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '会计学、财务管理', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '社会科学专技类（B类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 190.0, 'unit': '日喀则市', 'Post': '仲巴县', 'Nature_position': '仁多乡卫生院', 'Number': '事业单位', 'Graduation_time': 230208028.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '临床医学（西医）、儿科学', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '医疗卫生类（E类）-西医临床', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 191.0, 'unit': '日喀则市', 'Post': '仲巴县', 'Nature_position': '', 'Number': '事业单位', 'Graduation_time': 230208029.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '护理学类', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '医疗卫生类（E类）-护理', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 192.0, 'unit': '日喀则市', 'Post': '桑珠孜区', 'Nature_position': '林业和草原技术服务中心', 'Number': '事业单位', 'Graduation_time': 230209001.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '林学类', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'consultation': '仅限日喀则户籍或日喀则学籍考生报考'},
+
+
+ {'id': 193.0, 'unit': '日喀则市', 'Post': '桑珠孜区', 'Nature_position': '联乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 230209002.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '林学类', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 194.0, 'unit': '日喀则市', 'Post': '桑珠孜区', 'Nature_position': '', 'Number': '事业单位', 'Graduation_time': 230209003.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '农学', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 195.0, 'unit': '日喀则市', 'Post': '桑珠孜区', 'Nature_position': '联乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 230209004.0, 'Academic_requirements': '应届生', 'College_majors': '大专及以上', 'Undergraduate_majors': '统计与会计核算', 'Graduate_majors': '会计学、财务管理', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '社会科学专技类（B类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 196.0, 'unit': '日喀则市', 'Post': '桑珠孜区', 'Nature_position': '联乡卫生院', 'Number': '事业单位', 'Graduation_time': 230209005.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '临床医学类（西医）', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '医疗卫生类（E类）-西医临床', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 197.0, 'unit': '日喀则市', 'Post': '桑珠孜区', 'Nature_position': '纳尔乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 230209006.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '动物医学', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 198.0, 'unit': '日喀则市', 'Post': '桑珠孜区', 'Nature_position': '', 'Number': '事业单位', 'Graduation_time': 230209007.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '动物药学', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 199.0, 'unit': '日喀则市', 'Post': '桑珠孜区', 'Nature_position': '纳尔乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 230209008.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '法学', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '综合管理类（A类）', 'remark': '否', 'consultation': '仅限日喀则户籍或日喀则学籍考生报考'},
+
+
+ {'id': 200.0, 'unit': '日喀则市', 'Post': '桑珠孜区', 'Nature_position': '纳尔乡卫生院', 'Number': '事业单位', 'Graduation_time': 230209009.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '临床医学类（西医）', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '医疗卫生类（E类）-西医临床', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 201.0, 'unit': '日喀则市', 'Post': '桑珠孜区', 'Nature_position': '曲布雄乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 230209010.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '社会学类', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '综合管理类（A类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 202.0, 'unit': '日喀则市', 'Post': '桑珠孜区', 'Nature_position': '曲布雄乡卫生院', 'Number': '事业单位', 'Graduation_time': 230209011.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '妇幼保健医学', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '医疗卫生类（E类）-公共卫生管理', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 203.0, 'unit': '日喀则市', 'Post': '桑珠孜区', 'Nature_position': '聂日雄乡卫生院', 'Number': '事业单位', 'Graduation_time': 230209012.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '预防医学', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '医疗卫生类（E类）-公共卫生管理', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 204.0, 'unit': '日喀则市', 'Post': '桑珠孜区', 'Nature_position': '江当乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 230209013.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '社会学类', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '综合管理类（A类）', 'remark': '否', 'consultation': '仅限日喀则户籍或日喀则学籍考生报考'},
+
+
+ {'id': 205.0, 'unit': '日喀则市', 'Post': '桑珠孜区', 'Nature_position': '江当乡卫生院', 'Number': '事业单位', 'Graduation_time': 230209014.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '医学检验技术', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '医疗卫生类（E类）-医学技术', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 206.0, 'unit': '日喀则市', 'Post': '桑珠孜区', 'Nature_position': '年木乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 230209015.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '社会学类', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '综合管理类（A类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 207.0, 'unit': '日喀则市', 'Post': '桑珠孜区', 'Nature_position': '年木乡卫生院', 'Number': '事业单位', 'Graduation_time': 230209016.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '临床医学（西医）', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '医疗卫生类（E类）-西医临床', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 208.0, 'unit': '日喀则市', 'Post': '桑珠孜区', 'Nature_position': '年木乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 230209017.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '动物医学', 'political_landscape': '', 'Job_code': '', 'Examination': 2.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 209.0, 'unit': '日喀则市', 'Post': '桑珠孜区', 'Nature_position': '曲美乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 230209018.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '动物药学', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 210.0, 'unit': '日喀则市', 'Post': '桑珠孜区', 'Nature_position': '曲美乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 230209019.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '会计学、财务管理', 'political_landscape': '', 'Job_code': '', 'Examination': 2.0, 'interview': '社会科学专技类（B类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 211.0, 'unit': '日喀则市', 'Post': '桑珠孜区', 'Nature_position': '曲美乡卫生院', 'Number': '事业单位', 'Graduation_time': 230209020.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '预防医学', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '医疗卫生类（E类）-公共卫生管理', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 212.0, 'unit': '日喀则市', 'Post': '桑珠孜区', 'Nature_position': '边雄乡卫生院', 'Number': '事业单位', 'Graduation_time': 230209021.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '临床医学（西医）', 'political_landscape': '', 'Job_code': '', 'Examination': 2.0, 'interview': '医疗卫生类（E类）-西医临床', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 213.0, 'unit': '日喀则市', 'Post': '桑珠孜区', 'Nature_position': '', 'Number': '事业单位', 'Graduation_time': 230209022.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '基础医学类', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '医疗卫生类（E类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 214.0, 'unit': '日喀则市', 'Post': '桑珠孜区', 'Nature_position': '东嘎乡卫生院', 'Number': '事业单位', 'Graduation_time': 230209023.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '临床医学（西医）', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '医疗卫生类（E类）-西医临床', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 215.0, 'unit': '日喀则市', 'Post': '桑珠孜区', 'Nature_position': '甲措雄乡卫生院', 'Number': '事业单位', 'Graduation_time': 230209024.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '预防医学', 'political_landscape': '', 'Job_code': '', 'Examination': 2.0, 'interview': '医疗卫生类（E类）-公共卫生管理', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 216.0, 'unit': '日喀则市', 'Post': '桑珠孜区', 'Nature_position': '江当乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 230209025.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '动物医学', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 217.0, 'unit': '日喀则市', 'Post': '桑珠孜区', 'Nature_position': '边雄乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 230209026.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '社会学类', 'political_landscape': '', 'Job_code': '中共党员\n（含预备党员）', 'Examination': 2.0, 'interview': '综合管理类（A类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 218.0, 'unit': '日喀则市', 'Post': '桑珠孜区', 'Nature_position': '城南街道办事处综治中心', 'Number': '事业单位', 'Graduation_time': 230209027.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '社区矫正、监狱学', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '综合管理类（A类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 219.0, 'unit': '日喀则市', 'Post': '桑珠孜区', 'Nature_position': '', 'Number': '事业单位', 'Graduation_time': 230209028.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '法学类', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '综合管理类（A类）', 'remark': '否', 'consultation': '仅限日喀则户籍或日喀则学籍考生报考'},
+
+
+ {'id': 220.0, 'unit': '日喀则市', 'Post': '桑珠孜区', 'Nature_position': '城东街道办事处综治中心', 'Number': '事业单位', 'Graduation_time': 230209029.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '社区矫正、监狱学', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '综合管理类（A类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 221.0, 'unit': '日喀则市', 'Post': '桑珠孜区', 'Nature_position': '城东街道办事处卫生服务中心', 'Number': '事业单位', 'Graduation_time': 230209030.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '预防医学', 'political_landscape': '', 'Job_code': '', 'Examination': 2.0, 'interview': '医疗卫生类（E类）-公共卫生管理', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 222.0, 'unit': '日喀则市', 'Post': '桑珠孜区', 'Nature_position': '城西街道办事处社区服务中心', 'Number': '事业单位', 'Graduation_time': 230209031.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '社会学类', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '综合管理类（A类）', 'remark': '否', 'consultation': '仅限日喀则户籍或日喀则学籍考生报考'},
+
+
+ {'id': 223.0, 'unit': '日喀则市', 'Post': '桑珠孜区', 'Nature_position': '城西街道办事处卫生服务中心', 'Number': '事业单位', 'Graduation_time': 230209032.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '临床医学（西医）', 'political_landscape': '', 'Job_code': '', 'Examination': 2.0, 'interview': '医疗卫生类（E类）-西医临床', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 224.0, 'unit': '日喀则市', 'Post': '岗巴县', 'Nature_position': '县委党校', 'Number': '事业单位', 'Graduation_time': 230210001.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '马克思主义理论、哲学类', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '综合管理类（A类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 225.0, 'unit': '日喀则市', 'Post': '岗巴县', 'Nature_position': '县卫生服务中心', 'Number': '事业单位', 'Graduation_time': 230210002.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '临床医学（西医）', 'political_landscape': '', 'Job_code': '', 'Examination': 3.0, 'interview': '医疗卫生类（E类）-西医临床', 'remark': '否', 'consultation': '仅限日喀则户籍或日喀则学籍考生报考'},
+
+
+ {'id': 226.0, 'unit': '日喀则市', 'Post': '岗巴县', 'Nature_position': '', 'Number': '事业单位', 'Graduation_time': 230210003.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '会计学、财务管理', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '社会科学专技类（B类）', 'remark': '否', 'consultation': '仅限日喀则户籍或日喀则学籍考生报考'},
+
+
+ {'id': 227.0, 'unit': '日喀则市', 'Post': '岗巴县', 'Nature_position': '', 'Number': '事业单位', 'Graduation_time': 230210004.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '公共卫生与预防医学类', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '医疗卫生类（E类）-公共卫生管理', 'remark': '否', 'consultation': '仅限日喀则市边境户籍考生报考'},
+
+
+ {'id': 228.0, 'unit': '日喀则市', 'Post': '岗巴县', 'Nature_position': '教育教学研究室', 'Number': '事业单位', 'Graduation_time': 230210005.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '小学教育', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '社会科学专技类（B类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 229.0, 'unit': '日喀则市', 'Post': '吉隆县', 'Nature_position': '吉隆镇农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 230211001.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '植物保护、植物科学与技术', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'consultation': '仅限日喀则市边境户籍考生报考'},
+
+
+ {'id': 230.0, 'unit': '日喀则市', 'Post': '吉隆县', 'Nature_position': '萨勒乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 230211002.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '农学', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'consultation': '仅限日喀则户籍或日喀则学籍考生报考'},
+
+
+ {'id': 231.0, 'unit': '日喀则市', 'Post': '吉隆县', 'Nature_position': '', 'Number': '事业单位', 'Graduation_time': 230211003.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '动物医学类', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'consultation': '仅限日喀则市边境户籍考生报考'},
+
+
+ {'id': 232.0, 'unit': '日喀则市', 'Post': '吉隆县', 'Nature_position': '萨勒乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 230211004.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '会计学、财务管理', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '社会科学专技类（B类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 233.0, 'unit': '日喀则市', 'Post': '吉隆县', 'Nature_position': '', 'Number': '事业单位', 'Graduation_time': 230211005.0, 'Academic_requirements': '不限', 'College_majors': '大专及以上', 'Undergraduate_majors': '不限', 'Graduate_majors': '不限', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '综合管理类（A类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 234.0, 'unit': '日喀则市', 'Post': '吉隆县', 'Nature_position': '萨勒乡卫生院', 'Number': '事业单位', 'Graduation_time': 230211006.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '护理学类', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '医疗卫生类（E类）-护理', 'remark': '否', 'consultation': '仅限日喀则市边境户籍考生报考'},
+
+
+ {'id': 235.0, 'unit': '日喀则市', 'Post': '吉隆县', 'Nature_position': '', 'Number': '事业单位', 'Graduation_time': 230211007.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '预防医学', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '医疗卫生类（E类）-公共卫生管理', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 236.0, 'unit': '日喀则市', 'Post': '吉隆县', 'Nature_position': '贡当乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 230211008.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '不限', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '综合管理类（A类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 237.0, 'unit': '日喀则市', 'Post': '吉隆县', 'Nature_position': '', 'Number': '事业单位', 'Graduation_time': 230211009.0, 'Academic_requirements': '不限', 'College_majors': '大专及以上', 'Undergraduate_majors': '不限', 'Graduate_majors': '不限', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '综合管理类（A类）', 'remark': '否', 'consultation': '仅限日喀则户籍或日喀则学籍考生报考'},
+
+
+ {'id': 238.0, 'unit': '日喀则市', 'Post': '吉隆县', 'Nature_position': '贡当乡卫生院', 'Number': '事业单位', 'Graduation_time': 230211010.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '公共卫生与预防医学类', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '医疗卫生类（E类）-公共卫生管理', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 239.0, 'unit': '日喀则市', 'Post': '吉隆县', 'Nature_position': '差那乡文化服务中心', 'Number': '事业单位', 'Graduation_time': 230211011.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '文化遗产、非物质文化遗产保护', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '社会科学专技类（B类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 240.0, 'unit': '日喀则市', 'Post': '吉隆县', 'Nature_position': '', 'Number': '事业单位', 'Graduation_time': 230211012.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '中国语言文学', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '综合管理类（A类）', 'remark': '否', 'consultation': '仅限日喀则户籍或日喀则学籍考生报考'},
+
+
+ {'id': 241.0, 'unit': '日喀则市', 'Post': '吉隆县', 'Nature_position': '差那乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 230211013.0, 'Academic_requirements': '不限', 'College_majors': '大专及以上', 'Undergraduate_majors': '不限', 'Graduate_majors': '不限', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '综合管理类（A类）', 'remark': '否', 'consultation': '仅限日喀则户籍或日喀则学籍考生报考'},
+
+
+ {'id': 242.0, 'unit': '日喀则市', 'Post': '吉隆县', 'Nature_position': '差那乡卫生院', 'Number': '事业单位', 'Graduation_time': 230211014.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '药学类', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '医疗卫生类（E类）-药剂', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 243.0, 'unit': '日喀则市', 'Post': '吉隆县', 'Nature_position': '折巴乡卫生院', 'Number': '事业单位', 'Graduation_time': 230211015.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '药学类', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '医疗卫生类（E类）-药剂', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 244.0, 'unit': '日喀则市', 'Post': '吉隆县', 'Nature_position': '吉隆口岸医院', 'Number': '事业单位', 'Graduation_time': 230211016.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '口腔医学技术', 'political_landscape': '', 'Job_code': '', 'Examination': 2.0, 'interview': '医疗卫生类（E类）-医学技术', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 245.0, 'unit': '日喀则市', 'Post': '吉隆县', 'Nature_position': '', 'Number': '事业单位', 'Graduation_time': 230211017.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '临床医学类（西医）', 'political_landscape': '', 'Job_code': '', 'Examination': 2.0, 'interview': '医疗卫生类（E类）-西医临床', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 246.0, 'unit': '日喀则市', 'Post': '吉隆县', 'Nature_position': '', 'Number': '事业单位', 'Graduation_time': 230211018.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '护理学类', 'political_landscape': '', 'Job_code': '', 'Examination': 2.0, 'interview': '医疗卫生类（E类）-护理', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 247.0, 'unit': '日喀则市', 'Post': '吉隆县', 'Nature_position': '', 'Number': '事业单位', 'Graduation_time': 230211019.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '药学类', 'political_landscape': '', 'Job_code': '', 'Examination': 2.0, 'interview': '医疗卫生类（E类）-药剂', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 248.0, 'unit': '日喀则市', 'Post': '吉隆县', 'Nature_position': '', 'Number': '事业单位', 'Graduation_time': 230211020.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '医学检验技术', 'political_landscape': '', 'Job_code': '', 'Examination': 3.0, 'interview': '医疗卫生类（E类）-医学技术', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 249.0, 'unit': '日喀则市', 'Post': '吉隆县', 'Nature_position': '', 'Number': '事业单位', 'Graduation_time': 230211021.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '临床医学（西医）、放射医学', 'political_landscape': '', 'Job_code': '', 'Examination': 2.0, 'interview': '医疗卫生类（E类）-西医临床', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 250.0, 'unit': '日喀则市', 'Post': '吉隆县', 'Nature_position': '', 'Number': '事业单位', 'Graduation_time': 230211022.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '临床医学（西医）、儿科学', 'political_landscape': '', 'Job_code': '', 'Examination': 2.0, 'interview': '医疗卫生类（E类）-西医临床', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 251.0, 'unit': '日喀则市', 'Post': '吉隆县', 'Nature_position': '', 'Number': '事业单位', 'Graduation_time': 230211023.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '临床医学（西医）', 'political_landscape': '', 'Job_code': '', 'Examination': 2.0, 'interview': '医疗卫生类（E类）-西医临床', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 252.0, 'unit': '日喀则市', 'Post': '吉隆县', 'Nature_position': '', 'Number': '事业单位', 'Graduation_time': 230211024.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '会计学、财务管理', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '社会科学专技类（B类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 253.0, 'unit': '日喀则市', 'Post': '吉隆县', 'Nature_position': '', 'Number': '事业单位', 'Graduation_time': 230211025.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '临床医学（西医）、麻醉学', 'political_landscape': '', 'Job_code': '', 'Examination': 2.0, 'interview': '医疗卫生类（E类）-西医临床', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 254.0, 'unit': '日喀则市', 'Post': '南木林县', 'Nature_position': '达孜乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 230212001.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '行政管理', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '综合管理类（A类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 255.0, 'unit': '日喀则市', 'Post': '南木林县', 'Nature_position': '拉布普乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 230212002.0, 'Academic_requirements': '应届生', 'College_majors': '大专及以上', 'Undergraduate_majors': '不限', 'Graduate_majors': '不限', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '综合管理类（A类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 256.0, 'unit': '日喀则市', 'Post': '南木林县', 'Nature_position': '卡孜乡文化服务中心', 'Number': '事业单位', 'Graduation_time': 230212003.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '不限', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '综合管理类（A类）', 'remark': '否', 'consultation': '仅限日喀则户籍或日喀则学籍考生报考'},
+
+
+ {'id': 257.0, 'unit': '日喀则市', 'Post': '南木林县', 'Nature_position': '茶尔乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 230212004.0, 'Academic_requirements': '不限', 'College_majors': '大专及以上', 'Undergraduate_majors': '不限', 'Graduate_majors': '不限', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '综合管理类（A类）', 'remark': '否', 'consultation': '仅限日喀则户籍或日喀则学籍考生报考'},
+
+
+ {'id': 258.0, 'unit': '日喀则市', 'Post': '南木林县', 'Nature_position': '仁堆乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 230212005.0, 'Academic_requirements': '不限', 'College_majors': '大专及以上', 'Undergraduate_majors': '不限', 'Graduate_majors': '不限', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '综合管理类（A类）', 'remark': '否', 'consultation': '仅限日喀则户籍或日喀则学籍考生报考'},
+
+
+ {'id': 259.0, 'unit': '日喀则市', 'Post': '南木林县', 'Nature_position': '索金乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 230212006.0, 'Academic_requirements': '应届生', 'College_majors': '大专及以上', 'Undergraduate_majors': '不限', 'Graduate_majors': '不限', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '综合管理类（A类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 260.0, 'unit': '日喀则市', 'Post': '南木林县', 'Nature_position': '艾玛乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 230212007.0, 'Academic_requirements': '不限', 'College_majors': '大专及以上', 'Undergraduate_majors': '不限', 'Graduate_majors': '不限', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '综合管理类（A类）', 'remark': '否', 'consultation': '仅限日喀则户籍或日喀则学籍考生报考'},
+
+
+ {'id': 261.0, 'unit': '日喀则市', 'Post': '南木林县', 'Nature_position': '奴玛乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 230212008.0, 'Academic_requirements': '不限', 'College_majors': '大专及以上', 'Undergraduate_majors': '不限', 'Graduate_majors': '不限', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '综合管理类（A类）', 'remark': '否', 'consultation': '仅限日喀则户籍或日喀则学籍考生报考'},
+
+
+ {'id': 262.0, 'unit': '日喀则市', 'Post': '南木林县', 'Nature_position': '热当乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 230212009.0, 'Academic_requirements': '不限', 'College_majors': '大专及以上', 'Undergraduate_majors': '不限', 'Graduate_majors': '不限', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '综合管理类（A类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 263.0, 'unit': '日喀则市', 'Post': '南木林县', 'Nature_position': '秋木乡卫生院', 'Number': '事业单位', 'Graduation_time': 230212010.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '药学类', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '医疗卫生类（E类）-药剂', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 264.0, 'unit': '日喀则市', 'Post': '南木林县', 'Nature_position': '土布加乡卫生院', 'Number': '事业单位', 'Graduation_time': 230212011.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '医学影像技术', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '医疗卫生类（E类）-医学技术', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 265.0, 'unit': '日喀则市', 'Post': '南木林县', 'Nature_position': '普当乡卫生院', 'Number': '事业单位', 'Graduation_time': 230212012.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '护理学类', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '医疗卫生类（E类）-护理', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 266.0, 'unit': '日喀则市', 'Post': '南木林县', 'Nature_position': '热当乡卫生院', 'Number': '事业单位', 'Graduation_time': 230212013.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '临床医学（西医）', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '医疗卫生类（E类）-西医临床', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 267.0, 'unit': '日喀则市', 'Post': '南木林县', 'Nature_position': '甲措乡卫生院', 'Number': '事业单位', 'Graduation_time': 230212014.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '护理学类', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '医疗卫生类（E类）-护理', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 268.0, 'unit': '日喀则市', 'Post': '南木林县', 'Nature_position': '拉布普乡卫生院', 'Number': '事业单位', 'Graduation_time': 230212015.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '药学类', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '医疗卫生类（E类）-药剂', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 269.0, 'unit': '日喀则市', 'Post': '南木林县', 'Nature_position': '多角乡卫生院', 'Number': '事业单位', 'Graduation_time': 230212016.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '临床医学（西医）', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '医疗卫生类（E类）-西医临床', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 270.0, 'unit': '日喀则市', 'Post': '聂拉木县', 'Nature_position': '统计局社会经济调查队', 'Number': '事业单位', 'Graduation_time': 230213001.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '统计学类', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '社会科学专技类（B类）', 'remark': '否', 'consultation': '仅限日喀则市边境户籍考生报考'},
+
+
+ {'id': 271.0, 'unit': '日喀则市', 'Post': '聂拉木县', 'Nature_position': '教育教学研究室', 'Number': '事业单位', 'Graduation_time': 230213002.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '教育学', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '社会科学专技类（B类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 272.0, 'unit': '日喀则市', 'Post': '聂拉木县', 'Nature_position': '琐作乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 230213003.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '动物科学', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'consultation': '仅限日喀则市边境户籍考生报考'},
+
+
+ {'id': 273.0, 'unit': '日喀则市', 'Post': '聂拉木县', 'Nature_position': '', 'Number': '事业单位', 'Graduation_time': 230213004.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '动物科学', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 274.0, 'unit': '日喀则市', 'Post': '聂拉木县', 'Nature_position': '波绒乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 230213005.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '不限', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '综合管理类（A类）', 'remark': '否', 'consultation': '仅限日喀则户籍或日喀则学籍考生报考'},
+
+
+ {'id': 275.0, 'unit': '日喀则市', 'Post': '聂拉木县', 'Nature_position': '门布乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 230213006.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '法学', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '综合管理类（A类）', 'remark': '否', 'consultation': '仅限日喀则户籍或日喀则学籍考生报考'},
+
+
+ {'id': 276.0, 'unit': '日喀则市', 'Post': '聂拉木县', 'Nature_position': '亚来乡卫生院', 'Number': '事业单位', 'Graduation_time': 230213007.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '临床医学（西医）', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '医疗卫生类（E类）-西医临床', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 277.0, 'unit': '日喀则市', 'Post': '聂拉木县', 'Nature_position': '波绒乡卫生院', 'Number': '事业单位', 'Graduation_time': 230213008.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '临床医学（西医）', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '医疗卫生类（E类）-西医临床', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 278.0, 'unit': '日喀则市', 'Post': '聂拉木县', 'Nature_position': '乃龙乡卫生院', 'Number': '事业单位', 'Graduation_time': 230213009.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '护理学类', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '医疗卫生类（E类）-护理', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 279.0, 'unit': '日喀则市', 'Post': '定结县', 'Nature_position': '县委党校', 'Number': '事业单位', 'Graduation_time': 230214001.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '政治学类', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '综合管理类（A类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 280.0, 'unit': '日喀则市', 'Post': '定结县', 'Nature_position': '定结融媒体中心', 'Number': '事业单位', 'Graduation_time': 230214002.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '新闻传播学类', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '社会科学专技类（B类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 281.0, 'unit': '日喀则市', 'Post': '定结县', 'Nature_position': '扎西岗乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 230214003.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '动物医学类', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'consultation': '仅限日喀则市边境户籍考生报考'},
+
+
+ {'id': 282.0, 'unit': '日喀则市', 'Post': '定结县', 'Nature_position': '', 'Number': '事业单位', 'Graduation_time': 230214004.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '动物医学类', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'consultation': '仅限日喀则户籍或日喀则学籍考生报考'},
+
+
+ {'id': 283.0, 'unit': '日喀则市', 'Post': '定结县', 'Nature_position': '定结乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 230214005.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '会计学、财务管理', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '社会科学专技类（B类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 284.0, 'unit': '日喀则市', 'Post': '定结县', 'Nature_position': '定结乡卫生院', 'Number': '事业单位', 'Graduation_time': 230214006.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '临床医学（西医）', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '医疗卫生类（E类）-西医临床', 'remark': '否', 'consultation': '仅限日喀则市边境户籍考生报考'},
+
+
+ {'id': 285.0, 'unit': '日喀则市', 'Post': '定结县', 'Nature_position': '扎西岗乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 230214007.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '会计学、财务管理', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '社会科学专技类（B类）', 'remark': '否', 'consultation': '仅限日喀则户籍或日喀则学籍考生报考'},
+
+
+ {'id': 286.0, 'unit': '日喀则市', 'Post': '定结县', 'Nature_position': '日屋镇便民服务中心', 'Number': '事业单位', 'Graduation_time': 230214008.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '会计学、财务管理', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '社会科学专技类（B类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 287.0, 'unit': '日喀则市', 'Post': '定结县', 'Nature_position': '确布乡卫生院', 'Number': '事业单位', 'Graduation_time': 230214009.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '护理学类', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '医疗卫生类（E类）-护理', 'remark': '否', 'consultation': '仅限日喀则户籍或日喀则学籍考生报考'},
+
+
+ {'id': 288.0, 'unit': '日喀则市', 'Post': '定结县', 'Nature_position': '郭加乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 230214010.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '会计学、财务管理', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '社会科学专技类（B类）', 'remark': '否', 'consultation': '仅限日喀则户籍或日喀则学籍考生报考'},
+
+
+ {'id': 289.0, 'unit': '日喀则市', 'Post': '定结县', 'Nature_position': '陈塘镇便民服务中心', 'Number': '事业单位', 'Graduation_time': 230214011.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '会计学、财务管理', 'political_landscape': '', 'Job_code': '', 'Examination': 2.0, 'interview': '社会科学专技类（B类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 290.0, 'unit': '日喀则市', 'Post': '定结县', 'Nature_position': '多布扎乡卫生院', 'Number': '事业单位', 'Graduation_time': 230214012.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '临床医学（西医）、麻醉学', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '医疗卫生类（E类）-西医临床', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 291.0, 'unit': '日喀则市', 'Post': '亚东县', 'Nature_position': '文化广播影视服务站', 'Number': '事业单位', 'Graduation_time': 230215001.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '舞蹈编导、舞蹈教育', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '社会科学专技类（B类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 292.0, 'unit': '日喀则市', 'Post': '亚东县', 'Nature_position': '县卫生服务中心', 'Number': '事业单位', 'Graduation_time': 230215002.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '医学检验技术', 'political_landscape': '', 'Job_code': '', 'Examination': 2.0, 'interview': '医疗卫生类（E类）-医学技术', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 293.0, 'unit': '日喀则市', 'Post': '亚东县', 'Nature_position': '', 'Number': '事业单位', 'Graduation_time': 230215003.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '临床医学（西医）', 'political_landscape': '', 'Job_code': '', 'Examination': 4.0, 'interview': '医疗卫生类（E类）-西医临床', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 294.0, 'unit': '日喀则市', 'Post': '亚东县', 'Nature_position': '', 'Number': '事业单位', 'Graduation_time': 230215004.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '大数据管理与应用', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 295.0, 'unit': '日喀则市', 'Post': '亚东县', 'Nature_position': '', 'Number': '事业单位', 'Graduation_time': 230215005.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '临床医学（西医）、放射医学', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '医疗卫生类（E类）-西医临床', 'remark': '否', 'consultation': '仅限日喀则户籍或日喀则学籍考生报考'},
+
+
+ {'id': 296.0, 'unit': '日喀则市', 'Post': '亚东县', 'Nature_position': '', 'Number': '事业单位', 'Graduation_time': 230215006.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '护理学类', 'political_landscape': '', 'Job_code': '', 'Examination': 3.0, 'interview': '医疗卫生类（E类）-护理', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 297.0, 'unit': '日喀则市', 'Post': '亚东县', 'Nature_position': '教育教学研究室', 'Number': '事业单位', 'Graduation_time': 230215007.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '小学教育', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '社会科学专技类（B类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 298.0, 'unit': '日喀则市', 'Post': '亚东县', 'Nature_position': '退役军人服务中心', 'Number': '事业单位', 'Graduation_time': 230215008.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '汉语言文学、秘书学', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '综合管理类（A类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 299.0, 'unit': '日喀则市', 'Post': '亚东县', 'Nature_position': '供销合作联合社', 'Number': '事业单位', 'Graduation_time': 230215009.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '电子商务类', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '社会科学专技类（B类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 300.0, 'unit': '日喀则市', 'Post': '亚东县', 'Nature_position': '帕里镇农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 230215010.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '动物医学类', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'consultation': '仅限日喀则户籍或日喀则学籍考生报考'},
+
+
+ {'id': 301.0, 'unit': '日喀则市', 'Post': '亚东县', 'Nature_position': '', 'Number': '事业单位', 'Graduation_time': 230215011.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '农业工程类', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 302.0, 'unit': '日喀则市', 'Post': '亚东县', 'Nature_position': '堆纳乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 230215012.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '会计学、财务管理', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '社会科学专技类（B类）', 'remark': '否', 'consultation': '仅限日喀则市边境户籍考生报考'},
+
+
+ {'id': 303.0, 'unit': '日喀则市', 'Post': '亚东县', 'Nature_position': '堆纳乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 230215013.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '动物医学类', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 304.0, 'unit': '日喀则市', 'Post': '亚东县', 'Nature_position': '', 'Number': '事业单位', 'Graduation_time': 230215014.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '农业工程类', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 305.0, 'unit': '日喀则市', 'Post': '亚东县', 'Nature_position': '吉汝乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 230215015.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '动物医学类', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'consultation': '仅限日喀则市边境户籍考生报考'},
+
+
+ {'id': 306.0, 'unit': '日喀则市', 'Post': '亚东县', 'Nature_position': '', 'Number': '事业单位', 'Graduation_time': 230215016.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '农学', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'consultation': '仅限日喀则户籍或日喀则学籍考生报考'},
+
+
+ {'id': 307.0, 'unit': '日喀则市', 'Post': '亚东县', 'Nature_position': '下司马镇便民服务中心', 'Number': '事业单位', 'Graduation_time': 230215017.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '统计学类', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '社会科学专技类（B类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 308.0, 'unit': '日喀则市', 'Post': '亚东县', 'Nature_position': '', 'Number': '事业单位', 'Graduation_time': 230215018.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '劳动关系', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '综合管理类（A类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 309.0, 'unit': '日喀则市', 'Post': '亚东县', 'Nature_position': '', 'Number': '事业单位', 'Graduation_time': 230215019.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '会计学、财务管理', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '社会科学专技类（B类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 310.0, 'unit': '日喀则市', 'Post': '亚东县', 'Nature_position': '上亚东乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 230215020.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '市场营销', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '社会科学专技类（B类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 311.0, 'unit': '日喀则市', 'Post': '亚东县', 'Nature_position': '', 'Number': '事业单位', 'Graduation_time': 230215021.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '财政学类', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '社会科学专技类（B类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 312.0, 'unit': '日喀则市', 'Post': '亚东县', 'Nature_position': '帕里镇便民服务中心', 'Number': '事业单位', 'Graduation_time': 230215022.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '法学', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '综合管理类（A类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 313.0, 'unit': '日喀则市', 'Post': '亚东县', 'Nature_position': '', 'Number': '事业单位', 'Graduation_time': 230215023.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '劳动与社会保障', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '综合管理类（A类）', 'remark': '否', 'consultation': '仅限日喀则户籍或日喀则学籍考生报考'},
+
+
+ {'id': 314.0, 'unit': '日喀则市', 'Post': '亚东县', 'Nature_position': '吉汝乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 230215024.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '社会学类', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '综合管理类（A类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 315.0, 'unit': '日喀则市', 'Post': '亚东县', 'Nature_position': '', 'Number': '事业单位', 'Graduation_time': 230215025.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '劳动与社会保障', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '综合管理类（A类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 316.0, 'unit': '日喀则市', 'Post': '亚东县', 'Nature_position': '康布乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 230215026.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '行政管理', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '综合管理类（A类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 317.0, 'unit': '日喀则市', 'Post': '亚东县', 'Nature_position': '', 'Number': '事业单位', 'Graduation_time': 230215027.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '统计学类', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '社会科学专技类（B类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 318.0, 'unit': '日喀则市', 'Post': '亚东县', 'Nature_position': '康布乡卫生院', 'Number': '事业单位', 'Graduation_time': 230215028.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '临床医学（西医）', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '医疗卫生类（E类）-西医临床', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 319.0, 'unit': '日喀则市', 'Post': '康马县', 'Nature_position': '机构编制委员会办公室电子政务中心', 'Number': '事业单位', 'Graduation_time': 230216001.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '中国语言文学', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '综合管理类（A类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 320.0, 'unit': '日喀则市', 'Post': '康马县', 'Nature_position': '教育教学研究室', 'Number': '事业单位', 'Graduation_time': 230216002.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '教育学', 'political_landscape': '', 'Job_code': '', 'Examination': 2.0, 'interview': '社会科学专技类（B类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 321.0, 'unit': '日喀则市', 'Post': '康马县', 'Nature_position': '退役军人服务中心', 'Number': '事业单位', 'Graduation_time': 230216003.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '社会学类', 'political_landscape': '', 'Job_code': '', 'Examination': 2.0, 'interview': '综合管理类（A类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 322.0, 'unit': '日喀则市', 'Post': '康马县', 'Nature_position': '南尼乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 230216004.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '农学', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'consultation': '仅限日喀则户籍或日喀则学籍考生报考'},
+
+
+ {'id': 323.0, 'unit': '日喀则市', 'Post': '康马县', 'Nature_position': '', 'Number': '事业单位', 'Graduation_time': 230216005.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '园艺、园艺教育', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 324.0, 'unit': '日喀则市', 'Post': '康马县', 'Nature_position': '涅如堆乡卫生院', 'Number': '事业单位', 'Graduation_time': 230216006.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '临床医学（西医）', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '医疗卫生类（E类）-西医临床', 'remark': '否', 'consultation': '仅限日喀则市边境户籍考生报考'},
+
+
+ {'id': 325.0, 'unit': '日喀则市', 'Post': '康马县', 'Nature_position': '南尼乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 230216007.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '计算机类', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 326.0, 'unit': '日喀则市', 'Post': '康马县', 'Nature_position': '', 'Number': '事业单位', 'Graduation_time': 230216008.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '不限', 'political_landscape': '', 'Job_code': '', 'Examination': 2.0, 'interview': '综合管理类（A类）', 'remark': '否', 'consultation': '仅限日喀则户籍或日喀则学籍考生报考'},
+
+
+ {'id': 327.0, 'unit': '日喀则市', 'Post': '康马县', 'Nature_position': '少岗乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 230216009.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '中国语言文学', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '综合管理类（A类）', 'remark': '否', 'consultation': '仅限日喀则市边境户籍考生报考'},
+
+
+ {'id': 328.0, 'unit': '日喀则市', 'Post': '康马县', 'Nature_position': '', 'Number': '事业单位', 'Graduation_time': 230216010.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '不限', 'political_landscape': '', 'Job_code': '', 'Examination': 2.0, 'interview': '综合管理类（A类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 329.0, 'unit': '日喀则市', 'Post': '康马县', 'Nature_position': '康马镇便民服务中心', 'Number': '事业单位', 'Graduation_time': 230216011.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '不限', 'political_landscape': '', 'Job_code': '', 'Examination': 2.0, 'interview': '综合管理类（A类）', 'remark': '否', 'consultation': '仅限日喀则户籍或日喀则学籍考生报考'},
+
+
+ {'id': 330.0, 'unit': '日喀则市', 'Post': '康马县', 'Nature_position': '', 'Number': '事业单位', 'Graduation_time': 230216012.0, 'Academic_requirements': '应届生', 'College_majors': '大专及以上', 'Undergraduate_majors': '不限', 'Graduate_majors': '不限', 'political_landscape': '', 'Job_code': '', 'Examination': 4.0, 'interview': '综合管理类（A类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 331.0, 'unit': '日喀则市', 'Post': '康马县', 'Nature_position': '萨马达乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 230216013.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '经济统计学', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '社会科学专技类（B类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 332.0, 'unit': '日喀则市', 'Post': '康马县', 'Nature_position': '', 'Number': '事业单位', 'Graduation_time': 230216014.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '不限', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '综合管理类（A类）', 'remark': '否', 'consultation': '仅限日喀则市边境户籍考生报考'},
+
+
+ {'id': 333.0, 'unit': '日喀则市', 'Post': '康马县', 'Nature_position': '涅如麦乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 230216015.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '不限', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '综合管理类（A类）', 'remark': '否', 'consultation': '仅限日喀则市边境户籍考生报考'},
+
+
+ {'id': 334.0, 'unit': '日喀则市', 'Post': '康马县', 'Nature_position': '嘎拉乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 230216016.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '会计学、财务管理', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '社会科学专技类（B类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 335.0, 'unit': '日喀则市', 'Post': '康马县', 'Nature_position': '', 'Number': '事业单位', 'Graduation_time': 230216017.0, 'Academic_requirements': '应届生', 'College_majors': '大专及以上', 'Undergraduate_majors': '不限', 'Graduate_majors': '不限', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '综合管理类（A类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 336.0, 'unit': '日喀则市', 'Post': '拉孜县', 'Nature_position': '文化广播影视服务站', 'Number': '事业单位', 'Graduation_time': 230217001.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '文化遗产、非物质文化遗产保护', 'political_landscape': '', 'Job_code': '', 'Examination': 3.0, 'interview': '社会科学专技类（B类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 337.0, 'unit': '日喀则市', 'Post': '拉孜县', 'Nature_position': '教育教学研究室', 'Number': '事业单位', 'Graduation_time': 230217002.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '教育学', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '社会科学专技类（B类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 338.0, 'unit': '日喀则市', 'Post': '拉孜县', 'Nature_position': '县卫生服务中心', 'Number': '事业单位', 'Graduation_time': 230217003.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '临床医学（西医）', 'political_landscape': '', 'Job_code': '', 'Examination': 2.0, 'interview': '医疗卫生类（E类）-西医临床', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 339.0, 'unit': '日喀则市', 'Post': '拉孜县', 'Nature_position': '', 'Number': '事业单位', 'Graduation_time': 230217004.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '护理学类', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '医疗卫生类（E类）-护理', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 340.0, 'unit': '日喀则市', 'Post': '拉孜县', 'Nature_position': '纪检监察信息中心', 'Number': '事业单位', 'Graduation_time': 230217005.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '会计学、财务管理', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '社会科学专技类（B类）', 'remark': '否', 'consultation': '仅限日喀则户籍或日喀则学籍考生报考'},
+
+
+ {'id': 341.0, 'unit': '日喀则市', 'Post': '拉孜县', 'Nature_position': '不动产登记中心', 'Number': '事业单位', 'Graduation_time': 230217006.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '地质学类', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 342.0, 'unit': '日喀则市', 'Post': '拉孜县', 'Nature_position': '供销合作联合社', 'Number': '事业单位', 'Graduation_time': 230217007.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '金融学类', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '社会科学专技类（B类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 343.0, 'unit': '日喀则市', 'Post': '拉孜县', 'Nature_position': '曲下镇便民服务中心', 'Number': '事业单位', 'Graduation_time': 230217008.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '文秘学、公共管理类', 'political_landscape': '', 'Job_code': '', 'Examination': 2.0, 'interview': '综合管理类（A类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 344.0, 'unit': '日喀则市', 'Post': '拉孜县', 'Nature_position': '扎西宗乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 230217009.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '动物医学类', 'political_landscape': '', 'Job_code': '', 'Examination': 2.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'consultation': '仅限日喀则户籍或日喀则学籍考生报考'},
+
+
+ {'id': 345.0, 'unit': '日喀则市', 'Post': '拉孜县', 'Nature_position': '扎西岗乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 230217010.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '动物医学类', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 346.0, 'unit': '日喀则市', 'Post': '拉孜县', 'Nature_position': '扎西岗乡文化服务中心', 'Number': '事业单位', 'Graduation_time': 230217011.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '公共管理类', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '综合管理类（A类）', 'remark': '否', 'consultation': '仅限日喀则户籍或日喀则学籍考生报考'},
+
+
+ {'id': 347.0, 'unit': '日喀则市', 'Post': '拉孜县', 'Nature_position': '拉孜镇便民服务中心', 'Number': '事业单位', 'Graduation_time': 230217012.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '公共管理类', 'political_landscape': '', 'Job_code': '', 'Examination': 2.0, 'interview': '综合管理类（A类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 348.0, 'unit': '日喀则市', 'Post': '拉孜县', 'Nature_position': '查务乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 230217013.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '公共管理类', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '综合管理类（A类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 349.0, 'unit': '日喀则市', 'Post': '拉孜县', 'Nature_position': '芒普乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 230217014.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '公共管理类', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '综合管理类（A类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 350.0, 'unit': '日喀则市', 'Post': '拉孜县', 'Nature_position': '曲玛乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 230217015.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '公共管理类', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '综合管理类（A类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 351.0, 'unit': '日喀则市', 'Post': '萨迦县', 'Nature_position': '教育教学研究室', 'Number': '事业单位', 'Graduation_time': 230218001.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '科学教育', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '社会科学专技类（B类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 352.0, 'unit': '日喀则市', 'Post': '萨迦县', 'Nature_position': '', 'Number': '事业单位', 'Graduation_time': 230218002.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '小学教育', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '社会科学专技类（B类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 353.0, 'unit': '日喀则市', 'Post': '萨迦县', 'Nature_position': '扯休乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 230218003.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '新闻传播学类', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '社会科学专技类（B类）', 'remark': '否', 'consultation': '仅限日喀则户籍或日喀则学籍考生报考'},
+
+
+ {'id': 354.0, 'unit': '日喀则市', 'Post': '萨迦县', 'Nature_position': '扯休乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 230218004.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '农业工程类', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 355.0, 'unit': '日喀则市', 'Post': '萨迦县', 'Nature_position': '萨迦镇便民服务中心', 'Number': '事业单位', 'Graduation_time': 230218005.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '计算机类', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 356.0, 'unit': '日喀则市', 'Post': '萨迦县', 'Nature_position': '吉定镇便民服务中心', 'Number': '事业单位', 'Graduation_time': 230218006.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '中国语言文学', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '综合管理类（A类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 357.0, 'unit': '日喀则市', 'Post': '萨迦县', 'Nature_position': '扎西岗乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 230218007.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '会计学、财务管理', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '社会科学专技类（B类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 358.0, 'unit': '日喀则市', 'Post': '萨迦县', 'Nature_position': '扎西岗乡卫生院', 'Number': '事业单位', 'Graduation_time': 230218008.0, 'Academic_requirements': '不限', 'College_majors': '大专及以上', 'Undergraduate_majors': '临床医学类（西医）', 'Graduate_majors': '临床医学类（西医）', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '医疗卫生类（E类）-西医临床', 'remark': '否', 'consultation': '仅限日喀则户籍或日喀则学籍考生报考'},
+
+
+ {'id': 359.0, 'unit': '日喀则市', 'Post': '萨迦县', 'Nature_position': '拉洛乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 230218009.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '自然资源登记与管理', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '综合管理类（A类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 360.0, 'unit': '日喀则市', 'Post': '萨迦县', 'Nature_position': '赛乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 230218010.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '社区矫正、监狱学', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '综合管理类（A类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 361.0, 'unit': '日喀则市', 'Post': '萨迦县', 'Nature_position': '雄玛乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 230218011.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '中国语言文学', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '综合管理类（A类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 362.0, 'unit': '日喀则市', 'Post': '萨迦县', 'Nature_position': '雄玛乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 230218012.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '藏药学', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '藏医药护理类（Z类）-藏药', 'remark': '否', 'consultation': '仅限日喀则户籍或日喀则学籍考生报考'},
+
+
+ {'id': 363.0, 'unit': '日喀则市', 'Post': '定日县', 'Nature_position': '县委党校', 'Number': '事业单位', 'Graduation_time': 230219001.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '马克思主义理论类', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '综合管理类（A类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 364.0, 'unit': '日喀则市', 'Post': '定日县', 'Nature_position': '曲洛乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 230219002.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '植物生产类', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 365.0, 'unit': '日喀则市', 'Post': '定日县', 'Nature_position': '', 'Number': '事业单位', 'Graduation_time': 230219003.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '动物医学类', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'consultation': '仅限日喀则市边境户籍考生报考'},
+
+
+ {'id': 366.0, 'unit': '日喀则市', 'Post': '定日县', 'Nature_position': '措果乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 230219004.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '植物生产类', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 367.0, 'unit': '日喀则市', 'Post': '定日县', 'Nature_position': '', 'Number': '事业单位', 'Graduation_time': 230219005.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '动物医学类', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 368.0, 'unit': '日喀则市', 'Post': '定日县', 'Nature_position': '长所乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 230219006.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '园艺、园艺教育', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 369.0, 'unit': '日喀则市', 'Post': '定日县', 'Nature_position': '扎西宗乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 230219007.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '植物生产类', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 370.0, 'unit': '日喀则市', 'Post': '定日县', 'Nature_position': '盆吉乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 230219008.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '动物医学类', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'consultation': '仅限日喀则户籍或日喀则学籍考生报考'},
+
+
+ {'id': 371.0, 'unit': '日喀则市', 'Post': '定日县', 'Nature_position': '', 'Number': '事业单位', 'Graduation_time': 230219009.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '动物生产类', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 372.0, 'unit': '日喀则市', 'Post': '定日县', 'Nature_position': '尼辖乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 230219010.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '动物医学类', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 373.0, 'unit': '日喀则市', 'Post': '定日县', 'Nature_position': '绒辖乡卫生院', 'Number': '事业单位', 'Graduation_time': 230219011.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '临床医学类（西医）', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '医疗卫生类（E类）-西医临床', 'remark': '否', 'consultation': '仅限日喀则市边境户籍考生报考'},
+
+
+ {'id': 374.0, 'unit': '日喀则市', 'Post': '定日县', 'Nature_position': '曲当乡卫生院', 'Number': '事业单位', 'Graduation_time': 230219012.0, 'Academic_requirements': '应届生', 'College_majors': '大专及以上', 'Undergraduate_majors': '医学检验技术', 'Graduate_majors': '医学检验技术', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '医疗卫生类（E类）-医学技术', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 375.0, 'unit': '日喀则市', 'Post': '定日县', 'Nature_position': '', 'Number': '事业单位', 'Graduation_time': 230219013.0, 'Academic_requirements': '应届生', 'College_majors': '大专及以上', 'Undergraduate_majors': '医学影像技术', 'Graduate_majors': '医学影像技术', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '医疗卫生类（E类）-医学技术', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 376.0, 'unit': '日喀则市', 'Post': '定日县', 'Nature_position': '', 'Number': '事业单位', 'Graduation_time': 230219014.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '临床医学类（西医）', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '医疗卫生类（E类）-西医临床', 'remark': '否', 'consultation': '仅限日喀则户籍或日喀则学籍考生报考'},
+
+
+ {'id': 377.0, 'unit': '日喀则市', 'Post': '定日县', 'Nature_position': '盆吉乡卫生院', 'Number': '事业单位', 'Graduation_time': 230219015.0, 'Academic_requirements': '应届生', 'College_majors': '大专及以上', 'Undergraduate_majors': '助产、护理', 'Graduate_majors': '护理学类', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '医疗卫生类（E类）-护理', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 378.0, 'unit': '日喀则市', 'Post': '定日县', 'Nature_position': '', 'Number': '事业单位', 'Graduation_time': 230219016.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '临床医学类（西医）', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '医疗卫生类（E类）-西医临床', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 379.0, 'unit': '日喀则市', 'Post': '定日县', 'Nature_position': '曲洛乡卫生院', 'Number': '事业单位', 'Graduation_time': 230219017.0, 'Academic_requirements': '应届生', 'College_majors': '大专及以上', 'Undergraduate_majors': '助产、护理', 'Graduate_majors': '护理学类', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '医疗卫生类（E类）-护理', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 380.0, 'unit': '日喀则市', 'Post': '定日县', 'Nature_position': '', 'Number': '事业单位', 'Graduation_time': 230219018.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '临床医学类（西医）', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '医疗卫生类（E类）-西医临床', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 381.0, 'unit': '日喀则市', 'Post': '定日县', 'Nature_position': '扎果乡卫生院', 'Number': '事业单位', 'Graduation_time': 230219019.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '预防医学', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '医疗卫生类（E类）-公共卫生管理', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 382.0, 'unit': '日喀则市', 'Post': '定日县', 'Nature_position': '', 'Number': '事业单位', 'Graduation_time': 230219020.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '藏医学', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '藏医药护理类（Z类）-藏医', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 383.0, 'unit': '日喀则市', 'Post': '定日县', 'Nature_position': '曲当乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 230219021.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '自然保护与环境生态类', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 384.0, 'unit': '日喀则市', 'Post': '定日县', 'Nature_position': '曲当乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 230219022.0, 'Academic_requirements': '应届生', 'College_majors': '大专及以上', 'Undergraduate_majors': '不限', 'Graduate_majors': '不限', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '综合管理类（A类）', 'remark': '否', 'consultation': '仅限日喀则户籍或日喀则学籍考生报考'},
+
+
+ {'id': 385.0, 'unit': '日喀则市', 'Post': '定日县', 'Nature_position': '', 'Number': '事业单位', 'Graduation_time': 230219023.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '不限', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '综合管理类（A类）', 'remark': '否', 'consultation': '仅限日喀则户籍或日喀则学籍考生报考'},
+
+
+ {'id': 386.0, 'unit': '日喀则市', 'Post': '定日县', 'Nature_position': '克玛乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 230219024.0, 'Academic_requirements': '应届生', 'College_majors': '本科及以上', 'Undergraduate_majors': '', 'Graduate_majors': '动物医学类', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'consultation': ''},
+
+
+ {'id': 387.0, 'unit': '日喀则市', 'Post': '定日县', 'Nature_position': '协格尔镇便民服务中心', 'Number': '事业单位', 'Graduation_time': 230219025.0, 'Academic_requirements': '不限', 'College_majors': '大专及以上', 'Undergraduate_majors': '不限', 'Graduate_majors': '不限', 'political_landscape': '', 'Job_code': '', 'Examination': 1.0, 'interview': '综合管理类（A类）', 'remark': '否', 'consultation': '仅限日喀则户籍或日喀则学籍考生报考'}]
+
+
+
+
+
+    
+	    
+	    
+	    for(i=0;i<xx.length;i++){
+	    	var html="<tr><td>"+
+	    	xx[i].id+"</td><td>"+
+            xx[i].unit+"</td><td>"+
+            xx[i].Post+"</td><td>"+
+            xx[i].Nature_position+"</td><td>"+
+            xx[i].Number+"</td><td>"+
+            xx[i].Graduation_time+"</td><td>"+
+            xx[i].Academic_requirements+"</td><td>"+
+            xx[i].College_majors+"</td><td>"+
+            xx[i].Undergraduate_majors+"</td><td>"+
+            xx[i].Graduate_majors+"</td><td>"+
+            xx[i].political_landscape+"</td><td>"+
+            xx[i].Job_code+"</td><td>"+
+            xx[i].Examination+"</td><td>"+
+            xx[i].interview+"</td><td>"+
+            xx[i].remark+"</td><td>"+
+            xx[i].consultation+"</td></tr>";
+
+	    	$("#example tbody").append(html);
+	    	
+	    }
+	    
+	    $('#example').DataTable( {
+	        dom: 'Bfrtip',
+	        language: {  
+                emptyTable: '没有数据',  
+                loadingRecords: '加载中...',  
+                processing: '查询中...',  
+                search: '搜索【专业、地区等】:',  
+                lengthMenu: '每页 _MENU_ 件',  
+                zeroRecords: '没有数据',  
+                paginate: {  
+                    'first':      '第一页',  
+                    'last':       '最后一页',  
+                    'next':       '下一页',  
+                    'previous':   '上一页'  
+            	},  
+	            info: '第 _PAGE_ 页 / 总 _PAGES_ 页',  
+	            infoEmpty: '没有数据',  
+	            infoFiltered: '(过滤总件数 _MAX_ 条)',
+	        },
+	        
+
+	    } );
+
+
+	    
+
+
+	});
+  </script>  
+ </body>  
+</html>  

@@ -1,0 +1,801 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">   
+ <head>  
+  <title> 2022 </title>  
+  <meta charset='utf-8'>
+  <link rel="stylesheet" href="../../css/table.css" />
+  <link rel="stylesheet" href="../../css/buttons.css" />
+  <style>
+  	*{
+  		/*background-image: url();*/
+  		background-color: #000;
+  		color: #FFF; 
+  	}
+  	tbody td{
+  		text-align: center;
+  	}
+  </style>
+ </head>  
+  
+ <body>  
+ 	<h1 style="text-align: center;">那曲市2022年事业单位公</h1>
+ 	<a href="../../2022_shiye_.html" style="font-size: 20px;">回到主页</a>
+    <table id="example" class="display" role="grid" aria-describedby="example_info">
+ 		<thead>
+            <tr>
+                <th>序号</th>
+                <th>招聘地市</th>
+                <th>单位</th>
+                <th>岗位</th>
+                <th>职位性质</th>
+                <th>人数</th>
+                <th>岗位代码</th>
+                <th>专业要求</th>              
+                <th>政治面貌</th>
+                <th>学历要求</th>
+                <th>毕业时间</th>     
+                <th>笔试科目</th>
+                <th>是否体检</th>
+                <th>是否面试</th>
+                <th>备注</th>
+                <th>咨询</th>
+                
+
+            </tr>
+        </thead>
+        <tbody>
+            
+        </tbody>
+
+        
+     
+ 	</table>
+ 	
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/jquery.datatables.min.js"/>
+	<script src="../../js/buttons.print.min.js"></script>
+
+ <script> 
+
+$(document).ready(function(){ 
+
+    var xx = [{'id': 1.0, 'unit': '那曲市', 'Post': '那曲市市直', 'Nature_position': '那曲市委组织部党建指导中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220798.0, 'College_majors': '马克思主义哲学', 'Undergraduate_majors': '中共党员', 'Graduate_majors': '硕士研究生及以上', 'political_landscape': '不限', 'Job_code': '——', 'Examination': '是', 'interview': '是', 'remark': '空', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 2.0, 'unit': '那曲市', 'Post': '那曲市市直', 'Nature_position': '那曲市委政法委联合财务室', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220799.0, 'College_majors': '财会相关专业', 'Undergraduate_majors': '中共党员', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '仅限那曲籍报考', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 3.0, 'unit': '那曲市', 'Post': '那曲市市直', 'Nature_position': '那曲市委政法委综合治理中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220800.0, 'College_majors': '计算机类相关专业', 'Undergraduate_majors': '中共党员', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 4.0, 'unit': '那曲市', 'Post': '那曲市市直', 'Nature_position': '那曲市委党校经济学教研室', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220801.0, 'College_majors': '经济学', 'Undergraduate_majors': '中共党员', 'Graduate_majors': '硕士研究生及以上', 'political_landscape': '2022年毕业生', 'Job_code': '——', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 5.0, 'unit': '那曲市', 'Post': '那曲市市直', 'Nature_position': '那曲市委党校经济学教研室', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220802.0, 'College_majors': '经济学', 'Undergraduate_majors': '中共党员', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 6.0, 'unit': '那曲市', 'Post': '那曲市市直', 'Nature_position': '那曲市委党校政法教研室', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220803.0, 'College_majors': '法学', 'Undergraduate_majors': '中共党员', 'Graduate_majors': '硕士研究生及以上', 'political_landscape': '2022年毕业生', 'Job_code': '——', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 7.0, 'unit': '那曲市', 'Post': '那曲市市直', 'Nature_position': '那曲市委党校政法教研室', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220804.0, 'College_majors': '法学', 'Undergraduate_majors': '中共党员', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 8.0, 'unit': '那曲市', 'Post': '那曲市市直', 'Nature_position': '那曲市发改委招商引资中心', 'Number': '事业单位', 'Graduation_time': 3.0, 'Academic_requirements': 202220805.0, 'College_majors': '经济学类专业', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 9.0, 'unit': '那曲市', 'Post': '那曲市市直', 'Nature_position': '那曲市发改委招商引资中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220806.0, 'College_majors': '经济学类专业', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '仅限那曲籍报考', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 10.0, 'unit': '那曲市', 'Post': '那曲市市直', 'Nature_position': '那曲市发改委物资储备库', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220807.0, 'College_majors': '物流管理与工程类专业', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '仅限那曲籍报考', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 11.0, 'unit': '那曲市', 'Post': '那曲市市直', 'Nature_position': '那曲市发改委物资储备库', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220808.0, 'College_majors': '物流管理与工程类专业', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 12.0, 'unit': '那曲市', 'Post': '那曲市市直', 'Nature_position': '那曲市发改委物资储备库', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202220809.0, 'College_majors': '粮食类专业', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 13.0, 'unit': '那曲市', 'Post': '那曲市市直', 'Nature_position': '那曲市发改委财务室', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220810.0, 'College_majors': '财务会计类专业，会议学专业，财务管理专业', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 14.0, 'unit': '那曲市', 'Post': '那曲市市直', 'Nature_position': '那曲市人民医院120急救中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220811.0, 'College_majors': '临床医学（西医）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 15.0, 'unit': '那曲市', 'Post': '那曲市市直', 'Nature_position': '那曲市人民医院120急救中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220812.0, 'College_majors': '急诊医学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 16.0, 'unit': '那曲市', 'Post': '那曲市市直', 'Nature_position': '那曲市妇保院儿科医生', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220813.0, 'College_majors': '西医临床医学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 17.0, 'unit': '那曲市', 'Post': '那曲市市直', 'Nature_position': '那曲市妇保院放射科医生', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220814.0, 'College_majors': '影像学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '医疗卫生类(E类)—医学技术', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 18.0, 'unit': '那曲市', 'Post': '那曲市市直', 'Nature_position': '那曲市妇保院行政岗位', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220815.0, 'College_majors': '财务、行政管理及相关专业', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 19.0, 'unit': '那曲市', 'Post': '那曲市市直', 'Nature_position': '那曲市国资委国有企业资产管理中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220816.0, 'College_majors': '经济财经类', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 20.0, 'unit': '那曲市', 'Post': '那曲市市直', 'Nature_position': '那曲市经信局大数据中心', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202220817.0, 'College_majors': '电子信息工程、通信工程、计算机科学与技术、软件工程、网络工程、数据科学与大数据技术、计算机类专业', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 21.0, 'unit': '那曲市', 'Post': '那曲市市直', 'Nature_position': '那曲市经信局大数据中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220818.0, 'College_majors': '电子信息工程、通信工程、计算机科学与技术、软件工程、网络工程、数据科学与大数据技术、计算机类专业', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '仅限那曲籍报考', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 22.0, 'unit': '那曲市', 'Post': '那曲市市直', 'Nature_position': '那曲市群艺馆', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220819.0, 'College_majors': '文秘', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 23.0, 'unit': '那曲市', 'Post': '那曲市市直', 'Nature_position': '那曲市群艺馆', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220820.0, 'College_majors': '表演艺术相关专业', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 24.0, 'unit': '那曲市', 'Post': '那曲市市直', 'Nature_position': '那曲市群艺馆', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220821.0, 'College_majors': '表演艺术相关专业', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '仅限那曲籍报考', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 25.0, 'unit': '那曲市', 'Post': '那曲市市直', 'Nature_position': '那曲市财政局绩效评价中心', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202220822.0, 'College_majors': '财政学类、会计学类、经济类、财务管理类', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 26.0, 'unit': '那曲市', 'Post': '色尼区', 'Nature_position': '色尼区劳麦乡卫生院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220823.0, 'College_majors': '医学检验技术', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—医学技术', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 27.0, 'unit': '那曲市', 'Post': '色尼区', 'Nature_position': '色尼区纪检监察信息中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220824.0, 'College_majors': '信息类专业', 'Undergraduate_majors': '中共党员', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 28.0, 'unit': '那曲市', 'Post': '色尼区', 'Nature_position': '色尼区组织部人事档案中心', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202220825.0, 'College_majors': '秘书专业、档案管理专业、档案学专业', 'Undergraduate_majors': '中共党员', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 29.0, 'unit': '那曲市', 'Post': '色尼区', 'Nature_position': '色尼区委党校', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220826.0, 'College_majors': '政治学理论、党史党建、思想政治教育、马克思主义哲学专业', 'Undergraduate_majors': '中共党员', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '仅限那曲籍报考', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 30.0, 'unit': '那曲市', 'Post': '色尼区', 'Nature_position': '色尼区委党校', 'Number': '事业单位', 'Graduation_time': 3.0, 'Academic_requirements': 202220827.0, 'College_majors': '政治学理论、党史党建、思想政治教育、马克思主义哲学专业', 'Undergraduate_majors': '中共党员', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 31.0, 'unit': '那曲市', 'Post': '色尼区', 'Nature_position': '色尼区尼玛乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220828.0, 'College_majors': '会计学、财务管理类、公共管理类、工商管理类', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 32.0, 'unit': '那曲市', 'Post': '色尼区', 'Nature_position': '色尼区劳麦乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220829.0, 'College_majors': '会计学、财务管理类、公共管理类、工商管理类', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 33.0, 'unit': '那曲市', 'Post': '色尼区', 'Nature_position': '色尼区劳麦乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220830.0, 'College_majors': '会计学、财务管理类、公共管理类、工商管理类', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '仅限那曲籍报考', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 34.0, 'unit': '那曲市', 'Post': '色尼区', 'Nature_position': '色尼区罗玛镇便民服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220831.0, 'College_majors': '会计学、财务管理类、公共管理类、工商管理类', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 35.0, 'unit': '那曲市', 'Post': '色尼区', 'Nature_position': '色尼区供销合作社', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220832.0, 'College_majors': '财务管理类', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 36.0, 'unit': '那曲市', 'Post': '色尼区', 'Nature_position': '色尼区林业和草原工作站', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220833.0, 'College_majors': '园林技术、草业科学、草业技术、森林和草原保护相关专业', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 37.0, 'unit': '那曲市', 'Post': '安多县', 'Nature_position': '安多县委组织部人事档案中心', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202220834.0, 'College_majors': '档案管理、文秘', 'Undergraduate_majors': '中共党员', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 38.0, 'unit': '那曲市', 'Post': '安多县', 'Nature_position': '安多县党员远程教育中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220835.0, 'College_majors': '网络与新媒体', 'Undergraduate_majors': '中共党员', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 39.0, 'unit': '那曲市', 'Post': '安多县', 'Nature_position': '安多县党员远程教育中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220836.0, 'College_majors': '法学、哲学、马克思主义理论', 'Undergraduate_majors': '中共党员', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 40.0, 'unit': '那曲市', 'Post': '安多县', 'Nature_position': '安多县委党校', 'Number': '事业单位', 'Graduation_time': 5.0, 'Academic_requirements': 202220837.0, 'College_majors': '马克思主义理论专业、教育哲学类', 'Undergraduate_majors': '中共党员', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 41.0, 'unit': '那曲市', 'Post': '安多县', 'Nature_position': '安多县供销合作社', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220838.0, 'College_majors': '工商管理类', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 42.0, 'unit': '那曲市', 'Post': '安多县', 'Nature_position': '安多县林业和草原工作站', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220839.0, 'College_majors': '园林技术、草业科学、草业技术、森林和草原保护相关专业', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 43.0, 'unit': '那曲市', 'Post': '安多县', 'Nature_position': '安多县强玛镇卫生院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220840.0, 'College_majors': '临床医学（西医）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 44.0, 'unit': '那曲市', 'Post': '安多县', 'Nature_position': '安多县玛曲乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220841.0, 'College_majors': '动物医学、动物科学、草业科学等农牧相关专业', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '仅限那曲籍报考', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 45.0, 'unit': '那曲市', 'Post': '安多县', 'Nature_position': '安多县玛曲乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202220842.0, 'College_majors': '动物医学、动物科学、草业科学等农牧相关专业', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 46.0, 'unit': '那曲市', 'Post': '安多县', 'Nature_position': '安多县玛曲乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220843.0, 'College_majors': '畜牧兽医、动物防疫与检疫、动物医学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 47.0, 'unit': '那曲市', 'Post': '安多县', 'Nature_position': '安多县扎曲乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220844.0, 'College_majors': '动物医学、动物科学、草业科学等农牧相关专业', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 48.0, 'unit': '那曲市', 'Post': '安多县', 'Nature_position': '安多县扎曲乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220845.0, 'College_majors': '畜牧兽医、动物防疫与检疫、动物医学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 49.0, 'unit': '那曲市', 'Post': '安多县', 'Nature_position': '安多县措玛乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202220846.0, 'College_majors': '畜牧兽医、动物防疫与检疫、动物医学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 50.0, 'unit': '那曲市', 'Post': '安多县', 'Nature_position': '安多县措玛乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202220847.0, 'College_majors': '动物医学、动物科学、草业科学等农牧相关专业', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 51.0, 'unit': '那曲市', 'Post': '安多县', 'Nature_position': '安多县措玛乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220848.0, 'College_majors': '动物医学、动物科学、草业科学等农牧相关专业', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '仅限那曲籍报考', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 52.0, 'unit': '那曲市', 'Post': '安多县', 'Nature_position': '安多县多玛乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220849.0, 'College_majors': '动物医学、动物科学、草业科学等农牧相关专业', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 53.0, 'unit': '那曲市', 'Post': '安多县', 'Nature_position': '安多县多玛乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220850.0, 'College_majors': '畜牧兽医、动物防疫与检疫、动物医学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 54.0, 'unit': '那曲市', 'Post': '安多县', 'Nature_position': '安多县岗尼乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220851.0, 'College_majors': '畜牧兽医、动物防疫与检疫、动物医学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 55.0, 'unit': '那曲市', 'Post': '安多县', 'Nature_position': '安多县岗尼乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220852.0, 'College_majors': '动物医学、动物科学、草业科学等农牧相关专业', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 56.0, 'unit': '那曲市', 'Post': '安多县', 'Nature_position': '安多县帕那镇农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202220853.0, 'College_majors': '动物医学、动物科学、草业科学等农牧相关专业', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 57.0, 'unit': '那曲市', 'Post': '安多县', 'Nature_position': '安多县帕那镇农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220854.0, 'College_majors': '畜牧兽医、动物防疫与检疫、动物医学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 58.0, 'unit': '那曲市', 'Post': '安多县', 'Nature_position': '安多县扎仁镇农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220855.0, 'College_majors': '动物医学、动物科学、草业科学等农牧相关专业', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 59.0, 'unit': '那曲市', 'Post': '安多县', 'Nature_position': '安多县扎仁镇农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220856.0, 'College_majors': '畜牧兽医、动物防疫与检疫、动物医学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 60.0, 'unit': '那曲市', 'Post': '安多县', 'Nature_position': '安多县雁石坪镇农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 3.0, 'Academic_requirements': 202220857.0, 'College_majors': '动物医学、动物科学、草业科学等农牧相关专业', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 61.0, 'unit': '那曲市', 'Post': '安多县', 'Nature_position': '安多县雁石坪镇农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220858.0, 'College_majors': '畜牧兽医、动物防疫与检疫、动物医学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 62.0, 'unit': '那曲市', 'Post': '安多县', 'Nature_position': '安多县强玛镇农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 3.0, 'Academic_requirements': 202220859.0, 'College_majors': '动物医学、动物科学、草业科学等农牧相关专业', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 63.0, 'unit': '那曲市', 'Post': '安多县', 'Nature_position': '安多县强玛镇农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220860.0, 'College_majors': '畜牧兽医、动物防疫与检疫、动物医学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 64.0, 'unit': '那曲市', 'Post': '安多县', 'Nature_position': '安多县玛曲乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202220861.0, 'College_majors': '会计学、财务管理类、公共管理类、工商管理类', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 65.0, 'unit': '那曲市', 'Post': '安多县', 'Nature_position': '安多县色务乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202220862.0, 'College_majors': '会计学、财务管理类、公共管理类、工商管理类', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 66.0, 'unit': '那曲市', 'Post': '安多县', 'Nature_position': '安多县扎曲乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202220863.0, 'College_majors': '财务管理类、工商管理类、会计学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 67.0, 'unit': '那曲市', 'Post': '安多县', 'Nature_position': '安多县玛荣乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220864.0, 'College_majors': '会计学、财务管理类、公共管理类、工商管理类', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 68.0, 'unit': '那曲市', 'Post': '安多县', 'Nature_position': '安多县多玛乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202220865.0, 'College_majors': '会计学、财务管理类、公共管理类、工商管理类', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 69.0, 'unit': '那曲市', 'Post': '安多县', 'Nature_position': '安多县多玛乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220866.0, 'College_majors': '计算机、电子信息类', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '仅限那曲籍报考', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 70.0, 'unit': '那曲市', 'Post': '安多县', 'Nature_position': '安多县岗尼乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202220867.0, 'College_majors': '会计学、财务管理类、公共管理类、工商管理类', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 71.0, 'unit': '那曲市', 'Post': '安多县', 'Nature_position': '安多县帕那镇便民服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220868.0, 'College_majors': '财务管理类、会计学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 72.0, 'unit': '那曲市', 'Post': '安多县', 'Nature_position': '安多县色务乡卫生院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220869.0, 'College_majors': '医学检验技术', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—医学技术', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 73.0, 'unit': '那曲市', 'Post': '安多县', 'Nature_position': '安多县帕那镇卫生院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220870.0, 'College_majors': '医学检验技术', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—医学技术', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 74.0, 'unit': '那曲市', 'Post': '巴青县', 'Nature_position': '巴青县委党校', 'Number': '事业单位', 'Graduation_time': 3.0, 'Academic_requirements': 202220871.0, 'College_majors': '哲学类、马克思主义理论类、思想政治教育类', 'Undergraduate_majors': '中共党员', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 75.0, 'unit': '那曲市', 'Post': '巴青县', 'Nature_position': '巴青县委组织部人事档案中心', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202220872.0, 'College_majors': '档案学类', 'Undergraduate_majors': '中共党员', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 76.0, 'unit': '那曲市', 'Post': '巴青县', 'Nature_position': '巴青县党员远程教育中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220873.0, 'College_majors': '广播电视学', 'Undergraduate_majors': '中共党员', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 77.0, 'unit': '那曲市', 'Post': '巴青县', 'Nature_position': '巴青县党员远程教育中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220874.0, 'College_majors': '计算机、电子信息类', 'Undergraduate_majors': '中共党员', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 78.0, 'unit': '那曲市', 'Post': '巴青县', 'Nature_position': '巴青县疾病预防控制中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220875.0, 'College_majors': '公共卫生与预防医学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—公共卫生管理', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 79.0, 'unit': '那曲市', 'Post': '巴青县', 'Nature_position': '巴青县疾病预防控制中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220876.0, 'College_majors': '医学检验技术', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—医学技术', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 80.0, 'unit': '那曲市', 'Post': '巴青县', 'Nature_position': '巴青县人民医院', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202220877.0, 'College_majors': '临床医学（西医）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 81.0, 'unit': '那曲市', 'Post': '巴青县', 'Nature_position': '巴青县供销合作社', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220878.0, 'College_majors': '工商管理类', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 82.0, 'unit': '那曲市', 'Post': '巴青县', 'Nature_position': '巴青县林业和草原工作站', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220879.0, 'College_majors': '园林技术、草业科学、草业技术、森林和草原保护相关专业', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 83.0, 'unit': '那曲市', 'Post': '巴青县', 'Nature_position': '巴青县阿秀乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202220880.0, 'College_majors': '农学类专业', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 84.0, 'unit': '那曲市', 'Post': '巴青县', 'Nature_position': '巴青县阿秀乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220881.0, 'College_majors': '畜牧兽医、动物防疫与检疫、动物医学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 85.0, 'unit': '那曲市', 'Post': '巴青县', 'Nature_position': '巴青县阿秀乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220882.0, 'College_majors': '动物医学、动物科学、草业科学等农牧相关专业', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 86.0, 'unit': '那曲市', 'Post': '巴青县', 'Nature_position': '巴青县巴青乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220883.0, 'College_majors': '农学类专业', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 87.0, 'unit': '那曲市', 'Post': '巴青县', 'Nature_position': '巴青县巴青乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220884.0, 'College_majors': '畜牧兽医、动物防疫与检疫、动物医学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 88.0, 'unit': '那曲市', 'Post': '巴青县', 'Nature_position': '巴青县本塔乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220885.0, 'College_majors': '农学类专业', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '仅限那曲籍报考', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 89.0, 'unit': '那曲市', 'Post': '巴青县', 'Nature_position': '巴青县本塔乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220886.0, 'College_majors': '畜牧兽医、动物防疫与检疫、动物医学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 90.0, 'unit': '那曲市', 'Post': '巴青县', 'Nature_position': '巴青县岗切乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202220887.0, 'College_majors': '农学类专业', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '仅限那曲籍报考', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 91.0, 'unit': '那曲市', 'Post': '巴青县', 'Nature_position': '巴青县岗切乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220888.0, 'College_majors': '畜牧兽医、动物防疫与检疫、动物医学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 92.0, 'unit': '那曲市', 'Post': '巴青县', 'Nature_position': '巴青县岗切乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220889.0, 'College_majors': '动物医学、动物科学、草业科学等农牧相关专业', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 93.0, 'unit': '那曲市', 'Post': '巴青县', 'Nature_position': '巴青县贡日乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220890.0, 'College_majors': '畜牧兽医、动物防疫与检疫、动物医学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 94.0, 'unit': '那曲市', 'Post': '巴青县', 'Nature_position': '巴青县贡日乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202220891.0, 'College_majors': '农学类专业', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '仅限那曲籍报考', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 95.0, 'unit': '那曲市', 'Post': '巴青县', 'Nature_position': '巴青县玛如乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202220892.0, 'College_majors': '农学类专业', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '仅限那曲籍报考', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 96.0, 'unit': '那曲市', 'Post': '巴青县', 'Nature_position': '巴青县玛如乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220893.0, 'College_majors': '畜牧兽医、动物防疫与检疫、动物医学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 97.0, 'unit': '那曲市', 'Post': '巴青县', 'Nature_position': '巴青县拉西镇农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220894.0, 'College_majors': '畜牧兽医、动物防疫与检疫、动物医学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 98.0, 'unit': '那曲市', 'Post': '巴青县', 'Nature_position': '巴青县拉西镇农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202220895.0, 'College_majors': '农学类专业', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 99.0, 'unit': '那曲市', 'Post': '巴青县', 'Nature_position': '巴青县杂色镇农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 3.0, 'Academic_requirements': 202220896.0, 'College_majors': '农学类专业', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '仅限那曲籍报考', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 100.0, 'unit': '那曲市', 'Post': '巴青县', 'Nature_position': '巴青县杂色镇农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220897.0, 'College_majors': '畜牧兽医、动物防疫与检疫、动物医学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 101.0, 'unit': '那曲市', 'Post': '巴青县', 'Nature_position': '巴青县雅安镇农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 3.0, 'Academic_requirements': 202220898.0, 'College_majors': '农学类专业', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 102.0, 'unit': '那曲市', 'Post': '巴青县', 'Nature_position': '巴青县雅安镇农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220899.0, 'College_majors': '畜牧兽医、动物防疫与检疫、动物医学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 103.0, 'unit': '那曲市', 'Post': '巴青县', 'Nature_position': '巴青县江绵乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220900.0, 'College_majors': '农学类专业', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 104.0, 'unit': '那曲市', 'Post': '巴青县', 'Nature_position': '巴青县巴青乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220901.0, 'College_majors': '计算机类', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 105.0, 'unit': '那曲市', 'Post': '巴青县', 'Nature_position': '巴青县玛如乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202220902.0, 'College_majors': '会计类', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 106.0, 'unit': '那曲市', 'Post': '巴青县', 'Nature_position': '巴青县雅安镇便民服务中心', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202220903.0, 'College_majors': '会计类', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 107.0, 'unit': '那曲市', 'Post': '巴青县', 'Nature_position': '巴青县阿秀乡卫生院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220904.0, 'College_majors': '临床医学（藏医）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '藏医药护理类(Z类)—藏医', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 108.0, 'unit': '那曲市', 'Post': '巴青县', 'Nature_position': '巴青县雅安镇卫生院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220905.0, 'College_majors': '临床医学（藏医）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '藏医药护理类(Z类)—藏医', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 109.0, 'unit': '那曲市', 'Post': '班戈县', 'Nature_position': '班戈县委组织部人事档案中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220906.0, 'College_majors': '文秘专业', 'Undergraduate_majors': '中共党员', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 110.0, 'unit': '那曲市', 'Post': '班戈县', 'Nature_position': '班戈县委组织部人事档案中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220907.0, 'College_majors': '档案管理类', 'Undergraduate_majors': '中共党员', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 111.0, 'unit': '那曲市', 'Post': '班戈县', 'Nature_position': '班戈县委组织部人事档案中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220908.0, 'College_majors': '管理类专业', 'Undergraduate_majors': '中共党员', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 112.0, 'unit': '那曲市', 'Post': '班戈县', 'Nature_position': '班戈县委党校', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220909.0, 'College_majors': '财务会计类专业', 'Undergraduate_majors': '中共党员', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 113.0, 'unit': '那曲市', 'Post': '班戈县', 'Nature_position': '班戈县林业和草原工作站', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220910.0, 'College_majors': '林业和草原相关专业', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 114.0, 'unit': '那曲市', 'Post': '班戈县', 'Nature_position': '班戈县党员远程教育中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220911.0, 'College_majors': '国际新闻', 'Undergraduate_majors': '中共党员', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 115.0, 'unit': '那曲市', 'Post': '班戈县', 'Nature_position': '班戈县党员远程教育中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220912.0, 'College_majors': '计算机、电子信息类', 'Undergraduate_majors': '中共党员', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 116.0, 'unit': '那曲市', 'Post': '班戈县', 'Nature_position': '班戈县供销合作社', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220913.0, 'College_majors': '会计学、财务管理类、公共管理类、工商管理类', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 117.0, 'unit': '那曲市', 'Post': '班戈县', 'Nature_position': '班戈县人民医院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220914.0, 'College_majors': '医学检验技术', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—医学技术', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 118.0, 'unit': '那曲市', 'Post': '班戈县', 'Nature_position': '班戈县人民医院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220915.0, 'College_majors': '药学、药剂专业', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—药剂', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 119.0, 'unit': '那曲市', 'Post': '班戈县', 'Nature_position': '班戈县保吉乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220916.0, 'College_majors': '会计学、财务管理类、公共管理类、工商管理类', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 120.0, 'unit': '那曲市', 'Post': '班戈县', 'Nature_position': '班戈县门当乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202220917.0, 'College_majors': '会计学、财务管理类、公共管理类、工商管理类', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 121.0, 'unit': '那曲市', 'Post': '班戈县', 'Nature_position': '班戈县尼玛乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202220918.0, 'College_majors': '会计学、财务管理类、公共管理类、工商管理类', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 122.0, 'unit': '那曲市', 'Post': '班戈县', 'Nature_position': '班戈县青龙乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202220919.0, 'College_majors': '会计学、财务管理类、公共管理类、工商管理类', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 123.0, 'unit': '那曲市', 'Post': '班戈县', 'Nature_position': '班戈县新吉乡卫生院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220920.0, 'College_majors': '藏医临床医学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '藏医药护理类(Z类)—藏医', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 124.0, 'unit': '那曲市', 'Post': '班戈县', 'Nature_position': '班戈县普保镇卫生院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220921.0, 'College_majors': '藏医临床医学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '藏医药护理类(Z类)—藏医', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 125.0, 'unit': '那曲市', 'Post': '比如县', 'Nature_position': '比如县党员远程教育中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220922.0, 'College_majors': '法学、哲学、马克思主义理论', 'Undergraduate_majors': '中共党员', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 126.0, 'unit': '那曲市', 'Post': '比如县', 'Nature_position': '比如县供销合作社', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220923.0, 'College_majors': '财务管理类', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 127.0, 'unit': '那曲市', 'Post': '比如县', 'Nature_position': '比如县林业和草原工作站', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202220924.0, 'College_majors': '园林技术、草业科学、草业技术、森林和草原保护相关专业', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 128.0, 'unit': '那曲市', 'Post': '比如县', 'Nature_position': '比如县人民医院', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202220925.0, 'College_majors': '临床医学（西医）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 129.0, 'unit': '那曲市', 'Post': '比如县', 'Nature_position': '比如县达塘乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220926.0, 'College_majors': '畜牧兽医、动物防疫与检疫、动物医学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '仅限那曲籍报考', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 130.0, 'unit': '那曲市', 'Post': '比如县', 'Nature_position': '比如县达塘乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220927.0, 'College_majors': '畜牧兽医、动物防疫与检疫、动物医学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 131.0, 'unit': '那曲市', 'Post': '嘉黎县', 'Nature_position': '嘉黎县委党校', 'Number': '事业单位', 'Graduation_time': 3.0, 'Academic_requirements': 202220928.0, 'College_majors': '法学、马克思主义哲学、经济学', 'Undergraduate_majors': '中共党员', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 132.0, 'unit': '那曲市', 'Post': '嘉黎县', 'Nature_position': '嘉黎县委党校', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220929.0, 'College_majors': '法学、马克思主义哲学、经济学', 'Undergraduate_majors': '中共党员', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '仅限那曲籍报考', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 133.0, 'unit': '那曲市', 'Post': '嘉黎县', 'Nature_position': '嘉黎县党员远程教育中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220930.0, 'College_majors': '计算机、电子信息类', 'Undergraduate_majors': '中共党员', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 134.0, 'unit': '那曲市', 'Post': '嘉黎县', 'Nature_position': '嘉黎县供销合作社', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220931.0, 'College_majors': '财务管理类、工商管理类', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 135.0, 'unit': '那曲市', 'Post': '嘉黎县', 'Nature_position': '嘉黎县林业和草原工作站', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220932.0, 'College_majors': '园林技术、草业科学、草业技术、森林和草原保护相关专业', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 136.0, 'unit': '那曲市', 'Post': '嘉黎县', 'Nature_position': '嘉黎县人民医院', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202220933.0, 'College_majors': '临床医学（西医）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 137.0, 'unit': '那曲市', 'Post': '嘉黎县', 'Nature_position': '嘉黎县藏比乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220934.0, 'College_majors': '畜牧兽医类', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '仅限那曲籍报考', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 138.0, 'unit': '那曲市', 'Post': '嘉黎县', 'Nature_position': '嘉黎县夏玛乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220935.0, 'College_majors': '会计学、财务管理类、公共管理类、工商管理类', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 139.0, 'unit': '那曲市', 'Post': '嘉黎县', 'Nature_position': '嘉黎县绒多乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220936.0, 'College_majors': '会计学、财务管理类、公共管理类、工商管理类', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '仅限那曲籍报考', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 140.0, 'unit': '那曲市', 'Post': '嘉黎县', 'Nature_position': '嘉黎县阿扎镇便民服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220937.0, 'College_majors': '会计学、财务管理类、公共管理类、工商管理类', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 141.0, 'unit': '那曲市', 'Post': '嘉黎县', 'Nature_position': '嘉黎县嘉黎镇便民服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220938.0, 'College_majors': '会计学、财务管理类、公共管理类、工商管理类', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 142.0, 'unit': '那曲市', 'Post': '尼玛县', 'Nature_position': '尼玛县委组织部人事档案中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220939.0, 'College_majors': '档案学', 'Undergraduate_majors': '中共党员', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 143.0, 'unit': '那曲市', 'Post': '尼玛县', 'Nature_position': '尼玛县委组织部人事档案中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220940.0, 'College_majors': '人力资源管理', 'Undergraduate_majors': '中共党员', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '仅限那曲籍报考', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 144.0, 'unit': '那曲市', 'Post': '尼玛县', 'Nature_position': '尼玛县党员远程教育中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220941.0, 'College_majors': '广告学', 'Undergraduate_majors': '中共党员', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 145.0, 'unit': '那曲市', 'Post': '尼玛县', 'Nature_position': '尼玛县党员远程教育中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220942.0, 'College_majors': '计算机、电子信息类', 'Undergraduate_majors': '中共党员', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 146.0, 'unit': '那曲市', 'Post': '尼玛县', 'Nature_position': '尼玛县委党校', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220943.0, 'College_majors': '哲学', 'Undergraduate_majors': '中共党员', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 147.0, 'unit': '那曲市', 'Post': '尼玛县', 'Nature_position': '尼玛县委党校', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220944.0, 'College_majors': '马克思主义理论类专业', 'Undergraduate_majors': '中共党员', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 148.0, 'unit': '那曲市', 'Post': '尼玛县', 'Nature_position': '尼玛县委党校', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220945.0, 'College_majors': '经济学', 'Undergraduate_majors': '中共党员', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 149.0, 'unit': '那曲市', 'Post': '尼玛县', 'Nature_position': '尼玛县供销合作社', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220946.0, 'College_majors': '工商管理类', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 150.0, 'unit': '那曲市', 'Post': '尼玛县', 'Nature_position': '尼玛县林业和草原工作站', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220947.0, 'College_majors': '林草学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 151.0, 'unit': '那曲市', 'Post': '尼玛县', 'Nature_position': '尼玛县吉瓦乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220948.0, 'College_majors': '动物医学、动物科学等农牧相关专业', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 152.0, 'unit': '那曲市', 'Post': '尼玛县', 'Nature_position': '尼玛县吉瓦乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220949.0, 'College_majors': '畜牧兽医、动物防疫与检疫、动物医学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 153.0, 'unit': '那曲市', 'Post': '尼玛县', 'Nature_position': '尼玛县卓瓦乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220950.0, 'College_majors': '动物医学、动物科学等农牧相关专业', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 154.0, 'unit': '那曲市', 'Post': '尼玛县', 'Nature_position': '尼玛县卓瓦乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220951.0, 'College_majors': '畜牧兽医、动物防疫与检疫、动物医学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 155.0, 'unit': '那曲市', 'Post': '尼玛县', 'Nature_position': '尼玛县尼玛县卓瓦乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220952.0, 'College_majors': '动物医学、动物科学、草业科学等农牧相关专业', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 156.0, 'unit': '那曲市', 'Post': '尼玛县', 'Nature_position': '尼玛县军仓乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220953.0, 'College_majors': '专业不限', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '仅限服务期满考核合格“三支一扶”人员报考', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 157.0, 'unit': '那曲市', 'Post': '尼玛县', 'Nature_position': '尼玛县军仓乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220954.0, 'College_majors': '专业不限', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 158.0, 'unit': '那曲市', 'Post': '尼玛县', 'Nature_position': '尼玛县卓瓦乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220955.0, 'College_majors': '专业不限', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '仅限服务期满考核合格“三支一扶”人员报考', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 159.0, 'unit': '那曲市', 'Post': '尼玛县', 'Nature_position': '尼玛县达果乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220956.0, 'College_majors': '计算机、电子信息类', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 160.0, 'unit': '那曲市', 'Post': '尼玛县', 'Nature_position': '尼玛县俄久乡卫生院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220957.0, 'College_majors': '临床医学（西医）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 161.0, 'unit': '那曲市', 'Post': '聂荣县', 'Nature_position': '聂荣县党员远程教育中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220958.0, 'College_majors': '新闻学', 'Undergraduate_majors': '中共党员', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 162.0, 'unit': '那曲市', 'Post': '聂荣县', 'Nature_position': '聂荣县党员远程教育中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220959.0, 'College_majors': '法学、哲学、马克思主义理论', 'Undergraduate_majors': '中共党员', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 163.0, 'unit': '那曲市', 'Post': '聂荣县', 'Nature_position': '聂荣县供销合作社', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220960.0, 'College_majors': '工商管理类', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 164.0, 'unit': '那曲市', 'Post': '聂荣县', 'Nature_position': '聂荣县林业和草原工作站', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220961.0, 'College_majors': '园林技术、草业科学、草业技术、森林和草原保护相关专业', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 165.0, 'unit': '那曲市', 'Post': '聂荣县', 'Nature_position': '聂荣县安监执法大队', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220962.0, 'College_majors': '专业不限', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '仅限服务两年及以上考核合格西部计划西藏专项志愿者、退役大学生士兵报考', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 166.0, 'unit': '那曲市', 'Post': '聂荣县', 'Nature_position': '聂荣县人民医院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220963.0, 'College_majors': '口腔医学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 167.0, 'unit': '那曲市', 'Post': '聂荣县', 'Nature_position': '聂荣县人民医院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220964.0, 'College_majors': '临床医学（西医）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 168.0, 'unit': '那曲市', 'Post': '聂荣县', 'Nature_position': '聂荣县藏医院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220965.0, 'College_majors': '藏医护理', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '藏医药护理类(Z类)-藏医护理', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 169.0, 'unit': '那曲市', 'Post': '聂荣县', 'Nature_position': '聂荣县聂荣镇卫生院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220966.0, 'College_majors': '西医护理', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—护理', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 170.0, 'unit': '那曲市', 'Post': '聂荣县', 'Nature_position': '聂荣县白雄乡卫生院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220967.0, 'College_majors': '西医护理', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—护理', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 171.0, 'unit': '那曲市', 'Post': '聂荣县', 'Nature_position': '聂荣县下曲乡卫生院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220968.0, 'College_majors': '西医护理', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—护理', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 172.0, 'unit': '那曲市', 'Post': '聂荣县', 'Nature_position': '聂荣县永曲乡卫生院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220969.0, 'College_majors': '西医护理', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—护理', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 173.0, 'unit': '那曲市', 'Post': '聂荣县', 'Nature_position': '聂荣县查当乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220970.0, 'College_majors': '动物医学、动物科学、草业科学等农牧相关专业', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '仅限那曲籍报考', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 174.0, 'unit': '那曲市', 'Post': '聂荣县', 'Nature_position': '聂荣县查当乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220971.0, 'College_majors': '动物医学、动物科学、草业科学等农牧相关专业', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 175.0, 'unit': '那曲市', 'Post': '聂荣县', 'Nature_position': '聂荣县查当乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220972.0, 'College_majors': '畜牧兽医、动物防疫与检疫、动物医学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 176.0, 'unit': '那曲市', 'Post': '聂荣县', 'Nature_position': '聂荣县永曲乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202220973.0, 'College_majors': '动物医学、动物科学、草业科学等农牧相关专业', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 177.0, 'unit': '那曲市', 'Post': '聂荣县', 'Nature_position': '聂荣县永曲乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220974.0, 'College_majors': '畜牧兽医、动物防疫与检疫、动物医学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 178.0, 'unit': '那曲市', 'Post': '聂荣县', 'Nature_position': '聂荣县下曲乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220975.0, 'College_majors': '动物医学、动物科学、草业科学等农牧相关专业', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 179.0, 'unit': '那曲市', 'Post': '聂荣县', 'Nature_position': '聂荣县下曲乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220976.0, 'College_majors': '畜牧兽医、动物防疫与检疫、动物医学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 180.0, 'unit': '那曲市', 'Post': '聂荣县', 'Nature_position': '聂荣县白雄乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220977.0, 'College_majors': '畜牧兽医、动物防疫与检疫、动物医学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 181.0, 'unit': '那曲市', 'Post': '聂荣县', 'Nature_position': '聂荣县白雄乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220978.0, 'College_majors': '兽医、农牧', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 182.0, 'unit': '那曲市', 'Post': '聂荣县', 'Nature_position': '聂荣县当木江乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220979.0, 'College_majors': '计算机类', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 183.0, 'unit': '那曲市', 'Post': '聂荣县', 'Nature_position': '聂荣县尼玛乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220980.0, 'College_majors': '计算机类', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 184.0, 'unit': '那曲市', 'Post': '聂荣县', 'Nature_position': '聂荣县永曲乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220981.0, 'College_majors': '计算机类', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '仅限那曲籍报考', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 185.0, 'unit': '那曲市', 'Post': '聂荣县', 'Nature_position': '聂荣县永曲乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220982.0, 'College_majors': '计算机类', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 186.0, 'unit': '那曲市', 'Post': '聂荣县', 'Nature_position': '聂荣县聂荣镇便民服务中心', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202220983.0, 'College_majors': '计算机类', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 187.0, 'unit': '那曲市', 'Post': '申扎县', 'Nature_position': '申扎县委组织部电子政务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220984.0, 'College_majors': '计算机专业', 'Undergraduate_majors': '中共党员', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 188.0, 'unit': '那曲市', 'Post': '申扎县', 'Nature_position': '申扎县委组织部人事档案中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220985.0, 'College_majors': '专业不限', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '仅限服务两年及以上考核合格西部计划西藏专项志愿者、退役大学生士兵报考', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 189.0, 'unit': '那曲市', 'Post': '申扎县', 'Nature_position': '申扎县委组织部人事档案中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220986.0, 'College_majors': '档案管理', 'Undergraduate_majors': '中共党员', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 190.0, 'unit': '那曲市', 'Post': '申扎县', 'Nature_position': '申扎县党员远程教育中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220987.0, 'College_majors': '新闻传播类', 'Undergraduate_majors': '中共党员', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 191.0, 'unit': '那曲市', 'Post': '申扎县', 'Nature_position': '申扎县党员远程教育中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220988.0, 'College_majors': '计算机、电子信息类', 'Undergraduate_majors': '中共党员', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 192.0, 'unit': '那曲市', 'Post': '申扎县', 'Nature_position': '申扎县委党校', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202220989.0, 'College_majors': '法学、马克思主义哲学、经济学', 'Undergraduate_majors': '中共党员', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 193.0, 'unit': '那曲市', 'Post': '申扎县', 'Nature_position': '申扎县文化广播电影电视中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220990.0, 'College_majors': '藏汉播音', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 194.0, 'unit': '那曲市', 'Post': '申扎县', 'Nature_position': '申扎县供销合作社', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220991.0, 'College_majors': '财务管理类、工商管理类', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 195.0, 'unit': '那曲市', 'Post': '申扎县', 'Nature_position': '申扎县林业和草原工作站', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220992.0, 'College_majors': '园林技术、草业科学、草业技术、森林和草原保护相关专业', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 196.0, 'unit': '那曲市', 'Post': '申扎县', 'Nature_position': '申扎县人民医院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220993.0, 'College_majors': '口腔医学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 197.0, 'unit': '那曲市', 'Post': '申扎县', 'Nature_position': '申扎县人民医院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220994.0, 'College_majors': '医疗器械相关专业', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '医疗卫生类(E类)—医学技术', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 198.0, 'unit': '那曲市', 'Post': '申扎县', 'Nature_position': '申扎县人民医院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220995.0, 'College_majors': '影像学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '医疗卫生类(E类)—医学技术', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 199.0, 'unit': '那曲市', 'Post': '申扎县', 'Nature_position': '申扎县人民医院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220996.0, 'College_majors': '医学检验', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '医疗卫生类(E类)—医学技术', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 200.0, 'unit': '那曲市', 'Post': '申扎县', 'Nature_position': '申扎县申扎镇卫生院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220997.0, 'College_majors': '西医', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 201.0, 'unit': '那曲市', 'Post': '申扎县', 'Nature_position': '申扎县申扎镇卫生院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220998.0, 'College_majors': '妇幼保健专业', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—公共卫生管理', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 202.0, 'unit': '那曲市', 'Post': '申扎县', 'Nature_position': '申扎县下过乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 3.0, 'Academic_requirements': 202220999.0, 'College_majors': '畜牧兽医、动物防疫与检疫、动物医学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 203.0, 'unit': '那曲市', 'Post': '申扎县', 'Nature_position': '申扎县下过乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221000.0, 'College_majors': '畜牧兽医、动物防疫与检疫、动物医学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '仅限那曲籍报考', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 204.0, 'unit': '那曲市', 'Post': '申扎县', 'Nature_position': '申扎县买巴乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221001.0, 'College_majors': '畜牧兽医、动物防疫与检疫、动物医学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '仅限那曲籍报考', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 205.0, 'unit': '那曲市', 'Post': '申扎县', 'Nature_position': '申扎县买巴乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221002.0, 'College_majors': '畜牧兽医、动物防疫与检疫、动物医学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 206.0, 'unit': '那曲市', 'Post': '索县', 'Nature_position': '索县党员远程教育中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221003.0, 'College_majors': '编辑出版学', 'Undergraduate_majors': '中共党员', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 207.0, 'unit': '那曲市', 'Post': '索县', 'Nature_position': '索县党员远程教育中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221004.0, 'College_majors': '法学、哲学、马克思主义理论', 'Undergraduate_majors': '中共党员', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 208.0, 'unit': '那曲市', 'Post': '索县', 'Nature_position': '索县供销合作社', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221005.0, 'College_majors': '工商管理类', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 209.0, 'unit': '那曲市', 'Post': '索县', 'Nature_position': '索县人民医院', 'Number': '事业单位', 'Graduation_time': 4.0, 'Academic_requirements': 202221006.0, 'College_majors': '临床医学（西医）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 210.0, 'unit': '那曲市', 'Post': '索县', 'Nature_position': '索县人民医院', 'Number': '事业单位', 'Graduation_time': 4.0, 'Academic_requirements': 202221007.0, 'College_majors': '护理学（西医）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—护理', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 211.0, 'unit': '那曲市', 'Post': '索县', 'Nature_position': '索县人民医院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221008.0, 'College_majors': '临床检验', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 212.0, 'unit': '那曲市', 'Post': '索县', 'Nature_position': '索县人民医院', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221009.0, 'College_majors': '影像学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '医疗卫生类(E类)—医学技术', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 213.0, 'unit': '那曲市', 'Post': '索县', 'Nature_position': '索县人民医院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221010.0, 'College_majors': '药学专业（西医）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—药剂', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 214.0, 'unit': '那曲市', 'Post': '索县', 'Nature_position': '索县人民医院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221011.0, 'College_majors': '会计学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 215.0, 'unit': '那曲市', 'Post': '索县', 'Nature_position': '索县赤多乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221012.0, 'College_majors': '畜牧兽医专业', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '仅限那曲籍报考', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 216.0, 'unit': '那曲市', 'Post': '索县', 'Nature_position': '索县赤多乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221013.0, 'College_majors': '畜牧兽医专业', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 217.0, 'unit': '那曲市', 'Post': '索县', 'Nature_position': '索县赤多乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221014.0, 'College_majors': '畜牧兽医、动物防疫与检疫、动物医学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 218.0, 'unit': '那曲市', 'Post': '索县', 'Nature_position': '索县嘎木乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221015.0, 'College_majors': '农牧相关', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 219.0, 'unit': '那曲市', 'Post': '索县', 'Nature_position': '索县嘎木乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221016.0, 'College_majors': '畜牧兽医、动物防疫与检疫、动物医学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 220.0, 'unit': '那曲市', 'Post': '索县', 'Nature_position': '索县嘎木乡卫生院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221017.0, 'College_majors': '临床医学（藏医）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '藏医药护理类(Z类)—藏医', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 221.0, 'unit': '那曲市', 'Post': '索县', 'Nature_position': '索县赤多乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221018.0, 'College_majors': '会计学类', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 222.0, 'unit': '那曲市', 'Post': '索县', 'Nature_position': '索县嘎美乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221019.0, 'College_majors': '财务管理类', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 223.0, 'unit': '那曲市', 'Post': '索县', 'Nature_position': '索县嘎木乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221020.0, 'College_majors': '会计学类', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 224.0, 'unit': '那曲市', 'Post': '索县', 'Nature_position': '索县加勤乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221021.0, 'College_majors': '会计学类', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 225.0, 'unit': '那曲市', 'Post': '索县', 'Nature_position': '索县江达乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221022.0, 'College_majors': '会计学类', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 226.0, 'unit': '那曲市', 'Post': '索县', 'Nature_position': '索县若达乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221023.0, 'College_majors': '会计学类', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'},
+
+
+ {'id': 227.0, 'unit': '那曲市', 'Post': '索县', 'Nature_position': '索县西昌乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221024.0, 'College_majors': '计算机类', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0896-3822823、0896-3906313'}]
+
+
+
+
+
+
+	    
+	    
+	    for(i=0;i<xx.length;i++){
+	    	var html="<tr><td>"+
+	    	xx[i].id+"</td><td>"+
+            xx[i].unit+"</td><td>"+
+            xx[i].Post+"</td><td>"+
+            xx[i].Nature_position+"</td><td>"+
+            xx[i].Number+"</td><td>"+
+            xx[i].Graduation_time+"</td><td>"+
+            xx[i].Academic_requirements+"</td><td>"+
+            xx[i].College_majors+"</td><td>"+
+            xx[i].Undergraduate_majors+"</td><td>"+
+            xx[i].Graduate_majors+"</td><td>"+
+            xx[i].political_landscape+"</td><td>"+
+            xx[i].Job_code+"</td><td>"+
+            xx[i].Examination+"</td><td>"+
+            xx[i].interview+"</td><td>"+
+            xx[i].remark+"</td><td>"+
+            xx[i].consultation+"</td></tr>";
+
+	    	$("#example tbody").append(html);
+	    	
+	    }
+	    
+	    $('#example').DataTable( {
+	        dom: 'Bfrtip',
+	        language: {  
+                emptyTable: '没有数据',  
+                loadingRecords: '加载中...',  
+                processing: '查询中...',  
+                search: '搜索【专业、地区等】:',  
+                lengthMenu: '每页 _MENU_ 件',  
+                zeroRecords: '没有数据',  
+                paginate: {  
+                    'first':      '第一页',  
+                    'last':       '最后一页',  
+                    'next':       '下一页',  
+                    'previous':   '上一页'  
+            	},  
+	            info: '第 _PAGE_ 页 / 总 _PAGES_ 页',  
+	            infoEmpty: '没有数据',  
+	            infoFiltered: '(过滤总件数 _MAX_ 条)',
+	        },
+	        
+
+	    } );
+
+
+	    
+
+
+	});
+  </script>  
+ </body>  
+</html>  

@@ -1,0 +1,1332 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">   
+ <head>  
+  <title> 2022 </title>  
+  <meta charset='utf-8'>
+  <link rel="stylesheet" href="../../css/table.css" />
+  <link rel="stylesheet" href="../../css/buttons.css" />
+  <style>
+  	*{
+  		/*background-image: url();*/
+  		background-color: #000;
+  		color: #FFF; 
+  	}
+  	tbody td{
+  		text-align: center;
+  	}
+  </style>
+ </head>  
+  
+ <body>  
+ 	<h1 style="text-align: center;">2022日喀则事业单位</h1>
+ 	<a href="../../2022_shiye_.html" style="font-size: 20px;">回到主页</a>
+    <table id="example" class="display" role="grid" aria-describedby="example_info">
+ 		<thead>
+            <tr>
+                <th>序号</th>
+                <th>招聘地市</th>
+                <th>单位</th>
+                <th>岗位</th>
+                <th>职位性质</th>
+                <th>人数</th>
+                <th>岗位代码</th>
+                <th>专业要求</th>              
+                <th>政治面貌</th>
+                <th>学历要求</th>
+                <th>毕业时间</th>     
+                <th>笔试科目</th>
+                <th>是否体检</th>
+                <th>是否面试</th>
+                <th>备注</th>
+                <th>咨询</th>
+                
+
+            </tr>
+        </thead>
+        <tbody>
+            
+        </tbody>
+
+        
+     
+ 	</table>
+ 	
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/jquery.datatables.min.js"/>
+	<script src="../../js/buttons.print.min.js"></script>
+
+ <script> 
+
+$(document).ready(function(){ 
+
+    var xx = [{'id': 1.0, 'unit': '日喀则市', 'Post': '日喀则市财政局', 'Nature_position': '财政信息网络中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221436.0, 'College_majors': '会计', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '仅限日喀则考生可报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 2.0, 'unit': '日喀则市', 'Post': '日喀则市财政局', 'Nature_position': '会计培训中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221437.0, 'College_majors': '会计', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '仅限日喀则考生可报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 3.0, 'unit': '日喀则市', 'Post': '日喀则市发改委国家粮食储备库', 'Nature_position': '办公室', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221438.0, 'College_majors': '会计', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '仅限日喀则考生可报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 4.0, 'unit': '日喀则市', 'Post': '日喀则市发改委江孜国家粮食储备库', 'Nature_position': '江孜国家粮食储备库', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221439.0, 'College_majors': '粮食储检类', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '仅限日喀则考生可报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 5.0, 'unit': '日喀则市', 'Post': '日喀则市发改委江孜国家粮食储备库', 'Nature_position': '江孜国家粮食储备库', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221440.0, 'College_majors': '统计学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '仅限日喀则考生可报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 6.0, 'unit': '日喀则市', 'Post': '日喀则市发改委江孜国家粮食储备库', 'Nature_position': '江孜国家粮食储备库', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221441.0, 'College_majors': '文秘', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '仅限日喀则考生可报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 7.0, 'unit': '日喀则市', 'Post': '日喀则市发改委拉孜地方粮食储备库', 'Nature_position': '办公室', 'Number': '事业\n单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221442.0, 'College_majors': '会计', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '仅限日喀则考生可报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 8.0, 'unit': '日喀则市', 'Post': '日喀则市发改委拉孜地方粮食储备库', 'Nature_position': '拉孜地方粮食储备库', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221443.0, 'College_majors': '食品科学与工程', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '仅限日喀则考生可报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 9.0, 'unit': '日喀则市', 'Post': '日喀则市发改委拉孜地方粮食储备库', 'Nature_position': '拉孜地方粮食储备库', 'Number': '事业\n单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221444.0, 'College_majors': '专业不限', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '仅限服务期满考核合格“三支一扶”人员报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 10.0, 'unit': '日喀则市', 'Post': '日喀则市广播电视台', 'Nature_position': '专题部', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221445.0, 'College_majors': '广播影视节目制作', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '仅限日喀则考生可报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 11.0, 'unit': '日喀则市', 'Post': '日喀则市纪委监委', 'Nature_position': '卡热管理中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221446.0, 'College_majors': '计算机专业', 'Undergraduate_majors': '中共党员', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '仅限日喀则考生可报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 12.0, 'unit': '日喀则市', 'Post': '日喀则市纪委监委', 'Nature_position': '卡热管理中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221447.0, 'College_majors': '会计', 'Undergraduate_majors': '中共党员', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '仅限日喀则考生可报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 13.0, 'unit': '日喀则市', 'Post': '日喀则市林业和草原局', 'Nature_position': '国家湿地公园管理中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221448.0, 'College_majors': '会计', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '仅限日喀则考生可报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 14.0, 'unit': '日喀则市', 'Post': '日喀则市林业和草原局', 'Nature_position': '林业技术服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221449.0, 'College_majors': '文秘', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '仅限日喀则考生可报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 15.0, 'unit': '日喀则市', 'Post': '日喀则市农牧业科学研究推广中心', 'Nature_position': '办公室', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221450.0, 'College_majors': '文秘', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '仅限日喀则考生可报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 16.0, 'unit': '日喀则市', 'Post': '日喀则市农牧业科学研究推广中心', 'Nature_position': '成果转化办', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221451.0, 'College_majors': '蔬菜学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '仅限日喀则考生可报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 17.0, 'unit': '日喀则市', 'Post': '日喀则市农牧业科学研究推广中心', 'Nature_position': '畜牧业技术推广中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221452.0, 'College_majors': '草业技术', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '仅限日喀则考生可报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 18.0, 'unit': '日喀则市', 'Post': '日喀则市生态环境局', 'Nature_position': '桑珠孜区生态环境监测中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221453.0, 'College_majors': '环境监测', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '仅限日喀则考生可报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 19.0, 'unit': '日喀则市', 'Post': '日喀则市水利局', 'Nature_position': '水土保持监测中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221454.0, 'College_majors': '会计', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '仅限日喀则考生可报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 20.0, 'unit': '日喀则市', 'Post': '日喀则市外事办', 'Nature_position': '香客管理服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221455.0, 'College_majors': '汉语言文学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '仅限日喀则考生可报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 21.0, 'unit': '日喀则市', 'Post': '日喀则市外事办', 'Nature_position': '香客管理服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221456.0, 'College_majors': '英语', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '仅限日喀则考生可报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 22.0, 'unit': '日喀则市', 'Post': '日喀则市委党校（行政学院）', 'Nature_position': '党史党建教研室', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221457.0, 'College_majors': '宗教学', 'Undergraduate_majors': '中共党员', 'Graduate_majors': '硕士研究生及以上', 'political_landscape': '2022年毕业生', 'Job_code': '——', 'Examination': '是', 'interview': '是', 'remark': '仅限日喀则考生可报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 23.0, 'unit': '日喀则市', 'Post': '日喀则市委党校（行政学院）', 'Nature_position': '管理教研室', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221458.0, 'College_majors': '宪法学与行政法学', 'Undergraduate_majors': '中共党员', 'Graduate_majors': '硕士研究生及以上', 'political_landscape': '2022年毕业生', 'Job_code': '——', 'Examination': '是', 'interview': '是', 'remark': '仅限日喀则考生可报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 24.0, 'unit': '日喀则市', 'Post': '日喀则市委党校（行政学院）', 'Nature_position': '管理教研室', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221459.0, 'College_majors': '政治经济学', 'Undergraduate_majors': '中共党员', 'Graduate_majors': '硕士研究生及以上', 'political_landscape': '2022年毕业生', 'Job_code': '——', 'Examination': '是', 'interview': '是', 'remark': '仅限日喀则考生可报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 25.0, 'unit': '日喀则市', 'Post': '日喀则市委党校（行政学院）', 'Nature_position': '管理教研室', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221460.0, 'College_majors': '产业经济学', 'Undergraduate_majors': '中共党员', 'Graduate_majors': '硕士研究生及以上', 'political_landscape': '2022年毕业生', 'Job_code': '——', 'Examination': '是', 'interview': '是', 'remark': '仅限日喀则考生可报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 26.0, 'unit': '日喀则市', 'Post': '日喀则市委党校（行政学院）', 'Nature_position': '管理教研室', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221461.0, 'College_majors': '社会学', 'Undergraduate_majors': '中共党员', 'Graduate_majors': '硕士研究生及以上', 'political_landscape': '2022年毕业生', 'Job_code': '——', 'Examination': '是', 'interview': '是', 'remark': '仅限日喀则考生可报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 27.0, 'unit': '日喀则市', 'Post': '日喀则市委党校（行政学院）', 'Nature_position': '理论教研室', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221462.0, 'College_majors': '中国少数民族经济', 'Undergraduate_majors': '中共党员', 'Graduate_majors': '硕士研究生及以上', 'political_landscape': '2022年毕业生', 'Job_code': '——', 'Examination': '是', 'interview': '是', 'remark': '仅限日喀则考生可报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 28.0, 'unit': '日喀则市', 'Post': '日喀则市委党校（行政学院）', 'Nature_position': '马义教研室', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221463.0, 'College_majors': '马克思主义理论或政治学', 'Undergraduate_majors': '中共党员', 'Graduate_majors': '硕士研究生及以上', 'political_landscape': '2022年毕业生', 'Job_code': '——', 'Examination': '是', 'interview': '是', 'remark': '仅限日喀则考生可报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 29.0, 'unit': '日喀则市', 'Post': '日喀则市委网信办', 'Nature_position': '应急指挥中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221464.0, 'College_majors': '网络工程、信息安全', 'Undergraduate_majors': '中共党员', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '仅限日喀则考生可报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 30.0, 'unit': '日喀则市', 'Post': '日喀则市委网信办', 'Nature_position': '应急指挥中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221465.0, 'College_majors': '计算机专业', 'Undergraduate_majors': '中共党员', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '仅限日喀则考生可报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 31.0, 'unit': '日喀则市', 'Post': '日喀则市卫建委', 'Nature_position': '市第二人民医院', 'Number': '事业\n单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221466.0, 'College_majors': '医学检验', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—医学技术', 'Examination': '是', 'interview': '否', 'remark': '仅限日喀则考生可报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 32.0, 'unit': '日喀则市', 'Post': '日喀则市卫建委', 'Nature_position': '市第二人民医院', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221467.0, 'College_majors': '儿科学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '否', 'remark': '仅限日喀则考生可报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 33.0, 'unit': '日喀则市', 'Post': '日喀则市卫建委', 'Nature_position': '市第二人民医院', 'Number': '事业\n单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221468.0, 'College_majors': '临床医学（西医）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '否', 'remark': '仅限日喀则考生可报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 34.0, 'unit': '日喀则市', 'Post': '日喀则市卫建委', 'Nature_position': '市第二人民医院', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221469.0, 'College_majors': '护理学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—护理', 'Examination': '是', 'interview': '否', 'remark': '仅限日喀则考生可报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 35.0, 'unit': '日喀则市', 'Post': '日喀则市卫建委', 'Nature_position': '市第二人民医院', 'Number': '事业\n单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221470.0, 'College_majors': '放射医学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '否', 'remark': '仅限日喀则考生可报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 36.0, 'unit': '日喀则市', 'Post': '日喀则市文化局', 'Nature_position': '市民族艺术团', 'Number': '事业\n单位', 'Graduation_time': 5.0, 'Academic_requirements': 202221471.0, 'College_majors': '舞蹈表演', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '是', 'remark': '仅限日喀则考生可报考\n（面试为专业测试）；男舞蹈表演', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 37.0, 'unit': '日喀则市', 'Post': '日喀则市文化局', 'Nature_position': '市民族艺术团', 'Number': '事业\n单位', 'Graduation_time': 5.0, 'Academic_requirements': 202221472.0, 'College_majors': '舞蹈表演', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '是', 'remark': '仅限日喀则考生可报考\n（面试为专业测试）；女舞蹈表演', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 38.0, 'unit': '日喀则市', 'Post': '日喀则市文化局', 'Nature_position': '市民族艺术团', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221473.0, 'College_majors': '音乐表演', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '是', 'remark': '仅限日喀则考生可报考\n（面试为专业测试）；女声乐表演', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 39.0, 'unit': '日喀则市', 'Post': '日喀则市文化局', 'Nature_position': '市民族艺术团', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221474.0, 'College_majors': '音乐表演', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '是', 'remark': '仅限日喀则考生可报考\n（面试为专业测试）；民族乐器笛子演奏', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 40.0, 'unit': '日喀则市', 'Post': '日喀则市文化局', 'Nature_position': '市民族艺术团', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221475.0, 'College_majors': '音乐表演', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '是', 'remark': '仅限日喀则考生可报考\n（面试为专业测试）；民族乐器大提琴演奏', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 41.0, 'unit': '日喀则市', 'Post': '日喀则市文化局', 'Nature_position': '市民族艺术团', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221476.0, 'College_majors': '音乐表演', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '是', 'remark': '仅限日喀则考生可报考\n（面试为专业测试）；民族乐器扬琴演奏', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 42.0, 'unit': '日喀则市', 'Post': '日喀则市文化局', 'Nature_position': '市民族艺术团', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221477.0, 'College_majors': '音乐表演', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '是', 'remark': '仅限日喀则考生可报考\n（面试为专业测试）；民族乐器六弦琴演奏', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 43.0, 'unit': '日喀则市', 'Post': '日喀则市宣传部', 'Nature_position': '日喀则市新华书店', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221478.0, 'College_majors': '专业不限', 'Undergraduate_majors': '不限', 'Graduate_majors': '硕士研究生及以上', 'political_landscape': '不限', 'Job_code': '——', 'Examination': '是', 'interview': '是', 'remark': '仅限日喀则考生可报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 44.0, 'unit': '日喀则市', 'Post': '日喀则市政法委', 'Nature_position': '信息化建设中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221479.0, 'College_majors': '计算机专业', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '仅限日喀则考生可报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 45.0, 'unit': '日喀则市', 'Post': '日喀则市政府国资委', 'Nature_position': '董事监事工作中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221480.0, 'College_majors': '法学类', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '仅限日喀则考生可报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 46.0, 'unit': '日喀则市', 'Post': '日喀则市政府国资委', 'Nature_position': '资本业务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221481.0, 'College_majors': '经济学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 47.0, 'unit': '日喀则市', 'Post': '日喀则市珠峰文化旅游创意产业园区管委会', 'Nature_position': '综合服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221482.0, 'College_majors': '文化服务类', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 48.0, 'unit': '日喀则市', 'Post': '日喀则市自然资源局', 'Nature_position': '土地储备中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221483.0, 'College_majors': '国土测绘与规划', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 49.0, 'unit': '日喀则市', 'Post': '日喀则市总工会', 'Nature_position': '职工服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221484.0, 'College_majors': '文秘', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 50.0, 'unit': '日喀则市', 'Post': '昂仁县', 'Nature_position': '昂仁县阿木雄乡农牧综合服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221485.0, 'College_majors': '畜牧兽医', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '仅限服务两年及以上考核合格西部计划西藏专项志愿者、退役大学生士兵报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 51.0, 'unit': '日喀则市', 'Post': '昂仁县', 'Nature_position': '昂仁县阿木雄乡卫生院', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221486.0, 'College_majors': '护理学', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '医疗卫生类(E类)—护理', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 52.0, 'unit': '日喀则市', 'Post': '昂仁县', 'Nature_position': '昂仁县查孜乡农牧综合服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221487.0, 'College_majors': '畜牧兽医', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '仅限服务两年及以上考核合格西部计划西藏专项志愿者、退役大学生士兵报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 53.0, 'unit': '日喀则市', 'Post': '昂仁县', 'Nature_position': '昂仁县措迈乡农牧综合服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221488.0, 'College_majors': '畜牧兽医', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 54.0, 'unit': '日喀则市', 'Post': '昂仁县', 'Nature_position': '昂仁县达若乡卫生院', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221489.0, 'College_majors': '公共卫生与预防医学', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '医疗卫生类(E类)—公共卫生管理', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 55.0, 'unit': '日喀则市', 'Post': '昂仁县', 'Nature_position': '昂仁县贡久布乡卫生院', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221490.0, 'College_majors': '外科学', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 56.0, 'unit': '日喀则市', 'Post': '昂仁县', 'Nature_position': '昂仁县贡久布乡文化服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221491.0, 'College_majors': '专业不限', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 57.0, 'unit': '日喀则市', 'Post': '昂仁县', 'Nature_position': '昂仁县孔隆乡农牧综合服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221492.0, 'College_majors': '畜牧兽医', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 58.0, 'unit': '日喀则市', 'Post': '昂仁县', 'Nature_position': '昂仁县孔隆乡卫生院', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221493.0, 'College_majors': '临床医学（西医）', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 59.0, 'unit': '日喀则市', 'Post': '昂仁县', 'Nature_position': '昂仁县宁果乡卫生院', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221494.0, 'College_majors': '公共卫生与预防医学', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '医疗卫生类(E类)—公共卫生管理', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 60.0, 'unit': '日喀则市', 'Post': '昂仁县', 'Nature_position': '昂仁县切热乡卫生院', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221495.0, 'College_majors': '妇产科学', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 61.0, 'unit': '日喀则市', 'Post': '昂仁县', 'Nature_position': '昂仁县日吾其乡文化服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221496.0, 'College_majors': '专业不限', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 62.0, 'unit': '日喀则市', 'Post': '昂仁县', 'Nature_position': '昂仁县如萨乡农牧综合服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221497.0, 'College_majors': '畜牧兽医', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 63.0, 'unit': '日喀则市', 'Post': '昂仁县', 'Nature_position': '昂仁县如萨乡卫生院', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221498.0, 'College_majors': '妇产科学', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 64.0, 'unit': '日喀则市', 'Post': '昂仁县', 'Nature_position': '昂仁县桑桑镇农牧综合服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221499.0, 'College_majors': '畜牧兽医', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 65.0, 'unit': '日喀则市', 'Post': '昂仁县', 'Nature_position': '昂仁县卫生服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221500.0, 'College_majors': '放射医学', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 66.0, 'unit': '日喀则市', 'Post': '昂仁县', 'Nature_position': '昂仁县卫生服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221501.0, 'College_majors': '内科学', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 67.0, 'unit': '日喀则市', 'Post': '昂仁县', 'Nature_position': '昂仁县卫生服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221502.0, 'College_majors': '眼科学', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 68.0, 'unit': '日喀则市', 'Post': '昂仁县', 'Nature_position': '昂仁县卫生服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221503.0, 'College_majors': '外科学', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 69.0, 'unit': '日喀则市', 'Post': '昂仁县', 'Nature_position': '昂仁县卫生服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221504.0, 'College_majors': '麻醉学', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 70.0, 'unit': '日喀则市', 'Post': '昂仁县', 'Nature_position': '昂仁县雄巴乡卫生院', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221505.0, 'College_majors': '临床医学（西医）', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 71.0, 'unit': '日喀则市', 'Post': '昂仁县', 'Nature_position': '昂仁县雄巴乡文化服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221506.0, 'College_majors': '专业不限', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '仅限服务期满考核合格“三支一扶”人员报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 72.0, 'unit': '日喀则市', 'Post': '昂仁县', 'Nature_position': '昂仁县亚木乡农牧综合服务中心', 'Number': '事业\n单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221507.0, 'College_majors': '畜牧兽医', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 73.0, 'unit': '日喀则市', 'Post': '昂仁县', 'Nature_position': '昂仁县亚木乡农牧综合服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221508.0, 'College_majors': '农学类', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 74.0, 'unit': '日喀则市', 'Post': '白朗县', 'Nature_position': '白朗融媒体中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221509.0, 'College_majors': '广播电视技术', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '仅限日喀则考生可报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 75.0, 'unit': '日喀则市', 'Post': '白朗县', 'Nature_position': '白朗融媒体中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221510.0, 'College_majors': '新闻传播学类', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '仅限日喀则考生可报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 76.0, 'unit': '日喀则市', 'Post': '白朗县', 'Nature_position': '白朗县巴扎乡卫生院', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221511.0, 'College_majors': '护理学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—护理', 'Examination': '是', 'interview': '否', 'remark': '仅限日喀则考生可报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 77.0, 'unit': '日喀则市', 'Post': '白朗县', 'Nature_position': '白朗县巴扎乡卫生院', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221512.0, 'College_majors': '公共卫生与预防医学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—公共卫生管理', 'Examination': '是', 'interview': '否', 'remark': '仅限日喀则考生可报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 78.0, 'unit': '日喀则市', 'Post': '白朗县', 'Nature_position': '白朗县巴扎乡卫生院', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221513.0, 'College_majors': '藏医学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '藏医药护理类(Z类)—藏医', 'Examination': '是', 'interview': '否', 'remark': '仅限日喀则考生可报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 79.0, 'unit': '日喀则市', 'Post': '白朗县', 'Nature_position': '白朗县东喜乡农牧综合服务中心', 'Number': '事业\n单位', 'Graduation_time': 5.0, 'Academic_requirements': 202221514.0, 'College_majors': '畜牧兽医', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '仅限日喀则考生可报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 80.0, 'unit': '日喀则市', 'Post': '白朗县', 'Nature_position': '白朗县东喜乡卫生院', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221515.0, 'College_majors': '临床医学（西医）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '否', 'remark': '仅限日喀则考生可报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 81.0, 'unit': '日喀则市', 'Post': '白朗县', 'Nature_position': '白朗县嘎普乡卫生院', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221516.0, 'College_majors': '临床医学（西医）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '否', 'remark': '仅限日喀则考生可报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 82.0, 'unit': '日喀则市', 'Post': '白朗县', 'Nature_position': '白朗县教育局教育教学研究室', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221517.0, 'College_majors': '汉语言文学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '仅限日喀则考生可报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 83.0, 'unit': '日喀则市', 'Post': '白朗县', 'Nature_position': '白朗县教育局教育教学研究室', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221518.0, 'College_majors': '教育学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '仅限日喀则考生可报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 84.0, 'unit': '日喀则市', 'Post': '白朗县', 'Nature_position': '白朗县洛江镇文化综合服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221519.0, 'College_majors': '公共文化服务与管理', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '仅限日喀则考生可报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 85.0, 'unit': '日喀则市', 'Post': '白朗县', 'Nature_position': '白朗县洛江镇文化综合服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221520.0, 'College_majors': '舞蹈编导', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '仅限日喀则考生可报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 86.0, 'unit': '日喀则市', 'Post': '白朗县', 'Nature_position': '白朗县洛江镇文化综合服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221521.0, 'College_majors': '广播影视节目制作', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '仅限日喀则考生可报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 87.0, 'unit': '日喀则市', 'Post': '白朗县', 'Nature_position': '白朗县玛乡卫生院', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221522.0, 'College_majors': '公共卫生与预防医学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—公共卫生管理', 'Examination': '是', 'interview': '否', 'remark': '仅限日喀则考生可报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 88.0, 'unit': '日喀则市', 'Post': '白朗县', 'Nature_position': '白朗县农业农村局农牧综合服务中心', 'Number': '事业\n单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221523.0, 'College_majors': '农学类', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '仅限日喀则考生可报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 89.0, 'unit': '日喀则市', 'Post': '白朗县', 'Nature_position': '白朗县农业农村局农牧综合服务中心', 'Number': '事业\n单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221524.0, 'College_majors': '畜牧兽医', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '仅限日喀则考生可报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 90.0, 'unit': '日喀则市', 'Post': '白朗县', 'Nature_position': '白朗县商务局供销合作联合社', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221525.0, 'College_majors': '市场营销', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '仅限日喀则考生可报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 91.0, 'unit': '日喀则市', 'Post': '白朗县', 'Nature_position': '白朗县商务局供销合作联合社', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221526.0, 'College_majors': '电子商务', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '仅限日喀则考生可报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 92.0, 'unit': '日喀则市', 'Post': '白朗县', 'Nature_position': '白朗县退役军人事务局退役军人服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221527.0, 'College_majors': '法学类', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '仅限日喀则考生可报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 93.0, 'unit': '日喀则市', 'Post': '白朗县', 'Nature_position': '白朗县旺丹乡卫生院', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221528.0, 'College_majors': '护理学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—护理', 'Examination': '是', 'interview': '否', 'remark': '仅限日喀则考生可报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 94.0, 'unit': '日喀则市', 'Post': '白朗县', 'Nature_position': '白朗县委党校', 'Number': '事业\n单位', 'Graduation_time': 3.0, 'Academic_requirements': 202221529.0, 'College_majors': '思想政治教育', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '仅限日喀则考生可报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 95.0, 'unit': '日喀则市', 'Post': '白朗县', 'Nature_position': '白朗县卫生服务中心', 'Number': '事业\n单位', 'Graduation_time': 3.0, 'Academic_requirements': 202221530.0, 'College_majors': '临床医学（西医）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '否', 'remark': '仅限日喀则考生可报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 96.0, 'unit': '日喀则市', 'Post': '白朗县', 'Nature_position': '白朗县卫生服务中心', 'Number': '事业\n单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221531.0, 'College_majors': '护理学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—护理', 'Examination': '是', 'interview': '否', 'remark': '仅限日喀则考生可报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 97.0, 'unit': '日喀则市', 'Post': '白朗县', 'Nature_position': '白朗县卫生服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221532.0, 'College_majors': '公共卫生与预防医学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—公共卫生管理', 'Examination': '是', 'interview': '否', 'remark': '仅限日喀则考生可报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 98.0, 'unit': '日喀则市', 'Post': '白朗县', 'Nature_position': '白朗县应急管理局应急救援中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221533.0, 'College_majors': '公共管理或安全技术', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '仅限日喀则考生可报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 99.0, 'unit': '日喀则市', 'Post': '白朗县', 'Nature_position': '白朗县者下乡卫生院', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221534.0, 'College_majors': '护理学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—护理', 'Examination': '是', 'interview': '否', 'remark': '仅限日喀则考生可报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 100.0, 'unit': '日喀则市', 'Post': '定结县', 'Nature_position': '定结县陈塘镇农牧综合服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221535.0, 'College_majors': '农学类', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 101.0, 'unit': '日喀则市', 'Post': '定结县', 'Nature_position': '定结县多布扎乡农牧综合服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221536.0, 'College_majors': '动物医学', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 102.0, 'unit': '日喀则市', 'Post': '定结县', 'Nature_position': '定结县郭加乡卫生院', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221537.0, 'College_majors': '妇产科学', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 103.0, 'unit': '日喀则市', 'Post': '定结县', 'Nature_position': '定结县纪检监察信息中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221538.0, 'College_majors': '保密管理', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 104.0, 'unit': '日喀则市', 'Post': '定结县', 'Nature_position': '定结县纪检监察信息中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221539.0, 'College_majors': '法学类', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 105.0, 'unit': '日喀则市', 'Post': '定结县', 'Nature_position': '定结县确布乡卫生服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221540.0, 'College_majors': '中医骨伤科学', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—中医临床', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 106.0, 'unit': '日喀则市', 'Post': '定结县', 'Nature_position': '定结县融媒体中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221541.0, 'College_majors': '英语', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 107.0, 'unit': '日喀则市', 'Post': '定结县', 'Nature_position': '定结县统计局社会经济调查队', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221542.0, 'College_majors': '统计学', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 108.0, 'unit': '日喀则市', 'Post': '定结县', 'Nature_position': '定结县卫生服务中心', 'Number': '事业\n单位', 'Graduation_time': 3.0, 'Academic_requirements': 202221543.0, 'College_majors': '儿科学', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 109.0, 'unit': '日喀则市', 'Post': '定结县', 'Nature_position': '定结县卫生服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221544.0, 'College_majors': '麻醉学', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 110.0, 'unit': '日喀则市', 'Post': '定结县', 'Nature_position': '定结县卫生服务中心', 'Number': '事业\n单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221545.0, 'College_majors': '医学检验', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—医学技术', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 111.0, 'unit': '日喀则市', 'Post': '定结县', 'Nature_position': '定结县卫生服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221546.0, 'College_majors': '会计', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 112.0, 'unit': '日喀则市', 'Post': '定结县', 'Nature_position': '定结县卫生服务中心', 'Number': '事业\n单位', 'Graduation_time': 8.0, 'Academic_requirements': 202221547.0, 'College_majors': '护理学', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—护理', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 113.0, 'unit': '日喀则市', 'Post': '定结县', 'Nature_position': '定结县卫生服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221548.0, 'College_majors': '药学', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—药剂', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 114.0, 'unit': '日喀则市', 'Post': '定结县', 'Nature_position': '定结县卫生服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221549.0, 'College_majors': '藏医学', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '藏医药护理类(Z类)—藏医', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 115.0, 'unit': '日喀则市', 'Post': '定结县', 'Nature_position': '定结县卫生服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221550.0, 'College_majors': '助产学', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—护理', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 116.0, 'unit': '日喀则市', 'Post': '定结县', 'Nature_position': '定结县卫生服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221551.0, 'College_majors': '影像医学', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—医学技术', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 117.0, 'unit': '日喀则市', 'Post': '定结县', 'Nature_position': '定结县卫生服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221552.0, 'College_majors': '妇产科学', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 118.0, 'unit': '日喀则市', 'Post': '定结县', 'Nature_position': '定结县卫生服务中心', 'Number': '事业\n单位', 'Graduation_time': 6.0, 'Academic_requirements': 202221553.0, 'College_majors': '临床医学（西医）', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 119.0, 'unit': '日喀则市', 'Post': '定结县', 'Nature_position': '定结县卫生服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221554.0, 'College_majors': '公共卫生与预防医学', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—公共卫生管理', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 120.0, 'unit': '日喀则市', 'Post': '定结县', 'Nature_position': '定结县扎西岗乡农牧综合服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221555.0, 'College_majors': '畜牧兽医', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 121.0, 'unit': '日喀则市', 'Post': '定日县', 'Nature_position': '定日县措果乡农牧综合服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221556.0, 'College_majors': '农学类', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 122.0, 'unit': '日喀则市', 'Post': '定日县', 'Nature_position': '定日县措果乡农牧综合服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221557.0, 'College_majors': '饲料与动物营养', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 123.0, 'unit': '日喀则市', 'Post': '定日县', 'Nature_position': '定日县加措乡卫生院', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221558.0, 'College_majors': '临床医学（西医）', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 124.0, 'unit': '日喀则市', 'Post': '定日县', 'Nature_position': '定日县加措乡卫生院', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221559.0, 'College_majors': '公共卫生与预防医学', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—公共卫生管理', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 125.0, 'unit': '日喀则市', 'Post': '定日县', 'Nature_position': '定日县克玛乡农牧综合服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221560.0, 'College_majors': '农学类', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 126.0, 'unit': '日喀则市', 'Post': '定日县', 'Nature_position': '定日县林业和草原局林业技术服务站', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221561.0, 'College_majors': '林学', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 127.0, 'unit': '日喀则市', 'Post': '定日县', 'Nature_position': '定日县尼辖乡农牧综合服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221562.0, 'College_majors': '饲料与动物营养', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 128.0, 'unit': '日喀则市', 'Post': '定日县', 'Nature_position': '定日县盆吉乡农牧综合服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221563.0, 'College_majors': '饲料与动物营养', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 129.0, 'unit': '日喀则市', 'Post': '定日县', 'Nature_position': '定日县盆吉乡农牧综合服务中心', 'Number': '事业\n单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221564.0, 'College_majors': '畜牧兽医', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 130.0, 'unit': '日喀则市', 'Post': '定日县', 'Nature_position': '定日县盆吉乡卫生院', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221565.0, 'College_majors': '临床医学（西医）', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 131.0, 'unit': '日喀则市', 'Post': '定日县', 'Nature_position': '定日县盆吉乡卫生院', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221566.0, 'College_majors': '公共卫生与预防医学', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—公共卫生管理', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 132.0, 'unit': '日喀则市', 'Post': '定日县', 'Nature_position': '定日县曲当乡农牧综合服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221567.0, 'College_majors': '蔬菜学', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 133.0, 'unit': '日喀则市', 'Post': '定日县', 'Nature_position': '定日县曲洛乡农牧综合服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221568.0, 'College_majors': '饲料与动物营养', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 134.0, 'unit': '日喀则市', 'Post': '定日县', 'Nature_position': '定日县曲洛乡农牧综合服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221569.0, 'College_majors': '畜牧兽医', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 135.0, 'unit': '日喀则市', 'Post': '定日县', 'Nature_position': '定日县绒辖乡卫生院', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221570.0, 'College_majors': '临床医学（西医）', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 136.0, 'unit': '日喀则市', 'Post': '定日县', 'Nature_position': '定日县绒辖乡卫生院', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221571.0, 'College_majors': '公共卫生与预防医学', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—公共卫生管理', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 137.0, 'unit': '日喀则市', 'Post': '定日县', 'Nature_position': '定日县绒辖乡卫生院', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221572.0, 'College_majors': '医学检验', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—医学技术', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 138.0, 'unit': '日喀则市', 'Post': '定日县', 'Nature_position': '定日县卫生服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221573.0, 'College_majors': '医学检验', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—医学技术', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 139.0, 'unit': '日喀则市', 'Post': '定日县', 'Nature_position': '定日县卫生服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221574.0, 'College_majors': '护理学', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—护理', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 140.0, 'unit': '日喀则市', 'Post': '定日县', 'Nature_position': '定日县卫生服务中心', 'Number': '事业\n单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221575.0, 'College_majors': '临床医学（西医）', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 141.0, 'unit': '日喀则市', 'Post': '定日县', 'Nature_position': '定日县卫生服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221576.0, 'College_majors': '放射医学', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 142.0, 'unit': '日喀则市', 'Post': '定日县', 'Nature_position': '定日县信访局信访接待中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221577.0, 'College_majors': '法学类', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 143.0, 'unit': '日喀则市', 'Post': '定日县', 'Nature_position': '定日县扎果乡卫生院', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221578.0, 'College_majors': '临床医学（西医）', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 144.0, 'unit': '日喀则市', 'Post': '定日县', 'Nature_position': '定日县扎果乡卫生院', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221579.0, 'College_majors': '妇产科学', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 145.0, 'unit': '日喀则市', 'Post': '定日县', 'Nature_position': '定日县扎果乡卫生院', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221580.0, 'College_majors': '儿科学', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 146.0, 'unit': '日喀则市', 'Post': '定日县', 'Nature_position': '定日县扎西宗乡农牧综合服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221581.0, 'College_majors': '市场营销', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 147.0, 'unit': '日喀则市', 'Post': '定日县', 'Nature_position': '定日县扎西宗乡农牧综合服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221582.0, 'College_majors': '饲料与动物营养', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 148.0, 'unit': '日喀则市', 'Post': '定日县', 'Nature_position': '定日县扎西宗乡农牧综合服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221583.0, 'College_majors': '畜牧兽医', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 149.0, 'unit': '日喀则市', 'Post': '岗巴县', 'Nature_position': '岗巴融媒体中心', 'Number': '事业\n单位', 'Graduation_time': 3.0, 'Academic_requirements': 202221584.0, 'College_majors': '新闻传播学类', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 150.0, 'unit': '日喀则市', 'Post': '岗巴县', 'Nature_position': '岗巴融媒体中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221585.0, 'College_majors': '网络与新媒体', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 151.0, 'unit': '日喀则市', 'Post': '岗巴县', 'Nature_position': '岗巴县昌龙乡卫生院', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221586.0, 'College_majors': '临床医学（西医）', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 152.0, 'unit': '日喀则市', 'Post': '岗巴县', 'Nature_position': '岗巴县农业农村局农牧综合服务中心', 'Number': '事业\n单位', 'Graduation_time': 3.0, 'Academic_requirements': 202221587.0, 'College_majors': '畜牧兽医', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 153.0, 'unit': '日喀则市', 'Post': '岗巴县', 'Nature_position': '岗巴县农业农村局农牧综合服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221588.0, 'College_majors': '农业工程', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '仅限服务两年及以上考核合格西部计划西藏专项志愿者、退役大学生士兵报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 154.0, 'unit': '日喀则市', 'Post': '岗巴县', 'Nature_position': '岗巴县卫生服务中心', 'Number': '事业\n单位', 'Graduation_time': 4.0, 'Academic_requirements': 202221589.0, 'College_majors': '临床医学（西医）', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 155.0, 'unit': '日喀则市', 'Post': '岗巴县', 'Nature_position': '岗巴县卫生服务中心', 'Number': '事业\n单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221590.0, 'College_majors': '护理学', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '医疗卫生类(E类)—护理', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 156.0, 'unit': '日喀则市', 'Post': '岗巴县', 'Nature_position': '岗巴县卫生服务中心', 'Number': '事业\n单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221591.0, 'College_majors': '麻醉学', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 157.0, 'unit': '日喀则市', 'Post': '岗巴县', 'Nature_position': '岗巴县卫生服务中心', 'Number': '事业\n单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221592.0, 'College_majors': '影像医学', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '医疗卫生类(E类)—医学技术', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 158.0, 'unit': '日喀则市', 'Post': '岗巴县', 'Nature_position': '岗巴县直克乡卫生院', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221593.0, 'College_majors': '临床医学（西医）', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 159.0, 'unit': '日喀则市', 'Post': '吉隆县', 'Nature_position': '吉隆融媒体中心', 'Number': '事业\n单位', 'Graduation_time': 3.0, 'Academic_requirements': 202221594.0, 'College_majors': '新闻传播学类', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 160.0, 'unit': '日喀则市', 'Post': '吉隆县', 'Nature_position': '吉隆融媒体中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221595.0, 'College_majors': '播音主持', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 161.0, 'unit': '日喀则市', 'Post': '吉隆县', 'Nature_position': '吉隆县差那乡文化服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221596.0, 'College_majors': '新闻传播学类', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '仅限服务两年及以上考核合格西部计划西藏专项志愿者、退役大学生士兵报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 162.0, 'unit': '日喀则市', 'Post': '吉隆县', 'Nature_position': '吉隆县贡当乡卫生院', 'Number': '事业\n单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221597.0, 'College_majors': '藏医学', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '藏医药护理类(Z类)—藏医', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 163.0, 'unit': '日喀则市', 'Post': '吉隆县', 'Nature_position': '吉隆县卫生服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221598.0, 'College_majors': '放射医学', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 164.0, 'unit': '日喀则市', 'Post': '吉隆县', 'Nature_position': '吉隆县卫生服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221599.0, 'College_majors': '医学检验', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '医疗卫生类(E类)—医学技术', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 165.0, 'unit': '日喀则市', 'Post': '吉隆县', 'Nature_position': '吉隆县卫生服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221600.0, 'College_majors': '麻醉学', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 166.0, 'unit': '日喀则市', 'Post': '吉隆县', 'Nature_position': '吉隆县卫生服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221601.0, 'College_majors': '公共卫生与预防医学', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '医疗卫生类(E类)—公共卫生管理', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 167.0, 'unit': '日喀则市', 'Post': '吉隆县', 'Nature_position': '吉隆县文化和旅游局文化广播影视服务站', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221602.0, 'College_majors': '舞蹈表演', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 168.0, 'unit': '日喀则市', 'Post': '吉隆县', 'Nature_position': '吉隆县折巴乡卫生院', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221603.0, 'College_majors': '药学', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '医疗卫生类(E类)—药剂', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 169.0, 'unit': '日喀则市', 'Post': '吉隆县', 'Nature_position': '吉隆县折巴乡文化服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221604.0, 'College_majors': '网络与新媒体', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '仅限服务两年及以上考核合格西部计划西藏专项志愿者、退役大学生士兵报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 170.0, 'unit': '日喀则市', 'Post': '江孜县', 'Nature_position': '江孜融媒体中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221605.0, 'College_majors': '播音主持', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '仅限日喀则考生可报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 171.0, 'unit': '日喀则市', 'Post': '江孜县', 'Nature_position': '江孜融媒体中心', 'Number': '事业\n单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221606.0, 'College_majors': '汉语言文学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '仅限日喀则考生可报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 172.0, 'unit': '日喀则市', 'Post': '江孜县', 'Nature_position': '江孜融媒体中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221607.0, 'College_majors': '计算机专业', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '仅限日喀则考生可报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 173.0, 'unit': '日喀则市', 'Post': '江孜县', 'Nature_position': '江孜县藏改乡卫生院', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221608.0, 'College_majors': '临床医学（西医）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '否', 'remark': '仅限日喀则考生可报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 174.0, 'unit': '日喀则市', 'Post': '江孜县', 'Nature_position': '江孜县车仁乡农牧综合服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221609.0, 'College_majors': '会计', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '仅限日喀则考生可报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 175.0, 'unit': '日喀则市', 'Post': '江孜县', 'Nature_position': '江孜县达孜乡卫生院', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221610.0, 'College_majors': '临床医学（西医）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '否', 'remark': '仅限日喀则考生可报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 176.0, 'unit': '日喀则市', 'Post': '江孜县', 'Nature_position': '江孜县加克西乡农牧综合服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221611.0, 'College_majors': '农学类', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '仅限日喀则考生可报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 177.0, 'unit': '日喀则市', 'Post': '江孜县', 'Nature_position': '江孜县加克西乡农牧综合服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221612.0, 'College_majors': '会计', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '仅限日喀则考生可报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 178.0, 'unit': '日喀则市', 'Post': '江孜县', 'Nature_position': '江孜县加克西乡文化服务中心', 'Number': '事业\n单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221613.0, 'College_majors': '文秘', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '仅限日喀则考生可报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 179.0, 'unit': '日喀则市', 'Post': '江孜县', 'Nature_position': '江孜县江孜镇农牧综合服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221614.0, 'College_majors': '统计学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '仅限日喀则考生可报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 180.0, 'unit': '日喀则市', 'Post': '江孜县', 'Nature_position': '江孜县江孜镇农牧综合服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221615.0, 'College_majors': '农学类', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '仅限日喀则考生可报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 181.0, 'unit': '日喀则市', 'Post': '江孜县', 'Nature_position': '江孜县金嘎乡卫生院', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221616.0, 'College_majors': '临床医学（西医）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '否', 'remark': '仅限日喀则考生可报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 182.0, 'unit': '日喀则市', 'Post': '江孜县', 'Nature_position': '江孜县金嘎乡卫生院', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221617.0, 'College_majors': '藏医学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '藏医药护理类(Z类)—藏医', 'Examination': '是', 'interview': '否', 'remark': '仅限日喀则考生可报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 183.0, 'unit': '日喀则市', 'Post': '江孜县', 'Nature_position': '江孜县卡堆乡农牧综合服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221618.0, 'College_majors': '畜牧兽医', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '仅限日喀则考生可报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 184.0, 'unit': '日喀则市', 'Post': '江孜县', 'Nature_position': '江孜县康卓乡卫生院', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221619.0, 'College_majors': '临床医学（西医）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '否', 'remark': '仅限日喀则考生可报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 185.0, 'unit': '日喀则市', 'Post': '江孜县', 'Nature_position': '江孜县龙马乡农牧综合服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221620.0, 'College_majors': '农学类', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '仅限日喀则考生可报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 186.0, 'unit': '日喀则市', 'Post': '江孜县', 'Nature_position': '江孜县纳如乡农牧综合服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221621.0, 'College_majors': '农学类', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '仅限日喀则考生可报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 187.0, 'unit': '日喀则市', 'Post': '江孜县', 'Nature_position': '江孜县纳如乡卫生院', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221622.0, 'College_majors': '临床医学（西医）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '否', 'remark': '仅限日喀则考生可报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 188.0, 'unit': '日喀则市', 'Post': '江孜县', 'Nature_position': '江孜县农业农村局农牧综合服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221623.0, 'College_majors': '林学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '仅限日喀则考生可报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 189.0, 'unit': '日喀则市', 'Post': '江孜县', 'Nature_position': '江孜县热龙乡农牧综合服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221624.0, 'College_majors': '畜牧兽医', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '仅限日喀则考生可报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 190.0, 'unit': '日喀则市', 'Post': '江孜县', 'Nature_position': '江孜县热龙乡卫生院', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221625.0, 'College_majors': '临床医学（西医）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '否', 'remark': '仅限日喀则考生可报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 191.0, 'unit': '日喀则市', 'Post': '江孜县', 'Nature_position': '江孜县热索乡农牧综合服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221626.0, 'College_majors': '统计学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '仅限日喀则考生可报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 192.0, 'unit': '日喀则市', 'Post': '江孜县', 'Nature_position': '江孜县热索乡农牧综合服务中心', 'Number': '事业\n单位', 'Graduation_time': 3.0, 'Academic_requirements': 202221627.0, 'College_majors': '畜牧兽医', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '仅限日喀则考生可报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 193.0, 'unit': '日喀则市', 'Post': '江孜县', 'Nature_position': '江孜县日朗乡文化服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221628.0, 'College_majors': '会计', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '仅限日喀则考生可报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 194.0, 'unit': '日喀则市', 'Post': '江孜县', 'Nature_position': '江孜县日星乡卫生院', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221629.0, 'College_majors': '临床医学（西医）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '否', 'remark': '仅限日喀则考生可报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 195.0, 'unit': '日喀则市', 'Post': '江孜县', 'Nature_position': '江孜县日星乡卫生院', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221630.0, 'College_majors': '藏医学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '藏医药护理类(Z类)—藏医', 'Examination': '是', 'interview': '否', 'remark': '仅限日喀则考生可报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 196.0, 'unit': '日喀则市', 'Post': '江孜县', 'Nature_position': '江孜县统计局社会经济调查队', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221631.0, 'College_majors': '统计学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '仅限日喀则考生可报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 197.0, 'unit': '日喀则市', 'Post': '江孜县', 'Nature_position': '江孜县委党校', 'Number': '事业\n单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221632.0, 'College_majors': '马克思主义理论或政治学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '仅限日喀则考生可报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 198.0, 'unit': '日喀则市', 'Post': '江孜县', 'Nature_position': '江孜县卫生服务中心', 'Number': '事业\n单位', 'Graduation_time': 3.0, 'Academic_requirements': 202221633.0, 'College_majors': '护理学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—护理', 'Examination': '是', 'interview': '否', 'remark': '仅限日喀则考生可报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 199.0, 'unit': '日喀则市', 'Post': '江孜县', 'Nature_position': '江孜县卫生服务中心', 'Number': '事业\n单位', 'Graduation_time': 4.0, 'Academic_requirements': 202221634.0, 'College_majors': '临床医学（西医）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '否', 'remark': '仅限日喀则考生可报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 200.0, 'unit': '日喀则市', 'Post': '江孜县', 'Nature_position': '江孜县卫生服务中心（疾病预防控制中心）', 'Number': '事业\n单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221635.0, 'College_majors': '公共卫生与预防医学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—公共卫生管理', 'Examination': '是', 'interview': '否', 'remark': '仅限日喀则考生可报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 201.0, 'unit': '日喀则市', 'Post': '江孜县', 'Nature_position': '江孜县重孜乡卫生院', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221636.0, 'College_majors': '临床医学（西医）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 202.0, 'unit': '日喀则市', 'Post': '康马县', 'Nature_position': '康马县嘎拉乡卫生院', 'Number': '事业\n单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221637.0, 'College_majors': '临床医学（西医）', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 203.0, 'unit': '日喀则市', 'Post': '康马县', 'Nature_position': '康马县康如乡卫生院', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221638.0, 'College_majors': '临床医学（西医）', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 204.0, 'unit': '日喀则市', 'Post': '康马县', 'Nature_position': '康马县南尼乡卫生院', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221639.0, 'College_majors': '临床医学（西医）', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 205.0, 'unit': '日喀则市', 'Post': '康马县', 'Nature_position': '康马县涅如麦乡卫生院', 'Number': '事业\n单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221640.0, 'College_majors': '藏医学', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '藏医药护理类(Z类)—藏医', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 206.0, 'unit': '日喀则市', 'Post': '康马县', 'Nature_position': '康马县商务局供销合作联合社', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221641.0, 'College_majors': '会计', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 207.0, 'unit': '日喀则市', 'Post': '康马县', 'Nature_position': '康马县商务局供销合作联合社', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221642.0, 'College_majors': '市场营销', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 208.0, 'unit': '日喀则市', 'Post': '康马县', 'Nature_position': '康马县委党校', 'Number': '事业\n单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221643.0, 'College_majors': '马克思主义理论或政治学', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 209.0, 'unit': '日喀则市', 'Post': '康马县', 'Nature_position': '康马县委党校', 'Number': '事业\n单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221644.0, 'College_majors': '政治学与行政学', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 210.0, 'unit': '日喀则市', 'Post': '康马县', 'Nature_position': '康马县卫生服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221645.0, 'College_majors': '影像医学', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—医学技术', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 211.0, 'unit': '日喀则市', 'Post': '康马县', 'Nature_position': '康马县卫生服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221646.0, 'College_majors': '妇产科学', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 212.0, 'unit': '日喀则市', 'Post': '康马县', 'Nature_position': '康马县文化和旅游局文化影视服务站', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221647.0, 'College_majors': '文物与博物馆学', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 213.0, 'unit': '日喀则市', 'Post': '康马县', 'Nature_position': '康马县文化和旅游局文化影视服务站', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221648.0, 'College_majors': '公共文化服务与管理', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 214.0, 'unit': '日喀则市', 'Post': '康马县', 'Nature_position': '康马县文化和旅游局文化影视服务站', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221649.0, 'College_majors': '音乐与舞蹈学学科', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 215.0, 'unit': '日喀则市', 'Post': '康马县', 'Nature_position': '康马县雄章乡卫生院', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221650.0, 'College_majors': '临床医学（西医）', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 216.0, 'unit': '日喀则市', 'Post': '康马县', 'Nature_position': '康马县组织部电子政务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221651.0, 'College_majors': '计算机专业', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 217.0, 'unit': '日喀则市', 'Post': '拉孜县', 'Nature_position': '拉孜融媒体中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221652.0, 'College_majors': '汉语言文学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 218.0, 'unit': '日喀则市', 'Post': '拉孜县', 'Nature_position': '拉孜融媒体中心', 'Number': '事业\n单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221653.0, 'College_majors': '新闻传播学类', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 219.0, 'unit': '日喀则市', 'Post': '拉孜县', 'Nature_position': '拉孜县城市管理和综合执法局市容管理大队', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221654.0, 'College_majors': '计算机专业', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 220.0, 'unit': '日喀则市', 'Post': '拉孜县', 'Nature_position': '拉孜县城市管理和综合执法局市容管理大队', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221655.0, 'College_majors': '会计', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 221.0, 'unit': '日喀则市', 'Post': '拉孜县', 'Nature_position': '拉孜县纪委纪检监察信息中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221656.0, 'College_majors': '审计学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 222.0, 'unit': '日喀则市', 'Post': '拉孜县', 'Nature_position': '拉孜县民政局特困人员集中供养服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221657.0, 'College_majors': '会计', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 223.0, 'unit': '日喀则市', 'Post': '拉孜县', 'Nature_position': '拉孜县委党校', 'Number': '事业\n单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221658.0, 'College_majors': '政治学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 224.0, 'unit': '日喀则市', 'Post': '拉孜县', 'Nature_position': '拉孜县卫生服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221659.0, 'College_majors': '精密医疗器械技术', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 225.0, 'unit': '日喀则市', 'Post': '拉孜县', 'Nature_position': '拉孜县卫生服务中心', 'Number': '事业\n单位', 'Graduation_time': 4.0, 'Academic_requirements': 202221660.0, 'College_majors': '护理学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—护理', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 226.0, 'unit': '日喀则市', 'Post': '拉孜县', 'Nature_position': '拉孜县卫生服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221661.0, 'College_majors': '麻醉学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 227.0, 'unit': '日喀则市', 'Post': '拉孜县', 'Nature_position': '拉孜县卫生服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221662.0, 'College_majors': '急诊医学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 228.0, 'unit': '日喀则市', 'Post': '拉孜县', 'Nature_position': '拉孜县卫生服务中心', 'Number': '事业\n单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221663.0, 'College_majors': '药学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—药剂', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 229.0, 'unit': '日喀则市', 'Post': '拉孜县', 'Nature_position': '拉孜县卫生服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221664.0, 'College_majors': '行政管理', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 230.0, 'unit': '日喀则市', 'Post': '拉孜县', 'Nature_position': '拉孜县卫生服务中心', 'Number': '事业\n单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221665.0, 'College_majors': '影像医学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—医学技术', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 231.0, 'unit': '日喀则市', 'Post': '拉孜县', 'Nature_position': '拉孜县卫生服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221666.0, 'College_majors': '计算机专业', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 232.0, 'unit': '日喀则市', 'Post': '拉孜县', 'Nature_position': '拉孜县卫生服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221667.0, 'College_majors': '会计', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 233.0, 'unit': '日喀则市', 'Post': '拉孜县', 'Nature_position': '拉孜县卫生服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221668.0, 'College_majors': '公共卫生与预防医学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—公共卫生管理', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 234.0, 'unit': '日喀则市', 'Post': '拉孜县', 'Nature_position': '拉孜县卫生服务中心', 'Number': '事业\n单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221669.0, 'College_majors': '医学检验', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—医学技术', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 235.0, 'unit': '日喀则市', 'Post': '拉孜县', 'Nature_position': '拉孜县卫生服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221670.0, 'College_majors': '儿科学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 236.0, 'unit': '日喀则市', 'Post': '拉孜县', 'Nature_position': '拉孜县卫生服务中心', 'Number': '事业\n单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221671.0, 'College_majors': '临床医学（西医）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 237.0, 'unit': '日喀则市', 'Post': '南木林县', 'Nature_position': '南木林县艾玛乡卫生院', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221672.0, 'College_majors': '临床医学（西医）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 238.0, 'unit': '日喀则市', 'Post': '南木林县', 'Nature_position': '南木林县艾玛乡卫生院', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221673.0, 'College_majors': '藏医学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '藏医药护理类(Z类)—藏医', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 239.0, 'unit': '日喀则市', 'Post': '南木林县', 'Nature_position': '南木林县茶尔乡农牧综合服务中心', 'Number': '事业\n单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221674.0, 'College_majors': '农学类', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 240.0, 'unit': '日喀则市', 'Post': '南木林县', 'Nature_position': '南木林县茶尔乡卫生院', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221675.0, 'College_majors': '临床医学（西医）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 241.0, 'unit': '日喀则市', 'Post': '南木林县', 'Nature_position': '南木林县达那乡卫生院', 'Number': '事业\n单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221676.0, 'College_majors': '临床医学（西医）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 242.0, 'unit': '日喀则市', 'Post': '南木林县', 'Nature_position': '南木林县达孜乡卫生院', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221677.0, 'College_majors': '医学检验', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—医学技术', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 243.0, 'unit': '日喀则市', 'Post': '南木林县', 'Nature_position': '南木林县多角乡农牧综合服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221678.0, 'College_majors': '农学类', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 244.0, 'unit': '日喀则市', 'Post': '南木林县', 'Nature_position': '南木林县多角乡文化服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221679.0, 'College_majors': '文物与博物馆学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 245.0, 'unit': '日喀则市', 'Post': '南木林县', 'Nature_position': '南木林县甲措乡卫生院', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221680.0, 'College_majors': '临床医学（西医）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 246.0, 'unit': '日喀则市', 'Post': '南木林县', 'Nature_position': '南木林县拉布普乡农牧综合服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221681.0, 'College_majors': '会计', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 247.0, 'unit': '日喀则市', 'Post': '南木林县', 'Nature_position': '南木林县芒热乡卫生院', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221682.0, 'College_majors': '临床医学（西医）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 248.0, 'unit': '日喀则市', 'Post': '南木林县', 'Nature_position': '南木林县芒热乡卫生院', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221683.0, 'College_majors': '护理学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—护理', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 249.0, 'unit': '日喀则市', 'Post': '南木林县', 'Nature_position': '南木林县南木林镇农牧综合服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221684.0, 'College_majors': '动物防疫与检疫', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 250.0, 'unit': '日喀则市', 'Post': '南木林县', 'Nature_position': '南木林县南木林镇农牧综合服务中心', 'Number': '事业\n单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221685.0, 'College_majors': '畜牧兽医', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 251.0, 'unit': '日喀则市', 'Post': '南木林县', 'Nature_position': '南木林县南木林镇文化服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221686.0, 'College_majors': '图书档案管理', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 252.0, 'unit': '日喀则市', 'Post': '南木林县', 'Nature_position': '南木林县南木林镇文化服务中心', 'Number': '事业\n单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221687.0, 'College_majors': '专业不限', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '仅限服务期满考核合格“三支一扶”人员报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 253.0, 'unit': '日喀则市', 'Post': '南木林县', 'Nature_position': '南木林县奴玛乡卫生院', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221688.0, 'College_majors': '临床医学（西医）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 254.0, 'unit': '日喀则市', 'Post': '南木林县', 'Nature_position': '南木林县奴玛乡卫生院', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221689.0, 'College_majors': '藏医学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '藏医药护理类(Z类)—藏医', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 255.0, 'unit': '日喀则市', 'Post': '南木林县', 'Nature_position': '南木林县奴玛乡卫生院', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221690.0, 'College_majors': '护理学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—护理', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 256.0, 'unit': '日喀则市', 'Post': '南木林县', 'Nature_position': '南木林县普当乡卫生院', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221691.0, 'College_majors': '临床医学（西医）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 257.0, 'unit': '日喀则市', 'Post': '南木林县', 'Nature_position': '南木林县热当乡农牧综合服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221692.0, 'College_majors': '农学类', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 258.0, 'unit': '日喀则市', 'Post': '南木林县', 'Nature_position': '南木林县融媒体中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221693.0, 'College_majors': '播音主持', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 259.0, 'unit': '日喀则市', 'Post': '南木林县', 'Nature_position': '南木林县融媒体中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221694.0, 'College_majors': '新闻传播学类', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 260.0, 'unit': '日喀则市', 'Post': '南木林县', 'Nature_position': '南木林县融媒体中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221695.0, 'College_majors': '数字媒体技术', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 261.0, 'unit': '日喀则市', 'Post': '南木林县', 'Nature_position': '南木林县索金乡卫生院', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221696.0, 'College_majors': '临床医学（西医）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 262.0, 'unit': '日喀则市', 'Post': '南木林县', 'Nature_position': '南木林县索金乡文化服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221697.0, 'College_majors': '文化服务类', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 263.0, 'unit': '日喀则市', 'Post': '南木林县', 'Nature_position': '南木林县土布加乡卫生院', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221698.0, 'College_majors': '临床医学（西医）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 264.0, 'unit': '日喀则市', 'Post': '南木林县', 'Nature_position': '南木林县土布加乡文化服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221699.0, 'College_majors': '文化服务类', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 265.0, 'unit': '日喀则市', 'Post': '南木林县', 'Nature_position': '南木林县卫生服务中心', 'Number': '事业\n单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221700.0, 'College_majors': '临床医学（西医）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 266.0, 'unit': '日喀则市', 'Post': '南木林县', 'Nature_position': '南木林县卫生服务中心', 'Number': '事业\n单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221701.0, 'College_majors': '影像医学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—医学技术', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 267.0, 'unit': '日喀则市', 'Post': '南木林县', 'Nature_position': '南木林县卫生服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221702.0, 'College_majors': '医学检验', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—医学技术', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 268.0, 'unit': '日喀则市', 'Post': '南木林县', 'Nature_position': '南木林县卫生服务中心', 'Number': '事业\n单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221703.0, 'College_majors': '藏医学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '藏医药护理类(Z类)—藏医', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 269.0, 'unit': '日喀则市', 'Post': '聂拉木县', 'Nature_position': '聂拉木融媒体中心（聂拉木广播电视台）', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221704.0, 'College_majors': '新闻传播学类', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '仅限服务两年及以上考核合格西部计划西藏专项志愿者、退役大学生士兵报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 270.0, 'unit': '日喀则市', 'Post': '聂拉木县', 'Nature_position': '聂拉木融媒体中心（聂拉木广播电视台）', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221705.0, 'College_majors': '播音主持', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 271.0, 'unit': '日喀则市', 'Post': '聂拉木县', 'Nature_position': '聂拉木县教育局教育教学研究室', 'Number': '事业\n单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221706.0, 'College_majors': '教育学', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 272.0, 'unit': '日喀则市', 'Post': '聂拉木县', 'Nature_position': '聂拉木县林业和草原局林业技术服务站', 'Number': '事业\n单位', 'Graduation_time': 3.0, 'Academic_requirements': 202221707.0, 'College_majors': '林学', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 273.0, 'unit': '日喀则市', 'Post': '聂拉木县', 'Nature_position': '聂拉木县农业农村局农牧综合服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221708.0, 'College_majors': '市场营销', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '仅限服务两年及以上考核合格西部计划西藏专项志愿者、退役大学生士兵报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 274.0, 'unit': '日喀则市', 'Post': '聂拉木县', 'Nature_position': '聂拉木县农业农村局农牧综合服务中心（农机监理与技术推广站、草原监理站）', 'Number': '事业\n单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221709.0, 'College_majors': '畜牧兽医', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 275.0, 'unit': '日喀则市', 'Post': '聂拉木县', 'Nature_position': '聂拉木县委党校', 'Number': '事业\n单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221710.0, 'College_majors': '哲学、政治学', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 276.0, 'unit': '日喀则市', 'Post': '聂拉木县', 'Nature_position': '聂拉木县卫生服务中心', 'Number': '事业\n单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221711.0, 'College_majors': '护理学', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '医疗卫生类(E类)—护理', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 277.0, 'unit': '日喀则市', 'Post': '聂拉木县', 'Nature_position': '聂拉木县卫生服务中心', 'Number': '事业\n单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221712.0, 'College_majors': '医学检验', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '医疗卫生类(E类)—医学技术', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 278.0, 'unit': '日喀则市', 'Post': '聂拉木县', 'Nature_position': '聂拉木县卫生服务中心（疾病预防控制中心、妇幼保健院、计划生育指导站）', 'Number': '事业\n单位', 'Graduation_time': 4.0, 'Academic_requirements': 202221713.0, 'College_majors': '临床医学（西医）', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 279.0, 'unit': '日喀则市', 'Post': '聂拉木县', 'Nature_position': '聂拉木县樟木医院', 'Number': '事业\n单位', 'Graduation_time': 5.0, 'Academic_requirements': 202221714.0, 'College_majors': '临床医学（西医）', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 280.0, 'unit': '日喀则市', 'Post': '聂拉木县', 'Nature_position': '聂拉木县樟木医院', 'Number': '事业\n单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221715.0, 'College_majors': '护理学', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '医疗卫生类(E类)—护理', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 281.0, 'unit': '日喀则市', 'Post': '聂拉木县', 'Nature_position': '聂拉木县樟木医院', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221716.0, 'College_majors': '医学检验', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '医疗卫生类(E类)—医学技术', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 282.0, 'unit': '日喀则市', 'Post': '聂拉木县', 'Nature_position': '聂拉木县樟木医院', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221717.0, 'College_majors': '药学', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '医疗卫生类(E类)—药剂', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 283.0, 'unit': '日喀则市', 'Post': '聂拉木县', 'Nature_position': '聂拉木县自然资源局不动产登记中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221718.0, 'College_majors': '统计学', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 284.0, 'unit': '日喀则市', 'Post': '仁布县', 'Nature_position': '仁布融媒体中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221719.0, 'College_majors': '新闻传播学类', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 285.0, 'unit': '日喀则市', 'Post': '仁布县', 'Nature_position': '仁布县发改委供销合作联合社', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221720.0, 'College_majors': '电子商务', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 286.0, 'unit': '日喀则市', 'Post': '仁布县', 'Nature_position': '仁布县切洼乡文化服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221721.0, 'College_majors': '公共文化服务与管理', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 287.0, 'unit': '日喀则市', 'Post': '仁布县', 'Nature_position': '仁布县退役军人事务局退役军人服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221722.0, 'College_majors': '法学类', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 288.0, 'unit': '日喀则市', 'Post': '仁布县', 'Nature_position': '仁布县退役军人事务局退役军人服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221723.0, 'College_majors': '专业不限', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '仅限服务期满考核合格“三支一扶”人员报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 289.0, 'unit': '日喀则市', 'Post': '仁布县', 'Nature_position': '仁布县委党校', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221724.0, 'College_majors': '民族学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 290.0, 'unit': '日喀则市', 'Post': '仁布县', 'Nature_position': '仁布县卫生服务中心', 'Number': '事业\n单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221725.0, 'College_majors': '会计', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 291.0, 'unit': '日喀则市', 'Post': '仁布县', 'Nature_position': '仁布县信访局信访接待中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221726.0, 'College_majors': '法学类', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 292.0, 'unit': '日喀则市', 'Post': '萨嘎县', 'Nature_position': '萨嘎融媒体中心', 'Number': '事业\n单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221727.0, 'College_majors': '新闻传播学类', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 293.0, 'unit': '日喀则市', 'Post': '萨嘎县', 'Nature_position': '萨嘎融媒体中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221728.0, 'College_majors': '数字媒体技术', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 294.0, 'unit': '日喀则市', 'Post': '萨嘎县', 'Nature_position': '萨嘎融媒体中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221729.0, 'College_majors': '广播电视技术', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '仅限服务两年及以上考核合格西部计划西藏专项志愿者、退役大学生士兵报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 295.0, 'unit': '日喀则市', 'Post': '萨嘎县', 'Nature_position': '萨嘎县昌果乡卫生院', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221730.0, 'College_majors': '藏医学', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '藏医药护理类(Z类)—藏医', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 296.0, 'unit': '日喀则市', 'Post': '萨嘎县', 'Nature_position': '萨嘎县发改委供销合作联合社', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221731.0, 'College_majors': '工商管理', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 297.0, 'unit': '日喀则市', 'Post': '萨嘎县', 'Nature_position': '萨嘎县发改委供销合作联合社', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221732.0, 'College_majors': '市场营销', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 298.0, 'unit': '日喀则市', 'Post': '萨嘎县', 'Nature_position': '萨嘎县纪委纪检监察信息中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221733.0, 'College_majors': '专业不限', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '仅限服务两年及以上考核合格西部计划西藏专项志愿者、退役大学生士兵报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 299.0, 'unit': '日喀则市', 'Post': '萨嘎县', 'Nature_position': '萨嘎县加加镇文化服务中心', 'Number': '事业\n单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221734.0, 'College_majors': '新闻传播学类', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 300.0, 'unit': '日喀则市', 'Post': '萨嘎县', 'Nature_position': '萨嘎县拉藏乡卫生院', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221735.0, 'College_majors': '藏医学', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '藏医药护理类(Z类)—藏医', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 301.0, 'unit': '日喀则市', 'Post': '萨嘎县', 'Nature_position': '萨嘎县委党校', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221736.0, 'College_majors': '马克思主义理论或政治学', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 302.0, 'unit': '日喀则市', 'Post': '萨嘎县', 'Nature_position': '萨嘎县卫生服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221737.0, 'College_majors': '内科学', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 303.0, 'unit': '日喀则市', 'Post': '萨嘎县', 'Nature_position': '萨嘎县卫生服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221738.0, 'College_majors': '儿科学', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 304.0, 'unit': '日喀则市', 'Post': '萨嘎县', 'Nature_position': '萨嘎县卫生服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221739.0, 'College_majors': '医学检验', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '医疗卫生类(E类)—医学技术', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 305.0, 'unit': '日喀则市', 'Post': '萨嘎县', 'Nature_position': '萨嘎县卫生服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221740.0, 'College_majors': '眼科学', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 306.0, 'unit': '日喀则市', 'Post': '萨嘎县', 'Nature_position': '萨嘎县卫生服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221741.0, 'College_majors': '护理学', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '医疗卫生类(E类)—护理', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 307.0, 'unit': '日喀则市', 'Post': '萨嘎县', 'Nature_position': '萨嘎县卫生服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221742.0, 'College_majors': '会计', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 308.0, 'unit': '日喀则市', 'Post': '萨嘎县', 'Nature_position': '萨嘎县夏如乡文化服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221743.0, 'College_majors': '专业不限', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 309.0, 'unit': '日喀则市', 'Post': '萨嘎县', 'Nature_position': '萨嘎县组织部电子政务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221744.0, 'College_majors': '计算机专业', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 310.0, 'unit': '日喀则市', 'Post': '萨迦县', 'Nature_position': '萨迦融媒体中心（广播电视台）', 'Number': '事业\n单位', 'Graduation_time': 4.0, 'Academic_requirements': 202221745.0, 'College_majors': '新闻传播学类', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 311.0, 'unit': '日喀则市', 'Post': '萨迦县', 'Nature_position': '萨迦融媒体中心（广播电视台）', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221746.0, 'College_majors': '广播电视技术', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 312.0, 'unit': '日喀则市', 'Post': '萨迦县', 'Nature_position': '萨迦县纪委纪检监察信息中心', 'Number': '事业\n单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221747.0, 'College_majors': '法学类', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 313.0, 'unit': '日喀则市', 'Post': '萨迦县', 'Nature_position': '萨迦县纪委纪检监察信息中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221748.0, 'College_majors': '会计', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 314.0, 'unit': '日喀则市', 'Post': '萨迦县', 'Nature_position': '萨迦县教育局教育教学研究室', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221749.0, 'College_majors': '教育学', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 315.0, 'unit': '日喀则市', 'Post': '萨迦县', 'Nature_position': '萨迦县民政局特困人员集中供养服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221750.0, 'College_majors': '会计', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 316.0, 'unit': '日喀则市', 'Post': '萨迦县', 'Nature_position': '萨迦县民政局特困人员集中供养服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221751.0, 'College_majors': '法学类', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 317.0, 'unit': '日喀则市', 'Post': '萨迦县', 'Nature_position': '萨迦县木拉乡卫生院', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221752.0, 'College_majors': '医学检验', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—医学技术', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 318.0, 'unit': '日喀则市', 'Post': '萨迦县', 'Nature_position': '萨迦县农业农村局农牧综合服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221753.0, 'College_majors': '会计', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 319.0, 'unit': '日喀则市', 'Post': '萨迦县', 'Nature_position': '萨迦县农业农村局农牧综合服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221754.0, 'College_majors': '动物医学', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 320.0, 'unit': '日喀则市', 'Post': '萨迦县', 'Nature_position': '萨迦县农业农村局农牧综合服务中心', 'Number': '事业\n单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221755.0, 'College_majors': '农学类', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 321.0, 'unit': '日喀则市', 'Post': '萨迦县', 'Nature_position': '萨迦县委党校', 'Number': '事业\n单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221756.0, 'College_majors': '民族学', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 322.0, 'unit': '日喀则市', 'Post': '萨迦县', 'Nature_position': '萨迦县雄麦乡卫生院', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221757.0, 'College_majors': '公共卫生与预防医学', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—公共卫生管理', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 323.0, 'unit': '日喀则市', 'Post': '桑珠孜区', 'Nature_position': '桑珠孜区城北办事处农牧综合服务中心', 'Number': '事业\n单位', 'Graduation_time': 3.0, 'Academic_requirements': 202221758.0, 'College_majors': '农学类', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '仅限日喀则考生可报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 324.0, 'unit': '日喀则市', 'Post': '桑珠孜区', 'Nature_position': '桑珠孜区城北办事处农牧综合服务中心', 'Number': '事业\n单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221759.0, 'College_majors': '农林经济管理', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '仅限日喀则考生可报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 325.0, 'unit': '日喀则市', 'Post': '桑珠孜区', 'Nature_position': '桑珠孜区城南办事处农牧综合服务中心', 'Number': '事业\n单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221760.0, 'College_majors': '农学类', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '仅限日喀则考生可报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 326.0, 'unit': '日喀则市', 'Post': '桑珠孜区', 'Nature_position': '桑珠孜区城南办事处农牧综合服务中心', 'Number': '事业\n单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221761.0, 'College_majors': '专业不限', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '仅限服务期满考核合格“三支一扶”人员报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 327.0, 'unit': '日喀则市', 'Post': '桑珠孜区', 'Nature_position': '桑珠孜区城南办事处文化服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221762.0, 'College_majors': '文秘', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '仅限日喀则考生可报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 328.0, 'unit': '日喀则市', 'Post': '桑珠孜区', 'Nature_position': '桑珠孜区东嘎乡农牧综合服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221763.0, 'College_majors': '会计', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '仅限日喀则考生可报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 329.0, 'unit': '日喀则市', 'Post': '桑珠孜区', 'Nature_position': '桑珠孜区甲措雄乡农牧综合服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221764.0, 'College_majors': '会计', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '仅限日喀则考生可报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 330.0, 'unit': '日喀则市', 'Post': '桑珠孜区', 'Nature_position': '桑珠孜区联乡农牧综合服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221765.0, 'College_majors': '畜牧兽医', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '仅限日喀则考生可报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 331.0, 'unit': '日喀则市', 'Post': '桑珠孜区', 'Nature_position': '桑珠孜区联乡农牧综合服务中心', 'Number': '事业\n单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221766.0, 'College_majors': '农学类', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '仅限日喀则考生可报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 332.0, 'unit': '日喀则市', 'Post': '桑珠孜区', 'Nature_position': '桑珠孜区联乡农牧综合服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221767.0, 'College_majors': '种子科学与工程', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '仅限日喀则考生可报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 333.0, 'unit': '日喀则市', 'Post': '桑珠孜区', 'Nature_position': '桑珠孜区年木乡农牧综合服务中心', 'Number': '事业\n单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221768.0, 'College_majors': '农学类', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '仅限日喀则考生可报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 334.0, 'unit': '日喀则市', 'Post': '桑珠孜区', 'Nature_position': '桑珠孜区曲布雄乡农牧综合服务中心', 'Number': '事业\n单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221769.0, 'College_majors': '农学类', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '仅限日喀则考生可报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 335.0, 'unit': '日喀则市', 'Post': '桑珠孜区', 'Nature_position': '桑珠孜区曲美乡农牧综合服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221770.0, 'College_majors': '畜牧兽医', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '仅限日喀则考生可报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 336.0, 'unit': '日喀则市', 'Post': '桑珠孜区', 'Nature_position': '桑珠孜区曲美乡农牧综合服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221771.0, 'College_majors': '农学类', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '仅限日喀则考生可报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 337.0, 'unit': '日喀则市', 'Post': '桑珠孜区', 'Nature_position': '桑珠孜区曲美乡农牧综合服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221772.0, 'College_majors': '农业工程', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '仅限日喀则考生可报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 338.0, 'unit': '日喀则市', 'Post': '桑珠孜区', 'Nature_position': '桑珠孜区委编办电子政务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221773.0, 'College_majors': '网络工程、信息安全', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '仅限日喀则考生可报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 339.0, 'unit': '日喀则市', 'Post': '桑珠孜区', 'Nature_position': '桑珠孜区委编办电子政务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221774.0, 'College_majors': '计算机专业', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '仅限日喀则考生可报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 340.0, 'unit': '日喀则市', 'Post': '桑珠孜区', 'Nature_position': '桑珠孜区卫生服务中心', 'Number': '事业\n单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221775.0, 'College_majors': '影像医学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—医学技术', 'Examination': '是', 'interview': '否', 'remark': '仅限日喀则考生可报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 341.0, 'unit': '日喀则市', 'Post': '桑珠孜区', 'Nature_position': '桑珠孜区卫生服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221776.0, 'College_majors': '麻醉学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '否', 'remark': '仅限日喀则考生可报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 342.0, 'unit': '日喀则市', 'Post': '桑珠孜区', 'Nature_position': '桑珠孜区卫生服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221777.0, 'College_majors': '临床医学（中医）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—中医临床', 'Examination': '是', 'interview': '否', 'remark': '仅限日喀则考生可报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 343.0, 'unit': '日喀则市', 'Post': '桑珠孜区', 'Nature_position': '桑珠孜区卫生服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221778.0, 'College_majors': '临床医学（西医）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '否', 'remark': '仅限日喀则考生可报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 344.0, 'unit': '日喀则市', 'Post': '桑珠孜区', 'Nature_position': '桑珠孜区卫生服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221779.0, 'College_majors': '护理学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—护理', 'Examination': '是', 'interview': '否', 'remark': '仅限日喀则考生可报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 345.0, 'unit': '日喀则市', 'Post': '桑珠孜区', 'Nature_position': '桑珠孜区信访接待中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221780.0, 'College_majors': '法学类', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '仅限日喀则考生可报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 346.0, 'unit': '日喀则市', 'Post': '谢通门县', 'Nature_position': '谢通门县措布西乡农牧综合服务中心', 'Number': '事业\n单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221781.0, 'College_majors': '农业工程', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 347.0, 'unit': '日喀则市', 'Post': '谢通门县', 'Nature_position': '谢通门县达那普乡卫生院', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221782.0, 'College_majors': '临床医学（西医）', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 348.0, 'unit': '日喀则市', 'Post': '谢通门县', 'Nature_position': '谢通门县列巴乡卫生院', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221783.0, 'College_majors': '临床医学（西医）', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 349.0, 'unit': '日喀则市', 'Post': '谢通门县', 'Nature_position': '谢通门县美巴切勤乡卫生院', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221784.0, 'College_majors': '临床医学（西医）', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 350.0, 'unit': '日喀则市', 'Post': '谢通门县', 'Nature_position': '谢通门县纳当乡卫生院', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221785.0, 'College_majors': '临床医学（西医）', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 351.0, 'unit': '日喀则市', 'Post': '谢通门县', 'Nature_position': '谢通门县南木切乡卫生院', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221786.0, 'College_majors': '临床医学（西医）', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 352.0, 'unit': '日喀则市', 'Post': '谢通门县', 'Nature_position': '谢通门县娘热乡卫生院', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221787.0, 'College_majors': '临床医学（西医）', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 353.0, 'unit': '日喀则市', 'Post': '谢通门县', 'Nature_position': '谢通门县娘热乡卫生院', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221788.0, 'College_majors': '助产学', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—护理', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 354.0, 'unit': '日喀则市', 'Post': '谢通门县', 'Nature_position': '谢通门县农业农村局农牧综合服务中心', 'Number': '事业\n单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221789.0, 'College_majors': '农学类', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '仅限日喀则考生可报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 355.0, 'unit': '日喀则市', 'Post': '谢通门县', 'Nature_position': '谢通门县切琼乡卫生院', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221790.0, 'College_majors': '临床医学（西医）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 356.0, 'unit': '日喀则市', 'Post': '谢通门县', 'Nature_position': '谢通门县荣玛乡卫生院', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221791.0, 'College_majors': '公共卫生与预防医学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—公共卫生管理', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 357.0, 'unit': '日喀则市', 'Post': '谢通门县', 'Nature_position': '谢通门县委党校', 'Number': '事业\n单位', 'Graduation_time': 4.0, 'Academic_requirements': 202221792.0, 'College_majors': '思想政治教育', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 358.0, 'unit': '日喀则市', 'Post': '谢通门县', 'Nature_position': '谢通门县卫生服务中心', 'Number': '事业\n单位', 'Graduation_time': 6.0, 'Academic_requirements': 202221793.0, 'College_majors': '临床医学（西医）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 359.0, 'unit': '日喀则市', 'Post': '谢通门县', 'Nature_position': '谢通门县孜许乡卫生院', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221794.0, 'College_majors': '临床医学（西医）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 360.0, 'unit': '日喀则市', 'Post': '谢通门县', 'Nature_position': '谢通门县孜许乡卫生院', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221795.0, 'College_majors': '助产学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—护理', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 361.0, 'unit': '日喀则市', 'Post': '亚东县', 'Nature_position': '亚东农牧综合服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221796.0, 'College_majors': '专业不限', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '仅限服务期满考核合格“三支一扶”人员报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 362.0, 'unit': '日喀则市', 'Post': '亚东县', 'Nature_position': '亚东农牧综合服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221797.0, 'College_majors': '农林经济管理', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '仅限服务两年及以上考核合格西部计划西藏专项志愿者、退役大学生士兵报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 363.0, 'unit': '日喀则市', 'Post': '亚东县', 'Nature_position': '亚东县教育局教育教学研究室', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221798.0, 'College_majors': '教育学', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 364.0, 'unit': '日喀则市', 'Post': '亚东县', 'Nature_position': '亚东县融媒体中心', 'Number': '事业\n单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221799.0, 'College_majors': '新闻传播学类', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 365.0, 'unit': '日喀则市', 'Post': '亚东县', 'Nature_position': '亚东县融媒体中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221800.0, 'College_majors': '新闻传播学类', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '仅限服务两年及以上考核合格西部计划西藏专项志愿者、退役大学生士兵报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 366.0, 'unit': '日喀则市', 'Post': '亚东县', 'Nature_position': '亚东县商务局供销合作联合社', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221801.0, 'College_majors': '电子商务', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 367.0, 'unit': '日喀则市', 'Post': '亚东县', 'Nature_position': '亚东县上亚东乡卫生院', 'Number': '事业\n单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221802.0, 'College_majors': '公共卫生与预防医学', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '医疗卫生类(E类)—公共卫生管理', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 368.0, 'unit': '日喀则市', 'Post': '亚东县', 'Nature_position': '亚东县委党校', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221803.0, 'College_majors': '政治学', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 369.0, 'unit': '日喀则市', 'Post': '亚东县', 'Nature_position': '亚东县委党校', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221804.0, 'College_majors': '法学类', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 370.0, 'unit': '日喀则市', 'Post': '亚东县', 'Nature_position': '亚东县委党校', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221805.0, 'College_majors': '民族学', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 371.0, 'unit': '日喀则市', 'Post': '亚东县', 'Nature_position': '亚东县卫生服务中心', 'Number': '事业\n单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221806.0, 'College_majors': '妇产科学', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 372.0, 'unit': '日喀则市', 'Post': '亚东县', 'Nature_position': '亚东县卫生服务中心', 'Number': '事业\n单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221807.0, 'College_majors': '临床医学（西医）', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 373.0, 'unit': '日喀则市', 'Post': '亚东县', 'Nature_position': '亚东县卫生服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221808.0, 'College_majors': '麻醉学', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 374.0, 'unit': '日喀则市', 'Post': '亚东县', 'Nature_position': '亚东县卫生服务中心', 'Number': '事业\n单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221809.0, 'College_majors': '医学信息工程', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 375.0, 'unit': '日喀则市', 'Post': '亚东县', 'Nature_position': '亚东县卫生服务中心', 'Number': '事业\n单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221810.0, 'College_majors': '公共卫生与预防医学', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '医疗卫生类(E类)—公共卫生管理', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 376.0, 'unit': '日喀则市', 'Post': '亚东县', 'Nature_position': '亚东县卫生服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221811.0, 'College_majors': '护理学', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '医疗卫生类(E类)—护理', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 377.0, 'unit': '日喀则市', 'Post': '亚东县', 'Nature_position': '亚东县卫生服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221812.0, 'College_majors': '医学检验', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '医疗卫生类(E类)—医学技术', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 378.0, 'unit': '日喀则市', 'Post': '亚东县', 'Nature_position': '亚东县卫生服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221813.0, 'College_majors': '放射医学', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 379.0, 'unit': '日喀则市', 'Post': '亚东县', 'Nature_position': '亚东县卫生服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221814.0, 'College_majors': '儿科学', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 380.0, 'unit': '日喀则市', 'Post': '仲巴县', 'Nature_position': '仲巴县融媒体中心', 'Number': '事业\n单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221815.0, 'College_majors': '广播电视技术', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 381.0, 'unit': '日喀则市', 'Post': '仲巴县', 'Nature_position': '仲巴县吉拉乡农牧综合服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221816.0, 'College_majors': '农学类', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 382.0, 'unit': '日喀则市', 'Post': '仲巴县', 'Nature_position': '仲巴县吉玛乡农牧综合服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221817.0, 'College_majors': '畜牧兽医', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 383.0, 'unit': '日喀则市', 'Post': '仲巴县', 'Nature_position': '仲巴县拉让乡农牧综合服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221818.0, 'College_majors': '动物防疫与检疫', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 384.0, 'unit': '日喀则市', 'Post': '仲巴县', 'Nature_position': '仲巴县农业农村局农牧综合服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221819.0, 'College_majors': '动物营养与饲料科学', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 385.0, 'unit': '日喀则市', 'Post': '仲巴县', 'Nature_position': '仲巴县农业农村局农牧综合服务中心', 'Number': '事业\n单位', 'Graduation_time': 3.0, 'Academic_requirements': 202221820.0, 'College_majors': '畜牧兽医', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 386.0, 'unit': '日喀则市', 'Post': '仲巴县', 'Nature_position': '仲巴县帕江乡农牧综合服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221821.0, 'College_majors': '动物防疫与检疫', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 387.0, 'unit': '日喀则市', 'Post': '仲巴县', 'Nature_position': '仲巴县帕羊镇文化服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221822.0, 'College_majors': '专业不限', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '仅限服务期满考核合格“三支一扶”人员报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 388.0, 'unit': '日喀则市', 'Post': '仲巴县', 'Nature_position': '仲巴县琼果乡农牧综合服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221823.0, 'College_majors': '动物医学', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 389.0, 'unit': '日喀则市', 'Post': '仲巴县', 'Nature_position': '仲巴县琼果乡农牧综合服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221824.0, 'College_majors': '动物科学', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 390.0, 'unit': '日喀则市', 'Post': '仲巴县', 'Nature_position': '仲巴县仁多乡农牧综合服务中心', 'Number': '事业\n单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221825.0, 'College_majors': '畜牧兽医', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 391.0, 'unit': '日喀则市', 'Post': '仲巴县', 'Nature_position': '仲巴县融媒体中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221826.0, 'College_majors': '播音主持', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 392.0, 'unit': '日喀则市', 'Post': '仲巴县', 'Nature_position': '仲巴县融媒体中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221827.0, 'College_majors': '播音主持', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '仅限服务两年及以上考核合格西部计划西藏专项志愿者、退役大学生士兵报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 393.0, 'unit': '日喀则市', 'Post': '仲巴县', 'Nature_position': '仲巴县融媒体中心', 'Number': '事业\n单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221828.0, 'College_majors': '计算机专业', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 394.0, 'unit': '日喀则市', 'Post': '仲巴县', 'Nature_position': '仲巴县商务局供销合作联合社', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221829.0, 'College_majors': '环境监测', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '仅限服务两年及以上考核合格西部计划西藏专项志愿者、退役大学生士兵报考', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 395.0, 'unit': '日喀则市', 'Post': '仲巴县', 'Nature_position': '仲巴县委党校', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221830.0, 'College_majors': '哲学', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 396.0, 'unit': '日喀则市', 'Post': '仲巴县', 'Nature_position': '仲巴县委党校', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221831.0, 'College_majors': '历史学', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 397.0, 'unit': '日喀则市', 'Post': '仲巴县', 'Nature_position': '仲巴县卫生服务中心', 'Number': '事业\n单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221832.0, 'College_majors': '医学检验', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '医疗卫生类(E类)—医学技术', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 398.0, 'unit': '日喀则市', 'Post': '仲巴县', 'Nature_position': '仲巴县卫生服务中心', 'Number': '事业\n单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221833.0, 'College_majors': '影像医学', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '医疗卫生类(E类)—医学技术', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 399.0, 'unit': '日喀则市', 'Post': '仲巴县', 'Nature_position': '仲巴县卫生服务中心', 'Number': '事业\n单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221834.0, 'College_majors': '麻醉学', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 400.0, 'unit': '日喀则市', 'Post': '仲巴县', 'Nature_position': '仲巴县卫生服务中心', 'Number': '事业\n单位', 'Graduation_time': 6.0, 'Academic_requirements': 202221835.0, 'College_majors': '临床医学（西医）', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 401.0, 'unit': '日喀则市', 'Post': '仲巴县', 'Nature_position': '仲巴县卫生服务中心', 'Number': '事业\n单位', 'Graduation_time': 4.0, 'Academic_requirements': 202221836.0, 'College_majors': '护理学', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '医疗卫生类(E类)—护理', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 402.0, 'unit': '日喀则市', 'Post': '仲巴县', 'Nature_position': '仲巴县卫生服务中心', 'Number': '事业\n单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221837.0, 'College_majors': '公共卫生与预防医学', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '医疗卫生类(E类)—公共卫生管理', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 403.0, 'unit': '日喀则市', 'Post': '仲巴县', 'Nature_position': '仲巴县卫生服务中心', 'Number': '事业\n单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221838.0, 'College_majors': '藏医学', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '藏医药护理类(Z类)—藏医', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}, 
+
+
+{'id': 404.0, 'unit': '日喀则市', 'Post': '仲巴县', 'Nature_position': '仲巴县亚热乡农牧综合服务中心', 'Number': '事业\n单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221839.0, 'College_majors': '动物防疫与检疫', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0892-8822357、0892-8822227'}]
+
+
+
+
+
+    
+	    
+	    
+	    for(i=0;i<xx.length;i++){
+	    	var html="<tr><td>"+
+	    	xx[i].id+"</td><td>"+
+            xx[i].unit+"</td><td>"+
+            xx[i].Post+"</td><td>"+
+            xx[i].Nature_position+"</td><td>"+
+            xx[i].Number+"</td><td>"+
+            xx[i].Graduation_time+"</td><td>"+
+            xx[i].Academic_requirements+"</td><td>"+
+            xx[i].College_majors+"</td><td>"+
+            xx[i].Undergraduate_majors+"</td><td>"+
+            xx[i].Graduate_majors+"</td><td>"+
+            xx[i].political_landscape+"</td><td>"+
+            xx[i].Job_code+"</td><td>"+
+            xx[i].Examination+"</td><td>"+
+            xx[i].interview+"</td><td>"+
+            xx[i].remark+"</td><td>"+
+            xx[i].consultation+"</td></tr>";
+
+	    	$("#example tbody").append(html);
+	    	
+	    }
+	    
+	    $('#example').DataTable( {
+	        dom: 'Bfrtip',
+	        language: {  
+                emptyTable: '没有数据',  
+                loadingRecords: '加载中...',  
+                processing: '查询中...',  
+                search: '搜索【专业、地区等】:',  
+                lengthMenu: '每页 _MENU_ 件',  
+                zeroRecords: '没有数据',  
+                paginate: {  
+                    'first':      '第一页',  
+                    'last':       '最后一页',  
+                    'next':       '下一页',  
+                    'previous':   '上一页'  
+            	},  
+	            info: '第 _PAGE_ 页 / 总 _PAGES_ 页',  
+	            infoEmpty: '没有数据',  
+	            infoFiltered: '(过滤总件数 _MAX_ 条)',
+	        },
+	        
+
+	    } );
+
+
+	    
+
+
+	});
+  </script>  
+ </body>  
+</html>  

@@ -1,0 +1,504 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">   
+ <head>  
+  <title> 2023 </title>  
+  <meta charset='utf-8'>
+  <link rel="stylesheet" href="../../css/table.css" />
+  <link rel="stylesheet" href="../../css/buttons.css" />
+  <style>
+  	*{
+  		/*background-image: url();*/
+  		background-color: #000;
+  		color: #FFF; 
+  	}
+  	tbody td{
+  		text-align: center;
+  	}
+  </style>
+ </head>  
+  
+ <body>  
+ 	<h1 style="text-align: center;">昌都市2023年事业单位</h1>
+ 	<a href="../../2023_shiye_.html" style="font-size: 20px;">回到主页</a>
+    <table id="example" class="display" role="grid" aria-describedby="example_info">
+ 		<thead>
+            <tr>
+                <th>序号</th>
+                <th>招聘地市</th>
+                <th>单位</th>
+                <th>岗位</th>
+                <th>职位性质</th>
+                <th>招聘人数</th>
+                <th>毕业时间</th>
+                <th>学历要求</th>
+                <th>大专专业</th>
+                <th>本科专业</th>
+                <th>研究生专业</th>
+                <th>政治面貌</th>
+                <th>岗位代码</th>
+                <th>笔试科目</th>
+                <th>是否面试</th>
+                <th>备注</th>
+                <th>咨询</th>
+                
+
+            </tr>
+        </thead>
+        <tbody>
+            
+        </tbody>
+
+        
+     
+ 	</table>
+ 	
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/jquery.datatables.min.js"/>
+	<script src="../../js/buttons.print.min.js"></script>
+
+ <script> 
+
+$(document).ready(function(){ 
+
+    var xx = [{'id': 1.0, 'unit': '昌都市', 'Post': '市人大常委会办公室', 'Nature_position': '预算联网中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '——', 'Graduate_majors': '不限', 'political_landscape': '不限', 'Job_code': '中共党员', 'Examination': 230501001.0, 'interview': '综合管理类（A类）', 'remark': '否', 'mess': '无', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 2.0, 'unit': '昌都市', 'Post': '市委组织部', 'Nature_position': '干部档案室', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业生', 'College_majors': '本科及以上', 'Undergraduate_majors': '——', 'Graduate_majors': '计算机类', 'political_landscape': '计算机科学与技术', 'Job_code': '中共党员或共青团员', 'Examination': 230502001.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'mess': '', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 3.0, 'unit': '昌都市', 'Post': '市委宣传部', 'Nature_position': '未成年人思想道德建设指导中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '不限', 'College_majors': '仅限本科', 'Undergraduate_majors': '——', 'Graduate_majors': '金融学类', 'political_landscape': '——', 'Job_code': '不限', 'Examination': 230503001.0, 'interview': '社会科学专技类（B类）', 'remark': '否', 'mess': '仅限昌都户籍或昌都学籍高校毕业生报考', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 4.0, 'unit': '昌都市', 'Post': '市委政法委', 'Nature_position': '综治网格化管理中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '不限', 'College_majors': '仅限本科', 'Undergraduate_majors': '——', 'Graduate_majors': '法学类', 'political_landscape': '——', 'Job_code': '中共党员', 'Examination': 230504001.0, 'interview': '综合管理类（A类）', 'remark': '否', 'mess': '', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 5.0, 'unit': '昌都市', 'Post': '市委党校', 'Nature_position': '马列与党史党建教研室', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '不限', 'College_majors': '硕士研究生及以上', 'Undergraduate_majors': '——', 'Graduate_majors': '——', 'political_landscape': '中共党史', 'Job_code': '不限', 'Examination': 230505001.0, 'interview': '——', 'remark': '是', 'mess': '', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 6.0, 'unit': '昌都市', 'Post': '', 'Nature_position': '经济与行政管理教研室', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业生', 'College_majors': '仅限本科', 'Undergraduate_majors': '——', 'Graduate_majors': '经济学类', 'political_landscape': '——', 'Job_code': '不限', 'Examination': 230505002.0, 'interview': '社会科学专技类（B类）', 'remark': '否', 'mess': '', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 7.0, 'unit': '昌都市', 'Post': '市教育局', 'Nature_position': '教师培训中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '不限', 'College_majors': '仅硕士研究生', 'Undergraduate_majors': '——', 'Graduate_majors': '——', 'political_landscape': '教育学', 'Job_code': '不限', 'Examination': 230506001.0, 'interview': '——', 'remark': '是', 'mess': '二级学科不限', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 8.0, 'unit': '昌都市', 'Post': '市经济和信息化局', 'Nature_position': '中小企业发展促进中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业生', 'College_majors': '仅限本科', 'Undergraduate_majors': '——', 'Graduate_majors': '经济学类', 'political_landscape': '——', 'Job_code': '不限', 'Examination': 230507001.0, 'interview': '社会科学专技类（B类）', 'remark': '否', 'mess': '', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 9.0, 'unit': '昌都市', 'Post': '市水利局', 'Nature_position': '水利技术服务站', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': '2023年毕业生', 'College_majors': '仅限本科', 'Undergraduate_majors': '——', 'Graduate_majors': '水利类', 'political_landscape': '——', 'Job_code': '不限', 'Examination': 230508001.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'mess': '', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 10.0, 'unit': '昌都市', 'Post': '市应急管理局', 'Nature_position': '应急救援技术中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业生', 'College_majors': '本科及以上', 'Undergraduate_majors': '——', 'Graduate_majors': '不限', 'political_landscape': '不限', 'Job_code': '不限', 'Examination': 230509001.0, 'interview': '综合管理类（A类）', 'remark': '否', 'mess': '', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 11.0, 'unit': '昌都市', 'Post': '市林业和草原局', 'Nature_position': '林业和草原科学研究所', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '不限', 'College_majors': '仅限本科', 'Undergraduate_majors': '——', 'Graduate_majors': '农林经济管理', 'political_landscape': '——', 'Job_code': '不限', 'Examination': 230510001.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'mess': '仅限服务两年及以上考核合格西部计划西藏专项志愿者、退役大学生士兵、服务满三年且考核合格乡村振兴专干报考', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 12.0, 'unit': '昌都市', 'Post': '市发展和改革委员会', 'Nature_position': '经济信息中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业生', 'College_majors': '本科及以上', 'Undergraduate_majors': '——', 'Graduate_majors': '经济学类', 'political_landscape': '经济学', 'Job_code': '不限', 'Examination': 230511001.0, 'interview': '社会科学专技类（B类）', 'remark': '否', 'mess': '', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 13.0, 'unit': '昌都市', 'Post': '', 'Nature_position': '地方储备粮管理中心（粮食信息统计中心）', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业生', 'College_majors': '本科及以上', 'Undergraduate_majors': '——', 'Graduate_majors': '经济学类', 'political_landscape': '经济学', 'Job_code': '不限', 'Examination': 230511002.0, 'interview': '社会科学专技类（B类）', 'remark': '否', 'mess': '', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 14.0, 'unit': '昌都市', 'Post': '市卫健委', 'Nature_position': '疾病预防控制中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '不限', 'College_majors': '仅限本科', 'Undergraduate_majors': '——', 'Graduate_majors': '预防医学', 'political_landscape': '——', 'Job_code': '不限', 'Examination': 230512001.0, 'interview': '医疗卫生类（E类）-公共卫生管理', 'remark': '否', 'mess': '', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 15.0, 'unit': '昌都市', 'Post': '', 'Nature_position': '疾病预防控制中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '不限', 'College_majors': '仅限本科', 'Undergraduate_majors': '——', 'Graduate_majors': '医学检验技术', 'political_landscape': '——', 'Job_code': '不限', 'Examination': 230512002.0, 'interview': '医疗卫生类（E类）-医学技术', 'remark': '否', 'mess': '', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 16.0, 'unit': '昌都市', 'Post': '市藏医院', 'Nature_position': '市藏医院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业生', 'College_majors': '仅限本科', 'Undergraduate_majors': '——', 'Graduate_majors': '藏医学', 'political_landscape': '——', 'Job_code': '不限', 'Examination': 230513001.0, 'interview': '藏医药护理类（Z类）-藏医', 'remark': '否', 'mess': '', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 17.0, 'unit': '昌都市', 'Post': '', 'Nature_position': '市藏医院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '不限', 'College_majors': '仅限本科', 'Undergraduate_majors': '——', 'Graduate_majors': '护理学', 'political_landscape': '——', 'Job_code': '不限', 'Examination': 230513002.0, 'interview': '医疗卫生类（E类）-护理', 'remark': '否', 'mess': '', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 18.0, 'unit': '昌都市', 'Post': '', 'Nature_position': '市藏医院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '不限', 'College_majors': '仅限本科', 'Undergraduate_majors': '——', 'Graduate_majors': '藏医学', 'political_landscape': '——', 'Job_code': '不限', 'Examination': 230513003.0, 'interview': '藏医药护理类（Z类）-藏医', 'remark': '否', 'mess': '', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 19.0, 'unit': '昌都市', 'Post': '', 'Nature_position': '市藏医院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业生', 'College_majors': '仅限本科', 'Undergraduate_majors': '——', 'Graduate_majors': '汉语言文学', 'political_landscape': '——', 'Job_code': '不限', 'Examination': 230513004.0, 'interview': '综合管理类（A类）', 'remark': '否', 'mess': '', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 20.0, 'unit': '昌都市', 'Post': '', 'Nature_position': '市藏医院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业生', 'College_majors': '仅限本科', 'Undergraduate_majors': '——', 'Graduate_majors': '财政学、金融学', 'political_landscape': '——', 'Job_code': '不限', 'Examination': 230513005.0, 'interview': '社会科学专技类（B类）', 'remark': '否', 'mess': '', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 21.0, 'unit': '昌都市', 'Post': '市农业农村局', 'Nature_position': '昌都市畜牧总站', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业生', 'College_majors': '本科及以上', 'Undergraduate_majors': '——', 'Graduate_majors': '动物生产类', 'political_landscape': '畜牧学', 'Job_code': '不限', 'Examination': 230514001.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'mess': '', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 22.0, 'unit': '昌都市', 'Post': '', 'Nature_position': '昌都市畜牧总站', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': '2023年毕业生', 'College_majors': '本科及以上', 'Undergraduate_majors': '——', 'Graduate_majors': '动物医学类', 'political_landscape': '兽医学', 'Job_code': '不限', 'Examination': 230514002.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'mess': '', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 23.0, 'unit': '昌都市', 'Post': '市生态环境局', 'Nature_position': '生态环境应急处置中心', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': '2023年毕业生', 'College_majors': '本科及以上', 'Undergraduate_majors': '——', 'Graduate_majors': '环境科学与工程类', 'political_landscape': '环境科学与工程', 'Job_code': '不限', 'Examination': 230515001.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'mess': '', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 24.0, 'unit': '昌都市', 'Post': '', 'Nature_position': '生态环境工程评估中心', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': '2023年毕业生', 'College_majors': '本科及以上', 'Undergraduate_majors': '——', 'Graduate_majors': '给排水科学与工程、土木工程', 'political_landscape': '土木工程', 'Job_code': '不限', 'Examination': 230515002.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'mess': '', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 25.0, 'unit': '昌都市', 'Post': '', 'Nature_position': '生态环境信息中心', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': '2023年毕业生', 'College_majors': '本科及以上', 'Undergraduate_majors': '——', 'Graduate_majors': '环境科学与工程类', 'political_landscape': '环境科学与工程', 'Job_code': '不限', 'Examination': 230515003.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'mess': '', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 26.0, 'unit': '昌都市', 'Post': '', 'Nature_position': '生态环境局洛隆片区监测站', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': '2023年毕业生', 'College_majors': '本科及以上', 'Undergraduate_majors': '——', 'Graduate_majors': '水质科学与技术、给排水科学与工程', 'political_landscape': '环境科学与工程', 'Job_code': '不限', 'Examination': 230515004.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'mess': '', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 27.0, 'unit': '昌都市', 'Post': '', 'Nature_position': '生态环境局江达片区监测站', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '——', 'Graduate_majors': '水质科学与技术、给排水科学与工程', 'political_landscape': '环境科学与工程', 'Job_code': '不限', 'Examination': 230515005.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'mess': '', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 28.0, 'unit': '昌都市', 'Post': '昌都市消防救援支队', 'Nature_position': '昌都市消防救援服务中心', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '——', 'Graduate_majors': '公安学类、法学类、马克思主义理论类、中国语言文学类、管理科学与工程类、工商管理类、公共管理类、图书情报与档案管理类、旅游管理类、政治学类、社会学类', 'political_landscape': '公安学、法学、马克思主义理论、中国语言文学、管理科学与工程、工商管理、公共管理、图书情报与档案管理、政治学、社会学', 'Job_code': '不限', 'Examination': 230516001.0, 'interview': '综合管理类（A类）', 'remark': '是', 'mess': '在笔试成绩达到最低合格分数线的基础上，按照1:4的比例参加西藏自治区消防救援总队组织的心理素质测试、体能测评', 'consultation': '0895-4821973 0895-4822355\n0895-4926040'}, 
+
+
+{'id': 29.0, 'unit': '昌都市', 'Post': '', 'Nature_position': '昌都市消防救援服务中心', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '——', 'Graduate_majors': '新闻传播学类、历史学类、经济学类、金融学类、教育学类、体育学类、统计学类、心理学类', 'political_landscape': '新闻传播学、中国史、应用经济学、理论经济学、教育学、体育学、心理学、统计学', 'Job_code': '不限', 'Examination': 230516002.0, 'interview': '社会科学专技类（B类）', 'remark': '是', 'mess': '在笔试成绩达到最低合格分数线的基础上，按照1:4的比例参加西藏自治区消防救援总队组织的心理素质测试、体能测评', 'consultation': '0895-4821973 0895-4822355\n0895-4926040'}, 
+
+
+{'id': 30.0, 'unit': '昌都市', 'Post': '', 'Nature_position': '昌都市消防救援服务中心', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '——', 'Graduate_majors': '化学类、化工与制药类、土木类、水利类、建筑类、机械类、电气类、电子信息类、自动化类、计算机类、测绘类、矿业类、核工程类、环境科学与工程类、安全科学与工程类、公安技术类、大气科学类、地球物理学类、地质学类、交通运输类、航空航天类、材料类、数学类', 'political_landscape': '化学、化学工程与技术、土木工程、水利工程、建筑学、机械工程、电气工程、电子科学与技术、计算机科学与技术、测绘科学与技术、矿业工程、核科学与技术、环境科学与工程、安全科学与工程、公安技术、大气科学、地球物理学、地质学、交通运输工程、航空宇航科学与技术、材料科学与工程、数学', 'Job_code': '不限', 'Examination': 230516003.0, 'interview': '自然科学专技类（C类）', 'remark': '是', 'mess': '根据消防救援工作特点，需24小时执勤战备，参与应急救援工作，限男性。\n在笔试成绩达到最低合格分数线的基础上，按照1:4的比例参加西藏自治区消防救援总队组织的心理素质测试、体能测评', 'consultation': '0895-4821973 0895-4822355\n0895-4926040'}, 
+
+
+{'id': 31.0, 'unit': '昌都市', 'Post': '', 'Nature_position': '昌都市消防救援服务中心', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': '2023年毕业生', 'College_majors': '硕士研究生及以上', 'Undergraduate_majors': '——', 'Graduate_majors': '——', 'political_landscape': '防灾减灾工程及防护工程、地质工程', 'Job_code': '不限', 'Examination': 230516004.0, 'interview': '——', 'remark': '是', 'mess': '根据消防救援工作特点，需24小时执勤战备，参与应急救援工作，限男性。\n在笔试成绩达到最低合格分数线的基础上，按照1:4的比例参加西藏自治区消防救援总队组织的心理素质测试、体能测评。\n需取得相应学历\n证书、学位证书。', 'consultation': '0895-4821973 0895-4822355\n0895-4926040'}, 
+
+
+{'id': 32.0, 'unit': '昌都市', 'Post': '类乌齐县', 'Nature_position': '县乡村振兴局信息中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业生', 'College_majors': '大专及以上', 'Undergraduate_majors': '不限', 'Graduate_majors': '不限', 'political_landscape': '不限', 'Job_code': '不限', 'Examination': 230517001.0, 'interview': '综合管理类（A类）', 'remark': '否', 'mess': '', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 33.0, 'unit': '昌都市', 'Post': '类乌齐县', 'Nature_position': '岗色乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业生', 'College_majors': '大专及以上', 'Undergraduate_majors': '不限', 'Graduate_majors': '不限', 'political_landscape': '不限', 'Job_code': '不限', 'Examination': 230517002.0, 'interview': '综合管理类（A类）', 'remark': '否', 'mess': '仅限昌都户籍或昌都学籍高校毕业生报考', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 34.0, 'unit': '昌都市', 'Post': '洛隆县', 'Nature_position': '县政府办铁路建设协调中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业生', 'College_majors': '本科及以上', 'Undergraduate_majors': '——', 'Graduate_majors': '会计学、财务管理', 'political_landscape': '会计学', 'Job_code': '不限', 'Examination': 230518001.0, 'interview': '社会科学专技类（B类）', 'remark': '否', 'mess': '', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 35.0, 'unit': '昌都市', 'Post': '洛隆县', 'Nature_position': '县政府办铁路建设协调中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业生', 'College_majors': '本科及以上', 'Undergraduate_majors': '——', 'Graduate_majors': '测绘类', 'political_landscape': '测绘科学与技术', 'Job_code': '不限', 'Examination': 230518002.0, 'interview': '自然科学专技类（c类）', 'remark': '否', 'mess': '仅限昌都户籍或昌都学籍高校毕业生报考', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 36.0, 'unit': '昌都市', 'Post': '洛隆县', 'Nature_position': '县乡村振兴局信息中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业生', 'College_majors': '本科及以上', 'Undergraduate_majors': '——', 'Graduate_majors': '新媒体技术', 'political_landscape': '计算机应用技术', 'Job_code': '不限', 'Examination': 230518003.0, 'interview': '自然科学专技类（c类）', 'remark': '否', 'mess': '', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 37.0, 'unit': '昌都市', 'Post': '洛隆县', 'Nature_position': '康沙镇农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '不限', 'College_majors': '仅限本科', 'Undergraduate_majors': '——', 'Graduate_majors': '木材科学与工程', 'political_landscape': '——', 'Job_code': '中共党员（含预备党员）', 'Examination': 230518004.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'mess': '', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 38.0, 'unit': '昌都市', 'Post': '洛隆县', 'Nature_position': '康沙镇农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '不限', 'College_majors': '仅限本科', 'Undergraduate_majors': '——', 'Graduate_majors': '植物保护', 'political_landscape': '——', 'Job_code': '不限', 'Examination': 230518005.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'mess': '', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 39.0, 'unit': '昌都市', 'Post': '洛隆县', 'Nature_position': '康沙镇农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业生', 'College_majors': '大专及以上', 'Undergraduate_majors': '畜牧兽医', 'Graduate_majors': '兽医公共卫生', 'political_landscape': '预防兽医学', 'Job_code': '不限', 'Examination': 230518006.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'mess': '仅限昌都户籍或昌都学籍高校毕业生报考', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 40.0, 'unit': '昌都市', 'Post': '洛隆县', 'Nature_position': '马利镇文化服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业生', 'College_majors': '仅限本科', 'Undergraduate_majors': '——', 'Graduate_majors': '计算机科学与技术', 'political_landscape': '——', 'Job_code': '不限', 'Examination': 230518007.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'mess': '', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 41.0, 'unit': '昌都市', 'Post': '洛隆县', 'Nature_position': '马利镇文化服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业生', 'College_majors': '仅限本科', 'Undergraduate_majors': '——', 'Graduate_majors': '汉语言文学', 'political_landscape': '——', 'Job_code': '不限', 'Examination': 230518008.0, 'interview': '综合管理类（A类）', 'remark': '否', 'mess': '', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 42.0, 'unit': '昌都市', 'Post': '洛隆县', 'Nature_position': '马利镇文化服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业生', 'College_majors': '大专及以上', 'Undergraduate_majors': '公共文化服务与管理', 'Graduate_majors': '文物修复与保护', 'political_landscape': '新闻传播学', 'Job_code': '不限', 'Examination': 230518009.0, 'interview': '社会科学专技类（B类）', 'remark': '否', 'mess': '仅限昌都户籍或昌都学籍高校毕业生报考', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 43.0, 'unit': '昌都市', 'Post': '洛隆县', 'Nature_position': '马利镇农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业生', 'College_majors': '大专及以上', 'Undergraduate_majors': '畜牧兽医', 'Graduate_majors': '兽医公共卫生', 'political_landscape': '预防兽医学', 'Job_code': '不限', 'Examination': 230518010.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'mess': '', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 44.0, 'unit': '昌都市', 'Post': '洛隆县', 'Nature_position': '白达乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业生', 'College_majors': '大专及以上', 'Undergraduate_majors': '现代农业技术', 'Graduate_majors': '农学', 'political_landscape': '农业资源与环境', 'Job_code': '不限', 'Examination': 230518011.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'mess': '', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 45.0, 'unit': '昌都市', 'Post': '洛隆县', 'Nature_position': '白达乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业生', 'College_majors': '大专及以上', 'Undergraduate_majors': '民政服务与管理', 'Graduate_majors': '公共事业管理', 'political_landscape': '公共管理', 'Job_code': '不限', 'Examination': 230518012.0, 'interview': '综合管理类（A类）', 'remark': '否', 'mess': '仅限昌都户籍或昌都学籍高校毕业生报考', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 46.0, 'unit': '昌都市', 'Post': '洛隆县', 'Nature_position': '白达乡文化服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业生', 'College_majors': '大专及以上', 'Undergraduate_majors': '社区管理与服务', 'Graduate_majors': '文化产业管理', 'political_landscape': '旅游管理', 'Job_code': '不限', 'Examination': 230518013.0, 'interview': '综合管理类（A类）', 'remark': '否', 'mess': '', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 47.0, 'unit': '昌都市', 'Post': '洛隆县', 'Nature_position': '白达乡文化服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业生', 'College_majors': '大专及以上', 'Undergraduate_majors': '旅游管理', 'Graduate_majors': '工商管理', 'political_landscape': '行政管理', 'Job_code': '不限', 'Examination': 230518014.0, 'interview': '综合管理类（A类）', 'remark': '否', 'mess': '', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 48.0, 'unit': '昌都市', 'Post': '洛隆县', 'Nature_position': '玉西乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业生', 'College_majors': '大专及以上', 'Undergraduate_majors': '党务工作', 'Graduate_majors': '中国共产党历史', 'political_landscape': '马克思主义理论', 'Job_code': '不限', 'Examination': 230518015.0, 'interview': '综合管理类（A类）', 'remark': '否', 'mess': '', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 49.0, 'unit': '昌都市', 'Post': '洛隆县', 'Nature_position': '俄西乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业生', 'College_majors': '大专及以上', 'Undergraduate_majors': '农产品加工与质量检测', 'Graduate_majors': '设施农业科学与工程', 'political_landscape': '作物栽培学与耕作学', 'Job_code': '不限', 'Examination': 230518016.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'mess': '仅限昌都户籍或昌都学籍高校毕业生报考', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 50.0, 'unit': '昌都市', 'Post': '洛隆县', 'Nature_position': '俄西乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '不限', 'College_majors': '仅限本科', 'Undergraduate_majors': '——', 'Graduate_majors': '智慧农业', 'political_landscape': '——', 'Job_code': '中共党员或共青团员', 'Examination': 230518017.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'mess': '', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 51.0, 'unit': '昌都市', 'Post': '洛隆县', 'Nature_position': '俄西乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '不限', 'College_majors': '仅限本科', 'Undergraduate_majors': '——', 'Graduate_majors': '现代农业经营与管理', 'political_landscape': '——', 'Job_code': '中共党员或共青团员', 'Examination': 230518018.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'mess': '', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 52.0, 'unit': '昌都市', 'Post': '洛隆县', 'Nature_position': '俄西乡文化服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '不限', 'College_majors': '仅限本科', 'Undergraduate_majors': '——', 'Graduate_majors': '大数据与会计', 'political_landscape': '——', 'Job_code': '中共党员或共青团员', 'Examination': 230518019.0, 'interview': '社会科学专技类（B类）', 'remark': '否', 'mess': '', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 53.0, 'unit': '昌都市', 'Post': '洛隆县', 'Nature_position': '俄西乡文化服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '不限', 'College_majors': '仅限本科', 'Undergraduate_majors': '——', 'Graduate_majors': '城乡规划', 'political_landscape': '——', 'Job_code': '中共党员或共青团员', 'Examination': 230518020.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'mess': '', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 54.0, 'unit': '昌都市', 'Post': '洛隆县', 'Nature_position': '俄西乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '不限', 'College_majors': '仅限本科', 'Undergraduate_majors': '——', 'Graduate_majors': '农业水利工程', 'political_landscape': '——', 'Job_code': '中共党员或共青团员', 'Examination': 230518021.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'mess': '', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 55.0, 'unit': '昌都市', 'Post': '左贡县', 'Nature_position': '县人社局就业创业服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '不限', 'College_majors': '仅限本科', 'Undergraduate_majors': '——', 'Graduate_majors': '社会工作', 'political_landscape': '——', 'Job_code': '不限', 'Examination': 230519001.0, 'interview': '综合管理类（A类）', 'remark': '否', 'mess': '', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 56.0, 'unit': '昌都市', 'Post': '左贡县', 'Nature_position': '县乡村振兴局信息中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业生', 'College_majors': '仅限本科', 'Undergraduate_majors': '——', 'Graduate_majors': '统计学类', 'political_landscape': '——', 'Job_code': '不限', 'Examination': 230519002.0, 'interview': '社会科学专技类（B类）', 'remark': '否', 'mess': '仅限昌都户籍或昌都学籍高校毕业生报考', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 57.0, 'unit': '昌都市', 'Post': '左贡县', 'Nature_position': '县委编办电子政务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业生', 'College_majors': '仅限本科', 'Undergraduate_majors': '——', 'Graduate_majors': '不限', 'political_landscape': '——', 'Job_code': '不限', 'Examination': 230519003.0, 'interview': '综合管理类（A类）', 'remark': '否', 'mess': '', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 58.0, 'unit': '昌都市', 'Post': '左贡县', 'Nature_position': '县委党校', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': '不限', 'College_majors': '仅限本科', 'Undergraduate_majors': '——', 'Graduate_majors': '马克思主义理论类、政治学类、民族学类、社会学类', 'political_landscape': '——', 'Job_code': '中共党员或共青团员', 'Examination': 230519004.0, 'interview': '综合管理类（A类）', 'remark': '否', 'mess': '', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 59.0, 'unit': '昌都市', 'Post': '左贡县', 'Nature_position': '县人民医院', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': '2023年毕业生', 'College_majors': '大专及以上', 'Undergraduate_majors': '医学检验技术', 'Graduate_majors': '医学检验技术', 'political_landscape': '临床检验诊断学', 'Job_code': '不限', 'Examination': 230519005.0, 'interview': '医疗卫生类（E类）-医学技术', 'remark': '否', 'mess': '', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 60.0, 'unit': '昌都市', 'Post': '左贡县', 'Nature_position': '绕金乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业生', 'College_majors': '仅限本科', 'Undergraduate_majors': '——', 'Graduate_majors': '动物医学', 'political_landscape': '——', 'Job_code': '不限', 'Examination': 230519006.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'mess': '', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 61.0, 'unit': '昌都市', 'Post': '左贡县', 'Nature_position': '绕金乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业生', 'College_majors': '大专及以上', 'Undergraduate_majors': '公共事务管理', 'Graduate_majors': '公共事业管理', 'political_landscape': '公共管理', 'Job_code': '不限', 'Examination': 230519007.0, 'interview': '综合管理类（A类）', 'remark': '否', 'mess': '仅限昌都户籍或昌都学籍高校毕业生报考', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 62.0, 'unit': '昌都市', 'Post': '左贡县', 'Nature_position': '旺达镇便民服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '——', 'Graduate_majors': '经济与金融', 'political_landscape': '经济学', 'Job_code': '不限', 'Examination': 230519008.0, 'interview': '社会科学专技类（B类）', 'remark': '否', 'mess': '', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 63.0, 'unit': '昌都市', 'Post': '芒康县', 'Nature_position': '木许乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业生', 'College_majors': '大专及以上', 'Undergraduate_majors': '不限', 'Graduate_majors': '汉语言文学', 'political_landscape': '不限', 'Job_code': '不限', 'Examination': 230520001.0, 'interview': '综合管理类（A类）', 'remark': '否', 'mess': '', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 64.0, 'unit': '昌都市', 'Post': '芒康县', 'Nature_position': '曲孜卡乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业生', 'College_majors': '本科及以上', 'Undergraduate_majors': '——', 'Graduate_majors': '汉语言文学', 'political_landscape': '中国语言文学', 'Job_code': '不限', 'Examination': 230520002.0, 'interview': '综合管理类（A类）', 'remark': '否', 'mess': '', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 65.0, 'unit': '昌都市', 'Post': '芒康县', 'Nature_position': '宗西乡文化服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '不限', 'College_majors': '大专及以上', 'Undergraduate_majors': '不限', 'Graduate_majors': '不限', 'political_landscape': '不限', 'Job_code': '不限', 'Examination': 230520003.0, 'interview': '综合管理类（A类）', 'remark': '否', 'mess': '仅限服务期满且考核合格“三支一扶”人员报考', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 66.0, 'unit': '昌都市', 'Post': '芒康县', 'Nature_position': '宗西乡文化服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业生', 'College_majors': '本科及以上', 'Undergraduate_majors': '——', 'Graduate_majors': '汉语言文学、汉语言、中国少数民族语言文学、秘书学', 'political_landscape': '不限', 'Job_code': '不限', 'Examination': 230520004.0, 'interview': '综合管理类（A类）', 'remark': '否', 'mess': '', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 67.0, 'unit': '昌都市', 'Post': '芒康县', 'Nature_position': '宗西乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业生', 'College_majors': '本科及以上', 'Undergraduate_majors': '——', 'Graduate_majors': '社会学类', 'political_landscape': '不限', 'Job_code': '不限', 'Examination': 230520005.0, 'interview': '综合管理类（A类）', 'remark': '否', 'mess': '仅限昌都户籍或昌都学籍高校毕业生报考', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 68.0, 'unit': '昌都市', 'Post': ' 芒康县', 'Nature_position': '昂多乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业生', 'College_majors': '本科及以上', 'Undergraduate_majors': '——', 'Graduate_majors': '生物农药科学与工程、农学、农业资源与环境', 'political_landscape': '不限', 'Job_code': '不限', 'Examination': 230520006.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'mess': '', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 69.0, 'unit': '昌都市', 'Post': '芒康县', 'Nature_position': '昂多乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业生', 'College_majors': '大专及以上', 'Undergraduate_majors': '不限', 'Graduate_majors': '不限', 'political_landscape': '不限', 'Job_code': '不限', 'Examination': 230520007.0, 'interview': '综合管理类（A类）', 'remark': '否', 'mess': '仅限昌都户籍或昌都学籍高校毕业生报考', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 70.0, 'unit': '昌都市', 'Post': '芒康县', 'Nature_position': '纳西民族乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业生', 'College_majors': '本科及以上', 'Undergraduate_majors': '——', 'Graduate_majors': '财务管理', 'political_landscape': '不限', 'Job_code': '不限', 'Examination': 230520008.0, 'interview': '社会科学专技类（B类）', 'remark': '否', 'mess': '', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 71.0, 'unit': '昌都市', 'Post': ' 芒康县', 'Nature_position': '纳西民族乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业生', 'College_majors': '本科及以上', 'Undergraduate_majors': '——', 'Graduate_majors': '财务管理、会计学', 'political_landscape': '不限', 'Job_code': '不限', 'Examination': 230520009.0, 'interview': '社会科学专技类（B类）', 'remark': '否', 'mess': '仅限昌都户籍或昌都学籍高校毕业生报考', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 72.0, 'unit': '昌都市', 'Post': '芒康县', 'Nature_position': '县教育局教研室', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业生', 'College_majors': '本科及以上', 'Undergraduate_majors': '——', 'Graduate_majors': '财务管理', 'political_landscape': '不限', 'Job_code': '不限', 'Examination': 230520010.0, 'interview': '社会科学专技类（B类）', 'remark': '否', 'mess': '', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 73.0, 'unit': '昌都市', 'Post': '芒康县', 'Nature_position': '徐中乡文化服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '——', 'Graduate_majors': '不限', 'political_landscape': '不限', 'Job_code': '不限', 'Examination': 230520011.0, 'interview': '综合管理类（A类）', 'remark': '否', 'mess': '仅限服务两年及以上考核合格西部计划西藏专项志愿者、退役大学生士兵、服务满三年且考核合格乡村振兴专干报考', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 74.0, 'unit': '昌都市', 'Post': '芒康县', 'Nature_position': '如美镇农牧服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业生', 'College_majors': '本科及以上', 'Undergraduate_majors': '——', 'Graduate_majors': '财务管理', 'political_landscape': '不限', 'Job_code': '不限', 'Examination': 230520012.0, 'interview': '社会科学专技类（B类）', 'remark': '否', 'mess': '', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 75.0, 'unit': '昌都市', 'Post': '边坝县', 'Nature_position': '县委编办电子政务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业生', 'College_majors': '仅限本科', 'Undergraduate_majors': '——', 'Graduate_majors': '电子信息类', 'political_landscape': '——', 'Job_code': '不限', 'Examination': 230521001.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'mess': '', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 76.0, 'unit': '昌都市', 'Post': '边坝县', 'Nature_position': '县民政局特困人员集中供养服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业生', 'College_majors': '本科及以上', 'Undergraduate_majors': '——', 'Graduate_majors': '社会工作', 'political_landscape': '社会学', 'Job_code': '不限', 'Examination': 230521002.0, 'interview': '综合管理类（A类）', 'remark': '否', 'mess': '', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 77.0, 'unit': '昌都市', 'Post': '边坝县', 'Nature_position': '县水利局水利技术服务队', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业生', 'College_majors': '本科及以上', 'Undergraduate_majors': '——', 'Graduate_majors': '农业水利工程', 'political_landscape': '水利工程', 'Job_code': '不限', 'Examination': 230521003.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'mess': '', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 78.0, 'unit': '昌都市', 'Post': '边坝县', 'Nature_position': '县乡村振兴局信息中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业生', 'College_majors': '本科及以上', 'Undergraduate_majors': '——', 'Graduate_majors': '会计学', 'political_landscape': '会计学', 'Job_code': '不限', 'Examination': 230521004.0, 'interview': '社会科学专技类（B类）', 'remark': '否', 'mess': '', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 79.0, 'unit': '昌都市', 'Post': '边坝县', 'Nature_position': '县乡村振兴局信息中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业生', 'College_majors': '仅限本科', 'Undergraduate_majors': '——', 'Graduate_majors': '计算机类', 'political_landscape': '——', 'Job_code': '不限', 'Examination': 230521005.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'mess': '仅限昌都户籍或昌都学籍高校毕业生报考', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 80.0, 'unit': '昌都市', 'Post': '边坝县', 'Nature_position': '草卡镇农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业生', 'College_majors': '仅限本科', 'Undergraduate_majors': '——', 'Graduate_majors': '农业工程类', 'political_landscape': '——', 'Job_code': '不限', 'Examination': 230521006.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'mess': '仅限昌都户籍或昌都学籍高校毕业生报考', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 81.0, 'unit': '昌都市', 'Post': '边坝县', 'Nature_position': '草卡镇农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '——', 'Graduate_majors': '林学', 'political_landscape': '畜牧学', 'Job_code': '不限', 'Examination': 230521007.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'mess': '', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 82.0, 'unit': '昌都市', 'Post': '边坝县', 'Nature_position': '热玉乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业生', 'College_majors': '本科及以上', 'Undergraduate_majors': '——', 'Graduate_majors': '农药化肥', 'political_landscape': '草学', 'Job_code': '不限', 'Examination': 230521008.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'mess': '', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 83.0, 'unit': '昌都市', 'Post': '边坝县', 'Nature_position': '都瓦乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业生', 'College_majors': '本科及以上', 'Undergraduate_majors': '——', 'Graduate_majors': '动物药学', 'political_landscape': '植物保护', 'Job_code': '不限', 'Examination': 230521009.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'mess': '', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 84.0, 'unit': '昌都市', 'Post': '边坝县', 'Nature_position': '都瓦乡文化服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '——', 'Graduate_majors': '网络与新媒体', 'political_landscape': '新闻学', 'Job_code': '不限', 'Examination': 230521010.0, 'interview': '社会科学专技类（B类）', 'remark': '否', 'mess': '', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 85.0, 'unit': '昌都市', 'Post': '边坝县', 'Nature_position': '拉孜乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业生', 'College_majors': '本科及以上', 'Undergraduate_majors': '——', 'Graduate_majors': '森林保护', 'political_landscape': '草学', 'Job_code': '不限', 'Examination': 230521011.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'mess': '', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 86.0, 'unit': '昌都市', 'Post': '边坝县', 'Nature_position': '马秀乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '——', 'Graduate_majors': '林学', 'political_landscape': '农业资源与环境', 'Job_code': '不限', 'Examination': 230521012.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'mess': '', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 87.0, 'unit': '昌都市', 'Post': '边坝县', 'Nature_position': '边坝镇农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '——', 'Graduate_majors': '园林', 'political_landscape': '兽医学', 'Job_code': '不限', 'Examination': 230521013.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'mess': '仅限昌都户籍或昌都学籍高校毕业生报考', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 88.0, 'unit': '昌都市', 'Post': '边坝县', 'Nature_position': '马武乡文化服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业生', 'College_majors': '仅限本科', 'Undergraduate_majors': '——', 'Graduate_majors': '中国语言文学类', 'political_landscape': '——', 'Job_code': '不限', 'Examination': 230521014.0, 'interview': '综合管理类（A类）', 'remark': '否', 'mess': '仅限昌都户籍或昌都学籍高校毕业生报考', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 89.0, 'unit': '昌都市', 'Post': '边坝县', 'Nature_position': '马武乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '——', 'Graduate_majors': '林学', 'political_landscape': '园艺学', 'Job_code': '不限', 'Examination': 230521015.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'mess': '', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 90.0, 'unit': '昌都市', 'Post': '边坝县', 'Nature_position': '沙丁乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业生', 'College_majors': '仅限本科', 'Undergraduate_majors': '——', 'Graduate_majors': '不限', 'political_landscape': '——', 'Job_code': '不限', 'Examination': 230521016.0, 'interview': '综合管理类（A类）', 'remark': '否', 'mess': '', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 91.0, 'unit': '昌都市', 'Post': '边坝县', 'Nature_position': '尼木乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业生', 'College_majors': '本科及以上', 'Undergraduate_majors': '——', 'Graduate_majors': '会计学', 'political_landscape': '会计学', 'Job_code': '不限', 'Examination': 230521017.0, 'interview': '社会科学专技类（B类）', 'remark': '否', 'mess': '', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 92.0, 'unit': '昌都市', 'Post': '边坝县', 'Nature_position': '尼木乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业生', 'College_majors': '本科及以上', 'Undergraduate_majors': '——', 'Graduate_majors': '动物科学', 'political_landscape': '水产', 'Job_code': '不限', 'Examination': 230521018.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'mess': '', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 93.0, 'unit': '昌都市', 'Post': '边坝县', 'Nature_position': '都瓦乡文化服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业生', 'College_majors': '仅限本科', 'Undergraduate_majors': '——', 'Graduate_majors': '中国语言文学类', 'political_landscape': '——', 'Job_code': '不限', 'Examination': 230521019.0, 'interview': '综合管理类（A类）', 'remark': '否', 'mess': '仅限昌都户籍或昌都学籍高校毕业生报考', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 94.0, 'unit': '昌都市', 'Post': '边坝县', 'Nature_position': '加贡乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业生', 'College_majors': '仅限本科', 'Undergraduate_majors': '——', 'Graduate_majors': '不限', 'political_landscape': '——', 'Job_code': '不限', 'Examination': 230521020.0, 'interview': '综合管理类（A类）', 'remark': '否', 'mess': '仅限昌都户籍或昌都学籍高校毕业生报考', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 95.0, 'unit': '昌都市', 'Post': '边坝县', 'Nature_position': '马秀乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业生', 'College_majors': '仅限本科', 'Undergraduate_majors': '——', 'Graduate_majors': '不限', 'political_landscape': '——', 'Job_code': '不限', 'Examination': 230521021.0, 'interview': '综合管理类（A类）', 'remark': '否', 'mess': '仅限昌都户籍或昌都学籍高校毕业生报考', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 96.0, 'unit': '昌都市', 'Post': '江达县', 'Nature_position': '县委编办电子政务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业生', 'College_majors': '本科及以上', 'Undergraduate_majors': '——', 'Graduate_majors': '汉语言文学', 'political_landscape': '语言学及应用语言学', 'Job_code': '不限', 'Examination': 230522001.0, 'interview': '综合管理类（A类）', 'remark': '否', 'mess': '', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 97.0, 'unit': '昌都市', 'Post': '江达县', 'Nature_position': '县委组织部干部档案管理中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业生', 'College_majors': '本科及以上', 'Undergraduate_majors': '——', 'Graduate_majors': '计算机类', 'political_landscape': '计算机科学与技术', 'Job_code': '不限', 'Examination': 230522002.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'mess': '', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 98.0, 'unit': '昌都市', 'Post': '江达县', 'Nature_position': '汪布顶乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业生', 'College_majors': '仅限本科', 'Undergraduate_majors': '——', 'Graduate_majors': '农学', 'political_landscape': '——', 'Job_code': '不限', 'Examination': 230522003.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'mess': '', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 99.0, 'unit': '昌都市', 'Post': '江达县', 'Nature_position': '德登乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业生', 'College_majors': '大专及以上', 'Undergraduate_majors': '畜牧兽医', 'Graduate_majors': '动物医学', 'political_landscape': '预防兽医学', 'Job_code': '不限', 'Examination': 230522004.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'mess': '仅限昌都户籍或昌都学籍高校毕业生报考', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 100.0, 'unit': '昌都市', 'Post': '察雅县', 'Nature_position': '县政法委综治网格化管理中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业生', 'College_majors': '仅限本科', 'Undergraduate_majors': '——', 'Graduate_majors': '公安学类', 'political_landscape': '——', 'Job_code': '不限', 'Examination': 230523001.0, 'interview': '综合管理类（A类）', 'remark': '否', 'mess': '仅限昌都户籍或昌都学籍高校毕业生报考', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 101.0, 'unit': '昌都市', 'Post': '察雅县', 'Nature_position': '新卡乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '不限', 'College_majors': '仅限本科', 'Undergraduate_majors': '——', 'Graduate_majors': '国际经济与贸易', 'political_landscape': '——', 'Job_code': '中共党员（含预备党员）', 'Examination': 230523002.0, 'interview': '社会科学专技类（B类）', 'remark': '否', 'mess': '仅限服务期满且考核合格“三支一扶”人员报考', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 102.0, 'unit': '昌都市', 'Post': '察雅县', 'Nature_position': '新卡乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': '2023年毕业生', 'College_majors': '大专及以上', 'Undergraduate_majors': '计算机类', 'Graduate_majors': '计算机类', 'political_landscape': '计算机科学与技术', 'Job_code': '不限', 'Examination': 230523003.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'mess': '仅限昌都户籍或昌都学籍高校毕业生报考', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 103.0, 'unit': '昌都市', 'Post': '察雅县', 'Nature_position': '宗沙乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业生', 'College_majors': '大专及以上', 'Undergraduate_majors': '畜牧业类', 'Graduate_majors': '动物医学类', 'political_landscape': '不限', 'Job_code': '不限', 'Examination': 230523004.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'mess': '仅限昌都户籍或昌都学籍高校毕业生报考', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 104.0, 'unit': '昌都市', 'Post': '察雅县', 'Nature_position': '宗沙乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业生', 'College_majors': '大专及以上', 'Undergraduate_majors': '畜牧业类', 'Graduate_majors': '动物医学类', 'political_landscape': '不限', 'Job_code': '不限', 'Examination': 230523005.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'mess': '', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 105.0, 'unit': '昌都市', 'Post': '察雅县', 'Nature_position': '肯通乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '不限', 'College_majors': '仅限本科', 'Undergraduate_majors': '——', 'Graduate_majors': '工商管理类', 'political_landscape': '——', 'Job_code': '共青团员', 'Examination': 230523006.0, 'interview': '综合管理类（A类）', 'remark': '否', 'mess': '', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 106.0, 'unit': '昌都市', 'Post': '察雅县', 'Nature_position': '肯通乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业生', 'College_majors': '大专及以上', 'Undergraduate_majors': '计算机类', 'Graduate_majors': '计算机类', 'political_landscape': '不限', 'Job_code': '共青团员', 'Examination': 230523007.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'mess': '仅限昌都户籍或昌都学籍高校毕业生报考', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 107.0, 'unit': '昌都市', 'Post': '察雅县', 'Nature_position': '县委编办电子政务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业生', 'College_majors': '仅限本科', 'Undergraduate_majors': '——', 'Graduate_majors': '计算机类', 'political_landscape': '——', 'Job_code': '中共党员（含预备党员）', 'Examination': 230523008.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'mess': '', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 108.0, 'unit': '昌都市', 'Post': '察雅县', 'Nature_position': '县自然资源局不动产登记中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业生', 'College_majors': '仅限本科', 'Undergraduate_majors': '——', 'Graduate_majors': '地理空间信息工程、城乡规划', 'political_landscape': '——', 'Job_code': '不限', 'Examination': 230523009.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'mess': '', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 109.0, 'unit': '昌都市', 'Post': '察雅县', 'Nature_position': '县人社局就业创业服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业生', 'College_majors': '大专及以上', 'Undergraduate_majors': '人力资源管理', 'Graduate_majors': '人力资源管理', 'political_landscape': '不限', 'Job_code': '不限', 'Examination': 230523010.0, 'interview': '综合管理类（A类）', 'remark': '否', 'mess': '', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 110.0, 'unit': '昌都市', 'Post': '察雅县', 'Nature_position': '县商务局供销合作社联合社', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业生', 'College_majors': '仅限本科', 'Undergraduate_majors': '——', 'Graduate_majors': '财政学', 'political_landscape': '——', 'Job_code': '不限', 'Examination': 230523011.0, 'interview': '社会科学专技类（B类）', 'remark': '否', 'mess': '', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 111.0, 'unit': '昌都市', 'Post': '察雅县', 'Nature_position': '察拉乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业生', 'College_majors': '大专及以上', 'Undergraduate_majors': '法律实务类', 'Graduate_majors': '法学类', 'political_landscape': '法学', 'Job_code': '不限', 'Examination': 230523012.0, 'interview': '综合管理类（A类）', 'remark': '否', 'mess': '仅限昌都户籍或昌都学籍高校毕业生报考', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 112.0, 'unit': '昌都市', 'Post': '察雅县', 'Nature_position': '巴日乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业生', 'College_majors': '大专及以上', 'Undergraduate_majors': '财务会计类', 'Graduate_majors': '经济学类', 'political_landscape': '经济学', 'Job_code': '不限', 'Examination': 230523013.0, 'interview': '社会科学专技类（B类）', 'remark': '否', 'mess': '', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 113.0, 'unit': '昌都市', 'Post': '察雅县', 'Nature_position': '香堆镇便民服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业生', 'College_majors': '大专及以上', 'Undergraduate_majors': '新闻出版类', 'Graduate_majors': '新闻传播学类', 'political_landscape': '新闻传播学', 'Job_code': '不限', 'Examination': 230523014.0, 'interview': '社会科学专技类（B类）', 'remark': '否', 'mess': '', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 114.0, 'unit': '昌都市', 'Post': '察雅县', 'Nature_position': '烟多镇便民服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业生', 'College_majors': '大专及以上', 'Undergraduate_majors': '公共事业类', 'Graduate_majors': '公共管理类', 'political_landscape': '公共管理', 'Job_code': '不限', 'Examination': 230523015.0, 'interview': '综合管理类（A类）', 'remark': '否', 'mess': '', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 115.0, 'unit': '昌都市', 'Post': '贡觉县', 'Nature_position': '县人社局就业创业服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '不限', 'College_majors': '大专及以上', 'Undergraduate_majors': '不限', 'Graduate_majors': '不限', 'political_landscape': '不限', 'Job_code': '不限', 'Examination': 230524001.0, 'interview': '综合管理类（A类）', 'remark': '否', 'mess': '仅限服务期满且考核合格“三支一扶”人员报考', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 116.0, 'unit': '昌都市', 'Post': '贡觉县', 'Nature_position': '县乡村振兴局信息中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业生', 'College_majors': '本科及以上', 'Undergraduate_majors': '——', 'Graduate_majors': '法学类', 'political_landscape': '法学', 'Job_code': '不限', 'Examination': 230524002.0, 'interview': '综合管理类（A类）', 'remark': '否', 'mess': '', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 117.0, 'unit': '昌都市', 'Post': '八宿县', 'Nature_position': '县政府办铁路建设协调中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业生', 'College_majors': '本科及以上', 'Undergraduate_majors': '——', 'Graduate_majors': '不限', 'political_landscape': '不限', 'Job_code': '不限', 'Examination': 230525001.0, 'interview': '综合管理类（A类）', 'remark': '否', 'mess': '', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 118.0, 'unit': '昌都市', 'Post': '八宿县', 'Nature_position': '拉根乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业生', 'College_majors': '仅限本科', 'Undergraduate_majors': '——', 'Graduate_majors': '植物生产类', 'political_landscape': '——', 'Job_code': '不限', 'Examination': 230525002.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'mess': '仅限昌都户籍或昌都学籍高校毕业生报考', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 119.0, 'unit': '昌都市', 'Post': '八宿县', 'Nature_position': '然乌镇农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '不限', 'College_majors': '本科及以上', 'Undergraduate_majors': '——', 'Graduate_majors': '农学', 'political_landscape': '不限', 'Job_code': '不限', 'Examination': 230525003.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'mess': '', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 120.0, 'unit': '昌都市', 'Post': '八宿县', 'Nature_position': '县藏医院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业生', 'College_majors': '仅限本科', 'Undergraduate_majors': '——', 'Graduate_majors': '临床医学类', 'political_landscape': '——', 'Job_code': '中共党员或共青团员', 'Examination': 230525004.0, 'interview': '医疗卫生类（E类）西医临床', 'remark': '否', 'mess': '', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 121.0, 'unit': '昌都市', 'Post': '丁青县', 'Nature_position': '丁青镇便民服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业生', 'College_majors': '仅限本科', 'Undergraduate_majors': '——', 'Graduate_majors': '中国语言文学类', 'political_landscape': '——', 'Job_code': '不限', 'Examination': 230526001.0, 'interview': '综合管理类（A类）', 'remark': '否', 'mess': '', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 122.0, 'unit': '昌都市', 'Post': '丁青县', 'Nature_position': '沙贡乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业生', 'College_majors': '仅限本科', 'Undergraduate_majors': '——', 'Graduate_majors': '中国语言文学类', 'political_landscape': '——', 'Job_code': '不限', 'Examination': 230526002.0, 'interview': '综合管理类（A类）', 'remark': '否', 'mess': '仅限昌都户籍或昌都学籍高校毕业生报考', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 123.0, 'unit': '昌都市', 'Post': '丁青县', 'Nature_position': '沙贡乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': '2023年毕业生', 'College_majors': '仅限本科', 'Undergraduate_majors': '——', 'Graduate_majors': '中国语言文学类', 'political_landscape': '——', 'Job_code': '不限', 'Examination': 230526003.0, 'interview': '综合管理类（A类）', 'remark': '否', 'mess': '', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 124.0, 'unit': '昌都市', 'Post': '丁青县', 'Nature_position': '县民政局特困人员集中供养服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业生', 'College_majors': '仅限本科', 'Undergraduate_majors': '——', 'Graduate_majors': '工商管理类', 'political_landscape': '——', 'Job_code': '不限', 'Examination': 230526004.0, 'interview': '综合管理类（A类）', 'remark': '否', 'mess': '仅限昌都户籍或昌都学籍高校毕业生报考', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 125.0, 'unit': '昌都市', 'Post': '丁青县', 'Nature_position': '县乡村振兴局信息中心', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': '2023年毕业生', 'College_majors': '仅限本科', 'Undergraduate_majors': '——', 'Graduate_majors': '计算机类', 'political_landscape': '——', 'Job_code': '不限', 'Examination': 230526005.0, 'interview': '自然科学专技类（C类）', 'remark': '否', 'mess': '', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 126.0, 'unit': '昌都市', 'Post': '丁青县', 'Nature_position': '县委宣传部新华书店', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': '2023年毕业生', 'College_majors': '仅限本科', 'Undergraduate_majors': '——', 'Graduate_majors': '中国语言文学类', 'political_landscape': '——', 'Job_code': '不限', 'Examination': 230526006.0, 'interview': '综合管理类（A类）', 'remark': '否', 'mess': '', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 127.0, 'unit': '昌都市', 'Post': '丁青县', 'Nature_position': '色扎乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': '不限', 'College_majors': '仅限本科', 'Undergraduate_majors': '——', 'Graduate_majors': '民族学', 'political_landscape': '——', 'Job_code': '中共党员（含预备党员）', 'Examination': 230526007.0, 'interview': '综合管理类（A类）', 'remark': '否', 'mess': '', 'consultation': '0895-4821973 0895-4822355'}, 
+
+
+{'id': 128.0, 'unit': '昌都市', 'Post': '丁青县', 'Nature_position': '尺牍镇农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': '不限', 'College_majors': '仅限本科', 'Undergraduate_majors': '——', 'Graduate_majors': '会展经济与管理', 'political_landscape': '——', 'Job_code': '不限', 'Examination': 230526008.0, 'interview': '综合管理类（A类）', 'remark': '否', 'mess': '', 'consultation': '0895-4821973 0895-4822355'}]
+
+
+
+
+	    
+	    
+	    for(i=0;i<xx.length;i++){
+	    	var html="<tr><td>"+
+	    	xx[i].id+"</td><td>"+
+            xx[i].unit+"</td><td>"+
+            xx[i].Post+"</td><td>"+
+            xx[i].Nature_position+"</td><td>"+
+            xx[i].Number+"</td><td>"+
+            xx[i].Graduation_time+"</td><td>"+
+            xx[i].Academic_requirements+"</td><td>"+
+            xx[i].College_majors+"</td><td>"+
+            xx[i].Undergraduate_majors+"</td><td>"+
+            xx[i].Graduate_majors+"</td><td>"+
+            xx[i].political_landscape+"</td><td>"+
+            xx[i].Job_code+"</td><td>"+
+            xx[i].Examination+"</td><td>"+
+            xx[i].interview+"</td><td>"+
+            xx[i].remark+"</td><td>"+
+            xx[i].mess+"</td><td>"+
+            xx[i].consultation+"</td></tr>";
+
+	    	$("#example tbody").append(html);
+	    	
+	    }
+	    
+	    $('#example').DataTable( {
+	        dom: 'Bfrtip',
+	        language: {  
+                emptyTable: '没有数据',  
+                loadingRecords: '加载中...',  
+                processing: '查询中...',  
+                search: '搜索【专业、地区等】:',  
+                lengthMenu: '每页 _MENU_ 件',  
+                zeroRecords: '没有数据',  
+                paginate: {  
+                    'first':      '第一页',  
+                    'last':       '最后一页',  
+                    'next':       '下一页',  
+                    'previous':   '上一页'  
+            	},  
+	            info: '第 _PAGE_ 页 / 总 _PAGES_ 页',  
+	            infoEmpty: '没有数据',  
+	            infoFiltered: '(过滤总件数 _MAX_ 条)',
+	        },
+	        
+
+	    } );
+
+
+	    
+
+
+	});
+  </script>  
+ </body>  
+</html>  

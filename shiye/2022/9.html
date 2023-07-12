@@ -1,0 +1,261 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">   
+ <head>  
+  <title> 2022 </title>  
+  <meta charset='utf-8'>
+  <link rel="stylesheet" href="../../css/table.css" />
+  <link rel="stylesheet" href="../../css/buttons.css" />
+  <style>
+  	*{
+  		/*background-image: url();*/
+  		background-color: #000;
+  		color: #FFF; 
+  	}
+  	tbody td{
+  		text-align: center;
+  	}
+  </style>
+ </head>  
+  
+ <body>  
+ 	<h1 style="text-align: center;">阿里地区2022年事业单</h1>
+ 	<a href="../../2022_shiye_.html" style="font-size: 20px;">回到主页</a>
+    <table id="example" class="display" role="grid" aria-describedby="example_info">
+ 		<thead>
+            <tr>
+                <th>序号</th>
+                <th>招聘地市</th>
+                <th>单位</th>
+                <th>岗位</th>
+                <th>职位性质</th>
+                <th>人数</th>
+                <th>岗位代码</th>
+                <th>专业要求</th>              
+                <th>政治面貌</th>
+                <th>学历要求</th>
+                <th>毕业时间</th>     
+                <th>笔试科目</th>
+                <th>是否体检</th>
+                <th>是否面试</th>
+                <th>备注</th>
+                <th>咨询</th>
+                
+
+            </tr>
+        </thead>
+        <tbody>
+            
+        </tbody>
+
+        
+     
+ 	</table>
+ 	
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/jquery.datatables.min.js"/>
+	<script src="../../js/buttons.print.min.js"></script>
+
+ <script> 
+
+$(document).ready(function(){ 
+
+    var xx = [{'id': 1.0, 'unit': '阿里地区', 'Post': '地区纪委监委', 'Nature_position': '信息（网络）中心', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221025.0, 'College_majors': '汉语言文学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '是', 'remark': '无', 'consultation': '0897-2828712、0897-2821201'},
+
+ {'id': 2.0, 'unit': '阿里地区', 'Post': '地区纪委监委', 'Nature_position': '信息（网络）中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221026.0, 'College_majors': '汉语言文学、法学', 'Undergraduate_majors': '不限', 'Graduate_majors': '硕士研究生及以上', 'political_landscape': '2022年毕业生', 'Job_code': '——', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0897-2828712、0897-2821201'},
+
+ {'id': 3.0, 'unit': '阿里地区', 'Post': '地委组织部', 'Nature_position': '公务员考录中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221027.0, 'College_majors': '汉语言文学、秘书学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '是', 'remark': '须取得与最高学历对应的学历学位证书', 'consultation': '0897-2828712、0897-2821201'},
+
+ {'id': 4.0, 'unit': '阿里地区', 'Post': '地委统战部', 'Nature_position': '信息中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221028.0, 'College_majors': '秘书学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0897-2828712、0897-2821201'},
+
+ {'id': 5.0, 'unit': '阿里地区', 'Post': '地委政法委', 'Nature_position': '综治中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221029.0, 'College_majors': '网络工程', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0897-2828712、0897-2821201'},
+
+ {'id': 6.0, 'unit': '阿里地区', 'Post': '地区行政公署办公室', 'Nature_position': '陕西就业联络服务站', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221030.0, 'College_majors': '汉语言文学、文秘、行政管理、人力资源管理', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0897-2828712、0897-2821201'},
+
+ {'id': 7.0, 'unit': '阿里地区', 'Post': '地区行政公署办公室', 'Nature_position': '陕西就业联络服务站', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221031.0, 'College_majors': '计算机科学与技术', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0897-2828712、0897-2821201'},
+
+ {'id': 8.0, 'unit': '阿里地区', 'Post': '地区民政局', 'Nature_position': '特困人员集中供养服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221032.0, 'College_majors': '会计', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0897-2828712、0897-2821201'},
+
+ {'id': 9.0, 'unit': '阿里地区', 'Post': '地区农业农村局', 'Nature_position': '地区良种场', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221033.0, 'College_majors': '畜牧兽医', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0897-2828712、0897-2821201'},
+
+ {'id': 10.0, 'unit': '阿里地区', 'Post': '地区卫生健康委员会', 'Nature_position': '医鉴医考中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221034.0, 'College_majors': '计算机科学与技术', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0897-2828712、0897-2821201'},
+
+ {'id': 11.0, 'unit': '阿里地区', 'Post': '地区外事办公室', 'Nature_position': '外事服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221035.0, 'College_majors': '公共事业管理', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0897-2828712、0897-2821201'},
+
+ {'id': 12.0, 'unit': '阿里地区', 'Post': '噶尔县', 'Nature_position': '应急管理局自然灾害防治救援中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221036.0, 'College_majors': '水利工程', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0897-2828712、0897-2821201'},
+
+ {'id': 13.0, 'unit': '阿里地区', 'Post': '噶尔县', 'Nature_position': '左左乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221037.0, 'College_majors': '专业不限', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '是', 'remark': '仅限服务两年及以上考核合格西部计划西藏专项志愿者、退役大学生士兵报考', 'consultation': '0897-2828712、0897-2821201'},
+
+ {'id': 14.0, 'unit': '阿里地区', 'Post': '噶尔县', 'Nature_position': '左左乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221038.0, 'College_majors': '会计学', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0897-2828712、0897-2821201'},
+
+ {'id': 15.0, 'unit': '阿里地区', 'Post': '噶尔县', 'Nature_position': '左左乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221039.0, 'College_majors': '文秘', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '阿里籍', 'consultation': '0897-2828712、0897-2821201'},
+
+ {'id': 16.0, 'unit': '阿里地区', 'Post': '噶尔县', 'Nature_position': '门士乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221040.0, 'College_majors': '专业不限', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '是', 'remark': '阿里籍', 'consultation': '0897-2828712、0897-2821201'},
+
+ {'id': 17.0, 'unit': '阿里地区', 'Post': '噶尔县', 'Nature_position': '狮泉河镇便民服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221041.0, 'College_majors': '专业不限', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '是', 'remark': '仅限服务期满考核合格“三支一扶”人员报考', 'consultation': '0897-2828712、0897-2821201'},
+
+ {'id': 18.0, 'unit': '阿里地区', 'Post': '措勤县', 'Nature_position': '自然资源局扎日南木措湿地自然保护区管理中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221042.0, 'College_majors': '林学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0897-2828712、0897-2821201'},
+
+ {'id': 19.0, 'unit': '阿里地区', 'Post': '措勤县', 'Nature_position': '磁石乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221043.0, 'College_majors': '会计', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '阿里籍', 'consultation': '0897-2828712、0897-2821201'},
+
+ {'id': 20.0, 'unit': '阿里地区', 'Post': '措勤县', 'Nature_position': '磁石乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221044.0, 'College_majors': '文秘、秘书学', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0897-2828712、0897-2821201'},
+
+ {'id': 21.0, 'unit': '阿里地区', 'Post': '措勤县', 'Nature_position': '达雄乡文化服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221045.0, 'College_majors': '专业不限', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '是', 'remark': '阿里籍', 'consultation': '0897-2828712、0897-2821201'},
+
+ {'id': 22.0, 'unit': '阿里地区', 'Post': '措勤县', 'Nature_position': '达雄乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 3.0, 'Academic_requirements': 202221046.0, 'College_majors': '专业不限', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '是', 'remark': '阿里籍', 'consultation': '0897-2828712、0897-2821201'},
+
+ {'id': 23.0, 'unit': '阿里地区', 'Post': '措勤县', 'Nature_position': '江让乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221047.0, 'College_majors': '文秘', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0897-2828712、0897-2821201'},
+
+ {'id': 24.0, 'unit': '阿里地区', 'Post': '措勤县', 'Nature_position': '江让乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221048.0, 'College_majors': '会计', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '阿里籍', 'consultation': '0897-2828712、0897-2821201'},
+
+ {'id': 25.0, 'unit': '阿里地区', 'Post': '措勤县', 'Nature_position': '曲洛乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221049.0, 'College_majors': '专业不限', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '是', 'remark': '阿里籍', 'consultation': '0897-2828712、0897-2821201'},
+
+ {'id': 26.0, 'unit': '阿里地区', 'Post': '措勤县', 'Nature_position': '措勤镇卫生院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221050.0, 'College_majors': '护理学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—护理', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0897-2828712、0897-2821201'},
+
+ {'id': 27.0, 'unit': '阿里地区', 'Post': '措勤县', 'Nature_position': '达雄乡卫生院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221051.0, 'College_majors': '中西医结合', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '医疗卫生类(E类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0897-2828712、0897-2821201'},
+
+ {'id': 28.0, 'unit': '阿里地区', 'Post': '措勤县', 'Nature_position': '江让乡卫生院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221052.0, 'College_majors': '儿科学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0897-2828712、0897-2821201'},
+
+ {'id': 29.0, 'unit': '阿里地区', 'Post': '措勤县', 'Nature_position': '曲洛乡卫生院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221053.0, 'College_majors': '临床医学（西医）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0897-2828712、0897-2821201'},
+
+ {'id': 30.0, 'unit': '阿里地区', 'Post': '改则县', 'Nature_position': '应急管理局自然灾害防治救援中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221054.0, 'College_majors': '计算机类', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0897-2828712、0897-2821201'},
+
+ {'id': 31.0, 'unit': '阿里地区', 'Post': '改则县', 'Nature_position': '麻米乡卫生院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221055.0, 'College_majors': '临床医学（西医）', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0897-2828712、0897-2821201'},
+
+ {'id': 32.0, 'unit': '阿里地区', 'Post': '改则县', 'Nature_position': '古姆乡文化服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221056.0, 'College_majors': '公共事业管理', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0897-2828712、0897-2821201'},
+
+ {'id': 33.0, 'unit': '阿里地区', 'Post': '改则县', 'Nature_position': '洞措乡文化服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221057.0, 'College_majors': '文物与博物馆学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0897-2828712、0897-2821201'},
+
+ {'id': 34.0, 'unit': '阿里地区', 'Post': '改则县', 'Nature_position': '察布乡文化服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221058.0, 'College_majors': '秘书学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0897-2828712、0897-2821201'},
+
+ {'id': 35.0, 'unit': '阿里地区', 'Post': '改则县', 'Nature_position': '先遣乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221059.0, 'College_majors': '畜牧兽医', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0897-2828712、0897-2821201'},
+
+ {'id': 36.0, 'unit': '阿里地区', 'Post': '札达县', 'Nature_position': '应急管理局自然灾害防治救援中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221060.0, 'College_majors': '秘书学、汉语言文学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0897-2828712、0897-2821201'},
+
+ {'id': 37.0, 'unit': '阿里地区', 'Post': '札达县', 'Nature_position': '文化（文物)局文物保护与考古研究所', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221061.0, 'College_majors': '考古学、文物修复与保护', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0897-2828712、0897-2821201'},
+
+ {'id': 38.0, 'unit': '阿里地区', 'Post': '札达县', 'Nature_position': '人民医院', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221062.0, 'College_majors': '临床医学（西医）', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '是', 'remark': '阿里籍', 'consultation': '0897-2828712、0897-2821201'},
+
+ {'id': 39.0, 'unit': '阿里地区', 'Post': '札达县', 'Nature_position': '人民医院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221063.0, 'College_majors': '妇幼保健医学', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '医疗卫生类(E类)—公共卫生管理', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0897-2828712、0897-2821201'},
+
+ {'id': 40.0, 'unit': '阿里地区', 'Post': '札达县', 'Nature_position': '人民医院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221064.0, 'College_majors': '医学检验技术', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—医学技术', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0897-2828712、0897-2821201'},
+
+ {'id': 41.0, 'unit': '阿里地区', 'Post': '札达县', 'Nature_position': '曲松乡卫生院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221065.0, 'College_majors': '临床医学（西医）', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0897-2828712、0897-2821201'},
+
+ {'id': 42.0, 'unit': '阿里地区', 'Post': '札达县', 'Nature_position': '楚鲁松杰乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221066.0, 'College_majors': '计算机科学与技术、信息安全', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0897-2828712、0897-2821201'},
+
+ {'id': 43.0, 'unit': '阿里地区', 'Post': '札达县', 'Nature_position': '楚鲁松杰乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221067.0, 'College_majors': '专业不限', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '是', 'remark': '阿里籍', 'consultation': '0897-2828712、0897-2821201'},
+
+ {'id': 44.0, 'unit': '阿里地区', 'Post': '札达县', 'Nature_position': '萨让乡农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221068.0, 'College_majors': '动物医学类', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0897-2828712、0897-2821201'},
+
+ {'id': 45.0, 'unit': '阿里地区', 'Post': '札达县', 'Nature_position': '萨让乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221069.0, 'College_majors': '计算机科学与技术、信息安全', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0897-2828712、0897-2821201'},
+
+ {'id': 46.0, 'unit': '阿里地区', 'Post': '札达县', 'Nature_position': '萨让乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221070.0, 'College_majors': '人力资源管理', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0897-2828712、0897-2821201'},
+
+ {'id': 47.0, 'unit': '阿里地区', 'Post': '札达县', 'Nature_position': '萨让乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221071.0, 'College_majors': '专业不限', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '是', 'remark': '阿里籍', 'consultation': '0897-2828712、0897-2821201'},
+
+ {'id': 48.0, 'unit': '阿里地区', 'Post': '普兰县', 'Nature_position': '文化和旅游局文化旅游服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221072.0, 'College_majors': '舞蹈编导', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0897-2828712、0897-2821201'},
+
+ {'id': 49.0, 'unit': '阿里地区', 'Post': '普兰县', 'Nature_position': '巴嘎乡文化服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221073.0, 'College_majors': '舞蹈学、舞蹈编导', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0897-2828712、0897-2821201'},
+
+ {'id': 50.0, 'unit': '阿里地区', 'Post': '革吉县', 'Nature_position': '应急管理局自然灾害防治救援中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221074.0, 'College_majors': '文秘（会计）', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0897-2828712、0897-2821201'},
+
+ {'id': 51.0, 'unit': '阿里地区', 'Post': '革吉县', 'Nature_position': '退役军人事务局退役军人服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221075.0, 'College_majors': '专业不限', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '是', 'remark': '仅限服务两年及以上考核合格西部计划西藏专项志愿者、退役大学生士兵报考', 'consultation': '0897-2828712、0897-2821201'},
+
+ {'id': 52.0, 'unit': '阿里地区', 'Post': '革吉县', 'Nature_position': '文化和旅游局直属库红色遗址爱国主义教育基地管理中心', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221076.0, 'College_majors': '历史学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0897-2828712、0897-2821201'},
+
+ {'id': 53.0, 'unit': '阿里地区', 'Post': '革吉县', 'Nature_position': '人民医院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221077.0, 'College_majors': '临床医学（西医）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '是', 'remark': '阿里籍', 'consultation': '0897-2828712、0897-2821201'},
+
+ {'id': 54.0, 'unit': '阿里地区', 'Post': '革吉县', 'Nature_position': '亚热乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221078.0, 'College_majors': '法学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0897-2828712、0897-2821201'},
+
+ {'id': 55.0, 'unit': '阿里地区', 'Post': '革吉县', 'Nature_position': '亚热乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221079.0, 'College_majors': '畜牧兽医', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '是', 'remark': '阿里籍', 'consultation': '0897-2828712、0897-2821201'},
+
+ {'id': 56.0, 'unit': '阿里地区', 'Post': '革吉县', 'Nature_position': '雄巴乡卫生院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221080.0, 'College_majors': '临床医学（西医）', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0897-2828712、0897-2821201'},
+
+ {'id': 57.0, 'unit': '阿里地区', 'Post': '革吉县', 'Nature_position': '盐湖乡卫生院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221081.0, 'College_majors': '临床医学（西医）', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0897-2828712、0897-2821201'},
+
+ {'id': 58.0, 'unit': '阿里地区', 'Post': '日土县', 'Nature_position': '文化和旅游局文化旅游服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221082.0, 'College_majors': '专业不限', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '是', 'remark': '仅限服务期满考核合格“三支一扶”人员报考', 'consultation': '0897-2828712、0897-2821201'},
+
+ {'id': 59.0, 'unit': '阿里地区', 'Post': '日土县', 'Nature_position': '人民医院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221083.0, 'College_majors': '临床医学（西医）', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0897-2828712、0897-2821201'},
+
+ {'id': 60.0, 'unit': '阿里地区', 'Post': '日土县', 'Nature_position': '人民医院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221084.0, 'College_majors': '医学影像学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—医学技术', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0897-2828712、0897-2821201'},
+
+ {'id': 61.0, 'unit': '阿里地区', 'Post': '日土县', 'Nature_position': '人民医院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221085.0, 'College_majors': '会计', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0897-2828712、0897-2821201'},
+
+ {'id': 62.0, 'unit': '阿里地区', 'Post': '日土县', 'Nature_position': '热帮乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221086.0, 'College_majors': '专业不限', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '是', 'remark': '仅限服务期满考核合格“三支一扶”人员报考', 'consultation': '0897-2828712、0897-2821201'},
+
+ {'id': 63.0, 'unit': '阿里地区', 'Post': '日土县', 'Nature_position': '热帮乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221087.0, 'College_majors': '专业不限', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '是', 'remark': '仅限服务两年及以上考核合格西部计划西藏专项志愿者、退役大学生士兵报考', 'consultation': '0897-2828712、0897-2821201'},
+
+ {'id': 64.0, 'unit': '阿里地区', 'Post': '日土县', 'Nature_position': '东汝乡便民服务中心', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202221088.0, 'College_majors': '专业不限', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '是', 'remark': '阿里籍', 'consultation': '0897-2828712、0897-2821201'},
+
+ {'id': 65.0, 'unit': '阿里地区', 'Post': '日土县', 'Nature_position': '日土镇便民服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221089.0, 'College_majors': '法学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '是', 'remark': '阿里籍', 'consultation': '0897-2828712、0897-2821201'},
+
+ {'id': 66.0, 'unit': '阿里地区', 'Post': '日土县', 'Nature_position': '日土镇农牧综合服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221090.0, 'College_majors': '畜牧兽医', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '是', 'remark': '阿里籍', 'consultation': '0897-2828712、0897-2821201'},
+
+ {'id': 67.0, 'unit': '阿里地区', 'Post': '日土县', 'Nature_position': '日土镇卫生院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221091.0, 'College_majors': '临床医学（西医）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0897-2828712、0897-2821201'},
+
+ {'id': 68.0, 'unit': '阿里地区', 'Post': '日土县', 'Nature_position': '多玛乡卫生院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221092.0, 'College_majors': '临床医学（西医）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0897-2828712、0897-2821201'},
+
+ {'id': 69.0, 'unit': '阿里地区', 'Post': '日土县', 'Nature_position': '东汝乡卫生院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221093.0, 'College_majors': '临床医学（西医）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0897-2828712、0897-2821201'},
+
+ {'id': 70.0, 'unit': '阿里地区', 'Post': '日土县', 'Nature_position': '热帮乡卫生院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202221094.0, 'College_majors': '临床医学（西医）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0897-2828712、0897-2821201'}]
+
+
+
+
+
+
+	    
+	    
+	    for(i=0;i<xx.length;i++){
+	    	var html="<tr><td>"+
+	    	xx[i].id+"</td><td>"+
+            xx[i].unit+"</td><td>"+
+            xx[i].Post+"</td><td>"+
+            xx[i].Nature_position+"</td><td>"+
+            xx[i].Number+"</td><td>"+
+            xx[i].Graduation_time+"</td><td>"+
+            xx[i].Academic_requirements+"</td><td>"+
+            xx[i].College_majors+"</td><td>"+
+            xx[i].Undergraduate_majors+"</td><td>"+
+            xx[i].Graduate_majors+"</td><td>"+
+            xx[i].political_landscape+"</td><td>"+
+            xx[i].Job_code+"</td><td>"+
+            xx[i].Examination+"</td><td>"+
+            xx[i].interview+"</td><td>"+
+            xx[i].remark+"</td><td>"+
+            xx[i].consultation+"</td></tr>";
+
+	    	$("#example tbody").append(html);
+	    	
+	    }
+	    
+	    $('#example').DataTable( {
+	        dom: 'Bfrtip',
+	        language: {  
+                emptyTable: '没有数据',  
+                loadingRecords: '加载中...',  
+                processing: '查询中...',  
+                search: '搜索【专业、地区等】:',  
+                lengthMenu: '每页 _MENU_ 件',  
+                zeroRecords: '没有数据',  
+                paginate: {  
+                    'first':      '第一页',  
+                    'last':       '最后一页',  
+                    'next':       '下一页',  
+                    'previous':   '上一页'  
+            	},  
+	            info: '第 _PAGE_ 页 / 总 _PAGES_ 页',  
+	            infoEmpty: '没有数据',  
+	            infoFiltered: '(过滤总件数 _MAX_ 条)',
+	        },
+	        
+
+	    } );
+
+
+	    
+
+
+	});
+  </script>  
+ </body>  
+</html>  

@@ -1,0 +1,720 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">   
+ <head>  
+  <title>2021 </title>  
+  <meta charset='utf-8'>
+  <link rel="stylesheet" href="../css/table.css" />
+  <link rel="stylesheet" href="../css/buttons.css" />
+  <style>
+  	*{
+  		/*background-image: url();*/
+  		background-color: #000;
+  		color: #FFF; 
+  	}
+  	tbody td{
+  		text-align: center;
+  	}
+  </style>
+ </head>  
+  
+ <body>  
+ 	<h1 style="text-align: center;">2021公务员招聘岗位</h1>
+    <a href="../index.html" style="font-size: 20px;">回到主页</a>
+ 	<table id="example" class="display" role="grid" aria-describedby="example_info">
+ 		<thead>
+            <tr>
+                <th>序号</th>
+                <th>部门</th>
+                <th>招考职位</th>
+                <th>职位代码</th>
+                <th>人数</th>
+                <th>职位简介</th>
+                <th>职位性质</th>
+                <th>职位类别</th>
+                <th>专业要求</th>
+                <th>学历要求</th>
+                <th>性别要求</th>
+                <th>其他要求</th>
+                <th>备注</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            
+        </tbody>
+ 	</table>
+ 	
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/jquery.datatables.min.js"/>
+	<script src="../js/buttons.print.min.js"></script>
+
+ <script> 
+
+$(document).ready(function(){ 
+
+    var xx = [
+
+{id: 1.0, venue: '区党委办公厅', Department: '区党委党史研究室（区地方志办公室）', Natposition: 20211001.0, posts_code: 2.0, p_Number: '无', posts_des: '参公人员', Nature_position: '自治区级', Job_category: '历史、中文相关专业',Professional: '硕士研究生及以上', Degree: '不限', Gender: '无', other_demand: '无'},
+
+
+ {id: 2.0, venue: '区纪委监委机关', Department: '监督审查部门', Natposition: 20211002.0, posts_code: 3.0, p_Number: '加班多、下乡多、蹲点办案任务较重', posts_des: '公务员', Nature_position: '自治区级', Job_category: '法律、审计、会计、侦查专业',Professional: '硕士研究生及以上', Degree: '不限', Gender: '中共党员或预备党员', other_demand: ''},
+
+
+ {id: 3.0, venue: '区党委统战部', Department: '区归国藏胞接待委员会办公室', Natposition: 20211003.0, posts_code: 1.0, p_Number: '', posts_des: '参公人员', Nature_position: '自治区级', Job_category: '专业不限',Professional: '硕士研究生及以上', Degree: '不限', Gender: '', other_demand: ''},
+
+
+ {id: 4.0, venue: '区人民检察院', Department: '机关处室', Natposition: 20211004.0, posts_code: 3.0, p_Number: '检察官助理或司法行政', posts_des: '公务员', Nature_position: '自治区级', Job_category: '法律类专业',Professional: '硕士研究生及以上', Degree: '不限', Gender: '985、211院校毕业；具有国家法律职业证书A证优先', other_demand: ''},
+
+
+ {id: 5.0, venue: '区外事办公室', Department: '边界事务处', Natposition: 20211005.0, posts_code: 1.0, p_Number: '经常到边境一线高山、深谷等地开展工作', posts_des: '公务员', Nature_position: '自治区级', Job_category: '国际法专业',Professional: '硕士研究生及以上', Degree: '男性', Gender: '中共党员优先', other_demand: ''},
+
+
+ {id: 6.0, venue: '共青团西藏自治区委员会', Department: '西藏青少年发展基金会', Natposition: 20211006.0, posts_code: 1.0, p_Number: '', posts_des: '参公人员', Nature_position: '自治区级', Job_category: '会计及相关专业',Professional: '硕士研究生及以上', Degree: '不限', Gender: '', other_demand: ''},
+
+
+ {id: 7.0, venue: '区财政厅', Department: '区财政投资评审中心', Natposition: 20211007.0, posts_code: 1.0, p_Number: '', posts_des: '参公人员', Nature_position: '自治区级', Job_category: '法律类专业',Professional: '硕士研究生及以上', Degree: '不限', Gender: '1.985、211院校毕业；2.通过国家统一法律职业资格考试（证书类别不限）；3.具有长期服务西藏的意愿', other_demand: ''},
+
+
+ {id: 8.0, venue: '区财政厅', Department: '财政监督分局', Natposition: 20211008.0, posts_code: 3.0, p_Number: '', posts_des: '参公人员', Nature_position: '自治区级', Job_category: '财政学、会计学、经济学、审计学、财务管理专业，法律类专业，工程类专业，公共管理类专业',Professional: '硕士研究生及以上', Degree: '不限', Gender: '1.985、211院校毕业；2.北京大学、清华大学全日制硕士研究生以上学历毕业生专业不限；3.法律类专业须通过国家统一法律职业资格考试（证书类别不限）；4.具有长期服务西藏的意愿', other_demand: ''},
+
+
+ {id: 9.0, venue: '区财政厅', Department: '国库支付中心', Natposition: 20211009.0, posts_code: 2.0, p_Number: '', posts_des: '参公人员', Nature_position: '自治区级', Job_category: '财政学、会计学、经济学、审计学、财务管理专业，工程类专业，公共管理类专业',Professional: '硕士研究生及以上', Degree: '不限', Gender: '1.985、211院校毕业；2.北京大学、清华大学全日制硕士研究生以上学历毕业生专业不限；3.具有长期服务西藏的意愿', other_demand: ''},
+
+
+ {id: 10.0, venue: '区住房和城乡建设厅', Department: '区建筑工程抗震办公室抗震管理科', Natposition: 20211010.0, posts_code: 2.0, p_Number: '', posts_des: '参公人员', Nature_position: '自治区级', Job_category: '土木工程、建筑学等工程类专业',Professional: '硕士研究生及以上', Degree: '不限', Gender: '', other_demand: ''},
+
+
+ {id: 11.0, venue: '区住房和城乡建设厅', Department: '区建筑工程抗震办公室施工图审查科', Natposition: 20211011.0, posts_code: 1.0, p_Number: '', posts_des: '参公人员', Nature_position: '自治区级', Job_category: '土木工程、建筑学、安全工程、环境工程专业',Professional: '硕士研究生及以上', Degree: '不限', Gender: '', other_demand: ''},
+
+
+ {id: 12.0, venue: '区住房和城乡建设厅', Department: '区建筑工程安全生产与质量监督总站质量监督管理科', Natposition: 20211012.0, posts_code: 1.0, p_Number: '', posts_des: '参公人员', Nature_position: '自治区级', Job_category: '土木工程、建筑学等工程类专业',Professional: '硕士研究生及以上', Degree: '不限', Gender: '', other_demand: ''},
+
+
+ {id: 13.0, venue: '区住房和城乡建设厅', Department: '区建筑工程安全生产与质量监督总站事故调查鉴定科', Natposition: 20211013.0, posts_code: 1.0, p_Number: '', posts_des: '参公人员', Nature_position: '自治区级', Job_category: '水利水电工程、测绘工程、地质工程、给排水科学与工程专业',Professional: '硕士研究生及以上', Degree: '不限', Gender: '', other_demand: ''},
+
+
+ {id: 14.0, venue: '区住房和城乡建设厅', Department: '区公有房屋管理局统计信息科', Natposition: 20211014.0, posts_code: 1.0, p_Number: '', posts_des: '参公人员', Nature_position: '自治区级', Job_category: '统计、资产评估专业',Professional: '硕士研究生及以上', Degree: '不限', Gender: '', other_demand: ''},
+
+
+ {id: 15.0, venue: '区住房和城乡建设厅', Department: '区公有房屋管理局监督管理科', Natposition: 20211015.0, posts_code: 1.0, p_Number: '', posts_des: '参公人员', Nature_position: '自治区级', Job_category: '工程管理、房地产开发与管理专业',Professional: '硕士研究生及以上', Degree: '不限', Gender: '', other_demand: ''},
+
+
+ {id: 16.0, venue: '区住房和城乡建设厅', Department: '区住房资金管理中心信贷科', Natposition: 20211016.0, posts_code: 2.0, p_Number: '', posts_des: '参公人员', Nature_position: '自治区级', Job_category: '金融学、投资学、会计学、经济学专业',Professional: '硕士研究生及以上', Degree: '不限', Gender: '', other_demand: ''},
+
+
+ {id: 17.0, venue: '区住房和城乡建设厅', Department: '区建设工程造价与投标中心', Natposition: 20211017.0, posts_code: 1.0, p_Number: '', posts_des: '参公人员', Nature_position: '自治区级', Job_category: '工程造价、概预算、经济学、投资学专业',Professional: '硕士研究生及以上', Degree: '不限', Gender: '', other_demand: ''},
+
+
+ {id: 18.0, venue: '区经济和信息化厅', Department: '昌都市无线电管理局（无线电监测站）', Natposition: 20211018.0, posts_code: 2.0, p_Number: '', posts_des: '参公人员', Nature_position: '自治区级', Job_category: '行政管理、文秘、法律专业或信息化类、通信类、无线电管理类专业',Professional: '硕士研究生及以上', Degree: '不限', Gender: '', other_demand: ''},
+
+
+ {id: 19.0, venue: '区经济和信息化厅', Department: '林芝市无线电管理局（无线电监测站）', Natposition: 20211019.0, posts_code: 1.0, p_Number: '', posts_des: '参公人员', Nature_position: '自治区级', Job_category: '行政管理、文秘、法律专业或信息化类、通信类、无线电管理类专业',Professional: '硕士研究生及以上', Degree: '不限', Gender: '', other_demand: ''},
+
+
+ {id: 20.0, venue: '区经济和信息化厅', Department: '那曲市无线电管理局（无线电监测站）', Natposition: 20211020.0, posts_code: 1.0, p_Number: '', posts_des: '参公人员', Nature_position: '自治区级', Job_category: '行政管理、文秘、法律专业或信息化类、通信类、无线电管理类专业',Professional: '硕士研究生及以上', Degree: '不限', Gender: '', other_demand: ''},
+
+
+ {id: 21.0, venue: '区经济和信息化厅', Department: '阿里地区无线电管理局（无线电监测站）', Natposition: 20211021.0, posts_code: 1.0, p_Number: '', posts_des: '参公人员', Nature_position: '自治区级', Job_category: '行政管理、文秘、法律专业或信息化类、通信类、无线电管理类专业',Professional: '硕士研究生及以上', Degree: '不限', Gender: '', other_demand: ''},
+
+
+ {id: 22.0, venue: '区农业农村厅', Department: '种植业管理处（农药管理处）', Natposition: 20211022.0, posts_code: 1.0, p_Number: '', posts_des: '公务员', Nature_position: '自治区级', Job_category: '农艺与种业或作物遗传育种专业',Professional: '硕士研究生及以上', Degree: '不限', Gender: '', other_demand: ''},
+
+
+ {id: 23.0, venue: '区农业农村厅', Department: '区农业农村厅驻格尔木执法总队', Natposition: 20211023.0, posts_code: 1.0, p_Number: '', posts_des: '参公人员', Nature_position: '自治区级', Job_category: '畜牧兽医及相关专业',Professional: '硕士研究生及以上', Degree: '不限', Gender: '', other_demand: ''},
+
+
+ {id: 24.0, venue: '区卫健委', Department: '委机关', Natposition: 20211024.0, posts_code: 3.0, p_Number: '', posts_des: '公务员', Nature_position: '自治区级', Job_category: '医学类、卫生管理、法律专业',Professional: '硕士研究生及以上', Degree: '不限', Gender: '', other_demand: ''},
+
+
+ {id: 25.0, venue: '区人力资源和社会保障厅', Department: '区就业局', Natposition: 20211025.0, posts_code: 1.0, p_Number: '', posts_des: '参公人员', Nature_position: '自治区级', Job_category: '网络信息工程相关专业',Professional: '硕士研究生及以上', Degree: '不限', Gender: '', other_demand: ''},
+
+
+ {id: 26.0, venue: '区人力资源和社会保障厅', Department: '区社保局', Natposition: 20211026.0, posts_code: 1.0, p_Number: '', posts_des: '参公人员', Nature_position: '自治区级', Job_category: '网络信息工程相关专业',Professional: '硕士研究生及以上', Degree: '不限', Gender: '', other_demand: ''},
+
+
+ {id: 27.0, venue: '区体育局', Department: '办公室', Natposition: 20211027.0, posts_code: 1.0, p_Number: '', posts_des: '公务员', Nature_position: '自治区级', Job_category: '汉语文相关专业',Professional: '硕士研究生及以上', Degree: '不限', Gender: '', other_demand: ''},
+
+
+ {id: 28.0, venue: '区体育局', Department: '竞技体育处', Natposition: 20211028.0, posts_code: 1.0, p_Number: '', posts_des: '公务员', Nature_position: '自治区级', Job_category: '体育相关专业',Professional: '硕士研究生及以上', Degree: '不限', Gender: '', other_demand: ''},
+
+
+ {id: 29.0, venue: '区体育局', Department: '体育经济处', Natposition: 20211029.0, posts_code: 1.0, p_Number: '', posts_des: '公务员', Nature_position: '自治区级', Job_category: '财会、经济相关专业',Professional: '硕士研究生及以上', Degree: '不限', Gender: '', other_demand: ''},
+
+
+ {id: 30.0, venue: '区地质矿产勘查开发局', Department: '计划财务审计处', Natposition: 20211030.0, posts_code: 1.0, p_Number: '', posts_des: '参公人员', Nature_position: '自治区级', Job_category: '会计专业',Professional: '硕士研究生及以上', Degree: '不限', Gender: '', other_demand: ''},
+
+
+ {id: 31.0, venue: '区地质矿产勘查开发局', Department: '地质勘查科技处', Natposition: 20211031.0, posts_code: 1.0, p_Number: '经常在野外一线从事地质工作', posts_des: '参公人员', Nature_position: '自治区级', Job_category: '水工环专业（地质灾害方向）',Professional: '硕士研究生及以上', Degree: '男性', Gender: '', other_demand: ''},
+
+
+ {id: 32.0, venue: '区地质矿产勘查开发局', Department: '政工人事处', Natposition: 20211032.0, posts_code: 1.0, p_Number: '', posts_des: '参公人员', Nature_position: '自治区级', Job_category: '法学专业',Professional: '硕士研究生及以上', Degree: '不限', Gender: '', other_demand: ''},
+
+
+ {id: 33.0, venue: '区总工会', Department: '研究室', Natposition: 20211033.0, posts_code: 1.0, p_Number: '', posts_des: '参公人员', Nature_position: '自治区级', Job_category: '文秘类、文学类、法律类专业',Professional: '硕士研究生及以上', Degree: '不限', Gender: '', other_demand: ''},
+
+
+ {id: 34.0, venue: '区粮食和物资储备局', Department: '政策与应急保障处', Natposition: 20211034.0, posts_code: 1.0, p_Number: '', posts_des: '公务员', Nature_position: '自治区级', Job_category: '应用经济学专业',Professional: '硕士研究生及以上', Degree: '不限', Gender: '', other_demand: ''},
+
+
+ {id: 35.0, venue: '区党委党校（区行政学院）', Department: '办公室秘书科', Natposition: 20211035.0, posts_code: 1.0, p_Number: '主要从事办公室综合管理服务工作', posts_des: '参公人员', Nature_position: '自治区级', Job_category: '行政管理专业',Professional: '硕士研究生及以上', Degree: '不限', Gender: '', other_demand: ''},
+
+
+ {id: 36.0, venue: '区党委党校（区行政学院）', Department: '教务部教务科', Natposition: 20211036.0, posts_code: 1.0, p_Number: '主要从事教务部教学运行管理服务工作', posts_des: '参公人员', Nature_position: '自治区级', Job_category: '行政管理专业',Professional: '硕士研究生及以上', Degree: '不限', Gender: '', other_demand: ''},
+
+
+ {id: 37.0, venue: '区党委党校（区行政学院）', Department: '信息管理部', Natposition: 20211037.0, posts_code: 1.0, p_Number: '主要从事应急培训教室、情景模拟教室等场所设备运行维护工作', posts_des: '参公人员', Nature_position: '自治区级', Job_category: '计算机科学与技术、计算机应用与维护、网络工程专业',Professional: '硕士研究生及以上', Degree: '不限', Gender: '', other_demand: ''},
+
+
+ {id: 38.0, venue: '区党委党校（区行政学院）', Department: '总务处行管科', Natposition: 20211038.0, posts_code: 1.0, p_Number: '主要从事校（院）基建项目管理服务工作', posts_des: '参公人员', Nature_position: '自治区级', Job_category: '建筑专业',Professional: '硕士研究生及以上', Degree: '不限', Gender: '', other_demand: ''},
+
+
+ {id: 39.0, venue: '区医疗保障局', Department: '区药品采购服务管理中心', Natposition: 20211039.0, posts_code: 1.0, p_Number: '', posts_des: '参公人员', Nature_position: '自治区级', Job_category: '药学专业',Professional: '硕士研究生及以上', Degree: '不限', Gender: '', other_demand: ''},
+
+
+ {id: 40.0, venue: '区党委网信办', Department: '综合处', Natposition: 20211040.0, posts_code: 1.0, p_Number: '', posts_des: '公务员', Nature_position: '自治区级', Job_category: '财务管理、会计专业',Professional: '硕士研究生及以上', Degree: '不限', Gender: '中共党员，学历学位双证齐全', other_demand: ''},
+
+
+ {id: 41.0, venue: '区党委网信办', Department: '执法督查处', Natposition: 20211041.0, posts_code: 1.0, p_Number: '', posts_des: '公务员', Nature_position: '自治区级', Job_category: '法学专业',Professional: '硕士研究生及以上', Degree: '不限', Gender: '中共党员，学历学位双证齐全，须通过国家司法考试', other_demand: ''},
+
+
+ {id: 42.0, venue: '区党委网信办', Department: '网络数据与技术处', Natposition: 20211042.0, posts_code: 1.0, p_Number: '', posts_des: '公务员', Nature_position: '自治区级', Job_category: '计算机网络技术、大数据、软件工程等专业',Professional: '硕士研究生及以上', Degree: '不限', Gender: '中共党员，学历学位双证齐全', other_demand: ''},
+
+
+ {id: 43.0, venue: '区党委网信办', Department: '网络应急指挥中心', Natposition: 20211043.0, posts_code: 4.0, p_Number: '', posts_des: '参公人员', Nature_position: '自治区级', Job_category: '专业不限',Professional: '硕士研究生及以上', Degree: '不限', Gender: '中共党员，学历学位双证齐全，须通过英语专八考试或英语三级翻译考试', other_demand: ''},
+
+
+ {id: 44.0, venue: '区党委网信办', Department: '网络应急指挥中心', Natposition: 20211044.0, posts_code: 1.0, p_Number: '', posts_des: '参公人员', Nature_position: '自治区级', Job_category: '文史哲、马克思主义理论、社会学、行政管理、民族、宗教专业',Professional: '硕士研究生及以上', Degree: '不限', Gender: '中共党员，学历学位双证齐全', other_demand: ''},
+
+
+ {id: 45.0, venue: '区党委网信办', Department: '网络舆情研究中心', Natposition: 20211045.0, posts_code: 5.0, p_Number: '', posts_des: '参公人员', Nature_position: '自治区级', Job_category: '文史哲、马克思主义理论、社会学、行政管理、民族、宗教专业',Professional: '硕士研究生及以上', Degree: '不限', Gender: '中共党员，学历学位双证齐全', other_demand: ''},
+
+
+ {id: 46.0, venue: '区人民政府驻格尔木办事处', Department: '机关处室', Natposition: 20211046.0, posts_code: 1.0, p_Number: '', posts_des: '公务员', Nature_position: '自治区级', Job_category: '经济管理、行政管理、法律专业',Professional: '硕士研究生及以上', Degree: '不限', Gender: '', other_demand: ''},
+
+
+ {id: 47.0, venue: '区科技厅', Department: '机关处室', Natposition: 20211047.0, posts_code: 1.0, p_Number: '', posts_des: '公务员', Nature_position: '自治区级', Job_category: '公共管理与政策专业',Professional: '硕士研究生及以上', Degree: '不限', Gender: '', other_demand: ''},
+
+
+ {id: 48.0, venue: '区科技厅', Department: '机关处室', Natposition: 20211048.0, posts_code: 1.0, p_Number: '', posts_des: '公务员', Nature_position: '自治区级', Job_category: '太阳能、风能、生物质能、地热能等专业',Professional: '硕士研究生及以上', Degree: '不限', Gender: '', other_demand: ''},
+
+
+ {id: 49.0, venue: '区司法厅', Department: '自治区监狱', Natposition: 20211049.0, posts_code: 3.0, p_Number: '男犯监区', posts_des: '监狱人民警察', Nature_position: '自治区级', Job_category: '法学专业',Professional: '本科及以上', Degree: '男性', Gender: '2021年高校应届毕业生，30周岁以下，须进行体检和体能测评', other_demand: ''},
+
+
+ {id: 50.0, venue: '区司法厅', Department: '自治区监狱', Natposition: 20211050.0, posts_code: 1.0, p_Number: '男犯监区', posts_des: '监狱人民警察', Nature_position: '自治区级', Job_category: '汉语言文学专业',Professional: '本科及以上', Degree: '男性', Gender: '2021年高校应届毕业生，30周岁以下，须进行体检和体能测评', other_demand: ''},
+
+
+ {id: 51.0, venue: '区司法厅', Department: '自治区监狱', Natposition: 20211051.0, posts_code: 1.0, p_Number: '男犯监区', posts_des: '监狱人民警察', Nature_position: '自治区级', Job_category: '临床医学专业',Professional: '本科及以上', Degree: '男性', Gender: '2021年高校应届毕业生，30周岁以下，须进行体检和体能测评', other_demand: ''},
+
+
+ {id: 52.0, venue: '区司法厅', Department: '自治区监狱', Natposition: 20211052.0, posts_code: 1.0, p_Number: '男犯监区', posts_des: '监狱人民警察', Nature_position: '自治区级', Job_category: '信息工程专业',Professional: '本科及以上', Degree: '男性', Gender: '2021年高校应届毕业生，30周岁以下，须进行体检和体能测评', other_demand: ''},
+
+
+ {id: 53.0, venue: '区司法厅', Department: '拉萨监狱', Natposition: 20211053.0, posts_code: 2.0, p_Number: '男犯监区', posts_des: '监狱人民警察', Nature_position: '自治区级', Job_category: '法学专业',Professional: '本科及以上', Degree: '男性', Gender: '2021年高校应届毕业生，30周岁以下，须进行体检和体能测评', other_demand: ''},
+
+
+ {id: 54.0, venue: '区司法厅', Department: '拉萨监狱', Natposition: 20211054.0, posts_code: 2.0, p_Number: '男犯监区', posts_des: '监狱人民警察', Nature_position: '自治区级', Job_category: '汉语言文学专业',Professional: '本科及以上', Degree: '男性', Gender: '2021年高校应届毕业生，30周岁以下，须进行体检和体能测评', other_demand: ''},
+
+
+ {id: 55.0, venue: '区司法厅', Department: '拉萨监狱', Natposition: 20211055.0, posts_code: 1.0, p_Number: '男犯监区', posts_des: '监狱人民警察', Nature_position: '自治区级', Job_category: '临床医学专业',Professional: '本科及以上', Degree: '男性', Gender: '2021年高校应届毕业生，30周岁以下，须进行体检和体能测评', other_demand: ''},
+
+
+ {id: 56.0, venue: '区司法厅', Department: '拉萨监狱', Natposition: 20211056.0, posts_code: 2.0, p_Number: '男犯监区', posts_des: '监狱人民警察', Nature_position: '自治区级', Job_category: '信息工程专业',Professional: '本科及以上', Degree: '男性', Gender: '2021年高校应届毕业生，30周岁以下，须进行体检和体能测评', other_demand: ''},
+
+
+ {id: 57.0, venue: '区司法厅', Department: '曲水监狱', Natposition: 20211057.0, posts_code: 2.0, p_Number: '男犯监区', posts_des: '监狱人民警察', Nature_position: '自治区级', Job_category: '法学专业',Professional: '本科及以上', Degree: '男性', Gender: '2021年高校应届毕业生，30周岁以下，须进行体检和体能测评', other_demand: ''},
+
+
+ {id: 58.0, venue: '区司法厅', Department: '曲水监狱', Natposition: 20211058.0, posts_code: 1.0, p_Number: '男犯监区', posts_des: '监狱人民警察', Nature_position: '自治区级', Job_category: '汉语言文学专业',Professional: '本科及以上', Degree: '男性', Gender: '2021年高校应届毕业生，30周岁以下，须进行体检和体能测评', other_demand: ''},
+
+
+ {id: 59.0, venue: '区司法厅', Department: '曲水监狱', Natposition: 20211059.0, posts_code: 1.0, p_Number: '男犯监区', posts_des: '监狱人民警察', Nature_position: '自治区级', Job_category: '临床医学专业',Professional: '本科及以上', Degree: '男性', Gender: '2021年高校应届毕业生，30周岁以下，须进行体检和体能测评', other_demand: ''},
+
+
+ {id: 60.0, venue: '区司法厅', Department: '曲水监狱', Natposition: 20211060.0, posts_code: 1.0, p_Number: '男犯监区', posts_des: '监狱人民警察', Nature_position: '自治区级', Job_category: '心理学专业',Professional: '本科及以上', Degree: '男性', Gender: '2021年高校应届毕业生，30周岁以下，须进行体检和体能测评', other_demand: ''},
+
+
+ {id: 61.0, venue: '区司法厅', Department: '波密监狱', Natposition: 20211061.0, posts_code: 2.0, p_Number: '', posts_des: '监狱人民警察', Nature_position: '自治区级', Job_category: '监狱学专业',Professional: '本科及以上', Degree: '不限', Gender: '30周岁以下，须进行体检和体能测评', other_demand: ''},
+
+
+ {id: 62.0, venue: '区司法厅', Department: '波密监狱', Natposition: 20211062.0, posts_code: 1.0, p_Number: '', posts_des: '监狱人民警察', Nature_position: '自治区级', Job_category: '汉语言文学专业',Professional: '本科及以上', Degree: '不限', Gender: '30周岁以下，须进行体检和体能测评', other_demand: ''},
+
+
+ {id: 63.0, venue: '区司法厅', Department: '波密监狱', Natposition: 20211063.0, posts_code: 2.0, p_Number: '', posts_des: '监狱人民警察', Nature_position: '自治区级', Job_category: '建筑学专业',Professional: '本科及以上', Degree: '不限', Gender: '30周岁以下，须进行体检和体能测评', other_demand: ''},
+
+
+ {id: 64.0, venue: '区司法厅', Department: '未成年犯管教所', Natposition: 20211064.0, posts_code: 1.0, p_Number: '男子管区', posts_des: '监狱人民警察', Nature_position: '自治区级', Job_category: '汉语言文学专业',Professional: '本科及以上', Degree: '男性', Gender: '2021年高校应届毕业生，30周岁以下，须进行体检和体能测评', other_demand: ''},
+
+
+ {id: 65.0, venue: '区司法厅', Department: '堆龙强制隔离戒毒所', Natposition: 20211065.0, posts_code: 1.0, p_Number: '男子戒毒管区', posts_des: '戒毒人民警察', Nature_position: '自治区级', Job_category: '医学影像专业',Professional: '本科及以上', Degree: '男性', Gender: '2021年高校应届毕业生，30周岁以下，须进行体检和体能测评', other_demand: ''},
+
+
+ {id: 66.0, venue: '区司法厅', Department: '堆龙强制隔离戒毒所', Natposition: 20211066.0, posts_code: 1.0, p_Number: '男子戒毒管区', posts_des: '戒毒人民警察', Nature_position: '自治区级', Job_category: '汉语言文学专业',Professional: '本科及以上', Degree: '男性', Gender: '2021年高校应届毕业生，30周岁以下，须进行体检和体能测评', other_demand: ''},
+
+
+ {id: 67.0, venue: '区司法厅', Department: '日喀则强制隔离戒毒所', Natposition: 20211067.0, posts_code: 1.0, p_Number: '男子戒毒管区', posts_des: '戒毒人民警察', Nature_position: '自治区级', Job_category: '汉语言文学专业',Professional: '本科及以上', Degree: '男性', Gender: '2021年高校应届毕业生，30周岁以下，须进行体检和体能测评', other_demand: ''},
+
+
+ {id: 68.0, venue: '拉萨市', Department: '拉萨市财政局财政投资评审中心', Natposition: 20211068.0, posts_code: 1.0, p_Number: '主要从事评价、审查财政投资项目预（概）算、竣工决（结）算等相关工作', posts_des: '参公人员', Nature_position: '市地级', Job_category: '研究生：0814土木工程\n本科：081001土木工程',Professional: '本科及以上', Degree: '不限', Gender: '2021年高校应届毕业生，必须具备与填报学历相对应的学位', other_demand: ''},
+
+
+ {id: 69.0, venue: '拉萨市', Department: '市人民检察院', Natposition: 20211069.0, posts_code: 1.0, p_Number: '检察官助理或司法行政', posts_des: '公务员', Nature_position: '市地级', Job_category: '030105民商法学',Professional: '硕士研究生及以上', Degree: '不限', Gender: '获得国家法律从业资格证书，2021年高校应届毕业生，必须具备与填报学历相对应的学位', other_demand: ''},
+
+
+ {id: 70.0, venue: '拉萨市', Department: '拉萨市外事办公室礼宾新闻科', Natposition: 20211070.0, posts_code: 1.0, p_Number: '主要从事外事接待、翻译等相关工作', posts_des: '公务员', Nature_position: '市地级', Job_category: '研究生：050202俄语语言文学、050201英语语言文学\n本科：050202俄语、050201英语',Professional: '本科及以上', Degree: '不限', Gender: '须取得专业八级证书。需口语面试和专业知识笔译，必须具备与填报学历相对应的学位', other_demand: ''},
+
+
+ {id: 71.0, venue: '拉萨市', Department: '拉萨市布达拉宫广场管理处市政市容科', Natposition: 20211071.0, posts_code: 2.0, p_Number: '主要从事布达拉宫广场光电设备维护相关工作，需经常到施工现场，体力活多，工作强度大', posts_des: '参公人员', Nature_position: '市地级', Job_category: '研究生：080801电机与电器、080802电力系统及其自动化、080902电路与系统  本科：080601电器工程及其自动化、080701电子信息工程、080705光电信息科学与工程',Professional: '本科及以上', Degree: '男性', Gender: '必须具备与填报学历相对应的学位', other_demand: ''},
+
+
+ {id: 72.0, venue: '拉萨市', Department: '拉萨市文化局文化市场综合执法队', Natposition: 20211072.0, posts_code: 1.0, p_Number: '主要从事文化市场综合执法相关工作，检查工作主要在夜间，工作时间长、任务量大', posts_des: '参公人员', Nature_position: '市地级', Job_category: '030101K法学、083101K刑事科学技术、083102K消防工程',Professional: '本科', Degree: '男性', Gender: '2021年高校应届毕业生，必须具备与填报学历相对应的学位', other_demand: ''},
+
+
+ {id: 73.0, venue: '拉萨市', Department: '拉萨市文化局文化市场综合执法队', Natposition: 20211073.0, posts_code: 1.0, p_Number: '主要从事文化市场综合执法相关工作，检查工作主要在夜间，工作时间长、任务量大', posts_des: '参公人员', Nature_position: '市地级', Job_category: '060103考古学、060104文物与博物馆学',Professional: '本科', Degree: '男性', Gender: '2021年高校应届毕业生，必须具备与填报学历相对应的学位', other_demand: ''},
+
+
+ {id: 74.0, venue: '拉萨市', Department: '中共尼木县国家安全委员会办公室', Natposition: 20211074.0, posts_code: 2.0, p_Number: '主要从事办公室相关工作', posts_des: '公务员', Nature_position: '县区级', Job_category: '030101K法学、030601K治安学、030609TK警卫学、030612TK公安管理学、030614TK国内安全保卫',Professional: '本科', Degree: '不限', Gender: '必须具备与填报学历相对应的学位', other_demand: ''},
+
+
+ {id: 75.0, venue: '拉萨市', Department: '尼木县档案馆', Natposition: 20211075.0, posts_code: 1.0, p_Number: '主要从事档案管理相关工作', posts_des: '参公人员', Nature_position: '县区级', Job_category: '1205图书情报与档案管理类、120106TK保密管理',Professional: '本科', Degree: '不限', Gender: '必须具备与填报学历相对应的学位', other_demand: ''},
+
+
+ {id: 76.0, venue: '拉萨市', Department: '尼木县退役军人事务局', Natposition: 20211076.0, posts_code: 1.0, p_Number: '主要从事公文写作等办公室日常工作', posts_des: '公务员', Nature_position: '县区级', Job_category: '050101汉语言文学、050102汉语言、050301新闻学、050107T秘书学、050106T应用语言学',Professional: '本科', Degree: '不限', Gender: '2021年高校应届毕业生，必须具备与填报学历相对应的学位', other_demand: ''},
+
+
+ {id: 77.0, venue: '拉萨市', Department: '尼木县应急管理局', Natposition: 20211077.0, posts_code: 1.0, p_Number: '主要从事危化品管理相关工作', posts_des: '公务员', Nature_position: '县区级', Job_category: '0703化学类、081305T化学工程与工业生物工程、083104TK安全防范工程、083106TK抢险救援指挥与技术',Professional: '本科', Degree: '不限', Gender: '2021年高校应届毕业生，必须具备与填报学历相对应的学位', other_demand: ''},
+
+
+ {id: 78.0, venue: '拉萨市', Department: '尼木县人民法院', Natposition: 20211078.0, posts_code: 2.0, p_Number: '主要从事出警、羁押、执庭等法警相关工作，工作强度大', posts_des: '公务员', Nature_position: '县区级', Job_category: '030101K法学、0503新闻传播学类',Professional: '本科', Degree: '男性', Gender: '2021年高校应届毕业生，必须具备与填报学历相对应的学位', other_demand: ''},
+
+
+ {id: 79.0, venue: '拉萨市', Department: '林周县藏语文工作委员会办公室（编译局）', Natposition: 20211079.0, posts_code: 1.0, p_Number: '主要从事汉藏翻译工作', posts_des: '参公人员', Nature_position: '县区级', Job_category: '050104中国少数民族语言文学（汉藏翻译）',Professional: '本科', Degree: '不限', Gender: '2021年高校应届毕业生，必须具备与填报学历相对应的学位', other_demand: ''},
+
+
+ {id: 80.0, venue: '拉萨市', Department: '林周县人民检察院', Natposition: 20211080.0, posts_code: 1.0, p_Number: '主要从事接受举报、来电、来访、调解相关工作，加班多，工作强度大', posts_des: '公务员', Nature_position: '县区级', Job_category: '030101K法学',Professional: '本科', Degree: '男性', Gender: '2021年高校应届毕业生，必须具备与填报学历相对应的学位', other_demand: ''},
+
+
+ {id: 81.0, venue: '拉萨市', Department: '林周县人民检察院', Natposition: 20211081.0, posts_code: 1.0, p_Number: '主要从事监狱服刑人员、劳教人员监管等相关工作，工作时间长、强度大', posts_des: '公务员', Nature_position: '县区级', Job_category: '030101K法学',Professional: '本科', Degree: '男性', Gender: '2021年高校应届毕业生，必须具备与填报学历相对应的学位', other_demand: ''},
+
+
+ {id: 82.0, venue: '拉萨市', Department: '林周县人民检察院', Natposition: 20211082.0, posts_code: 2.0, p_Number: '主要从事案件初审、管理、监督等相关工作', posts_des: '公务员', Nature_position: '县区级', Job_category: '030101K法学',Professional: '本科', Degree: '不限', Gender: '2021年高校应届毕业生，必须具备与填报学历相对应的学位', other_demand: ''},
+
+
+ {id: 83.0, venue: '拉萨市', Department: '林周县人民检察院', Natposition: 20211083.0, posts_code: 1.0, p_Number: '主要从事财会相关工作', posts_des: '公务员', Nature_position: '县区级', Job_category: '120203K会计学',Professional: '本科', Degree: '不限', Gender: '2021年高校应届毕业生，必须具备与填报学历相对应的学位', other_demand: ''},
+
+
+ {id: 84.0, venue: '拉萨市', Department: '林周县文化市场综合执法大队', Natposition: 20211084.0, posts_code: 1.0, p_Number: '主要从事文化市场综合执法相关工作，下乡多，工作强度大', posts_des: '参公人员', Nature_position: '县区级', Job_category: '030101K法学',Professional: '本科', Degree: '男性', Gender: '2021年高校应届毕业生，必须具备与填报学历相对应的学位', other_demand: ''},
+
+
+ {id: 85.0, venue: '拉萨市', Department: '林周县春堆乡人民政府', Natposition: 20211085.0, posts_code: 2.0, p_Number: '主要从事公文写作等办公室日常工作', posts_des: '公务员', Nature_position: '乡镇级', Job_category: '050101汉语言文学、050301新闻学、010101哲学、010102逻辑学、0305马克思主义理论类',Professional: '本科', Degree: '不限', Gender: '必须具备与填报学历相对应的学位', other_demand: ''},
+
+
+ {id: 86.0, venue: '拉萨市', Department: '林周县强嘎乡人民政府', Natposition: 20211086.0, posts_code: 1.0, p_Number: '主要从事财会相关工作', posts_des: '公务员', Nature_position: '乡镇级', Job_category: '120203K会计学、020201K财政学',Professional: '本科', Degree: '不限', Gender: '2021年高校应届毕业生，必须具备与填报学历相对应的学位', other_demand: ''},
+
+
+ {id: 87.0, venue: '拉萨市', Department: '林周县松盘乡人民政府', Natposition: 20211087.0, posts_code: 1.0, p_Number: '主要从事公文写作等办公室日常工作', posts_des: '公务员', Nature_position: '乡镇级', Job_category: '050101汉语言文学、050301新闻学、010101哲学、010102逻辑学、0305马克思主义理论类',Professional: '本科', Degree: '不限', Gender: '必须具备与填报学历相对应的学位', other_demand: ''},
+
+
+ {id: 88.0, venue: '拉萨市', Department: '林周县唐古乡人民政府', Natposition: 20211088.0, posts_code: 1.0, p_Number: '主要从事公文写作等办公室日常工作', posts_des: '公务员', Nature_position: '乡镇级', Job_category: '050101汉语言文学、050301新闻学、010101哲学、010102逻辑学、0305马克思主义理论类',Professional: '本科', Degree: '不限', Gender: '必须具备与填报学历相对应的学位', other_demand: ''},
+
+
+ {id: 89.0, venue: '拉萨市', Department: '墨竹工卡县文化和旅游局', Natposition: 20211089.0, posts_code: 1.0, p_Number: '主要从事文化市场综合执法相关工作', posts_des: '参公人员', Nature_position: '县区级', Job_category: '1209旅游管理类、120210文化产业管理',Professional: '本科', Degree: '不限', Gender: '2021年高校应届毕业生，必须具备与填报学历相对应的学位', other_demand: ''},
+
+
+ {id: 90.0, venue: '拉萨市', Department: '墨竹工卡县日多乡人民政府', Natposition: 20211090.0, posts_code: 1.0, p_Number: '主要从事经济发展管理相关工作', posts_des: '公务员', Nature_position: '乡镇级', Job_category: '研究生：1203农林经济管理\n本科：1203农业经济管理类',Professional: '本科及以上', Degree: '不限', Gender: '2021年高校应届毕业生，必须具备与填报学历相对应的学位', other_demand: ''},
+
+
+ {id: 91.0, venue: '拉萨市', Department: '墨竹工卡县扎雪乡人民政府', Natposition: 20211091.0, posts_code: 1.0, p_Number: '主要从事经济发展管理相关工作', posts_des: '公务员', Nature_position: '乡镇级', Job_category: '研究生：120201会计学、120202企业管理   本科：1202工商管理类',Professional: '本科及以上', Degree: '不限', Gender: '2021年高校应届毕业生，必须具备与填报学历相对应的学位', other_demand: ''},
+
+
+ {id: 92.0, venue: '拉萨市', Department: '墨竹工卡县尼玛江热乡人民政府', Natposition: 20211092.0, posts_code: 1.0, p_Number: '主要从事生态环境保护相关工作', posts_des: '公务员', Nature_position: '乡镇级', Job_category: '研究生：0830环境科学与工程\n本科：0825环境科学与工程类',Professional: '本科及以上', Degree: '不限', Gender: '2021年高校应届毕业生，必须具备与填报学历相对应的学位', other_demand: ''},
+
+
+ {id: 93.0, venue: '日喀则市', Department: '定日县岗嘎镇人民政府', Natposition: 20211093.0, posts_code: 2.0, p_Number: '具备一定的办公综合能力和服务群众工作能力，同时具备吃苦耐劳精神。', posts_des: '公务员', Nature_position: '乡镇级', Job_category: '专业不限',Professional: '大专及以上', Degree: '不限', Gender: '2021年高校应届毕业生', other_demand: ''},
+
+
+ {id: 94.0, venue: '日喀则市', Department: '聂拉木县樟木镇人民政府', Natposition: 20211094.0, posts_code: 2.0, p_Number: '具备一定的办公综合能力和服务群众工作能力，同时具备吃苦耐劳精神。', posts_des: '公务员', Nature_position: '乡镇级', Job_category: '专业不限',Professional: '大专及以上', Degree: '不限', Gender: '2021年高校应届毕业生', other_demand: ''},
+
+
+ {id: 95.0, venue: '日喀则市', Department: '仲巴县帕羊镇人民政府', Natposition: 20211095.0, posts_code: 4.0, p_Number: '具备一定的办公综合能力和服务群众工作能力，同时具备吃苦耐劳精神。', posts_des: '公务员', Nature_position: '乡镇级', Job_category: '财会、文秘、建筑工程专业',Professional: '大专及以上', Degree: '不限', Gender: '2021年高校应届毕业生', other_demand: ''},
+
+
+ {id: 96.0, venue: '日喀则市', Department: '仲巴县隆嘎尔乡人民政府', Natposition: 20211096.0, posts_code: 2.0, p_Number: '具备一定的办公综合能力和服务群众工作能力，同时具备吃苦耐劳精神。', posts_des: '公务员', Nature_position: '乡镇级', Job_category: '财会、文秘、建筑工程专业',Professional: '大专及以上', Degree: '不限', Gender: '2021年高校应届毕业生', other_demand: ''},
+
+
+ {id: 97.0, venue: '日喀则市', Department: '仲巴县琼果乡人民政府', Natposition: 20211097.0, posts_code: 1.0, p_Number: '具备一定的办公综合能力和服务群众工作能力，同时具备吃苦耐劳精神。', posts_des: '公务员', Nature_position: '乡镇级', Job_category: '财会、文秘、建筑工程专业',Professional: '大专及以上', Degree: '不限', Gender: '2021年高校应届毕业生', other_demand: ''},
+
+
+ {id: 98.0, venue: '日喀则市', Department: '仲巴县亚热乡人民政府', Natposition: 20211098.0, posts_code: 1.0, p_Number: '具备一定的办公综合能力和服务群众工作能力，同时具备吃苦耐劳精神。', posts_des: '公务员', Nature_position: '乡镇级', Job_category: '财会、文秘、建筑工程专业',Professional: '大专及以上', Degree: '不限', Gender: '2021年高校应届毕业生', other_demand: ''},
+
+
+ {id: 99.0, venue: '日喀则市', Department: '仲巴县亚热乡人民政府', Natposition: 20211099.0, posts_code: 1.0, p_Number: '具备一定的办公综合能力和服务群众工作能力，同时具备吃苦耐劳精神。', posts_des: '公务员', Nature_position: '乡镇级', Job_category: '专业不限',Professional: '大专及以上', Degree: '不限', Gender: '仅限服务基层项目人员报考', other_demand: ''},
+
+
+ {id: 100.0, venue: '日喀则市', Department: '仲巴县纳久乡人民政府', Natposition: 20211100.0, posts_code: 1.0, p_Number: '具备一定的办公综合能力和服务群众工作能力，同时具备吃苦耐劳精神。', posts_des: '公务员', Nature_position: '乡镇级', Job_category: '专业不限',Professional: '大专及以上', Degree: '不限', Gender: '仅限服务基层项目人员报考', other_demand: ''},
+
+
+ {id: 101.0, venue: '日喀则市', Department: '仲巴县霍尔巴乡人民政府', Natposition: 20211101.0, posts_code: 1.0, p_Number: '具备一定的办公综合能力和服务群众工作能力，同时具备吃苦耐劳精神。', posts_des: '公务员', Nature_position: '乡镇级', Job_category: '财会、文秘、建筑工程专业',Professional: '大专及以上', Degree: '不限', Gender: '2021年高校应届毕业生', other_demand: ''},
+
+
+ {id: 102.0, venue: '山南市', Department: '市人民检察院', Natposition: 20211102.0, posts_code: 2.0, p_Number: '检察官助理', posts_des: '公务员', Nature_position: '市地级', Job_category: '法律类专业',Professional: '本科及以上', Degree: '不限', Gender: '985、211院校毕业；具有国家法律职业证书A证优先', other_demand: ''},
+
+
+ {id: 103.0, venue: '林芝市', Department: '巴宜区医疗（工伤、生育、社会）保险管理中心', Natposition: 20211103.0, posts_code: 5.0, p_Number: '从事医疗保险、工伤保险、生育保险、医疗救助等工作', posts_des: '参公人员', Nature_position: '县区级', Job_category: '财政学类、金融学类、财务管理、会计、会计学专业',Professional: '本科及以上', Degree: '不限', Gender: '2021年高校应届毕业生', other_demand: ''},
+
+
+ {id: 104.0, venue: '林芝市', Department: '巴宜区公积金管理中心', Natposition: 20211104.0, posts_code: 1.0, p_Number: '从事公积金核算、上缴等管理工作', posts_des: '参公人员', Nature_position: '县区级', Job_category: '财政学类、金融学类、财务管理、会计、会计学专业',Professional: '本科及以上', Degree: '不限', Gender: '2021年高校应届毕业生', other_demand: ''},
+
+
+ {id: 105.0, venue: '林芝市', Department: '巴宜区法律援助中心', Natposition: 20211105.0, posts_code: 1.0, p_Number: '从事法律服务管理工作', posts_des: '参公人员', Nature_position: '县区级', Job_category: '法学类专业（非门类）',Professional: '本科及以上', Degree: '不限', Gender: '2021年高校应届毕业生', other_demand: ''},
+
+
+ {id: 106.0, venue: '林芝市', Department: '米林县卧龙镇人民政府', Natposition: 20211106.0, posts_code: 1.0, p_Number: '从事基层党建、经济发展、政务服务管理、社会综合治理等工作', posts_des: '公务员', Nature_position: '乡镇级', Job_category: '专业不限',Professional: '本科及以上', Degree: '不限', Gender: '2021年高校应届毕业生', other_demand: ''},
+
+
+ {id: 107.0, venue: '林芝市', Department: '米林县会计核算中心', Natposition: 20211107.0, posts_code: 1.0, p_Number: '从事管理财政的经济发展支出、政府性投资项目的财政拨款相关工作', posts_des: '参公人员', Nature_position: '县区级', Job_category: '财政学类、金融学类、财务管理、会计、会计学专业',Professional: '本科及以上', Degree: '不限', Gender: '2021年高校应届毕业生', other_demand: ''},
+
+
+ {id: 108.0, venue: '林芝市', Department: '米林县项目评审中心', Natposition: 20211108.0, posts_code: 1.0, p_Number: '从事审核项目工程造价和工程结构等工作', posts_des: '参公人员', Nature_position: '县区级', Job_category: '土木类、建筑类、工程管理、工程造价专业',Professional: '本科及以上', Degree: '不限', Gender: '2021年高校应届毕业生', other_demand: ''},
+
+
+ {id: 109.0, venue: '林芝市', Department: '米林县水利服务站', Natposition: 20211109.0, posts_code: 1.0, p_Number: '从事水利工程建设和管理等工作', posts_des: '参公人员', Nature_position: '县区级', Job_category: '土木类、水利类、农业水利工程专业',Professional: '本科及以上', Degree: '不限', Gender: '2021年高校应届毕业生', other_demand: ''},
+
+
+ {id: 110.0, venue: '林芝市', Department: '米林县景区管理局', Natposition: 20211110.0, posts_code: 1.0, p_Number: '从事景区的执法和管理等工作', posts_des: '参公人员', Nature_position: '县区级', Job_category: '法学类（非门类）、旅游管理类专业',Professional: '本科及以上', Degree: '不限', Gender: '2021年高校应届毕业生', other_demand: ''},
+
+
+ {id: 111.0, venue: '林芝市', Department: '朗县水利服务站', Natposition: 20211111.0, posts_code: 1.0, p_Number: '从事水利工程建设和管理等工作', posts_des: '参公人员', Nature_position: '县区级', Job_category: '土木类、水利类、农业水利工程专业',Professional: '本科及以上', Degree: '不限', Gender: '2021年高校应届毕业生', other_demand: ''},
+
+
+ {id: 112.0, venue: '林芝市', Department: '朗县农业综合行政执法队', Natposition: 20211112.0, posts_code: 1.0, p_Number: '从事相关领域执法、监管工作', posts_des: '参公人员', Nature_position: '县区级', Job_category: '农业经济管理类、农业工程类、植物生产类专业',Professional: '本科及以上', Degree: '不限', Gender: '2021年高校应届毕业生', other_demand: ''},
+
+
+ {id: 113.0, venue: '林芝市', Department: '朗县市场监管综合行政执法队', Natposition: 20211113.0, posts_code: 2.0, p_Number: '从事组织查处市场主体有关违法行为等工作', posts_des: '参公人员', Nature_position: '县区级', Job_category: '法学类专业（非门类）',Professional: '本科及以上', Degree: '不限', Gender: '2021年高校应届毕业生', other_demand: ''},
+
+
+ {id: 114.0, venue: '林芝市', Department: '工布江达县会计核算中心', Natposition: 20211114.0, posts_code: 1.0, p_Number: '从事管理财政的经济发展支出、政府性投资项目的财政拨款相关工作', posts_des: '参公人员', Nature_position: '县区级', Job_category: '财政学类、金融学类、财务管理、会计、会计学专业',Professional: '本科及以上', Degree: '不限', Gender: '2021年高校应届毕业生', other_demand: ''},
+
+
+ {id: 115.0, venue: '林芝市', Department: '工布江达县医疗（工伤生育社会）保险管理中心', Natposition: 20211115.0, posts_code: 1.0, p_Number: '从事机关事业单位养老保险信息化工作', posts_des: '参公人员', Nature_position: '县区级', Job_category: '计算机类专业',Professional: '本科及以上', Degree: '不限', Gender: '2021年高校应届毕业生', other_demand: ''},
+
+
+ {id: 116.0, venue: '林芝市', Department: '工布江达县风景区管理局', Natposition: 20211116.0, posts_code: 1.0, p_Number: '从事景区的执法和管理等工作', posts_des: '参公人员', Nature_position: '县区级', Job_category: '法学类（非门类）、旅游管理类专业',Professional: '本科及以上', Degree: '不限', Gender: '2021年高校应届毕业生', other_demand: ''},
+
+
+ {id: 117.0, venue: '林芝市', Department: '工布江达县法律援助中心', Natposition: 20211117.0, posts_code: 1.0, p_Number: '从事法律服务管理工作', posts_des: '参公人员', Nature_position: '县区级', Job_category: '法学类专业（非门类）',Professional: '本科及以上', Degree: '不限', Gender: '2021年高校应届毕业生', other_demand: ''},
+
+
+ {id: 118.0, venue: '林芝市', Department: '工布江达县加兴乡人民政府', Natposition: 20211118.0, posts_code: 1.0, p_Number: '从事基层党建、经济发展、政务服务管理、社会综合治理等工作', posts_des: '公务员', Nature_position: '乡镇级', Job_category: '专业不限',Professional: '本科及以上', Degree: '不限', Gender: '2021年高校应届毕业生', other_demand: ''},
+
+
+ {id: 119.0, venue: '林芝市', Department: '波密县自然资源执法大队', Natposition: 20211119.0, posts_code: 1.0, p_Number: '从事土地管理、自然资源监管等工作', posts_des: '参公人员', Nature_position: '县区级', Job_category: '环境科学与工程类、自然保护与环境生态类、土地资源管理专业',Professional: '本科及以上', Degree: '不限', Gender: '2021年高校应届毕业生', other_demand: ''},
+
+
+ {id: 120.0, venue: '林芝市', Department: '波密县城管监察大队', Natposition: 20211120.0, posts_code: 1.0, p_Number: '从事城市市容环境卫生行政管理和行业管理及执法工作', posts_des: '参公人员', Nature_position: '县区级', Job_category: '法学类（非门类）、建筑类、土木类专业',Professional: '本科及以上', Degree: '不限', Gender: '2021年高校应届毕业生', other_demand: ''},
+
+
+ {id: 121.0, venue: '林芝市', Department: '波密县农业综合行政执法队', Natposition: 20211121.0, posts_code: 1.0, p_Number: '从事相关领域执法、监管工作', posts_des: '参公人员', Nature_position: '县区级', Job_category: '农业经济管理类、农业工程类、植物生产类专业',Professional: '本科及以上', Degree: '不限', Gender: '2021年高校应届毕业生', other_demand: ''},
+
+
+ {id: 122.0, venue: '林芝市', Department: '波密县文化旅游市场综合行政执法队', Natposition: 20211122.0, posts_code: 1.0, p_Number: '从事文化和旅游市场监管工作', posts_des: '参公人员', Nature_position: '县区级', Job_category: '法学类专业（非门类）、旅游管理类专业',Professional: '本科及以上', Degree: '不限', Gender: '2021年高校应届毕业生', other_demand: ''},
+
+
+ {id: 123.0, venue: '林芝市', Department: '波密县松宗市场监督管理所', Natposition: 20211123.0, posts_code: 1.0, p_Number: '从事食品安全监管等工作', posts_des: '公务员', Nature_position: '县区级', Job_category: '专业不限',Professional: '本科及以上', Degree: '不限', Gender: '2021年高校应届毕业生', other_demand: ''},
+
+
+ {id: 124.0, venue: '林芝市', Department: '波密县古乡人民政府', Natposition: 20211124.0, posts_code: 1.0, p_Number: '从事基层党建、经济发展、政务服务管理、社会综合治理等工作', posts_des: '公务员', Nature_position: '乡镇级', Job_category: '专业不限',Professional: '本科及以上', Degree: '不限', Gender: '2021年高校应届毕业生', other_demand: ''},
+
+
+ {id: 125.0, venue: '林芝市', Department: '波密县康玉乡人民政府', Natposition: 20211125.0, posts_code: 2.0, p_Number: '从事基层党建、经济发展、政务服务管理、社会综合治理等工作', posts_des: '公务员', Nature_position: '乡镇级', Job_category: '专业不限',Professional: '大专及以上', Degree: '不限', Gender: '仅限服务基层项目人员报考', other_demand: ''},
+
+
+ {id: 126.0, venue: '林芝市', Department: '波密县玉许乡人民政府', Natposition: 20211126.0, posts_code: 2.0, p_Number: '从事基层党建、经济发展、政务服务管理、社会综合治理等工作', posts_des: '公务员', Nature_position: '乡镇级', Job_category: '专业不限',Professional: '本科及以上', Degree: '不限', Gender: '2021年高校应届毕业生', other_demand: ''},
+
+
+ {id: 127.0, venue: '林芝市', Department: '波密县易贡乡人民政府', Natposition: 20211127.0, posts_code: 2.0, p_Number: '从事基层党建、经济发展、政务服务管理、社会综合治理等工作', posts_des: '公务员', Nature_position: '乡镇级', Job_category: '专业不限',Professional: '本科及以上', Degree: '不限', Gender: '2021年高校应届毕业生', other_demand: ''},
+
+
+ {id: 128.0, venue: '林芝市', Department: '察隅县自然资源局国土执法大队', Natposition: 20211128.0, posts_code: 1.0, p_Number: '从事土地管理、自然资源监管等工作', posts_des: '参公人员', Nature_position: '县区级', Job_category: '环境科学与工程类、自然保护与环境生态类、土地资源管理专业',Professional: '本科及以上', Degree: '不限', Gender: '2021年高校应届毕业生', other_demand: ''},
+
+
+ {id: 129.0, venue: '林芝市', Department: '察隅县农业综合行政执法队', Natposition: 20211129.0, posts_code: 2.0, p_Number: '从事相关领域执法、监管工作', posts_des: '参公人员', Nature_position: '县区级', Job_category: '农业经济管理类、农业工程类、植物生产类专业',Professional: '本科及以上', Degree: '不限', Gender: '2021年高校应届毕业生', other_demand: ''},
+
+
+ {id: 130.0, venue: '林芝市', Department: '察隅县文化旅游综合行政执法队', Natposition: 20211130.0, posts_code: 2.0, p_Number: '从事文化和旅游市场监管工作', posts_des: '参公人员', Nature_position: '县区级', Job_category: '法学类专业（非门类）、旅游管理类专业',Professional: '本科及以上', Degree: '不限', Gender: '2021年高校应届毕业生', other_demand: ''},
+
+
+ {id: 131.0, venue: '林芝市', Department: '察隅县古玉乡人民政府', Natposition: 20211131.0, posts_code: 3.0, p_Number: '从事基层党建、经济发展、政务服务管理、社会综合治理等工作', posts_des: '公务员', Nature_position: '乡镇级', Job_category: '专业不限',Professional: '大专及以上', Degree: '不限', Gender: '2021年高校应届毕业生', other_demand: ''},
+
+
+ {id: 132.0, venue: '林芝市', Department: '察隅县古拉乡人民政府', Natposition: 20211132.0, posts_code: 1.0, p_Number: '从事财务工作', posts_des: '公务员', Nature_position: '乡镇级', Job_category: '财政学类、金融学类、财务管理、会计、会计学专业',Professional: '本科及以上', Degree: '不限', Gender: '2021年高校应届毕业生', other_demand: ''},
+
+
+ {id: 133.0, venue: '林芝市', Department: '察隅县察瓦龙乡人民政府', Natposition: 20211133.0, posts_code: 1.0, p_Number: '从事财务工作', posts_des: '公务员', Nature_position: '乡镇级', Job_category: '财政学类、金融学类、财务管理、会计、会计学专业',Professional: '本科及以上', Degree: '不限', Gender: '2021年高校应届毕业生', other_demand: ''},
+
+
+ {id: 134.0, venue: '林芝市', Department: '察隅县察瓦龙乡人民政府', Natposition: 20211134.0, posts_code: 1.0, p_Number: '从事基层党建、经济发展、政务服务管理、社会综合治理等工作', posts_des: '公务员', Nature_position: '乡镇级', Job_category: '专业不限',Professional: '大专及以上', Degree: '不限', Gender: '仅限服务基层项目人员报考', other_demand: ''},
+
+
+ {id: 135.0, venue: '林芝市', Department: '察隅县察瓦龙乡人民政府', Natposition: 20211135.0, posts_code: 1.0, p_Number: '从事基层党建、经济发展、政务服务管理、社会综合治理等工作', posts_des: '公务员', Nature_position: '乡镇级', Job_category: '专业不限',Professional: '本科及以上', Degree: '不限', Gender: '2021年高校应届毕业生', other_demand: ''},
+
+
+ {id: 136.0, venue: '林芝市', Department: '墨脱县自然资源局国土执法大队', Natposition: 20211136.0, posts_code: 1.0, p_Number: '从事土地管理、自然资源监管等工作', posts_des: '参公人员', Nature_position: '县区级', Job_category: '环境科学与工程类、自然保护与环境生态类、土地资源管理专业',Professional: '本科及以上', Degree: '不限', Gender: '2021年高校应届毕业生', other_demand: ''},
+
+
+ {id: 137.0, venue: '林芝市', Department: '墨脱县司法局法律援助中心', Natposition: 20211137.0, posts_code: 1.0, p_Number: '从事法律服务管理工作', posts_des: '参公人员', Nature_position: '县区级', Job_category: '法学类专业（非门类）',Professional: '本科及以上', Degree: '不限', Gender: '2021年高校应届毕业生', other_demand: ''},
+
+
+ {id: 138.0, venue: '林芝市', Department: '墨脱县医疗（工伤、生育、社会）保险管理中心', Natposition: 20211138.0, posts_code: 1.0, p_Number: '从事参保人员申报、登记、核定、缴费、发证等服务工作', posts_des: '参公人员', Nature_position: '县区级', Job_category: '工商管理类专业',Professional: '本科及以上', Degree: '不限', Gender: '2021年高校应届毕业生', other_demand: ''},
+
+
+ {id: 139.0, venue: '林芝市', Department: '墨脱县住房和城乡建设局城管监察大队', Natposition: 20211139.0, posts_code: 3.0, p_Number: '从事城市市容环境卫生行政管理和行业管理及执法工作', posts_des: '参公人员', Nature_position: '县区级', Job_category: '法学类（非门类）、建筑类、土木类专业',Professional: '本科及以上', Degree: '不限', Gender: '2021年高校应届毕业生', other_demand: ''},
+
+
+ {id: 140.0, venue: '林芝市', Department: '墨脱县加热萨乡财务所', Natposition: 20211140.0, posts_code: 1.0, p_Number: '从事财务工作', posts_des: '公务员', Nature_position: '乡镇级', Job_category: '财政学类、金融学类、财务管理、会计、会计学专业',Professional: '本科及以上', Degree: '不限', Gender: '2021年高校应届毕业生', other_demand: ''},
+
+
+ {id: 141.0, venue: '林芝市', Department: '墨脱县加热萨乡人民政府', Natposition: 20211141.0, posts_code: 1.0, p_Number: '从事基层党建、经济发展、政务服务管理、社会综合治理等工作', posts_des: '公务员', Nature_position: '乡镇级', Job_category: '专业不限',Professional: '大专及以上', Degree: '不限', Gender: '仅限服务基层项目人员报考', other_demand: ''},
+
+
+ {id: 142.0, venue: '林芝市', Department: '墨脱县加热萨乡人民政府', Natposition: 20211142.0, posts_code: 3.0, p_Number: '从事基层党建、经济发展、政务服务管理、社会综合治理等工作', posts_des: '公务员', Nature_position: '乡镇级', Job_category: '专业不限',Professional: '本科及以上', Degree: '不限', Gender: '2021年高校应届毕业生', other_demand: ''},
+
+
+ {id: 143.0, venue: '昌都市', Department: '市政府办市机关事务服务保障中心', Natposition: 20211143.0, posts_code: 1.0, p_Number: '从事办公室文稿起草工作', posts_des: '参公人员', Nature_position: '市地级', Job_category: '中国语言文学类专业',Professional: '本科及以上', Degree: '不限', Gender: '', other_demand: ''},
+
+
+ {id: 144.0, venue: '昌都市', Department: '市纪委监委驻市政府办纪检监察组', Natposition: 20211144.0, posts_code: 1.0, p_Number: '从事纪检监察工作', posts_des: '公务员', Nature_position: '市地级', Job_category: '财政学专业、财务管理专业、会计专业、会计学专业、审计学专业、审计专业、法学类专业',Professional: '本科及以上', Degree: '不限', Gender: '', other_demand: ''},
+
+
+ {id: 145.0, venue: '昌都市', Department: '市委宣传部市委理论教育讲师团', Natposition: 20211145.0, posts_code: 2.0, p_Number: '从事藏汉语宣讲、起草宣讲材料工作', posts_des: '参公人员', Nature_position: '市地级', Job_category: '文学类、哲学类、历史学类专业',Professional: '本科及以上', Degree: '不限', Gender: '2021年高校应届毕业生', other_demand: ''},
+
+
+ {id: 146.0, venue: '昌都市', Department: '市人民检察院检务保障部', Natposition: 20211146.0, posts_code: 1.0, p_Number: '从事财务相关工作', posts_des: '公务员', Nature_position: '市地级', Job_category: '财务管理专业、会计专业、会计学专业',Professional: '本科及以上', Degree: '不限', Gender: '2021年高校应届毕业生', other_demand: ''},
+
+
+ {id: 147.0, venue: '昌都市', Department: '市人民检察院法律政策研究室', Natposition: 20211147.0, posts_code: 1.0, p_Number: '从事文稿撰写工作', posts_des: '公务员', Nature_position: '市地级', Job_category: '法学类专业',Professional: '本科及以上', Degree: '不限', Gender: '2021年高校应届毕业生', other_demand: ''},
+
+
+ {id: 148.0, venue: '昌都市', Department: '市人民检察院法律政策研究室', Natposition: 20211148.0, posts_code: 1.0, p_Number: '从事法律政策藏汉翻译工作', posts_des: '公务员', Nature_position: '市地级', Job_category: '藏语言文学专业',Professional: '本科及以上', Degree: '不限', Gender: '2021年高校应届毕业生', other_demand: ''},
+
+
+ {id: 149.0, venue: '昌都市', Department: '市人民检察院办公室', Natposition: 20211149.0, posts_code: 1.0, p_Number: '从事文稿撰写工作', posts_des: '公务员', Nature_position: '市地级', Job_category: '文秘专业、文秘学专业、汉语言文学专业',Professional: '本科及以上', Degree: '不限', Gender: '2021年高校应届毕业生', other_demand: ''},
+
+
+ {id: 150.0, venue: '昌都市', Department: '市住建局建筑工程安全生产与质量监督站', Natposition: 20211150.0, posts_code: 1.0, p_Number: '从事房屋建筑、市政工程质量和安全监督等工作', posts_des: '参公人员', Nature_position: '市地级', Job_category: '消防工程、建筑工程专业',Professional: '本科及以上', Degree: '不限', Gender: '', other_demand: ''},
+
+
+ {id: 151.0, venue: '昌都市', Department: '市发改委产业发展科（创新和高技术发展科）', Natposition: 20211151.0, posts_code: 1.0, p_Number: '从事文稿撰写工作', posts_des: '公务员', Nature_position: '市地级', Job_category: '文学类专业',Professional: '本科及以上', Degree: '不限', Gender: '2021年高校应届毕业生', other_demand: ''},
+
+
+ {id: 152.0, venue: '昌都市', Department: '市发改委粮食储备科（军粮供应管理科）', Natposition: 20211152.0, posts_code: 1.0, p_Number: '从事粮食储存、轮换、管理工作', posts_des: '公务员', Nature_position: '市地级', Job_category: '食品科学与工程类专业',Professional: '本科及以上', Degree: '不限', Gender: '2021年高校应届毕业生', other_demand: ''},
+
+
+ {id: 153.0, venue: '昌都市', Department: '市发改委市铁路建设协调中心', Natposition: 20211153.0, posts_code: 2.0, p_Number: '从事铁路建设、研究、协调工作', posts_des: '参公人员', Nature_position: '市地级', Job_category: '土木工程类专业',Professional: '本科及以上', Degree: '不限', Gender: '2021年高校应届毕业生', other_demand: ''},
+
+
+ {id: 154.0, venue: '昌都市', Department: '江达县委党校', Natposition: 20211154.0, posts_code: 2.0, p_Number: '从事教育培训工作', posts_des: '参公人员', Nature_position: '县区级', Job_category: '教育学类、文学类专业',Professional: '本科及以上', Degree: '不限', Gender: '2021年高校应届毕业生', other_demand: ''},
+
+
+ {id: 155.0, venue: '昌都市', Department: '察雅县医疗保障服务中心', Natposition: 20211155.0, posts_code: 1.0, p_Number: '从事医疗保险、生育保险、医疗救助等业务经办工作', posts_des: '参公人员', Nature_position: '县区级', Job_category: '财政学类专业',Professional: '本科及以上', Degree: '不限', Gender: '2021年高校应届毕业生', other_demand: ''},
+
+
+ {id: 156.0, venue: '那曲市', Department: '市发改委项目评审中心', Natposition: 20211156.0, posts_code: 1.0, p_Number: '负责市级投资项目实施全过程监督、管理、评估等工作', posts_des: '参公人员', Nature_position: '市地级', Job_category: '工程管理专业',Professional: '本科', Degree: '不限', Gender: '2021年高校应届毕业生', other_demand: ''},
+
+
+ {id: 157.0, venue: '那曲市', Department: '市水利局水土保持监测站', Natposition: 20211157.0, posts_code: 1.0, p_Number: '从事全市水土保持监督工作', posts_des: '参公人员', Nature_position: '市地级', Job_category: '水土保持专业',Professional: '硕士研究生', Degree: '不限', Gender: '2021年高校应届毕业生', other_demand: ''},
+
+
+ {id: 158.0, venue: '那曲市', Department: '市水利局水土保持监测站', Natposition: 20211158.0, posts_code: 1.0, p_Number: '从事全市水土保持监督工作', posts_des: '参公人员', Nature_position: '市地级', Job_category: '水资源专业',Professional: '硕士研究生', Degree: '不限', Gender: '2021年高校应届毕业生', other_demand: ''},
+
+
+ {id: 159.0, venue: '那曲市', Department: '市自然资源局不动产登记中心', Natposition: 20211159.0, posts_code: 3.0, p_Number: '从事测绘测量、不动产办证等工作', posts_des: '参公人员', Nature_position: '市地级', Job_category: '专业不限',Professional: '本科', Degree: '不限', Gender: '2021年高校应届毕业生', other_demand: ''},
+
+
+ {id: 160.0, venue: '那曲市', Department: '市政府办法规科', Natposition: 20211160.0, posts_code: 1.0, p_Number: '从事规范性文件的合法性审查，报备，清理和汇编工作', posts_des: '公务员', Nature_position: '市地级', Job_category: '法律专业',Professional: '本科', Degree: '不限', Gender: '2021年高校应届毕业生', other_demand: ''},
+
+
+ {id: 161.0, venue: '那曲市', Department: '市财政局行政事业资产管理中心', Natposition: 20211161.0, posts_code: 2.0, p_Number: '组织实施全市行政事业单位及企业国有资产管理工作', posts_des: '参公人员', Nature_position: '市地级', Job_category: '财经类、行政管理类、电子信息类专业',Professional: '本科', Degree: '不限', Gender: '2021年高校应届毕业生', other_demand: ''},
+
+
+ {id: 162.0, venue: '那曲市', Department: '市财政局市财政局政府采购中心', Natposition: 20211162.0, posts_code: 1.0, p_Number: '负责对政府采购项目前期咨询本级政府采购招投标信息发布统计工作', posts_des: '参公人员', Nature_position: '市地级', Job_category: '财经类、行政管理类、电子信息类专业',Professional: '本科', Degree: '不限', Gender: '2021年高校应届毕业生', other_demand: ''},
+
+
+ {id: 163.0, venue: '那曲市', Department: '市纪委监委驻市委政法委纪检监察组', Natposition: 20211163.0, posts_code: 2.0, p_Number: '从事党的纪律检查和国家监察两项职责', posts_des: '公务员', Nature_position: '市地级', Job_category: '专业不限',Professional: '本科', Degree: '不限', Gender: '2021年高校应届毕业生', other_demand: ''},
+
+
+ {id: 164.0, venue: '那曲市', Department: '市检察院', Natposition: 20211164.0, posts_code: 1.0, p_Number: '检察官助理', posts_des: '公务员', Nature_position: '市地级', Job_category: '法律类专业',Professional: '本科及以上', Degree: '不限', Gender: '985、211院校毕业；具有国家法律职业证书A证优先', other_demand: ''},
+
+
+ {id: 165.0, venue: '那曲市', Department: '安多县统计局社会经济调查队', Natposition: 20211165.0, posts_code: 1.0, p_Number: '参与普查、管理和公布有关统计调查数据等工作', posts_des: '参公人员', Nature_position: '县级', Job_category: '专业不限',Professional: '本科', Degree: '不限', Gender: '2021年高校应届毕业生', other_demand: ''},
+
+
+ {id: 166.0, venue: '那曲市', Department: '安多县玛荣乡人民政府', Natposition: 20211166.0, posts_code: 2.0, p_Number: '从事乡党委政府部署的相关工作', posts_des: '公务员', Nature_position: '乡镇级', Job_category: '专业不限',Professional: '本科', Degree: '不限', Gender: '仅限服务基层项目人员报考', other_demand: ''},
+
+
+ {id: 167.0, venue: '那曲市', Department: '安多县多玛乡人民政府', Natposition: 20211167.0, posts_code: 2.0, p_Number: '从事乡党委政府部署的相关工作', posts_des: '公务员', Nature_position: '乡镇级', Job_category: '专业不限',Professional: '本科', Degree: '不限', Gender: '2021年高校应届毕业生', other_demand: ''},
+
+
+ {id: 168.0, venue: '那曲市', Department: '嘉黎县委政法委', Natposition: 20211168.0, posts_code: 1.0, p_Number: '从事文秘、政法领域相关工作', posts_des: '公务员', Nature_position: '县区级', Job_category: '法学类专业',Professional: '本科', Degree: '不限', Gender: '2021年高校应届毕业生', other_demand: ''},
+
+
+ {id: 169.0, venue: '那曲市', Department: '嘉黎县藏语文工作委员会办公室（编译局）', Natposition: 20211169.0, posts_code: 4.0, p_Number: '从事藏语文教学、科研、编译、新闻广播电视、出版等工作', posts_des: '参公人员', Nature_position: '县级', Job_category: '藏汉翻译类专业',Professional: '本科', Degree: '不限', Gender: '2021年高校应届毕业生', other_demand: ''},
+
+
+ {id: 170.0, venue: '那曲市', Department: '嘉黎县教育局', Natposition: 20211170.0, posts_code: 1.0, p_Number: '从事文秘、资料归档、会议筹备等相关工作', posts_des: '公务员', Nature_position: '县级', Job_category: '文秘类专业',Professional: '本科', Degree: '不限', Gender: '2021年高校应届毕业生', other_demand: ''},
+
+
+ {id: 171.0, venue: '那曲市', Department: '申扎县纪委监委', Natposition: 20211171.0, posts_code: 2.0, p_Number: '从事全县纪律检查和监察领域相关工作', posts_des: '公务员', Nature_position: '县级', Job_category: '专业不限',Professional: '本科', Degree: '不限', Gender: '2021年高校应届毕业生', other_demand: ''},
+
+
+ {id: 172.0, venue: '那曲市', Department: '申扎县藏语文工作委员会办公室（编译局）', Natposition: 20211172.0, posts_code: 3.0, p_Number: '从事藏语文教学、科研、编译、新闻广播电视、出版等工作', posts_des: '参公人员', Nature_position: '县级', Job_category: '专业不限',Professional: '本科', Degree: '不限', Gender: '2021年高校应届毕业生', other_demand: ''},
+
+
+ {id: 173.0, venue: '那曲市', Department: '申扎县委巡察办', Natposition: 20211173.0, posts_code: 1.0, p_Number: '从事统筹、协调、指导县委巡察工作', posts_des: '公务员', Nature_position: '县级', Job_category: '专业不限',Professional: '本科', Degree: '不限', Gender: '2021年高校应届毕业生', other_demand: ''},
+
+
+ {id: 174.0, venue: '那曲市', Department: '申扎县自然资源局不动产登记中心', Natposition: 20211174.0, posts_code: 1.0, p_Number: '从事不动产登记管理等相关工作', posts_des: '参公人员', Nature_position: '县级', Job_category: '专业不限',Professional: '本科', Degree: '不限', Gender: '2021年高校应届毕业生', other_demand: ''},
+
+
+ {id: 175.0, venue: '那曲市', Department: '尼玛县委国家安全委员会办公室', Natposition: 20211175.0, posts_code: 1.0, p_Number: '从事国家安全和社会稳定、反分裂斗争、边界管理工作', posts_des: '公务员', Nature_position: '县级', Job_category: '刑侦专业',Professional: '本科', Degree: '不限', Gender: '2021年高校应届毕业生', other_demand: ''},
+
+
+ {id: 176.0, venue: '那曲市', Department: '尼玛县委巡察办', Natposition: 20211176.0, posts_code: 1.0, p_Number: '从事统筹、协调、指导县委巡察工作', posts_des: '公务员', Nature_position: '县级', Job_category: '财会专业',Professional: '本科', Degree: '不限', Gender: '2021年高校应届毕业生', other_demand: ''},
+
+
+ {id: 177.0, venue: '那曲市', Department: '尼玛县商务局', Natposition: 20211177.0, posts_code: 1.0, p_Number: '从事拟定全县国内贸易发展规划，促进城乡市场发展工作', posts_des: '公务员', Nature_position: '县级', Job_category: '工商管理专业',Professional: '本科', Degree: '不限', Gender: '2021年高校应届毕业生', other_demand: ''},
+
+
+ {id: 178.0, venue: '那曲市', Department: '尼玛县经济和信息化局', Natposition: 20211178.0, posts_code: 1.0, p_Number: '从事全县公有经济、数字经济和信息化建设运行工作', posts_des: '公务员', Nature_position: '县级', Job_category: '计算机专业',Professional: '本科', Degree: '不限', Gender: '2021年高校应届毕业生', other_demand: ''},
+
+
+ {id: 179.0, venue: '那曲市', Department: '尼玛县医疗保障局', Natposition: 20211179.0, posts_code: 1.0, p_Number: '从事城镇职工和城镇居民基本医疗合作工作', posts_des: '公务员', Nature_position: '县级', Job_category: '财会专业',Professional: '本科', Degree: '不限', Gender: '2021年高校应届毕业生', other_demand: ''},
+
+
+ {id: 180.0, venue: '那曲市', Department: '尼玛县司法局', Natposition: 20211180.0, posts_code: 1.0, p_Number: '从事司法及法制领域相关工作', posts_des: '公务员', Nature_position: '县级', Job_category: '法律专业',Professional: '本科', Degree: '不限', Gender: '2021年高校应届毕业生', other_demand: ''},
+
+
+ {id: 181.0, venue: '那曲市', Department: '尼玛县藏语文工作委员会办公室（编译局）', Natposition: 20211181.0, posts_code: 3.0, p_Number: '从事藏语文教学、科研、编译、新闻广播电视、出版等工作', posts_des: '参公人员', Nature_position: '县级', Job_category: '藏汉翻译专业',Professional: '本科', Degree: '不限', Gender: '2021年高校应届毕业生', other_demand: ''},
+
+
+ {id: 182.0, venue: '那曲市', Department: '巴青县藏语文工作委员会办公室（编译局）', Natposition: 20211182.0, posts_code: 2.0, p_Number: '从事藏语文教学、科研、编译、新闻广播电视、出版等工作', posts_des: '参公人员', Nature_position: '县级', Job_category: '藏汉翻译专业',Professional: '本科', Degree: '不限', Gender: '2021年高校应届毕业生', other_demand: ''},
+
+
+ {id: 183.0, venue: '那曲市', Department: '巴青县申请救助居民家庭经济状况核对中心', Natposition: 20211183.0, posts_code: 1.0, p_Number: '负责城乡居民最低生活保障，特困人员救助供养、临时救助等工作。', posts_des: '参公人员', Nature_position: '县级', Job_category: '计算机类专业',Professional: '本科', Degree: '不限', Gender: '2021年高校应届毕业生', other_demand: ''},
+
+
+ {id: 184.0, venue: '那曲市', Department: '聂荣县纪委监委', Natposition: 20211184.0, posts_code: 2.0, p_Number: '从事全县纪律检查和监察领域相关工作', posts_des: '公务员', Nature_position: '县级', Job_category: '法律、金融、项目工程类专业',Professional: '本科', Degree: '不限', Gender: '2021年高校应届毕业生', other_demand: ''},
+
+
+ {id: 185.0, venue: '那曲市', Department: '聂荣县卫生健康委员会', Natposition: 20211185.0, posts_code: 1.0, p_Number: '从事医疗卫生服务工作', posts_des: '公务员', Nature_position: '县级', Job_category: '公共管理类专业',Professional: '本科', Degree: '不限', Gender: '2021年高校应届毕业生', other_demand: ''},
+
+
+ {id: 186.0, venue: '那曲市', Department: '聂荣县教育局', Natposition: 20211186.0, posts_code: 1.0, p_Number: '从事材料撰写工作', posts_des: '公务员', Nature_position: '县级', Job_category: '文秘类专业',Professional: '本科', Degree: '不限', Gender: '2021年高校应届毕业生', other_demand: ''},
+
+
+ {id: 187.0, venue: '那曲市', Department: '索县县委组织部', Natposition: 20211187.0, posts_code: 5.0, p_Number: '从事基层党建、干部人事和干部档案等工作', posts_des: '公务员', Nature_position: '县级', Job_category: '档案管理类、文秘类、计算机类、马克思主义理论相关专业',Professional: '本科', Degree: '不限', Gender: '2021年高校应届毕业生', other_demand: ''},
+
+
+ {id: 188.0, venue: '阿里地区', Department: '措勤县纪委监委', Natposition: 20211188.0, posts_code: 1.0, p_Number: '从事纪检监察工作', posts_des: '公务员', Nature_position: '县级', Job_category: '文秘、法律类专业',Professional: '本科及以上', Degree: '不限', Gender: '2021年高校应届毕业生', other_demand: ''},
+
+
+ {id: 189.0, venue: '阿里地区', Department: '噶尔县纪委监委', Natposition: 20211189.0, posts_code: 2.0, p_Number: '从事纪检监察工作', posts_des: '公务员', Nature_position: '县级', Job_category: '文秘、法学、计算机专业',Professional: '本科及以上', Degree: '不限', Gender: '2021年高校应届毕业生', other_demand: ''},
+
+
+ {id: 190.0, venue: '阿里地区', Department: '日土县东汝乡人民政府', Natposition: 20211190.0, posts_code: 2.0, p_Number: '执行全乡的社会和经济发展计划、预算，管理本乡内的经济、教育、科技、文化、卫生、体育事业和财政、民政、治安、安全生产等行政工作', posts_des: '公务员', Nature_position: ' 乡镇级', Job_category: '专业不限',Professional: '本科及以上', Degree: '不限', Gender: '2021年高校应届毕业生', other_demand: ''},
+
+
+ {id: 191.0, venue: '阿里地区', Department: '日土县东汝乡人民政府', Natposition: 20211191.0, posts_code: 1.0, p_Number: '执行全乡的社会和经济发展计划、预算，管理本乡内的经济、教育、科技、文化、卫生、体育事业和财政、民政、治安、安全生产等行政工作', posts_des: '公务员', Nature_position: ' 乡镇级', Job_category: '专业不限',Professional: '本科及以上', Degree: '不限', Gender: '仅限服务基层项目人员报考', other_demand: ''},
+
+
+ {id: 192.0, venue: '阿里地区', Department: '札达县纪委监委', Natposition: 20211192.0, posts_code: 1.0, p_Number: '从事纪检监察工作', posts_des: '公务员', Nature_position: '县级', Job_category: '法学、文秘、会计专业',Professional: '本科及以上', Degree: '不限', Gender: '2021年高校应届毕业生', other_demand: ''},
+
+
+ {id: 193.0, venue: '阿里地区', Department: '普兰县口岸管理委员会', Natposition: 20211193.0, posts_code: 1.0, p_Number: '承担普兰口岸大通关建设、文明口岸建设、电子口岸建设任务，分析普兰口岸运行情况，加强预测、预报等工作', posts_des: '公务员', Nature_position: '县级', Job_category: '旅游英语、贸易管理专业',Professional: '本科及以上', Degree: '不限', Gender: '2021年高校应届毕业生', other_demand: ''},
+
+
+ {id: 194.0, venue: '阿里地区', Department: '改则县重点建设工程项目管理中心', Natposition: 20211194.0, posts_code: 1.0, p_Number: '从事项目建设前期工作、组织验收、竣（交）工验收等工作', posts_des: '参公人员', Nature_position: '县级', Job_category: '文秘、工程类专业',Professional: '本科及以上', Degree: '不限', Gender: '2021年高校应届毕业生', other_demand: ''},
+
+
+ {id: 195.0, venue: '阿里地区', Department: '改则县建设工程质量监督站', Natposition: 20211195.0, posts_code: 1.0, p_Number: '对辖区内工程的全过程和工程质量进行质量监督管理等工作', posts_des: '参公人员', Nature_position: '县级', Job_category: '建筑工程类专业',Professional: '本科及以上', Degree: '不限', Gender: '2021年高校应届毕业生', other_demand: ''},
+
+
+ {id: 196.0, venue: '阿里地区', Department: '改则县新型农村社会养老保险管理中心', Natposition: 20211196.0, posts_code: 1.0, p_Number: '从事城乡居民养老保险经办管理服务工作', posts_des: '参公人员', Nature_position: '县级', Job_category: '会计、文秘专业',Professional: '本科及以上', Degree: '不限', Gender: '2021年高校应届毕业生', other_demand: ''},
+
+
+ {id: 197.0, venue: '阿里地区', Department: '革吉县救助居民家庭经济状况核对指导中心', Natposition: 20211197.0, posts_code: 1.0, p_Number: '负责辖区内申请救助家庭经济核对工作，审核辖区内填报申请救助居民家庭经济状况核对信息系统等工作。', posts_des: '参公人员', Nature_position: '县级', Job_category: '专业不限',Professional: '本科及以上', Degree: '不限', Gender: '仅限服务基层项目人员报考', other_demand: ''},
+
+
+ {id: 198.0, venue: '阿里地区', Department: '革吉县不动产登记中心', Natposition: 20211198.0, posts_code: 1.0, p_Number: '承担辖区内各类不动产登记资料的收集整理、数据分析和数据更新、维护等工作，协调处理不动产纠纷等工作', posts_des: '参公人员', Nature_position: '县级', Job_category: '专业不限',Professional: '本科及以上', Degree: '不限', Gender: '2021年高校应届毕业生', other_demand: ''},
+
+
+ {id: 199.0, venue: '阿里地区', Department: '革吉县待遇服务中心', Natposition: 20211199.0, posts_code: 1.0, p_Number: '从事城镇职工和城乡居民基本医疗保险、生育保险的待遇审核、结算等工作', posts_des: '参公人员', Nature_position: '县级', Job_category: '药学专业',Professional: '本科及以上', Degree: '不限', Gender: '2021年高校应届毕业生', other_demand: ''},
+
+
+ {id: 200.0, venue: '阿里地区', Department: '噶尔县国库集中支付中心', Natposition: 20211200.0, posts_code: 1.0, p_Number: '负责辖区内单位部门预算指标和用款额度的控制工作，监督预算的执行', posts_des: '参公人员', Nature_position: '县级', Job_category: '会计学专业',Professional: '本科及以上', Degree: '不限', Gender: '2021年高校应届毕业生', other_demand: ''},
+
+
+ {id: 201.0, venue: '阿里地区', Department: '噶尔县建设工程质量监督站', Natposition: 20211201.0, posts_code: 1.0, p_Number: '对辖区内工程的全过程和工程质量进行质量监督管理等工作', posts_des: '参公人员', Nature_position: '县级', Job_category: '文秘专业',Professional: '本科及以上', Degree: '不限', Gender: '2021年高校应届毕业生', other_demand: ''},
+
+
+ {id: 202.0, venue: '阿里地区', Department: '日土县新型农村社会养老保险管理中心', Natposition: 20211202.0, posts_code: 1.0, p_Number: '从事城乡居民养老保险经办管理服务工作', posts_des: '参公人员', Nature_position: '县级', Job_category: '专业不限',Professional: '本科及以上', Degree: '不限', Gender: '2021年高校应届毕业生', other_demand: ''},
+
+
+ {id: 203.0, venue: '阿里地区', Department: '札达县建设工程质量监督站', Natposition: 20211203.0, posts_code: 1.0, p_Number: '对辖区内工程的全过程和工程质量进行质量监督管理等工作', posts_des: '参公人员', Nature_position: '县级', Job_category: '建筑学专业',Professional: '本科及以上', Degree: '不限', Gender: '2021年高校应届毕业生', other_demand: ''},
+
+
+ {id: 204.0, venue: '阿里地区', Department: '札达县待遇服务中心', Natposition: 20211204.0, posts_code: 1.0, p_Number: '从事城镇职工和城乡居民基本医疗保险、生育保险的待遇审核、结算等工作', posts_des: '参公人员', Nature_position: '县级', Job_category: '会计、文秘专业',Professional: '本科及以上', Degree: '不限', Gender: '2021年高校应届毕业生', other_demand: ''},
+
+
+ {id: 205.0, venue: '阿里地区', Department: '普兰县供销合作社', Natposition: 20211205.0, posts_code: 1.0, p_Number: '从事对重要产品的经营、储备进行组织、协调和管理，落实有关民族贸易政策等工作', posts_des: '参公人员', Nature_position: '县级', Job_category: '专业不限',Professional: '本科及以上', Degree: '不限', Gender: '2021年高校应届毕业生', other_demand: ''}]
+
+	    
+	    
+	    for(i=0;i<xx.length;i++){
+	    	var html="<tr><td>"+
+	    	xx[i].id+"</td><td>"+
+            xx[i].venue+"</td><td>"+
+            xx[i].Department+"</td><td>"+
+            xx[i].Natposition+"</td><td>"+
+            xx[i].posts_code+"</td><td>"+
+            xx[i].p_Number+"</td><td>"+
+            xx[i].posts_des+"</td><td>"+
+            xx[i].Nature_position+"</td><td>"+
+            xx[i].Job_category+"</td><td>"+
+            xx[i].Professional +"</td><td>"+
+            xx[i].Degree +"</td><td>"+
+            xx[i].Gender+"</td><td>"+
+            xx[i].other_demand+"</td></tr>";
+
+	    	$("#example tbody").append(html);
+	    	
+	    }
+	    
+	    $('#example').DataTable( {
+	        dom: 'Bfrtip',
+	        language: {  
+                emptyTable: '没有数据',  
+                loadingRecords: '加载中...',  
+                processing: '查询中...',  
+                search: '搜索【专业、地区等】:',  
+                lengthMenu: '每页 _MENU_ 件',  
+                zeroRecords: '没有数据',  
+                paginate: {  
+                    'first':      '第一页',  
+                    'last':       '最后一页',  
+                    'next':       '下一页',  
+                    'previous':   '上一页'  
+            	},  
+	            info: '第 _PAGE_ 页 / 总 _PAGES_ 页',  
+	            infoEmpty: '没有数据',  
+	            infoFiltered: '(过滤总件数 _MAX_ 条)',
+	        },
+	        
+
+	    } );
+	    
+
+
+	});
+  </script>  
+ </body>  
+</html>  

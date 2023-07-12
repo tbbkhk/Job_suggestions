@@ -1,0 +1,322 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style type="text/css">
+        
+      *{
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+      }
+      body{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          min-height: 100vh;
+      }
+      section{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-wrap: wrap;
+          transform-style: preserve-3d;
+          width: 1100px;
+      }
+      section .card{
+          position: relative;
+          width: 320px;
+          height: 320px;
+          margin: 20px;
+          transform-style: preserve-3d;
+          perspective: 1000px;
+      }
+      section .card .box{
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          transform-style: preserve-3d;
+          transition: 1s ease;
+      }
+      section .card:hover .box{
+          transform: rotateY(180deg);
+      }
+      section .card .box .imgBx{
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+      }
+      section .card .box .imgBx img{
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+      }
+      section .card .box .contentBx{
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: #333;
+          backface-visibility: hidden;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          transform-style: preserve-3d;
+          transform: rotateY(180deg);
+      }
+      section .card .box .contentBx div{
+          transform-style: preserve-3d;
+          padding: 20px;
+          background: linear-gradient(45deg,#fe0061,#ffeb3b);
+          transform: translateZ(100px);
+      }
+      section .card .box .contentBx div h2{
+          color: #fff;
+          font-size: 20px;
+          letter-spacing: 1px;
+      }
+      section .card .box .contentBx div p{
+          color: #fff;
+          font-size: 16px;
+      }
+
+      #Canvas{
+
+        top: 0px;
+        width:1300px;
+        height:1100px;
+        position:absolute;z-index:-2;
+
+      }
+
+      
+    
+    </style>
+</head>
+
+<body >
+    <canvas id="Canvas" >  </canvas>
+
+    <section>
+         
+        <div class="card">
+            <div class="box">
+                <div class="imgBx">
+
+                    <img src="img/12.png" alt="">
+                </div>
+                <div class="contentBx">
+                    <div>
+
+                        <h2>
+                            <a href="./shiye/2023/1.html">2023年区直事业单位公开招聘表</a> 
+                        </h2>
+                        <p>
+                        计划公开招聘3756人，其中区直事业单位566人、教育事业单位1704人、拉萨市事业单位103人、日喀则市事业单位491人、山南市事业单位159人、林芝市事业单位196人、昌都市事业单位146人、那曲市事业单位241人、阿里地区事业单位150人
+                        <a href="./index.html">回到主页</a> 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="box">
+                <div class="imgBx">
+                    <img src="img/14.png" alt="">
+                </div>
+                <div class="contentBx">
+                    <div>
+                        <h2>
+                            <a href="./shiye/2023/2.html">
+                            2023教育事业单位公开招聘表</a> 
+                        </h2>
+                        <p>
+                        计划公开招聘3756人，其中区直事业单位566人、教育事业单位1704人、拉萨市事业单位103人、日喀则市事业单位491人、山南市事业单位159人、林芝市事业单位196人、昌都市事业单位146人、那曲市事业单位241人、阿里地区事业单位150人
+                        <a href="./index.html">回到主页</a> 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="box">
+                <div class="imgBx">
+                    <img src="img/15.png" alt="">
+                </div>
+                <div class="contentBx">
+                    <div>
+                        <h2>
+                           <a href="./shiye/2023/3.html">
+                           拉萨市2023年事业单位</a> 
+                       </h2>
+                        <p>
+                        计划公开招聘3756人，其中区直事业单位566人、教育事业单位1704人、拉萨市事业单位103人、日喀则市事业单位491人、山南市事业单位159人、林芝市事业单位196人、昌都市事业单位146人、那曲市事业单位241人、阿里地区事业单位150人
+                        <a href="./index.html">回到主页</a> 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="box">
+                <div class="imgBx">
+                    <img src="img/16.png" alt="">
+                </div>
+                <div class="contentBx">
+                    <div>
+                        <h2>
+                            <a href="./shiye/2023/4.html">
+                            日喀则市2023年事业单位</a> 
+                        </h2>
+                        <p>
+                        计划公开招聘3756人，其中区直事业单位566人、教育事业单位1704人、拉萨市事业单位103人、日喀则市事业单位491人、山南市事业单位159人、林芝市事业单位196人、昌都市事业单位146人、那曲市事业单位241人、阿里地区事业单位150人
+                        <a href="./index.html">回到主页</a> 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="box">
+                <div class="imgBx">
+                    <img src="img/17.png" alt="">
+                </div>
+                <div class="contentBx">
+                    <div>
+                        <h2>
+                            <a href="./shiye/2023/5.html">
+                            山南市2023年事业单位</a> 
+                      </h2>
+                        <p>
+                        计划公开招聘3756人，其中区直事业单位566人、教育事业单位1704人、拉萨市事业单位103人、日喀则市事业单位491人、山南市事业单位159人、林芝市事业单位196人、昌都市事业单位146人、那曲市事业单位241人、阿里地区事业单位150人
+                        <a href="./index.html">回到主页</a> 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="box">
+                <div class="imgBx">
+                    <img src="img/18.png" alt="">
+                </div>
+                <div class="contentBx">
+                    <div>
+                        <h2><a href="./shiye/2023/6.html">
+                            林芝市2023年事业单位</a>
+                        </h2>
+                        <p>
+                        计划公开招聘3756人，其中区直事业单位566人、教育事业单位1704人、拉萨市事业单位103人、日喀则市事业单位491人、山南市事业单位159人、林芝市事业单位196人、昌都市事业单位146人、那曲市事业单位241人、阿里地区事业单位150人
+                        <a href="./index.html">回到主页</a> 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="box">
+                <div class="imgBx">
+                    <img src="img/11.png" alt="">
+                </div>
+                <div class="contentBx">
+                    <div>
+                        <h2><a href="./shiye/2023/7.html">
+                        昌都市2023年事业单位</a> 
+                        </h2>
+                        <p>
+                        计划公开招聘3756人，其中区直事业单位566人、教育事业单位1704人、拉萨市事业单位103人、日喀则市事业单位491人、山南市事业单位159人、林芝市事业单位196人、昌都市事业单位146人、那曲市事业单位241人、阿里地区事业单位150人
+                        <a href="./index.html">回到主页</a> 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="box">
+                <div class="imgBx">
+                    <img src="img/19.png" alt="">
+                </div>
+                <div class="contentBx">
+                    <div>
+                        <h2><a href="./shiye/2023/8.html">
+                            那曲市2023年事业单位</a> 
+                       </h2>
+                        <p>
+                        计划公开招聘3756人，其中区直事业单位566人、教育事业单位1704人、拉萨市事业单位103人、日喀则市事业单位491人、山南市事业单位159人、林芝市事业单位196人、昌都市事业单位146人、那曲市事业单位241人、阿里地区事业单位150人
+                        <a href="./index.html">回到主页</a> 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="box">
+                <div class="imgBx">
+                    <img src="img/13.png" alt="">
+                </div>
+                <div class="contentBx">
+                    <div>
+
+                        <h2>
+                            <a href="./shiye/2023/9.html">
+                            阿里地区2023年事业单位
+                            </a> 
+                        </h2>
+                        <p>
+                        计划公开招聘3756人，其中区直事业单位566人、教育事业单位1704人、拉萨市事业单位103人、日喀则市事业单位491人、山南市事业单位159人、林芝市事业单位196人、昌都市事业单位146人、那曲市事业单位241人、阿里地区事业单位150人
+                        <a href="./index.html">回到主页</a> 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+</body>
+<script>
+            var c=document.getElementById("Canvas");
+            var ctx=c.getContext("2d");
+                c.width=window.innerWidth;
+                c.height=window.innerHeight;
+//              ctx.fillRect(0,0,100,100);
+//              a,b,c,d分别代表x方向偏移,y方向偏移,宽，高
+            var string1 = "ཀ་ཁ་ག་ང་ཅ་ཆ་ཇ་ཉ་ཏ་ཐ་ད་ན་པ་ཕ་བ་མ་ཙ་ཚ་ཛ་ཝ་ཞ་ཟ་འ་ཡ་ར་ལ་ཤ་ས་ཧ་ཨ་བོད་རང་ཁ་རང་གསོ།";
+                string1.split("");
+            var fontsize=15;
+                columns=c.width/fontsize;
+            var drop = [];
+                    for(var x=0;x<columns;x++)
+                    {
+                        drop[x]=0;
+                    }
+                function drap(){
+                    ctx.fillStyle="rgba(0,0,0,0.07)";
+                    ctx.fillRect(0,0,c.width,c.height);
+                    ctx.fillStyle="#0F0";
+                    ctx.font=fontsize+"px arial";
+                    for(var i=0;i<drop.length;i++){
+                        var text1=string1[Math.floor(Math.random()*string1.length)];
+                        ctx.fillText(text1,i*fontsize,drop[i]*fontsize);
+                        drop[i]++;
+                        if(drop[i]*fontsize>c.height&&Math.random()>0.9){//90%的几率掉落
+                            drop[i]=0;
+                        }
+                    }
+                }
+        setInterval(drap,20);
+        </script>
+</html>

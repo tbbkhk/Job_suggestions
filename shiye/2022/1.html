@@ -1,0 +1,898 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">   
+ <head>  
+  <title> 2022 </title>  
+  <meta charset='utf-8'>
+  <link rel="stylesheet" href="../../css/table.css" />
+  <link rel="stylesheet" href="../../css/buttons.css" />
+  <style>
+  	*{
+  		/*background-image: url();*/
+  		background-color: #000;
+  		color: #FFF; 
+  	}
+  	tbody td{
+  		text-align: center;
+  	}
+  </style>
+ </head>  
+  
+ <body>  
+ 	<h1 style="text-align: center;">2022区事业单位</h1>
+    <a href="../../2022_shiye_.html" style="font-size: 20px;">回到主页</a>
+ 	<table id="example" class="display" role="grid" aria-describedby="example_info">
+ 		<thead>
+            <tr>
+                <th>序号</th>
+                <th>地市</th>
+                <th>单位</th>
+                <th>岗位</th>
+                <th>职位性质</th>
+                <th>人数</th>
+                <th>岗位代码</th>
+                <th>专业要求</th>
+                <th>政治面貌</th>
+                <th>学历要求</th>
+                <th>毕业时间</th>
+                <th>笔试科目</th>
+                <th>是否体检</th>
+                <th>是否面试</th>
+                <th>备注</th>
+                <th>咨询</th>
+                
+
+            </tr>
+        </thead>
+        <tbody>
+            
+        </tbody>
+
+        
+     
+ 	</table>
+ 	
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/jquery.datatables.min.js"/>
+	<script src="../../js/buttons.print.min.js"></script>
+
+ <script> 
+
+$(document).ready(function(){ 
+
+    var xx = [{'id': 1.0, 'unit': '区直', 'Post': '西藏自治区纪委监委', 'Nature_position': '自治区纪检监察信息中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220001.0, 'College_majors': '计算机类或电子信息类', 'Undergraduate_majors': '中共党员', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '是', 'remark': '需要专业测试；需获得计算机国家二级证书', 'consultation': '0891-6364473'},
+
+ {'id': 2.0, 'unit': '区直', 'Post': '西藏自治区纪委监委', 'Nature_position': '自治区纪检监察网络中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220002.0, 'College_majors': '新闻传播学类', 'Undergraduate_majors': '中共党员', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '是', 'remark': '需要专业测试', 'consultation': '0891-6364473'},
+
+ {'id': 3.0, 'unit': '区直', 'Post': '西藏自治区党委巡视办', 'Nature_position': '数据应用中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220003.0, 'College_majors': '计算机科学与技术专业', 'Undergraduate_majors': '中共党员', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '是', 'remark': '需要专业测试', 'consultation': '0891-6364473'},
+
+ {'id': 4.0, 'unit': '区直', 'Post': '西藏自治区党委巡视办', 'Nature_position': '数据应用中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220004.0, 'College_majors': '汉语言文学', 'Undergraduate_majors': '中共党员', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6364473'},
+
+ {'id': 5.0, 'unit': '区直', 'Post': '西藏自治区党委办公厅', 'Nature_position': '文印中心', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202220005.0, 'College_majors': '专业不限', 'Undergraduate_majors': '中共党员', 'Graduate_majors': '硕士研究生及以上', 'political_landscape': '不限', 'Job_code': '——', 'Examination': '是', 'interview': '是', 'remark': '需进行专业测试', 'consultation': '0891-6189956'},
+
+ {'id': 6.0, 'unit': '区直', 'Post': '西藏自治区人大常委会办公厅', 'Nature_position': '西藏人民会堂管理处', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220006.0, 'College_majors': '计算机科学与技术、计算机应用技术、信息安全与管理', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6193775'},
+
+ {'id': 7.0, 'unit': '区直', 'Post': '西藏自治区党委办公厅', 'Nature_position': '文印中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220007.0, 'College_majors': '行政管理', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6193775'},
+
+ {'id': 8.0, 'unit': '区直', 'Post': '西藏自治区党委宣传部', 'Nature_position': '西藏人民出版社', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220008.0, 'College_majors': '文秘', 'Undergraduate_majors': '中共党员', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '是', 'remark': '具备较强公文写作能力的人员', 'consultation': '0891-6372592'},
+
+ {'id': 9.0, 'unit': '区直', 'Post': '西藏自治区党委办公厅', 'Nature_position': '文印中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220009.0, 'College_majors': '艺术学', 'Undergraduate_majors': '中共党员', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6372592'},
+
+ {'id': 10.0, 'unit': '区直', 'Post': '西藏自治区党委宣传部', 'Nature_position': '西藏人民出版社', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220010.0, 'College_majors': '汉语言文学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '是', 'remark': '具备档案管理相关资格证或特长人员', 'consultation': '0891-6372592'},
+
+ {'id': 11.0, 'unit': '区直', 'Post': '西藏自治区党委办公厅', 'Nature_position': '文印中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220011.0, 'College_majors': '印刷出版相关专业', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6372592'},
+
+ {'id': 12.0, 'unit': '区直', 'Post': '西藏自治区党委宣传部', 'Nature_position': '西藏自治区新华书店', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220012.0, 'College_majors': '物流管理', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '限男性，具有相关工作经验者优先', 'consultation': '0891-6372592'},
+
+ {'id': 13.0, 'unit': '区直', 'Post': '西藏自治区党委统战部', 'Nature_position': '研究中心（信息中心）', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220013.0, 'College_majors': '计算机类', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6336771'},
+
+ {'id': 14.0, 'unit': '区直', 'Post': '西藏自治区党委网信办', 'Nature_position': '区互联网评论中心', 'Number': '事业单位', 'Graduation_time': 10.0, 'Academic_requirements': 202220014.0, 'College_majors': '网络空间安全、信息安全、网络工程、数据科学与大数据技术、计算机技术、网络与系统安全、信息与通信工程、新一代人工智能技术与系统、软件工程、密码学科学与技术、人工智能、数字媒体技术等专业', 'Undergraduate_majors': '中共党员', 'Graduate_majors': '硕士研究生及以上', 'political_landscape': '2022年毕业生', 'Job_code': '——', 'Examination': '是', 'interview': '是', 'remark': '学历学位双证齐全', 'consultation': '0891-6591003'},
+
+ {'id': 15.0, 'unit': '区直', 'Post': '西藏自治区党委统战部', 'Nature_position': '研究中心（信息中心）', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202220015.0, 'College_majors': '英语专业', 'Undergraduate_majors': '中共党员', 'Graduate_majors': '硕士研究生及以上', 'political_landscape': '2022年毕业生', 'Job_code': '——', 'Examination': '是', 'interview': '是', 'remark': '学历学位双证齐全；需通过英语专业八级考试或英语三级翻译考试', 'consultation': '0891-6591003'},
+
+ {'id': 16.0, 'unit': '区直', 'Post': '西藏自治区党委网信办', 'Nature_position': '区互联网评论中心', 'Number': '事业单位', 'Graduation_time': 3.0, 'Academic_requirements': 202220016.0, 'College_majors': '中国少数民族语言文学（藏语翻译）', 'Undergraduate_majors': '中共党员', 'Graduate_majors': '硕士研究生及以上', 'political_landscape': '2022年毕业生', 'Job_code': '——', 'Examination': '是', 'interview': '是', 'remark': '学历学位双证齐全', 'consultation': '0891-6591003'},
+
+ {'id': 17.0, 'unit': '区直', 'Post': '中共西藏自治区委员会党校（西藏自治区行政学院）', 'Nature_position': '党史党建教研部教师岗', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220017.0, 'College_majors': '党史党建专业', 'Undergraduate_majors': '不限', 'Graduate_majors': '博士', 'political_landscape': '2022年毕业生', 'Job_code': '——', 'Examination': '是', 'interview': '是', 'remark': '面试增加试讲环节', 'consultation': '0891-6850466'},
+
+ {'id': 18.0, 'unit': '区直', 'Post': '西藏日报社', 'Nature_position': '西藏日报社机关', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220018.0, 'College_majors': '网络与新媒体专业（媒体创意方向）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6322735'},
+
+ {'id': 19.0, 'unit': '区直', 'Post': '中共西藏自治区委员会党校（西藏自治区行政学院）', 'Nature_position': '党史党建教研部教师岗', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220019.0, 'College_majors': '数字媒体艺术专业', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6322735'},
+
+ {'id': 20.0, 'unit': '区直', 'Post': '西藏日报社', 'Nature_position': '西藏日报社机关', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220020.0, 'College_majors': '中国少数民族语言文学专业（藏语言文学）', 'Undergraduate_majors': '不限', 'Graduate_majors': '硕士研究生及以上', 'political_landscape': '不限', 'Job_code': '——', 'Examination': '是', 'interview': '是', 'remark': '需进行汉藏翻译测试', 'consultation': '0891-6322735'},
+
+ {'id': 21.0, 'unit': '区直', 'Post': '中共西藏自治区委员会党校（西藏自治区行政学院）', 'Nature_position': '党史党建教研部教师岗', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220021.0, 'College_majors': '新闻传播学相关专业', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '是', 'remark': '工作地点为昌都记者站；长期需要输入高海拔地区及艰苦边远乡、村开展蹲点采访，工作强度大，招男生。', 'consultation': '0891-6322735'},
+
+ {'id': 22.0, 'unit': '区直', 'Post': '西藏日报社', 'Nature_position': '西藏日报社机关', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220022.0, 'College_majors': '新闻传播学相关专业', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '是', 'remark': '工作地点为日喀则记者站；长期需要输入高海拔地区及艰苦边远乡、村开展蹲点采访，工作强度大，招男生。', 'consultation': '0891-6322735'},
+
+ {'id': 23.0, 'unit': '区直', 'Post': '中共西藏自治区委员会党校（西藏自治区行政学院）', 'Nature_position': '党史党建教研部教师岗', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220023.0, 'College_majors': '新闻传播学相关专业', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '是', 'remark': '工作地点为山南记者站；因长期需要输入高海拔地区及艰苦边远乡、村开展蹲点采访，工作强度大，招男生。', 'consultation': '0891-6322735'},
+
+ {'id': 24.0, 'unit': '区直', 'Post': '西藏日报社', 'Nature_position': '西藏日报社机关', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220024.0, 'College_majors': '汉语言文学、法学或新闻传播学专业', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6322735'},
+
+ {'id': 25.0, 'unit': '区直', 'Post': '中共西藏自治区委员会党校（西藏自治区行政学院）', 'Nature_position': '党史党建教研部教师岗', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220025.0, 'College_majors': '摄影专业', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '是', 'remark': '因长期需要输入高海拔地区及艰苦边远乡、村开展蹲点采访，招男生。', 'consultation': '0891-6322735'},
+
+ {'id': 26.0, 'unit': '区直', 'Post': '西藏日报社', 'Nature_position': '西藏日报社机关', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220026.0, 'College_majors': '印刷设备应用技术       ', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '是', 'remark': '从事印刷设备操作、维护及维修工作，常年需上夜班，招男生。', 'consultation': '0891-6322735'},
+
+ {'id': 27.0, 'unit': '区直', 'Post': '中共西藏自治区委员会党校（西藏自治区行政学院）', 'Nature_position': '党史党建教研部教师岗', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220027.0, 'College_majors': '档案学', 'Undergraduate_majors': '中共党员', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6322735'},
+
+ {'id': 28.0, 'unit': '区直', 'Post': '西藏日报社', 'Nature_position': '西藏日报社机关', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220028.0, 'College_majors': '会计、金融专业', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6322735'},
+
+ {'id': 29.0, 'unit': '区直', 'Post': '中共西藏自治区委员会党校（西藏自治区行政学院）', 'Nature_position': '党史党建教研部教师岗', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220029.0, 'College_majors': '人力资源管理专业', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6322735'},
+
+ {'id': 30.0, 'unit': '区直', 'Post': '西藏日报社', 'Nature_position': '西藏日报社机关', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220030.0, 'College_majors': '汉语言文学专业', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6322735'},
+
+ {'id': 31.0, 'unit': '区直', 'Post': '中共西藏自治区委员会党校（西藏自治区行政学院）', 'Nature_position': '中国西藏新闻网', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220031.0, 'College_majors': '汉语言文学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6322735'},
+
+ {'id': 32.0, 'unit': '区直', 'Post': '西藏日报社', 'Nature_position': '西藏日报社机关', 'Number': '事业单位', 'Graduation_time': 5.0, 'Academic_requirements': 202220032.0, 'College_majors': '新闻传播学相关专业', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '是', 'remark': '因长期需要输入高海拔地区及艰苦边远乡、村开展蹲点采访，根据岗位特殊性，招男生。', 'consultation': '0891-6322735'},
+
+ {'id': 33.0, 'unit': '区直', 'Post': '西藏自治区文学艺术联合会会', 'Nature_position': '西藏美术馆', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220033.0, 'College_majors': '文化产业管理', 'Undergraduate_majors': '不限', 'Graduate_majors': '硕士研究生及以上', 'political_landscape': '不限', 'Job_code': '——', 'Examination': '是', 'interview': '是', 'remark': '有相关展馆工作经验者优先', 'consultation': '0891-6823570'},
+
+ {'id': 34.0, 'unit': '区直', 'Post': '西藏日报社', 'Nature_position': '西藏日报社机关', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220034.0, 'College_majors': '工程项目管理', 'Undergraduate_majors': '不限', 'Graduate_majors': '硕士研究生及以上', 'political_landscape': '不限', 'Job_code': '——', 'Examination': '是', 'interview': '是', 'remark': '有相关展馆工作经验者优先', 'consultation': '0891-6823570'},
+
+ {'id': 35.0, 'unit': '区直', 'Post': '西藏自治区文学艺术联合会会', 'Nature_position': '《邦锦梅朵》编辑部', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220035.0, 'College_majors': '藏学及藏语言文学相关', 'Undergraduate_majors': '不限', 'Graduate_majors': '硕士研究生及以上', 'political_landscape': '不限', 'Job_code': '——', 'Examination': '是', 'interview': '是', 'remark': '有相关编辑工作经验者优先', 'consultation': '0891-6823570'},
+
+ {'id': 36.0, 'unit': '区直', 'Post': '西藏自治区工商业联合会', 'Nature_position': '信息中心（培训中心）', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220036.0, 'College_majors': '新闻传播学类、中国语言文学类', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6394840'},
+
+ {'id': 37.0, 'unit': '区直', 'Post': '西藏自治区残疾人联合会', 'Nature_position': '西藏自治区残疾人康复服务中心（西藏自治区残疾人托养服务中心）', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220037.0, 'College_majors': '假肢矫形器设计与制造、假肢矫形工程', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6959853'},
+
+ {'id': 38.0, 'unit': '区直', 'Post': '西藏自治区粮食和物资储备局', 'Nature_position': ' 拉萨国家粮食储备库', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202220038.0, 'College_majors': '金融', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '是', 'remark': '拉萨国家粮食储备库、格尔木粮食储备中转库为自治区编办1996年确定的差额拨款事业单位，2015年划分为公益二类事业单位。全员参加机关事业保险，退休后由社保部门按规定测算并计发养老金。', 'consultation': '0891-6324145'},
+
+ {'id': 39.0, 'unit': '区直', 'Post': '西藏自治区残疾人联合会', 'Nature_position': '西藏自治区残疾人康复服务中心（西藏自治区残疾人托养服务中心）', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220039.0, 'College_majors': '汉语言文学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6324145'},
+
+ {'id': 40.0, 'unit': '区直', 'Post': '西藏自治区粮食和物资储备局', 'Nature_position': ' 拉萨国家粮食储备库', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220040.0, 'College_majors': '食品科学与工程', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6324145'},
+
+ {'id': 41.0, 'unit': '区直', 'Post': '西藏自治区残疾人联合会', 'Nature_position': '格尔木粮食储备中转站', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202220041.0, 'College_majors': '财会', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6324145'},
+
+ {'id': 42.0, 'unit': '区直', 'Post': '西藏自治区粮食和物资储备局', 'Nature_position': ' 拉萨国家粮食储备库', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202220042.0, 'College_majors': '食品科学与工程', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6324145'},
+
+ {'id': 43.0, 'unit': '区直', 'Post': '西藏自治区教育厅', 'Nature_position': '西藏自治区教材编译中心', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202220043.0, 'College_majors': '藏语言文学', 'Undergraduate_majors': '中共党员', 'Graduate_majors': '全日制本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6829137'},
+
+ {'id': 44.0, 'unit': '区直', 'Post': '西藏自治区粮食和物资储备局', 'Nature_position': ' 拉萨国家粮食储备库', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202220044.0, 'College_majors': '中国少数民族语言文学（藏语翻译）', 'Undergraduate_majors': '中共党员', 'Graduate_majors': '全日制本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6829137'},
+
+ {'id': 45.0, 'unit': '区直', 'Post': '西藏自治区教育厅', 'Nature_position': '西藏自治区教材编译中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220045.0, 'College_majors': '财务会计', 'Undergraduate_majors': '中共党员', 'Graduate_majors': '全日制本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6829137'},
+
+ {'id': 46.0, 'unit': '区直', 'Post': '西藏自治区粮食和物资储备局', 'Nature_position': ' 拉萨国家粮食储备库', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220046.0, 'College_majors': '绘画', 'Undergraduate_majors': '中共党员', 'Graduate_majors': '全日制本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6829137'},
+
+ {'id': 47.0, 'unit': '区直', 'Post': '西藏自治区教育厅', 'Nature_position': '西藏自治区教育科学研究院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220047.0, 'College_majors': '学科教学（地理）', 'Undergraduate_majors': '中共党员', 'Graduate_majors': '硕士研究生及以上', 'political_landscape': '2022年毕业生', 'Job_code': '——', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6599809'},
+
+ {'id': 48.0, 'unit': '区直', 'Post': '西藏自治区科学技术厅', 'Nature_position': '自治区高原生物研究所', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220048.0, 'College_majors': '生态学', 'Undergraduate_majors': '不限', 'Graduate_majors': '硕士研究生及以上', 'political_landscape': '2022年毕业生', 'Job_code': '——', 'Examination': '是', 'interview': '是', 'remark': '硕士期间从事鸟类多样性调查研究，并发相关论文（含毕业论文）。', 'consultation': '0891-6830045'},
+
+ {'id': 49.0, 'unit': '区直', 'Post': '西藏自治区教育厅', 'Nature_position': '西藏自治区教育科学研究院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220049.0, 'College_majors': '生态学', 'Undergraduate_majors': '不限', 'Graduate_majors': '硕士研究生及以上', 'political_landscape': '2022年毕业生', 'Job_code': '——', 'Examination': '是', 'interview': ' 是', 'remark': '硕士期间从事青藏高原植物生态学领域研究。', 'consultation': '0891-6830045'},
+
+ {'id': 50.0, 'unit': '区直', 'Post': '西藏自治区科学技术厅', 'Nature_position': '自治区高原生物研究所', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220050.0, 'College_majors': '微生物学', 'Undergraduate_majors': '不限', 'Graduate_majors': '硕士研究生及以上', 'political_landscape': '2022年毕业生', 'Job_code': '——', 'Examination': '是', 'interview': ' 是', 'remark': '真菌或细菌研究方向，涉及微生物分类、发酵等且具备生物学、信息学基础。', 'consultation': '0891-6830045'},
+
+ {'id': 51.0, 'unit': '区直', 'Post': '西藏自治区人力资源和社会保障厅', 'Nature_position': '信息中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220051.0, 'College_majors': '计算机科学与技术', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6845813'},
+
+ {'id': 52.0, 'unit': '区直', 'Post': '西藏自治区科学技术厅', 'Nature_position': '自治区人事考试中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220052.0, 'College_majors': '计算机科学与技术、软件工程、网络工程', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6845813'},
+
+ {'id': 53.0, 'unit': '区直', 'Post': '西藏自治区自然资源厅', 'Nature_position': '自治区测绘院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220053.0, 'College_majors': '计算机科学与技术、软件工程、网络工程、信息安全', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '是', 'remark': '男性，需赴高海拔和条件艰苦地区开展野外工作', 'consultation': '0891-6810057'},
+
+ {'id': 54.0, 'unit': '区直', 'Post': '西藏自治区科学技术厅', 'Nature_position': '自治区人事考试中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220054.0, 'College_majors': '遥感科学与技术、地理信息科学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '是', 'remark': '男性，需赴高海拔和条件艰苦地区开展野外工作', 'consultation': '0891-6810057'},
+
+ {'id': 55.0, 'unit': '区直', 'Post': '西藏自治区交通运输厅', 'Nature_position': '高等级公路管理局墨竹工卡高速公路养护中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220055.0, 'College_majors': '计算机类', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6832834'},
+
+ {'id': 56.0, 'unit': '区直', 'Post': '西藏自治区科学技术厅', 'Nature_position': '自治区人事考试中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220056.0, 'College_majors': '交通工程', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6832834'},
+
+ {'id': 57.0, 'unit': '区直', 'Post': '西藏自治区交通运输厅', 'Nature_position': '高等级公路管理局墨竹工卡高速公路养护中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220057.0, 'College_majors': '文秘', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6832834'},
+
+ {'id': 58.0, 'unit': '区直', 'Post': '西藏自治区科学技术厅', 'Nature_position': '高等级公路管理局泽当高速公路养护中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220058.0, 'College_majors': '计算机类', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6832834'},
+
+ {'id': 59.0, 'unit': '区直', 'Post': '西藏自治区交通运输厅', 'Nature_position': '高等级公路管理局墨竹工卡高速公路养护中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220059.0, 'College_majors': '交通工程', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6832834'},
+
+ {'id': 60.0, 'unit': '区直', 'Post': '西藏自治区科学技术厅', 'Nature_position': '高等级公路管理局泽当高速公路养护中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220060.0, 'College_majors': '文秘', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6832834'},
+
+ {'id': 61.0, 'unit': '区直', 'Post': '西藏自治区交通运输厅', 'Nature_position': '高等级公路管理局墨竹工卡高速公路养护中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220061.0, 'College_majors': '桥梁隧道工程', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6832834'},
+
+ {'id': 62.0, 'unit': '区直', 'Post': '西藏自治区科学技术厅', 'Nature_position': '高等级公路管理局工布江达高速公路养护中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220062.0, 'College_majors': '计算机类', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6832834'},
+
+ {'id': 63.0, 'unit': '区直', 'Post': '西藏自治区交通运输厅', 'Nature_position': '高等级公路管理局墨竹工卡高速公路养护中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220063.0, 'College_majors': '交通工程', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6832834'},
+
+ {'id': 64.0, 'unit': '区直', 'Post': '西藏自治区科学技术厅', 'Nature_position': '高等级公路管理局工布江达高速公路养护中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220064.0, 'College_majors': '文秘', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6832834'},
+
+ {'id': 65.0, 'unit': '区直', 'Post': '西藏自治区交通运输厅', 'Nature_position': '高等级公路管理局墨竹工卡高速公路养护中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220065.0, 'College_majors': '桥梁隧道工程', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6832834'},
+
+ {'id': 66.0, 'unit': '区直', 'Post': '西藏自治区科学技术厅', 'Nature_position': '高等级公路管理局八一高速公路养护中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220066.0, 'College_majors': '新媒体技术', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6832834'},
+
+ {'id': 67.0, 'unit': '区直', 'Post': '西藏自治区交通运输厅', 'Nature_position': '高等级公路管理局墨竹工卡高速公路养护中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220067.0, 'College_majors': '交通工程', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6832834'},
+
+ {'id': 68.0, 'unit': '区直', 'Post': '西藏自治区科学技术厅', 'Nature_position': '高等级公路管理局八一高速公路养护中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220068.0, 'College_majors': '文秘', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6832834'},
+
+ {'id': 69.0, 'unit': '区直', 'Post': '西藏自治区交通运输厅', 'Nature_position': '高等级公路管理局墨竹工卡高速公路养护中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220069.0, 'College_majors': '桥梁隧道工程', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6832834'},
+
+ {'id': 70.0, 'unit': '区直', 'Post': '西藏自治区科学技术厅', 'Nature_position': '高等级公路管理局日喀则高速公路养护中心 ', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220070.0, 'College_majors': '新媒体技术', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6832834'},
+
+ {'id': 71.0, 'unit': '区直', 'Post': '西藏自治区交通运输厅', 'Nature_position': '高等级公路管理局墨竹工卡高速公路养护中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220071.0, 'College_majors': '交通工程', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6832834'},
+
+ {'id': 72.0, 'unit': '区直', 'Post': '西藏自治区科学技术厅', 'Nature_position': '高等级公路管理局日喀则高速公路养护中心 ', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220072.0, 'College_majors': '文秘', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6832834'},
+
+ {'id': 73.0, 'unit': '区直', 'Post': '西藏自治区交通运输厅', 'Nature_position': '青藏公路分局五道梁公路养护段', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220073.0, 'College_majors': '机械设计制造及其自动化', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6832834'},
+
+ {'id': 74.0, 'unit': '区直', 'Post': '西藏自治区科学技术厅', 'Nature_position': '高等级公路管理局日喀则高速公路养护中心 ', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220074.0, 'College_majors': '网络与新媒体', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6832834'},
+
+ {'id': 75.0, 'unit': '区直', 'Post': '西藏自治区交通运输厅', 'Nature_position': '青藏公路分局五道梁公路养护段', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220075.0, 'College_majors': '保密管理', 'Undergraduate_majors': '中共党员', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6832834'},
+
+ {'id': 76.0, 'unit': '区直', 'Post': '西藏自治区科学技术厅', 'Nature_position': '高等级公路管理局日喀则高速公路养护中心 ', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220076.0, 'College_majors': '工程造价', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6832834'},
+
+ {'id': 77.0, 'unit': '区直', 'Post': '西藏自治区交通运输厅', 'Nature_position': '青藏公路分局五道梁公路养护段', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220077.0, 'College_majors': '工程管理', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6832834'},
+
+ {'id': 78.0, 'unit': '区直', 'Post': '西藏自治区科学技术厅', 'Nature_position': '高等级公路管理局日喀则高速公路养护中心 ', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220078.0, 'College_majors': '机械工程', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6832834'},
+
+ {'id': 79.0, 'unit': '区直', 'Post': '西藏自治区交通运输厅', 'Nature_position': '青藏公路分局五道梁公路养护段', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220079.0, 'College_majors': '桥梁与隧道工程', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6832834'},
+
+ {'id': 80.0, 'unit': '区直', 'Post': '西藏自治区科学技术厅', 'Nature_position': '高等级公路管理局日喀则高速公路养护中心 ', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220080.0, 'College_majors': '地下与隧道工程技术', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6832834'},
+
+ {'id': 81.0, 'unit': '区直', 'Post': '西藏自治区交通运输厅', 'Nature_position': '青藏公路分局五道梁公路养护段', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202220081.0, 'College_majors': '道路养护与管理', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6832834'},
+
+ {'id': 82.0, 'unit': '区直', 'Post': '西藏自治区科学技术厅', 'Nature_position': '高等级公路管理局日喀则高速公路养护中心 ', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202220082.0, 'College_majors': '应用统计学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6832834'},
+
+ {'id': 83.0, 'unit': '区直', 'Post': '西藏自治区交通运输厅', 'Nature_position': '青藏公路分局五道梁公路养护段', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220083.0, 'College_majors': '机械设计制造及其自动化', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6832834'},
+
+ {'id': 84.0, 'unit': '区直', 'Post': '西藏自治区科学技术厅', 'Nature_position': '高等级公路管理局日喀则高速公路养护中心 ', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220084.0, 'College_majors': '计算机系统与维护', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6832834'},
+
+ {'id': 85.0, 'unit': '区直', 'Post': '西藏自治区交通运输厅', 'Nature_position': '青藏公路分局五道梁公路养护段', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220085.0, 'College_majors': '交通工程', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6832834'},
+
+ {'id': 86.0, 'unit': '区直', 'Post': '西藏自治区科学技术厅', 'Nature_position': '青藏公路分局雁石坪公路养护段', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220086.0, 'College_majors': '网络与新媒体', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6832834'},
+
+ {'id': 87.0, 'unit': '区直', 'Post': '西藏自治区交通运输厅', 'Nature_position': '青藏公路分局五道梁公路养护段', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220087.0, 'College_majors': '保密管理', 'Undergraduate_majors': '中共党员', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6832834'},
+
+ {'id': 88.0, 'unit': '区直', 'Post': '西藏自治区科学技术厅', 'Nature_position': '青藏公路分局雁石坪公路养护段', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202220088.0, 'College_majors': '工程造价', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6832834'},
+
+ {'id': 89.0, 'unit': '区直', 'Post': '西藏自治区交通运输厅', 'Nature_position': '青藏公路分局五道梁公路养护段', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220089.0, 'College_majors': '工程管理', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6832834'},
+
+ {'id': 90.0, 'unit': '区直', 'Post': '西藏自治区科学技术厅', 'Nature_position': '青藏公路分局雁石坪公路养护段', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220090.0, 'College_majors': '机械工程', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6832834'},
+
+ {'id': 91.0, 'unit': '区直', 'Post': '西藏自治区交通运输厅', 'Nature_position': '青藏公路分局五道梁公路养护段', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220091.0, 'College_majors': '桥梁与隧道工程', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6832834'},
+
+ {'id': 92.0, 'unit': '区直', 'Post': '西藏自治区科学技术厅', 'Nature_position': '青藏公路分局雁石坪公路养护段', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202220092.0, 'College_majors': '地下与隧道工程技术', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6832834'},
+
+ {'id': 93.0, 'unit': '区直', 'Post': '西藏自治区交通运输厅', 'Nature_position': '青藏公路分局五道梁公路养护段', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220093.0, 'College_majors': '交通工程', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6832834'},
+
+ {'id': 94.0, 'unit': '区直', 'Post': '西藏自治区科学技术厅', 'Nature_position': '青藏公路分局雁石坪公路养护段', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202220094.0, 'College_majors': '道路养护与管理', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6832834'},
+
+ {'id': 95.0, 'unit': '区直', 'Post': '西藏自治区交通运输厅', 'Nature_position': '青藏公路分局五道梁公路养护段', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202220095.0, 'College_majors': '应用统计学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6832834'},
+
+ {'id': 96.0, 'unit': '区直', 'Post': '西藏自治区科学技术厅', 'Nature_position': '青藏公路分局雁石坪公路养护段', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220096.0, 'College_majors': '机械设计制造及其自动化', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6832834'},
+
+ {'id': 97.0, 'unit': '区直', 'Post': '西藏自治区交通运输厅', 'Nature_position': '青藏公路分局五道梁公路养护段', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220097.0, 'College_majors': '计算机系统与维护', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6832834'},
+
+ {'id': 98.0, 'unit': '区直', 'Post': '西藏自治区科学技术厅', 'Nature_position': '青藏公路分局雁石坪公路养护段', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220098.0, 'College_majors': '会计', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6832834'},
+
+ {'id': 99.0, 'unit': '区直', 'Post': '西藏自治区交通运输厅', 'Nature_position': '青藏公路分局五道梁公路养护段', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220099.0, 'College_majors': '交通工程', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6832834'},
+
+ {'id': 100.0, 'unit': '区直', 'Post': '西藏自治区科学技术厅', 'Nature_position': '青藏公路分局安多公路养护段', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220100.0, 'College_majors': '会计', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6832834'},
+
+ {'id': 101.0, 'unit': '区直', 'Post': '西藏自治区交通运输厅', 'Nature_position': '青藏公路分局五道梁公路养护段', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202220101.0, 'College_majors': '网络与新媒体', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6832834'},
+
+ {'id': 102.0, 'unit': '区直', 'Post': '西藏自治区科学技术厅', 'Nature_position': '青藏公路分局安多公路养护段', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202220102.0, 'College_majors': '保密管理', 'Undergraduate_majors': '中共党员', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6832834'},
+
+ {'id': 103.0, 'unit': '区直', 'Post': '西藏自治区交通运输厅', 'Nature_position': '青藏公路分局五道梁公路养护段', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202220103.0, 'College_majors': '工程造价', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6832834'},
+
+ {'id': 104.0, 'unit': '区直', 'Post': '西藏自治区科学技术厅', 'Nature_position': '青藏公路分局安多公路养护段', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202220104.0, 'College_majors': '工程管理', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6832834'},
+
+ {'id': 105.0, 'unit': '区直', 'Post': '西藏自治区交通运输厅', 'Nature_position': '青藏公路分局五道梁公路养护段', 'Number': '事业单位', 'Graduation_time': 3.0, 'Academic_requirements': 202220105.0, 'College_majors': '机械工程', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6832834'},
+
+ {'id': 106.0, 'unit': '区直', 'Post': '西藏自治区科学技术厅', 'Nature_position': '青藏公路分局安多公路养护段', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202220106.0, 'College_majors': '桥梁与隧道工程', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6832834'},
+
+ {'id': 107.0, 'unit': '区直', 'Post': '西藏自治区交通运输厅', 'Nature_position': '青藏公路分局五道梁公路养护段', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202220107.0, 'College_majors': '地下与隧道工程技术', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6832834'},
+
+ {'id': 108.0, 'unit': '区直', 'Post': '西藏自治区科学技术厅', 'Nature_position': '青藏公路分局安多公路养护段', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202220108.0, 'College_majors': '交通工程', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6832834'},
+
+ {'id': 109.0, 'unit': '区直', 'Post': '西藏自治区交通运输厅', 'Nature_position': '青藏公路分局五道梁公路养护段', 'Number': '事业单位', 'Graduation_time': 4.0, 'Academic_requirements': 202220109.0, 'College_majors': '道路养护与管理', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6832834'},
+
+ {'id': 110.0, 'unit': '区直', 'Post': '西藏自治区科学技术厅', 'Nature_position': '青藏公路分局安多公路养护段', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202220110.0, 'College_majors': '应用统计学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6832834'},
+
+ {'id': 111.0, 'unit': '区直', 'Post': '西藏自治区交通运输厅', 'Nature_position': '青藏公路分局五道梁公路养护段', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202220111.0, 'College_majors': '机械设计制造及其自动化', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6832834'},
+
+ {'id': 112.0, 'unit': '区直', 'Post': '西藏自治区科学技术厅', 'Nature_position': '青藏公路分局安多公路养护段', 'Number': '事业单位', 'Graduation_time': 3.0, 'Academic_requirements': 202220112.0, 'College_majors': '计算机系统与维护', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6832834'},
+
+ {'id': 113.0, 'unit': '区直', 'Post': '西藏自治区交通运输厅', 'Nature_position': '青藏公路分局五道梁公路养护段', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202220113.0, 'College_majors': '会计信息管理', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6832834'},
+
+ {'id': 114.0, 'unit': '区直', 'Post': '西藏自治区科学技术厅', 'Nature_position': '青藏公路分局安多公路养护段', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220114.0, 'College_majors': '计算机类', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6832834'},
+
+ {'id': 115.0, 'unit': '区直', 'Post': '西藏自治区交通运输厅', 'Nature_position': '青藏公路分局当雄公路养护段', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220115.0, 'College_majors': '文秘', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6832834'},
+
+ {'id': 116.0, 'unit': '区直', 'Post': '西藏自治区科学技术厅', 'Nature_position': '昌都公路分局昌都公路养护段', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220116.0, 'College_majors': '会计', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6832834'},
+
+ {'id': 117.0, 'unit': '区直', 'Post': '西藏自治区交通运输厅', 'Nature_position': '青藏公路分局当雄公路养护段', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220117.0, 'College_majors': '文秘', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6832834'},
+
+ {'id': 118.0, 'unit': '区直', 'Post': '西藏自治区科学技术厅', 'Nature_position': '昌都公路分局昌都公路养护段', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220118.0, 'College_majors': '机械设计制造及其自动化', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6832834'},
+
+ {'id': 119.0, 'unit': '区直', 'Post': '西藏自治区交通运输厅', 'Nature_position': '昌都公路分局桑多公路养护段', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220119.0, 'College_majors': '会计', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6832834'},
+
+ {'id': 120.0, 'unit': '区直', 'Post': '西藏自治区科学技术厅', 'Nature_position': '昌都公路分局昌都公路养护段', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220120.0, 'College_majors': '文秘', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6832834'},
+
+ {'id': 121.0, 'unit': '区直', 'Post': '西藏自治区交通运输厅', 'Nature_position': '日喀则公路分局曲水公路养护段', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220121.0, 'College_majors': '计算机类', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6832834'},
+
+ {'id': 122.0, 'unit': '区直', 'Post': '西藏自治区科学技术厅', 'Nature_position': '日喀则公路分局聂拉木公路养护段', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220122.0, 'College_majors': '机械设计制造及其自动化', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6832834'},
+
+ {'id': 123.0, 'unit': '区直', 'Post': '西藏自治区交通运输厅', 'Nature_position': '日喀则公路分局曲水公路养护段', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220123.0, 'College_majors': '汉语言文学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6832834'},
+
+ {'id': 124.0, 'unit': '区直', 'Post': '西藏自治区科学技术厅', 'Nature_position': '日喀则公路分局聂拉木公路养护段', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220124.0, 'College_majors': '汉语言文学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6832834'},
+
+ {'id': 125.0, 'unit': '区直', 'Post': '西藏自治区交通运输厅', 'Nature_position': '林芝公路分局工布江达公路养护段', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220125.0, 'College_majors': '计算机类', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6832834'},
+
+ {'id': 126.0, 'unit': '区直', 'Post': '西藏自治区科学技术厅', 'Nature_position': '林芝公路分局墨竹工卡公路养护段', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220126.0, 'College_majors': '新媒体技术', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6832834'},
+
+ {'id': 127.0, 'unit': '区直', 'Post': '西藏自治区交通运输厅', 'Nature_position': '林芝公路分局扎木机械化养护队', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220127.0, 'College_majors': '道路桥梁工程', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6832834'},
+
+ {'id': 128.0, 'unit': '区直', 'Post': '西藏自治区科学技术厅', 'Nature_position': '林芝公路分局八一公路养护段', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220128.0, 'College_majors': '新媒体技术', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6832834'},
+
+ {'id': 129.0, 'unit': '区直', 'Post': '西藏自治区水利厅', 'Nature_position': '西藏自治区水利电力规划勘测设计研究院（测绘处）', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220129.0, 'College_majors': '测绘工程', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6385527'},
+
+ {'id': 130.0, 'unit': '区直', 'Post': '西藏自治区科学技术厅', 'Nature_position': '西藏自治区水利电力规划勘测设计研究院水工处', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220130.0, 'College_majors': '水利水电工程或农业水利工程', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6385527'},
+
+ {'id': 131.0, 'unit': '区直', 'Post': '西藏自治区水利厅', 'Nature_position': '西藏自治区水利电力规划勘测设计研究院计划经营处', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220131.0, 'College_majors': '工程管理', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6385527'},
+
+ {'id': 132.0, 'unit': '区直', 'Post': '西藏自治区科学技术厅', 'Nature_position': '西藏自治区水利电力规划勘测设计研究院水文环评水保处', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220132.0, 'College_majors': '水文与水资源工程', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6385527'},
+
+ {'id': 133.0, 'unit': '区直', 'Post': '西藏自治区水利厅', 'Nature_position': '西藏自治区水利电力规划勘测设计研究院计划经营处', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220133.0, 'College_majors': '土木工程', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6385527'},
+
+ {'id': 134.0, 'unit': '区直', 'Post': '西藏自治区科学技术厅', 'Nature_position': '西藏自治区水文水资源勘测局林芝水文水资源分局工布江达水文站', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220134.0, 'College_majors': '水文与水资源工程', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '1.需从事野外测量工作，劳动强度大，限男性；2.工作地点在林芝市工布江达县', 'consultation': '0891-6385527'},
+
+ {'id': 135.0, 'unit': '区直', 'Post': '西藏自治区水利厅', 'Nature_position': '西藏自治区水文水资源勘测局林芝水文水资源分局波密水文站', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220135.0, 'College_majors': '水利水电工程', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '工作地点：林芝市波密县波密水文站', 'consultation': '0891-6385527'},
+
+ {'id': 136.0, 'unit': '区直', 'Post': '西藏自治区科学技术厅', 'Nature_position': '西藏自治区水文水资源勘测局林芝水文水资源分局综合科', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220136.0, 'College_majors': '汉语言文学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6385527'},
+
+ {'id': 137.0, 'unit': '区直', 'Post': '西藏自治区水利厅', 'Nature_position': '西藏自治区水文水资源勘测局昌都水文水资源分局洛隆水文站', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220137.0, 'College_majors': '水文与水资源工程', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '工作地点：昌都市洛隆县洛隆水文测站', 'consultation': '0891-6385527'},
+
+ {'id': 138.0, 'unit': '区直', 'Post': '西藏自治区科学技术厅', 'Nature_position': '西藏自治区水文水资源勘测局昌都水文水资源分局嘉玉桥水文站', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220138.0, 'College_majors': '水文与水资源工程', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '工作地点：昌都市洛隆县马利镇嘉玉桥水文站', 'consultation': '0891-6385527'},
+
+ {'id': 139.0, 'unit': '区直', 'Post': '西藏自治区水利厅', 'Nature_position': '西藏自治区水文水资源勘测局阿里水文水资源分局综合科', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220139.0, 'College_majors': '汉语言文学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6385527'},
+
+ {'id': 140.0, 'unit': '区直', 'Post': '西藏自治区科学技术厅', 'Nature_position': '西藏自治区水文水资源勘测局昌都水文水资源分局嘉玉桥水文站', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220140.0, 'College_majors': '会计学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6385527'},
+
+ {'id': 141.0, 'unit': '区直', 'Post': '西藏自治区水利厅', 'Nature_position': '西藏自治区水文水资源勘测局那曲水文水资源分局那曲水文站', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220141.0, 'College_majors': '水文与水资源工程', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '工作地点：那曲市色尼区那曲水文站', 'consultation': '0891-6385527'},
+
+ {'id': 142.0, 'unit': '区直', 'Post': '西藏自治区科学技术厅', 'Nature_position': '西藏自治区水文水资源勘测局昌都水文水资源分局嘉玉桥水文站', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220142.0, 'College_majors': '水利水电工程', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '工作地点：那曲市色尼区那曲水文站', 'consultation': '0891-6385527'},
+
+ {'id': 143.0, 'unit': '区直', 'Post': '自治区文化厅', 'Nature_position': '西藏自治区藏剧团  ', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220143.0, 'College_majors': '音乐表演 （笛子、竹笛）', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '是', 'remark': '竹笛演奏员，具有一定的音乐理论水平和熟练的视唱能力，演奏水平达到专业乐队器乐合奏水平，并且能够独奏一首国内较有影响的曲目：在达到以上要求的基础上兼任其他乐器演奏能力及音乐写作者优先。面试加试专业水平能力测试。（应届毕业生优先）', 'consultation': '0891-6409632'},
+
+ {'id': 144.0, 'unit': '区直', 'Post': '西藏自治区科学技术厅', 'Nature_position': '西藏自治区水文水资源勘测局昌都水文水资源分局嘉玉桥水文站', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220144.0, 'College_majors': '音乐表演（大提琴演奏）', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '是', 'remark': '具有一定的音乐理论水平和熟练的视唱能力，大提琴演奏水平达到专业乐队器乐合奏水平，并且能够独奏一首中外较有影响的曲目：在达到以上要求的基础上兼任其他乐器演奏能力及音乐写作者优先。面试加试专业水平能力测试。（应届毕业生优先）', 'consultation': '0891-6409632'},
+
+ {'id': 145.0, 'unit': '区直', 'Post': '自治区文化厅', 'Nature_position': '西藏自治区藏剧团  ', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220145.0, 'College_majors': '音乐表演（钢琴伴奏）', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '是', 'remark': '具有一定的音乐理论水平和熟练的视唱能力，钢琴演奏水平达到舞蹈基训和民间舞的伴奏水平，具有一定的歌曲、乐器独奏的即兴伴奏能力，并且能够弹奏一首国内外较有影响的曲目：在达到以上要求的基础上兼任其他乐器演奏能力及音乐写作者优先。面试加试专业水平能力测试。（应届毕业生优先）', 'consultation': '0891-6409632'},
+
+ {'id': 146.0, 'unit': '区直', 'Post': '西藏自治区科学技术厅', 'Nature_position': '西藏自治区水文水资源勘测局昌都水文水资源分局嘉玉桥水文站', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220146.0, 'College_majors': '音乐表演（独唱）', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '是', 'remark': '具有一定的音乐理论知识和作曲基础知识，独立完成电脑音乐制作及编曲、完成人声、乐器等录音，具备缩混、母带处理能力，并且能够担任大小型文艺演出的独唱任务。面试加试专业水平能力测试。（应届毕业生优先）', 'consultation': '0891-6409632'},
+
+ {'id': 147.0, 'unit': '区直', 'Post': '自治区文化厅', 'Nature_position': '西藏自治区藏剧团  ', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202220147.0, 'College_majors': '舞蹈表演', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '是', 'remark': '具有一定的舞蹈专业理论水平和扎实的基本功，能够基本掌握中国各民族的民间舞蹈，能在省级级别的大小型剧节目中承担群舞及领舞，并在指定的音乐能够即兴表演；达到以上要求的基础上能掌握简单的藏戏唱腔和具备较好的嗓音条件者优先。面试加试专业水平能力测试。（应届毕业生优先）', 'consultation': '0891-6409632'},
+
+ {'id': 148.0, 'unit': '区直', 'Post': '西藏自治区科学技术厅', 'Nature_position': '西藏自治区歌舞团', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220148.0, 'College_majors': '单簧管', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '是', 'remark': '测试专业演奏专业', 'consultation': '0891-6409632'},
+
+ {'id': 149.0, 'unit': '区直', 'Post': '自治区文化厅', 'Nature_position': '西藏自治区藏剧团  ', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220149.0, 'College_majors': '长笛', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '是', 'remark': '测试专业演奏专业', 'consultation': '0891-6409632'},
+
+ {'id': 150.0, 'unit': '区直', 'Post': '西藏自治区科学技术厅', 'Nature_position': '西藏自治区歌舞团', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220150.0, 'College_majors': '声乐表演', 'Undergraduate_majors': '不限', 'Graduate_majors': '硕士研究生及以上', 'political_landscape': '不限', 'Job_code': '——', 'Examination': '是', 'interview': '是', 'remark': '测试专业演奏专业（男高音）', 'consultation': '0891-6409632'},
+
+ {'id': 151.0, 'unit': '区直', 'Post': '自治区文化厅', 'Nature_position': '西藏自治区藏剧团  ', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220151.0, 'College_majors': '网络与新媒体', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '是', 'remark': '具备一定的文学功底，学生干部、应届毕业生优先。面试加试专业水平能力测试。', 'consultation': '0891-6409632'},
+
+ {'id': 152.0, 'unit': '区直', 'Post': '西藏自治区文物局', 'Nature_position': '西藏自治区布达拉宫管理处', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220152.0, 'College_majors': '应用化学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6816618'},
+
+ {'id': 153.0, 'unit': '区直', 'Post': '自治区文化厅', 'Nature_position': '西藏自治区罗布林卡管理处', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220153.0, 'College_majors': '广播电视学', 'Undergraduate_majors': '中共党员或共青团员', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6816618'},
+
+ {'id': 154.0, 'unit': '区直', 'Post': '西藏自治区文物局', 'Nature_position': '西藏博物馆', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220154.0, 'College_majors': '安全防范工程', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6816618'},
+
+ {'id': 155.0, 'unit': '区直', 'Post': '西藏自治区卫生健康委', 'Nature_position': '西藏自治区人民医院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220155.0, 'College_majors': '专业不限', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '是', 'remark': '具有相关工作经验', 'consultation': '0891-6371323'},
+
+ {'id': 156.0, 'unit': '区直', 'Post': '西藏自治区文物局', 'Nature_position': '西藏博物馆', 'Number': '事业单位', 'Graduation_time': 3.0, 'Academic_requirements': 202220156.0, 'College_majors': '专业不限', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '是', 'remark': '具有相关工作经验', 'consultation': '0891-6371323'},
+
+ {'id': 157.0, 'unit': '区直', 'Post': '西藏自治区卫生健康委', 'Nature_position': '西藏自治区人民医院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220157.0, 'College_majors': '预防医学（西医）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '医疗卫生类(E类)—公共卫生管理', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6371323'},
+
+ {'id': 158.0, 'unit': '区直', 'Post': '西藏自治区文物局', 'Nature_position': '西藏博物馆', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220158.0, 'College_majors': '医学影像学（西医，硕士研究生为影像与核医学放射医学方向）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—医学技术', 'Examination': '是', 'interview': '是', 'remark': '具备相应毕业证书、学位证书。具有住院医师规范化培训合格证书、执业医师资格证书优先。', 'consultation': '0891-6371323'},
+
+ {'id': 159.0, 'unit': '区直', 'Post': '西藏自治区卫生健康委', 'Nature_position': '西藏自治区人民医院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220159.0, 'College_majors': '医学影像学（西医，硕士研究生为医学影像与核医学超声医学方向）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—医学技术', 'Examination': '是', 'interview': '是', 'remark': '具备相应毕业证书、学位证书。具有住院医师规范化培训合格证书、执业医师资格证书优先。', 'consultation': '0891-6371323'},
+
+ {'id': 160.0, 'unit': '区直', 'Post': '西藏自治区文物局', 'Nature_position': '西藏博物馆', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220160.0, 'College_majors': '医学影像学（西医，硕士研究生为医学影像与核医学超声医学方向）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—医学技术', 'Examination': '是', 'interview': '是', 'remark': '具备相应毕业证书、学位证书。具有住院医师规范化培训合格证书、执业医师资格证书优先。', 'consultation': '0891-6371323'},
+
+ {'id': 161.0, 'unit': '区直', 'Post': '西藏自治区卫生健康委', 'Nature_position': '西藏自治区人民医院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220161.0, 'College_majors': '医学影像学（西医）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—医学技术', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6371323'},
+
+ {'id': 162.0, 'unit': '区直', 'Post': '西藏自治区文物局', 'Nature_position': '西藏博物馆', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220162.0, 'College_majors': '医学物理/物理类/控制科学与工程类/核科学与技术类/生物医学工程', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '是', 'remark': '英语（CET）4级以上。', 'consultation': '0891-6371323'},
+
+ {'id': 163.0, 'unit': '区直', 'Post': '西藏自治区卫生健康委', 'Nature_position': '西藏自治区人民医院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220163.0, 'College_majors': '医学检验技术（西医）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—医学技术', 'Examination': '是', 'interview': '是', 'remark': '具备相应毕业证书、学位证书。具有住院医师规范化培训合格证书、执业医师资格证书优先。', 'consultation': '0891-6371323'},
+
+ {'id': 164.0, 'unit': '区直', 'Post': '西藏自治区文物局', 'Nature_position': '西藏博物馆', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220164.0, 'College_majors': '信息工程', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6371323'},
+
+ {'id': 165.0, 'unit': '区直', 'Post': '西藏自治区卫生健康委', 'Nature_position': '西藏自治区人民医院', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202220165.0, 'College_majors': '外科学（西医，神经外科方向）', 'Undergraduate_majors': '不限', 'Graduate_majors': '硕士研究生', 'political_landscape': '2022年毕业生', 'Job_code': '——', 'Examination': '是', 'interview': '是', 'remark': '具备相应毕业证书、学位证书、住院医师规范化培训合格证书、执业医师资格证书。', 'consultation': '0891-6371323'},
+
+ {'id': 166.0, 'unit': '区直', 'Post': '西藏自治区文物局', 'Nature_position': '西藏博物馆', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220166.0, 'College_majors': '外科学（西医，骨科学方向）', 'Undergraduate_majors': '不限', 'Graduate_majors': '硕士研究生', 'political_landscape': '2022年毕业生', 'Job_code': '——', 'Examination': '是', 'interview': '是', 'remark': '具备相应毕业证书、学位证书、住院医师规范化培训合格证书、执业医师资格证书。', 'consultation': '0891-6371323'},
+
+ {'id': 167.0, 'unit': '区直', 'Post': '西藏自治区卫生健康委', 'Nature_position': '西藏自治区人民医院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220167.0, 'College_majors': '听力与言语康复学（西医）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—医学技术', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6371323'},
+
+ {'id': 168.0, 'unit': '区直', 'Post': '西藏自治区文物局', 'Nature_position': '西藏博物馆', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220168.0, 'College_majors': '食品卫生与营养学（西医）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—公共卫生管理', 'Examination': '是', 'interview': '是', 'remark': '具备营养医师资格证。', 'consultation': '0891-6371323'},
+
+ {'id': 169.0, 'unit': '区直', 'Post': '西藏自治区卫生健康委', 'Nature_position': '西藏自治区人民医院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220169.0, 'College_majors': '食品卫生与营养学（西医）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—公共卫生管理', 'Examination': '是', 'interview': '是', 'remark': '具备营养医师资格证。', 'consultation': '0891-6371323'},
+
+ {'id': 170.0, 'unit': '区直', 'Post': '西藏自治区文物局', 'Nature_position': '西藏博物馆', 'Number': '事业单位', 'Graduation_time': 3.0, 'Academic_requirements': 202220170.0, 'College_majors': '生物医学工程/临床工程/医学工程/机械/电子类等相关专业', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6371323'},
+
+ {'id': 171.0, 'unit': '区直', 'Post': '西藏自治区卫生健康委', 'Nature_position': '西藏自治区人民医院', 'Number': '事业单位', 'Graduation_time': 4.0, 'Academic_requirements': 202220171.0, 'College_majors': '生物医学工程/临床工程/医学工程/机械/电子类等相关专业', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '是', 'remark': '具备医疗设备售后服务经验优先', 'consultation': '0891-6371323'},
+
+ {'id': 172.0, 'unit': '区直', 'Post': '西藏自治区文物局', 'Nature_position': '西藏博物馆', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202220172.0, 'College_majors': '生理学/分子生物学/生物信息/遗传学/免疫学（西医）', 'Undergraduate_majors': '不限', 'Graduate_majors': '学术型硕士研究生及以上', 'political_landscape': '不限', 'Job_code': '——', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6371323'},
+
+ {'id': 173.0, 'unit': '区直', 'Post': '西藏自治区卫生健康委', 'Nature_position': '西藏自治区人民医院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220173.0, 'College_majors': '神经病学（西医，神经电生理方向）', 'Undergraduate_majors': '不限', 'Graduate_majors': '硕士研究生', 'political_landscape': '2022年毕业生', 'Job_code': '——', 'Examination': '是', 'interview': '是', 'remark': '具备相应毕业证书、学位证书、住院医师规范化培训合格证书、执业医师资格证书。', 'consultation': '0891-6371323'},
+
+ {'id': 174.0, 'unit': '区直', 'Post': '西藏自治区文物局', 'Nature_position': '西藏博物馆', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220174.0, 'College_majors': '内科学（西医，心血管病或呼吸系病方向）', 'Undergraduate_majors': '不限', 'Graduate_majors': '硕士研究生及以上', 'political_landscape': '2022年毕业生', 'Job_code': '——', 'Examination': '是', 'interview': '是', 'remark': '具备相应毕业证书、学位证书、住院医师规范化培训合格证书、执业医师资格证书。', 'consultation': '0891-6371323'},
+
+ {'id': 175.0, 'unit': '区直', 'Post': '西藏自治区卫生健康委', 'Nature_position': '西藏自治区人民医院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220175.0, 'College_majors': '内科学（西医，心血管病方向）', 'Undergraduate_majors': '不限', 'Graduate_majors': '硕士研究生', 'political_landscape': '2022年毕业生', 'Job_code': '——', 'Examination': '是', 'interview': '是', 'remark': '具备相应毕业证书、学位证书、住院医师规范化培训合格证书、执业医师资格证书。', 'consultation': '0891-6371323'},
+
+ {'id': 176.0, 'unit': '区直', 'Post': '西藏自治区文物局', 'Nature_position': '西藏博物馆', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220176.0, 'College_majors': '流行病与卫生统计学（西医）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '医疗卫生类(E类)—公共卫生管理', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6371323'},
+
+ {'id': 177.0, 'unit': '区直', 'Post': '西藏自治区卫生健康委', 'Nature_position': '西藏自治区人民医院', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202220177.0, 'College_majors': '临床医学（西医，硕士研究生为重症医学方向）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '是', 'remark': '具备相应毕业证书、学位证书。具有住院医师规范化培训合格证书、执业医师资格证书优先。', 'consultation': '0891-6371323'},
+
+ {'id': 178.0, 'unit': '区直', 'Post': '西藏自治区文物局', 'Nature_position': '西藏博物馆', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220178.0, 'College_majors': '临床医学（西医，硕士研究生为外科学整形外科方向）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '是', 'remark': '具备相应毕业证书、学位证书。具有住院医师规范化培训合格证书、执业医师资格证书优先。', 'consultation': '0891-6371323'},
+
+ {'id': 179.0, 'unit': '区直', 'Post': '西藏自治区卫生健康委', 'Nature_position': '西藏自治区人民医院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220179.0, 'College_majors': '临床医学（西医，硕士研究生为外科学心胸外科方向）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '是', 'remark': '具备相应毕业证书、学位证书。具有住院医师规范化培训合格证书、执业医师资格证书优先。', 'consultation': '0891-6371323'},
+
+ {'id': 180.0, 'unit': '区直', 'Post': '西藏自治区文物局', 'Nature_position': '西藏博物馆', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220180.0, 'College_majors': '临床医学（西医，硕士研究生为外科学神经外科方向）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '是', 'remark': '具备相应毕业证书、学位证书。具有住院医师规范化培训合格证书、执业医师资格证书优先。', 'consultation': '0891-6371323'},
+
+ {'id': 181.0, 'unit': '区直', 'Post': '西藏自治区卫生健康委', 'Nature_position': '西藏自治区人民医院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220181.0, 'College_majors': '临床医学（西医，硕士研究生为外科学普外方向）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '是', 'remark': '具备相应毕业证书、学位证书。具有住院医师规范化培训合格证书、执业医师资格证书优先。', 'consultation': '0891-6371323'},
+
+ {'id': 182.0, 'unit': '区直', 'Post': '西藏自治区文物局', 'Nature_position': '西藏博物馆', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220182.0, 'College_majors': '临床医学（西医，硕士研究生为外科学泌尿外科方向）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '是', 'remark': '具备相应毕业证书、学位证书。具有住院医师规范化培训合格证书、执业医师资格证书优先。', 'consultation': '0891-6371323'},
+
+ {'id': 183.0, 'unit': '区直', 'Post': '西藏自治区卫生健康委', 'Nature_position': '西藏自治区人民医院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220183.0, 'College_majors': '临床医学（西医，硕士研究生为外科学骨外方向）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '是', 'remark': '具备相应毕业证书、学位证书。具有住院医师规范化培训合格证书、执业医师资格证书优先。', 'consultation': '0891-6371323'},
+
+ {'id': 184.0, 'unit': '区直', 'Post': '西藏自治区文物局', 'Nature_position': '西藏博物馆', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220184.0, 'College_majors': '临床医学（西医，硕士研究生为神经病学方向）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '是', 'remark': '具备相应毕业证书、学位证书。具有住院医师规范化培训合格证书、执业医师资格证书优先。', 'consultation': '0891-6371323'},
+
+ {'id': 185.0, 'unit': '区直', 'Post': '西藏自治区卫生健康委', 'Nature_position': '西藏自治区人民医院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220185.0, 'College_majors': '临床医学（西医，硕士研究生为皮肤病与性病学方向）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '是', 'remark': '具备相应毕业证书、学位证书。具有住院医师规范化培训合格证书、执业医师资格证书优先。', 'consultation': '0891-6371323'},
+
+ {'id': 186.0, 'unit': '区直', 'Post': '西藏自治区文物局', 'Nature_position': '西藏博物馆', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220186.0, 'College_majors': '临床医学（西医，硕士研究生为皮肤病与性病学方向）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '是', 'remark': '具备相应毕业证书、学位证书。具有住院医师规范化培训合格证书、执业医师资格证书优先。', 'consultation': '0891-6371323'},
+
+ {'id': 187.0, 'unit': '区直', 'Post': '西藏自治区卫生健康委', 'Nature_position': '西藏自治区人民医院', 'Number': '事业单位', 'Graduation_time': 3.0, 'Academic_requirements': 202220187.0, 'College_majors': '临床医学（西医，硕士研究生为内科学心血管病方向）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '是', 'remark': '具备相应毕业证书、学位证书。具有住院医师规范化培训合格证书、执业医师资格证书优先。', 'consultation': '0891-6371323'},
+
+ {'id': 188.0, 'unit': '区直', 'Post': '西藏自治区文物局', 'Nature_position': '西藏博物馆', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220188.0, 'College_majors': '临床医学（西医，硕士研究生为内科学消化系病方向）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '是', 'remark': '具备相应毕业证书、学位证书。具有住院医师规范化培训合格证书、执业医师资格证书优先。', 'consultation': '0891-6371323'},
+
+ {'id': 189.0, 'unit': '区直', 'Post': '西藏自治区卫生健康委', 'Nature_position': '西藏自治区人民医院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220189.0, 'College_majors': '临床医学（西医，硕士研究生为内科学肾脏病学方向）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '是', 'remark': '具备相应毕业证书、学位证书。具有住院医师规范化培训合格证书、执业医师资格证书优先。', 'consultation': '0891-6371323'},
+
+ {'id': 190.0, 'unit': '区直', 'Post': '西藏自治区文物局', 'Nature_position': '西藏博物馆', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220190.0, 'College_majors': '临床医学（西医，硕士研究生为内科学肾脏病学方向）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '是', 'remark': '具备相应毕业证书、学位证书。具有住院医师规范化培训合格证书、执业医师资格证书优先。', 'consultation': '0891-6371323'},
+
+ {'id': 191.0, 'unit': '区直', 'Post': '西藏自治区卫生健康委', 'Nature_position': '西藏自治区人民医院', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202220191.0, 'College_majors': '临床医学（西医，硕士研究生为内科学呼吸系病方向）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '是', 'remark': '具备相应毕业证书、学位证书。具有住院医师规范化培训合格证书、执业医师资格证书优先。', 'consultation': '0891-6371323'},
+
+ {'id': 192.0, 'unit': '区直', 'Post': '西藏自治区文物局', 'Nature_position': '西藏博物馆', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202220192.0, 'College_majors': '临床医学（西医，硕士研究生为内科学呼吸系病方向）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '是', 'remark': '具备相应毕业证书、学位证书。具有住院医师规范化培训合格证书、执业医师资格证书优先。', 'consultation': '0891-6371323'},
+
+ {'id': 193.0, 'unit': '区直', 'Post': '西藏自治区卫生健康委', 'Nature_position': '西藏自治区人民医院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220193.0, 'College_majors': '临床医学（西医，硕士研究生为内科学风湿病方向)', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '是', 'remark': '具备相应毕业证书、学位证书。具有住院医师规范化培训合格证书、执业医师资格证书优先。', 'consultation': '0891-6371323'},
+
+ {'id': 194.0, 'unit': '区直', 'Post': '西藏自治区文物局', 'Nature_position': '西藏博物馆', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220194.0, 'College_majors': '临床医学（西医，硕士研究生为内科学方向）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '是', 'remark': '具备相应毕业证书、学位证书。具有住院医师规范化培训合格证书、执业医师资格证书优先。', 'consultation': '0891-6371323'},
+
+ {'id': 195.0, 'unit': '区直', 'Post': '西藏自治区卫生健康委', 'Nature_position': '西藏自治区人民医院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220195.0, 'College_majors': '临床医学（西医，硕士研究生为内科学方向）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '是', 'remark': '具备相应毕业证书、学位证书。具有住院医师规范化培训合格证书、执业医师资格证书优先。', 'consultation': '0891-6371323'},
+
+ {'id': 196.0, 'unit': '区直', 'Post': '西藏自治区文物局', 'Nature_position': '西藏博物馆', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220196.0, 'College_majors': '临床医学（西医，硕士研究生为内分泌与代谢病方向）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '是', 'remark': '具备相应毕业证书、学位证书。具有住院医师规范化培训合格证书、执业医师资格证书优先。', 'consultation': '0891-6371323'},
+
+ {'id': 197.0, 'unit': '区直', 'Post': '西藏自治区卫生健康委', 'Nature_position': '西藏自治区人民医院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220197.0, 'College_majors': '临床医学（西医，硕士研究生为老年医学方向）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '是', 'remark': '具备相应毕业证书、学位证书。具有住院医师规范化培训合格证书、执业医师资格证书优先。', 'consultation': '0891-6371323'},
+
+ {'id': 198.0, 'unit': '区直', 'Post': '西藏自治区文物局', 'Nature_position': '西藏博物馆', 'Number': '事业单位', 'Graduation_time': 3.0, 'Academic_requirements': 202220198.0, 'College_majors': '临床医学（西医，硕士研究生为急诊医学方向）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '是', 'remark': '具备相应毕业证书、学位证书。具有住院医师规范化培训合格证书、执业医师资格证书优先。', 'consultation': '0891-6371323'},
+
+ {'id': 199.0, 'unit': '区直', 'Post': '西藏自治区卫生健康委', 'Nature_position': '西藏自治区人民医院', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202220199.0, 'College_majors': '临床医学（西医，硕士研究生为妇产科学方向）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '是', 'remark': '具备相应毕业证书、学位证书。具有住院医师规范化培训合格证书、执业医师资格证书优先。', 'consultation': '0891-6371323'},
+
+ {'id': 200.0, 'unit': '区直', 'Post': '西藏自治区文物局', 'Nature_position': '西藏博物馆', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202220200.0, 'College_majors': '临床医学（西医，硕士研究生为妇产科学方向）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '是', 'remark': '具备相应毕业证书、学位证书。具有住院医师规范化培训合格证书、执业医师资格证书优先。', 'consultation': '0891-6371323'},
+
+ {'id': 201.0, 'unit': '区直', 'Post': '西藏自治区卫生健康委', 'Nature_position': '西藏自治区人民医院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220201.0, 'College_majors': '临床医学（西医，硕士研究生为病理学方向）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '是', 'remark': '具备相应毕业证书、学位证书。具有住院医师规范化培训合格证书、执业医师资格证书优先。', 'consultation': '0891-6371323'},
+
+ {'id': 202.0, 'unit': '区直', 'Post': '西藏自治区文物局', 'Nature_position': '西藏博物馆', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202220202.0, 'College_majors': '临床医学（西医，全科医学）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '是', 'remark': '具备相应毕业证书、学位证书。具有住院医师规范化培训合格证书、执业医师资格证书优先。', 'consultation': '0891-6371323'},
+
+ {'id': 203.0, 'unit': '区直', 'Post': '西藏自治区卫生健康委', 'Nature_position': '西藏自治区人民医院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220203.0, 'College_majors': '口腔医学（西医，硕士研究生为口腔修复方向）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '是', 'remark': '具备相应毕业证书、学位证书。具有住院医师规范化培训合格证书、执业医师资格证书优先。', 'consultation': '0891-6371323'},
+
+ {'id': 204.0, 'unit': '区直', 'Post': '西藏自治区文物局', 'Nature_position': '西藏博物馆', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220204.0, 'College_majors': '精神病与精神卫生学（西医）', 'Undergraduate_majors': '不限', 'Graduate_majors': '硕士研究生', 'political_landscape': '2022年毕业生', 'Job_code': '——', 'Examination': '是', 'interview': '是', 'remark': '具备相应毕业证书、学位证书、住院医师规范化培训合格证书、执业医师资格证书。', 'consultation': '0891-6371323'},
+
+ {'id': 205.0, 'unit': '区直', 'Post': '西藏自治区卫生健康委', 'Nature_position': '西藏自治区人民医院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220205.0, 'College_majors': '经济学/经济统计学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6371323'},
+
+ {'id': 206.0, 'unit': '区直', 'Post': '西藏自治区文物局', 'Nature_position': '西藏博物馆', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220206.0, 'College_majors': '经济学/经济统计学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '是', 'remark': '具有相应资质。', 'consultation': '0891-6371323'},
+
+ {'id': 207.0, 'unit': '区直', 'Post': '西藏自治区卫生健康委', 'Nature_position': '西藏自治区人民医院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220207.0, 'College_majors': '计算机科学与技术/统计学类专业', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6371323'},
+
+ {'id': 208.0, 'unit': '区直', 'Post': '西藏自治区文物局', 'Nature_position': '西藏博物馆', 'Number': '事业单位', 'Graduation_time': 3.0, 'Academic_requirements': 202220208.0, 'College_majors': '计算机科学与技术/统计学类专业', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '是', 'remark': '具有相关工作经验', 'consultation': '0891-6371323'},
+
+ {'id': 209.0, 'unit': '区直', 'Post': '西藏自治区卫生健康委', 'Nature_position': '西藏自治区人民医院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220209.0, 'College_majors': '计算机科学与技术/软件工程', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6371323'},
+
+ {'id': 210.0, 'unit': '区直', 'Post': '西藏自治区文物局', 'Nature_position': '西藏博物馆', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202220210.0, 'College_majors': '基础医学、检验医学、医学实验（西医）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)', 'Examination': '是', 'interview': '是', 'remark': '具备相应毕业证书、学位证书。具有检验技术资格证书优先。', 'consultation': '0891-6371323'},
+
+ {'id': 211.0, 'unit': '区直', 'Post': '西藏自治区卫生健康委', 'Nature_position': '西藏自治区人民医院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220211.0, 'College_majors': '基础医学、检验医学、医学实验（西医）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)', 'Examination': '是', 'interview': '是', 'remark': '具备相应毕业证书、学位证书。具有检验技术资格证书优先。', 'consultation': '0891-6371323'},
+
+ {'id': 212.0, 'unit': '区直', 'Post': '西藏自治区文物局', 'Nature_position': '西藏博物馆', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202220212.0, 'College_majors': '会计学/财务管理', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '是', 'remark': '具有相应资质。', 'consultation': '0891-6371323'},
+
+ {'id': 213.0, 'unit': '区直', 'Post': '西藏自治区卫生健康委', 'Nature_position': '西藏自治区人民医院', 'Number': '事业单位', 'Graduation_time': 10.0, 'Academic_requirements': 202220213.0, 'College_majors': '护理学（临床西医类）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—护理', 'Examination': '是', 'interview': '是', 'remark': '具备相应毕业证书、学位证书、获得护士执业资格考试成绩合格证明', 'consultation': '0891-6371323'},
+
+ {'id': 214.0, 'unit': '区直', 'Post': '西藏自治区文物局', 'Nature_position': '西藏博物馆', 'Number': '事业单位', 'Graduation_time': 10.0, 'Academic_requirements': 202220214.0, 'College_majors': '护理学（临床西医类）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—护理', 'Examination': '是', 'interview': '是', 'remark': '具备相应毕业证书、学位证书、获得护士执业资格考试成绩合格证明', 'consultation': '0891-6371323'},
+
+ {'id': 215.0, 'unit': '区直', 'Post': '西藏自治区卫生健康委', 'Nature_position': '西藏自治区人民医院', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202220215.0, 'College_majors': '公共事业管理（卫生事业管理方向）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6371323'},
+
+ {'id': 216.0, 'unit': '区直', 'Post': '西藏自治区文物局', 'Nature_position': '西藏博物馆', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220216.0, 'College_majors': '公共事业管理（卫生事业管理方向）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '是', 'remark': '具有相关工作经验', 'consultation': '0891-6371323'},
+
+ {'id': 217.0, 'unit': '区直', 'Post': '西藏自治区卫生健康委', 'Nature_position': '西藏自治区人民医院', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202220217.0, 'College_majors': '公共事业管理（卫生事业管理方向）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6371323'},
+
+ {'id': 218.0, 'unit': '区直', 'Post': '西藏自治区文物局', 'Nature_position': '西藏博物馆', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220218.0, 'College_majors': '法学/哲学类/马克思主义理论类', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '是', 'remark': '具有相关工作经验', 'consultation': '0891-6371323'},
+
+ {'id': 219.0, 'unit': '区直', 'Post': '西藏自治区卫生健康委', 'Nature_position': '西藏自治区人民医院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220219.0, 'College_majors': '法学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '是', 'remark': '具有相关工作经验', 'consultation': '0891-6371323'},
+
+ {'id': 220.0, 'unit': '区直', 'Post': '西藏自治区文物局', 'Nature_position': '西藏博物馆', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220220.0, 'College_majors': '耳鼻咽喉科学（西医）', 'Undergraduate_majors': '不限', 'Graduate_majors': '硕士研究生', 'political_landscape': '2022年毕业生', 'Job_code': '——', 'Examination': '是', 'interview': '是', 'remark': '具备相应毕业证书、学位证书、住院医师规范化培训合格证书、执业医师资格证书。', 'consultation': '0891-6371323'},
+
+ {'id': 221.0, 'unit': '区直', 'Post': '西藏自治区卫生健康委', 'Nature_position': '西藏自治区人民医院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220221.0, 'College_majors': '儿内科（西医）', 'Undergraduate_majors': '不限', 'Graduate_majors': '硕士研究生', 'political_landscape': '2022年毕业生', 'Job_code': '——', 'Examination': '是', 'interview': '是', 'remark': '具备相应毕业证书、学位证书、住院医师规范化培训合格证书、执业医师资格证书。', 'consultation': '0891-6371323'},
+
+ {'id': 222.0, 'unit': '区直', 'Post': '西藏自治区文物局', 'Nature_position': '西藏博物馆', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202220222.0, 'College_majors': '儿科学（西医，硕士研究生为儿内科方向）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '是', 'remark': '具备相应毕业证书、学位证书。具有住院医师规范化培训合格证书、执业医师资格证书优先。', 'consultation': '0891-6371323'},
+
+ {'id': 223.0, 'unit': '区直', 'Post': '西藏自治区卫生健康委', 'Nature_position': '西藏自治区人民医院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220223.0, 'College_majors': '儿科学（西医，硕士研究生为儿内科方向）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '是', 'remark': '具备相应毕业证书、学位证书。具有住院医师规范化培训合格证书、执业医师资格证书优先。', 'consultation': '0891-6371323'},
+
+ {'id': 224.0, 'unit': '区直', 'Post': '西藏自治区文物局', 'Nature_position': '西藏博物馆', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220224.0, 'College_majors': '电气工程及其自动化/暖通工程/消防工程技术/土木工程', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '是', 'remark': '具有相关工作经验', 'consultation': '0891-6371323'},
+
+ {'id': 225.0, 'unit': '区直', 'Post': '西藏自治区卫生健康委', 'Nature_position': '西藏自治区人民医院', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202220225.0, 'College_majors': '财务管理/金融类/经济学类', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '是', 'remark': '具有相应资质。', 'consultation': '0891-6371323'},
+
+ {'id': 226.0, 'unit': '区直', 'Post': '西藏自治区文物局', 'Nature_position': '西藏自治区藏医院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220226.0, 'College_majors': '护理学（西医）', 'Undergraduate_majors': '中共党员', 'Graduate_majors': '硕士研究生及以上', 'political_landscape': '2022年毕业生', 'Job_code': '——', 'Examination': '是', 'interview': '是', 'remark': '具备相应全日制毕业证书、学位证书。', 'consultation': '0891-6322069'},
+
+ {'id': 227.0, 'unit': '区直', 'Post': '西藏自治区卫生健康委', 'Nature_position': '西藏自治区人民医院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220227.0, 'College_majors': '临床医学（西医）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '是', 'remark': '具备相应全日制毕业证书、学位证书。', 'consultation': '0891-6322069'},
+
+ {'id': 228.0, 'unit': '区直', 'Post': '西藏自治区文物局', 'Nature_position': '西藏自治区藏医院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220228.0, 'College_majors': '电子信息工程', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '是', 'remark': '具备相应全日制毕业证书、学位证书。', 'consultation': '0891-6322069'},
+
+ {'id': 229.0, 'unit': '区直', 'Post': '西藏自治区卫生健康委', 'Nature_position': '西藏自治区第二人民医院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220229.0, 'College_majors': '信息管理与信息系统（卫生信息管理方向）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '是', 'remark': '具备相应全日制毕业证书、学位证书，需有临床医学基础、会ICD编码。', 'consultation': '0891-6289589'},
+
+ {'id': 230.0, 'unit': '区直', 'Post': '西藏自治区文物局', 'Nature_position': '西藏自治区妇产儿童医院（自治区妇幼保健院）', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220220.0, 'College_majors': '计算机类（网络安全、软件工程、计算机科学与技术、信息管理与信息系统等）', 'Undergraduate_majors': '不限', 'Graduate_majors': '硕士研究生及以上', 'political_landscape': '不限', 'Job_code': '——', 'Examination': '是', 'interview': '是', 'remark': '具备相应全日制毕业证书、学位证书，中共党员优先。', 'consultation': '0891-6726536'},
+
+ {'id': 231.0, 'unit': '区直', 'Post': '西藏自治区卫生健康委', 'Nature_position': '西藏自治区第二人民医院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220221.0, 'College_majors': '护理学', 'Undergraduate_majors': '不限', 'Graduate_majors': '硕士研究生及以上', 'political_landscape': '2022年毕业生', 'Job_code': '——', 'Examination': '是', 'interview': '是', 'remark': '具备相应全日制毕业证书、学位证书。', 'consultation': '0891-6726536'},
+
+ {'id': 232.0, 'unit': '区直', 'Post': '西藏自治区文物局', 'Nature_position': '西藏自治区疾病预防控制中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220222.0, 'College_majors': '卫生检验', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—医学技术', 'Examination': '是', 'interview': '是', 'remark': '具备相应全日制毕业证书、学位证书。', 'consultation': '0891-6322456'},
+
+ {'id': 233.0, 'unit': '区直', 'Post': '西藏自治区卫生健康委', 'Nature_position': '西藏自治区第二人民医院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220223.0, 'College_majors': '预防医学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—公共卫生管理', 'Examination': '是', 'interview': '是', 'remark': '具备相应全日制毕业证书、学位证书。', 'consultation': '0891-6322456'},
+
+ {'id': 234.0, 'unit': '区直', 'Post': '西藏自治区文物局', 'Nature_position': '西藏自治区血液中心', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202220224.0, 'College_majors': '专业不限', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '是', 'remark': '具备相应全日制毕业证书、学位证书。', 'consultation': '0891-6834680'},
+
+ {'id': 235.0, 'unit': '区直', 'Post': '西藏自治区卫生健康委', 'Nature_position': '西藏自治区第二人民医院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220225.0, 'College_majors': '计算机类', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '是', 'remark': '具备相应全日制毕业证书、学位证书。', 'consultation': '0891-6834680'},
+
+ {'id': 236.0, 'unit': '区直', 'Post': '西藏自治区文物局', 'Nature_position': '西藏自治区血液中心', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202220226.0, 'College_majors': '医学检验技术，医学实验技术，卫生检验与检疫', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—医学技术', 'Examination': '是', 'interview': '是', 'remark': '具备相应全日制毕业证书、学位证书。', 'consultation': '0891-6834680'},
+
+ {'id': 237.0, 'unit': '区直', 'Post': '西藏自治区卫生健康委', 'Nature_position': '西藏自治区第二人民医院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220227.0, 'College_majors': '护理学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—护理', 'Examination': '是', 'interview': '是', 'remark': '具备相应全日制毕业证书、学位证书。', 'consultation': '0891-6834680'},
+
+ {'id': 238.0, 'unit': '区直', 'Post': '西藏自治区文物局', 'Nature_position': '西藏自治区血液中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220228.0, 'College_majors': '基础医学，西医临床医学类，预防医学，妇幼保健医学，中医学类，中西医结合类', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)', 'Examination': '是', 'interview': '是', 'remark': '具备相应全日制毕业证书、学位证书。', 'consultation': '0891-6834680'},
+
+ {'id': 239.0, 'unit': '区直', 'Post': '西藏自治区卫生健康委', 'Nature_position': '自治区医院筹备组', 'Number': '事业单位', 'Graduation_time': 6.0, 'Academic_requirements': 202220229.0, 'College_majors': '临床医学（西医）', 'Undergraduate_majors': '不限', 'Graduate_majors': '硕士研究生及以上', 'political_landscape': '不限', 'Job_code': '——', 'Examination': '是', 'interview': '是', 'remark': '持医师资格证、住院医师规范化培训合格证书', 'consultation': '0891-6817469'},
+
+ {'id': 240.0, 'unit': '区直', 'Post': '西藏自治区文物局', 'Nature_position': '西藏自治区血液中心', 'Number': '事业单位', 'Graduation_time': 9.0, 'Academic_requirements': 202220240.0, 'College_majors': '临床医学（西医）', 'Undergraduate_majors': '不限', 'Graduate_majors': '硕士研究生及以上', 'political_landscape': '2022年毕业生', 'Job_code': '——', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6817469'},
+
+ {'id': 241.0, 'unit': '区直', 'Post': '西藏自治区卫生健康委', 'Nature_position': '自治区医院筹备组', 'Number': '事业单位', 'Graduation_time': 3.0, 'Academic_requirements': 202220241.0, 'College_majors': '影像医学与核医学', 'Undergraduate_majors': '不限', 'Graduate_majors': '硕士研究生及以上', 'political_landscape': '不限', 'Job_code': '——', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6817469'},
+
+ {'id': 242.0, 'unit': '区直', 'Post': '西藏自治区文物局', 'Nature_position': '西藏自治区血液中心', 'Number': '事业单位', 'Graduation_time': 10.0, 'Academic_requirements': 202220242.0, 'College_majors': '临床医学（西医）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '是', 'remark': '全日制，持住院医师规范化培训合格证书', 'consultation': '0891-6817469'},
+
+ {'id': 243.0, 'unit': '区直', 'Post': '西藏自治区卫生健康委', 'Nature_position': '自治区医院筹备组', 'Number': '事业单位', 'Graduation_time': 10.0, 'Academic_requirements': 202220243.0, 'College_majors': '临床医学（西医）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '是', 'remark': '全日制', 'consultation': '0891-6817469'},
+
+ {'id': 244.0, 'unit': '区直', 'Post': '西藏自治区文物局', 'Nature_position': '西藏自治区血液中心', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202220244.0, 'College_majors': '口腔医学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '是', 'remark': '全日制', 'consultation': '0891-6817469'},
+
+ {'id': 245.0, 'unit': '区直', 'Post': '西藏自治区卫生健康委', 'Nature_position': '自治区医院筹备组', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202220245.0, 'College_majors': '麻醉学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—西医临床', 'Examination': '是', 'interview': '是', 'remark': '全日制', 'consultation': '0891-6817469'},
+
+ {'id': 246.0, 'unit': '区直', 'Post': '西藏自治区文物局', 'Nature_position': '西藏自治区血液中心', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202220246.0, 'College_majors': '临床药学（五年）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—药剂', 'Examination': '是', 'interview': '是', 'remark': '全日制', 'consultation': '0891-6817469'},
+
+ {'id': 247.0, 'unit': '区直', 'Post': '西藏自治区卫生健康委', 'Nature_position': '自治区医院筹备组', 'Number': '事业单位', 'Graduation_time': 20.0, 'Academic_requirements': 202220247.0, 'College_majors': '护理学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—护理', 'Examination': '是', 'interview': '是', 'remark': '全日制，持护士资格证', 'consultation': '0891-6817469'},
+
+ {'id': 248.0, 'unit': '区直', 'Post': '西藏自治区文物局', 'Nature_position': '西藏自治区血液中心', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202220248.0, 'College_majors': '医学检验技术', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)—医学技术', 'Examination': '是', 'interview': '是', 'remark': '全日制', 'consultation': '0891-6817469'},
+
+ {'id': 249.0, 'unit': '区直', 'Post': '西藏自治区卫生健康委', 'Nature_position': '自治区医院筹备组', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202220249.0, 'College_majors': '康复治疗学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '医疗卫生类(E类)', 'Examination': '是', 'interview': '是', 'remark': '全日制', 'consultation': '0891-6817469'},
+
+ {'id': 250.0, 'unit': '区直', 'Post': '西藏自治区文物局', 'Nature_position': '西藏自治区血液中心', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202220250.0, 'College_majors': '社会医学与卫生事业管理学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6817469'},
+
+ {'id': 251.0, 'unit': '区直', 'Post': '西藏自治区卫生健康委', 'Nature_position': '自治区医院筹备组', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202220251.0, 'College_majors': '会计学、财务管理', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '是', 'remark': '持初级及以上会计专业技术资格证', 'consultation': '0891-6817469'},
+
+ {'id': 252.0, 'unit': '区直', 'Post': '西藏自治区文物局', 'Nature_position': '西藏自治区血液中心', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202220252.0, 'College_majors': '医学信息工程', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6817469'},
+
+ {'id': 253.0, 'unit': '区直', 'Post': '西藏自治区卫生健康委', 'Nature_position': '自治区医院筹备组', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202220253.0, 'College_majors': '生物医学工程', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6817469'},
+
+ {'id': 254.0, 'unit': '区直', 'Post': '西藏自治区文物局', 'Nature_position': '自治区卫生信息中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220254.0, 'College_majors': '计算机科学与技术', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '是', 'remark': '具备相应全日制毕业证书、学位证书。', 'consultation': '0891-6289589'},
+
+ {'id': 255.0, 'unit': '区直', 'Post': '西藏自治区卫生健康委', 'Nature_position': '自治区医院筹备组', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220255.0, 'College_majors': '统计学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '是', 'remark': '具备相应全日制毕业证书、学位证书。', 'consultation': '0891-6289589'},
+
+ {'id': 256.0, 'unit': '区直', 'Post': '西藏自治区旅游发展厅', 'Nature_position': '自治区旅游事业发展中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220256.0, 'College_majors': '专业不限', 'Undergraduate_majors': '中共党员', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6834242'},
+
+ {'id': 257.0, 'unit': '区直', 'Post': '西藏自治区外事办公室', 'Nature_position': '外事服务中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220257.0, 'College_majors': '英语口译', 'Undergraduate_majors': '不限', 'Graduate_majors': '硕士研究生', 'political_landscape': '不限', 'Job_code': '——', 'Examination': '是', 'interview': '是', 'remark': '中共党员优先', 'consultation': '0891-6360875'},
+
+ {'id': 258.0, 'unit': '区直', 'Post': '西藏自治区市场监督管理局', 'Nature_position': '自治区消费者协会', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202220258.0, 'College_majors': '法学类专业', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6805617'},
+
+ {'id': 259.0, 'unit': '区直', 'Post': '西藏自治区外事办公室', 'Nature_position': '自治区产品质量监督检验所', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220259.0, 'College_majors': '财会专业', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6805617'},
+
+ {'id': 260.0, 'unit': '区直', 'Post': '西藏自治区市场监督管理局', 'Nature_position': '自治区消费者协会', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202220260.0, 'College_majors': '石油工程专业', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6805617'},
+
+ {'id': 261.0, 'unit': '区直', 'Post': '西藏自治区外事办公室', 'Nature_position': '自治区产品质量监督检验所', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202220261.0, 'College_majors': '生物工程专业', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6805617'},
+
+ {'id': 262.0, 'unit': '区直', 'Post': '西藏自治区药品监督管理局', 'Nature_position': '西藏自治区食品药品检验研究院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220262.0, 'College_majors': '会计、会计学或财务管理专业', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6830396'},
+
+ {'id': 263.0, 'unit': '区直', 'Post': '西藏自治区外事办公室', 'Nature_position': '自治区产品质量监督检验所', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220263.0, 'College_majors': '民族药物化学专业', 'Undergraduate_majors': '不限', 'Graduate_majors': '硕士研究生及以上', 'political_landscape': '不限', 'Job_code': '——', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6830396'},
+
+ {'id': 264.0, 'unit': '区直', 'Post': '西藏自治区药品监督管理局', 'Nature_position': '西藏自治区食品药品检验研究院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220264.0, 'College_majors': '中草药栽培与鉴定专业', 'Undergraduate_majors': '不限', 'Graduate_majors': '硕士研究生及以上', 'political_landscape': '不限', 'Job_code': '——', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6830396'},
+
+ {'id': 265.0, 'unit': '区直', 'Post': '西藏自治区广播电视局', 'Nature_position': '当雄中波转播台', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202220265.0, 'College_majors': '电子信息工程、通信工程、广播电视工程、计算机科学与技术', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6173774'},
+
+ {'id': 266.0, 'unit': '区直', 'Post': '西藏自治区药品监督管理局', 'Nature_position': '日喀则中波转播台', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220266.0, 'College_majors': '电子信息工程、通信工程、广播电视工程、计算机科学与技术', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6173774'},
+
+ {'id': 267.0, 'unit': '区直', 'Post': '西藏自治区广播电视局', 'Nature_position': '江孜中波转播台', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220267.0, 'College_majors': '财务会计、会计电算化', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6173774'},
+
+ {'id': 268.0, 'unit': '区直', 'Post': '西藏自治区药品监督管理局', 'Nature_position': '亚东中波转播台', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202220268.0, 'College_majors': '电子信息工程、通信工程、广播电视工程、计算机科学与技术', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6173774'},
+
+ {'id': 269.0, 'unit': '区直', 'Post': '西藏自治区广播电视局', 'Nature_position': '江孜中波转播台', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220269.0, 'College_majors': '财务会计、会计电算化', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6173774'},
+
+ {'id': 270.0, 'unit': '区直', 'Post': '西藏自治区药品监督管理局', 'Nature_position': '拉孜中波转播台', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202220270.0, 'College_majors': '电子信息工程、通信工程、广播电视工程、计算机科学与技术', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6173774'},
+
+ {'id': 271.0, 'unit': '区直', 'Post': '西藏自治区广播电视局', 'Nature_position': '江孜中波转播台', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220271.0, 'College_majors': '财务会计、会计电算化', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6173774'},
+
+ {'id': 272.0, 'unit': '区直', 'Post': '西藏自治区药品监督管理局', 'Nature_position': '定日中波转播台  ', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202220272.0, 'College_majors': '电子信息工程、通信工程、广播电视工程、计算机科学与技术', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6173774'},
+
+ {'id': 273.0, 'unit': '区直', 'Post': '西藏自治区广播电视局', 'Nature_position': '隆子中波转播台', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202220273.0, 'College_majors': '电子信息工程、通信工程、广播电视工程、计算机科学与技术', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6173774'},
+
+ {'id': 274.0, 'unit': '区直', 'Post': '西藏自治区药品监督管理局', 'Nature_position': '错那中波转播台', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202220274.0, 'College_majors': '电子信息工程、通信工程、广播电视工程、计算机科学与技术', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6173774'},
+
+ {'id': 275.0, 'unit': '区直', 'Post': '西藏自治区广播电视局', 'Nature_position': '波密中波转播台', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220275.0, 'College_majors': '财务会计、会计电算化', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6173774'},
+
+ {'id': 276.0, 'unit': '区直', 'Post': '西藏自治区药品监督管理局', 'Nature_position': '下察隅中波转播台', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202220276.0, 'College_majors': '电子信息工程、通信工程、广播电视工程、计算机科学与技术', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6173774'},
+
+ {'id': 277.0, 'unit': '区直', 'Post': '西藏自治区广播电视局', 'Nature_position': '工布江达中波转播台', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220277.0, 'College_majors': '电子信息工程、通信工程、广播电视工程、计算机科学与技术', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6173774'},
+
+ {'id': 278.0, 'unit': '区直', 'Post': '西藏自治区药品监督管理局', 'Nature_position': '芒康中波转播台', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220278.0, 'College_majors': '电子信息工程、通信工程、广播电视工程、计算机科学与技术', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6173774'},
+
+ {'id': 279.0, 'unit': '区直', 'Post': '西藏自治区广播电视局', 'Nature_position': '察雅中波转播台', 'Number': '事业单位', 'Graduation_time': 3.0, 'Academic_requirements': 202220279.0, 'College_majors': '电子信息工程、通信工程、广播电视工程、计算机科学与技术', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6173774'},
+
+ {'id': 280.0, 'unit': '区直', 'Post': '西藏自治区药品监督管理局', 'Nature_position': '丁青中波转播台', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202220280.0, 'College_majors': '电子信息工程、通信工程、广播电视工程、计算机科学与技术', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6173774'},
+
+ {'id': 281.0, 'unit': '区直', 'Post': '西藏自治区广播电视局', 'Nature_position': '那曲中波台转播台', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220281.0, 'College_majors': '电子信息工程、通信工程、广播电视工程、计算机科学与技术', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6173774'},
+
+ {'id': 282.0, 'unit': '区直', 'Post': '西藏自治区药品监督管理局', 'Nature_position': '索县中波转播台', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220282.0, 'College_majors': '电子信息工程、通信工程、广播电视工程、计算机科学与技术', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6173774'},
+
+ {'id': 283.0, 'unit': '区直', 'Post': '西藏自治区广播电视局', 'Nature_position': '日土中波转播台', 'Number': '事业单位', 'Graduation_time': 4.0, 'Academic_requirements': 202220283.0, 'College_majors': '电子信息工程、通信工程、广播电视工程、计算机科学与技术', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6173774'},
+
+ {'id': 284.0, 'unit': '区直', 'Post': '西藏自治区药品监督管理局', 'Nature_position': '索县中波转播台', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220284.0, 'College_majors': '财务会计、会计电算化', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6173774'},
+
+ {'id': 285.0, 'unit': '区直', 'Post': '西藏自治区广播电视局', 'Nature_position': '普兰中波转播台', 'Number': '事业单位', 'Graduation_time': 3.0, 'Academic_requirements': 202220285.0, 'College_majors': '电子信息工程、通信工程、广播电视工程、计算机科学与技术', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6173774'},
+
+ {'id': 286.0, 'unit': '区直', 'Post': '西藏自治区药品监督管理局', 'Nature_position': '035（昌都）台', 'Number': '事业单位', 'Graduation_time': 3.0, 'Academic_requirements': 202220286.0, 'College_majors': '电子信息工程、通信工程、广播电视工程、计算机科学与技术', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6173774'},
+
+ {'id': 287.0, 'unit': '区直', 'Post': '西藏自治区广播电视局', 'Nature_position': '081（江孜）台', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202220287.0, 'College_majors': '电子信息工程、通信工程、广播电视工程、计算机科学与技术', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6173774'},
+
+ {'id': 288.0, 'unit': '区直', 'Post': '西藏自治区药品监督管理局', 'Nature_position': '082（察雅）台', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220288.0, 'College_majors': '电子信息工程、通信工程、广播电视工程、计算机科学与技术', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6173774'},
+
+ {'id': 289.0, 'unit': '区直', 'Post': '西藏自治区广播电视局', 'Nature_position': '081（江孜）台', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220289.0, 'College_majors': '财务会计、会计电算化', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6173774'},
+
+ {'id': 290.0, 'unit': '区直', 'Post': '西藏自治区药品监督管理局', 'Nature_position': '092（萨迦）台', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220290.0, 'College_majors': '电子信息工程、通信工程、广播电视工程、计算机科学与技术', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6173774'},
+
+ {'id': 291.0, 'unit': '区直', 'Post': '西藏自治区广播电视局', 'Nature_position': '081（江孜）台', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220291.0, 'College_majors': '财务会计、会计电算化', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6173774'},
+
+ {'id': 292.0, 'unit': '区直', 'Post': '西藏自治区药品监督管理局', 'Nature_position': '161（芒康）台', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220292.0, 'College_majors': '电子信息工程、通信工程、广播电视工程、计算机科学与技术', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '0891-6173774'},
+
+ {'id': 293.0, 'unit': '区直', 'Post': '西藏自治区体育局', 'Nature_position': '西藏自治区体育技术学校', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220293.0, 'College_majors': '运动人体科学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6342283'},
+
+ {'id': 294.0, 'unit': '区直', 'Post': '西藏自治区药品监督管理局', 'Nature_position': '161（芒康）台', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220294.0, 'College_majors': '运动康复', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '医疗卫生类(E类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6342283'},
+
+ {'id': 295.0, 'unit': '区直', 'Post': '西藏自治区体育局', 'Nature_position': '西藏自治区体育技术学校', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220295.0, 'College_majors': '信息与计算科学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6342283'},
+
+ {'id': 296.0, 'unit': '区直', 'Post': '西藏自治区药品监督管理局', 'Nature_position': '西藏自治区登山队（登山综合培训中心、高山救援队）', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202220296.0, 'College_majors': '运动训练相关专业', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '是', 'remark': '需长期跟队工作，限男性，需专业测试', 'consultation': '0891-6382355'},
+
+ {'id': 297.0, 'unit': '区直', 'Post': '西藏自治区体育局', 'Nature_position': '西藏自治区体育技术学校', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220297.0, 'College_majors': '运动医学相关专业', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '医疗卫生类(E类)', 'Examination': '是', 'interview': '是', 'remark': '需长期跟队工作，限男性，需专业测试', 'consultation': '0891-6382355'},
+
+ {'id': 298.0, 'unit': '区直', 'Post': '西藏自治区药品监督管理局', 'Nature_position': '西藏自治区竞技体育管理中心', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202220298.0, 'College_majors': '运动训练（体能教练）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '是', 'remark': '需长期跟队工作，限男性，需专业测试', 'consultation': '0891-6823605'},
+
+ {'id': 299.0, 'unit': '区直', 'Post': '西藏自治区体育局', 'Nature_position': '西藏自治区体育科学研究所', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220299.0, 'College_majors': '药学类', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '医疗卫生类(E类)—药剂', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6329213'},
+
+ {'id': 300.0, 'unit': '区直', 'Post': '西藏自治区统计局', 'Nature_position': '数据管理研究中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220300.0, 'College_majors': '统计学类', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6825425'},
+
+ {'id': 301.0, 'unit': '区直', 'Post': '西藏自治区林业和草原局', 'Nature_position': '西藏自治区林木科学研究院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220301.0, 'College_majors': '森林保护', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6810987'},
+
+ {'id': 302.0, 'unit': '区直', 'Post': '西藏自治区统计局', 'Nature_position': '西藏自治区林业调查规划研究院', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220302.0, 'College_majors': '草业科学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6810987'},
+
+ {'id': 303.0, 'unit': '区直', 'Post': '西藏自治区人民政府驻北京办事处', 'Nature_position': '西藏文化经济交流中心（联合记者站）', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220303.0, 'College_majors': '经济学专业', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '010-64004090'},
+
+ {'id': 304.0, 'unit': '区直', 'Post': '西藏自治区人民政府驻西安办事处', 'Nature_position': '西办接待车队', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220304.0, 'College_majors': '文秘、新闻、汉语言文学等', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '', 'consultation': '029-87812935'},
+
+ {'id': 305.0, 'unit': '区直', 'Post': '西藏自治区人民政府驻上海办事处', 'Nature_position': '沪办接待车队', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220305.0, 'College_majors': '医学类', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '医疗卫生类(E类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '021-62572173'},
+
+ {'id': 306.0, 'unit': '区直', 'Post': '西藏广播电视台', 'Nature_position': '对外节目中心', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202220306.0, 'College_majors': '英语专业、政治学类', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '是', 'remark': '英语专业需通过英语专业八级；政治学类需达到大学英语六级成绩500分及以上', 'consultation': '0891-6821852'},
+
+ {'id': 307.0, 'unit': '区直', 'Post': '西藏自治区人民政府驻上海办事处', 'Nature_position': '技术管理中心', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202220307.0, 'College_majors': '计算机类', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6821852'},
+
+ {'id': 308.0, 'unit': '区直', 'Post': '西藏广播电视台', 'Nature_position': '藏语译制中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220308.0, 'College_majors': '中国少数民族语言文学（藏语翻译）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '是', 'remark': '需进行藏语测试', 'consultation': '0891-6821852'},
+
+ {'id': 309.0, 'unit': '区直', 'Post': '西藏自治区人民政府驻上海办事处', 'Nature_position': '藏语节目中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220309.0, 'College_majors': '播音与主持（藏语）及相关专业', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '是', 'remark': '女； 需进行藏语测试', 'consultation': '0891-6821852'},
+
+ {'id': 310.0, 'unit': '区直', 'Post': '西藏广播电视台', 'Nature_position': '办公室', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220310.0, 'College_majors': '汉语言专业、汉语言文学专业', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6821852'},
+
+ {'id': 311.0, 'unit': '区直', 'Post': '西藏自治区人民政府驻上海办事处', 'Nature_position': '大型活动节目中心', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220311.0, 'College_majors': '舞蹈编导', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6821852'},
+
+ {'id': 312.0, 'unit': '区直', 'Post': '西藏大学', 'Nature_position': '西藏大学校本部', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202220312.0, 'College_majors': '专业不限', 'Undergraduate_majors': '中共党员', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '是', 'remark': '辅导员岗位，工作强度大、任务重。年龄要求需28岁以下（1994年7月1日以后出生），学生干部优先。', 'consultation': '0891-6405081'},
+
+ {'id': 313.0, 'unit': '区直', 'Post': '西藏藏医药大学', 'Nature_position': '附属医院', 'Number': '事业单位', 'Graduation_time': 6.0, 'Academic_requirements': 202220313.0, 'College_majors': '藏医专业', 'Undergraduate_majors': '不限', 'Graduate_majors': '硕士研究生及以上', 'political_landscape': '2021、2022年毕业生', 'Job_code': '——', 'Examination': '是', 'interview': '是', 'remark': '面试时增加专业知识考试', 'consultation': '0891-6381954'},
+
+ {'id': 314.0, 'unit': '区直', 'Post': '西藏大学', 'Nature_position': '藏医药与天文星算博物馆', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220314.0, 'College_majors': '藏医专业', 'Undergraduate_majors': '不限', 'Graduate_majors': '博士研究生', 'political_landscape': '2022年毕业生', 'Job_code': '——', 'Examination': '是', 'interview': '是', 'remark': '面试时增加专业知识考试', 'consultation': '0891-6381954'},
+
+ {'id': 315.0, 'unit': '区直', 'Post': '西藏农牧学院', 'Nature_position': '教师岗', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220315.0, 'College_majors': '旅游管理', 'Undergraduate_majors': '不限', 'Graduate_majors': '硕士研究生及以上', 'political_landscape': '不限', 'Job_code': '——', 'Examination': '是', 'interview': '是', 'remark': '面试增加专业测试', 'consultation': '0894-5822373'},
+
+ {'id': 316.0, 'unit': '区直', 'Post': '西藏大学', 'Nature_position': '藏医药与天文星算博物馆', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220316.0, 'College_majors': '水利水电工程（电力控制方向）', 'Undergraduate_majors': '不限', 'Graduate_majors': '硕士研究生及以上', 'political_landscape': '2022年毕业生', 'Job_code': '——', 'Examination': '是', 'interview': '是', 'remark': '面试增加专业测试', 'consultation': '0894-5822373'},
+
+ {'id': 317.0, 'unit': '区直', 'Post': '西藏农牧学院', 'Nature_position': '教师岗', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220317.0, 'College_majors': '马克思主义理论', 'Undergraduate_majors': '中共党员', 'Graduate_majors': '硕士研究生及以上', 'political_landscape': '不限', 'Job_code': '——', 'Examination': '是', 'interview': '是', 'remark': '面试增加专业测试', 'consultation': '0894-5822373'},
+
+ {'id': 318.0, 'unit': '区直', 'Post': '西藏大学', 'Nature_position': '藏医药与天文星算博物馆', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220318.0, 'College_majors': '水利水电工程（水利水电结构工程方向、水利工程对环境的影响方向）', 'Undergraduate_majors': '不限', 'Graduate_majors': '硕士研究生及以上', 'political_landscape': '2022年毕业生', 'Job_code': '——', 'Examination': '是', 'interview': '是', 'remark': '面试增加专业测试', 'consultation': '0894-5822373'},
+
+ {'id': 319.0, 'unit': '区直', 'Post': '西藏农牧学院', 'Nature_position': '教师岗', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220319.0, 'College_majors': '畜牧、畜牧学', 'Undergraduate_majors': '不限', 'Graduate_majors': '硕士研究生及以上', 'political_landscape': '不限', 'Job_code': '——', 'Examination': '是', 'interview': '是', 'remark': '面试增加专业测试', 'consultation': '0894-5822373'},
+
+ {'id': 320.0, 'unit': '区直', 'Post': '西藏大学', 'Nature_position': '藏医药与天文星算博物馆', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220320.0, 'College_majors': '林学', 'Undergraduate_majors': '不限', 'Graduate_majors': '硕士研究生及以上', 'political_landscape': '2022年毕业生', 'Job_code': '——', 'Examination': '是', 'interview': '是', 'remark': '面试增加专业测试', 'consultation': '0894-5822373'},
+
+ {'id': 321.0, 'unit': '区直', 'Post': '西藏农牧学院', 'Nature_position': '行政岗', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220321.0, 'College_majors': '公共事业管理、行政管理、秘书学', 'Undergraduate_majors': '中共党员', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '是', 'remark': '面试增加专业测试', 'consultation': '0894-5822373'},
+
+ {'id': 322.0, 'unit': '区直', 'Post': '西藏自治区农牧科学院', 'Nature_position': '科研管理处', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220322.0, 'College_majors': '农林经济管理', 'Undergraduate_majors': '不限', 'Graduate_majors': '硕士研究生及以上', 'political_landscape': '不限', 'Job_code': '——', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6869166'},
+
+ {'id': 323.0, 'unit': '区直', 'Post': '西藏农牧学院', 'Nature_position': '农业质量标准与检测研究所', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220323.0, 'College_majors': '有机化学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6869166'},
+
+ {'id': 324.0, 'unit': '区直', 'Post': '西藏自治区农牧科学院', 'Nature_position': '农业资源与环境研究所', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220324.0, 'College_majors': '作物栽培学与耕作学', 'Undergraduate_majors': '不限', 'Graduate_majors': '硕士研究生及以上', 'political_landscape': '2022年毕业生', 'Job_code': '——', 'Examination': '是', 'interview': '是', 'remark': '有代谢、转录等研究经历，期望将传统栽培进行深入挖掘和机理研究', 'consultation': '0891-6869166'},
+
+ {'id': 325.0, 'unit': '区直', 'Post': '西藏农牧学院', 'Nature_position': '农业质量标准与检测研究所', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220325.0, 'College_majors': '分析化学', 'Undergraduate_majors': '不限', 'Graduate_majors': '硕士研究生及以上', 'political_landscape': '2022年毕业生', 'Job_code': '——', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6869166'},
+
+ {'id': 326.0, 'unit': '区直', 'Post': '西藏自治区农牧科学院', 'Nature_position': '农业研究所', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220326.0, 'College_majors': '资源利用与植物保护', 'Undergraduate_majors': '不限', 'Graduate_majors': '硕士研究生及以上', 'political_landscape': '不限', 'Job_code': '——', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6869166'},
+
+ {'id': 327.0, 'unit': '区直', 'Post': '西藏农牧学院', 'Nature_position': '农业质量标准与检测研究所', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220327.0, 'College_majors': '作物栽培与耕作学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6869166'},
+
+ {'id': 328.0, 'unit': '区直', 'Post': '西藏自治区农牧科学院', 'Nature_position': '农业研究所', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220328.0, 'College_majors': '生物学', 'Undergraduate_majors': '不限', 'Graduate_majors': '硕士研究生及以上', 'political_landscape': '不限', 'Job_code': '——', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6869166'},
+
+ {'id': 329.0, 'unit': '区直', 'Post': '西藏农牧学院', 'Nature_position': '农业质量标准与检测研究所', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202220329.0, 'College_majors': '农学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6869166'},
+
+ {'id': 330.0, 'unit': '区直', 'Post': '西藏自治区农牧科学院', 'Nature_position': '农业研究所', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220330.0, 'College_majors': '作物栽培学与耕作学', 'Undergraduate_majors': '不限', 'Graduate_majors': '硕士研究生及以上', 'political_landscape': '不限', 'Job_code': '——', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6869166'},
+
+ {'id': 331.0, 'unit': '区直', 'Post': '西藏农牧学院', 'Nature_position': '农业质量标准与检测研究所', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220331.0, 'College_majors': '植物学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6869166'},
+
+ {'id': 332.0, 'unit': '区直', 'Post': '西藏自治区农牧科学院', 'Nature_position': '畜牧兽医研究所', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202220332.0, 'College_majors': '动物遗传育种与繁殖', 'Undergraduate_majors': '不限', 'Graduate_majors': '硕士研究生及以上', 'political_landscape': '不限', 'Job_code': '——', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6869166'},
+
+ {'id': 333.0, 'unit': '区直', 'Post': '西藏农牧学院', 'Nature_position': '农业质量标准与检测研究所', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202220333.0, 'College_majors': '动物营养与饲料科学', 'Undergraduate_majors': '不限', 'Graduate_majors': '硕士研究生及以上', 'political_landscape': '不限', 'Job_code': '——', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6869166'},
+
+ {'id': 334.0, 'unit': '区直', 'Post': '西藏自治区农牧科学院', 'Nature_position': '畜牧兽医研究所', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220334.0, 'College_majors': '动物科学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6869166'},
+
+ {'id': 335.0, 'unit': '区直', 'Post': '西藏农牧学院', 'Nature_position': '农业质量标准与检测研究所', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220335.0, 'College_majors': '预防兽医', 'Undergraduate_majors': '不限', 'Graduate_majors': '硕士研究生及以上', 'political_landscape': '不限', 'Job_code': '——', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6869166'},
+
+ {'id': 336.0, 'unit': '区直', 'Post': '西藏自治区农牧科学院', 'Nature_position': '蔬菜研究所', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202220336.0, 'College_majors': '园艺作物栽培育种、园艺生态与环境', 'Undergraduate_majors': '不限', 'Graduate_majors': '硕士研究生及以上', 'political_landscape': '不限', 'Job_code': '——', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6869166'},
+
+ {'id': 337.0, 'unit': '区直', 'Post': '西藏农牧学院', 'Nature_position': '草业科学研究所', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220337.0, 'College_majors': '草业科学', 'Undergraduate_majors': '不限', 'Graduate_majors': '硕士研究生及以上', 'political_landscape': '不限', 'Job_code': '——', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6869166'},
+
+ {'id': 338.0, 'unit': '区直', 'Post': '西藏自治区农牧科学院', 'Nature_position': '蔬菜研究所', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220338.0, 'College_majors': '生态学', 'Undergraduate_majors': '不限', 'Graduate_majors': '硕士研究生及以上', 'political_landscape': '不限', 'Job_code': '——', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6869166'},
+
+ {'id': 339.0, 'unit': '区直', 'Post': '西藏农牧学院', 'Nature_position': '水产科学研究所', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220339.0, 'College_majors': '生态学、动物学', 'Undergraduate_majors': '不限', 'Graduate_majors': '硕士研究生及以上', 'political_landscape': '2022年毕业生', 'Job_code': '——', 'Examination': '是', 'interview': '是', 'remark': '因工作需经常出差下水，限男性', 'consultation': '0891-6869166'},
+
+ {'id': 340.0, 'unit': '区直', 'Post': '西藏自治区农牧科学院', 'Nature_position': '农产品开发与食品科学研究所', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220340.0, 'College_majors': '食品加工与安全（研究方向为肉制品加工方向）', 'Undergraduate_majors': '不限', 'Graduate_majors': '硕士研究生及以上', 'political_landscape': '不限', 'Job_code': '——', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6869166'},
+
+ {'id': 341.0, 'unit': '区直', 'Post': '西藏农牧学院', 'Nature_position': '水产科学研究所', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220341.0, 'College_majors': '食品加工与安全（发酵方向）', 'Undergraduate_majors': '不限', 'Graduate_majors': '硕士研究生及以上', 'political_landscape': '2022年毕业生', 'Job_code': '——', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6869166'},
+
+ {'id': 342.0, 'unit': '区直', 'Post': '西藏自治区农牧科学院', 'Nature_position': '农产品开发与食品科学研究所', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220342.0, 'College_majors': '食品科学', 'Undergraduate_majors': '不限', 'Graduate_majors': '硕士研究生及以上', 'political_landscape': '不限', 'Job_code': '——', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6869166'},
+
+ {'id': 343.0, 'unit': '区直', 'Post': '西藏农牧学院', 'Nature_position': '水产科学研究所', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220343.0, 'College_majors': '食品加工与安全', 'Undergraduate_majors': '不限', 'Graduate_majors': '硕士研究生及以上', 'political_landscape': '不限', 'Job_code': '——', 'Examination': '是', 'interview': '是', 'remark': '', 'consultation': '0891-6869166'},
+
+ {'id': 344.0, 'unit': '区直', 'Post': '西藏自治区地质矿产勘查开发局', 'Nature_position': '第二地质大队', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202220344.0, 'College_majors': '钻探技术', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '钻探高级工及以上；长期从事高寒地区野外一线地质工作，工作强度大，条件艰苦，限男性报考；所学专业与所招专业须一致。', 'consultation': '0891-6386870'},
+
+ {'id': 345.0, 'unit': '区直', 'Post': '西藏农牧学院', 'Nature_position': '水产科学研究所', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220345.0, 'College_majors': '勘查技术与工程（钻探工程方向）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '钻探工程方向；长期从事高寒地区野外一线地质工作，工作强度大，条件艰苦，限男性报考；所学专业与所招专业须一致。', 'consultation': '0891-6386870'},
+
+ {'id': 346.0, 'unit': '区直', 'Post': '西藏自治区地质矿产勘查开发局', 'Nature_position': '第二地质大队', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220346.0, 'College_majors': '资源勘查工程、地质学、地质工程', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '长期从事高寒地区野外一线地质工作，工作强度大，条件艰苦，限男性报考；所学专业与所招专业须一致。', 'consultation': '0891-6386870'},
+
+ {'id': 347.0, 'unit': '区直', 'Post': '西藏农牧学院', 'Nature_position': '水产科学研究所', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220347.0, 'College_majors': '土木工程', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '长期从事高寒地区野外一线地质工作，工作强度大，条件艰苦，限男性报考；所学专业与所招专业须一致。', 'consultation': '0891-6386870'},
+
+ {'id': 348.0, 'unit': '区直', 'Post': '西藏自治区地质矿产勘查开发局', 'Nature_position': '第二地质大队', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220348.0, 'College_majors': '地下水科学与工程', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '长期从事高寒地区野外一线地质工作，工作强度大，条件艰苦，限男性报考；所学专业与所招专业须一致。', 'consultation': '0891-6386870'},
+
+ {'id': 349.0, 'unit': '区直', 'Post': '西藏农牧学院', 'Nature_position': '水产科学研究所', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220349.0, 'College_majors': '环境科学与工程、环境工程', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '长期从事高寒地区野外一线地质工作，工作强度大，条件艰苦，限男性报考；所学专业与所招专业须一致。', 'consultation': '0891-6386870'},
+
+ {'id': 350.0, 'unit': '区直', 'Post': '西藏自治区地质矿产勘查开发局', 'Nature_position': '第二地质大队', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202220350.0, 'College_majors': '商务英语', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '所学专业与所招专业须一致。', 'consultation': '0891-6386870'},
+
+ {'id': 351.0, 'unit': '区直', 'Post': '西藏农牧学院', 'Nature_position': '水产科学研究所', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220351.0, 'College_majors': '金融学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '所学专业与所招专业须一致。', 'consultation': '0891-6386870'},
+
+ {'id': 352.0, 'unit': '区直', 'Post': '西藏自治区地质矿产勘查开发局', 'Nature_position': '第二地质大队', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220352.0, 'College_majors': '新闻学', 'Undergraduate_majors': '中共党员', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '所学专业与所招专业须一致。', 'consultation': '0891-6386870'},
+
+ {'id': 353.0, 'unit': '区直', 'Post': '西藏农牧学院', 'Nature_position': '水产科学研究所', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220353.0, 'College_majors': '软件工程、地理信息科学、计算机科学与技术', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '所学专业与所招专业须一致。', 'consultation': '0891-6386870'},
+
+ {'id': 354.0, 'unit': '区直', 'Post': '西藏自治区地质矿产勘查开发局', 'Nature_position': '第五地质大队', 'Number': '事业单位', 'Graduation_time': 5.0, 'Academic_requirements': 202220354.0, 'College_majors': '资源勘查工程、地质学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '长期从事高寒地区野外一线地质工作，工作强度大，条件艰苦，限男性报考；所学专业与所招专业须一致。', 'consultation': '0979-8482644'},
+
+ {'id': 355.0, 'unit': '区直', 'Post': '西藏农牧学院', 'Nature_position': '水产科学研究所', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202220355.0, 'College_majors': '采矿工程', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '长期从事高寒地区野外一线地质工作，工作强度大，条件艰苦，限男性报考；所学专业与所招专业须一致。', 'consultation': '0979-8482644'},
+
+ {'id': 356.0, 'unit': '区直', 'Post': '西藏自治区地质矿产勘查开发局', 'Nature_position': '第五地质大队', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220356.0, 'College_majors': '会计学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '长期从事高寒地区野外一线地质工作，工作强度大，条件艰苦；所学专业与所招专业须一致。', 'consultation': '0979-8482644'},
+
+ {'id': 357.0, 'unit': '区直', 'Post': '西藏农牧学院', 'Nature_position': '水产科学研究所', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220357.0, 'College_majors': '审计学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '所学专业与所招专业须一致。', 'consultation': '0979-8482644'},
+
+ {'id': 358.0, 'unit': '区直', 'Post': '西藏自治区地质矿产勘查开发局', 'Nature_position': '第五地质大队', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220358.0, 'College_majors': '地理科学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '所学专业与所招专业须一致。', 'consultation': '0979-8482644'},
+
+ {'id': 359.0, 'unit': '区直', 'Post': '西藏农牧学院', 'Nature_position': '水产科学研究所', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220359.0, 'College_majors': '统计学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '所学专业与所招专业须一致。', 'consultation': '0979-8482644'},
+
+ {'id': 360.0, 'unit': '区直', 'Post': '西藏自治区地质矿产勘查开发局', 'Nature_position': '第五地质大队', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220360.0, 'College_majors': '法学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '所学专业与所招专业须一致。', 'consultation': '0979-8482644'},
+
+ {'id': 361.0, 'unit': '区直', 'Post': '西藏农牧学院', 'Nature_position': '水产科学研究所', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220361.0, 'College_majors': '秘书学、汉语言文学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '综合管理类(A类)', 'Examination': '是', 'interview': '否', 'remark': '所学专业与所招专业须一致。', 'consultation': '0979-8482644'},
+
+ {'id': 362.0, 'unit': '区直', 'Post': '西藏自治区地质矿产勘查开发局', 'Nature_position': '第五地质大队', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220362.0, 'College_majors': '新媒体技术', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '所学专业与所招专业须一致。', 'consultation': '0979-8482644'},
+
+ {'id': 363.0, 'unit': '区直', 'Post': '西藏农牧学院', 'Nature_position': '水产科学研究所', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220363.0, 'College_majors': '计算机科学与技术、地理信息科学、软件工程', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '所学专业与所招专业须一致。', 'consultation': '0979-8482644'},
+
+ {'id': 364.0, 'unit': '区直', 'Post': '西藏自治区地质矿产勘查开发局', 'Nature_position': '第六地质大队', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220364.0, 'College_majors': '钻探技术', 'Undergraduate_majors': '不限', 'Graduate_majors': '大专及以上', 'political_landscape': '不限', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '钻探高级工及以上优先、限男性', 'consultation': '0891-6725569'},
+
+ {'id': 365.0, 'unit': '区直', 'Post': '西藏农牧学院', 'Nature_position': '水产科学研究所', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220365.0, 'College_majors': '勘查技术与工程（钻探工程方向）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '钻探工程方向、长期从事高寒地区野外一线地质工作，工作强度大，条件艰苦，限男性报考', 'consultation': '0891-6725569'},
+
+ {'id': 366.0, 'unit': '区直', 'Post': '西藏自治区地质矿产勘查开发局', 'Nature_position': '第六地质大队', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220366.0, 'College_majors': '勘查技术与工程（钻探工程方向）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '钻探工程方向、长期从事高寒地区野外一线地质工作，工作强度大，条件艰苦，限男性报考', 'consultation': '0891-6725569'},
+
+ {'id': 367.0, 'unit': '区直', 'Post': '西藏农牧学院', 'Nature_position': '水产科学研究所', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220367.0, 'College_majors': '土木工程', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '长期从事高寒地区野外一线地质工作，工作强度大，条件艰苦；所学专业与所招专业须一致。', 'consultation': '0891-6725569'},
+
+ {'id': 368.0, 'unit': '区直', 'Post': '西藏自治区地质矿产勘查开发局', 'Nature_position': '第六地质大队', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202220368.0, 'College_majors': '资源勘查工程', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '长期从事高寒地区野外一线地质工作，工作强度大，条件艰苦，限男性报考；所学专业与所招专业须一致。', 'consultation': '0891-6725569'},
+
+ {'id': 369.0, 'unit': '区直', 'Post': '西藏农牧学院', 'Nature_position': '水产科学研究所', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220369.0, 'College_majors': '信息管理与信息系统', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '长期从事高寒地区野外一线地质工作，工作强度大，条件艰苦；所学专业与所招专业须一致。', 'consultation': '0891-6725569'},
+
+ {'id': 370.0, 'unit': '区直', 'Post': '西藏自治区地质矿产勘查开发局', 'Nature_position': '第六地质大队', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220370.0, 'College_majors': '城乡规划', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '长期从事高寒地区野外一线地质工作，工作强度大，条件艰苦；所学专业与所招专业须一致。', 'consultation': '0891-6725569'},
+
+ {'id': 371.0, 'unit': '区直', 'Post': '西藏农牧学院', 'Nature_position': '水产科学研究所', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202220371.0, 'College_majors': '飞行器动力工程', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '长期从事高寒地区野外一线地质工作，工作强度大，条件艰苦，限男性报考；所学专业与所招专业须一致。', 'consultation': '0891-6725569'},
+
+ {'id': 372.0, 'unit': '区直', 'Post': '西藏自治区地质矿产勘查开发局', 'Nature_position': '第六地质大队', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220372.0, 'College_majors': '水文与水资源工程', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '长期从事高寒地区野外一线地质工作，工作强度大，条件艰苦，限男性报考；所学专业与所招专业须一致。', 'consultation': '0891-6725569'},
+
+ {'id': 373.0, 'unit': '区直', 'Post': '西藏农牧学院', 'Nature_position': '水产科学研究所', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220373.0, 'College_majors': '工程力学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '长期从事高寒地区野外一线地质工作，工作强度大，条件艰苦；所学专业与所招专业须一致。', 'consultation': '0891-6725569'},
+
+ {'id': 374.0, 'unit': '区直', 'Post': '西藏自治区地质矿产勘查开发局', 'Nature_position': '第六地质大队', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220374.0, 'College_majors': '资源勘查工程（油气方向）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '长期从事高寒地区野外一线地质工作，工作强度大，条件艰苦，限男性报考；所学专业与所招专业须一致。', 'consultation': '0891-6725569'},
+
+ {'id': 375.0, 'unit': '区直', 'Post': '西藏农牧学院', 'Nature_position': '水产科学研究所', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220375.0, 'College_majors': '软件工程、计算机科学与技术、地理信息科学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '长期从事高寒地区野外一线地质工作，工作强度大，条件艰苦；所学专业与所招专业须一致。', 'consultation': '0891-6725569'},
+
+ {'id': 376.0, 'unit': '区直', 'Post': '西藏自治区地质矿产勘查开发局', 'Nature_position': '区域地质调查大队', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220376.0, 'College_majors': '资源勘查工程（油气方向）', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '长期从事高寒地区野外一线地质工作，工作强度大，条件艰苦，限男性报考；所学专业与所招专业须一致。', 'consultation': '0891-6153983'},
+
+ {'id': 377.0, 'unit': '区直', 'Post': '西藏农牧学院', 'Nature_position': '水产科学研究所', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220377.0, 'College_majors': '地质学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '长期从事高寒地区野外一线地质工作，工作强度大，条件艰苦，限男性报考；所学专业与所招专业须一致。', 'consultation': '0891-6153983'},
+
+ {'id': 378.0, 'unit': '区直', 'Post': '西藏自治区地质矿产勘查开发局', 'Nature_position': '区域地质调查大队', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220378.0, 'College_majors': '软件工程', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '长期从事高寒地区野外一线地质工作，工作强度大，条件艰苦，限男性报考；所学专业与所招专业须一致。', 'consultation': '0891-6153983'},
+
+ {'id': 379.0, 'unit': '区直', 'Post': '西藏农牧学院', 'Nature_position': '水产科学研究所', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220379.0, 'College_majors': '金融工程', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '所学专业与所招专业须一致。', 'consultation': '0891-6153983'},
+
+ {'id': 380.0, 'unit': '区直', 'Post': '西藏自治区地质矿产勘查开发局', 'Nature_position': '区域地质调查大队', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220380.0, 'College_majors': '广播电视学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '所学专业与所招专业须一致', 'consultation': '0891-6153983'},
+
+ {'id': 381.0, 'unit': '区直', 'Post': '西藏农牧学院', 'Nature_position': '水产科学研究所', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220381.0, 'College_majors': '工业设计', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '长期从事高寒地区野外一线地质工作，工作强度大，条件艰苦，限男性报考；所学专业与所招专业须一致。', 'consultation': '0891-6153983'},
+
+ {'id': 382.0, 'unit': '区直', 'Post': '西藏自治区地质矿产勘查开发局', 'Nature_position': '地热地质大队', 'Number': '事业单位', 'Graduation_time': 2.0, 'Academic_requirements': 202220382.0, 'College_majors': '测绘工程', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '长期从事高寒地区野外一线地质工作，工作强度大，条件艰苦，限男性报考；所学专业与所招专业须一致。', 'consultation': '0891-6866217'},
+
+ {'id': 383.0, 'unit': '区直', 'Post': '西藏农牧学院', 'Nature_position': '水产科学研究所', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220383.0, 'College_majors': '环境科学与工程', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '不限', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '长期从事高寒地区野外一线地质工作，工作强度大，条件艰苦，限男性报考；所学专业与所招专业须一致。', 'consultation': '0891-6866217'},
+
+ {'id': 384.0, 'unit': '区直', 'Post': '西藏自治区地质矿产勘查开发局', 'Nature_position': '地热地质大队', 'Number': '事业单位', 'Graduation_time': 3.0, 'Academic_requirements': 202220384.0, 'College_majors': '勘查技术与工程', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '长期从事高寒地区野外一线地质工作，工作强度大，条件艰苦，限男性报考；所学专业与所招专业须一致。', 'consultation': '0891-6866217'},
+
+ {'id': 385.0, 'unit': '区直', 'Post': '西藏农牧学院', 'Nature_position': '水产科学研究所', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220385.0, 'College_majors': '计算机科学与技术、软件工程', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '所学专业与所招专业须一致。', 'consultation': '0891-6866217'},
+
+ {'id': 386.0, 'unit': '区直', 'Post': '西藏自治区地质矿产勘查开发局', 'Nature_position': '地热地质大队', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220386.0, 'College_majors': '油气资源工程', 'Undergraduate_majors': '不限', 'Graduate_majors': '硕士研究生及以上', 'political_landscape': '2022年毕业生', 'Job_code': '——', 'Examination': '是', 'interview': '是', 'remark': '长期从事高寒地区野外一线地质工作，工作强度大，条件艰苦，限男性报考；所学专业与所招专业须一致。', 'consultation': '0891-6866217'},
+
+ {'id': 387.0, 'unit': '区直', 'Post': '西藏农牧学院', 'Nature_position': '中心实验室', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220387.0, 'College_majors': '会计学', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '社会科学专技类(B类)', 'Examination': '是', 'interview': '否', 'remark': '所学专业与所招专业须一致。', 'consultation': '0891-6862314'},
+
+ {'id': 388.0, 'unit': '区直', 'Post': '西藏自治区地质矿产勘查开发局', 'Nature_position': '地热地质大队', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220388.0, 'College_majors': '土木工程', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '岩土试验方向', 'consultation': '0891-6862314'},
+
+ {'id': 389.0, 'unit': '区直', 'Post': '西藏自治区气象局', 'Nature_position': '林芝市墨脱县气象局', 'Number': '事业单位', 'Graduation_time': 1.0, 'Academic_requirements': 202220389.0, 'College_majors': '气象类、计算机科学与技术', 'Undergraduate_majors': '不限', 'Graduate_majors': '本科及以上', 'political_landscape': '2020、2021、2022年毕业生', 'Job_code': '自然科学专技类(C类)', 'Examination': '是', 'interview': '否', 'remark': '1.2020年、2021年普通高校毕业生需离校时和在择业期内未落实工作单位2.如笔试成绩相同组织考生进行面试', 'consultation': '0891-6320741'}]
+
+
+
+
+
+
+    
+	    
+	    
+	    for(i=0;i<xx.length;i++){
+	    	var html="<tr><td>"+
+	    	xx[i].id+"</td><td>"+
+            xx[i].unit+"</td><td>"+
+            xx[i].Post+"</td><td>"+
+            xx[i].Nature_position+"</td><td>"+
+            xx[i].Number+"</td><td>"+
+            xx[i].Graduation_time+"</td><td>"+
+            xx[i].Academic_requirements+"</td><td>"+
+            xx[i].College_majors+"</td><td>"+
+            xx[i].Undergraduate_majors+"</td><td>"+
+            xx[i].Graduate_majors+"</td><td>"+
+            xx[i].political_landscape+"</td><td>"+
+            xx[i].Job_code+"</td><td>"+
+            xx[i].Examination+"</td><td>"+
+            xx[i].interview+"</td><td>"+
+            xx[i].remark+"</td><td>"+
+            xx[i].consultation+"</td></tr>";
+
+	    	$("#example tbody").append(html);
+	    	
+	    }
+	    
+	    $('#example').DataTable( {
+	        dom: 'Bfrtip',
+	        language: {  
+                emptyTable: '没有数据',  
+                loadingRecords: '加载中...',  
+                processing: '查询中...',  
+                search: '搜索【专业、地区等】:',  
+                lengthMenu: '每页 _MENU_ 件',  
+                zeroRecords: '没有数据',  
+                paginate: {  
+                    'first':      '第一页',  
+                    'last':       '最后一页',  
+                    'next':       '下一页',  
+                    'previous':   '上一页'  
+            	},  
+	            info: '第 _PAGE_ 页 / 总 _PAGES_ 页',  
+	            infoEmpty: '没有数据',  
+	            infoFiltered: '(过滤总件数 _MAX_ 条)',
+	        },
+	        
+
+	    } );
+	    
+
+
+	});
+  </script>  
+ </body>  
+</html>  

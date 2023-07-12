@@ -1,0 +1,801 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">   
+ <head>  
+  <title> 导出到Excel </title>  
+  <meta charset='utf-8'>
+  <link rel="stylesheet" href="../css/table.css" />
+  <link rel="stylesheet" href="../css/buttons.css" />
+  <style>
+  	*{
+  		/*background-image: url();*/
+  		background-color: #000;
+  		color: #FFF; 
+  	}
+  	tbody td{
+  		text-align: center;
+  	}
+  </style>
+ </head>  
+  
+ <body>  
+ 	<h1 style="text-align: center;">2020公务员招聘岗位</h1>
+    <a href="../index.html" style="font-size: 20px;">回到主页</a>
+ 	<table id="example" class="display" role="grid" aria-describedby="example_info">
+ 		<thead>
+            <tr>
+                <th>序号</th>
+                <th>招考地</th>
+                <th>招考部门</th>
+                <th>职位</th>
+                <th>职位性质</th>
+                <th>人数</th>
+                <th>职位代码</th>
+                <th>职位类别</th>
+                <th>专业要求</th>
+                <th>性别要求</th>
+                <th>学历要求</th>
+                <th>是否应届要求</th>
+                
+                <th>备注</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            
+        </tbody>
+
+        
+     
+ 	</table>
+ 	
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/jquery.datatables.min.js"/>
+	<script src="../js/buttons.print.min.js"></script>
+
+ <script> 
+
+$(document).ready(function(){ 
+
+    	var xx =[
+
+ {id: 1.0, venue: '拉萨市', Department: '市纪委监委', posts: '审查调查室', Natposition: '公务员', p_Number: 1.0, Job_code: 20201001.0, Job_category: '地市级', Professional: '法学或审计', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 2.0, venue: '拉萨市', Department: '市委网信办', posts: '数据资源管理科', Natposition: '公务员', p_Number: 1.0, Job_code: 20201002.0, Job_category: '地市级', Professional: '网络工程', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 3.0, venue: '拉萨市', Department: '市委党校', posts: '教务科', Natposition: '参公', p_Number: 1.0, Job_code: 20201003.0, Job_category: '地市级', Professional: '教育学', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 4.0, venue: '拉萨市', Department: '市委党校', posts: '政工科', Natposition: '参公', p_Number: 1.0, Job_code: 20201004.0, Job_category: '地市级', Professional: '汉语言文学', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 5.0, venue: '拉萨市', Department: '市教育局', posts: '办公室', Natposition: '公务员', p_Number: 1.0, Job_code: 20201005.0, Job_category: '地市级', Professional: '汉语言文学', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 6.0, venue: '拉萨市', Department: '市财政局', posts: '财政投资评审中心', Natposition: '参公', p_Number: 1.0, Job_code: 20201006.0, Job_category: '地市级', Professional: '财政学', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 7.0, venue: '拉萨市', Department: '市财政局', posts: '会计核算中心', Natposition: '参公', p_Number: 2.0, Job_code: 20201007.0, Job_category: '地市级', Professional: '会计学', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 8.0, venue: '拉萨市', Department: '市自然资源局', posts: '市土地储备中心', Natposition: '参公', p_Number: 1.0, Job_code: 20201008.0, Job_category: '地市级', Professional: '土地资源管理', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 9.0, venue: '拉萨市', Department: '市住建局', posts: '房产管理局', Natposition: '参公', p_Number: 1.0, Job_code: 20201009.0, Job_category: '地市级', Professional: '建筑学或土木工程', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 10.0, venue: '拉萨市', Department: '市住建局', posts: '招投标管理办公室', Natposition: '参公', p_Number: 1.0, Job_code: 20201010.0, Job_category: '地市级', Professional: '工程管理', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 11.0, venue: '拉萨市', Department: '市住建局', posts: '住房资金管理中心', Natposition: '参公', p_Number: 1.0, Job_code: 20201011.0, Job_category: '地市级', Professional: '计算机类', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 12.0, venue: '拉萨市', Department: '市农业农村局', posts: '市农畜产品质量安全检测中心', Natposition: '参公', p_Number: 1.0, Job_code: 20201012.0, Job_category: '地市级', Professional: '食品质量与安全', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 13.0, venue: '拉萨市', Department: '市卫健委', posts: '医疗体制改革办公室', Natposition: '公务员', p_Number: 1.0, Job_code: 20201013.0, Job_category: '地市级', Professional: '临床医学', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 14.0, venue: '拉萨市', Department: '市红十字会', posts: '综合办公室', Natposition: '公务员', p_Number: 1.0, Job_code: 20201014.0, Job_category: '地市级', Professional: '临床医学', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 15.0, venue: '拉萨市', Department: '市应急管理局', posts: '应急指挥中心', Natposition: '公务员', p_Number: 1.0, Job_code: 20201015.0, Job_category: '地市级', Professional: '计算机科学与技术', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 16.0, venue: '拉萨市', Department: '市医保局', posts: '医保中心', Natposition: '参公', p_Number: 1.0, Job_code: 20201016.0, Job_category: '地市级', Professional: '临床医学', Gender: '不限', Academic: '硕士研究生及以上', request: '是',  rema: ''},
+
+
+ {id: 17.0, venue: '拉萨市', Department: '市八廓古城管委会', posts: '办公室', Natposition: '公务员', p_Number: 1.0, Job_code: 20201017.0, Job_category: '地市级', Professional: '汉语言文学', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 18.0, venue: '拉萨市', Department: '市八廓古城管委会', posts: '市政市容规划管理局', Natposition: '公务员', p_Number: 1.0, Job_code: 20201018.0, Job_category: '地市级', Professional: '给排水科学与工程', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 19.0, venue: '拉萨市', Department: '市布宫广场管理处', posts: '办公室', Natposition: '参公', p_Number: 1.0, Job_code: 20201019.0, Job_category: '地市级', Professional: '汉语言文学', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 20.0, venue: '拉萨市', Department: '市布宫广场管理处', posts: '办公室', Natposition: '参公', p_Number: 1.0, Job_code: 20201020.0, Job_category: '地市级', Professional: '会计学', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 21.0, venue: '拉萨市', Department: '城关区', posts: '区巡察组', Natposition: '公务员', p_Number: 1.0, Job_code: 20201021.0, Job_category: '县区级', Professional: '会计学', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 22.0, venue: '拉萨市', Department: '城关区', posts: '区教育局', Natposition: '公务员', p_Number: 1.0, Job_code: 20201022.0, Job_category: '县区级', Professional: '教育学', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 23.0, venue: '拉萨市', Department: '堆龙德庆区', posts: '马镇人民政府司法所', Natposition: '公务员', p_Number: 1.0, Job_code: 20201023.0, Job_category: '乡镇级', Professional: '法学', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 24.0, venue: '拉萨市', Department: '达孜区', posts: '区藏语委办', Natposition: '参公', p_Number: 1.0, Job_code: 20201024.0, Job_category: '县区级', Professional: '藏语言文学', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 25.0, venue: '拉萨市', Department: '曲水县', posts: '县扶贫开发办公室', Natposition: '公务员', p_Number: 1.0, Job_code: 20201025.0, Job_category: '县区级', Professional: '统计学', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 26.0, venue: '拉萨市', Department: '墨竹工卡县', posts: '县文化和旅游局', Natposition: '公务员', p_Number: 1.0, Job_code: 20201026.0, Job_category: '县区级', Professional: '旅游管理类', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 27.0, venue: '拉萨市', Department: '墨竹工卡县', posts: '县检察院', Natposition: '公务员', p_Number: 1.0, Job_code: 20201027.0, Job_category: '县区级', Professional: '藏语言文学（藏汉翻译方向）', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 28.0, venue: '拉萨市', Department: '墨竹工卡县', posts: '日多乡党群综合办公室', Natposition: '公务员', p_Number: 1.0, Job_code: 20201028.0, Job_category: '乡镇级', Professional: '汉语言文学', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 29.0, venue: '拉萨市', Department: '墨竹工卡县', posts: '扎雪乡政务综合办公室', Natposition: '公务员', p_Number: 1.0, Job_code: 20201029.0, Job_category: '乡镇级', Professional: '藏语言文学（藏汉翻译方向）', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 30.0, venue: '拉萨市', Department: '林周县', posts: '阿朗乡人民政府', Natposition: '公务员', p_Number: 1.0, Job_code: 20201030.0, Job_category: '乡镇级', Professional: '马克思主义哲学', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 31.0, venue: '拉萨市', Department: '林周县', posts: '旁多乡人民政府', Natposition: '公务员', p_Number: 1.0, Job_code: 20201031.0, Job_category: '乡镇级', Professional: '法学', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 32.0, venue: '拉萨市', Department: '林周县', posts: '旁多乡人民政府', Natposition: '公务员', p_Number: 1.0, Job_code: 20201032.0, Job_category: '乡镇级', Professional: '经济学类', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 33.0, venue: '拉萨市', Department: '林周县', posts: '唐古乡人民政府', Natposition: '公务员', p_Number: 1.0, Job_code: 20201033.0, Job_category: '乡镇级', Professional: '藏语言文学（藏汉翻译方向）', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 34.0, venue: '拉萨市', Department: '林周县', posts: '唐古乡人民政府', Natposition: '公务员', p_Number: 1.0, Job_code: 20201034.0, Job_category: '乡镇级', Professional: '计算机类', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 35.0, venue: '拉萨市', Department: '尼木县', posts: '县退役军人事务局', Natposition: '公务员', p_Number: 1.0, Job_code: 20201035.0, Job_category: '县区级', Professional: '汉语言文学', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 36.0, venue: '拉萨市', Department: '尼木县', posts: '县医疗保障局', Natposition: '公务员', p_Number: 1.0, Job_code: 20201036.0, Job_category: '县区级', Professional: '会计学', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 37.0, venue: '拉萨市', Department: '尼木县', posts: '县人民法院续迈乡派出法庭', Natposition: '公务员', p_Number: 1.0, Job_code: 20201037.0, Job_category: '县区级', Professional: '侦查学', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 38.0, venue: '拉萨市', Department: '尼木县', posts: '县检察院', Natposition: '公务员', p_Number: 1.0, Job_code: 20201038.0, Job_category: '县区级', Professional: '法学', Gender: '不限', Academic: '本科及以上', request: '是',  rema: '具有法律职业资格证书（C级及以上）'},
+
+
+ {id: 39.0, venue: '拉萨市', Department: '尼木县', posts: '帕古乡人民政府', Natposition: '公务员', p_Number: 1.0, Job_code: 20201039.0, Job_category: '乡镇级', Professional: '经济学类', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 40.0, venue: '拉萨市', Department: '当雄县', posts: '羊八井镇派出人民法庭', Natposition: '公务员', p_Number: 1.0, Job_code: 20201040.0, Job_category: '乡镇级', Professional: '法学', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+ 
+ {id: 41.0, venue: '日喀则市', Department: '定日县', posts: '曲洛人民法庭', Natposition: '公务员', p_Number: 1.0, Job_code: 20201041.0, Job_category: '乡镇级', Professional: '法学', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 42.0, venue: '日喀则市', Department: '定日县', posts: '绒辖乡', Natposition: '公务员', p_Number: 2.0, Job_code: 20201042.0, Job_category: '乡镇级', Professional: '财会、文秘、水利', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 43.0, venue: '日喀则市', Department: '定日县', posts: '盆吉乡', Natposition: '公务员', p_Number: 1.0, Job_code: 20201043.0, Job_category: '乡镇级', Professional: '法学', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 44.0, venue: '日喀则市', Department: '谢通门县', posts: '美巴切勤乡', Natposition: '公务员', p_Number: 1.0, Job_code: 20201044.0, Job_category: '乡镇级', Professional: '文秘、经济学', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 45.0, venue: '日喀则市', Department: '定结县', posts: '日屋镇', Natposition: '公务员', p_Number: 1.0, Job_code: 20201045.0, Job_category: '乡镇级', Professional: '文秘、经济学', Gender: '不限', Academic: '大专及以上', request: '否',  rema: '仅限服务基层项目人员报考'},
+
+
+ {id: 46.0, venue: '日喀则市', Department: '萨嘎县', posts: '雄如人民法庭', Natposition: '公务员', p_Number: 1.0, Job_code: 20201046.0, Job_category: '乡镇级', Professional: '文秘、经济学', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 47.0, venue: '日喀则市', Department: '仲巴县', posts: '琼果乡', Natposition: '公务员', p_Number: 2.0, Job_code: 20201047.0, Job_category: '乡镇级', Professional: '法学专业', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 48.0, venue: '日喀则市', Department: '仲巴县', posts: '布多乡', Natposition: '公务员', p_Number: 1.0, Job_code: 20201048.0, Job_category: '乡镇级', Professional: '藏汉翻译、财会、文秘', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 49.0, venue: '日喀则市', Department: '仲巴县', posts: '仁多乡', Natposition: '公务员', p_Number: 1.0, Job_code: 20201049.0, Job_category: '乡镇级', Professional: '藏汉翻译、财会、文秘', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 50.0, venue: '日喀则市', Department: '仲巴县', posts: '偏吉乡', Natposition: '公务员', p_Number: 2.0, Job_code: 20201050.0, Job_category: '乡镇级', Professional: '藏汉翻译、财会、文秘', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 51.0, venue: '日喀则市', Department: '仲巴县', posts: '霍尔巴乡', Natposition: '公务员', p_Number: 2.0, Job_code: 20201051.0, Job_category: '乡镇级', Professional: '藏汉翻译、财会、文秘', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+{id: 52.0, venue: '林芝市', Department: '巴宜区', posts: '区司法局法律援助中心', Natposition: '参公', p_Number: 1.0, Job_code: 20201052.0, Job_category: '县区级', Professional: '法学类专业', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 53.0, venue: '林芝市', Department: '巴宜区', posts: '区住建局公积金管理中心', Natposition: '参公', p_Number: 1.0, Job_code: 20201053.0, Job_category: '县区级', Professional: '专业不限', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 54.0, venue: '林芝市', Department: '巴宜区', posts: '墨脱县', Natposition: '参公', p_Number: 1.0, Job_code: 20201054.0, Job_category: '县区级', Professional: '经济学类专业', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 55.0, venue: '林芝市', Department: '巴宜区', posts: '区农业农村局草原监理站', Natposition: '参公', p_Number: 1.0, Job_code: 20201055.0, Job_category: '县区级', Professional: '专业不限', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 56.0, venue: '林芝市', Department: '工布江达县', posts: '县财政局会计核算中心', Natposition: '参公', p_Number: 2.0, Job_code: 20201056.0, Job_category: '县区级', Professional: '财务会计、金融学类专业', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 57.0, venue: '林芝市', Department: '工布江达县', posts: '县文化和旅游局风景管理局', Natposition: '参公', p_Number: 1.0, Job_code: 20201057.0, Job_category: '县区级', Professional: '服务业管理类专业', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 58.0, venue: '林芝市', Department: '工布江达县', posts: '巴河镇人民政府', Natposition: '公务员', p_Number: 1.0, Job_code: 20201058.0, Job_category: '乡镇级', Professional: '专业不限', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 59.0, venue: '林芝市', Department: '工布江达县', posts: '错高乡人民政府', Natposition: '公务员', p_Number: 1.0, Job_code: 20201059.0, Job_category: '乡镇级', Professional: '专业不限', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 60.0, venue: '林芝市', Department: '工布江达县', posts: '加兴乡人民政府', Natposition: '公务员', p_Number: 1.0, Job_code: 20201060.0, Job_category: '乡镇级', Professional: '专业不限', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 61.0, venue: '林芝市', Department: '工布江达县', posts: '金达镇人民政府', Natposition: '公务员', p_Number: 1.0, Job_code: 20201061.0, Job_category: '乡镇级', Professional: '专业不限', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 62.0, venue: '林芝市', Department: '朗县', posts: '县宣传部文化市场综合执法大队', Natposition: '参公', p_Number: 1.0, Job_code: 20201062.0, Job_category: '县区级', Professional: '法律类专业', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 63.0, venue: '林芝市', Department: '朗县', posts: '县文化和旅游局旅游执法大队', Natposition: '参公', p_Number: 2.0, Job_code: 20201063.0, Job_category: '县区级', Professional: '旅游类或历史类专业', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 64.0, venue: '林芝市', Department: '朗县', posts: '县林业和草原局森林效益补偿办公室', Natposition: '参公', p_Number: 2.0, Job_code: 20201064.0, Job_category: '县区级', Professional: '林业类或财会类专业', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 65.0, venue: '林芝市', Department: '波密县', posts: '县人民法院易贡乡通麦小集镇人民法庭', Natposition: '公务员', p_Number: 3.0, Job_code: 20201065.0, Job_category: '县区级', Professional: '藏汉翻译、计算机、法学、财务会计类专业', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 66.0, venue: '林芝市', Department: '波密县', posts: '县人民法院倾多镇人民法庭', Natposition: '公务员', p_Number: 3.0, Job_code: 20201066.0, Job_category: '县区级', Professional: '藏汉翻译、计算机、法学、财务会计类专业', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 67.0, venue: '林芝市', Department: '波密县', posts: '县人民法院松宗镇人民法庭', Natposition: '公务员', p_Number: 1.0, Job_code: 20201067.0, Job_category: '县区级', Professional: '藏汉翻译、计算机、法学、财务会计类专业', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 68.0, venue: '林芝市', Department: '波密县', posts: '县人民法院玉许乡人民法庭', Natposition: '公务员', p_Number: 1.0, Job_code: 20201068.0, Job_category: '县区级', Professional: '藏汉翻译、计算机、法学、财务会计类专业', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 69.0, venue: '林芝市', Department: '波密县', posts: '县公安局古乡派出所', Natposition: '公务员', p_Number: 1.0, Job_code: 20201069.0, Job_category: '县区级', Professional: '公安学类专业', Gender: '不限', Academic: '本科及以上', request: '是',  rema: '须符合公安机关人民警察录用标准，参加体检和体能测评、政审等。'},
+
+
+ {id: 70.0, venue: '林芝市', Department: '波密县', posts: '县公安局松宗镇派出所', Natposition: '公务员', p_Number: 1.0, Job_code: 20201070.0, Job_category: '县区级', Professional: '公安学类专业', Gender: '不限', Academic: '本科及以上', request: '是',  rema: '须符合公安机关人民警察录用标准，参加体检和体能测评、政审等。'},
+
+
+ {id: 71.0, venue: '林芝市', Department: '波密县', posts: '县公安局康玉乡派出所', Natposition: '公务员', p_Number: 1.0, Job_code: 20201071.0, Job_category: '县区级', Professional: '公安学类专业', Gender: '不限', Academic: '本科及以上', request: '是',  rema: '须符合公安机关人民警察录用标准，参加体检和体能测评、政审等。'},
+
+
+ {id: 72.0, venue: '林芝市', Department: '波密县', posts: '县公安局八盖乡派出所', Natposition: '公务员', p_Number: 1.0, Job_code: 20201072.0, Job_category: '县区级', Professional: '公安学类专业', Gender: '不限', Academic: '本科及以上', request: '是',  rema: '须符合公安机关人民警察录用标准，参加体检和体能测评、政审等。'},
+
+
+ {id: 73.0, venue: '林芝市', Department: '波密县', posts: '县司法局易贡乡司法所', Natposition: '公务员', p_Number: 1.0, Job_code: 20201073.0, Job_category: '县区级', Professional: '法学类专业', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 74.0, venue: '林芝市', Department: '波密县', posts: '县林业和草原局大峡谷救护站（监测站）', Natposition: '参公', p_Number: 2.0, Job_code: 20201074.0, Job_category: '县区级', Professional: '文秘、林学类专业', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 75.0, venue: '林芝市', Department: '波密县', posts: '县林业和草原局林业工作站', Natposition: '参公', p_Number: 3.0, Job_code: 20201075.0, Job_category: '县区级', Professional: '文秘、林学类专业', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 76.0, venue: '林芝市', Department: '波密县', posts: '县藏语文工作委员会办公室（编译局）', Natposition: '参公', p_Number: 2.0, Job_code: 20201076.0, Job_category: '县区级', Professional: '藏汉翻译、藏语言文学类专业', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 77.0, venue: '林芝市', Department: '波密县', posts: '县财政局会计核算中心', Natposition: '参公', p_Number: 2.0, Job_code: 20201077.0, Job_category: '县区级', Professional: '财务会计、金融学、文秘类专业', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 78.0, venue: '林芝市', Department: '波密县', posts: '县人力资源和社会保障局劳动就业和人才流动服务中心', Natposition: '参公', p_Number: 2.0, Job_code: 20201078.0, Job_category: '县区级', Professional: '法学类专业', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 79.0, venue: '林芝市', Department: '波密县', posts: '县自然资源局土地储备中心', Natposition: '参公', p_Number: 1.0, Job_code: 20201079.0, Job_category: '县区级', Professional: '测绘类专业', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 80.0, venue: '林芝市', Department: '波密县', posts: '县农业农村局草原监理站', Natposition: '参公', p_Number: 1.0, Job_code: 20201080.0, Job_category: '县区级', Professional: '农业、农学类专业', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 81.0, venue: '林芝市', Department: '波密县', posts: '康玉乡人民政府', Natposition: '公务员', p_Number: 3.0, Job_code: 20201081.0, Job_category: '乡镇级', Professional: '专业不限', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 82.0, venue: '林芝市', Department: '波密县', posts: '八盖乡人民政府', Natposition: '公务员', p_Number: 3.0, Job_code: 20201082.0, Job_category: '乡镇级', Professional: '专业不限', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 83.0, venue: '林芝市', Department: '察隅县', posts: '县纪律监察委员会机关', Natposition: '公务员', p_Number: 1.0, Job_code: 20201083.0, Job_category: '县区级', Professional: '法学、财务会计类专业', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 84.0, venue: '林芝市', Department: '察隅县', posts: '县卫生健康委员会', Natposition: '公务员', p_Number: 1.0, Job_code: 20201084.0, Job_category: '县区级', Professional: '财务会计类专业', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 85.0, venue: '林芝市', Department: '察隅县', posts: '县人民法院', Natposition: '公务员', p_Number: 2.0, Job_code: 20201085.0, Job_category: '县区级', Professional: '法学类专业', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 86.0, venue: '林芝市', Department: '察隅县', posts: '县人民法院察瓦龙乡人民法庭', Natposition: '公务员', p_Number: 3.0, Job_code: 20201086.0, Job_category: '县区级', Professional: '法学类专业', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 87.0, venue: '林芝市', Department: '察隅县', posts: '县委组织部老干部活动中心', Natposition: '参公', p_Number: 1.0, Job_code: 20201087.0, Job_category: '县区级', Professional: '财务会计类专业', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 88.0, venue: '林芝市', Department: '察隅县', posts: '县财政局会计核算中心', Natposition: '参公', p_Number: 1.0, Job_code: 20201088.0, Job_category: '县区级', Professional: '财务会计类专业', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 89.0, venue: '林芝市', Department: '察隅县', posts: '县住建局城管监察大队', Natposition: '参公', p_Number: 3.0, Job_code: 20201089.0, Job_category: '县区级', Professional: '专业不限', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 90.0, venue: '林芝市', Department: '察隅县', posts: '县水利局水利服务站', Natposition: '参公', p_Number: 1.0, Job_code: 20201090.0, Job_category: '县区级', Professional: '水利类专业', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 91.0, venue: '林芝市', Department: '察隅县', posts: '县市场监督管理局食品药品稽查队', Natposition: '参公', p_Number: 2.0, Job_code: 20201091.0, Job_category: '县区级', Professional: '公共卫生、药学类专业', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 92.0, venue: '林芝市', Department: '察隅县', posts: '县林业和草原局草原监理站', Natposition: '参公', p_Number: 1.0, Job_code: 20201092.0, Job_category: '县区级', Professional: '农业、农学类专业', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 93.0, venue: '林芝市', Department: '察隅县', posts: '古拉乡人民政府', Natposition: '公务员', p_Number: 5.0, Job_code: 20201093.0, Job_category: '乡镇级', Professional: '专业不限', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 94.0, venue: '林芝市', Department: '察隅县', posts: '察瓦龙乡人民政府', Natposition: '公务员', p_Number: 3.0, Job_code: 20201094.0, Job_category: '乡镇级', Professional: '专业不限', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 95.0, venue: '林芝市', Department: '墨脱县', posts: '县人民政府驻八一办事处', Natposition: '参公', p_Number: 3.0, Job_code: 20201095.0, Job_category: '县区级', Professional: '计算机、文秘类专业', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 96.0, venue: '林芝市', Department: '墨脱县', posts: '县藏语文工作委员会办公室', Natposition: '参公', p_Number: 2.0, Job_code: 20201096.0, Job_category: '县区级', Professional: '藏汉翻译、藏语言文学类专业', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 97.0, venue: '林芝市', Department: '墨脱县', posts: '县公安局县城派出所', Natposition: '公务员', p_Number: 3.0, Job_code: 20201097.0, Job_category: '县区级', Professional: '英语、公安学、财务管理、法学类专业', Gender: '不限', Academic: '本科及以上', request: '是',  rema: '须符合公安机关人民警察录用标准，参加体检和体能测评、政审等。'},
+
+
+ {id: 98.0, venue: '林芝市', Department: '墨脱县', posts: '县公安局贡日便民警务站', Natposition: '公务员', p_Number: 2.0, Job_code: 20201098.0, Job_category: '县区级', Professional: '英语、公安学、财务管理、法学类专业', Gender: '不限', Academic: '本科及以上', request: '是',  rema: '须符合公安机关人民警察录用标准，参加体检和体能测评、政审等。'},
+
+
+ {id: 99.0, venue: '林芝市', Department: '墨脱县', posts: '县财政局会计核算中心', Natposition: '参公', p_Number: 2.0, Job_code: 20201099.0, Job_category: '县区级', Professional: '金融学、财务会计、审计类专业', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 100.0, venue: '林芝市', Department: '墨脱县', posts: '县住房和城乡建设局城管监察大队', Natposition: '参公', p_Number: 2.0, Job_code: 20201100.0, Job_category: '县区级', Professional: '工程管理、工程建设、工程检测类专业', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 101.0, venue: '林芝市', Department: '墨脱县', posts: '县人民法院格当乡人民法庭', Natposition: '公务员', p_Number: 1.0, Job_code: 20201101.0, Job_category: '县区级', Professional: '法学类专业', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 102.0, venue: '林芝市', Department: '墨脱县', posts: '甘登乡人民政府党群综合办公室', Natposition: '公务员', p_Number: 1.0, Job_code: 20201102.0, Job_category: '乡镇级', Professional: '专业不限', Gender: '不限', Academic: '大专及以上', request: '否',  rema: '仅限服务基层项目人员报考'},
+
+
+ {id: 103.0, venue: '林芝市', Department: '墨脱县', posts: '甘登乡人民政府政务综合办公室', Natposition: '公务员', p_Number: 1.0, Job_code: 20201103.0, Job_category: '乡镇级', Professional: '专业不限', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 104.0, venue: '林芝市', Department: '墨脱县', posts: '甘登乡人民政府经济发展和社会事务办公室', Natposition: '公务员', p_Number: 2.0, Job_code: 20201104.0, Job_category: '乡镇级', Professional: '专业不限', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 105.0, venue: '林芝市', Department: '墨脱县', posts: '甘登乡人民政府维护稳定和综合治理办公室', Natposition: '公务员', p_Number: 1.0, Job_code: 20201105.0, Job_category: '乡镇级', Professional: '专业不限', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 106.0, venue: '林芝市', Department: '墨脱县', posts: '甘登乡人民政府财务室', Natposition: '公务员', p_Number: 2.0, Job_code: 20201106.0, Job_category: '乡镇级', Professional: '财务会计类专业', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+ {id: 107.0, venue: '昌都市', Department: '市藏语文工作委员会办公室（编译局）', posts: '综合科', Natposition: '参公', p_Number: 1.0, Job_code: 20201107.0, Job_category: '地市级', Professional: '汉语言文学专业、文秘专业', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 108.0, venue: '昌都市', Department: '市直机关工作委员会', posts: '综合科', Natposition: '公务员', p_Number: 1.0, Job_code: 20201108.0, Job_category: '地市级', Professional: '会计学专业', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 109.0, venue: '昌都市', Department: '市人民政府研究室', posts: '研究一科', Natposition: '公务员', p_Number: 1.0, Job_code: 20201109.0, Job_category: '地市级', Professional: '中国语言文学类', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 110.0, venue: '昌都市', Department: '市人民政府办公室', posts: '市政务服务中心', Natposition: '参公', p_Number: 1.0, Job_code: 20201110.0, Job_category: '地市级', Professional: '计算机类', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 111.0, venue: '昌都市', Department: '市人民政府办公室', posts: '外事服务中心', Natposition: '参公', p_Number: 1.0, Job_code: 20201111.0, Job_category: '地市级', Professional: '外国语言文学类', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 112.0, venue: '昌都市', Department: '市住房和城乡建设局', posts: '住房公积金管理中心', Natposition: '参公', p_Number: 1.0, Job_code: 20201112.0, Job_category: '地市级', Professional: '会计专业、财务管理专业', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 113.0, venue: '昌都市', Department: '市宗教事务局', posts: '研究室', Natposition: '参公', p_Number: 2.0, Job_code: 20201113.0, Job_category: '地市级', Professional: '专业不限', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 114.0, venue: '昌都市', Department: '市发展和改革委员会', posts: '建设项目评审中心', Natposition: '参公', p_Number: 1.0, Job_code: 20201114.0, Job_category: '地市级', Professional: '工程管理专业、工程造价专业 ', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 115.0, venue: '昌都市', Department: '市发展和改革委员会', posts: '项目协调管理中心', Natposition: '参公', p_Number: 3.0, Job_code: 20201115.0, Job_category: '地市级', Professional: '工程管理专业', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 116.0, venue: '昌都市', Department: '市发展和改革委员会', posts: '价格监测中心', Natposition: '参公', p_Number: 1.0, Job_code: 20201116.0, Job_category: '地市级', Professional: '文秘专业', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 117.0, venue: '昌都市', Department: '市发展和改革委员会', posts: '铁路建设协调中心', Natposition: '参公', p_Number: 1.0, Job_code: 20201117.0, Job_category: '地市级', Professional: '建筑学专业', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 118.0, venue: '昌都市', Department: '市发展和改革委员会', posts: '对口援藏项目协调中心', Natposition: '参公', p_Number: 1.0, Job_code: 20201118.0, Job_category: '地市级', Professional: '文秘专业、经济学专业', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 119.0, venue: '昌都市', Department: '市发展和改革委员会', posts: '救灾物资储备管理站', Natposition: '参公', p_Number: 1.0, Job_code: 20201119.0, Job_category: '地市级', Professional: '工程管理专业', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 120.0, venue: '昌都市', Department: '市发展和改革委员会', posts: '救灾物资储备管理站', Natposition: '参公', p_Number: 1.0, Job_code: 20201120.0, Job_category: '地市级', Professional: '公共管理专业', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 121.0, venue: '昌都市', Department: '市自然资源局', posts: '经济开发区分局', Natposition: '公务员', p_Number: 1.0, Job_code: 20201121.0, Job_category: '地市级', Professional: '土地资源管理专业', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 122.0, venue: '昌都市', Department: '市自然资源局', posts: '国土空间规划科', Natposition: '公务员', p_Number: 1.0, Job_code: 20201122.0, Job_category: '地市级', Professional: '资源环境与城乡规划管理专业', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 123.0, venue: '昌都市', Department: '市自然资源局', posts: '城乡规划编审中心', Natposition: '参公', p_Number: 1.0, Job_code: 20201123.0, Job_category: '地市级', Professional: '法学类、土地资源管理专业、城市规划专业', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 124.0, venue: '昌都市', Department: '市扶贫开发办公室', posts: '政策法规科', Natposition: '公务员', p_Number: 1.0, Job_code: 20201124.0, Job_category: '地市级', Professional: '中国语言文学类', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 125.0, venue: '昌都市', Department: '市扶贫开发办公室', posts: '计划财务科', Natposition: '公务员', p_Number: 1.0, Job_code: 20201125.0, Job_category: '地市级', Professional: '财政学类', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 126.0, venue: '昌都市', Department: '市财政局', posts: '国库集中支付中心', Natposition: '参公', p_Number: 1.0, Job_code: 20201126.0, Job_category: '地市级', Professional: '工商管理类', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 127.0, venue: '昌都市', Department: '市财政局', posts: '国库集中支付中心', Natposition: '参公', p_Number: 2.0, Job_code: 20201127.0, Job_category: '地市级', Professional: '汉语言文学专业', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 128.0, venue: '昌都市', Department: '市财政局', posts: '国库集中支付中心', Natposition: '参公', p_Number: 1.0, Job_code: 20201128.0, Job_category: '地市级', Professional: '经济学专业', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 129.0, venue: '昌都市', Department: '市人力资源和社会保障局', posts: '社会保险管理中心', Natposition: '参公', p_Number: 1.0, Job_code: 20201129.0, Job_category: '地市级', Professional: '计算机类', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 130.0, venue: '昌都市', Department: '市经济和信息化局', posts: '办公室', Natposition: '公务员', p_Number: 1.0, Job_code: 20201130.0, Job_category: '地市级', Professional: '会计学专业', Gender: '不限', Academic: '本科及以上', request: '是',  rema: '具备初级会计资格证'},
+
+
+ {id: 131.0, venue: '昌都市', Department: '市工商业联合会', posts: '业务科', Natposition: '公务员', p_Number: 1.0, Job_code: 20201131.0, Job_category: '地市级', Professional: '会计专业', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 132.0, venue: '昌都市', Department: '洛隆县', posts: '新荣乡党政综合办公室', Natposition: '公务员', p_Number: 1.0, Job_code: 20201132.0, Job_category: '乡镇级', Professional: '专业不限', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 133.0, venue: '昌都市', Department: '左贡县', posts: '中林卡乡党政综合办公室', Natposition: '公务员', p_Number: 1.0, Job_code: 20201133.0, Job_category: '乡镇级', Professional: '工商管理类、公共管理类、中国语言文学类', Gender: '不限', Academic: '本科及以上', request: '是',  rema: '中共党员优先'},
+
+
+ {id: 134.0, venue: '昌都市', Department: '左贡县', posts: '中林卡乡经济发展办公室', Natposition: '公务员', p_Number: 1.0, Job_code: 20201134.0, Job_category: '乡镇级', Professional: '经济学类、工商管理类、公共管理类', Gender: '不限', Academic: '本科及以上', request: '是',  rema: '中共党员优先'},
+
+
+ {id: 135.0, venue: '昌都市', Department: '左贡县', posts: '中林卡乡社会事务办公室', Natposition: '公务员', p_Number: 1.0, Job_code: 20201135.0, Job_category: '乡镇级', Professional: '工商管理类、公共管理类、社会学类', Gender: '不限', Academic: '本科及以上', request: '是',  rema: '中共党员优先'},
+
+
+ {id: 136.0, venue: '昌都市', Department: '左贡县', posts: '下林卡乡党政综合办公室', Natposition: '公务员', p_Number: 1.0, Job_code: 20201136.0, Job_category: '乡镇级', Professional: '工商管理类、公共管理类、中国语言文学类', Gender: '不限', Academic: '本科及以上', request: '是',  rema: '中共党员优先'},
+
+
+ {id: 137.0, venue: '昌都市', Department: '左贡县', posts: '绕金乡经济发展办公室', Natposition: '公务员', p_Number: 1.0, Job_code: 20201137.0, Job_category: '乡镇级', Professional: '经济学类、工商管理类、公共管理类', Gender: '不限', Academic: '本科及以上', request: '是',  rema: '中共党员优先'},
+
+
+ {id: 138.0, venue: '昌都市', Department: '左贡县', posts: '绕金乡财政所', Natposition: '公务员', p_Number: 1.0, Job_code: 20201138.0, Job_category: '乡镇级', Professional: '财政学类、工商管理类', Gender: '不限', Academic: '本科及以上', request: '是',  rema: '中共党员优先'},
+
+
+ {id: 139.0, venue: '昌都市', Department: '左贡县', posts: '仁果乡维护稳定办公室', Natposition: '公务员', p_Number: 1.0, Job_code: 20201139.0, Job_category: '乡镇级', Professional: '社会学类、法学类、政治学类', Gender: '不限', Academic: '本科及以上', request: '是',  rema: '中共党员优先'},
+
+
+ {id: 140.0, venue: '昌都市', Department: '左贡县', posts: '仁果乡经济发展办公室', Natposition: '公务员', p_Number: 1.0, Job_code: 20201140.0, Job_category: '乡镇级', Professional: '经济学类、工商管理类、公共管理类', Gender: '不限', Academic: '大专及以上', request: '否',  rema: '仅限服务基层项目人员报考，中共党员优先'},
+
+
+ {id: 141.0, venue: '昌都市', Department: '贡觉县', posts: '县委宣传部', Natposition: '公务员', p_Number: 1.0, Job_code: 20201141.0, Job_category: '县区级', Professional: '新闻学专业、广播电视学专业、广告学专业、传播学专业、汉语言文学专业', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 142.0, venue: '昌都市', Department: '贡觉县', posts: '县委党校', Natposition: '参公', p_Number: 2.0, Job_code: 20201142.0, Job_category: '县区级', Professional: '会计学专业、财务管理专业、审计学专业、资产评估专业、财政学专业', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 143.0, venue: '昌都市', Department: '贡觉县', posts: '县教育局教育督导室', Natposition: '参公', p_Number: 1.0, Job_code: 20201143.0, Job_category: '县区级', Professional: '会计学专业、财务管理专业、审计学专业、档案学专业、信息资源管理专业', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 144.0, venue: '昌都市', Department: '贡觉县', posts: '县民政局资源开发安置办公室', Natposition: '参公', p_Number: 1.0, Job_code: 20201144.0, Job_category: '县区级', Professional: '会计学专业、财务管理专业、审计学专业、资产评估专业', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 145.0, venue: '昌都市', Department: '贡觉县', posts: '县林业和草原局林业管理站', Natposition: '参公', p_Number: 1.0, Job_code: 20201145.0, Job_category: '县区级', Professional: '会计学专业、财务管理专业、审计学专业、资产评估专业', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 146.0, venue: '昌都市', Department: '贡觉县', posts: '县工商业联合会', Natposition: '公务员', p_Number: 1.0, Job_code: 20201146.0, Job_category: '县区级', Professional: '会计学专业、财务管理专业、审计学专业、资产评估专业、投资学专业', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 147.0, venue: '昌都市', Department: '贡觉县', posts: '县残疾人联合会', Natposition: '公务员', p_Number: 1.0, Job_code: 20201147.0, Job_category: '县区级', Professional: '财政学专业、会计学专业、财务管理专业、审计学专业、资产评估专业、劳动与社会保障专业', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 148.0, venue: '昌都市', Department: '卡若区', posts: '县国家安全委员会办公室', Natposition: '公务员', p_Number: 1.0, Job_code: 20201148.0, Job_category: '县区级', Professional: '法学专业', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 149.0, venue: '昌都市', Department: '卡若区', posts: '县退役军人事务局', Natposition: '公务员', p_Number: 1.0, Job_code: 20201149.0, Job_category: '县区级', Professional: '行政管理专业', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 150.0, venue: '昌都市', Department: '卡若区', posts: '县医疗保障局', Natposition: '公务员', p_Number: 1.0, Job_code: 20201150.0, Job_category: '县区级', Professional: '会计专业', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 151.0, venue: '昌都市', Department: '卡若区', posts: '县城市管理和综合执法局', Natposition: '公务员', p_Number: 2.0, Job_code: 20201151.0, Job_category: '县区级', Professional: '林学类', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 152.0, venue: '昌都市', Department: '卡若区', posts: '县工商业联合会', Natposition: '公务员', p_Number: 1.0, Job_code: 20201152.0, Job_category: '县区级', Professional: '社会工作专业', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 153.0, venue: '昌都市', Department: '卡若区', posts: '县残疾人联合会', Natposition: '公务员', p_Number: 1.0, Job_code: 20201153.0, Job_category: '县区级', Professional: '社会工作专业', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 154.0, venue: '昌都市', Department: '卡若区', posts: '县人民检察院', Natposition: '公务员', p_Number: 1.0, Job_code: 20201154.0, Job_category: '县区级', Professional: '法学专业', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 155.0, venue: '昌都市', Department: '江达县', posts: '县玉龙矿区管委会', Natposition: '公务员', p_Number: 1.0, Job_code: 20201155.0, Job_category: '县区级', Professional: '财政学专业', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 156.0, venue: '昌都市', Department: '江达县', posts: '汪布顶乡财政所', Natposition: '公务员', p_Number: 1.0, Job_code: 20201156.0, Job_category: '乡镇级', Professional: '会计专业、统计专业', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 157.0, venue: '昌都市', Department: '江达县', posts: '波罗乡财政所', Natposition: '公务员', p_Number: 1.0, Job_code: 20201157.0, Job_category: '乡镇级', Professional: '会计专业、统计专业', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 158.0, venue: '昌都市', Department: '江达县', posts: '娘西乡党政综合办公室', Natposition: '公务员', p_Number: 1.0, Job_code: 20201158.0, Job_category: '乡镇级', Professional: '文秘学专业', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 159.0, venue: '昌都市', Department: '江达县', posts: '江达镇社会事务办公室', Natposition: '公务员', p_Number: 1.0, Job_code: 20201159.0, Job_category: '乡镇级', Professional: '会计专业、统计专业', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 160.0, venue: '昌都市', Department: '类乌齐县', posts: '县人民法院加桑卡乡人民法庭', Natposition: '公务员', p_Number: 3.0, Job_code: 20201160.0, Job_category: '县区级', Professional: '法学类', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 161.0, venue: '昌都市', Department: '类乌齐县', posts: '县司法局岗色乡司法所', Natposition: '公务员', p_Number: 1.0, Job_code: 20201161.0, Job_category: '县区级', Professional: '法学类', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 162.0, venue: '昌都市', Department: '类乌齐县', posts: '县司法局加桑卡乡司法所', Natposition: '公务员', p_Number: 1.0, Job_code: 20201162.0, Job_category: '县区级', Professional: '法学类', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 163.0, venue: '昌都市', Department: '丁青县', posts: '县委党校', Natposition: '参公', p_Number: 1.0, Job_code: 20201163.0, Job_category: '县区级', Professional: '工商管理类', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 164.0, venue: '昌都市', Department: '丁青县', posts: '县人民法院尺牍镇人民法庭', Natposition: '公务员', p_Number: 3.0, Job_code: 20201164.0, Job_category: '县区级', Professional: '法学类', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 165.0, venue: '昌都市', Department: '丁青县', posts: '尺牍镇维护稳定办公室', Natposition: '公务员', p_Number: 1.0, Job_code: 20201165.0, Job_category: '乡镇级', Professional: '法学类', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 166.0, venue: '昌都市', Department: '芒康县', posts: '县人民法院宗西乡人民法庭', Natposition: '公务员', p_Number: 3.0, Job_code: 20201166.0, Job_category: '县区级', Professional: '法学类', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 167.0, venue: '昌都市', Department: '芒康县', posts: '昂多乡党政综合办公室', Natposition: '公务员', p_Number: 1.0, Job_code: 20201167.0, Job_category: '乡镇级', Professional: '文秘学专业', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 168.0, venue: '昌都市', Department: '芒康县', posts: '徐中乡财务室', Natposition: '公务员', p_Number: 1.0, Job_code: 20201168.0, Job_category: '乡镇级', Professional: '会计专业', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 169.0, venue: '昌都市', Department: '边坝县', posts: '县工商业联合会', Natposition: '公务员', p_Number: 1.0, Job_code: 20201169.0, Job_category: '县区级', Professional: '中国语言文学类', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 170.0, venue: '昌都市', Department: '边坝县', posts: '县委党校', Natposition: '参公', p_Number: 3.0, Job_code: 20201170.0, Job_category: '县区级', Professional: '思想政治教育专业', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 171.0, venue: '昌都市', Department: '边坝县', posts: '县民政局资源开发安置办公室', Natposition: '参公', p_Number: 1.0, Job_code: 20201171.0, Job_category: '县区级', Professional: '中国语言文学类', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 172.0, venue: '昌都市', Department: '边坝县', posts: '县财政局财政国库集中支付中心', Natposition: '参公', p_Number: 1.0, Job_code: 20201172.0, Job_category: '县区级', Professional: '财政学类', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 173.0, venue: '昌都市', Department: '边坝县', posts: '县住房和城乡建设局城市管理执法大队', Natposition: '参公', p_Number: 3.0, Job_code: 20201173.0, Job_category: '县区级', Professional: '管理科学与工程类', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 174.0, venue: '昌都市', Department: '边坝县', posts: '县司法局加贡乡司法所', Natposition: '公务员', p_Number: 1.0, Job_code: 20201174.0, Job_category: '县区级', Professional: '司法执行及技术类', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 175.0, venue: '昌都市', Department: '边坝县', posts: '县司法局热玉乡司法所', Natposition: '公务员', p_Number: 1.0, Job_code: 20201175.0, Job_category: '县区级', Professional: '司法执行及技术类', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 176.0, venue: '昌都市', Department: '边坝县', posts: '县人民法院金岭乡人民法庭', Natposition: '公务员', p_Number: 3.0, Job_code: 20201176.0, Job_category: '县区级', Professional: '法学类', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 177.0, venue: '昌都市', Department: '边坝县', posts: '热玉乡党政综合办公室', Natposition: '公务员', p_Number: 2.0, Job_code: 20201177.0, Job_category: '乡镇级', Professional: '财政学类', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 178.0, venue: '昌都市', Department: '边坝县', posts: '金岭乡党政综合办公室', Natposition: '公务员', p_Number: 2.0, Job_code: 20201178.0, Job_category: '乡镇级', Professional: '中国语言文学类', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 179.0, venue: '昌都市', Department: '边坝县', posts: '都瓦乡党政综合办公室', Natposition: '公务员', p_Number: 2.0, Job_code: 20201179.0, Job_category: '乡镇级', Professional: '中国语言文学类', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 180.0, venue: '昌都市', Department: '八宿县', posts: '县人大法制司法民族宗教委员会', Natposition: '公务员', p_Number: 1.0, Job_code: 20201180.0, Job_category: '县区级', Professional: '法学专业、法律专业', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 181.0, venue: '昌都市', Department: '八宿县', posts: '县人大财经农牧城建环保委员会', Natposition: '公务员', p_Number: 1.0, Job_code: 20201181.0, Job_category: '县区级', Professional: '会计学专业、财务管理专业', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 182.0, venue: '昌都市', Department: '八宿县', posts: '县司法局', Natposition: '公务员', p_Number: 1.0, Job_code: 20201182.0, Job_category: '县区级', Professional: '法学专业、法律专业', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 183.0, venue: '昌都市', Department: '八宿县', posts: '然乌湖景区开发建设管理委员会综合管理科', Natposition: '参公', p_Number: 1.0, Job_code: 20201183.0, Job_category: '县区级', Professional: '旅游管理专业', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 184.0, venue: '昌都市', Department: '八宿县', posts: '然乌湖景区开发建设管理委员会规划建设科', Natposition: '参公', p_Number: 1.0, Job_code: 20201184.0, Job_category: '县区级', Professional: '旅游管理专业', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 185.0, venue: '昌都市', Department: '八宿县', posts: '然乌湖景区开发建设管理委员会经济发展科', Natposition: '参公', p_Number: 2.0, Job_code: 20201185.0, Job_category: '县区级', Professional: '旅游管理专业', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 186.0, venue: '昌都市', Department: '八宿县', posts: '县人民法院', Natposition: '公务员', p_Number: 1.0, Job_code: 20201186.0, Job_category: '县区级', Professional: '法学专业、法律专业', Gender: '不限', Academic: '本科及以上', request: '是',  rema: '具有法律职业资格证书（C级及以上）'},
+
+
+ {id: 187.0, venue: '昌都市', Department: '八宿县', posts: '县工商业联合会', Natposition: '公务员', p_Number: 1.0, Job_code: 20201187.0, Job_category: '县区级', Professional: '文秘专业、汉语言文学专业', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 188.0, venue: '昌都市', Department: '八宿县', posts: '邦达镇党政综合办公室', Natposition: '公务员', p_Number: 1.0, Job_code: 20201188.0, Job_category: '乡镇级', Professional: '文秘专业、汉语言文学专业', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 189.0, venue: '昌都市', Department: '八宿县', posts: '邦达镇经济发展办公室', Natposition: '公务员', p_Number: 1.0, Job_code: 20201189.0, Job_category: '乡镇级', Professional: '专业不限', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 190.0, venue: '昌都市', Department: '八宿县', posts: '邦达镇维护稳定办公室', Natposition: '公务员', p_Number: 1.0, Job_code: 20201190.0, Job_category: '乡镇级', Professional: '专业不限', Gender: '不限', Academic: '大专及以上', request: '否',  rema: '仅限服务基层项目人员报考'},
+
+
+ {id: 191.0, venue: '昌都市', Department: '八宿县', posts: '邦达镇社会事务办公室', Natposition: '公务员', p_Number: 1.0, Job_code: 20201191.0, Job_category: '乡镇级', Professional: '专业不限', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 192.0, venue: '昌都市', Department: '八宿县', posts: '卡瓦白庆乡党政综合办公室', Natposition: '公务员', p_Number: 1.0, Job_code: 20201192.0, Job_category: '乡镇级', Professional: '文秘专业、汉语言文学专业', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 193.0, venue: '昌都市', Department: '八宿县', posts: '卡瓦白庆乡财政所', Natposition: '公务员', p_Number: 1.0, Job_code: 20201193.0, Job_category: '乡镇级', Professional: '会计学专业、财务管理专业', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 194.0, venue: '昌都市', Department: '八宿县', posts: '吉中乡党政综合办公室', Natposition: '公务员', p_Number: 1.0, Job_code: 20201194.0, Job_category: '乡镇级', Professional: '文秘专业、汉语言文学专业', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 195.0, venue: '昌都市', Department: '八宿县', posts: '益青乡党政综合办公室', Natposition: '公务员', p_Number: 1.0, Job_code: 20201195.0, Job_category: '乡镇级', Professional: '文秘专业、汉语言文学专业', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 196.0, venue: '昌都市', Department: '八宿县', posts: '郭庆乡党政综合办公室', Natposition: '公务员', p_Number: 2.0, Job_code: 20201196.0, Job_category: '乡镇级', Professional: '文秘专业、汉语言文学专业', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 197.0, venue: '昌都市', Department: '八宿县', posts: '同卡镇党政综合办公室', Natposition: '公务员', p_Number: 1.0, Job_code: 20201197.0, Job_category: '乡镇级', Professional: '专业不限', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+ {id: 198.0, venue: '那曲市', Department: '色尼区', posts: '尼玛乡', Natposition: '公务员', p_Number: 3.0, Job_code: 20201198.0, Job_category: '乡镇级', Professional: '工程管理类、财务会计类', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 199.0, venue: '那曲市', Department: '安多县', posts: '强玛镇', Natposition: '公务员', p_Number: 1.0, Job_code: 20201199.0, Job_category: '乡镇级', Professional: '工程管理类、财务会计类', Gender: '不限', Academic: '本科及以上', request: '否',  rema: ''},
+
+
+ {id: 200.0, venue: '那曲市', Department: '安多县', posts: '雁石坪镇', Natposition: '公务员', p_Number: 1.0, Job_code: 20201200.0, Job_category: '乡镇级', Professional: '工程管理类、财务会计类', Gender: '不限', Academic: '本科及以上', request: '否',  rema: ''},
+
+
+ {id: 201.0, venue: '那曲市', Department: '安多县', posts: '玛曲乡', Natposition: '公务员', p_Number: 2.0, Job_code: 20201201.0, Job_category: '乡镇级', Professional: '工程管理类、财务会计类', Gender: '不限', Academic: '本科及以上', request: '否',  rema: ''},
+
+
+ {id: 202.0, venue: '那曲市', Department: '安多县', posts: '色务乡', Natposition: '公务员', p_Number: 1.0, Job_code: 20201202.0, Job_category: '乡镇级', Professional: '工程管理类、财务会计类', Gender: '不限', Academic: '本科及以上', request: '否',  rema: ''},
+
+
+ {id: 203.0, venue: '那曲市', Department: '安多县', posts: '多玛乡', Natposition: '公务员', p_Number: 1.0, Job_code: 20201203.0, Job_category: '乡镇级', Professional: '工程管理类、财务会计类', Gender: '不限', Academic: '本科及以上', request: '否',  rema: ''},
+
+
+ {id: 204.0, venue: '那曲市', Department: '索县', posts: '嘎木乡', Natposition: '公务员', p_Number: 2.0, Job_code: 20201204.0, Job_category: '乡镇级', Professional: '行政管理类', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 205.0, venue: '那曲市', Department: '索县', posts: '江达乡', Natposition: '公务员', p_Number: 2.0, Job_code: 20201205.0, Job_category: '乡镇级', Professional: '文秘类、档案管理类', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 206.0, venue: '那曲市', Department: '巴青县', posts: '贡日乡', Natposition: '公务员', p_Number: 2.0, Job_code: 20201206.0, Job_category: '乡镇级', Professional: '藏汉翻译专业', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 207.0, venue: '那曲市', Department: '尼玛县', posts: '吉瓦乡', Natposition: '公务员', p_Number: 1.0, Job_code: 20201207.0, Job_category: '乡镇级', Professional: '新闻传播学类、计算机相关专业', Gender: '不限', Academic: '本科及以上', request: '否', rema: ''},
+ 
+ {id: 208.0, venue: '阿里地区', Department: '地区纪委监委', posts: '委机关', Natposition: '公务员', p_Number: 1.0, Job_code: 20201208.0, Job_category: '地市级', Professional: '法学专业', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 209.0,venue: '阿里地区', Department:'地区纪委监委 ', posts: '委机关', Natposition: '公务员', p_Number: 1.0, Job_code: 20201209.0, Job_category: '地市级', Professional: '财会专业', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 210.0,venue: '阿里地区', Department: '地委巡察办', posts: '办机关', Natposition: '公务员', p_Number: 3.0, Job_code: 20201210.0, Job_category: '地市级', Professional: '财会专业', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 211.0,venue: '阿里地区', Department: '地区教育局', posts: '局机关', Natposition: '公务员', p_Number: 1.0, Job_code: 20201211.0, Job_category: '地市级', Professional: '财会专业', Gender: '不限', Academic: '本科及以上', request: '是',  rema: '需持有会计从业资格证'},
+
+
+ {id: 212.0,venue: '阿里地区', Department: '地区中级人民法院', posts: '院机关', Natposition: '公务员', p_Number: 2.0, Job_code: 20201212.0, Job_category: '地市级', Professional: '法学专业', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 213.0,venue: '阿里地区', Department: '日土县', posts: '县委巡察办', Natposition: '公务员', p_Number: 2.0, Job_code: 20201213.0, Job_category: '县区级', Professional: '法律或财会专业', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 214.0,venue: '阿里地区', Department: '日土县', posts: '县不动产登记中心', Natposition: '参公', p_Number: 1.0, Job_code: 20201214.0, Job_category: '县区级', Professional: '土地资源管理或资产评估相关专业', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 215.0,venue: '阿里地区', Department: '日土县', posts: '县羌塘野生动物自然保护区管理中心', Natposition: '参公', p_Number: 1.0, Job_code: 20201215.0, Job_category: '县区级', Professional: '林学或野生动物保护相关专业', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 216.0,venue: '阿里地区', Department: '日土县', posts: '东汝乡', Natposition: '公务员', p_Number: 3.0, Job_code: 20201216.0, Job_category: '乡镇级', Professional: '专业不限', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 217.0,venue: '阿里地区', Department: '措勤县', posts: '县国安办', Natposition: '公务员', p_Number: 1.0, Job_code: 20201217.0, Job_category: '县区级', Professional: '法学专业', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 218.0,venue: '阿里地区', Department: '措勤县', posts: '达雄乡司法所', Natposition: '公务员', p_Number: 1.0, Job_code: 20201218.0, Job_category: '乡镇级', Professional: '法学专业', Gender: '不限', Academic: '本科及以上', request: '否',  rema: ''},
+
+
+ {id: 219.0,venue: '阿里地区', Department: '改则县', posts: '县纪委监委', Natposition: '公务员', p_Number: 1.0, Job_code: 20201219.0, Job_category: '县区级', Professional: '文秘专业', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 220.0,venue: '阿里地区', Department: '改则县', posts: '县纪委监委', Natposition: '公务员', p_Number: 1.0, Job_code: 20201220.0, Job_category: '县区级', Professional: '财会专业', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 221.0,venue: '阿里地区', Department: '改则县', posts: '古姆乡', Natposition: '公务员', p_Number: 1.0, Job_code: 20201221.0, Job_category: '乡镇级', Professional: '法学专业', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 222.0,venue: '阿里地区', Department: '噶尔县', posts: '县巡察办', Natposition: '公务员', p_Number: 1.0, Job_code: 20201222.0, Job_category: '县区级', Professional: '文秘专业', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 223.0,venue: '阿里地区', Department: '革吉县', posts: '县劳动就业（大学生就业创业）服务中心', Natposition: '参公', p_Number: 1.0, Job_code: 20201223.0, Job_category: '县区级', Professional: '专业不限', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 224.0,venue: '阿里地区', Department: '札达县', posts: '县劳动就业（大学生就业创业）服务中心', Natposition: '参公', p_Number: 1.0, Job_code: 20201224.0, Job_category: '县区级', Professional: '人力资源专业', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 225.0,venue: '阿里地区', Department: '札达县', posts: '县司法局', Natposition: '公务员', p_Number: 1.0, Job_code: 20201225.0, Job_category: '县区级', Professional: '法学专业', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 226.0,venue: '阿里地区', Department: '札达县', posts: '萨让乡司法所', Natposition: '公务员', p_Number: 1.0, Job_code: 20201226.0, Job_category: '乡镇级', Professional: '法学专业', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 227.0,venue: '阿里地区', Department: '普兰县', posts: '县纪委监委', Natposition: '公务员', p_Number: 1.0, Job_code: 20201227.0, Job_category: '县区级', Professional: '法学专业', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 228.0,venue: '阿里地区', Department: '普兰县', posts: '县纪委监委', Natposition: '公务员', p_Number: 1.0, Job_code: 20201228.0, Job_category: '县区级', Professional: '文秘专业', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''},
+
+
+ {id: 229.0,venue: '阿里地区', Department: '普兰县', posts: '县口岸管理委员会', Natposition: '公务员', p_Number: 1.0, Job_code: 20201229.0, Job_category: '县区级', Professional: '外事或贸易专业', Gender: '不限', Academic: '本科及以上', request: '是',  rema: ''}
+
+
+
+
+
+
+
+
+
+    	]
+
+	    
+	    
+	    for(i=0;i<xx.length;i++){
+	    	var html="<tr><td>"+
+	    	xx[i].id+"</td><td>"+
+            xx[i].venue+"</td><td>"+
+            xx[i].Department+"</td><td>"+
+            xx[i].posts+"</td><td>"+
+            xx[i].Natposition+"</td><td>"+
+            xx[i].p_Number+"</td><td>"+
+            xx[i].Job_code+"</td><td>"+
+            xx[i].Job_category+"</td><td>"+
+            xx[i].Professional +"</td><td>"+
+            xx[i].Gender+"</td><td>"+
+            xx[i].Academic+"</td><td>"+
+            xx[i].request+"</td><td>"+
+            xx[i].rema+"</td></tr>";
+
+	    	$("#example tbody").append(html);
+	    	
+	    }
+	    
+	    $('#example').DataTable( {
+	        dom: 'Bfrtip',
+	        language: {  
+                emptyTable: '没有数据',  
+                loadingRecords: '加载中...',  
+                processing: '查询中...',  
+                search: '搜索【专业、地区等】:',  
+                lengthMenu: '每页 _MENU_ 件',  
+                zeroRecords: '没有数据',  
+                paginate: {  
+                    'first':      '第一页',  
+                    'last':       '最后一页',  
+                    'next':       '下一页',  
+                    'previous':   '上一页'  
+            	},  
+	            info: '第 _PAGE_ 页 / 总 _PAGES_ 页',  
+	            infoEmpty: '没有数据',  
+	            infoFiltered: '(过滤总件数 _MAX_ 条)',
+	        },
+	        
+
+	    } );
+	    
+
+
+	});
+  </script>  
+ </body>  
+</html>  
